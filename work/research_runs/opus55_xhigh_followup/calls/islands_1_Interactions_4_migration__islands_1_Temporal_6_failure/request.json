@@ -1,0 +1,13 @@
+{
+  "request_hash": "147173a7a8618ab4f1c8a6de106cb12c9badb217d4cc220ca6db8da6c5624063",
+  "request": {
+    "call_id": "islands_1_Interactions_4_migration__islands_1_Temporal_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nThe interaction of hours momentum and pay momentum failed. Their joint signal showed slightly negative, insignificant predictive power.\\n\\nThe flow rates V02 and V03 were the most informative. When V02 rose faster than V03 over three months, groups significantly underperformed, mostly in low-T periods. Reversing the direction at six months gave a modest positive signal, with t near two. It was consistent across T regimes and overlapped little with base factors. This reversal was chosen after seeing the earlier result, so treat it cautiously.\\n\\nContrasting pay growth with the stock rate's deviation from its long norm was weak. It covered only half the sample and flipped sign when T was high.\", \"hypothesis\": \"Testing whether submission four's own-history effect generalizes: groups whose twelve-month log growth in average hours (V01), lagged one month, is unusually high versus its own 36-month history outperform peers next month.\", \"expression\": \"tsz(lchg(lag(V01,1),12),36)\"}"
+  }
+}

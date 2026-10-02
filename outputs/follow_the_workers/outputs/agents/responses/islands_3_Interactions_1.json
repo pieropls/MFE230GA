@@ -1,0 +1,42 @@
+{
+  "request_hash": "0fa26cd2307f3e2daaf95afa9b447842d9194acc0bba622948e5f73c63aa712e",
+  "envelope": {
+    "response": "{\"name\":\"Wage-hours interaction momentum\",\"hypothesis\":\"Groups where 3-month change in hourly dollars (V05) and 3-month change in average hours (V01) both rank high have stronger demand, so their interaction predicts higher next-month returns cross-sectionally.\",\"falsified_if\":\"Cross-sectional rank correlation between this feature and next-month group returns is zero or negative in development statistics.\",\"expression\":\"mult(csrank(chg(V05,3)),csrank(chg(V01,3)))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 41,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 174,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0020774,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "0fa26cd2307f3e2daaf95afa9b447842d9194acc0bba622948e5f73c63aa712e"
+  }
+}

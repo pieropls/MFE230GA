@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-02T07:11:30.806846+00:00",
+  "machine_answers_used": false,
+  "selection_rule": "Exact existing trace_migrations pair order, safety eligibility, seed and ceil(20%) sampling",
+  "must_verify_after_judging": "All pair IDs, judged flags and human_review_required flags must exactly match completed migration_judgments.json before recording answers or freeze",
+  "evidence_hashes": {
+    "params.py": "1b86c4a968d2f5b7d22c36efd1aef161c9ded1b3fe74281f35aa04cf098dbe10",
+    "agents.py": "7c15e14b903db31710e51b7663f195c4d6cd6c9d4f1dbf7b688bcdb89d4e6e43",
+    "outputs/agents/candidate_records.json": "c2fd1569d1eff41c95b49d8c9b73997789daadffecd12734b98ffc3f9f6f5a43",
+    "outputs/agents/migrations.json": "1128c65a70ebdc18cd364e60367b911aa3e6ae61d18c58bfe49c9191b09cf3ac",
+    "outputs/planned_migration_pairs.json": "e489cb9c5ec45f752ec4bff111c9813229a565761b6991f432378d6858ff6edc"
+  }
+}

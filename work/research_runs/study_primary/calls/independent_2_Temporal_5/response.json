@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V06_persist_reversal\",\"hypothesis\":\"Groups whose V06 stock rate rose in a smaller share of the past 6 months will have higher next-month returns, because persistent buildup was negatively signed in development. Expect negative IC for persist(V06,6), so its lagged reversal is positive.\",\"falsified_if\":\"Mean cross-sectional rank IC of the feature is zero or negative, or HAC t-statistic is below 1.0 in development data.\",\"expression\":\"csrank(mult(persist(V06,6),-1))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1184,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 182,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0044434,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "90caa84edf47c36660adcc10a91eb96c25b0cb518f05355b27b0a626065f15e1"
+}

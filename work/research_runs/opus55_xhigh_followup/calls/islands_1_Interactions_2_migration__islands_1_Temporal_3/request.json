@@ -1,0 +1,13 @@
+{
+  "request_hash": "9d117f22bdf3417ae36d269ad79d2bfeb0f611ab5bf933037c20da3c5315ce3d",
+  "request": {
+    "call_id": "islands_1_Interactions_2_migration__islands_1_Temporal_3",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 3,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}. Return one bare JSON object without Markdown fences or commentary. uses_claim must be a JSON boolean. claim_ids must be an array of integer claim numbers, never quoted strings; use an empty array when uses_claim is false.",
+    "prompt": "{\"claims\": {\"1\": \"**Findings so far**\", \"2\": \"Our first attempt combined three-month momentum in average hours and in hourly pay as a rank product.\", \"3\": \"It failed.\", \"4\": \"Its next-month predictive correlation was slightly negative, insignificant and unchanged across common-index regimes.\", \"5\": \"The second attempt favored groups whose V02 flow rate rose faster than V03 over three months.\", \"6\": \"It produced a meaningfully negative correlation, with a t-statistic near minus two, concentrated when the common index was low.\", \"7\": \"Reversing its direction, perhaps conditioned on the low regime, looks promising.\", \"8\": \"Both features showed low overlap with base signals and moderate rank persistence.\"}, \"hypothesis\": \"Reversing an observed negative signal: groups whose V03 flow rate rose more than V02 over three months, respecting the two-month lag, earn higher next-month relative returns, especially when T is low.\", \"expression\": \"spread(chg(lag(V03,2),3),chg(lag(V02,2),3))\"}"
+  }
+}

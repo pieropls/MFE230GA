@@ -1,0 +1,42 @@
+{
+  "request_hash": "db405d2fd3930c293e1e18aeca58dfa1718e3e38c60e9b84fb532dabd929649e",
+  "envelope": {
+    "response": "**Progress report**\n\nFour composition-style features were tried. The clearest finding was that a spread between three-month changes in two flow rates, V02 versus V03, failed: its information coefficient was negative (about -0.06, t around -2), driven by the low-T regime. That reversal suggests the sign may be inverted, though this is unconfirmed.\n\nSmoothed level compositions, using a ratio or a spread of six-month averages, were essentially zero (t below 0.3) and very persistent (rank autocorrelation about 0.96), so they add little.\n\nThe most promising feature was the short-horizon change spread between flow V04 and stock V06. Its IC was about 0.04 (t 1.57), with the same sign in both T regimes and low overlap with the base features.\n\nNext, I will test sign reversal and variants that use changes rather than levels.",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1387,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1246,
+      "output_tokens": 271,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.005733199999999999,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "db405d2fd3930c293e1e18aeca58dfa1718e3e38c60e9b84fb532dabd929649e"
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "series_id": "PCUAWHLTRAWHLTR",
+    "first_vintage": "2015-04-14",
+    "known_at_research_snapshot": false
+  },
+  {
+    "series_id": "PCUARETTRARETTR",
+    "first_vintage": "2015-04-14",
+    "known_at_research_snapshot": false
+  },
+  {
+    "series_id": "PCUAINFOAINFO",
+    "first_vintage": "2015-04-14",
+    "known_at_research_snapshot": false
+  }
+]

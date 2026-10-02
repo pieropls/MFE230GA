@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"V04_V06_spread_3m_and_6m_change_avg\",\"hypothesis\":\"Groups whose V04 flow rate rose more than their V06 stock rate over 12 months (standardized across groups) have higher next-month returns, extending the positive 3- and 6-month versions. Expect positive IC in both T regimes.\",\"falsified_if\":\"Mean rank IC is zero or negative, HAC t-statistic is below 1, or high_T and low_T IC have opposite signs in development statistics.\",\"expression\":\"spread(chg(V04,12),chg(V06,12))\"}"
+          }
+        ],
+        "usage": {
+          "input_tokens": 2149,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1276,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 6,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "{\"name\":\"V04_V06_spread_3m_and_6m_change_avg\",\"hypothesis\":\"Groups whose V04 flow rate rose more than their V06 stock rate over 12 months (standardized across groups) have higher next-month returns, extending the positive 3- and 6-month versions. Expect positive IC in both T regimes.\",\"falsified_if\":\"Mean rank IC is zero or negative, HAC t-statistic is below 1, or high_T and low_T IC have opposite signs in development statistics.\",\"expression\":\"spread(chg(V04,12),chg(V06,12))\"}",
+      "usage": {
+        "input_tokens": 2149,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1276,
+        "output_tokens": 195,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 2149,
+          "outputTokens": 195,
+          "cacheReadInputTokens": 1276,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0065032,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0065032
+    }
+  ],
+  "stderr_present": false
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "c94f8b78e463a4527ef6c536efb3740458bd2abb05c1b274769c121e8aafc380",
+  "envelope": {
+    "response": "{\"name\":\"Composition_ratio_rank_chg\",\"hypothesis\":\"Groups where V03 (a flow rate) rises relative to V02 (a flow rate) over three months, ranked across groups, have higher next-month returns, reflecting a compositional shift between the two flows.\",\"falsified_if\":\"Cross-sectional rank correlation between this feature and next-month group returns is zero or negative in development statistics.\",\"expression\":\"csrank(chg(ratio(V03,V02),3))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 41,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1276,
+      "output_tokens": 162,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0019572,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "c94f8b78e463a4527ef6c536efb3740458bd2abb05c1b274769c121e8aafc380"
+  }
+}

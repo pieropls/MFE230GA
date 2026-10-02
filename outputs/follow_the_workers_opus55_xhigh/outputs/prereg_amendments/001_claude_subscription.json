@@ -1,0 +1,36 @@
+{
+  "utc": "2026-09-28T21:32:25.228836+00:00",
+  "approved": true,
+  "user_approval": "yes lets do claude sub, whats next",
+  "model_approval": "lets use claude sonnet 5.5 instead going forward, and opus 5.5 if opus was ever in the plan",
+  "previous_record_sha256": "86b77557853db2ccbd184cfafbc3edede8d25766419200f391f0c9a2de2b2808",
+  "previous_params_sha256": "1eb0e06cc176b2ff3385e916841f2b637db6f81e2ab4845ca9a856facecba376",
+  "params_sha256": "9fccbba2fef13ae05d0829f5d2d2ae25f1b486a5258fcbbf31a988227bb1ebac",
+  "params_snapshot": "outputs/prereg/params_v1.py",
+  "changes": {
+    "provider": "Anthropic through existing Claude subscription",
+    "model": "claude-sonnet-5-5",
+    "effort": "medium",
+    "context_exception": "Only the CLI-injected present-date reminder; no historical sample dates or project context permitted.",
+    "randomness": "Seed and temperature requests unsupported and logged false. Existing run indices and run-1-only eligibility retained.",
+    "fallback": "None. No Opus arm was planned.",
+    "course": "Claude research interactions do not count as ChatGPT. Separate genuine ChatGPT course interactions remain required."
+  },
+  "unchanged": [
+    "data",
+    "sample boundaries",
+    "108 proposal budget",
+    "18 migration budget",
+    "grammar",
+    "candidate eligibility",
+    "selection rules",
+    "test endpoints"
+  ],
+  "pre_result_state": "No research strategy performance, candidate feedback, or sealed results computed. One harmless Sonnet 5 connection test preceded the explicit Sonnet 5.5 request.",
+  "verification_status": "Requested Sonnet 5.5 transport pending CLI 2.1.284 installation approval and fresh isolation/live tests.",
+  "sources": [
+    "https://code.claude.com/docs/en/model-config",
+    "https://code.claude.com/docs/en/cli-reference",
+    "https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan"
+  ]
+}

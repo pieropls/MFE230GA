@@ -1,0 +1,42 @@
+{
+  "request_hash": "007938eb86b8daa22ba6a3e63acb375e512103d769816c94c054a790fa27faf2",
+  "envelope": {
+    "response": "{\"name\": \"hours_x_wage_momentum\", \"hypothesis\": \"Groups with simultaneous above-peer three-month growth in average hours and hourly pay experience broad input-demand strength, which predicts higher relative returns next month; the joint signal should outperform either component alone.\", \"falsified_if\": \"Mean cross-sectional rank correlation with next-month relative returns is non-positive or its t-statistic is below 2 over the development sample.\", \"expression\": \"mult(csrank(chg(V01,3)),csrank(lchg(V05,3)))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 41,
+      "cache_creation_input_tokens": 1308,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 915,
+      "output_tokens_details": {
+        "thinking_tokens": 730
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1308,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.028928000000000002,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "007938eb86b8daa22ba6a3e63acb375e512103d769816c94c054a790fa27faf2"
+  }
+}

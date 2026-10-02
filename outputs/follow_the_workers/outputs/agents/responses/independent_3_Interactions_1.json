@@ -1,0 +1,42 @@
+{
+  "request_hash": "d1f8f8fdd6d6260c12c30552eb97a71b3d0f76a288706458b638bc1b0fa6db8b",
+  "envelope": {
+    "response": "{\"name\":\"Wage-cost times tightness interaction\",\"hypothesis\":\"Groups with high wage growth (V05 12-month log change) combined with high separation-type flow V02 mean-reversion signal deteriorating margins; the product of cross-sectional ranks of V05 lchg and V02 tsz negatively predicts next-month relative returns.\",\"falsified_if\":\"Development-sample rank correlation between this feature and next-month group returns is non-negative, or top-minus-bottom tercile spread is positive.\",\"expression\":\"mult(csrank(lchg(V05,12)),csrank(tsz(V02,60)))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 41,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 207,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0024073999999999996,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "d1f8f8fdd6d6260c12c30552eb97a71b3d0f76a288706458b638bc1b0fa6db8b"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"Composition_ratio_rank_smoothed\",\"hypothesis\":\"Groups whose V03 flow rate is high relative to V02 flow rate, smoothed over 6 months, have higher next-month returns, because a persistently favorable composition of flows signals improving conditions.\",\"falsified_if\":\"Cross-sectional rank correlation between this feature and next-month group returns is zero or negative on average, or unstable in sign across subperiods.\",\"expression\":\"csrank(mavg(ratio(V03,V02),6))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 41,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1276,
+    "output_tokens": 175,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0020872,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "fb8c5f20f764b8d95cbbc7902fdbc91e994c9285bbcf31d4b1676da15eaa51b3"
+}

@@ -1,0 +1,39 @@
+{
+  "response": "**Migration report**\n\nTwo submissions so far, and neither produced a usable signal.\n\nThe first used a standardized version of the V02 flow rate against its own expanding history. Its mean rank correlation was essentially zero, with a HAC t-statistic near zero. The regime split was unstable: slightly negative in low-T and clearly positive (0.12) in high-T. That suggests a regime-dependent sign, not the negative relation I hypothesized. This one failed.\n\nThe second used the share of positive monthly changes in V05, restricted to high-T. It was mildly negative (t of -0.7), with very high rank autocorrelation (0.77), so it is slow-moving. It also failed.\n\nNext: test V02 interacted with T, and try faster-moving temporal features.",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 698,
+    "cache_creation_input_tokens": 1247,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 247,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 1247,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.008854,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "0bce5c13924dcda84d718a7a928f22fe1b3131b5856154e7379bc05be9e92b9a"
+}

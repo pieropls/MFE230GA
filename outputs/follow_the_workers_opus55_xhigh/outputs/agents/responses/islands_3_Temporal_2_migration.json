@@ -1,0 +1,42 @@
+{
+  "request_hash": "d890213ece111e63a59be5e544014a78c4e587f19033388dc1b0f48ac886eef8",
+  "envelope": {
+    "response": "**Findings**\nOur first feature ranked groups by how persistently average hours rose over the prior six available months. It was valid, with 95% coverage, but weak: mean information coefficient about 0.05, HAC t-statistic near 1.35, not significant. It predicted only when the common index was high and turned slightly negative when the index was low. Overlap with base factors was low, and ranks were stable.\n\n**Failure**\nOur second submission was rejected as invalid because the blinded payload contained a forbidden name or identifier. It used up a slot. The exact trigger is unclear, so use neutral naming.\n\n**Next**\nCondition the hours signal on the high-index regime, respecting the index's two-month lag.",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 441,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1278,
+      "output_tokens": 2764,
+      "output_tokens_details": {
+        "thinking_tokens": 2536
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0572996,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "d890213ece111e63a59be5e544014a78c4e587f19033388dc1b0f48ac886eef8"
+  }
+}

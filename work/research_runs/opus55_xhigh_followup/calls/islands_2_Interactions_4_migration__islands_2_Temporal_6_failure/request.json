@@ -1,0 +1,13 @@
+{
+  "request_hash": "485a17a19caef64499fe13dac02514a36a37c623619f8d51d834117e01d0c421",
+  "request": {
+    "call_id": "islands_2_Interactions_4_migration__islands_2_Temporal_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nThe interaction features failed. Combining three-month gains in hourly pay and average hours produced a slightly negative, insignificant IC. Pairing a standardized stock rate with a rising flow rate covered only half the sample. Its sign also flipped between low and high index regimes, which points to instability rather than a conditional effect.\\n\\nThe best lead is the six-month change in V03 relative to V02. Its pooled IC was small and positive. However, its HAC t-statistic of 1.99 missed my preregistered threshold of 2.0, so it is formally falsified. Most of its strength sits in low-index periods. After only four attempts, treat it as tentative.\", \"hypothesis\": \"Six-month log hourly-pay growth that is unusually high versus each group's trailing three-year history captures fresher demand tightening than twelve-month growth, predicting higher next-month relative returns.\", \"expression\": \"csrank(tsz(lchg(V05,6),36))\"}"
+  }
+}

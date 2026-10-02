@@ -1,0 +1,39 @@
+{
+  "response": "**Migration report**\n\n**Failures:** The product of two long-history standardized measures (a flow rate and a stock rate) showed essentially zero predictive power (t-stat around -0.4), despite the stress-compounding rationale. The cross-sectional rank product of pay growth and hours change also produced nothing (mean IC zero), and was fairly redundant with existing features. One submission was invalid because the hypothesis exceeded the word limit, so count words carefully.\n\n**Tentative finding:** A spread between two flow rates, each standardized against its own history, gave a positive IC, opposite to my predicted sign (t-stat about 1.9). It looked stronger in high-T periods. Coverage was limited, at about 54%, so it is suggestive only.",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1243,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1247,
+    "output_tokens": 245,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0051854,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "3a1ec7ec63d99c32b8b47f34207d8d91cace6c220d8f77841c1fb74754523d9d"
+}

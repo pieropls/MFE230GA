@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "utc": "2026-09-28T15:23:51.994732+00:00",
+  "variants": [
+    {
+      "variant": "ASOF",
+      "panel_rows": 3663169,
+      "feature_rows": 18980,
+      "decision_months": 292
+    },
+    {
+      "variant": "FIRST",
+      "panel_rows": 3663169,
+      "feature_rows": 18980,
+      "decision_months": 292
+    },
+    {
+      "variant": "REVISED",
+      "panel_rows": 3663169,
+      "feature_rows": 18980,
+      "decision_months": 292
+    },
+    {
+      "variant": "FIXEDLAG",
+      "panel_rows": 3662848,
+      "feature_rows": 18980,
+      "decision_months": 292
+    }
+  ],
+  "evidence_hashes": {
+    "outputs/panel_asof.parquet": "3cf278aae4c5187ef27223cc9a35baef9f80f6ddff7a25e1fe57805c82eb303d",
+    "outputs/features_asof.parquet": "0be3c033dc28a9a8d5668d817eb44e2e43fb43494eddfc17558e56cb8cada200",
+    "outputs/levels_asof.parquet": "74bac07c7769d35ba697ec5a3182771bb01ada9facba2d82e1da3a2cf5d9153e",
+    "outputs/tightness_asof.parquet": "8d4a988b5cfac1489cc65024cd0da45ac6c78846652489914545cd14e05675a5",
+    "outputs/panel_first.parquet": "7f2d2af73ca649659e01463313d3ce5452697420f51c17b9bf391c4d63f72d65",
+    "outputs/features_first.parquet": "e5a87b36061717c517e00253e0d6703b8342d442dc3aa719193cc7aaaf305842",
+    "outputs/levels_first.parquet": "74bac07c7769d35ba697ec5a3182771bb01ada9facba2d82e1da3a2cf5d9153e",
+    "outputs/tightness_first.parquet": "b51f004f1513fe4f99a766abaea30c850ca65a196ce988fc6a9a77bbbc060418",
+    "outputs/panel_revised.parquet": "5e435231db0bbd49f4c91bec1736592a59876eb59822e13b80db797f5d91fbbb",
+    "outputs/features_revised.parquet": "4740dcdc52a60a067670acbeb74286c7069bdbe10622ad9fb6c6f38edd176c2b",
+    "outputs/levels_revised.parquet": "f06e0827e2ad762bdfcb51428c1a5a2bb8a2bb7d969f881f2378fbf77be5fc50",
+    "outputs/tightness_revised.parquet": "2b49f0ea0b6f340cb16f5335c79b4249f8583d37078ff2c2d9b28f183b62d8b0",
+    "outputs/panel_fixedlag.parquet": "5b2aa5774a69b0db7d61639f35f6bf14c704c6460ac048184decad277fcca2e4",
+    "outputs/features_fixedlag.parquet": "8e66849ac51010af4fd50092e736d64ce3125c3a3f510c6899e3e0a7df9804a0",
+    "outputs/levels_fixedlag.parquet": "e5c1e3f57ad3aa9e3d3f430978a25058e2afc9d0650819b96226c56c39f8f6cb",
+    "outputs/tightness_fixedlag.parquet": "ed59a53cdb96dad50e6b4ccc183a4b75e2bc1eece08840d60e6e749bf1505f74"
+  },
+  "open_flags": [],
+  "scope": "Prepared public labor data, no return values"
+}

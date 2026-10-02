@@ -1,0 +1,39 @@
+{
+  "response": "**Progress Report**\n\nWe have tested two temporal features so far.\n\n**What failed.** Ranking groups by their three-month change in average hours gave no signal. Mean rank IC was about minus 0.01 and the HAC t was near minus 0.7. It was weak in both T regimes, so short-run hours momentum looks uninformative.\n\n**What looks promising.** Annual hourly-wage growth, compared with each group's own five-year history, did better. Mean IC was about 0.08 and the HAC t about 1.8. It was positive in both T regimes and stronger when T was high. It overlapped little with base factors, and its ranks were persistent.\n\n**Caveat.** Coverage was only 44 percent because the long rolling window needs complete history.\n\n**Next step.** We will try expanding-window normalization to recover coverage.",
+  "model": "claude-opus-5-5",
+  "tokens": {
+    "input_tokens": 651,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1278,
+    "output_tokens": 1910,
+    "output_tokens_details": {
+      "thinking_tokens": 1644
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0410596,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-opus-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "d3c4f96dd482aee266e641fee914d478119e86ba87a8257f314feb3331f0e4bf"
+}

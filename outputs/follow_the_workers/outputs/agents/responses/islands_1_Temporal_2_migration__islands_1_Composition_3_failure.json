@@ -1,0 +1,42 @@
+{
+  "request_hash": "3cc58ec4e7ee17a143d5ca86005a7753889559ef5d1a6e3b0398cc83dda78d5a",
+  "envelope": {
+    "response": "The report describes two failures: (1) regime-dependent sign instability, with the V02 signal flipping between low-T and high-T, and (2) a slow-moving feature (rank autocorrelation 0.77) with weak signal. The next steps it proposes are to interact V02 with T and to try faster-moving temporal features.\n\nThe hypothesis uses different variables (V03 vs V04), and it applies a 6-month moving average, which makes the feature smoother and therefore slower, not faster. It also expects positive IC in both regimes with no T interaction, so it does not address the regime-dependent sign problem. It does not explicitly avoid either failure.\n\n{\"avoids_failure\": false}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 497,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 222,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0032140000000000003,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "3cc58ec4e7ee17a143d5ca86005a7753889559ef5d1a6e3b0398cc83dda78d5a"
+  }
+}

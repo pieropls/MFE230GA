@@ -1,0 +1,198 @@
+{
+  "utc": "2026-09-29T19:21:52.854950+00:00",
+  "complete": true,
+  "groups": [
+    {
+      "group": 1,
+      "queries": [
+        "Producer Price Index by Industry Mining",
+        "Producer Price Index by Industry Logging"
+      ],
+      "unique_candidates": 196,
+      "representative_series": "PCU212212",
+      "title": "Producer Price Index by Industry: Mining (Except Oil and Gas)",
+      "exact_scope": false,
+      "decision": "Mining excludes oil/gas and logging; no combined match found",
+      "model_admitted": false
+    },
+    {
+      "group": 2,
+      "queries": [
+        "Producer Price Index by Industry Construction"
+      ],
+      "unique_candidates": 200,
+      "representative_series": "PCU236221236221",
+      "title": "Producer Price Index by Industry: New Warehouse Building Construction",
+      "exact_scope": false,
+      "decision": "New nonresidential construction is only a construction subset",
+      "model_admitted": false
+    },
+    {
+      "group": 3,
+      "queries": [
+        "Producer Price Index by Industry Manufacturing"
+      ],
+      "unique_candidates": 3629,
+      "representative_series": "PCUOMFGOMFG",
+      "title": "Producer Price Index by Industry: Total Manufacturing Industries",
+      "exact_scope": false,
+      "decision": "Total manufacturing combines durable and nondurable",
+      "model_admitted": false
+    },
+    {
+      "group": 4,
+      "queries": [
+        "Producer Price Index by Industry Manufacturing"
+      ],
+      "unique_candidates": 3629,
+      "representative_series": "PCUOMFGOMFG",
+      "title": "Producer Price Index by Industry: Total Manufacturing Industries",
+      "exact_scope": false,
+      "decision": "Total manufacturing combines durable and nondurable",
+      "model_admitted": false
+    },
+    {
+      "group": 5,
+      "queries": [
+        "Producer Price Index by Industry Wholesale Trade"
+      ],
+      "unique_candidates": 19,
+      "representative_series": "PCUAWHLTRAWHLTR",
+      "title": "Producer Price Index by Industry: Total Wholesale Trade Industries",
+      "exact_scope": true,
+      "decision": "BLS defines this aggregate for the wholesale trade sector",
+      "model_admitted": false
+    },
+    {
+      "group": 6,
+      "queries": [
+        "Producer Price Index by Industry Retail Trade"
+      ],
+      "unique_candidates": 12,
+      "representative_series": "PCUARETTRARETTR",
+      "title": "Producer Price Index by Industry: Total Retail Trade Industries",
+      "exact_scope": true,
+      "decision": "BLS defines this aggregate for the retail trade sector",
+      "model_admitted": false
+    },
+    {
+      "group": 7,
+      "queries": [
+        "Producer Price Index by Industry Transportation",
+        "Producer Price Index by Industry Warehousing",
+        "Producer Price Index by Industry Utilities"
+      ],
+      "unique_candidates": 532,
+      "representative_series": "PCUATRNWRATRNWR",
+      "title": "Producer Price Index by Industry: Transportation and Warehousing Industries",
+      "exact_scope": false,
+      "decision": "Transportation and warehousing omit utilities",
+      "model_admitted": false
+    },
+    {
+      "group": 8,
+      "queries": [
+        "Producer Price Index by Industry Information"
+      ],
+      "unique_candidates": 84,
+      "representative_series": "PCUAINFOAINFO",
+      "title": "Producer Price Index by Industry: Information",
+      "exact_scope": false,
+      "decision": "Selected Information subsectors; full scope not established",
+      "model_admitted": false
+    },
+    {
+      "group": 9,
+      "queries": [
+        "Producer Price Index by Industry Finance",
+        "Producer Price Index by Industry Insurance"
+      ],
+      "unique_candidates": 132,
+      "representative_series": "PCU524524",
+      "title": "Producer Price Index by Industry: Insurance Carriers and Related Activities",
+      "exact_scope": false,
+      "decision": "Insurance alone omits finance",
+      "model_admitted": false
+    },
+    {
+      "group": 10,
+      "queries": [
+        "Producer Price Index by Industry Real Estate",
+        "Producer Price Index by Industry Rental",
+        "Producer Price Index by Industry Leasing"
+      ],
+      "unique_candidates": 75,
+      "representative_series": "PCU531210531210",
+      "title": "Producer Price Index by Industry: Offices of Real Estate Agents and Brokers",
+      "exact_scope": false,
+      "decision": "Real estate agents/brokers omit rental and leasing",
+      "model_admitted": false
+    },
+    {
+      "group": 11,
+      "queries": [
+        "Producer Price Index by Industry Professional",
+        "Producer Price Index by Industry Management",
+        "Producer Price Index by Industry Administrative"
+      ],
+      "unique_candidates": 105,
+      "representative_series": "PCU541610541610",
+      "title": "Producer Price Index by Industry: Management Consulting Services",
+      "exact_scope": false,
+      "decision": "Consulting is only a subset of professional and business services",
+      "model_admitted": false
+    },
+    {
+      "group": 12,
+      "queries": [
+        "Producer Price Index by Industry Health Care",
+        "Producer Price Index by Industry Social Assistance"
+      ],
+      "unique_candidates": 71,
+      "representative_series": "PCUASHCASHC",
+      "title": "Producer Price Index by Industry: Selected Health Care Industries",
+      "exact_scope": false,
+      "decision": "Selected health care omits social assistance",
+      "model_admitted": false
+    },
+    {
+      "group": 13,
+      "queries": [
+        "Producer Price Index by Industry Accommodation",
+        "Producer Price Index by Industry Food Services"
+      ],
+      "unique_candidates": 49,
+      "representative_series": "PCU721721",
+      "title": "Producer Price Index by Industry: Accommodation",
+      "exact_scope": false,
+      "decision": "Accommodation omits food services",
+      "model_admitted": false
+    }
+  ],
+  "exact_scope_groups": 2,
+  "required_groups": 9,
+  "model_admitted": false,
+  "diagnostic": [
+    {
+      "series_id": "PCUAWHLTRAWHLTR",
+      "first_vintage": "2015-04-14",
+      "known_at_research_snapshot": false
+    },
+    {
+      "series_id": "PCUARETTRARETTR",
+      "first_vintage": "2015-04-14",
+      "known_at_research_snapshot": false
+    },
+    {
+      "series_id": "PCUAINFOAINFO",
+      "first_vintage": "2015-04-14",
+      "known_at_research_snapshot": false
+    }
+  ],
+  "search_evidence_sha256": "3d7a13e10bc3ed70018a94bf893cd017c8a58658b6c24310a117dfe406dd6c91",
+  "sources": [
+    "https://www.bls.gov/ppi/notices/2007/new-aggregate-net-output-indexes.htm",
+    "https://www.bls.gov/ppi/factsheets/ppi-coverage-of-the-retail-trade-sector.htm"
+  ],
+  "limitation": "Search/admission audit, not proof that no additional index can ever exist; no scope substitutions or performance-based choices"
+}

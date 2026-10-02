@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V02_V04_spread_highT\",\"hypothesis\":\"Groups with a higher V02 rate relative to V04, cross-sectionally standardized, will have higher next-month returns, and the effect will be stronger when T is high, because flow-rate imbalances are absorbed slowly.\",\"falsified_if\":\"Mean cross-sectional rank IC is zero or negative, or high-T IC is not greater than low-T IC in development data.\",\"expression\":\"regime(spread(V02,V04),\\\"high\\\")\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 610,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 170,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0031753999999999997,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "387500839c97239af2a160c662beb36fb23299f16be7c93068d16a4713737e51"
+}

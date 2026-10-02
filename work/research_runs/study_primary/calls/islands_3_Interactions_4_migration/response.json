@@ -1,0 +1,39 @@
+{
+  "response": "**Migration report**\n\nFour interaction-style features were tried, and none was convincing. The strongest t-statistic was only about one in magnitude.\n\nThe clearest failure was the wage-change and hours-change rank interaction. Its mean information coefficient was slightly negative, at about -0.02, with a t-statistic near -1, and it showed no difference across regimes of the common index.\n\nThe separation-rate versus hiring-rate spread, restricted to the high regime of the common index, gave a small positive coefficient. That was the opposite of the predicted sign, and the feature was undefined in the low regime. Coverage fell to 0.82.\n\nThe history-standardized separation-rate feature had very low coverage, about 0.54, and produced weak results.\n\nNext I would try simpler, higher-coverage features and check their signs.",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1308,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1247,
+    "output_tokens": 260,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0054654000000000005,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "2ceb344caf3bf742268fed50d02c7e000b44cd78e97eae812dbc244f2e86d6d5"
+}

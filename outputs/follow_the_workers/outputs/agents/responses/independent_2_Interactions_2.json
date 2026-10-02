@@ -1,0 +1,42 @@
+{
+  "request_hash": "2a269b264be6079d9acb86b346e05e8e5c7a01466577c5ffc6a33f6fb3c4a722",
+  "envelope": {
+    "response": "{\"name\":\"Separation-rate change interaction with hours\",\"hypothesis\":\"Groups where the 3-month change in the V02 flow rate is high while average hours (V01) are weak relative to their own history are under labor-market stress and should have lower next-month returns; feature should correlate negatively.\",\"falsified_if\":\"Mean information coefficient is positive or insignificant (|HAC t| below 2) in development statistics, or the sign is unstable across low and high T regimes.\",\"expression\":\"mult(chg(V02,3),tsz(V01,60))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 337,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 180,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0027294,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "2a269b264be6079d9acb86b346e05e8e5c7a01466577c5ffc6a33f6fb3c4a722"
+  }
+}

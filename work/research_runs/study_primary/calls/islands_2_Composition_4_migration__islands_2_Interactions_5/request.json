@@ -1,0 +1,13 @@
+{
+  "request_hash": "64bb8116a29ba8ce37a7e3123e7f1bac7fbd33be68b54bbead59e584f7bfc5bb",
+  "request": {
+    "call_id": "islands_2_Composition_4_migration__islands_2_Interactions_5",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}.",
+    "prompt": "{\"claims\": {\"1\": \"**Migration Report**\", \"2\": \"**What worked (weakly):** The first attempt, a three-month change in the ratio of two turnover-type flow rates, ranked across groups, gave the only encouraging result.\", \"3\": \"Mean IC was 0.03 and the HAC t-stat was 1.42.\", \"4\": \"The signal was concentrated in low-T periods, and it was near zero in high-T periods.\", \"5\": \"It is suggestive, not significant.\", \"6\": \"**What failed:** Regime-gating a spread between two flow rates (submission 2) covered only 58% of observations and had no high-T output.\", \"7\": \"It gave a slightly negative IC.\", \"8\": \"The stock-versus-flow standardized spread (submission 3) was negative, at -1.18 HAC t, and correlated 0.33 with base features.\", \"9\": \"The pay-per-hours change was flat.\", \"10\": \"**Next:** Try changes in flow-rate ratios with longer smoothing, and avoid regime gating.\"}, \"hypothesis\": \"Groups where flow rate V03 is high relative to V04, both standardized against expanding history and smoothed over 6 months, will have higher next-month returns, extending the only positive prior result (submission 4) with less noise.\", \"expression\": \"spread(mavg(tsz(V03,\\\"exp\\\"),6),mavg(tsz(V04,\\\"exp\\\"),6))\"}"
+  }
+}

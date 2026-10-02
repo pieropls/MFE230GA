@@ -1,0 +1,13 @@
+{
+  "request_hash": "89c9d307ff69f3b3029ca151f257d9ef33ea5792b0e49cccbee7a251b17a0754",
+  "request": {
+    "call_id": "islands_2_Temporal_4_migration__islands_2_Composition_5",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}.",
+    "prompt": "{\"claims\": {\"1\": \"**Migration report**\", \"2\": \"**What worked:** Standardizing V05's year-over-year change against its own expanding history gave a modestly positive rank IC (about 0.06, HAC t 2.2).\", \"3\": \"Correlation with base features was low.\", \"4\": \"Lagging it one month weakened the signal (IC 0.04, t 1.4), so freshness matters.\", \"5\": \"Signal strength appeared stronger when T was high.\", \"6\": \"**What failed:** Counting the share of recent months in which V05 rose (six-month persistence) gave a negative IC (about -0.07, t -1.8).\", \"7\": \"It contradicted my hypothesis and has high rank autocorrelation.\", \"8\": \"Standardizing V03 against its expanding history produced essentially zero IC and weak coverage.\", \"9\": \"**Caveat:** Coverage of the best feature is only about 63%, and its sign was opposite to my stated hypothesis, so treat it cautiously.\"}, \"hypothesis\": \"Groups whose V03 flow rate is high relative to V04 flow rate, each standardized against its own 60-month history, earn higher next-month returns than other groups, with a positive mean IC.\", \"expression\": \"spread(tsz(V03,60),tsz(V04,60))\"}"
+  }
+}

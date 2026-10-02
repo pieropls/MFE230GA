@@ -1,0 +1,13 @@
+{
+  "request_hash": "42447e3ec8f883b3f1e66518411a9593c3321939b28c8fbeaee93f0e5ffef0db",
+  "request": {
+    "call_id": "islands_1_Interactions_2_migration__islands_1_Temporal_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nOur first attempt combined three-month momentum in average hours and in hourly pay as a rank product. It failed. Its next-month predictive correlation was slightly negative, insignificant and unchanged across common-index regimes.\\n\\nThe second attempt favored groups whose V02 flow rate rose faster than V03 over three months. It produced a meaningfully negative correlation, with a t-statistic near minus two, concentrated when the common index was low. Reversing its direction, perhaps conditioned on the low regime, looks promising.\\n\\nBoth features showed low overlap with base signals and moderate rank persistence.\", \"hypothesis\": \"Testing whether submission four's own-history effect generalizes: groups whose twelve-month log growth in average hours (V01), lagged one month, is unusually high versus its own 36-month history outperform peers next month.\", \"expression\": \"tsz(lchg(lag(V01,1),12),36)\"}"
+  }
+}

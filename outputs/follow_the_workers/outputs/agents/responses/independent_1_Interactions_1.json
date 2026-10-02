@@ -1,0 +1,42 @@
+{
+  "request_hash": "85b3a691e1ad171b9b929007c455d14e571600364981e89d9e4a30a0a61f0053",
+  "envelope": {
+    "response": "{\"name\":\"T_regime_conditioned_V02_V03_spread\",\"hypothesis\":\"Groups whose V02 rate exceeds V03 rate (cross-sectionally standardized) earn higher next-month relative returns, and this effect is stronger when T is in its high regime, since the common index conditions how flow imbalances are priced.\",\"falsified_if\":\"Under the high T regime, the cross-sectional rank correlation between the spread and next-month returns is zero or negative, or is not larger than in the low regime.\",\"expression\":\"regime(spread(mavg(V02,3),mavg(V03,3)),\\\"high\\\")\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 41,
+      "cache_creation_input_tokens": 1277,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1277,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.00724,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "85b3a691e1ad171b9b929007c455d14e571600364981e89d9e4a30a0a61f0053"
+  }
+}

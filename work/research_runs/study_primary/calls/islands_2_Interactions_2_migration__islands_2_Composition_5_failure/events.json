@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "The report describes several failures: weak predictive power from an interaction feature, low coverage from a long history requirement, and an invalid submission caused by exceeding the word limit.\n\nThe proposed hypothesis is a spread of two standardized variables, not an interaction. It uses a 60-month history window, which likely still means limited coverage. It also has no regime conditioning. As for the word limit, the hypothesis is about 30 words. The limit isn't stated, so it's unclear whether that failure is avoided. The hypothesis doesn't explicitly address any of the failures.\n\n{\"avoids_failure\": false}"
+          }
+        ],
+        "usage": {
+          "input_tokens": 470,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 2,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "The report describes several failures: weak predictive power from an interaction feature, low coverage from a long history requirement, and an invalid submission caused by exceeding the word limit.\n\nThe proposed hypothesis is a spread of two standardized variables, not an interaction. It uses a 60-month history window, which likely still means limited coverage. It also has no regime conditioning. As for the word limit, the hypothesis is about 30 words. The limit isn't stated, so it's unclear whether that failure is avoided. The hypothesis doesn't explicitly address any of the failures.\n\n{\"avoids_failure\": false}",
+      "usage": {
+        "input_tokens": 470,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 194,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 470,
+          "outputTokens": 194,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0028799999999999997,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0028799999999999997
+    }
+  ],
+  "stderr_present": false
+}

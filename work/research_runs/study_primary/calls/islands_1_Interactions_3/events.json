@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"hours_momentum_in_high_T\",\"hypothesis\":\"Within the high-T regime, groups whose average hours V01 have risen over the past 3 months relative to their own 60-month history earn higher next-month returns; outside high-T the signal is muted. Predicts positive rank IC concentrated in high-T.\",\"falsified_if\":\"High-T mean rank IC is nonpositive, or is not larger than low-T IC, or the HAC t-statistic is below 1.5.\",\"expression\":\"regime(tsz(chg(V01,3),60),\\\"high\\\")\"}"
+          }
+        ],
+        "usage": {
+          "input_tokens": 902,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1277,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 6,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "{\"name\":\"hours_momentum_in_high_T\",\"hypothesis\":\"Within the high-T regime, groups whose average hours V01 have risen over the past 3 months relative to their own 60-month history earn higher next-month returns; outside high-T the signal is muted. Predicts positive rank IC concentrated in high-T.\",\"falsified_if\":\"High-T mean rank IC is nonpositive, or is not larger than low-T IC, or the HAC t-statistic is below 1.5.\",\"expression\":\"regime(tsz(chg(V01,3),60),\\\"high\\\")\"}",
+      "usage": {
+        "input_tokens": 902,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1277,
+        "output_tokens": 189,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 902,
+          "outputTokens": 189,
+          "cacheReadInputTokens": 1277,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0039494000000000005,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0039494000000000005
+    }
+  ],
+  "stderr_present": false
+}

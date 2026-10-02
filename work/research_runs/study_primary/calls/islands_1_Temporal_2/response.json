@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V05_yoy_persist6_highT\",\"hypothesis\":\"Groups with a higher share of positive monthly changes in V05 over the window, applied only in high-T regimes, have higher next-month returns than groups with a lower share, so the cross-sectional rank correlation is positive.\",\"falsified_if\":\"Mean cross-sectional rank correlation with next-month returns is zero or negative, or the HAC t-statistic is below 1.5 in development statistics.\",\"expression\":\"regime(persist(V05,6),\\\"high\\\")\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 333,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 178,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0027013999999999996,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "006c72225572282b593e759865fd7e199bdb6c4bc10a83183352c395a2588da3"
+}

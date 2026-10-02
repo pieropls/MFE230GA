@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-02T07:32:03.715833+00:00",
+  "passed": true,
+  "saved_outputs_only": true,
+  "no_new_return_read_or_backtest": true,
+  "unchanged_numeric_modules": [
+    "data.py",
+    "stats.py"
+  ],
+  "public_research_controls": [
+    {
+      "file": "outputs/research_A0_ledger.csv",
+      "matches_baseline": true,
+      "new_sha256": "213a86c69ba1236bb76967acf502c4a207f35d5a391206a67b5bbd82576f533c",
+      "baseline_sha256": "213a86c69ba1236bb76967acf502c4a207f35d5a391206a67b5bbd82576f533c"
+    },
+    {
+      "file": "outputs/research_A0_weights.csv",
+      "matches_baseline": true,
+      "new_sha256": "ce73c0623ee8e1eae844afb303db53d339f24860336f9b8b65473450a6a11563",
+      "baseline_sha256": "ce73c0623ee8e1eae844afb303db53d339f24860336f9b8b65473450a6a11563"
+    },
+    {
+      "file": "outputs/research_A1_ledger.csv",
+      "matches_baseline": true,
+      "new_sha256": "5185005757dad26f36de256fa4bb91eab08f6f837d3f23b2bd18834074f6686f",
+      "baseline_sha256": "5185005757dad26f36de256fa4bb91eab08f6f837d3f23b2bd18834074f6686f"
+    },
+    {
+      "file": "outputs/research_A1_weights.csv",
+      "matches_baseline": true,
+      "new_sha256": "c2c0b32dbbb64efad07c865c3c5ddaf42eeff8809232eec84fffdfd7338b2b2e",
+      "baseline_sha256": "c2c0b32dbbb64efad07c865c3c5ddaf42eeff8809232eec84fffdfd7338b2b2e"
+    },
+    {
+      "file": "outputs/research_A1-T_ledger.csv",
+      "matches_baseline": true,
+      "new_sha256": "ec151870a068a9e2ba200b8b233cd3bb820881cffdfe8e22be9fc54c45474a15",
+      "baseline_sha256": "ec151870a068a9e2ba200b8b233cd3bb820881cffdfe8e22be9fc54c45474a15"
+    },
+    {
+      "file": "outputs/research_A1-T_weights.csv",
+      "matches_baseline": true,
+      "new_sha256": "1a9d8fa089efcf8393e90f659af15f83afaac27eff47c23b1dfd53677461e091",
+      "baseline_sha256": "1a9d8fa089efcf8393e90f659af15f83afaac27eff47c23b1dfd53677461e091"
+    }
+  ],
+  "interpretation": "Public control performance is unchanged; the differing A3/A4 research portfolios arise from new agent features/selection within the fixed numerical design."
+}

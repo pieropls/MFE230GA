@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "candidate_calls": 108,
+  "total_calls": 199,
+  "log_sha256": "060625023e21998583e465e39e25b32296cc4798a806415677b48f7993c1f4f8",
+  "migration_calls": 18,
+  "syntax_repairs": 1,
+  "evidence_hashes": {
+    "outputs/agents/log.jsonl": "060625023e21998583e465e39e25b32296cc4798a806415677b48f7993c1f4f8"
+  },
+  "limitation": "Automatic identifier/date screening does not prove absence of every possible real-world reference; inspect ambiguous text before freeze."
+}

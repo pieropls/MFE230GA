@@ -1,0 +1,42 @@
+{
+  "request_hash": "5b9ee77282b881a974437c20b04097e94ef379a7c6ec596be51e4dce6ea69128",
+  "envelope": {
+    "response": "{\"name\": \"flow_mix_level_V04_vs_V02_tsz\", \"hypothesis\": \"Groups whose V04 level, cross-sectionally standardized relative to V02, is unusually high versus their own five-year history have compositions tilted toward V04 and earn higher next-month relative returns.\", \"falsified_if\": \"Mean development rank IC is non-positive or its HAC t-statistic is below 2.\", \"expression\": \"csrank(tsz(spread(V04,V02),60))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 324,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1307,
+      "output_tokens": 1144,
+      "output_tokens_details": {
+        "thinking_tokens": 980
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.024437399999999998,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "5b9ee77282b881a974437c20b04097e94ef379a7c6ec596be51e4dce6ea69128"
+  }
+}

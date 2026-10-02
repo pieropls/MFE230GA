@@ -1,0 +1,42 @@
+{
+  "request_hash": "f648dfb1a849919d1adeb3bf29c9c674586b56368462c486f31c93be29f32603",
+  "envelope": {
+    "response": "{\"name\":\"V06_V03_spread_lowT_regime\",\"hypothesis\":\"Groups whose V06 stock rate is high relative to their V03 flow rate, in cross-sectional terms, earn higher next-month returns, because stock-heavy groups are more persistent. Effect should appear mainly in the high-T regime.\",\"falsified_if\":\"Mean rank IC is zero or negative, or HAC t-stat is below 1.5 in absolute value, or high-T IC does not exceed low-T IC.\",\"expression\":\"regime(spread(lag(V06,2),lag(V03,2)),\\\"high\\\")\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1838,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 203,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0059614,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "f648dfb1a849919d1adeb3bf29c9c674586b56368462c486f31c93be29f32603"
+  }
+}

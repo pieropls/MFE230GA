@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V02_V04_tsz_spread_mavg\",\"hypothesis\":\"Groups whose V02 rate is unusually high versus own history relative to V04 (smoothed, expanding-window z-score spread) earn higher next-month relative returns, matching submission 4's positive IC; effect should hold across T regimes.\",\"falsified_if\":\"Mean cross-sectional rank correlation with next-month returns is zero or negative, or HAC t-statistic is below 1, in the full sample.\",\"expression\":\"spread(tsz(mavg(V02,3),\\\"exp\\\"),tsz(mavg(V04,3),\\\"exp\\\"))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1605,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 213,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0055954,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "11a1cb17cfcbc655ed8ae6ef45930b7b73fccc9c1e3a281798a086c38311665a"
+}

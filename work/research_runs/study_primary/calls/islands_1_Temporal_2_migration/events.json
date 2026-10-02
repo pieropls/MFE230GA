@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "**Migration report**\n\nTwo submissions so far, and neither produced a usable signal.\n\nThe first used a standardized version of the V02 flow rate against its own expanding history. Its mean rank correlation was essentially zero, with a HAC t-statistic near zero. The regime split was unstable: slightly negative in low-T and clearly positive (0.12) in high-T. That suggests a regime-dependent sign, not the negative relation I hypothesized. This one failed.\n\nThe second used the share of positive monthly changes in V05, restricted to high-T. It was mildly negative (t of -0.7), with very high rank autocorrelation (0.77), so it is slow-moving. It also failed.\n\nNext: test V02 interacted with T, and try faster-moving temporal features."
+          }
+        ],
+        "usage": {
+          "input_tokens": 698,
+          "cache_creation_input_tokens": 1247,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1247
+          },
+          "output_tokens": 6,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "**Migration report**\n\nTwo submissions so far, and neither produced a usable signal.\n\nThe first used a standardized version of the V02 flow rate against its own expanding history. Its mean rank correlation was essentially zero, with a HAC t-statistic near zero. The regime split was unstable: slightly negative in low-T and clearly positive (0.12) in high-T. That suggests a regime-dependent sign, not the negative relation I hypothesized. This one failed.\n\nThe second used the share of positive monthly changes in V05, restricted to high-T. It was mildly negative (t of -0.7), with very high rank autocorrelation (0.77), so it is slow-moving. It also failed.\n\nNext: test V02 interacted with T, and try faster-moving temporal features.",
+      "usage": {
+        "input_tokens": 698,
+        "cache_creation_input_tokens": 1247,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 247,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 1247,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 698,
+          "outputTokens": 247,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 1247,
+          "webSearchRequests": 0,
+          "costUSD": 0.008854,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.008854
+    }
+  ],
+  "stderr_present": false
+}

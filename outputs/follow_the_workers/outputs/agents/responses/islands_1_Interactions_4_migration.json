@@ -1,0 +1,42 @@
+{
+  "request_hash": "ff3ba5fc7fbe19f710fd7dfda218b8222b1d56600d41dd89475772952bbcebaa",
+  "envelope": {
+    "response": "**Migration report**\n\nAcross four submissions, none produced a usable signal. The first interaction, pairing momentum in one flow rate with wage-level momentum, had essentially zero rank correlation (about 0.00, t near 0.1), in both low and high T states. It also had thin coverage, about half. The second was invalid because I used a non-whitelisted transformation, which wasted a slot. Restricting hours momentum to the high-T regime gave a tiny positive correlation (0.01), with no reliable t-statistic. An hours-versus-wage spread in the high-T regime was slightly negative (-0.02, t -0.4). Regime-gated features were highly persistent (0.45-0.50 autocorrelation). Next I would try other variables and lower-persistence constructions.",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1324,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1247,
+      "output_tokens": 253,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.005427400000000001,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "ff3ba5fc7fbe19f710fd7dfda218b8222b1d56600d41dd89475772952bbcebaa"
+  }
+}

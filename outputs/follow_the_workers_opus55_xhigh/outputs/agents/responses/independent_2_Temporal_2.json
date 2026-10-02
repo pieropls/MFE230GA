@@ -1,0 +1,42 @@
+{
+  "request_hash": "dd9f2b7cb86c1843e37a696602efc00a84d5f1036247d3db44000fa35f17b275",
+  "envelope": {
+    "response": "{\"name\": \"wage_12m_log_growth_rank\", \"hypothesis\": \"Groups with faster 12-month growth in V05 than peers will earn lower next-month relative returns, because sustained hourly-cost growth signals margin pressure, consistent with submission 1's negative response to rising V01.\", \"falsified_if\": \"Mean rank IC with next-month relative returns is non-negative, or HAC t-statistic is above -1, across the development sample.\", \"expression\": \"csrank(lchg(V05,12))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 334,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1308,
+      "output_tokens": 1478,
+      "output_tokens_details": {
+        "thinking_tokens": 1308
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0311576,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "dd9f2b7cb86c1843e37a696602efc00a84d5f1036247d3db44000fa35f17b275"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "79e232099673a67a191514d4651394035d23df915096e0c73e0d08a2b7c0037d",
+  "envelope": {
+    "response": "{\"name\":\"Flow V04 momentum times stock V06 level, T-scaled\",\"hypothesis\":\"Groups with rising flow V04 (3-month change rank) and low stock V06 (cross-sectional rank) have higher next-month relative returns; the interaction is positive predictive, with better IC when T is high, given prior high-T IC signs.\",\"falsified_if\":\"Development mean IC is zero or negative, or HAC t-stat is below 1.\",\"expression\":\"withT(mult(csrank(chg(V04,3)),csrank(V06)))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1265,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 183,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0046154,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "79e232099673a67a191514d4651394035d23df915096e0c73e0d08a2b7c0037d"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "data": {
+    "vintage_cutoffs": "passed",
+    "month_end_calendar": "passed",
+    "sealed_month_count": 142,
+    "seal_closed": "passed",
+    "missing_coverage": "passed",
+    "zero_book_liquidation": "passed",
+    "drift_costs": "passed",
+    "risk_information_cutoff": "passed"
+  },
+  "stats": {
+    "known_IC": "passed",
+    "causal_training": "passed",
+    "whole_month_CV": "passed",
+    "horizon_compounding": "passed",
+    "HAC_gaps": "passed",
+    "bootstrap": "passed",
+    "Holm": "passed"
+  },
+  "agents": {
+    "AST_rejection": "passed",
+    "grammar_semantics": "passed",
+    "blinding": "passed",
+    "causal_transforms": "passed"
+  },
+  "evidence_hashes": {
+    "params.py": "73cd51cefbd34677600cdb932fd2a657379fe26ff91e04c3507f3ce91d470178",
+    "data.py": "517f2e9e0fd284f60d0797b4b916612c22e55f361dd41125dc31b6974458dca8",
+    "stats.py": "c627a8ba4cb6f70fb141bb32688ec59afb62f500dca9a37cdafb30496a40ede7",
+    "agents.py": "12f3e130be2de7508982c30c768b540f2024c2cefeff3c78d77a74439713d12c",
+    "plots.py": "5e4cd7496dc8e5e24e004bdbaeeee42247825ff446c34d3156d08cb626e5356e"
+  }
+}

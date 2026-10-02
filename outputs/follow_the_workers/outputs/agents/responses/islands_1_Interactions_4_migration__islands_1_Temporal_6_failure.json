@@ -1,0 +1,42 @@
+{
+  "request_hash": "fc858656a3835855b1d86c698c3eef66dd574a39da064fd15bcdcba0ac966a8f",
+  "envelope": {
+    "response": "The report lists these failures: the momentum-in-flow-rate \u00d7 wage momentum interaction had ~0 correlation in both regimes; thin coverage; a non-whitelisted transformation (invalid); hours momentum gated to high-T gave tiny correlation; the spread was slightly negative; regime-gated features were highly persistent (0.45-0.50 autocorrelation).\n\nThe proposed expression is regime-gated (low-T), so it likely inherits the high persistence problem. It also uses flow-rate momentum, which was already tried in the interaction, though this is not the identical construction. The gating is not a low-persistence construction. It also uses \"regime\" and \"csrank\" and \"chg\", whose whitelist status is unknown. It does not explicitly address any of the failures: it does not address persistence, coverage, or the whitelist issue.\n\nThe hypothesis is a plain flow-rate momentum signal in the low-T regime, which was already shown to have about zero correlation in the low-T state (as part of the interaction). It doesn't avoid the failures.\n\n{\"avoids_failure\": false}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 475,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 353,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0044800000000000005,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "fc858656a3835855b1d86c698c3eef66dd574a39da064fd15bcdcba0ac966a8f"
+  }
+}

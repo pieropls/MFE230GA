@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"Slack-stock change interaction with wage level\",\"hypothesis\":\"Groups where the 6-month change in the stock rate V06 is low while the V05 wage level ranks high have tighter conditions, so this interaction predicts higher next-month returns cross-sectionally; sign is positive.\",\"falsified_if\":\"Mean cross-sectional IC is zero or negative, or the HAC t-statistic is below 1 in development statistics.\",\"expression\":\"spread(csrank(V05),csrank(chg(V06,6)))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 628,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 176,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0032713999999999994,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "c0089db1772e34e34c5554dff6134b2f20cc213ec72f07ce04d4a86f8ecbdc77"
+}

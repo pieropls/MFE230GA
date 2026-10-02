@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V05_persist6_low_reversal\",\"hypothesis\":\"Groups whose V05 rose in a larger share of recent months will have lower next-month returns, because persistent gains are already priced in. Earlier persist(V05,6) showed negative IC.\",\"falsified_if\":\"Mean rank IC of this feature is non-negative, or HAC t-statistic exceeds -1.0, across development months.\",\"expression\":\"persist(V05,6)\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 149,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0039013999999999997,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "18a43f50e02e0f4b44004867188ecfdea079bc4aa0e8d26873843c0c6c10672a"
+}

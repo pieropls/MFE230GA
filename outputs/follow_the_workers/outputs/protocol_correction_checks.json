@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-29T19:26:59.429577+00:00",
+  "passed": true,
+  "offline_tests": 25,
+  "protocol_tests": 14,
+  "transport_tests": 9,
+  "p1_regressions": 2,
+  "synthetic_integration": true,
+  "evidence_hashes": {
+    "params.py": "73cd51cefbd34677600cdb932fd2a657379fe26ff91e04c3507f3ce91d470178",
+    "data.py": "517f2e9e0fd284f60d0797b4b916612c22e55f361dd41125dc31b6974458dca8",
+    "stats.py": "c627a8ba4cb6f70fb141bb32688ec59afb62f500dca9a37cdafb30496a40ede7",
+    "agents.py": "12f3e130be2de7508982c30c768b540f2024c2cefeff3c78d77a74439713d12c",
+    "plots.py": "5e4cd7496dc8e5e24e004bdbaeeee42247825ff446c34d3156d08cb626e5356e",
+    "run.ipynb": "7e0aad2023cacf9378e75eab325e3ff711d11b50668896f71661d6fa2bdcb189"
+  },
+  "numeric_timing_functions_unchanged": true
+}

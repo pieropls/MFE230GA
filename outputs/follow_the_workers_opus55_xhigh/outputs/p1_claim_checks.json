@@ -1,0 +1,766 @@
+{
+  "utc": "2026-10-02T06:26:32.130375+00:00",
+  "passed": true,
+  "unique_series": 78,
+  "shared_CES_equal_nonmissing_rows": {
+    "asof": 584,
+    "first": 584
+  },
+  "missing_panel_rows": {
+    "ASOF": 8,
+    "FIRST": 8,
+    "REVISED": 8,
+    "FIXEDLAG": 9
+  },
+  "first_missing_then_available": 0,
+  "historical_first_vintage_seeds": {
+    "JOLTS": {
+      "older_observations": 6148,
+      "seeded_at_inception": 6095
+    },
+    "CES": {
+      "older_observations": 2952,
+      "seeded_at_inception": 2952
+    },
+    "CPS": {
+      "older_observations": 0,
+      "seeded_at_inception": 0
+    }
+  },
+  "earliest_sealed_FIRST_public_reference": {
+    "F1": "2014-08",
+    "F2": "2014-08",
+    "F3": "2014-08",
+    "F4": "2014-08",
+    "F5": "2014-09"
+  },
+  "delayed_fixed_lag_series_months": [
+    {
+      "series": "JTU110099JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU110099HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU110099QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU110099LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU1000000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU1000000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU1000000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU1000000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU2300JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU2300HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU2300QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU2300LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU2000000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU2000000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CES2000000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CES2000000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU3200JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU3200HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU3200QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU3200LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU3100000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU3100000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU3100000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU3100000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU3400JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU3400HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU3400QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU3400LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU3200000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU3200000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU3200000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU3200000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU4200JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU4200HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU4200QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU4200LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU4142000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU4142000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU4142000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU4142000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU4400JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU4400HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU4400QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU4400LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU4200000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU4200000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU4200000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU4200000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU480099JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU480099HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU480099QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU480099LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU4300000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU4300000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU4300000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU4300000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5100JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5100HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5100QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5100LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU5000000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU5000000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU5000000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU5000000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5200JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5200HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5200QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5200LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU5500000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU5500000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU5500000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU5500000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5300JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5300HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5300QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU5300LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU540099JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU540099HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU540099QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU540099LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU6000000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU6000000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU6000000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU6000000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU6200JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU6200HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU6200QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU6200LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU6500000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU6500000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU6500000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU6500000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU7200JOR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU7200HIR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU7200QUR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTU7200LDR",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU7000000007",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU7000000007",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "CEU7000000008",
+      "family": "CES",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    },
+    {
+      "series": "CEU7000000008",
+      "family": "CES",
+      "month": "2025-10",
+      "first_release": "2025-12-16",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "JTSJOL",
+      "family": "JOLTS",
+      "month": "2025-09",
+      "first_release": "2025-12-09",
+      "cutoff": "2025-11-27"
+    },
+    {
+      "series": "UNEMPLOY",
+      "family": "CPS",
+      "month": "2025-09",
+      "first_release": "2025-11-20",
+      "cutoff": "2025-10-30"
+    }
+  ],
+  "research_ASOF_FIRST_equal": true,
+  "research_explicitly_labeled_snapshot": true,
+  "Meals_includes_hotels": true,
+  "Telcm_includes_broadcasting_and_cable": true,
+  "scheduled_calendar_months_compared": 300,
+  "calendar_scope": "Independent full scheduled-holiday reconstruction; not an exhaustive independently sourced exceptional-closure history.",
+  "calendar_source": "https://www.nyse.com/trade/hours-calendars",
+  "evidence_hashes": {
+    "data.py": "517f2e9e0fd284f60d0797b4b916612c22e55f361dd41125dc31b6974458dca8",
+    "params.py": "1b86c4a968d2f5b7d22c36efd1aef161c9ded1b3fe74281f35aa04cf098dbe10",
+    "outputs/manifest.csv": "6b6017045a25f0be4f52e2df30ec165fd2433177c5a709844b3a5518c06f733f",
+    "outputs/crosswalk.csv": "f877974ae108ec834bc7bb9f40ed9fe7f14b1fbe76f9f00c5d7052c7dc007e79"
+  }
+}

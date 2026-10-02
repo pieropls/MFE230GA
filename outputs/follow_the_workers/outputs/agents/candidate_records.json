@@ -1,0 +1,3256 @@
+[
+  {
+    "candidate_id": "independent_1_Temporal_1",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 1,
+    "spec": {
+      "name": "tsz_V03_change_6m",
+      "hypothesis": "Groups whose V03 rate has risen most over six months relative to its own long-run history (expanding z-score) will have lower next-month returns, because deteriorating flow rates signal weakening conditions not yet priced in.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month return is non-negative on average, or top-minus-bottom quintile spread is positive.",
+      "expression": "tsz(chg(V03,6),\"exp\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.68,
+      "mean_ic": 0.03,
+      "hac_t": 1.08,
+      "low_T_ic": 0.02,
+      "high_T_ic": 0.13,
+      "max_base_correlation": 0.31,
+      "rank_autocorrelation": 0.15,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "chg",
+      "tsz"
+    ],
+    "research_mean_ic": 0.02928301608137412
+  },
+  {
+    "candidate_id": "independent_1_Composition_1",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 1,
+    "spec": {
+      "name": "Composition-adjusted hours-to-wage spread",
+      "hypothesis": "Groups whose average hours are high relative to their average hourly pay (cross-sectional z-score spread) have a favorable composition of labor input versus cost, so they earn higher returns next month than groups with low hours relative to pay.",
+      "falsified_if": "Cross-sectional rank correlation between the feature and next-month group returns is zero or negative in development statistics, or top-minus-bottom quintile return spread is not positive.",
+      "expression": "spread(mavg(V01,3),mavg(V05,3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.99,
+      "mean_ic": 0.04,
+      "hac_t": 1.06,
+      "low_T_ic": 0.03,
+      "high_T_ic": 0.06,
+      "max_base_correlation": 0.08,
+      "rank_autocorrelation": 1.0,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": 0.03530688874391337
+  },
+  {
+    "candidate_id": "independent_1_Interactions_1",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 1,
+    "spec": {
+      "name": "T_regime_conditioned_V02_V03_spread",
+      "hypothesis": "Groups whose V02 rate exceeds V03 rate (cross-sectionally standardized) earn higher next-month relative returns, and this effect is stronger when T is in its high regime, since the common index conditions how flow imbalances are priced.",
+      "falsified_if": "Under the high T regime, the cross-sectional rank correlation between the spread and next-month returns is zero or negative, or is not larger than in the low regime.",
+      "expression": "regime(spread(mavg(V02,3),mavg(V03,3)),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": -0.07,
+      "hac_t": -1.07,
+      "low_T_ic": null,
+      "high_T_ic": -0.07,
+      "max_base_correlation": 0.18,
+      "rank_autocorrelation": 0.93,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "mavg",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": -0.0654167720541597
+  },
+  {
+    "candidate_id": "independent_1_Temporal_2",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 2,
+    "spec": {
+      "name": "V06_persist_rising_stock",
+      "hypothesis": "Groups whose V06 stock rate has risen in a larger share of months (persistent upward drift) will have lower next-month returns, because persistent deterioration in the stock signals slow-moving weakness that is underreacted to.",
+      "falsified_if": "Mean cross-sectional rank correlation with next-month return is non-negative, or HAC t-statistic is above -1 in absolute favor of a positive sign.",
+      "expression": "persist(V06,6)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": -0.04,
+      "hac_t": -1.65,
+      "low_T_ic": -0.07,
+      "high_T_ic": 0.02,
+      "max_base_correlation": 0.11,
+      "rank_autocorrelation": 0.74,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V06",
+      "persist"
+    ],
+    "research_mean_ic": -0.038930065122305645
+  },
+  {
+    "candidate_id": "independent_1_Composition_2",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 2,
+    "spec": {
+      "name": "Separation-minus-hiring composition spread",
+      "hypothesis": "Groups whose flow rate V02 is high relative to V03 (cross-sectional z-score spread of 6-month averages) have a labor-flow composition that predicts higher returns next month than groups with low V02 relative to V03.",
+      "falsified_if": "Mean cross-sectional rank IC is zero or negative in development statistics, or HAC t-stat is below 1.",
+      "expression": "spread(mavg(V02,6),mavg(V03,6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.97,
+      "mean_ic": -0.02,
+      "hac_t": -0.6,
+      "low_T_ic": -0.03,
+      "high_T_ic": -0.01,
+      "max_base_correlation": 0.22,
+      "rank_autocorrelation": 0.96,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": -0.017382823641526855
+  },
+  {
+    "candidate_id": "independent_1_Interactions_2",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 2,
+    "spec": {
+      "name": "V04_V06_interaction_persistence",
+      "hypothesis": "Groups with a high V04 flow rate multiplied by a high V06 stock rate (both cross-sectionally ranked) earn lower next-month relative returns, because stacked flow and stock pressure signals mean-reversion in group performance.",
+      "falsified_if": "Cross-sectional rank correlation between the feature and next-month returns is zero or positive, with HAC t-statistic above -1.",
+      "expression": "mult(csrank(mavg(V04,3)),csrank(V06))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.99,
+      "mean_ic": -0.02,
+      "hac_t": -0.96,
+      "low_T_ic": -0.03,
+      "high_T_ic": -0.01,
+      "max_base_correlation": 0.08,
+      "rank_autocorrelation": 0.69,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "csrank",
+      "mavg",
+      "mult"
+    ],
+    "research_mean_ic": -0.024390963530124734
+  },
+  {
+    "candidate_id": "independent_1_Temporal_3",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 3,
+    "spec": {
+      "name": "V05_yoy_wage_growth_low_T",
+      "hypothesis": "Groups with higher year-over-year change in V05 (dollars per hour) will have higher next-month returns in low-T regimes, because accelerating compensation signals stronger conditions not yet fully priced in. The effect should vanish in high T.",
+      "falsified_if": "Mean IC in the low-T regime is non-positive, or is not above the high-T IC, or the HAC t-statistic is below 1.",
+      "expression": "regime(yoy(V05),\"low\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.58,
+      "mean_ic": 0.07,
+      "hac_t": 1.64,
+      "low_T_ic": 0.07,
+      "high_T_ic": null,
+      "max_base_correlation": 0.07,
+      "rank_autocorrelation": 0.73,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "regime",
+      "yoy"
+    ],
+    "research_mean_ic": 0.06547578816038288
+  },
+  {
+    "candidate_id": "independent_1_Composition_3",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 3,
+    "spec": {
+      "name": "Stock-rate composition against flow V04 spread",
+      "hypothesis": "Groups whose stock rate V06 (12-month average) is high relative to flow rate V04 have a more persistent, stable composition and earn higher returns next month than groups with low V06 relative to V04.",
+      "falsified_if": "Mean cross-sectional rank IC is zero or negative in development statistics, or HAC t-stat is below 1.",
+      "expression": "spread(mavg(V06,12),mavg(V04,12))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.92,
+      "mean_ic": 0.01,
+      "hac_t": 0.34,
+      "low_T_ic": -0.05,
+      "high_T_ic": 0.05,
+      "max_base_correlation": 0.11,
+      "rank_autocorrelation": 0.99,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": 0.00907077601436043
+  },
+  {
+    "candidate_id": "independent_1_Interactions_3",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 3,
+    "spec": {
+      "name": "V01_V05_hours_wage_interaction_T",
+      "hypothesis": "Groups with high V01 hours combined with rising V05 dollars-per-hour (both cross-sectionally ranked) earn higher next-month relative returns, since tight utilization plus price pressure signals strength. Effect is expected to be positive across T regimes.",
+      "falsified_if": "Cross-sectional rank correlation between the feature and next-month returns is zero or negative, or HAC t-statistic is below 1.",
+      "expression": "mult(csrank(V01),csrank(chg(V05,3)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": -0.03,
+      "hac_t": -1.18,
+      "low_T_ic": 0.01,
+      "high_T_ic": -0.02,
+      "max_base_correlation": 0.05,
+      "rank_autocorrelation": 0.5,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "chg",
+      "csrank",
+      "mult"
+    ],
+    "research_mean_ic": -0.031296375937990215
+  },
+  {
+    "candidate_id": "independent_1_Temporal_4",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 4,
+    "spec": {
+      "name": "V02_V04_spread_lagged_persist",
+      "hypothesis": "Groups whose V02 rate is high relative to V04 in cross-sectional standardized terms, after smoothing over 6 months, will have lower next-month returns, because a persistently elevated V02 versus V04 signals weakening conditions that are slowly priced in.",
+      "falsified_if": "Mean cross-sectional rank IC is non-negative, or HAC t-statistic is above -1, in the development sample.",
+      "expression": "mavg(spread(V02,V04),6)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.97,
+      "mean_ic": 0.03,
+      "hac_t": 1.23,
+      "low_T_ic": 0.05,
+      "high_T_ic": 0.03,
+      "max_base_correlation": 0.11,
+      "rank_autocorrelation": 0.97,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V04",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": 0.028626803964496354
+  },
+  {
+    "candidate_id": "independent_1_Composition_4",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 4,
+    "spec": {
+      "name": "Hours-to-pay spread with 12-month trend change",
+      "hypothesis": "Groups whose average hours (V01) have risen relative to hourly pay (V05) over the past year, in cross-sectional terms, are gaining labor input versus cost and earn higher returns next month than groups where hours fell relative to pay.",
+      "falsified_if": "Mean cross-sectional rank IC is zero or negative in development statistics, or HAC t-stat is below 1.",
+      "expression": "spread(yoy(V01),yoy(V05))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.91,
+      "mean_ic": 0.01,
+      "hac_t": 0.26,
+      "low_T_ic": -0.0,
+      "high_T_ic": -0.03,
+      "max_base_correlation": 0.41,
+      "rank_autocorrelation": 0.73,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "spread",
+      "yoy"
+    ],
+    "research_mean_ic": 0.007089192116220294
+  },
+  {
+    "candidate_id": "independent_1_Interactions_4",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 4,
+    "spec": {
+      "name": "V04_V02_flow_spread_tsz_low_T",
+      "hypothesis": "Groups whose V04 rate is unusually high versus their own history, relative to V02 (cross-sectionally standardized spread of time-series z-scores), earn lower next-month relative returns, especially when T is in its low regime, since stretched flows mean-revert.",
+      "falsified_if": "Mean cross-sectional rank correlation with next-month returns is zero or positive, or HAC t-statistic is above -1, particularly in the low T regime.",
+      "expression": "regime(spread(tsz(V04,60),tsz(V02,60)),\"low\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": 0.07,
+      "hac_t": 1.53,
+      "low_T_ic": 0.07,
+      "high_T_ic": null,
+      "max_base_correlation": 0.16,
+      "rank_autocorrelation": 0.32,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V04",
+      "regime",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": 0.07015077945310505
+  },
+  {
+    "candidate_id": "independent_1_Temporal_5",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 5,
+    "spec": {
+      "name": "V01_hours_accel_smoothed",
+      "hypothesis": "Groups with accelerating average hours V01 (change over 3 months minus prior 3-month change) will have higher next-month returns, because hours adjust before other flows and the acceleration is only slowly priced in.",
+      "falsified_if": "Mean cross-sectional rank IC is non-positive or HAC t-statistic is below 1 in the development sample.",
+      "expression": "mavg(accel(V01),3)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.94,
+      "mean_ic": -0.0,
+      "hac_t": -0.05,
+      "low_T_ic": 0.0,
+      "high_T_ic": 0.02,
+      "max_base_correlation": 0.05,
+      "rank_autocorrelation": 0.51,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "accel",
+      "mavg"
+    ],
+    "research_mean_ic": -0.0010571244804730652
+  },
+  {
+    "candidate_id": "independent_1_Composition_5",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 5,
+    "spec": {
+      "name": "Hours level relative to own history, ranked",
+      "hypothesis": "Groups whose average hours V01 are unusually high versus their own expanding history (time-series z-score) are in a stronger labor-input phase and earn higher returns next month than groups with unusually low hours.",
+      "falsified_if": "Mean cross-sectional rank IC is zero or negative in development statistics, or HAC t-stat is below 1.",
+      "expression": "csrank(tsz(V01,\"exp\"))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.73,
+      "mean_ic": 0.0,
+      "hac_t": 0.09,
+      "low_T_ic": -0.05,
+      "high_T_ic": 0.09,
+      "max_base_correlation": 0.51,
+      "rank_autocorrelation": 0.68,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "csrank",
+      "tsz"
+    ],
+    "research_mean_ic": 0.002760771460866285
+  },
+  {
+    "candidate_id": "independent_1_Interactions_5",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 5,
+    "spec": {
+      "name": "V04_V02_tsz_spread_reversed_mavg",
+      "hypothesis": "Groups whose V04 rate is unusually low versus its own history relative to V02 (spread of expanding-window time-series z-scores, smoothed) earn higher next-month relative returns, since submission 4 showed positive IC opposite to the stated sign; the effect should hold across T regimes.",
+      "falsified_if": "Mean cross-sectional rank correlation with next-month returns is zero or negative, or HAC t-statistic is below 1, in the full sample.",
+      "expression": "spread(tsz(mavg(V02,3),\"exp\"),tsz(mavg(V04,3),\"exp\"))"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "hypothesis has 43 words; maximum is 40"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "independent_1_Temporal_6",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 6,
+    "spec": {
+      "name": "V05_yoy_wage_growth_low_T_smoothed",
+      "hypothesis": "Groups with higher 3-month smoothed year-over-year change in V05 will have higher next-month returns, with a stronger effect when T is low. Smoothing reduces noise while keeping the regime-conditional signal seen earlier.",
+      "falsified_if": "Mean IC is non-positive, HAC t-statistic is below 1, or low-T IC is not above high-T IC in development.",
+      "expression": "regime(mavg(yoy(V05),3),\"low\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.58,
+      "mean_ic": 0.04,
+      "hac_t": 1.25,
+      "low_T_ic": 0.04,
+      "high_T_ic": null,
+      "max_base_correlation": 0.08,
+      "rank_autocorrelation": 0.9,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "mavg",
+      "regime",
+      "yoy"
+    ],
+    "research_mean_ic": 0.04329887434119587
+  },
+  {
+    "candidate_id": "independent_1_Composition_6",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 6,
+    "spec": {
+      "name": "Hours-to-pay spread conditioned on high T regime",
+      "hypothesis": "The hours-to-pay composition spread (3-month averages) predicts next-month group returns more strongly when common index T is in its high regime, since high-T IC was 0.06 versus 0.03 in low T; groups with high hours relative to pay outperform.",
+      "falsified_if": "In development statistics, mean rank IC is zero or negative, or HAC t-stat is below 1, or high-T IC does not exceed low-T IC.",
+      "expression": "regime(spread(mavg(V01,3),mavg(V05,3)),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": 0.1,
+      "hac_t": 1.54,
+      "low_T_ic": null,
+      "high_T_ic": 0.1,
+      "max_base_correlation": 0.07,
+      "rank_autocorrelation": 0.98,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "mavg",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": 0.10104155156201973
+  },
+  {
+    "candidate_id": "independent_1_Interactions_6",
+    "arm": "independent",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 6,
+    "spec": {
+      "name": "V02_V04_tsz_spread_mavg",
+      "hypothesis": "Groups whose V02 rate is unusually high versus own history relative to V04 (smoothed, expanding-window z-score spread) earn higher next-month relative returns, matching submission 4's positive IC; effect should hold across T regimes.",
+      "falsified_if": "Mean cross-sectional rank correlation with next-month returns is zero or negative, or HAC t-statistic is below 1, in the full sample.",
+      "expression": "spread(tsz(mavg(V02,3),\"exp\"),tsz(mavg(V04,3),\"exp\"))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.71,
+      "mean_ic": 0.03,
+      "hac_t": 0.82,
+      "low_T_ic": -0.01,
+      "high_T_ic": 0.14,
+      "max_base_correlation": 0.34,
+      "rank_autocorrelation": 0.75,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V04",
+      "mavg",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": 0.030269746873361186
+  },
+  {
+    "candidate_id": "islands_1_Temporal_1",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 1,
+    "spec": {
+      "name": "V02_tsz_expanding_lag1",
+      "hypothesis": "Groups whose V02 flow rate is unusually high relative to its own expanding history tend to have lower next-month returns than groups with unusually low V02, so the feature's cross-sectional relation to future returns is negative.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month group returns is non-negative or statistically indistinguishable from zero in development statistics.",
+      "expression": "tsz(V02,\"exp\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.73,
+      "mean_ic": -0.0,
+      "hac_t": -0.06,
+      "low_T_ic": -0.04,
+      "high_T_ic": 0.12,
+      "max_base_correlation": 0.43,
+      "rank_autocorrelation": 0.44,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "tsz"
+    ],
+    "research_mean_ic": -0.001989853470560701
+  },
+  {
+    "candidate_id": "islands_1_Composition_1",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 1,
+    "spec": {
+      "name": "V03_share_of_V02_plus_V03_flow_composition",
+      "hypothesis": "Groups whose V03 flow rate is high relative to V02 flow rate, smoothed over 6 months, have higher next-month returns, because the composition of flows toward V03 signals stronger conditions in that group.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month group returns is zero or negative in development statistics, or top-minus-bottom group return spread is not positive.",
+      "expression": "csrank(mavg(ratio(V03,V02),6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.97,
+      "mean_ic": 0.01,
+      "hac_t": 0.25,
+      "low_T_ic": 0.01,
+      "high_T_ic": 0.01,
+      "max_base_correlation": 0.23,
+      "rank_autocorrelation": 0.96,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "csrank",
+      "mavg",
+      "ratio"
+    ],
+    "research_mean_ic": 0.007050526269061565
+  },
+  {
+    "candidate_id": "islands_1_Interactions_1",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 1,
+    "spec": {
+      "name": "tightness_x_wage_momentum",
+      "hypothesis": "Groups where the flow rate V03 has recently fallen relative to its own history, interacted with rising wage level V05 momentum, earn higher next-month returns; the product of the two standardized signals should positively rank-correlate with future group returns.",
+      "falsified_if": "Cross-sectional rank correlation of this feature with next-month group returns is zero or negative on average, or its top-minus-bottom tercile spread is not positive.",
+      "expression": "mult(tsz(chg(V03,3),60), tsz(lchg(V05,3),60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.51,
+      "mean_ic": 0.0,
+      "hac_t": 0.1,
+      "low_T_ic": -0.01,
+      "high_T_ic": -0.0,
+      "max_base_correlation": 0.05,
+      "rank_autocorrelation": 0.14,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V05",
+      "chg",
+      "lchg",
+      "mult",
+      "tsz"
+    ],
+    "research_mean_ic": 0.0029145836936565685
+  },
+  {
+    "candidate_id": "islands_1_Temporal_2",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 2,
+    "spec": {
+      "name": "V05_yoy_persist6_highT",
+      "hypothesis": "Groups with a higher share of positive monthly changes in V05 over the window, applied only in high-T regimes, have higher next-month returns than groups with a lower share, so the cross-sectional rank correlation is positive.",
+      "falsified_if": "Mean cross-sectional rank correlation with next-month returns is zero or negative, or the HAC t-statistic is below 1.5 in development statistics.",
+      "expression": "regime(persist(V05,6),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": -0.03,
+      "hac_t": -0.7,
+      "low_T_ic": null,
+      "high_T_ic": -0.03,
+      "max_base_correlation": 0.09,
+      "rank_autocorrelation": 0.77,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "persist",
+      "regime"
+    ],
+    "research_mean_ic": -0.028664478069965756
+  },
+  {
+    "candidate_id": "islands_1_Composition_2",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 2,
+    "spec": {
+      "name": "V04_V06_composition_spread_3m_change",
+      "hypothesis": "Groups whose V04 flow rate rose more than their V06 stock rate over the last 3 months (cross-sectionally standardized) have higher next-month returns, because flow-versus-stock composition shifts signal improving conditions ahead of the stock.",
+      "falsified_if": "Mean cross-sectional rank IC is zero or negative, or HAC t-statistic is below 1 in development statistics, or the top-minus-bottom group spread is not positive.",
+      "expression": "spread(chg(V04,3),chg(V06,3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": 0.04,
+      "hac_t": 1.57,
+      "low_T_ic": 0.02,
+      "high_T_ic": 0.03,
+      "max_base_correlation": 0.18,
+      "rank_autocorrelation": 0.24,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "chg",
+      "spread"
+    ],
+    "research_mean_ic": 0.03714790097659911
+  },
+  {
+    "candidate_id": "islands_1_Interactions_2",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 2,
+    "spec": {
+      "name": "hours_x_separation_regime_spread",
+      "hypothesis": "Groups with rising average hours V01 while the flow rate V02 is low relative to its own expanding history earn higher next-month returns; the interaction of hours momentum and negative V02 standardized level should rank-correlate positively with future returns.",
+      "falsified_if": "Mean cross-sectional rank IC is nonpositive, or HAC t-statistic is below 1.5, or the top-minus-bottom tercile spread is not positive.",
+      "expression": "mult(tsz(chg(V01,3),\"exp\"), csrank(ratio(1,tsz(V02,\"exp\"))))"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "Only whitelisted function calls and variables are allowed"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "islands_1_Temporal_3",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 3,
+    "spec": {
+      "name": "V03_accel_csrank",
+      "hypothesis": "Groups whose V03 flow rate is accelerating, measured by the change in its 3-month change, have lower next-month returns than groups with decelerating V03, so the cross-sectional rank correlation with future returns is negative.",
+      "falsified_if": "Mean cross-sectional rank correlation with next-month returns is zero or positive, or the absolute HAC t-statistic is below 1.5 in development statistics.",
+      "expression": "csrank(accel(V03))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": 0.02,
+      "hac_t": 0.63,
+      "low_T_ic": 0.08,
+      "high_T_ic": -0.05,
+      "max_base_correlation": 0.07,
+      "rank_autocorrelation": 0.2,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "accel",
+      "csrank"
+    ],
+    "research_mean_ic": 0.017128307849639268
+  },
+  {
+    "candidate_id": "islands_1_Composition_3",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 3,
+    "spec": {
+      "name": "V03_V04_composition_spread_6m_mavg",
+      "hypothesis": "Groups whose V03 flow rate, smoothed over 6 months, is high relative to V04 flow rate (cross-sectionally standardized) have higher next-month returns, because a composition tilt toward V03 signals improving conditions. Expect positive IC in both T regimes.",
+      "falsified_if": "Mean rank IC is zero or negative, HAC t-statistic is below 1, or high_T and low_T IC have opposite signs in development statistics.",
+      "expression": "spread(mavg(V03,6),mavg(V04,6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.97,
+      "mean_ic": 0.0,
+      "hac_t": 0.12,
+      "low_T_ic": 0.03,
+      "high_T_ic": 0.01,
+      "max_base_correlation": 0.18,
+      "rank_autocorrelation": 0.97,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V04",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": 0.0031194170214064523
+  },
+  {
+    "candidate_id": "islands_1_Interactions_3",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 3,
+    "spec": {
+      "name": "hours_momentum_in_high_T",
+      "hypothesis": "Within the high-T regime, groups whose average hours V01 have risen over the past 3 months relative to their own 60-month history earn higher next-month returns; outside high-T the signal is muted. Predicts positive rank IC concentrated in high-T.",
+      "falsified_if": "High-T mean rank IC is nonpositive, or is not larger than low-T IC, or the HAC t-statistic is below 1.5.",
+      "expression": "regime(tsz(chg(V01,3),60),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.51,
+      "mean_ic": 0.01,
+      "hac_t": null,
+      "low_T_ic": null,
+      "high_T_ic": 0.01,
+      "max_base_correlation": 0.11,
+      "rank_autocorrelation": 0.45,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "chg",
+      "regime",
+      "tsz"
+    ],
+    "research_mean_ic": 0.011004136957614591
+  },
+  {
+    "candidate_id": "islands_1_Temporal_4",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 4,
+    "spec": {
+      "name": "V06_yoy_spread_V04",
+      "hypothesis": "Groups whose V06 stock rate has risen more over 12 months relative to their V04 flow rate, compared cross-sectionally, have lower next-month returns, so the cross-sectional rank correlation with future returns is negative.",
+      "falsified_if": "Mean cross-sectional rank correlation with next-month returns is zero or positive, or the absolute HAC t-statistic is below 1.5 in development statistics.",
+      "expression": "spread(yoy(V06),mavg(V04,6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.91,
+      "mean_ic": 0.03,
+      "hac_t": 1.19,
+      "low_T_ic": -0.01,
+      "high_T_ic": 0.08,
+      "max_base_correlation": 0.43,
+      "rank_autocorrelation": 0.63,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "mavg",
+      "spread",
+      "yoy"
+    ],
+    "research_mean_ic": 0.03397023914729897
+  },
+  {
+    "candidate_id": "islands_1_Composition_4",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 4,
+    "spec": {
+      "name": "V02_V03_flow_spread_3m_change",
+      "hypothesis": "Groups whose V02 flow rate rose more than their V03 flow rate over the last 3 months (standardized across groups) have higher next-month returns, because a faster-moving composition shift should carry more signal than the smoothed levels tried earlier.",
+      "falsified_if": "Mean rank IC is zero or negative, HAC t-statistic is below 1, or high_T and low_T IC have opposite signs in development statistics.",
+      "expression": "spread(chg(V02,3),chg(V03,3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": -0.06,
+      "hac_t": -2.08,
+      "low_T_ic": -0.12,
+      "high_T_ic": -0.0,
+      "max_base_correlation": 0.13,
+      "rank_autocorrelation": 0.21,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "chg",
+      "spread"
+    ],
+    "research_mean_ic": -0.0562773078137097
+  },
+  {
+    "candidate_id": "islands_1_Interactions_4",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 4,
+    "spec": {
+      "name": "hours_wage_spread_high_T",
+      "hypothesis": "Groups whose average hours V01 have risen faster than wage level V05 over 3 months, in cross-sectional standardized terms, earn higher next-month returns, and this effect is concentrated in high-T. Predicts positive rank IC.",
+      "falsified_if": "Mean rank IC is nonpositive, HAC t-statistic is below 1.5, or high-T IC is not larger than low-T IC.",
+      "expression": "regime(spread(lchg(V01,3),lchg(V05,3)),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": -0.02,
+      "hac_t": -0.4,
+      "low_T_ic": null,
+      "high_T_ic": -0.02,
+      "max_base_correlation": 0.06,
+      "rank_autocorrelation": 0.5,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "lchg",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": -0.01850912189945272
+  },
+  {
+    "candidate_id": "islands_1_Temporal_5",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 5,
+    "spec": {
+      "name": "V01_lchg3_csrank",
+      "hypothesis": "Groups with larger 3-month log increases in average hours V01, ranked cross-sectionally, have higher next-month returns than groups with smaller increases, so the cross-sectional rank correlation is positive.",
+      "falsified_if": "Mean cross-sectional rank correlation with next-month returns is zero or negative, or the HAC t-statistic is below 1.5 in development statistics.",
+      "expression": "csrank(lchg(V01,3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": -0.01,
+      "hac_t": -0.51,
+      "low_T_ic": -0.06,
+      "high_T_ic": -0.01,
+      "max_base_correlation": 0.2,
+      "rank_autocorrelation": 0.38,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "csrank",
+      "lchg"
+    ],
+    "research_mean_ic": -0.010601269505709025
+  },
+  {
+    "candidate_id": "islands_1_Composition_5",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 5,
+    "spec": {
+      "name": "V04_V06_composition_spread_6m_change",
+      "hypothesis": "Groups whose V04 flow rate rose more than their V06 stock rate over the last 6 months (standardized across groups) have higher next-month returns, extending the 3-month version that showed positive IC. Expect positive IC in both T regimes.",
+      "falsified_if": "Mean rank IC is zero or negative, HAC t-statistic is below 1, or high_T and low_T IC have opposite signs in development statistics.",
+      "expression": "spread(chg(V04,6),chg(V06,6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": 0.05,
+      "hac_t": 1.9,
+      "low_T_ic": 0.01,
+      "high_T_ic": 0.08,
+      "max_base_correlation": 0.26,
+      "rank_autocorrelation": 0.4,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "chg",
+      "spread"
+    ],
+    "research_mean_ic": 0.05194379633798394
+  },
+  {
+    "candidate_id": "islands_1_Interactions_5",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 5,
+    "spec": {
+      "name": "flow_V04_minus_V06_stock_spread",
+      "hypothesis": "Groups whose flow rate V04 has risen over 3 months relative to their own 60-month history, while the stock rate V06 is comparatively low cross-sectionally, earn lower next-month returns. The spread of V06 and V04 should rank-correlate positively with future returns.",
+      "falsified_if": "Mean rank IC is nonpositive, HAC t-statistic is below 1.5, or the top-minus-bottom tercile spread is not positive.",
+      "expression": "spread(tsz(chg(V06,3),60),tsz(chg(V04,3),60))"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "hypothesis has 41 words; maximum is 40"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "islands_1_Temporal_6",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Temporal",
+    "submission": 6,
+    "spec": {
+      "name": "V04_chg3_csrank_lowT",
+      "hypothesis": "Groups with larger 3-month increases in the V04 flow rate, ranked cross-sectionally and applied only in low-T regimes, have lower next-month returns than groups with smaller increases, so the rank correlation is negative.",
+      "falsified_if": "Mean cross-sectional rank correlation with next-month returns is zero or positive, or the absolute HAC t-statistic is below 1.5 in development statistics.",
+      "expression": "regime(csrank(chg(V04,3)),\"low\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.58,
+      "mean_ic": -0.02,
+      "hac_t": -0.56,
+      "low_T_ic": -0.02,
+      "high_T_ic": null,
+      "max_base_correlation": 0.07,
+      "rank_autocorrelation": 0.26,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "chg",
+      "csrank",
+      "regime"
+    ],
+    "research_mean_ic": -0.02282657604776665
+  },
+  {
+    "candidate_id": "islands_1_Composition_6",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Composition",
+    "submission": 6,
+    "spec": {
+      "name": "V04_V06_spread_3m_and_6m_change_avg",
+      "hypothesis": "Groups whose V04 flow rate rose more than their V06 stock rate over 12 months (standardized across groups) have higher next-month returns, extending the positive 3- and 6-month versions. Expect positive IC in both T regimes.",
+      "falsified_if": "Mean rank IC is zero or negative, HAC t-statistic is below 1, or high_T and low_T IC have opposite signs in development statistics.",
+      "expression": "spread(chg(V04,12),chg(V06,12))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.91,
+      "mean_ic": -0.02,
+      "hac_t": -0.78,
+      "low_T_ic": 0.02,
+      "high_T_ic": -0.04,
+      "max_base_correlation": 0.53,
+      "rank_autocorrelation": 0.38,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "chg",
+      "spread"
+    ],
+    "research_mean_ic": -0.020144264519623124
+  },
+  {
+    "candidate_id": "islands_1_Interactions_6",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "Interactions",
+    "submission": 6,
+    "spec": {
+      "name": "V06_stock_minus_V04_flow_spread",
+      "hypothesis": "Groups with a high V06 stock rate relative to V04 flow rate, cross-sectionally standardized, earn higher next-month returns, since a persistent stock exceeding current flow suggests stability. Predicts positive rank IC.",
+      "falsified_if": "Mean rank IC is nonpositive, HAC t-statistic is below 1.5, or top-minus-bottom tercile spread is not positive.",
+      "expression": "spread(tsz(V06,60),tsz(V04,60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": -0.06,
+      "hac_t": -1.94,
+      "low_T_ic": -0.05,
+      "high_T_ic": -0.04,
+      "max_base_correlation": 0.37,
+      "rank_autocorrelation": 0.46,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": -0.05995643272005013
+  },
+  {
+    "candidate_id": "independent_2_Temporal_1",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 1,
+    "spec": {
+      "name": "V03_tsz_expanding_persistence",
+      "hypothesis": "Groups whose V03 rate is unusually high relative to its own expanding history (tsz exp) will have higher next-month returns, because temporary flow-rate deviations continue to be priced in slowly.",
+      "falsified_if": "Mean cross-sectional rank correlation between this feature and next-month group returns is zero or negative, or its sign flips across most subperiods.",
+      "expression": "tsz(V03,\"exp\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.73,
+      "mean_ic": -0.0,
+      "hac_t": -0.1,
+      "low_T_ic": -0.05,
+      "high_T_ic": 0.17,
+      "max_base_correlation": 0.47,
+      "rank_autocorrelation": 0.34,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "tsz"
+    ],
+    "research_mean_ic": -0.0035889460121532827
+  },
+  {
+    "candidate_id": "independent_2_Composition_1",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 1,
+    "spec": {
+      "name": "Composition_ratio_rank_smoothed",
+      "hypothesis": "Groups whose V03 flow rate is high relative to V02 flow rate, smoothed over 6 months, have higher next-month returns, because a persistently favorable composition of flows signals improving conditions.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month group returns is zero or negative on average, or unstable in sign across subperiods.",
+      "expression": "csrank(mavg(ratio(V03,V02),6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.97,
+      "mean_ic": 0.01,
+      "hac_t": 0.25,
+      "low_T_ic": 0.01,
+      "high_T_ic": 0.01,
+      "max_base_correlation": 0.23,
+      "rank_autocorrelation": 0.96,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "csrank",
+      "mavg",
+      "ratio"
+    ],
+    "research_mean_ic": 0.007050526269061565
+  },
+  {
+    "candidate_id": "independent_2_Interactions_1",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 1,
+    "spec": {
+      "name": "Wage-hours interaction tsz",
+      "hypothesis": "Groups where average hourly dollars (V05) are unusually high versus their own history and average hours (V01) are also unusually high have stronger labor demand and higher next-month returns; the interaction should predict positively.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month group returns is zero or negative in development statistics, with insignificant mean information coefficient.",
+      "expression": "mult(tsz(V05,60),tsz(V01,60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": -0.02,
+      "hac_t": -0.61,
+      "low_T_ic": -0.03,
+      "high_T_ic": -0.3,
+      "max_base_correlation": 0.53,
+      "rank_autocorrelation": 0.58,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "mult",
+      "tsz"
+    ],
+    "research_mean_ic": -0.018940556071073183
+  },
+  {
+    "candidate_id": "independent_2_Temporal_2",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 2,
+    "spec": {
+      "name": "V05_yoy_accel_highT",
+      "hypothesis": "Groups whose V05 wage level has risen faster over the past year, measured by the 12-month change in its 6-month average, will have higher next-month returns, because sustained cost or income growth is underpriced.",
+      "falsified_if": "Mean cross-sectional rank IC is zero or negative, or HAC t-statistic is below 1.0 in development data.",
+      "expression": "csrank(yoy(mavg(V05,6)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.87,
+      "mean_ic": -0.02,
+      "hac_t": -0.7,
+      "low_T_ic": -0.03,
+      "high_T_ic": -0.0,
+      "max_base_correlation": 0.09,
+      "rank_autocorrelation": 0.96,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "csrank",
+      "mavg",
+      "yoy"
+    ],
+    "research_mean_ic": -0.02183486758370907
+  },
+  {
+    "candidate_id": "independent_2_Composition_2",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 2,
+    "spec": {
+      "name": "Composition_spread_V04_V06_high_T",
+      "hypothesis": "Groups whose V04 flow rate is high relative to V06 stock rate, in cross-sectional standardized terms, have higher next-month returns, because flows exceeding the existing stock indicate a shifting composition. The effect should be stronger when T is high.",
+      "falsified_if": "Mean rank IC is zero or negative, or the high-T regime IC is not larger than the low-T regime IC, across development subperiods.",
+      "expression": "regime(spread(V04,V06),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": 0.01,
+      "hac_t": 0.34,
+      "low_T_ic": null,
+      "high_T_ic": 0.01,
+      "max_base_correlation": 0.12,
+      "rank_autocorrelation": 0.79,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": 0.010300149505989922
+  },
+  {
+    "candidate_id": "independent_2_Interactions_2",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 2,
+    "spec": {
+      "name": "Separation-rate change interaction with hours",
+      "hypothesis": "Groups where the 3-month change in the V02 flow rate is high while average hours (V01) are weak relative to their own history are under labor-market stress and should have lower next-month returns; feature should correlate negatively.",
+      "falsified_if": "Mean information coefficient is positive or insignificant (|HAC t| below 2) in development statistics, or the sign is unstable across low and high T regimes.",
+      "expression": "mult(chg(V02,3),tsz(V01,60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": -0.08,
+      "hac_t": -2.69,
+      "low_T_ic": -0.08,
+      "high_T_ic": -0.22,
+      "max_base_correlation": 0.03,
+      "rank_autocorrelation": 0.26,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V02",
+      "chg",
+      "mult",
+      "tsz"
+    ],
+    "research_mean_ic": -0.07765862157722185
+  },
+  {
+    "candidate_id": "independent_2_Temporal_3",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 3,
+    "spec": {
+      "name": "V02_V04_spread_highT",
+      "hypothesis": "Groups with a higher V02 rate relative to V04, cross-sectionally standardized, will have higher next-month returns, and the effect will be stronger when T is high, because flow-rate imbalances are absorbed slowly.",
+      "falsified_if": "Mean cross-sectional rank IC is zero or negative, or high-T IC is not greater than low-T IC in development data.",
+      "expression": "regime(spread(V02,V04),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": 0.02,
+      "hac_t": 0.37,
+      "low_T_ic": null,
+      "high_T_ic": 0.02,
+      "max_base_correlation": 0.18,
+      "rank_autocorrelation": 0.63,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V04",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": 0.015054253180010226
+  },
+  {
+    "candidate_id": "independent_2_Composition_3",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 3,
+    "spec": {
+      "name": "Composition_V05_vs_V01_change_spread",
+      "hypothesis": "Groups whose V05 average level rose over 6 months relative to V01 average hours, in cross-sectional standardized terms, have higher next-month returns, because a composition shift toward higher V05 per V01 signals improving conditions.",
+      "falsified_if": "Mean rank IC is zero or negative, or its HAC t-statistic is below 1 in development, or the sign flips across subperiods.",
+      "expression": "spread(lchg(V05,6),lchg(V01,6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": 0.0,
+      "hac_t": 0.09,
+      "low_T_ic": 0.07,
+      "high_T_ic": -0.0,
+      "max_base_correlation": 0.21,
+      "rank_autocorrelation": 0.58,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "lchg",
+      "spread"
+    ],
+    "research_mean_ic": 0.0030238972008130214
+  },
+  {
+    "candidate_id": "independent_2_Interactions_3",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 3,
+    "spec": {
+      "name": "Flow-rate spread interaction with T regime",
+      "hypothesis": "Groups whose V03 flow rate rose over 3 months relative to V04 (cross-sectional spread) tend to have lower next-month returns, and this effect is stronger when T is high. Feature should correlate negatively.",
+      "falsified_if": "Mean IC is positive or |HAC t| is below 2, or high_T IC is not more negative than low_T IC.",
+      "expression": "regime(spread(chg(V03,3),chg(V04,3)),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": 0.02,
+      "hac_t": 0.37,
+      "low_T_ic": null,
+      "high_T_ic": 0.02,
+      "max_base_correlation": 0.1,
+      "rank_autocorrelation": 0.14,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V04",
+      "chg",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": 0.02015492346241105
+  },
+  {
+    "candidate_id": "independent_2_Temporal_4",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 4,
+    "spec": {
+      "name": "V06_stock_change_persistence",
+      "hypothesis": "Groups where the V06 stock rate has risen in a larger share of months (persist, 6-month window) will have higher next-month returns, because persistent stock buildup reflects slowly incorporated trends. Expect positive cross-sectional IC.",
+      "falsified_if": "Mean cross-sectional rank IC is zero or negative, or HAC t-statistic is below 1.0 in development data.",
+      "expression": "persist(V06,6)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": -0.04,
+      "hac_t": -1.65,
+      "low_T_ic": -0.07,
+      "high_T_ic": 0.02,
+      "max_base_correlation": 0.11,
+      "rank_autocorrelation": 0.74,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V06",
+      "persist"
+    ],
+    "research_mean_ic": -0.038930065122305645
+  },
+  {
+    "candidate_id": "independent_2_Composition_4",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 4,
+    "spec": {
+      "name": "Composition_V02_V03_accel_spread",
+      "hypothesis": "Groups whose V02 flow rate has accelerated less than V03 over recent quarters, in cross-sectional standardized terms, have higher next-month returns, because a shifting composition of flows toward V03 signals improving conditions.",
+      "falsified_if": "Mean rank IC is zero or negative, HAC t-statistic is below 1, or the IC sign flips across development subperiods.",
+      "expression": "spread(accel(V03),accel(V02))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": 0.04,
+      "hac_t": 1.61,
+      "low_T_ic": 0.09,
+      "high_T_ic": 0.0,
+      "max_base_correlation": 0.06,
+      "rank_autocorrelation": 0.16,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "accel",
+      "spread"
+    ],
+    "research_mean_ic": 0.04144930974660461
+  },
+  {
+    "candidate_id": "independent_2_Interactions_4",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 4,
+    "spec": {
+      "name": "Separation-rate change interaction with wage tsz",
+      "hypothesis": "Groups with rising V02 over 3 months while hourly dollars (V05) are unusually low versus own history face labor weakness and should have lower next-month returns; the feature should correlate negatively, building on the earlier V02 result.",
+      "falsified_if": "Mean IC is positive or |HAC t| is below 2 in development statistics, or low_T and high_T ICs have opposite signs.",
+      "expression": "mult(chg(V02,3),tsz(V05,60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": -0.06,
+      "hac_t": -1.36,
+      "low_T_ic": -0.07,
+      "high_T_ic": 0.05,
+      "max_base_correlation": 0.2,
+      "rank_autocorrelation": 0.26,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V05",
+      "chg",
+      "mult",
+      "tsz"
+    ],
+    "research_mean_ic": -0.05579631954750443
+  },
+  {
+    "candidate_id": "independent_2_Temporal_5",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 5,
+    "spec": {
+      "name": "V06_persist_reversal",
+      "hypothesis": "Groups whose V06 stock rate rose in a smaller share of the past 6 months will have higher next-month returns, because persistent buildup was negatively signed in development. Expect negative IC for persist(V06,6), so its lagged reversal is positive.",
+      "falsified_if": "Mean cross-sectional rank IC of the feature is zero or negative, or HAC t-statistic is below 1.0 in development data.",
+      "expression": "csrank(mult(persist(V06,6),-1))"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "Only whitelisted function calls and variables are allowed"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "independent_2_Composition_5",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 5,
+    "spec": {
+      "name": "Composition_V03_V04_accel_spread_lowT",
+      "hypothesis": "Groups whose V03 flow rate has accelerated more than V04 over recent quarters, in cross-sectional standardized terms, have higher next-month returns, extending the accel-spread signal of submission 4, with the effect stronger when T is low.",
+      "falsified_if": "Mean rank IC is zero or negative, HAC t-statistic is below 1, or low-T IC is not larger than high-T IC.",
+      "expression": "regime(spread(accel(V03),accel(V04)),\"low\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.58,
+      "mean_ic": 0.1,
+      "hac_t": 2.4,
+      "low_T_ic": 0.1,
+      "high_T_ic": null,
+      "max_base_correlation": 0.07,
+      "rank_autocorrelation": 0.15,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V04",
+      "accel",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": 0.10209213096603909
+  },
+  {
+    "candidate_id": "independent_2_Interactions_5",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 5,
+    "spec": {
+      "name": "Separation-rate change interaction with hours, exp tsz",
+      "hypothesis": "Groups with rising V02 over 3 months while hours (V01) are weak versus expanding-window history face labor stress and have lower next-month returns; the longer-history normalization should keep the negative sign and improve stability and coverage.",
+      "falsified_if": "Mean IC is positive or |HAC t| is below 2 in development statistics, or low_T and high_T ICs have opposite signs.",
+      "expression": "mult(chg(V02,3),tsz(V01,\"exp\"))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.73,
+      "mean_ic": -0.05,
+      "hac_t": -1.92,
+      "low_T_ic": -0.07,
+      "high_T_ic": -0.08,
+      "max_base_correlation": 0.02,
+      "rank_autocorrelation": 0.29,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V02",
+      "chg",
+      "mult",
+      "tsz"
+    ],
+    "research_mean_ic": -0.04609328656428114
+  },
+  {
+    "candidate_id": "independent_2_Temporal_6",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 6,
+    "spec": {
+      "name": "V06_persist_3_reversal_lowT",
+      "hypothesis": "Groups whose V06 stock rate rose in a smaller share of recent months will have higher next-month returns, because persistent buildup was negatively signed in development; low-T regime should show the effect. Expect negative IC for persist(V06,3).",
+      "falsified_if": "Mean cross-sectional rank IC of the feature is zero or positive, or HAC t-statistic is above -1.0 in development data.",
+      "expression": "persist(V06,3)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": -0.03,
+      "hac_t": -1.34,
+      "low_T_ic": -0.04,
+      "high_T_ic": 0.01,
+      "max_base_correlation": 0.11,
+      "rank_autocorrelation": 0.52,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V06",
+      "persist"
+    ],
+    "research_mean_ic": -0.030064147357882667
+  },
+  {
+    "candidate_id": "independent_2_Composition_6",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 6,
+    "spec": {
+      "name": "Composition_V03_V04_accel_spread_lag1",
+      "hypothesis": "Groups whose V03 flow rate accelerated more than V04 over recent quarters, in cross-sectional standardized terms, have higher next-month returns. The signal should persist across all T states, not only low T, with positive average IC.",
+      "falsified_if": "Mean rank IC is zero or negative, HAC t-statistic is below 1, or IC sign differs between low-T and high-T regimes.",
+      "expression": "spread(accel(V03),accel(V04))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": 0.05,
+      "hac_t": 1.88,
+      "low_T_ic": 0.11,
+      "high_T_ic": 0.01,
+      "max_base_correlation": 0.12,
+      "rank_autocorrelation": 0.17,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V04",
+      "accel",
+      "spread"
+    ],
+    "research_mean_ic": 0.049455008449207596
+  },
+  {
+    "candidate_id": "independent_2_Interactions_6",
+    "arm": "independent",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 6,
+    "spec": {
+      "name": "Separation-rate change interaction with hours, 36m tsz",
+      "hypothesis": "Groups with rising V02 over 3 months while hours (V01) are weak versus a 36-month history face labor stress and have lower next-month returns; a shorter window should keep the negative sign, with stable low and high T ICs.",
+      "falsified_if": "Mean IC is positive or |HAC t| is below 2 in development statistics, or low_T and high_T ICs have opposite signs.",
+      "expression": "mult(chg(V02,3),tsz(V01,36))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.73,
+      "mean_ic": -0.05,
+      "hac_t": -1.84,
+      "low_T_ic": -0.08,
+      "high_T_ic": -0.09,
+      "max_base_correlation": 0.05,
+      "rank_autocorrelation": 0.2,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V02",
+      "chg",
+      "mult",
+      "tsz"
+    ],
+    "research_mean_ic": -0.05148322811219162
+  },
+  {
+    "candidate_id": "islands_2_Temporal_1",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 1,
+    "spec": {
+      "name": "V03_tsz_expanding_change",
+      "hypothesis": "Groups whose V03 rate is unusually high relative to its own expanding history will have lower returns next month, because elevated flow rates signal deteriorating conditions that the market prices in with delay.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month group returns is non-negative on average in development data, or the top-minus-bottom quintile spread is positive.",
+      "expression": "tsz(V03,\"exp\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.73,
+      "mean_ic": -0.0,
+      "hac_t": -0.1,
+      "low_T_ic": -0.05,
+      "high_T_ic": 0.17,
+      "max_base_correlation": 0.47,
+      "rank_autocorrelation": 0.34,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "tsz"
+    ],
+    "research_mean_ic": -0.0035889460121532827
+  },
+  {
+    "candidate_id": "islands_2_Composition_1",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 1,
+    "spec": {
+      "name": "Composition_ratio_rank_change",
+      "hypothesis": "Groups whose V03 flow rate rose relative to V02 flow rate over the past 3 months have improving composition of labor turnover and earn higher next-month returns than other groups.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month group returns is zero or negative in development statistics, or the top-minus-bottom spread is insignificant.",
+      "expression": "csrank(chg(ratio(V03,V02),3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": 0.03,
+      "hac_t": 1.42,
+      "low_T_ic": 0.07,
+      "high_T_ic": -0.0,
+      "max_base_correlation": 0.13,
+      "rank_autocorrelation": 0.22,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "chg",
+      "csrank",
+      "ratio"
+    ],
+    "research_mean_ic": 0.032442404975972956
+  },
+  {
+    "candidate_id": "islands_2_Interactions_1",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 1,
+    "spec": {
+      "name": "V02_x_V06_interaction_tsz",
+      "hypothesis": "Groups where the flow rate V02 is unusually high relative to its own history and the stock rate V06 is also elevated will have lower next-month returns than other groups, reflecting stress that compounds across the two variables.",
+      "falsified_if": "The cross-sectional rank correlation between this feature and next-month group returns is non-negative or statistically indistinguishable from zero in development statistics.",
+      "expression": "mult(tsz(V02,60),tsz(V06,60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": -0.02,
+      "hac_t": -0.43,
+      "low_T_ic": -0.01,
+      "high_T_ic": 0.26,
+      "max_base_correlation": 0.06,
+      "rank_autocorrelation": 0.27,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V06",
+      "mult",
+      "tsz"
+    ],
+    "research_mean_ic": -0.015121192246502485
+  },
+  {
+    "candidate_id": "islands_2_Temporal_2",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 2,
+    "spec": {
+      "name": "V05_yoy_persist6_temporal",
+      "hypothesis": "Groups whose V05 dollars-per-hour level has risen in a larger share of recent months (persist over 6 months) will have higher returns next month, because steady upward momentum in this average reflects continuing strength that is priced in slowly.",
+      "falsified_if": "Mean cross-sectional rank IC is non-positive or HAC t-statistic is below 1 in development data, or the top-minus-bottom quintile spread is negative.",
+      "expression": "persist(V05,6)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": -0.07,
+      "hac_t": -1.82,
+      "low_T_ic": -0.04,
+      "high_T_ic": -0.09,
+      "max_base_correlation": 0.05,
+      "rank_autocorrelation": 0.83,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "persist"
+    ],
+    "research_mean_ic": -0.06534173384840165
+  },
+  {
+    "candidate_id": "islands_2_Composition_2",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 2,
+    "spec": {
+      "name": "Composition_V04_share_spread_regime",
+      "hypothesis": "Groups with a higher V04 rate relative to V02 rate, cross-sectionally standardized, earn higher next-month returns, and the effect is stronger when T is low, since previous IC was positive only in low T.",
+      "falsified_if": "Mean IC is zero or negative in development statistics, or low-T regime IC is not greater than high-T regime IC.",
+      "expression": "regime(spread(V04,V02),\"low\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.58,
+      "mean_ic": -0.01,
+      "hac_t": -0.26,
+      "low_T_ic": -0.01,
+      "high_T_ic": null,
+      "max_base_correlation": 0.1,
+      "rank_autocorrelation": 0.65,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V04",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": -0.011534754446718929
+  },
+  {
+    "candidate_id": "islands_2_Interactions_2",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 2,
+    "spec": {
+      "name": "V05_wage_x_V01_hours_regime",
+      "hypothesis": "Groups where hourly pay V05 growth over 12 months is high while average hours V01 are also rising will have higher next-month returns, since pay and hours rising together signal demand strength. The effect should be stronger in the high T regime.",
+      "falsified_if": "Mean IC is non-positive or the HAC t-stat is below 1.0 in development statistics, or high-T IC is not greater than low-T IC.",
+      "expression": "regime(mult(csrank(yoy(V05)),csrank(yoy(V01))),\"high\")"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "hypothesis has 42 words; maximum is 40"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "islands_2_Temporal_3",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 3,
+    "spec": {
+      "name": "V05_yoy_tsz_reversal",
+      "hypothesis": "Groups whose V05 year-over-year change is unusually high relative to its own expanding history will have lower returns next month, because strong upward momentum in this average is overpriced and later reverses.",
+      "falsified_if": "Mean cross-sectional rank IC is non-negative, or HAC t-statistic is above -1, in development data.",
+      "expression": "tsz(yoy(V05),\"exp\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.63,
+      "mean_ic": 0.06,
+      "hac_t": 2.23,
+      "low_T_ic": 0.08,
+      "high_T_ic": 0.25,
+      "max_base_correlation": 0.13,
+      "rank_autocorrelation": 0.79,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "tsz",
+      "yoy"
+    ],
+    "research_mean_ic": 0.05761767482012537
+  },
+  {
+    "candidate_id": "islands_2_Composition_3",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 3,
+    "spec": {
+      "name": "Composition_V06_stock_vs_V02_flow_tsz",
+      "hypothesis": "Groups whose V06 stock rate is high relative to its own expanding history, net of V02 flow rate standardization, earn higher next-month returns, because a persistent composition shift toward the stock measure signals improving conditions.",
+      "falsified_if": "Mean IC is zero or negative, or HAC t-stat is below 1 in development statistics.",
+      "expression": "spread(tsz(V06,\"exp\"),tsz(V02,\"exp\"))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.73,
+      "mean_ic": -0.03,
+      "hac_t": -1.18,
+      "low_T_ic": -0.02,
+      "high_T_ic": 0.02,
+      "max_base_correlation": 0.33,
+      "rank_autocorrelation": 0.39,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V06",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": -0.034808888879422795
+  },
+  {
+    "candidate_id": "islands_2_Interactions_3",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 3,
+    "spec": {
+      "name": "V05_wage_x_V01_hours_mult",
+      "hypothesis": "Groups where 12-month pay growth V05 and 12-month hours change V01 both rank high across groups will have higher next-month returns, since pay and hours rising together signal demand strength.",
+      "falsified_if": "Mean IC is non-positive or HAC t-stat is below 1.0 in development statistics.",
+      "expression": "mult(csrank(yoy(V05)),csrank(yoy(V01)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.91,
+      "mean_ic": 0.0,
+      "hac_t": 0.19,
+      "low_T_ic": 0.02,
+      "high_T_ic": -0.05,
+      "max_base_correlation": 0.49,
+      "rank_autocorrelation": 0.58,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "csrank",
+      "mult",
+      "yoy"
+    ],
+    "research_mean_ic": 0.004751688272397118
+  },
+  {
+    "candidate_id": "islands_2_Temporal_4",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 4,
+    "spec": {
+      "name": "V05_yoy_tsz_exp_lag1",
+      "hypothesis": "Groups whose V05 year-over-year change, standardized against its own expanding history, was high last month will have higher returns next month, because the positive IC of the current-month version may reflect persistent pay strength.",
+      "falsified_if": "Mean cross-sectional rank IC is non-positive or HAC t-statistic is below 1 in development data, or the top-minus-bottom quintile spread is negative.",
+      "expression": "lag(tsz(yoy(V05),\"exp\"),1)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.62,
+      "mean_ic": 0.04,
+      "hac_t": 1.39,
+      "low_T_ic": 0.06,
+      "high_T_ic": 0.2,
+      "max_base_correlation": 0.14,
+      "rank_autocorrelation": 0.79,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "lag",
+      "tsz",
+      "yoy"
+    ],
+    "research_mean_ic": 0.04335612144036904
+  },
+  {
+    "candidate_id": "islands_2_Composition_4",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 4,
+    "spec": {
+      "name": "Composition_V05_V01_pay_per_hours_change",
+      "hypothesis": "Groups whose V05 dollars per hour rose relative to V01 average hours over 6 months have a higher-paid, more intensive composition and earn higher next-month returns than other groups, especially when T is high.",
+      "falsified_if": "Mean IC is zero or negative, or HAC t-stat is below 1 in development statistics.",
+      "expression": "csrank(lchg(ratio(V05,V01),6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": 0.0,
+      "hac_t": 0.18,
+      "low_T_ic": 0.03,
+      "high_T_ic": 0.03,
+      "max_base_correlation": 0.18,
+      "rank_autocorrelation": 0.59,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "csrank",
+      "lchg",
+      "ratio"
+    ],
+    "research_mean_ic": 0.0043053780492395225
+  },
+  {
+    "candidate_id": "islands_2_Interactions_4",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 4,
+    "spec": {
+      "name": "V03_V04_spread_withT",
+      "hypothesis": "Groups where flow rate V03 is high relative to V04 in cross-sectional terms will have lower next-month returns, and conditioning on the common index T should sharpen the effect. Prior interactions were weak, so a spread is tested.",
+      "falsified_if": "Mean IC is non-negative or HAC t-stat is above -1.0 in development statistics.",
+      "expression": "withT(spread(tsz(V03,60),tsz(V04,60)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": 0.05,
+      "hac_t": 1.94,
+      "low_T_ic": 0.04,
+      "high_T_ic": 0.21,
+      "max_base_correlation": 0.36,
+      "rank_autocorrelation": 0.27,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V04",
+      "spread",
+      "tsz",
+      "withT"
+    ],
+    "research_mean_ic": 0.04950425226370178
+  },
+  {
+    "candidate_id": "islands_2_Temporal_5",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 5,
+    "spec": {
+      "name": "V05_yoy_tsz_exp_mavg3",
+      "hypothesis": "Groups whose V05 year-over-year change, smoothed over three months and standardized against its own expanding history, is high will have higher next-month returns, because smoothing reduces noise in the positive signal and raises rank stability.",
+      "falsified_if": "Mean cross-sectional rank IC is non-positive or HAC t-statistic is below 1.5 in development data, or coverage falls below 0.55.",
+      "expression": "mavg(tsz(yoy(V05),\"exp\"),3)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.62,
+      "mean_ic": 0.03,
+      "hac_t": 1.27,
+      "low_T_ic": 0.06,
+      "high_T_ic": 0.24,
+      "max_base_correlation": 0.15,
+      "rank_autocorrelation": 0.93,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "mavg",
+      "tsz",
+      "yoy"
+    ],
+    "research_mean_ic": 0.03142407655218734
+  },
+  {
+    "candidate_id": "islands_2_Composition_5",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 5,
+    "spec": {
+      "name": "Composition_V03_V04_spread_tsz_rolling",
+      "hypothesis": "Groups whose V03 flow rate is high relative to V04 flow rate, each standardized against its own 60-month history, earn higher next-month returns than other groups, with a positive mean IC.",
+      "falsified_if": "Mean IC is zero or negative, or HAC t-stat is below 1 in development statistics.",
+      "expression": "spread(tsz(V03,60),tsz(V04,60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": -0.05,
+      "hac_t": -1.89,
+      "low_T_ic": -0.04,
+      "high_T_ic": -0.21,
+      "max_base_correlation": 0.37,
+      "rank_autocorrelation": 0.28,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V04",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": -0.04741390647672229
+  },
+  {
+    "candidate_id": "islands_2_Interactions_5",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 5,
+    "spec": {
+      "name": "V03_V04_spread_tsz_exp_mavg",
+      "hypothesis": "Groups where flow rate V03 is high relative to V04, both standardized against expanding history and smoothed over 6 months, will have higher next-month returns, extending the only positive prior result (submission 4) with less noise.",
+      "falsified_if": "Mean IC is non-positive or HAC t-stat is below 1.0 in development statistics, or rank autocorrelation is not above 0.27.",
+      "expression": "spread(mavg(tsz(V03,\"exp\"),6),mavg(tsz(V04,\"exp\"),6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.69,
+      "mean_ic": -0.0,
+      "hac_t": -0.13,
+      "low_T_ic": -0.04,
+      "high_T_ic": 0.23,
+      "max_base_correlation": 0.36,
+      "rank_autocorrelation": 0.87,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V04",
+      "mavg",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": -0.00483259078769531
+  },
+  {
+    "candidate_id": "islands_2_Temporal_6",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Temporal",
+    "submission": 6,
+    "spec": {
+      "name": "V05_yoy_tsz_exp_x_V01_hours_spread",
+      "hypothesis": "Groups with unusually high pay growth relative to their own history, net of unusual hours growth, will have higher next-month returns, because pay strength not explained by hours reflects durable strength priced in slowly.",
+      "falsified_if": "Mean cross-sectional rank IC is non-positive or HAC t-statistic is below 1 in development data, or coverage falls below 0.55.",
+      "expression": "spread(tsz(yoy(V05),\"exp\"),tsz(yoy(V01),\"exp\"))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.63,
+      "mean_ic": 0.03,
+      "hac_t": 0.92,
+      "low_T_ic": 0.05,
+      "high_T_ic": 0.28,
+      "max_base_correlation": 0.51,
+      "rank_autocorrelation": 0.68,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "spread",
+      "tsz",
+      "yoy"
+    ],
+    "research_mean_ic": 0.025892524699522707
+  },
+  {
+    "candidate_id": "islands_2_Composition_6",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Composition",
+    "submission": 6,
+    "spec": {
+      "name": "Composition_V03_V04_spread_tsz_rolling_flipped",
+      "hypothesis": "Groups whose V04 flow rate is high relative to V03 flow rate, each standardized against its own 60-month history, earn higher next-month returns, since the prior V03-minus-V04 spread had negative IC.",
+      "falsified_if": "Mean IC is zero or negative, or HAC t-stat is below 1 in development statistics.",
+      "expression": "spread(tsz(V04,60),tsz(V03,60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": 0.05,
+      "hac_t": 1.89,
+      "low_T_ic": 0.04,
+      "high_T_ic": 0.21,
+      "max_base_correlation": 0.37,
+      "rank_autocorrelation": 0.28,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V04",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": 0.04741390647672229
+  },
+  {
+    "candidate_id": "islands_2_Interactions_6",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "Interactions",
+    "submission": 6,
+    "spec": {
+      "name": "V03_V04_spread_tsz60_mavg3",
+      "hypothesis": "Groups with V03 high relative to V04, both standardized on a 60-month window and lightly smoothed over 3 months, will have higher next-month returns, extending the only significant positive result (submission 4) with modest noise reduction.",
+      "falsified_if": "Mean IC is non-positive or HAC t-stat is below 1.0 in development statistics, or coverage falls below 0.54.",
+      "expression": "spread(mavg(tsz(V03,60),3),mavg(tsz(V04,60),3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.52,
+      "mean_ic": -0.03,
+      "hac_t": -1.01,
+      "low_T_ic": -0.01,
+      "high_T_ic": -0.04,
+      "max_base_correlation": 0.55,
+      "rank_autocorrelation": 0.72,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V04",
+      "mavg",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": -0.0265701475318454
+  },
+  {
+    "candidate_id": "independent_3_Temporal_1",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 1,
+    "spec": {
+      "name": "V02_tsz_expanding_trend",
+      "hypothesis": "Groups whose V02 flow rate is unusually high relative to its own expanding history will have lower next-month returns than others, because abnormal flow rates signal deteriorating conditions not yet priced in.",
+      "falsified_if": "The cross-sectional rank correlation between this feature and next-month returns is non-negative or statistically indistinguishable from zero across development months.",
+      "expression": "tsz(lag(V02,2),\"exp\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.71,
+      "mean_ic": -0.02,
+      "hac_t": -0.9,
+      "low_T_ic": -0.02,
+      "high_T_ic": -0.03,
+      "max_base_correlation": 0.4,
+      "rank_autocorrelation": 0.45,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "lag",
+      "tsz"
+    ],
+    "research_mean_ic": -0.021151256473436218
+  },
+  {
+    "candidate_id": "independent_3_Composition_1",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 1,
+    "spec": {
+      "name": "Composition_ratio_rank_chg",
+      "hypothesis": "Groups where V03 (a flow rate) rises relative to V02 (a flow rate) over three months, ranked across groups, have higher next-month returns, reflecting a compositional shift between the two flows.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month group returns is zero or negative in development statistics.",
+      "expression": "csrank(chg(ratio(V03,V02),3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": 0.03,
+      "hac_t": 1.42,
+      "low_T_ic": 0.07,
+      "high_T_ic": -0.0,
+      "max_base_correlation": 0.13,
+      "rank_autocorrelation": 0.22,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "chg",
+      "csrank",
+      "ratio"
+    ],
+    "research_mean_ic": 0.032442404975972956
+  },
+  {
+    "candidate_id": "independent_3_Interactions_1",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 1,
+    "spec": {
+      "name": "Wage-cost times tightness interaction",
+      "hypothesis": "Groups with high wage growth (V05 12-month log change) combined with high separation-type flow V02 mean-reversion signal deteriorating margins; the product of cross-sectional ranks of V05 lchg and V02 tsz negatively predicts next-month relative returns.",
+      "falsified_if": "Development-sample rank correlation between this feature and next-month group returns is non-negative, or top-minus-bottom tercile spread is positive.",
+      "expression": "mult(csrank(lchg(V05,12)),csrank(tsz(V02,60)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": 0.01,
+      "hac_t": 0.36,
+      "low_T_ic": -0.01,
+      "high_T_ic": 0.36,
+      "max_base_correlation": 0.36,
+      "rank_autocorrelation": 0.49,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V05",
+      "csrank",
+      "lchg",
+      "mult",
+      "tsz"
+    ],
+    "research_mean_ic": 0.012918502336758243
+  },
+  {
+    "candidate_id": "independent_3_Temporal_2",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 2,
+    "spec": {
+      "name": "V05_yoy_persist6_wage_momentum",
+      "hypothesis": "Groups whose V05 hourly dollar level has risen in a larger share of recent months (6-month persistence of increases) will have higher next-month returns, because steady gains signal durable conditions that are only gradually priced in.",
+      "falsified_if": "Mean cross-sectional rank IC is non-positive or the HAC t-statistic is below 1.0 across development months.",
+      "expression": "persist(V05,6)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": -0.07,
+      "hac_t": -1.82,
+      "low_T_ic": -0.04,
+      "high_T_ic": -0.09,
+      "max_base_correlation": 0.05,
+      "rank_autocorrelation": 0.83,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "persist"
+    ],
+    "research_mean_ic": -0.06534173384840165
+  },
+  {
+    "candidate_id": "independent_3_Composition_2",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 2,
+    "spec": {
+      "name": "Composition_V04_share_vs_V06_stock",
+      "hypothesis": "Groups whose V04 flow rate is high relative to their V06 stock rate, measured as a cross-sectional z-score spread, have higher next-month returns, since flow-to-stock composition signals a turning point that is not yet reflected in returns.",
+      "falsified_if": "Mean cross-sectional rank IC is zero or negative, or the HAC t-statistic is below 1 in development statistics.",
+      "expression": "spread(mavg(V04,3),mavg(V06,3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.99,
+      "mean_ic": 0.02,
+      "hac_t": 0.86,
+      "low_T_ic": 0.05,
+      "high_T_ic": 0.03,
+      "max_base_correlation": 0.13,
+      "rank_autocorrelation": 0.94,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": 0.022851500512033964
+  },
+  {
+    "candidate_id": "independent_3_Interactions_2",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 2,
+    "spec": {
+      "name": "Hours-to-flow spread conditioned on high T regime",
+      "hypothesis": "In high-T regimes, groups whose average hours (V01 6-month change) rise relative to the stock rate V06 (standardized) earn higher next-month relative returns, since hours expansion without rising slack signals strengthening demand.",
+      "falsified_if": "In development data, high-T-regime mean IC of this feature is zero or negative, or its HAC t-stat is below 1.",
+      "expression": "regime(spread(chg(V01,6),tsz(V06,60)),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": -0.2,
+      "hac_t": null,
+      "low_T_ic": null,
+      "high_T_ic": -0.2,
+      "max_base_correlation": 0.07,
+      "rank_autocorrelation": 0.34,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V06",
+      "chg",
+      "regime",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": -0.19780219780219785
+  },
+  {
+    "candidate_id": "independent_3_Temporal_3",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 3,
+    "spec": {
+      "name": "V05_persist6_reversal_lowV02",
+      "hypothesis": "Groups whose V05 has risen in a larger share of the last 6 months will have lower next-month returns, because persistent gains are already priced in and reverse. Submission 2 showed a negative IC, so this feature flips its sign by ranking on the inverse.",
+      "falsified_if": "Mean cross-sectional rank IC is non-negative or HAC t-statistic is above -1.0 across development months for this feature.",
+      "expression": "csrank(ratio(1,persist(V05,6)))"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "hypothesis has 45 words; maximum is 40"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "independent_3_Composition_3",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 3,
+    "spec": {
+      "name": "Composition_V02_V03_spread_lowT",
+      "hypothesis": "Groups with a higher V03 flow rate relative to V02 (cross-sectional z-score spread of 6-month averages) have higher next-month returns, and the effect is concentrated when T is low, reflecting a compositional shift between flows.",
+      "falsified_if": "Mean rank IC is zero or negative, or HAC t-statistic is below 1, or low-T IC is not larger than high-T IC in development statistics.",
+      "expression": "regime(spread(mavg(V03,6),mavg(V02,6)),\"low\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.58,
+      "mean_ic": 0.02,
+      "hac_t": 0.61,
+      "low_T_ic": 0.02,
+      "high_T_ic": null,
+      "max_base_correlation": 0.3,
+      "rank_autocorrelation": 0.91,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "mavg",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": 0.02311834258252088
+  },
+  {
+    "candidate_id": "independent_3_Interactions_3",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 3,
+    "spec": {
+      "name": "Hours momentum times separation-flow reversal",
+      "hypothesis": "Groups with rising hours (V01 3-month change rank) and falling flow V03 (negative 3-month change rank) have higher next-month relative returns; the interaction of the two cross-sectional ranks positively predicts, with a positive IC and HAC t above 1.",
+      "falsified_if": "Development mean IC is zero or negative, or HAC t-stat is below 1.",
+      "expression": "mult(csrank(chg(V01,3)),csrank(chg(V03,3)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": 0.01,
+      "hac_t": 0.5,
+      "low_T_ic": -0.01,
+      "high_T_ic": -0.01,
+      "max_base_correlation": 0.14,
+      "rank_autocorrelation": 0.32,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V03",
+      "chg",
+      "csrank",
+      "mult"
+    ],
+    "research_mean_ic": 0.009996354392655614
+  },
+  {
+    "candidate_id": "independent_3_Temporal_4",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 4,
+    "spec": {
+      "name": "V05_persist6_reversal",
+      "hypothesis": "Groups whose V05 rose in a larger share of the last 6 months will have lower next-month returns, because persistent gains are already priced in and reverse. Submission 2 showed a negative IC.",
+      "falsified_if": "Mean cross-sectional rank IC of the negated feature is non-positive, or its HAC t-statistic is below 1.0, across development months.",
+      "expression": "csrank(ratio(1,persist(V05,6)))"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "Only whitelisted function calls and variables are allowed"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "independent_3_Composition_4",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 4,
+    "spec": {
+      "name": "Composition_V03_V02_ratio_persist_lowT",
+      "hypothesis": "Groups whose V03-to-V02 flow ratio has risen more over the past 6 months, ranked across groups, have higher next-month returns, with the effect stronger when T is low, reflecting a compositional shift between the two flows.",
+      "falsified_if": "Mean rank IC is zero or negative, HAC t-statistic is below 1, or low-T IC does not exceed high-T IC in development statistics.",
+      "expression": "withT(csrank(chg(ratio(V03,V02),6)))"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "Unknown operation or nesting limit exceeded"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "independent_3_Interactions_4",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 4,
+    "spec": {
+      "name": "Wage level relative to hours, T-conditioned",
+      "hypothesis": "Groups whose 6-month wage change (V05) is high relative to hours (V01) face margin pressure; the spread of standardized V05 minus V01 negatively predicts next-month relative returns, with more negative IC when T is high.",
+      "falsified_if": "Development mean IC is zero or positive, or HAC t-stat is above -1.",
+      "expression": "spread(tsz(V05,60),tsz(V01,60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": 0.0,
+      "hac_t": 0.11,
+      "low_T_ic": 0.04,
+      "high_T_ic": 0.28,
+      "max_base_correlation": 0.34,
+      "rank_autocorrelation": 0.7,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "spread",
+      "tsz"
+    ],
+    "research_mean_ic": 0.0043262854116327
+  },
+  {
+    "candidate_id": "independent_3_Temporal_5",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 5,
+    "spec": {
+      "name": "V05_persist6_low_reversal",
+      "hypothesis": "Groups whose V05 rose in a larger share of recent months will have lower next-month returns, because persistent gains are already priced in. Earlier persist(V05,6) showed negative IC.",
+      "falsified_if": "Mean rank IC of this feature is non-negative, or HAC t-statistic exceeds -1.0, across development months.",
+      "expression": "persist(V05,6)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": -0.07,
+      "hac_t": -1.82,
+      "low_T_ic": -0.04,
+      "high_T_ic": -0.09,
+      "max_base_correlation": 0.05,
+      "rank_autocorrelation": 0.83,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "persist"
+    ],
+    "research_mean_ic": -0.06534173384840165
+  },
+  {
+    "candidate_id": "independent_3_Composition_5",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 5,
+    "spec": {
+      "name": "Composition_V03_V02_ratio_lchg6_rank",
+      "hypothesis": "Groups whose V03-to-V02 flow ratio has risen more in log terms over six months, ranked across groups, have higher next-month returns, extending the best earlier composition signal with a longer, smoother horizon.",
+      "falsified_if": "Mean rank IC is zero or negative, or HAC t-statistic is below 1 in development statistics.",
+      "expression": "csrank(lchg(ratio(V03,V02),6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": 0.05,
+      "hac_t": 2.5,
+      "low_T_ic": 0.07,
+      "high_T_ic": 0.05,
+      "max_base_correlation": 0.15,
+      "rank_autocorrelation": 0.28,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "csrank",
+      "lchg",
+      "ratio"
+    ],
+    "research_mean_ic": 0.04610749138423598
+  },
+  {
+    "candidate_id": "independent_3_Interactions_5",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 5,
+    "spec": {
+      "name": "Flow V04 momentum times stock V06 level, T-scaled",
+      "hypothesis": "Groups with rising flow V04 (3-month change rank) and low stock V06 (cross-sectional rank) have higher next-month relative returns; the interaction is positive predictive, with better IC when T is high, given prior high-T IC signs.",
+      "falsified_if": "Development mean IC is zero or negative, or HAC t-stat is below 1.",
+      "expression": "withT(mult(csrank(chg(V04,3)),csrank(V06)))"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "Unknown operation or nesting limit exceeded"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "independent_3_Temporal_6",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 6,
+    "spec": {
+      "name": "V05_persist6_spread_V01_reversal",
+      "hypothesis": "Groups whose V05 rose in a larger share of recent months, relative to V01 hours persistence, will have lower next-month returns, because wage-like gains without matching hours signal overpriced conditions that reverse.",
+      "falsified_if": "Mean cross-sectional rank IC is non-negative, or HAC t-statistic is above -1.0, across development months.",
+      "expression": "spread(persist(V05,6),persist(V01,6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": -0.01,
+      "hac_t": -0.4,
+      "low_T_ic": 0.02,
+      "high_T_ic": -0.02,
+      "max_base_correlation": 0.14,
+      "rank_autocorrelation": 0.75,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "persist",
+      "spread"
+    ],
+    "research_mean_ic": -0.012500654777637944
+  },
+  {
+    "candidate_id": "independent_3_Composition_6",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 6,
+    "spec": {
+      "name": "Composition_V03_V02_ratio_lchg12_rank",
+      "hypothesis": "Groups whose V03-to-V02 flow ratio has risen more in log terms over twelve months, ranked across groups, have higher next-month returns, extending the best signal (6-month log change) to a longer horizon.",
+      "falsified_if": "Mean rank IC is below 0.03 or HAC t-statistic is below 2 in development statistics, i.e. no improvement over the 6-month version.",
+      "expression": "csrank(lchg(ratio(V03,V02),12))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.91,
+      "mean_ic": 0.03,
+      "hac_t": 1.34,
+      "low_T_ic": 0.01,
+      "high_T_ic": 0.07,
+      "max_base_correlation": 0.35,
+      "rank_autocorrelation": 0.19,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "csrank",
+      "lchg",
+      "ratio"
+    ],
+    "research_mean_ic": 0.032452435149707616
+  },
+  {
+    "candidate_id": "independent_3_Interactions_6",
+    "arm": "independent",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 6,
+    "spec": {
+      "name": "Hours momentum times wage tsz, high-T regime",
+      "hypothesis": "In high-T regimes, groups with rising hours (V01 3-month change rank) and low standardized wage level (V05 tsz) earn higher next-month relative returns; the interaction of hours rank and inverted wage pressure has positive IC, with HAC t above 1.",
+      "falsified_if": "Development high-T IC is zero or negative, or HAC t-stat is below 1.",
+      "expression": "regime(spread(csrank(chg(V01,3)),tsz(V05,60)),\"high\")"
+    },
+    "valid": false,
+    "feedback": {
+      "validity": "invalid",
+      "reason": "Unknown operation or nesting limit exceeded"
+    },
+    "tokens": [],
+    "research_mean_ic": null
+  },
+  {
+    "candidate_id": "islands_3_Temporal_1",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 1,
+    "spec": {
+      "name": "V03_tsz_expanding_persistent",
+      "hypothesis": "Groups whose V03 rate is high relative to its own expanding-history mean and volatility (temporal z-score) will have higher next-month returns than groups with low z-scores, reflecting persistent group-specific momentum in that flow.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month group returns is zero or negative on average in development statistics, or its sign flips across subperiods.",
+      "expression": "csrank(tsz(lag(V03,2),\"exp\"))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.71,
+      "mean_ic": -0.03,
+      "hac_t": -1.39,
+      "low_T_ic": -0.01,
+      "high_T_ic": 0.03,
+      "max_base_correlation": 0.42,
+      "rank_autocorrelation": 0.36,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "csrank",
+      "lag",
+      "tsz"
+    ],
+    "research_mean_ic": -0.03495507717508399
+  },
+  {
+    "candidate_id": "islands_3_Composition_1",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 1,
+    "spec": {
+      "name": "composition_hours_wage_spread",
+      "hypothesis": "Groups whose average hours (V01) rank high relative to their hourly wage (V05) on a cross-sectional basis, smoothed over 6 months, have higher next-month returns, because hours-heavy composition signals stronger demand.",
+      "falsified_if": "Rank correlation between this feature and next-month group returns is zero or negative in development data, or top-minus-bottom tercile return spread is not positive.",
+      "expression": "mavg(spread(V01,V05),6)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.97,
+      "mean_ic": 0.03,
+      "hac_t": 1.0,
+      "low_T_ic": 0.03,
+      "high_T_ic": 0.06,
+      "max_base_correlation": 0.08,
+      "rank_autocorrelation": 1.0,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": 0.033203279104428975
+  },
+  {
+    "candidate_id": "islands_3_Interactions_1",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 1,
+    "spec": {
+      "name": "Wage-hours interaction momentum",
+      "hypothesis": "Groups where 3-month change in hourly dollars (V05) and 3-month change in average hours (V01) both rank high have stronger demand, so their interaction predicts higher next-month returns cross-sectionally.",
+      "falsified_if": "Cross-sectional rank correlation between this feature and next-month group returns is zero or negative in development statistics.",
+      "expression": "mult(csrank(chg(V05,3)),csrank(chg(V01,3)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": -0.02,
+      "hac_t": -1.05,
+      "low_T_ic": -0.02,
+      "high_T_ic": -0.02,
+      "max_base_correlation": 0.1,
+      "rank_autocorrelation": 0.35,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "chg",
+      "csrank",
+      "mult"
+    ],
+    "research_mean_ic": -0.021885314070144008
+  },
+  {
+    "candidate_id": "islands_3_Temporal_2",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 2,
+    "spec": {
+      "name": "V02_V04_spread_accel_lowT",
+      "hypothesis": "Groups whose V02 rate has risen faster than V04 over the past 3 months (relative to cross-group norms) will earn higher next-month returns, because relative flow acceleration persists. Effect is stronger when T is high.",
+      "falsified_if": "Mean rank IC is zero or negative, or high-T regime IC is not greater than low-T regime IC in development statistics.",
+      "expression": "spread(chg(V02,3),chg(V04,3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.98,
+      "mean_ic": 0.0,
+      "hac_t": 0.05,
+      "low_T_ic": 0.01,
+      "high_T_ic": -0.01,
+      "max_base_correlation": 0.12,
+      "rank_autocorrelation": 0.35,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V04",
+      "chg",
+      "spread"
+    ],
+    "research_mean_ic": 0.0010706229288202328
+  },
+  {
+    "candidate_id": "islands_3_Composition_2",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 2,
+    "spec": {
+      "name": "composition_flow_rates_spread_persist",
+      "hypothesis": "Groups whose flow rate V02 is high relative to flow rate V03, cross-sectionally standardized and smoothed over 3 months, have higher next-month returns, because this composition of flows signals stronger group momentum. Effect should be stronger when T is high.",
+      "falsified_if": "Mean rank IC against next-month returns is zero or negative, or the high-T regime IC is not larger than the low-T regime IC.",
+      "expression": "regime(mavg(spread(V02,V03),3),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": -0.07,
+      "hac_t": -1.25,
+      "low_T_ic": null,
+      "high_T_ic": -0.07,
+      "max_base_correlation": 0.18,
+      "rank_autocorrelation": 0.93,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "mavg",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": -0.07223360870562197
+  },
+  {
+    "candidate_id": "islands_3_Interactions_2",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 2,
+    "spec": {
+      "name": "Flow-rate spread conditioned on common index regime",
+      "hypothesis": "Groups with a higher separation rate (V03) relative to a hiring-type rate (V02) after cross-sectional standardization have weaker labor conditions, so in the high regime of T this spread predicts lower next-month returns; the sign is negative.",
+      "falsified_if": "Mean cross-sectional IC of this feature in the high-T regime is zero or positive in development statistics.",
+      "expression": "regime(spread(V03,V02),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": 0.04,
+      "hac_t": 1.01,
+      "low_T_ic": null,
+      "high_T_ic": 0.04,
+      "max_base_correlation": 0.15,
+      "rank_autocorrelation": 0.66,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V02",
+      "V03",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": 0.03701434808413165
+  },
+  {
+    "candidate_id": "islands_3_Temporal_3",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 3,
+    "spec": {
+      "name": "V05_V01_spread_yoy_persist",
+      "hypothesis": "Groups whose V05 (dollars per hour) has grown more year-over-year than V01 (hours), relative to cross-group norms, will earn higher next-month returns, because sustained relative growth in hourly value persists across groups.",
+      "falsified_if": "Mean rank IC is zero or negative, or HAC t-stat is below 1.5 in absolute value in development statistics.",
+      "expression": "spread(yoy(V05),yoy(V01))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.91,
+      "mean_ic": -0.01,
+      "hac_t": -0.26,
+      "low_T_ic": 0.0,
+      "high_T_ic": 0.03,
+      "max_base_correlation": 0.41,
+      "rank_autocorrelation": 0.73,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "spread",
+      "yoy"
+    ],
+    "research_mean_ic": -0.007089192116220294
+  },
+  {
+    "candidate_id": "islands_3_Composition_3",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 3,
+    "spec": {
+      "name": "composition_stock_vs_flow_spread",
+      "hypothesis": "Groups whose stock rate V06 is high relative to flow rate V04, cross-sectionally standardized and smoothed over 6 months, have lower next-month returns, because a stock-heavy composition signals slack. Expect negative rank IC.",
+      "falsified_if": "Mean rank IC against next-month group returns is zero or positive, or the top-minus-bottom tercile return spread is not negative in development data.",
+      "expression": "mavg(spread(V06,V04),6)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.97,
+      "mean_ic": -0.01,
+      "hac_t": -0.45,
+      "low_T_ic": -0.04,
+      "high_T_ic": -0.02,
+      "max_base_correlation": 0.09,
+      "rank_autocorrelation": 0.97,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V04",
+      "V06",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": -0.011361722183933436
+  },
+  {
+    "candidate_id": "islands_3_Interactions_3",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 3,
+    "spec": {
+      "name": "Slack-stock change interaction with wage level",
+      "hypothesis": "Groups where the 6-month change in the stock rate V06 is low while the V05 wage level ranks high have tighter conditions, so this interaction predicts higher next-month returns cross-sectionally; sign is positive.",
+      "falsified_if": "Mean cross-sectional IC is zero or negative, or the HAC t-statistic is below 1 in development statistics.",
+      "expression": "spread(csrank(V05),csrank(chg(V06,6)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": -0.01,
+      "hac_t": -0.25,
+      "low_T_ic": -0.01,
+      "high_T_ic": -0.02,
+      "max_base_correlation": 0.25,
+      "rank_autocorrelation": 0.61,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V05",
+      "V06",
+      "chg",
+      "csrank",
+      "spread"
+    ],
+    "research_mean_ic": -0.007396863169885074
+  },
+  {
+    "candidate_id": "islands_3_Temporal_4",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 4,
+    "spec": {
+      "name": "V06_stock_tsz60_reversal",
+      "hypothesis": "Groups whose V06 stock rate is high relative to its own trailing 60-month mean and volatility will have lower next-month returns than groups with low z-scores, reflecting mean reversion in the stock. Effect is stronger in high T.",
+      "falsified_if": "Mean rank IC is zero or positive, or HAC t-stat is above -1.5, or high-T IC is not more negative than low-T IC.",
+      "expression": "csrank(tsz(lag(V06,2),60))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.52,
+      "mean_ic": 0.03,
+      "hac_t": 0.93,
+      "low_T_ic": -0.01,
+      "high_T_ic": 0.06,
+      "max_base_correlation": 0.47,
+      "rank_autocorrelation": 0.46,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V06",
+      "csrank",
+      "lag",
+      "tsz"
+    ],
+    "research_mean_ic": 0.03355746905371326
+  },
+  {
+    "candidate_id": "islands_3_Composition_4",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 4,
+    "spec": {
+      "name": "composition_wage_hours_flow_v03_spread",
+      "hypothesis": "Groups whose flow rate V03 is low relative to hourly wage V05 on a cross-sectional basis, smoothed over 12 months, have higher next-month returns, because a low-turnover, high-pay composition signals stability. Expect positive rank IC.",
+      "falsified_if": "Mean rank IC against next-month returns is zero or negative, or the top-minus-bottom tercile return spread is not positive in development data.",
+      "expression": "mavg(spread(V05,V03),12)"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.92,
+      "mean_ic": -0.01,
+      "hac_t": -0.22,
+      "low_T_ic": -0.03,
+      "high_T_ic": 0.02,
+      "max_base_correlation": 0.18,
+      "rank_autocorrelation": 1.0,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V05",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": -0.006156233421759248
+  },
+  {
+    "candidate_id": "islands_3_Interactions_4",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 4,
+    "spec": {
+      "name": "Separation-rate shock times hours momentum",
+      "hypothesis": "Groups whose separation-type rate V03 is unusually high versus its own history while average hours V01 are falling face weakening conditions, so this interaction predicts lower next-month returns cross-sectionally; sign is negative, so higher values mean lower returns.",
+      "falsified_if": "Mean cross-sectional IC is zero or positive, or HAC t-statistic is above -1, in development statistics.",
+      "expression": "mult(csrank(tsz(V03,60)),csrank(chg(V01,3)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.54,
+      "mean_ic": -0.02,
+      "hac_t": -0.66,
+      "low_T_ic": -0.05,
+      "high_T_ic": -0.04,
+      "max_base_correlation": 0.33,
+      "rank_autocorrelation": 0.27,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V03",
+      "chg",
+      "csrank",
+      "mult",
+      "tsz"
+    ],
+    "research_mean_ic": -0.018544428735327058
+  },
+  {
+    "candidate_id": "islands_3_Temporal_5",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 5,
+    "spec": {
+      "name": "V03_chg6_lowT_regime",
+      "hypothesis": "Groups whose V03 flow rate has risen over the past 6 months, relative to other groups, will earn higher next-month returns, because rising flow rates persist. The effect should be stronger in the low-T regime.",
+      "falsified_if": "Mean rank IC is zero or negative, or HAC t-stat is below 1.5 in absolute value, or low-T IC does not exceed high-T IC in development statistics.",
+      "expression": "csrank(chg(lag(V03,2),6))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.94,
+      "mean_ic": -0.02,
+      "hac_t": -0.6,
+      "low_T_ic": -0.02,
+      "high_T_ic": 0.03,
+      "max_base_correlation": 0.3,
+      "rank_autocorrelation": 0.28,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "chg",
+      "csrank",
+      "lag"
+    ],
+    "research_mean_ic": -0.016350683626201026
+  },
+  {
+    "candidate_id": "islands_3_Composition_5",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 5,
+    "spec": {
+      "name": "composition_hours_wage_ratio_high_T",
+      "hypothesis": "Groups whose average hours (V01) are high relative to hourly wage (V05), smoothed over 6 months, have higher next-month returns, with the effect concentrated when T is high. Expect positive rank IC, larger in the high-T regime.",
+      "falsified_if": "Mean rank IC is zero or negative, or the high-T regime IC is not larger than the low-T regime IC in development data.",
+      "expression": "regime(mavg(ratio(V01,V05),6),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": -0.02,
+      "hac_t": -0.31,
+      "low_T_ic": null,
+      "high_T_ic": -0.02,
+      "max_base_correlation": 0.12,
+      "rank_autocorrelation": 0.96,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "mavg",
+      "ratio",
+      "regime"
+    ],
+    "research_mean_ic": -0.017667353514639057
+  },
+  {
+    "candidate_id": "islands_3_Interactions_5",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 5,
+    "spec": {
+      "name": "Slack stock level times hours momentum",
+      "hypothesis": "Groups with a high V06 stock rate whose average hours V01 are rising over 6 months show early recovery from slack, so the interaction of their cross-sectional ranks predicts higher next-month returns; sign is positive.",
+      "falsified_if": "Mean cross-sectional IC is zero or negative, or HAC t-statistic is below 1, in development statistics.",
+      "expression": "mult(csrank(V06),csrank(chg(V01,6)))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.96,
+      "mean_ic": -0.04,
+      "hac_t": -1.21,
+      "low_T_ic": -0.09,
+      "high_T_ic": -0.03,
+      "max_base_correlation": 0.21,
+      "rank_autocorrelation": 0.48,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V06",
+      "chg",
+      "csrank",
+      "mult"
+    ],
+    "research_mean_ic": -0.03536965013593009
+  },
+  {
+    "candidate_id": "islands_3_Temporal_6",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Temporal",
+    "submission": 6,
+    "spec": {
+      "name": "V06_V03_spread_lowT_regime",
+      "hypothesis": "Groups whose V06 stock rate is high relative to their V03 flow rate, in cross-sectional terms, earn higher next-month returns, because stock-heavy groups are more persistent. Effect should appear mainly in the high-T regime.",
+      "falsified_if": "Mean rank IC is zero or negative, or HAC t-stat is below 1.5 in absolute value, or high-T IC does not exceed low-T IC.",
+      "expression": "regime(spread(lag(V06,2),lag(V03,2)),\"high\")"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.82,
+      "mean_ic": 0.0,
+      "hac_t": 0.06,
+      "low_T_ic": null,
+      "high_T_ic": 0.0,
+      "max_base_correlation": 0.13,
+      "rank_autocorrelation": 0.81,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V03",
+      "V06",
+      "lag",
+      "regime",
+      "spread"
+    ],
+    "research_mean_ic": 0.002636539108552363
+  },
+  {
+    "candidate_id": "islands_3_Composition_6",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Composition",
+    "submission": 6,
+    "spec": {
+      "name": "composition_hours_wage_spread_yoy_change",
+      "hypothesis": "Groups whose 12-month change in V01 hours rises more than the change in V05 wage, cross-sectionally standardized, have higher next-month returns, because improving hours-heavy composition signals strengthening demand. Expect a positive rank IC.",
+      "falsified_if": "Mean rank IC against next-month returns is zero or negative, or HAC t-statistic is below 1 in development data.",
+      "expression": "spread(yoy(V01),yoy(V05))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.91,
+      "mean_ic": 0.01,
+      "hac_t": 0.26,
+      "low_T_ic": -0.0,
+      "high_T_ic": -0.03,
+      "max_base_correlation": 0.41,
+      "rank_autocorrelation": 0.73,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V05",
+      "spread",
+      "yoy"
+    ],
+    "research_mean_ic": 0.007089192116220294
+  },
+  {
+    "candidate_id": "islands_3_Interactions_6",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "Interactions",
+    "submission": 6,
+    "spec": {
+      "name": "Hours momentum spread versus separation-rate level",
+      "hypothesis": "Groups whose 3-month hours change ranks high relative to their separation-type rate V03 (cross-sectionally standardized, smoothed over 3 months) have healthier conditions, so this spread predicts higher next-month returns; sign is positive.",
+      "falsified_if": "Mean cross-sectional IC is zero or negative, or HAC t-statistic is below 1, in development statistics.",
+      "expression": "spread(mavg(chg(V01,3),3),mavg(V03,3))"
+    },
+    "valid": true,
+    "feedback": {
+      "coverage": 0.97,
+      "mean_ic": -0.02,
+      "hac_t": -0.73,
+      "low_T_ic": -0.02,
+      "high_T_ic": -0.02,
+      "max_base_correlation": 0.31,
+      "rank_autocorrelation": 0.82,
+      "validity": "valid"
+    },
+    "tokens": [
+      "V01",
+      "V03",
+      "chg",
+      "mavg",
+      "spread"
+    ],
+    "research_mean_ic": -0.016573147180105555
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "request_hash": "7c2eab214b47d4f1f4cadc611bd6c31fdd17a1bace5ddf7f63ee07fc4e20b7b7",
+  "envelope": {
+    "response": "{\"name\":\"hours_momentum_in_high_T\",\"hypothesis\":\"Within the high-T regime, groups whose average hours V01 have risen over the past 3 months relative to their own 60-month history earn higher next-month returns; outside high-T the signal is muted. Predicts positive rank IC concentrated in high-T.\",\"falsified_if\":\"High-T mean rank IC is nonpositive, or is not larger than low-T IC, or the HAC t-statistic is below 1.5.\",\"expression\":\"regime(tsz(chg(V01,3),60),\\\"high\\\")\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 902,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 189,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0039494000000000005,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "7c2eab214b47d4f1f4cadc611bd6c31fdd17a1bace5ddf7f63ee07fc4e20b7b7"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "request_hash": "bad103df8d2c6d076859997b0fd282924867ac44824241439e2e19781b00ef0f",
+  "request": {
+    "call_id": "islands_3_Composition_4_migration__islands_3_Interactions_5",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}.",
+    "prompt": "{\"claims\": {\"1\": \"**Migration report**\", \"2\": \"Four composition-style features were tried, all valid.\", \"3\": \"None was statistically convincing.\", \"4\": \"The most promising was the smoothed cross-sectional contrast between average hours and hourly wage.\", \"5\": \"Its mean IC was 0.03 (HAC t of 1.0), somewhat stronger in the high-T regime.\", \"6\": \"That is suggestive but not significant.\", \"7\": \"The clearest failure was the high-T-only flow-rate contrast.\", \"8\": \"It had an IC of -0.07 (t of -1.25), the opposite sign to my hypothesis, and coverage fell to 0.82.\", \"9\": \"The stock-versus-flow contrast and the wage-versus-turnover contrast both had ICs near zero.\", \"10\": \"Smoothed features have rank autocorrelation of 0.97 to 1.0, so their effective sample is small.\", \"11\": \"Base correlations were low, at most 0.18.\"}, \"hypothesis\": \"Groups with a high V06 stock rate whose average hours V01 are rising over 6 months show early recovery from slack, so the interaction of their cross-sectional ranks predicts higher next-month returns; sign is positive.\", \"expression\": \"mult(csrank(V06),csrank(chg(V01,6)))\"}"
+  }
+}

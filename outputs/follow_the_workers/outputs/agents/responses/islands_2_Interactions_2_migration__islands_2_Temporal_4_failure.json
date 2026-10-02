@@ -1,0 +1,42 @@
+{
+  "request_hash": "67c1871639bfafb9646edb556206618615292e5d105bef466cc0e1dcb994edeb",
+  "envelope": {
+    "response": "The report describes several failures: the interaction feature had no predictive power, coverage was only about half because of the long history requirement, and the second submission was invalid because the hypothesis exceeded the word limit by two words.\n\nDoes the proposal explicitly avoid any of these?\n\n- Word limit: The hypothesis is about 35 words. The limit is unknown, so we can't tell whether it is under the limit. There is no explicit evidence of counting.\n- Interaction: The proposal is a single-variable feature, not an interaction, but it doesn't explicitly address the failure.\n- Coverage: It uses an expanding-history standardization (\"exp\") plus yoy, which needs a long history, so it likely doesn't avoid the low coverage and may make it worse.\n- Regime: It doesn't condition on a regime.\n\nNothing in the proposal explicitly avoids a failure, and the evidence is unclear on the word count.\n\n{\"avoids_failure\": null}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 474,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.004018,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "67c1871639bfafb9646edb556206618615292e5d105bef466cc0e1dcb994edeb"
+  }
+}

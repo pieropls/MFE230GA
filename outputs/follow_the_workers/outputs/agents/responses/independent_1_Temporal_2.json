@@ -1,0 +1,42 @@
+{
+  "request_hash": "1a6f59aaa2ceb93fbf1f3c6badd60d4da1255729803e0a781e8b113218c88d5d",
+  "envelope": {
+    "response": "{\"name\": \"V06_persist_rising_stock\", \"hypothesis\": \"Groups whose V06 stock rate has risen in a larger share of months (persistent upward drift) will have lower next-month returns, because persistent deterioration in the stock signals slow-moving weakness that is underreacted to.\", \"falsified_if\": \"Mean cross-sectional rank correlation with next-month return is non-negative, or HAC t-statistic is above -1 in absolute favor of a positive sign.\", \"expression\": \"persist(V06,6)\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 335,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 175,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0026754,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "1a6f59aaa2ceb93fbf1f3c6badd60d4da1255729803e0a781e8b113218c88d5d"
+  }
+}

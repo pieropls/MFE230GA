@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"pay_growth_accel_rank\", \"hypothesis\": \"Groups whose year-over-year hourly pay growth is accelerating face rising cost pressure not yet reflected in prices, so higher acceleration ranks should precede lower relative returns next month.\", \"falsified_if\": \"Mean rank IC with next-month relative returns is at or above zero, or HAC t-statistic is above -1.5 over the development sample.\", \"expression\": \"csrank(accel(lchg(V05,12)))\"}",
+  "model": "claude-opus-5-5",
+  "tokens": {
+    "input_tokens": 608,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1308,
+    "output_tokens": 1549,
+    "output_tokens_details": {
+      "thinking_tokens": 1382
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0336736,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-opus-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "9bf65156e1c5799632148ce59c0e5b95f782b3e854533a6b38f5ae731e087c62"
+}

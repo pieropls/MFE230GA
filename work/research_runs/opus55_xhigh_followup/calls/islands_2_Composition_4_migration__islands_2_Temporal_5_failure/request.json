@@ -1,0 +1,13 @@
+{
+  "request_hash": "c24f4cab845a14785712fca00fe8fb34f04eca15939d9509c3bf531be60ee7b0",
+  "request": {
+    "call_id": "islands_2_Composition_4_migration__islands_2_Temporal_5_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nThe composition of the flow rates carries signal, but only conditionally. Our first attempt failed. An unconditional three-month change in V02's share relative to V03 showed a negative, insignificant link with next-month relative returns. The link was most negative in low-T months. Reversing the mix toward V03 and restricting to low-T months worked. Six-month shifts were modestly significant, and three-month shifts were clearly stronger. Replacing V02 with V04 as the comparison leg gave a similar positive effect. This suggests V03 is the informative component. These signals have low rank persistence and little overlap with base factors. However, the regime filter covers only about 58 percent of observations, and behavior in high-T months remains untested.\", \"hypothesis\": \"Twelve-month log hourly-pay growth unusually high versus each group's trailing three-year history signals tightening demand not yet priced, predicting higher next-month relative returns; rolling baselines adapt to structural shifts better than expanding ones.\", \"expression\": \"csrank(tsz(lchg(V05,12),36))\"}"
+  }
+}

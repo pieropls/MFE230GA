@@ -1,0 +1,42 @@
+{
+  "request_hash": "6223e42e8145f7838ea38dace45538987d93a10c49dc2b4a9de6619fc043e4de",
+  "envelope": {
+    "response": "**Composition findings**\n\nBoth attempts failed. Comparing each group's smoothed V02 flow rate with its smoothed V03 flow rate across groups showed essentially zero predictive power in both low and high T regimes. The signal was highly persistent, which suggests it reflects slow structural differences rather than timely information.\n\nScaling smoothed V04 flow by the V06 stock and standardizing against each group's own history also failed overall. It lost about thirty percent of coverage. However, it was clearly negative when T was high and mildly positive when T was low. The next lead is to test the reversed sign only when T is high, though that subsample may be small.",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 711,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 2023,
+      "output_tokens_details": {
+        "thinking_tokens": 1815
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.043559400000000005,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "6223e42e8145f7838ea38dace45538987d93a10c49dc2b4a9de6619fc043e4de"
+  }
+}

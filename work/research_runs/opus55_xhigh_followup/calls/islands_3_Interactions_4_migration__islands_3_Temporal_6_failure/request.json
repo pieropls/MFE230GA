@@ -1,0 +1,13 @@
+{
+  "request_hash": "be30aecd61603f5bd195b4f3b858edaa3c0a9efe6479d811aecd8953288cf4dd",
+  "request": {
+    "call_id": "islands_3_Interactions_4_migration__islands_3_Temporal_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Summary**\\n\\nWe tested four interaction-themed features, and none is convincing. One failure: multiplying cross-sectional ranks of three-month hourly-pay momentum and hours momentum gave a slightly negative, insignificant information coefficient. Contrasting three-month changes in two flow rates produced essentially zero signal. Persistence of rising hours, restricted to high common-index regimes, was slightly negative and had reduced coverage. The most informative feature was the stock rate standardized against its own expanding history, interacted with the common index. It was weakly positive overall but sharply regime-dependent: positive when the index was low and strongly negative when it was high. It also overlapped moderately with an existing base signal. A suggested next step is to isolate that stock-rate signal within low-index regimes.\", \"hypothesis\": \"Hours-rise persistence predicted returns positively when the common index was high (0.09) and negatively when low (-0.04). A continuous index interaction should use both regimes, keep full coverage and beat the regime-filtered t of 1.51.\", \"expression\": \"withT(persist(lag(V01,1),6))\"}"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"hours_wage_spread_high_T\",\"hypothesis\":\"Groups whose average hours V01 have risen faster than wage level V05 over 3 months, in cross-sectional standardized terms, earn higher next-month returns, and this effect is concentrated in high-T. Predicts positive rank IC.\",\"falsified_if\":\"Mean rank IC is nonpositive, HAC t-statistic is below 1.5, or high-T IC is not larger than low-T IC.\",\"expression\":\"regime(spread(lchg(V01,3),lchg(V05,3)),\\\"high\\\")\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1205,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 195,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0046153999999999995,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "2e2997f906f1aea5e6a442e30cfc29ec37e67462f4b1744c4587e536aba2d600"
+}

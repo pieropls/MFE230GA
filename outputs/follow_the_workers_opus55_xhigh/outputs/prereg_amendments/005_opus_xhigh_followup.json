@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-02T06:12:49.287742+00:00",
+  "approved": true,
+  "user_approval": "this is horrible, cant we do better? is it something with our design? maybe lets try it with all opus 5.5 agents running on extra, fresh, and see how it performs",
+  "previous_record_sha256": "62902b6f14352ef8e42bc8c27c3c437b8bc638123d69d0f62ddd73cc9197503e",
+  "previous_params_sha256": "73cd51cefbd34677600cdb932fd2a657379fe26ff91e04c3507f3ce91d470178",
+  "params_sha256": "077baaa8b9339f7ea6166f2566c692a1bdde877d273b6b809d2a778c6fe50a92",
+  "params_snapshot": "outputs/prereg/params_v4.py",
+  "purpose": "User-requested model/effort sensitivity after observing original sealed performance",
+  "model": "claude-opus-5-5",
+  "effort": "xhigh",
+  "scope": "All study roles: P1, researchers, migration judges, P4",
+  "changes": [
+    "Model Sonnet5.5 to Opus5.5",
+    "Effort medium to extra-high/xhigh",
+    "Separate fresh run namespace",
+    "Transport wall timeout180s to600s, no automatic retries",
+    "Provider labels and follow-up disclosure in report/notebook"
+  ],
+  "unchanged": [
+    "Pinned data/panels",
+    "All economic parameters and costs",
+    "October split and information cutoff",
+    "108 proposal/18 report schedule",
+    "Prompts, JSON validation and word limits",
+    "Selection and inference rules"
+  ],
+  "original_freeze_sha256": "60ea05294ffc856e57848d42bcfd3558674cb58d0e89595cb9b5c5a6465ca61c",
+  "original_result_sha256": "a6a09b02013e25407a45ad6f4631d86e53fefdbeb75ddf543b173e8c560302ed",
+  "interpretation": "Same historical test period already observed by user/engineer; follow-up is exploratory, not a fresh confirmatory holdout. Both results must be reported.",
+  "agent_context": "No prior candidates, scores, reports, histories, test results or reasons for follow-up supplied"
+}

@@ -1,0 +1,13 @@
+{
+  "request_hash": "9df398901c9f0d36c7aef365a847f8bfe8a1584942f932ea17f48da8a0cf1def",
+  "request": {
+    "call_id": "islands_1_Temporal_2_migration__islands_1_Interactions_3_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 3,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear.",
+    "prompt": "{\"report\": \"**Migration report**\\n\\nTwo submissions so far, and neither produced a usable signal.\\n\\nThe first used a standardized version of the V02 flow rate against its own expanding history. Its mean rank correlation was essentially zero, with a HAC t-statistic near zero. The regime split was unstable: slightly negative in low-T and clearly positive (0.12) in high-T. That suggests a regime-dependent sign, not the negative relation I hypothesized. This one failed.\\n\\nThe second used the share of positive monthly changes in V05, restricted to high-T. It was mildly negative (t of -0.7), with very high rank autocorrelation (0.77), so it is slow-moving. It also failed.\\n\\nNext: test V02 interacted with T, and try faster-moving temporal features.\", \"hypothesis\": \"Within the high-T regime, groups whose average hours V01 have risen over the past 3 months relative to their own 60-month history earn higher next-month returns; outside high-T the signal is muted. Predicts positive rank IC concentrated in high-T.\", \"expression\": \"regime(tsz(chg(V01,3),60),\\\"high\\\")\"}"
+  }
+}

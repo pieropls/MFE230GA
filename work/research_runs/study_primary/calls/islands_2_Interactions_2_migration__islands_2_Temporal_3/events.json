@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "The hypothesis and expression concern V05's year-over-year change, standardized against its own expanding history, and predict a reversal. The claims are a migration report about a different feature: an interaction of two stress-type variables, a word-limit failure, and a regime-conditioned pay-and-hours interaction. None of them is referenced or tested by the hypothesis or expression, and neither cites any claim numbers.\n\n```json\n{\"uses_claim\": false, \"claim_ids\": []}\n```"
+          }
+        ],
+        "usage": {
+          "input_tokens": 479,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 2,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "The hypothesis and expression concern V05's year-over-year change, standardized against its own expanding history, and predict a reversal. The claims are a migration report about a different feature: an interaction of two stress-type variables, a word-limit failure, and a regime-conditioned pay-and-hours interaction. None of them is referenced or tested by the hypothesis or expression, and neither cites any claim numbers.\n\n```json\n{\"uses_claim\": false, \"claim_ids\": []}\n```",
+      "usage": {
+        "input_tokens": 479,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 155,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 479,
+          "outputTokens": 155,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.002508,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.002508
+    }
+  ],
+  "stderr_present": false
+}

@@ -1,0 +1,13 @@
+{
+  "request_hash": "405066779775797f53ea17f7de0e6aef6f969dc0b70bf30e8f90cbf1f75660d0",
+  "request": {
+    "call_id": "islands_2_Temporal_4_migration__islands_2_Interactions_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear.",
+    "prompt": "{\"report\": \"**Migration report**\\n\\n**What worked:** Standardizing V05's year-over-year change against its own expanding history gave a modestly positive rank IC (about 0.06, HAC t 2.2). Correlation with base features was low. Lagging it one month weakened the signal (IC 0.04, t 1.4), so freshness matters. Signal strength appeared stronger when T was high.\\n\\n**What failed:** Counting the share of recent months in which V05 rose (six-month persistence) gave a negative IC (about -0.07, t -1.8). It contradicted my hypothesis and has high rank autocorrelation. Standardizing V03 against its expanding history produced essentially zero IC and weak coverage.\\n\\n**Caveat:** Coverage of the best feature is only about 63%, and its sign was opposite to my stated hypothesis, so treat it cautiously.\", \"hypothesis\": \"Groups with V03 high relative to V04, both standardized on a 60-month window and lightly smoothed over 3 months, will have higher next-month returns, extending the only significant positive result (submission 4) with modest noise reduction.\", \"expression\": \"spread(mavg(tsz(V03,60),3),mavg(tsz(V04,60),3))\"}"
+  }
+}

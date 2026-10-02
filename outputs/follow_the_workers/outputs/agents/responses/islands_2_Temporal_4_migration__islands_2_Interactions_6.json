@@ -1,0 +1,42 @@
+{
+  "request_hash": "76bbf941e9634aac9dea6ea02ba73c82abd616596fb77501ca084747919d9e35",
+  "envelope": {
+    "response": "The hypothesis is about V03 relative to V04, both standardized over a 60-month window and smoothed. The claims concern V05 and V03 in isolation, along with general points about coverage and lag.\n\nClaim 8 is the closest: it says standardizing V03 against its expanding history gave essentially zero IC and weak coverage. The expression uses tsz(V03,60), which is a similar standardization. However, the hypothesis doesn't reference or test that claim. It instead extends \"submission 4,\" which is not among the numbered claims. The hypothesis also doesn't mention V05, the lag, or coverage.\n\nThe expression includes V03 standardization, but it doesn't test or depend on claim 8. The hypothesis rests on an outside result.\n\n\n{\"uses_claim\": false, \"claim_ids\": []}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 538,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.003726,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "76bbf941e9634aac9dea6ea02ba73c82abd616596fb77501ca084747919d9e35"
+  }
+}

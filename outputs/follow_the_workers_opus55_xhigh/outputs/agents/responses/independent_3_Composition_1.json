@@ -1,0 +1,42 @@
+{
+  "request_hash": "50cdb09189ac2f31bea37bfc655f87a92bd0daac41ba7b1e051e0b3fc10d37ea",
+  "envelope": {
+    "response": "{\"name\":\"flow_mix_V02_over_V03_smoothed_rank\",\"hypothesis\":\"Groups whose three-month average ratio of flow V02 to flow V03 is high relative to other groups have a stronger flow mix. That should precede higher relative returns next month.\",\"falsified_if\":\"Mean monthly cross-sectional rank IC with next-month relative returns is not positive, or its t-statistic is below 2 in development data.\",\"expression\":\"csrank(mavg(ratio(V02,V03),3))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 41,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1307,
+      "output_tokens": 521,
+      "output_tokens_details": {
+        "thinking_tokens": 350
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.010845399999999998,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "50cdb09189ac2f31bea37bfc655f87a92bd0daac41ba7b1e051e0b3fc10d37ea"
+  }
+}

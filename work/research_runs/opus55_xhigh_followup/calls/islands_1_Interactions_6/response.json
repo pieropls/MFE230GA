@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"flow_differential_yoy_robustness\", \"hypothesis\": \"Final robustness check, data-informed by submissions 2 and 4: if relative V03 rises over V02 genuinely predict outperformance, seasonally neutral year-over-year changes should also predict higher relative returns next month, in both T regimes.\", \"falsified_if\": \"Mean IC is non-positive, HAC t-statistic is below 1.5, or low-T and high-T ICs differ in sign in development statistics.\", \"expression\": \"spread(yoy(V03),yoy(V02))\"}",
+  "model": "claude-opus-5-5",
+  "tokens": {
+    "input_tokens": 2459,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1308,
+    "output_tokens": 1870,
+    "output_tokens_details": {
+      "thinking_tokens": 1680
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.047497599999999994,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-opus-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "2e1abfb054bbebd9d55d207516af6a1bda08a321fe6b4fa6436c14a0604c9413"
+}

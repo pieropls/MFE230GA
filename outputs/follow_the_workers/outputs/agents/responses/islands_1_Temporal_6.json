@@ -1,0 +1,42 @@
+{
+  "request_hash": "cd6a9181ffedfe4106236d9c2f765ec065d1bbf36c115f499197675d2805e3b7",
+  "envelope": {
+    "response": "{\"name\":\"V04_chg3_csrank_lowT\",\"hypothesis\":\"Groups with larger 3-month increases in the V04 flow rate, ranked cross-sectionally and applied only in low-T regimes, have lower next-month returns than groups with smaller increases, so the rank correlation is negative.\",\"falsified_if\":\"Mean cross-sectional rank correlation with next-month returns is zero or positive, or the absolute HAC t-statistic is below 1.5 in development statistics.\",\"expression\":\"regime(csrank(chg(V04,3)),\\\"low\\\")\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1776,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0057174,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "cd6a9181ffedfe4106236d9c2f765ec065d1bbf36c115f499197675d2805e3b7"
+  }
+}

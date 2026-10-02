@@ -1,0 +1,42 @@
+{
+  "request_hash": "e2d95b31a281a7bf4b0c65dbfb202c49c93775f7e2ec2e1960f375be05f591fb",
+  "envelope": {
+    "response": "{\"name\": \"wage_logyoy_expanding_z_rank\", \"hypothesis\": \"Groups whose twelve-month log hourly-pay growth is unusually high versus their expanding own history face tightening demand not yet priced, earning higher relative returns next month; expanding windows should preserve the signal while raising coverage.\", \"falsified_if\": \"Mean cross-sectional rank IC with next-month relative returns is zero or negative, or HAC t-statistic is below 1.5 despite coverage above 0.44.\", \"expression\": \"csrank(tsz(lchg(V05,12),\\\"exp\\\"))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 1059,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1308,
+      "output_tokens": 1258,
+      "output_tokens_details": {
+        "thinking_tokens": 1056
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.029657600000000003,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "e2d95b31a281a7bf4b0c65dbfb202c49c93775f7e2ec2e1960f375be05f591fb"
+  }
+}

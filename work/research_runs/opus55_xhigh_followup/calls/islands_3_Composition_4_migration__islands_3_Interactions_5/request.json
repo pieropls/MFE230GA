@@ -1,0 +1,13 @@
+{
+  "request_hash": "1375b014750ebd6ebd59e26b90f54b72ba55676684702670c66df1e3a4f330f9",
+  "request": {
+    "call_id": "islands_3_Composition_4_migration__islands_3_Interactions_5",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}. Return one bare JSON object without Markdown fences or commentary. uses_claim must be a JSON boolean. claim_ids must be an array of integer claim numbers, never quoted strings; use an empty array when uses_claim is false.",
+    "prompt": "{\"claims\": {\"1\": \"**Composition findings, four submissions**\", \"2\": \"Contrasting two smoothed flow rates across groups (V02 versus V03) failed: information coefficient near zero, t-statistic about minus 0.2.\", \"3\": \"Scaling smoothed V04 flow by V06 stock, standardized against own history, was weak overall but strongly negative in high common-index periods.\", \"4\": \"A cross-sectional stock-minus-flow contrast limited to high-index periods barely helped.\", \"5\": \"Inverting the ratio, V06 stock over unsmoothed V04 flow, standardized against own history and limited to high-index periods, worked best: information coefficient 0.09, t-statistic 1.56, low overlap with base signals.\", \"6\": \"Caveats: low rank persistence means high turnover, coverage is 73 percent, and significance is marginal.\"}, \"hypothesis\": \"In high common-index regimes, groups whose V04 flow is elevated versus own history while V06 stock is depressed versus own history earn higher next-month relative returns, exploiting the negative high-index V06 effect observed earlier.\", \"expression\": \"regime(spread(tsz(V04,\\\"exp\\\"),tsz(V06,\\\"exp\\\")),\\\"high\\\")\"}"
+  }
+}

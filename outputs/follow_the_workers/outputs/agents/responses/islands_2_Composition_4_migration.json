@@ -1,0 +1,42 @@
+{
+  "request_hash": "1c9e5769f9446f7eaa106c7fe22dbc5cc023d04ce432b13895a91d2ba6aeefcd",
+  "envelope": {
+    "response": "**Migration Report**\n\n**What worked (weakly):** The first attempt, a three-month change in the ratio of two turnover-type flow rates, ranked across groups, gave the only encouraging result. Mean IC was 0.03 and the HAC t-stat was 1.42. The signal was concentrated in low-T periods, and it was near zero in high-T periods. It is suggestive, not significant.\n\n**What failed:** Regime-gating a spread between two flow rates (submission 2) covered only 58% of observations and had no high-T output. It gave a slightly negative IC. The stock-versus-flow standardized spread (submission 3) was negative, at -1.18 HAC t, and correlated 0.33 with base features. The pay-per-hours change was flat.\n\n**Next:** Try changes in flow-rate ratios with longer smoothing, and avoid regime gating.",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1276,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1246,
+      "output_tokens": 284,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0056412,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "1c9e5769f9446f7eaa106c7fe22dbc5cc023d04ce432b13895a91d2ba6aeefcd"
+  }
+}

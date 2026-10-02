@@ -1,0 +1,42 @@
+{
+  "request_hash": "bfaf0bdb23db5e7a6019c0cfb1a19388cf93bfcf4504e0146657379f844dd70e",
+  "envelope": {
+    "response": "{\"name\":\"V05_yoy_tsz_exp_lag1\",\"hypothesis\":\"Groups whose V05 year-over-year change, standardized against its own expanding history, was high last month will have higher returns next month, because the positive IC of the current-month version may reflect persistent pay strength.\",\"falsified_if\":\"Mean cross-sectional rank IC is non-positive or HAC t-statistic is below 1 in development data, or the top-minus-bottom quintile spread is negative.\",\"expression\":\"lag(tsz(yoy(V05),\\\"exp\\\"),1)\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1173,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 188,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0044814,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "bfaf0bdb23db5e7a6019c0cfb1a19388cf93bfcf4504e0146657379f844dd70e"
+  }
+}

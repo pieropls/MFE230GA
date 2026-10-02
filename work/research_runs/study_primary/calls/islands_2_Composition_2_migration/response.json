@@ -1,0 +1,39 @@
+{
+  "response": "**Findings so far**\n\nTwo submissions, both valid.\n\nThe first tested a three-month change in the ratio of two turnover-type flow rates, ranked across groups. It had modest positive information (mean IC 0.03, HAC t 1.42), which is not significant. The effect appeared only when T was low (IC 0.07) and vanished when T was high. It had low overlap with base features and moderate rank persistence.\n\nThe second failed. It applied a low-T regime filter to a cross-sectional spread of a third flow rate against the same denominator variable. Coverage fell to 0.58, mean IC was about zero (t -0.26), and the high-T result was empty. The regime filter cut the sample without adding signal, and that was my mistake.\n\n**Next steps**\n\nAvoid regime filters that drop coverage. Try smoothed changes or T interactions instead.",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 685,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1246,
+    "output_tokens": 276,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0043792,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "a1cbb587055cb875ee5877cd37691e8fc7cd2ec506e06ad004fc33987a879570"
+}

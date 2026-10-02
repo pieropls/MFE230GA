@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "total_judgments": 36,
+  "total_receiving_pairs": 36,
+  "review_fraction": 0.2222222222222222,
+  "review_required": 8,
+  "review_completed": 8,
+  "agreement": 0.125,
+  "evidence_hashes": {
+    "outputs/agents/migration_judgments.json": "d129ed0404cdd1947cc87ab6cc49a2367e10523633274c0418814cc627340f4a"
+  }
+}

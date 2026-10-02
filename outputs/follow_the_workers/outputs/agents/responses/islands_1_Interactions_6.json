@@ -1,0 +1,42 @@
+{
+  "request_hash": "e4b1d700ade1081d3f22cdd5f90549b9b3c2dac7ce59c257eab4b0607f09036b",
+  "envelope": {
+    "response": "{\"name\":\"V06_stock_minus_V04_flow_spread\",\"hypothesis\":\"Groups with a high V06 stock rate relative to V04 flow rate, cross-sectionally standardized, earn higher next-month returns, since a persistent stock exceeding current flow suggests stability. Predicts positive rank IC.\",\"falsified_if\":\"Mean rank IC is nonpositive, HAC t-statistic is below 1.5, or top-minus-bottom tercile spread is not positive.\",\"expression\":\"spread(tsz(V06,60),tsz(V04,60))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1788,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0057514,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "e4b1d700ade1081d3f22cdd5f90549b9b3c2dac7ce59c257eab4b0607f09036b"
+  }
+}

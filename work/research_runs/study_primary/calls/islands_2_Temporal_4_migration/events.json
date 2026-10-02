@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "**Migration report**\n\n**What worked:** Standardizing V05's year-over-year change against its own expanding history gave a modestly positive rank IC (about 0.06, HAC t 2.2). Correlation with base features was low. Lagging it one month weakened the signal (IC 0.04, t 1.4), so freshness matters. Signal strength appeared stronger when T was high.\n\n**What failed:** Counting the share of recent months in which V05 rose (six-month persistence) gave a negative IC (about -0.07, t -1.8). It contradicted my hypothesis and has high rank autocorrelation. Standardizing V03 against its expanding history produced essentially zero IC and weak coverage.\n\n**Caveat:** Coverage of the best feature is only about 63%, and its sign was opposite to my stated hypothesis, so treat it cautiously."
+          }
+        ],
+        "usage": {
+          "input_tokens": 1286,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1247,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "**Migration report**\n\n**What worked:** Standardizing V05's year-over-year change against its own expanding history gave a modestly positive rank IC (about 0.06, HAC t 2.2). Correlation with base features was low. Lagging it one month weakened the signal (IC 0.04, t 1.4), so freshness matters. Signal strength appeared stronger when T was high.\n\n**What failed:** Counting the share of recent months in which V05 rose (six-month persistence) gave a negative IC (about -0.07, t -1.8). It contradicted my hypothesis and has high rank autocorrelation. Standardizing V03 against its expanding history produced essentially zero IC and weak coverage.\n\n**Caveat:** Coverage of the best feature is only about 63%, and its sign was opposite to my stated hypothesis, so treat it cautiously.",
+      "usage": {
+        "input_tokens": 1286,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1247,
+        "output_tokens": 279,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 1286,
+          "outputTokens": 279,
+          "cacheReadInputTokens": 1247,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.005611400000000001,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.005611400000000001
+    }
+  ],
+  "stderr_present": false
+}

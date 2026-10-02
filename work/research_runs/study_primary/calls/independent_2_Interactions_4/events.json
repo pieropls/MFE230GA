@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"Separation-rate change interaction with wage tsz\",\"hypothesis\":\"Groups with rising V02 over 3 months while hourly dollars (V05) are unusually low versus own history face labor weakness and should have lower next-month returns; the feature should correlate negatively, building on the earlier V02 result.\",\"falsified_if\":\"Mean IC is positive or |HAC t| is below 2 in development statistics, or low_T and high_T ICs have opposite signs.\",\"expression\":\"mult(chg(V02,3),tsz(V05,60))\"}"
+          }
+        ],
+        "usage": {
+          "input_tokens": 936,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1277,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 7,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "{\"name\":\"Separation-rate change interaction with wage tsz\",\"hypothesis\":\"Groups with rising V02 over 3 months while hourly dollars (V05) are unusually low versus own history face labor weakness and should have lower next-month returns; the feature should correlate negatively, building on the earlier V02 result.\",\"falsified_if\":\"Mean IC is positive or |HAC t| is below 2 in development statistics, or low_T and high_T ICs have opposite signs.\",\"expression\":\"mult(chg(V02,3),tsz(V05,60))\"}",
+      "usage": {
+        "input_tokens": 936,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1277,
+        "output_tokens": 183,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 936,
+          "outputTokens": 183,
+          "cacheReadInputTokens": 1277,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0039574,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0039574
+    }
+  ],
+  "stderr_present": false
+}

@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"Stock-rate composition against flow V04 spread\", \"hypothesis\": \"Groups whose stock rate V06 (12-month average) is high relative to flow rate V04 have a more persistent, stable composition and earn higher returns next month than groups with low V06 relative to V04.\", \"falsified_if\": \"Mean cross-sectional rank IC is zero or negative in development statistics, or HAC t-stat is below 1.\", \"expression\": \"spread(mavg(V06,12),mavg(V04,12))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 651,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1276,
+    "output_tokens": 172,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0032772000000000005,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "d55e754a56f452aa0aed23055a8a7a02867b6d4674a6322d6e68dc6cbc9bcbda"
+}

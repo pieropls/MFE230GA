@@ -1,0 +1,43 @@
+{
+  "command": [
+    "/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+    "-p",
+    "--safe-mode",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--permission-prompts",
+    "none",
+    "--setting-sources",
+    "",
+    "--settings",
+    "{\"enabledPlugins\":{\"agents-md@builtin\":false}}",
+    "--system-prompt",
+    "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}.",
+    "--model",
+    "claude-sonnet-5-5",
+    "--effort",
+    "medium",
+    "--max-turns",
+    "1",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "sandbox": "(version 1)\n(allow default)\n(deny file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30\"))\n(allow file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_1_Temporal_2_migration__islands_1_Composition_4\"))\n(allow file-read* (literal \"/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe\"))\n(deny file-read* (subpath \"/Users/alex/Downloads\"))\n(deny file-read* (subpath \"/Users/alex/.codex\"))",
+  "cli_sha256": "50a14c2f50f56668380fdda490167f1d3630d5cc18fb8aed3073c2c7ea7314fe",
+  "environment": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+    "CLAUDE_CODE_DISABLE_ATTACHMENTS": "1",
+    "DISABLE_UPDATES": "1",
+    "CLAUDE_CODE_MAX_RETRIES": "0",
+    "CLAUDE_CODE_EXTRA_BODY": "{\"messages\": [{\"role\": \"user\", \"content\": \"{\\\"claims\\\": {\\\"1\\\": \\\"**Migration report**\\\", \\\"2\\\": \\\"Two submissions so far, and neither produced a usable signal.\\\", \\\"3\\\": \\\"The first used a standardized version of the V02 flow rate against its own expanding history.\\\", \\\"4\\\": \\\"Its mean rank correlation was essentially zero, with a HAC t-statistic near zero.\\\", \\\"5\\\": \\\"The regime split was unstable: slightly negative in low-T and clearly positive (0.12) in high-T.\\\", \\\"6\\\": \\\"That suggests a regime-dependent sign, not the negative relation I hypothesized.\\\", \\\"7\\\": \\\"This one failed.\\\", \\\"8\\\": \\\"The second used the share of positive monthly changes in V05, restricted to high-T.\\\", \\\"9\\\": \\\"It was mildly negative (t of -0.7), with very high rank autocorrelation (0.77), so it is slow-moving.\\\", \\\"10\\\": \\\"It also failed.\\\", \\\"11\\\": \\\"Next: test V02 interacted with T, and try faster-moving temporal features.\\\"}, \\\"hypothesis\\\": \\\"Groups whose V02 flow rate rose more than their V03 flow rate over the last 3 months (standardized across groups) have higher next-month returns, because a faster-moving composition shift should carry more signal than the smoothed levels tried earlier.\\\", \\\"expression\\\": \\\"spread(chg(V02,3),chg(V03,3))\\\"}\"}]}",
+    "TMPDIR": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_1_Temporal_2_migration__islands_1_Composition_4/tmp"
+  }
+}

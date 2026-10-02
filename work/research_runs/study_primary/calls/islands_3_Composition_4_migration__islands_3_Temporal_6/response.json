@@ -1,0 +1,39 @@
+{
+  "response": "The hypothesis is about a stock-vs-flow contrast (V06 stock rate vs V03 flow rate), with the effect in the high-T regime. Claim 9 explicitly mentions \"The stock-versus-flow contrast ... had ICs near zero,\" which is directly tested by this expression. Claim 7 concerns a high-T-only flow-rate contrast, which is related but distinct (a flow-rate contrast, not stock vs flow). The expression is high-regime-only stock-vs-flow, so claim 9 is the main match. Claim 5 mentions the high-T regime for the hours vs wage feature, which is a different feature. Claims 10 and 11 are general observations about smoothed features and base correlations, and this expression is not smoothed.\n\nClaim 8 says coverage fell to 0.82 for the high-T-only flow-rate contrast. That is a different feature.\n\nThe expression is the stock-versus-flow contrast restricted to the high-T regime, so the hypothesis tests claim 9, and it may also overlap with claim 7 as a high-T-only feature.\n\nI'll return claim 9 as the clearest link, with claim 7 as a plausible secondary link.\n\n{\"uses_claim\": true, \"claim_ids\": [9]}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 536,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 411,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.005182,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "dc950bdd2eb0b26a0375ceb8932a9582dd1ec78230d44549f7f5849cfde66d10"
+}

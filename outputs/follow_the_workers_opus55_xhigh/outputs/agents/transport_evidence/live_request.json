@@ -1,0 +1,10 @@
+{
+  "request_hash": "4e7487df2b2ce621584c87e719df9f4880f2811cafa0fa10fab3b1e025080e82",
+  "request": {
+    "call_id": "connection",
+    "kind": "connection_test",
+    "requested_model": "claude-opus-5-5",
+    "system": "Return only the exact JSON requested by the user. Do not use tools.",
+    "prompt": "Return exactly {\"status\":\"ready\"}."
+  }
+}

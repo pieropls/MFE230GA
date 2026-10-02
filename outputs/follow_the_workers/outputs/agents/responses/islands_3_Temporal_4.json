@@ -1,0 +1,42 @@
+{
+  "request_hash": "ec239ff6b4737599f2367d926ebed74f8e6387e67da68b69c67100a688b670ef",
+  "envelope": {
+    "response": "{\"name\":\"V06_stock_tsz60_reversal\",\"hypothesis\":\"Groups whose V06 stock rate is high relative to its own trailing 60-month mean and volatility will have lower next-month returns than groups with low z-scores, reflecting mean reversion in the stock. Effect is stronger in high T.\",\"falsified_if\":\"Mean rank IC is zero or positive, or HAC t-stat is above -1.5, or high-T IC is not more negative than low-T IC.\",\"expression\":\"csrank(tsz(lag(V06,2),60))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 941,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0039874,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "ec239ff6b4737599f2367d926ebed74f8e6387e67da68b69c67100a688b670ef"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "5a11c21605b90b1324d62ce836030dd12e28c0217e01edb208d0058d9ba6a678",
+  "envelope": {
+    "response": "{\"name\": \"flow_wage_yoy_interaction\", \"hypothesis\": \"Groups with both rising V04 flow rates and rising dollars per hour year-over-year, relative to peers, reflect tightening demand. This joint cross-sectional interaction predicts higher next-month relative returns in both T regimes.\", \"falsified_if\": \"Mean IC is zero or negative, HAC t-statistic below 2, or low-T and high-T ICs have opposite signs.\", \"expression\": \"mult(csrank(yoy(V04)),csrank(lchg(V05,12)))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 1566,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1308,
+      "output_tokens": 1193,
+      "output_tokens_details": {
+        "thinking_tokens": 1001
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0303856,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "5a11c21605b90b1324d62ce836030dd12e28c0217e01edb208d0058d9ba6a678"
+  }
+}

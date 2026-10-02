@@ -1,0 +1,195 @@
+{
+  "utc": "2026-09-29T19:16:46.875073+00:00",
+  "sources": {
+    "1987_SIC_to_2002_NAICS.xls": "fcb8ad7e4162a4d95c39ebe51c12e8ec20dfa6a31f2e81bf8fb1de08fbedc937",
+    "Siccodes49.txt": "5d0c29b0325078ac3a51829840569af2d12eaed537328f979b6c56447c24827f"
+  },
+  "groups": [
+    {
+      "group": 1,
+      "name": "Mining and logging",
+      "correspondence_rows": 44,
+      "outside_scope_rows": 11,
+      "outside_scope_portfolios": [
+        "Coal",
+        "Mines",
+        "Oil"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 2,
+      "name": "Construction",
+      "correspondence_rows": 64,
+      "outside_scope_rows": 2,
+      "outside_scope_portfolios": [
+        "Cnstr"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 3,
+      "name": "Durable manufacturing",
+      "correspondence_rows": 390,
+      "outside_scope_rows": 36,
+      "outside_scope_portfolios": [
+        "Aero",
+        "Autos",
+        "BldMt",
+        "Guns",
+        "Mach",
+        "MedEq",
+        "Ships",
+        "Steel",
+        "Toys"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 4,
+      "name": "Nondurable manufacturing",
+      "correspondence_rows": 408,
+      "outside_scope_rows": 72,
+      "outside_scope_portfolios": [
+        "Chems",
+        "Clths",
+        "Food",
+        "Hshld",
+        "Paper",
+        "Rubbr",
+        "Txtls"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 5,
+      "name": "Wholesale trade",
+      "correspondence_rows": 285,
+      "outside_scope_rows": 73,
+      "outside_scope_portfolios": [
+        "Whlsl"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 6,
+      "name": "Retail trade",
+      "correspondence_rows": 110,
+      "outside_scope_rows": 17,
+      "outside_scope_portfolios": [
+        "Rtail"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 7,
+      "name": "Transportation, warehousing and utilities",
+      "correspondence_rows": 114,
+      "outside_scope_rows": 16,
+      "outside_scope_portfolios": [
+        "Trans"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 8,
+      "name": "Information",
+      "correspondence_rows": 16,
+      "outside_scope_rows": 2,
+      "outside_scope_portfolios": [
+        "Telcm"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 9,
+      "name": "Finance and insurance",
+      "correspondence_rows": 99,
+      "outside_scope_rows": 5,
+      "outside_scope_portfolios": [
+        "Fin"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 10,
+      "name": "Real estate and rental and leasing",
+      "correspondence_rows": 18,
+      "outside_scope_rows": 6,
+      "outside_scope_portfolios": [
+        "RlEst"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 11,
+      "name": "Professional and business services",
+      "correspondence_rows": 162,
+      "outside_scope_rows": 77,
+      "outside_scope_portfolios": [
+        "BusSv"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 12,
+      "name": "Health care and social assistance",
+      "correspondence_rows": 41,
+      "outside_scope_rows": 3,
+      "outside_scope_portfolios": [
+        "Hlth"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    },
+    {
+      "group": 13,
+      "name": "Accommodation and food services",
+      "correspondence_rows": 15,
+      "outside_scope_rows": 2,
+      "outside_scope_portfolios": [
+        "Meals"
+      ],
+      "assessment": "Approximate SIC portfolio proxy",
+      "limitation": "Correspondence counts are not firm, employment, market-cap or portfolio weights; 2002 scope only"
+    }
+  ],
+  "excluded_noncoded_annotation_rows": [
+    {
+      "sic": "Aux",
+      "sic_title": "These establishments were included as auxiliaries in the 1987 Standard Industrial Classification",
+      "naics": "551114",
+      "naics_title": "Corporate, Subsidiary, and Regional Managing Offices"
+    },
+    {
+      "sic": "",
+      "sic_title": "Null Set for U.S.",
+      "naics": "112130",
+      "naics_title": "Dual Purpose Cattle Ranching and Farming"
+    },
+    {
+      "sic": "",
+      "sic_title": "Null Set for U.S.",
+      "naics": "541120",
+      "naics_title": "Offices of Notaries"
+    },
+    {
+      "sic": "",
+      "sic_title": "",
+      "naics": " ",
+      "naics_title": ""
+    }
+  ],
+  "membership_policy": "Preserve the user-prescribed baskets; disclose mismatches without performance-based remapping"
+}

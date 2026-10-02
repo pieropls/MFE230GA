@@ -1,0 +1,42 @@
+{
+  "request_hash": "e1ad0e376e683ae09bfe6b54cc05d506a368a0c60a594aa0be12eead1242e711",
+  "envelope": {
+    "response": "{\"name\":\"Hours momentum times separation-flow reversal\",\"hypothesis\":\"Groups with rising hours (V01 3-month change rank) and falling flow V03 (negative 3-month change rank) have higher next-month relative returns; the interaction of the two cross-sectional ranks positively predicts, with a positive IC and HAC t above 1.\",\"falsified_if\":\"Development mean IC is zero or negative, or HAC t-stat is below 1.\",\"expression\":\"mult(csrank(chg(V01,3)),csrank(chg(V03,3)))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 672,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 186,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0034593999999999996,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "e1ad0e376e683ae09bfe6b54cc05d506a368a0c60a594aa0be12eead1242e711"
+  }
+}

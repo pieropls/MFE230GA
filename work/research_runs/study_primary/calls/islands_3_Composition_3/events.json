@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"composition_stock_vs_flow_spread\",\"hypothesis\":\"Groups whose stock rate V06 is high relative to flow rate V04, cross-sectionally standardized and smoothed over 6 months, have lower next-month returns, because a stock-heavy composition signals slack. Expect negative rank IC.\",\"falsified_if\":\"Mean rank IC against next-month group returns is zero or positive, or the top-minus-bottom tercile return spread is not negative in development data.\",\"expression\":\"mavg(spread(V06,V04),6)\"}"
+          }
+        ],
+        "usage": {
+          "input_tokens": 649,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1276,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 4,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "{\"name\":\"composition_stock_vs_flow_spread\",\"hypothesis\":\"Groups whose stock rate V06 is high relative to flow rate V04, cross-sectionally standardized and smoothed over 6 months, have lower next-month returns, because a stock-heavy composition signals slack. Expect negative rank IC.\",\"falsified_if\":\"Mean rank IC against next-month group returns is zero or positive, or the top-minus-bottom tercile return spread is not negative in development data.\",\"expression\":\"mavg(spread(V06,V04),6)\"}",
+      "usage": {
+        "input_tokens": 649,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1276,
+        "output_tokens": 183,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 649,
+          "outputTokens": 183,
+          "cacheReadInputTokens": 1276,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0033832,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0033832
+    }
+  ],
+  "stderr_present": false
+}

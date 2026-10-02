@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"hours_vs_V04_flow_divergence\", \"hypothesis\": \"Groups lengthening average hours while flow rate V04 falls are expanding through the intensive margin before extensive adjustment. This standardized divergence should predict higher relative returns next month.\", \"falsified_if\": \"Mean monthly rank IC with next-month relative returns is zero or negative, or its HAC t-statistic is below 1.5.\", \"expression\": \"spread(chg(V01,3),chg(V04,3))\"}",
+  "model": "claude-opus-5-5",
+  "tokens": {
+    "input_tokens": 1250,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1308,
+    "output_tokens": 1058,
+    "output_tokens_details": {
+      "thinking_tokens": 890
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0264216,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-opus-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "24582ade10bc01a4b020d4076210d4849437ef052b5f6fe9865efa36a7b0a10c"
+}

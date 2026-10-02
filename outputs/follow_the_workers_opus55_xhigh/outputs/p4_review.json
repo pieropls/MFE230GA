@@ -1,0 +1,108 @@
+{
+  "utc": "2026-10-02T07:39:16.340820+00:00",
+  "complete": true,
+  "open_flags": [],
+  "model": "claude-opus-5-5",
+  "effort": "xhigh",
+  "evidence": [
+    "outputs/p4_request.json",
+    "outputs/p4_response.json",
+    "outputs/audits/p4/events.json",
+    "outputs/p4_claim_checks.json"
+  ],
+  "decisions": [
+    {
+      "number": 1,
+      "accepted": true,
+      "test_id": "horizons",
+      "finding": "Limited power and noisy rankings",
+      "reason": "Retain registered HAC IC estimates and stationary-bootstrap uncertainty for the declared paired IC/return comparisons. The quoted Sharpe precision is an IID approximation, not a formal power analysis. Do not add new Sharpe-difference test families or a confidence-bound implementation gate.",
+      "execution": "Existing registered diagnostics; final-period evaluation not yet run"
+    },
+    {
+      "number": 2,
+      "accepted": true,
+      "test_id": "placebo",
+      "finding": "Common construction or hedge effects",
+      "reason": "Retain the prescribed causal circular-shift placebo, factor attribution and accounting checks. A fit across five related strategy summaries cannot establish a common hedge drag. Do not add 500 cross-sectional shuffles, an own-IC regression veto or a new percentile threshold.",
+      "execution": "Existing registered diagnostics; final-period evaluation not yet run"
+    },
+    {
+      "number": 3,
+      "accepted": false,
+      "test_id": null,
+      "finding": "Alleged inconsistent benchmark",
+      "reason": "Unsupported: active return belongs to a separate long-only portfolio, whereas net is hedged long-short excess return. Their subtraction does not recover a benchmark. data.py uses the same equal-weight group excess-return benchmark and all five ledgers share the same dates/universe; saved active-return metrics reconcile. No benchmark or return-series change is warranted.",
+      "execution": "No new diagnostic or gate adopted; factual checks retained"
+    },
+    {
+      "number": 4,
+      "accepted": true,
+      "test_id": "cost_25",
+      "finding": "Cost and implementation optimism",
+      "reason": "Retain registered 0/10/25bp industry costs, borrow/financing sensitivity, break-even analysis and capacity gate. All research gross means are negative, so costs are not the sole source of losses. Actual capacity and market impact remain unverified. Do not add a new twice-estimated-cost threshold or fabricate liquidity estimates.",
+      "execution": "Existing registered diagnostics; final-period evaluation not yet run"
+    },
+    {
+      "number": 5,
+      "accepted": false,
+      "test_id": null,
+      "finding": "Trial accounting and near-clone strategies",
+      "reason": "The 41 count is nominal: 36 first-repetition candidate slots plus five strategies, including one invalid candidate. All slots are accounted for; 35 valid candidate portfolios and five strategy portfolios are saved. A2 was excluded by pre-existing source-admission failures, not performance. Preserve the undefined full-family reality check and DSR caveat; no new SPA/Romano-Wolf family, effective-trial tuning or DSR gate.",
+      "execution": "No new diagnostic or gate adopted; factual checks retained"
+    },
+    {
+      "number": 6,
+      "accepted": true,
+      "test_id": "halves",
+      "finding": "Sign instability and post-hoc inversion",
+      "reason": "Use the registered half-period IC sign checks. No signal inversion, extra candidates or model reselection is authorized by a negative research result. Do not add inverted trials or a DSR0.95 cutoff. The claimed implication that an inverse cannot invert portfolio profit is not established by the five-point fit.",
+      "execution": "Existing registered diagnostics; final-period evaluation not yet run"
+    },
+    {
+      "number": 7,
+      "accepted": true,
+      "test_id": "tightness",
+      "finding": "Regime concentration and favorable windows",
+      "reason": "Use registered tightness, pandemic, half-period, last-window and profit-concentration diagnostics. Aggregate drawdown minus an approximate log loss cannot establish the presence or absence of a profitable stretch, especially when funded wealth includes the risk-free return. Do not choose start dates from outcomes or add a three-year recurrence threshold.",
+      "execution": "Existing registered diagnostics; final-period evaluation not yet run"
+    },
+    {
+      "number": 8,
+      "accepted": false,
+      "test_id": null,
+      "finding": "Outliers and low hit rate",
+      "reason": "Do not introduce trimming, a Wilcoxon/sign-test trading gate or a new median-return threshold. The quoted sign-test inference would require dependence assumptions; a hit rate below one half does not itself imply a negative expected payoff. Preserve the existing profit-concentration gate and full untrimmed return histories.",
+      "execution": "No new diagnostic or gate adopted; factual checks retained"
+    },
+    {
+      "number": 9,
+      "accepted": true,
+      "test_id": "variant_gap",
+      "finding": "Timing, horizon and universe alignment",
+      "reason": "P1 release/cutoff checks, training-label assertions and synthetic timing tests passed. Retain registered ASOF/FIRST/REVISED/FIXEDLAG, horizon and holding-period diagnostics. Full-universe rank IC need not have the same sign as a tail-selected, overlapping, hedged portfolio. No new lead/lag grid or lag selection follows this audit; point-in-time tradability of French baskets remains a disclosed limitation.",
+      "execution": "Existing registered diagnostics; final-period evaluation not yet run"
+    },
+    {
+      "number": 10,
+      "accepted": false,
+      "test_id": null,
+      "finding": "Alleged funded-account mismatch",
+      "reason": "Saved-ledger reconstruction passed for all five strategies: net=gross-cost-financing, total_net=net+risk_free, funded drawdown compounds total_net, and Sharpe uses net excess returns. Weights share the funded-capital basis and the gross cap reconciles. This intentional distinction is not an accounting bug. Do not invent an unregistered drawdown-budget veto.",
+      "execution": "No new diagnostic or gate adopted; factual checks retained"
+    }
+  ],
+  "evidence_hashes": {
+    "stats.py": "c627a8ba4cb6f70fb141bb32688ec59afb62f500dca9a37cdafb30496a40ede7",
+    "outputs/research_summary.json": "75d6f80f803887a0448f53bef32ef9e99379d17ed9e10b11cf983fd77da2e964",
+    "outputs/selected_features.json": "d0c33e54c2c70c566cd90a3a79019c0ac7ba651ccb7eb2f3f2bfd9aba7cfe54e",
+    "outputs/p4_request.json": "2958b1afa9daf963c2c25ee7003f2ca2494a360548b5de18e4501e6aa2b1ca75",
+    "outputs/p4_response.json": "927b10f35714ae336db3c5c59a433995167cba3d16bc27bfa7eee4d65490b6e4",
+    "outputs/p4_claim_checks.json": "f770a5bd495df677893706b519ba6233fd57d0fe9d3a9dea846e5a176a394e2c"
+  },
+  "framing_correction": "All research gross means are negative, but the quoted -0.40 to -0.55 Sharpe range describes net, not both gross and net; gross Sharpes are approximately -0.25 to -0.38.",
+  "conclusion": "Research gives no compelling implementation evidence. Preserve mechanical A4 selection and all registered final diagnostics; neither the auditor nor engineer changes features, signs, thresholds or the research/test boundary.",
+  "sealed_test_opened": false,
+  "new_model_calls_for_disposition": 0,
+  "team_critique": null
+}

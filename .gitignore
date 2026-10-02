@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv/
+*.parquet
+*.zip
+*.key
+*.pem
+.pgpass
+.secrets/
+outputs/*/data/
+outputs/linkup/
+outputs/revelio/

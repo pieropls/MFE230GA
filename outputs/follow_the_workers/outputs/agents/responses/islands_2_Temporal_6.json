@@ -1,0 +1,42 @@
+{
+  "request_hash": "7f0831fc72467497793a9b3641443b50de4a69be7c44287a706e4d721641199a",
+  "envelope": {
+    "response": "{\"name\":\"V05_yoy_tsz_exp_x_V01_hours_spread\",\"hypothesis\":\"Groups with unusually high pay growth relative to their own history, net of unusual hours growth, will have higher next-month returns, because pay strength not explained by hours reflects durable strength priced in slowly.\",\"falsified_if\":\"Mean cross-sectional rank IC is non-positive or HAC t-statistic is below 1 in development data, or coverage falls below 0.55.\",\"expression\":\"spread(tsz(yoy(V05),\\\"exp\\\"),tsz(yoy(V01),\\\"exp\\\"))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 2337,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 205,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0069794,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "7f0831fc72467497793a9b3641443b50de4a69be7c44287a706e4d721641199a"
+  }
+}

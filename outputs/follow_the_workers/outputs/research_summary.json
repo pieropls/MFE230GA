@@ -1,0 +1,857 @@
+{
+  "strategies": {
+    "A0": {
+      "n": 88,
+      "mean_net_annual": -0.034834473059436696,
+      "volatility": 0.07900318404963522,
+      "sharpe": -0.44092492572895914,
+      "max_drawdown": -0.24068887851746212,
+      "hit_rate": 0.4659090909090909,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": -0.02678866090746765,
+      "turnover": 0.658145765607345,
+      "hedge_turnover": 0.061692901950382566,
+      "cost": 0.0006704843459974213,
+      "borrow_financing": 0.0,
+      "active_return": 0.008940491046367176,
+      "tracking_error": 0.059840584467354775,
+      "information_ratio": 0.14940514244550102,
+      "IC": {
+        "n": 88,
+        "lags": 6,
+        "mean": 0.011729495551911925,
+        "se": 0.02655547734099765,
+        "t": 0.4416977861589162,
+        "coefficients": {
+          "intercept": 0.011729495551911925
+        },
+        "standard_errors": {
+          "intercept": 0.02655547734099765
+        },
+        "t_statistics": {
+          "intercept": 0.4416977861589162
+        }
+      },
+      "deflated_sharpe": {
+        "dsr": 0.0003801360433639087,
+        "monthly_sharpe": -0.12728406228101513,
+        "benchmark": 0.26162621421160664,
+        "n": 88,
+        "nominal_trials": 41,
+        "caveat": "Research diagnostic; dependence and adaptive model search are not fully corrected"
+      }
+    },
+    "A1": {
+      "n": 88,
+      "mean_net_annual": -0.034892380299803766,
+      "volatility": 0.06454926442461202,
+      "sharpe": -0.5405542667423431,
+      "max_drawdown": -0.35470609183850377,
+      "hit_rate": 0.38636363636363635,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": -0.024471514624170757,
+      "turnover": 0.8508022177057871,
+      "hedge_turnover": 0.08801627631815306,
+      "cost": 0.0008684054729694177,
+      "borrow_financing": 0.0,
+      "active_return": -0.023445865011222193,
+      "tracking_error": 0.0487454229458464,
+      "information_ratio": -0.4809859796943257,
+      "IC": {
+        "n": 88,
+        "lags": 6,
+        "mean": -0.02293065675622675,
+        "se": 0.03321568161056101,
+        "t": -0.6903563511078421,
+        "coefficients": {
+          "intercept": -0.02293065675622675
+        },
+        "standard_errors": {
+          "intercept": 0.03321568161056101
+        },
+        "t_statistics": {
+          "intercept": -0.6903563511078421
+        }
+      },
+      "deflated_sharpe": {
+        "dsr": 5.5207058677154256e-05,
+        "monthly_sharpe": -0.1560445757076463,
+        "benchmark": 0.26162621421160664,
+        "n": 88,
+        "nominal_trials": 41,
+        "caveat": "Research diagnostic; dependence and adaptive model search are not fully corrected"
+      }
+    },
+    "A1-T": {
+      "n": 88,
+      "mean_net_annual": -0.03220963902203334,
+      "volatility": 0.0587627431737918,
+      "sharpe": -0.5481302825971346,
+      "max_drawdown": -0.3195780161812204,
+      "hit_rate": 0.4090909090909091,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": -0.022501621928029698,
+      "turnover": 0.7935588537801285,
+      "hedge_turnover": 0.0772128536008742,
+      "cost": 0.0008090014245003035,
+      "borrow_financing": 0.0,
+      "active_return": -0.02089049258564427,
+      "tracking_error": 0.04621045445426426,
+      "information_ratio": -0.4520728660290531,
+      "IC": {
+        "n": 88,
+        "lags": 6,
+        "mean": -0.029948909491714165,
+        "se": 0.031499025843284706,
+        "t": -0.9507884351953376,
+        "coefficients": {
+          "intercept": -0.029948909491714165
+        },
+        "standard_errors": {
+          "intercept": 0.031499025843284706
+        },
+        "t_statistics": {
+          "intercept": -0.9507884351953376
+        }
+      },
+      "deflated_sharpe": {
+        "dsr": 5.262711468664365e-05,
+        "monthly_sharpe": -0.1582315831042206,
+        "benchmark": 0.26162621421160664,
+        "n": 88,
+        "nominal_trials": 41,
+        "caveat": "Research diagnostic; dependence and adaptive model search are not fully corrected"
+      }
+    },
+    "A3": {
+      "n": 88,
+      "mean_net_annual": -0.008224764984157473,
+      "volatility": 0.0622728804390055,
+      "sharpe": -0.1320761931385749,
+      "max_drawdown": -0.21421683560274063,
+      "hit_rate": 0.4431818181818182,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.002462459545472218,
+      "turnover": 0.8751735777742998,
+      "hedge_turnover": 0.0771423318075394,
+      "cost": 0.0008906020441358076,
+      "borrow_financing": 0.0,
+      "active_return": -0.011198404029904855,
+      "tracking_error": 0.0468495041909707,
+      "information_ratio": -0.23902929653763813,
+      "IC": {
+        "n": 88,
+        "lags": 6,
+        "mean": 0.01390552839285622,
+        "se": 0.03345085576660541,
+        "t": 0.4157002287139798,
+        "coefficients": {
+          "intercept": 0.01390552839285622
+        },
+        "standard_errors": {
+          "intercept": 0.03345085576660541
+        },
+        "t_statistics": {
+          "intercept": 0.4157002287139798
+        }
+      },
+      "deflated_sharpe": {
+        "dsr": 0.0025098924189291354,
+        "monthly_sharpe": -0.03812711283104861,
+        "benchmark": 0.26162621421160664,
+        "n": 88,
+        "nominal_trials": 41,
+        "caveat": "Research diagnostic; dependence and adaptive model search are not fully corrected"
+      }
+    },
+    "A4": {
+      "n": 88,
+      "mean_net_annual": -0.013416538807702383,
+      "volatility": 0.07401534543586001,
+      "sharpe": -0.1812669890101215,
+      "max_drawdown": -0.2719644404406374,
+      "hit_rate": 0.4772727272727273,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": -0.0011721946824169507,
+      "turnover": 0.9995950769939107,
+      "hedge_turnover": 0.10383466723270623,
+      "cost": 0.001020362010440452,
+      "borrow_financing": 0.0,
+      "active_return": -0.030272416219507048,
+      "tracking_error": 0.04750556904024212,
+      "information_ratio": -0.637239313855249,
+      "IC": {
+        "n": 88,
+        "lags": 6,
+        "mean": 0.036047164289772185,
+        "se": 0.029355699780125696,
+        "t": 1.2279443024613816,
+        "coefficients": {
+          "intercept": 0.036047164289772185
+        },
+        "standard_errors": {
+          "intercept": 0.029355699780125696
+        },
+        "t_statistics": {
+          "intercept": 1.2279443024613816
+        }
+      },
+      "deflated_sharpe": {
+        "dsr": 0.0013697782827562714,
+        "monthly_sharpe": -0.05232727245009328,
+        "benchmark": 0.26162621421160664,
+        "n": 88,
+        "nominal_trials": 41,
+        "caveat": "Research diagnostic; dependence and adaptive model search are not fully corrected"
+      }
+    }
+  },
+  "candidates": [
+    {
+      "candidate_id": "independent_1_Temporal_1",
+      "valid": true,
+      "n": 85,
+      "lags": 6,
+      "mean": 0.029283016081374118,
+      "se": 0.02701904838724477,
+      "t": 1.0837915407560441,
+      "coefficients": {
+        "intercept": 0.029283016081374118
+      },
+      "standard_errors": {
+        "intercept": 0.02701904838724477
+      },
+      "t_statistics": {
+        "intercept": 1.0837915407560441
+      }
+    },
+    {
+      "candidate_id": "independent_1_Composition_1",
+      "valid": true,
+      "n": 124,
+      "lags": 6,
+      "mean": 0.035306888743913356,
+      "se": 0.033252605496577485,
+      "t": 1.061778113824714,
+      "coefficients": {
+        "intercept": 0.035306888743913356
+      },
+      "standard_errors": {
+        "intercept": 0.033252605496577485
+      },
+      "t_statistics": {
+        "intercept": 1.061778113824714
+      }
+    },
+    {
+      "candidate_id": "independent_1_Interactions_1",
+      "valid": true,
+      "n": 27,
+      "lags": 6,
+      "mean": -0.06541677205415969,
+      "se": 0.06092971235005968,
+      "t": -1.073643211678409,
+      "coefficients": {
+        "intercept": -0.06541677205415969
+      },
+      "standard_errors": {
+        "intercept": 0.06092971235005968
+      },
+      "t_statistics": {
+        "intercept": -1.073643211678409
+      }
+    },
+    {
+      "candidate_id": "independent_1_Temporal_2",
+      "valid": true,
+      "n": 120,
+      "lags": 6,
+      "mean": -0.038930065122305624,
+      "se": 0.023535370130743936,
+      "t": -1.6541088967813515,
+      "coefficients": {
+        "intercept": -0.038930065122305624
+      },
+      "standard_errors": {
+        "intercept": 0.023535370130743936
+      },
+      "t_statistics": {
+        "intercept": -1.6541088967813515
+      }
+    },
+    {
+      "candidate_id": "independent_1_Composition_2",
+      "valid": true,
+      "n": 121,
+      "lags": 6,
+      "mean": -0.01738282364152685,
+      "se": 0.02915170318199106,
+      "t": -0.5962884409534389,
+      "coefficients": {
+        "intercept": -0.01738282364152685
+      },
+      "standard_errors": {
+        "intercept": 0.02915170318199106
+      },
+      "t_statistics": {
+        "intercept": -0.5962884409534389
+      }
+    },
+    {
+      "candidate_id": "independent_1_Interactions_2",
+      "valid": true,
+      "n": 124,
+      "lags": 6,
+      "mean": -0.024390963530124724,
+      "se": 0.02547388938390236,
+      "t": -0.9574887902880678,
+      "coefficients": {
+        "intercept": -0.024390963530124724
+      },
+      "standard_errors": {
+        "intercept": 0.02547388938390236
+      },
+      "t_statistics": {
+        "intercept": -0.9574887902880678
+      }
+    },
+    {
+      "candidate_id": "independent_1_Temporal_3",
+      "valid": true,
+      "n": 48,
+      "lags": 6,
+      "mean": 0.06547578816038288,
+      "se": 0.04002578872970175,
+      "t": 1.6358400480886857,
+      "coefficients": {
+        "intercept": 0.06547578816038288
+      },
+      "standard_errors": {
+        "intercept": 0.04002578872970175
+      },
+      "t_statistics": {
+        "intercept": 1.6358400480886857
+      }
+    },
+    {
+      "candidate_id": "independent_1_Composition_3",
+      "valid": true,
+      "n": 115,
+      "lags": 6,
+      "mean": 0.009070776014360427,
+      "se": 0.02671714784545895,
+      "t": 0.33951139046835666,
+      "coefficients": {
+        "intercept": 0.009070776014360427
+      },
+      "standard_errors": {
+        "intercept": 0.02671714784545895
+      },
+      "t_statistics": {
+        "intercept": 0.33951139046835666
+      }
+    },
+    {
+      "candidate_id": "independent_1_Interactions_3",
+      "valid": true,
+      "n": 123,
+      "lags": 6,
+      "mean": -0.03129637593799022,
+      "se": 0.0266000606727059,
+      "t": -1.1765528027574452,
+      "coefficients": {
+        "intercept": -0.03129637593799022
+      },
+      "standard_errors": {
+        "intercept": 0.0266000606727059
+      },
+      "t_statistics": {
+        "intercept": -1.1765528027574452
+      }
+    },
+    {
+      "candidate_id": "independent_1_Temporal_4",
+      "valid": true,
+      "n": 121,
+      "lags": 6,
+      "mean": 0.02862680396449637,
+      "se": 0.023252973689308815,
+      "t": 1.231102926747744,
+      "coefficients": {
+        "intercept": 0.02862680396449637
+      },
+      "standard_errors": {
+        "intercept": 0.023252973689308815
+      },
+      "t_statistics": {
+        "intercept": 1.231102926747744
+      }
+    },
+    {
+      "candidate_id": "independent_1_Composition_4",
+      "valid": true,
+      "n": 114,
+      "lags": 6,
+      "mean": 0.00708919211622029,
+      "se": 0.027744842082708446,
+      "t": 0.2555138751587461,
+      "coefficients": {
+        "intercept": 0.00708919211622029
+      },
+      "standard_errors": {
+        "intercept": 0.027744842082708446
+      },
+      "t_statistics": {
+        "intercept": 0.2555138751587461
+      }
+    },
+    {
+      "candidate_id": "independent_1_Interactions_4",
+      "valid": true,
+      "n": 43,
+      "lags": 6,
+      "mean": 0.07015077945310504,
+      "se": 0.04582118112327237,
+      "t": 1.5309683804173213,
+      "coefficients": {
+        "intercept": 0.07015077945310504
+      },
+      "standard_errors": {
+        "intercept": 0.04582118112327237
+      },
+      "t_statistics": {
+        "intercept": 1.5309683804173213
+      }
+    },
+    {
+      "candidate_id": "independent_1_Temporal_5",
+      "valid": true,
+      "n": 118,
+      "lags": 6,
+      "mean": -0.0010571244804730724,
+      "se": 0.02314308871141298,
+      "t": -0.04567776123814247,
+      "coefficients": {
+        "intercept": -0.0010571244804730724
+      },
+      "standard_errors": {
+        "intercept": 0.02314308871141298
+      },
+      "t_statistics": {
+        "intercept": -0.04567776123814247
+      }
+    },
+    {
+      "candidate_id": "independent_1_Composition_5",
+      "valid": true,
+      "n": 91,
+      "lags": 6,
+      "mean": 0.0027607714608662865,
+      "se": 0.031632789382544296,
+      "t": 0.0872756249055211,
+      "coefficients": {
+        "intercept": 0.0027607714608662865
+      },
+      "standard_errors": {
+        "intercept": 0.031632789382544296
+      },
+      "t_statistics": {
+        "intercept": 0.0872756249055211
+      }
+    },
+    {
+      "candidate_id": "independent_1_Interactions_5",
+      "valid": false
+    },
+    {
+      "candidate_id": "independent_1_Temporal_6",
+      "valid": true,
+      "n": 48,
+      "lags": 6,
+      "mean": 0.04329887434119587,
+      "se": 0.03462849637085171,
+      "t": 1.2503827448206035,
+      "coefficients": {
+        "intercept": 0.04329887434119587
+      },
+      "standard_errors": {
+        "intercept": 0.03462849637085171
+      },
+      "t_statistics": {
+        "intercept": 1.2503827448206035
+      }
+    },
+    {
+      "candidate_id": "independent_1_Composition_6",
+      "valid": true,
+      "n": 27,
+      "lags": 6,
+      "mean": 0.10104155156201972,
+      "se": 0.06572085630635431,
+      "t": 1.537435104177886,
+      "coefficients": {
+        "intercept": 0.10104155156201972
+      },
+      "standard_errors": {
+        "intercept": 0.06572085630635431
+      },
+      "t_statistics": {
+        "intercept": 1.537435104177886
+      }
+    },
+    {
+      "candidate_id": "independent_1_Interactions_6",
+      "valid": true,
+      "n": 89,
+      "lags": 6,
+      "mean": 0.03026974687336119,
+      "se": 0.0367213051315797,
+      "t": 0.8243102135095335,
+      "coefficients": {
+        "intercept": 0.03026974687336119
+      },
+      "standard_errors": {
+        "intercept": 0.0367213051315797
+      },
+      "t_statistics": {
+        "intercept": 0.8243102135095335
+      }
+    },
+    {
+      "candidate_id": "islands_1_Temporal_1",
+      "valid": true,
+      "n": 91,
+      "lags": 6,
+      "mean": -0.001989853470560703,
+      "se": 0.031268358534716496,
+      "t": -0.06363792548788313,
+      "coefficients": {
+        "intercept": -0.001989853470560703
+      },
+      "standard_errors": {
+        "intercept": 0.031268358534716496
+      },
+      "t_statistics": {
+        "intercept": -0.06363792548788313
+      }
+    },
+    {
+      "candidate_id": "islands_1_Composition_1",
+      "valid": true,
+      "n": 121,
+      "lags": 6,
+      "mean": 0.007050526269061575,
+      "se": 0.02811923266517514,
+      "t": 0.2507367947416804,
+      "coefficients": {
+        "intercept": 0.007050526269061575
+      },
+      "standard_errors": {
+        "intercept": 0.02811923266517514
+      },
+      "t_statistics": {
+        "intercept": 0.2507367947416804
+      }
+    },
+    {
+      "candidate_id": "islands_1_Interactions_1",
+      "valid": true,
+      "n": 64,
+      "lags": 6,
+      "mean": 0.0029145836936565646,
+      "se": 0.030468538813693005,
+      "t": 0.09565879451845286,
+      "coefficients": {
+        "intercept": 0.0029145836936565646
+      },
+      "standard_errors": {
+        "intercept": 0.030468538813693005
+      },
+      "t_statistics": {
+        "intercept": 0.09565879451845286
+      }
+    },
+    {
+      "candidate_id": "islands_1_Temporal_2",
+      "valid": true,
+      "n": 27,
+      "lags": 6,
+      "mean": -0.028664478069965745,
+      "se": 0.04079191386718192,
+      "t": -0.7027000047925431,
+      "coefficients": {
+        "intercept": -0.028664478069965745
+      },
+      "standard_errors": {
+        "intercept": 0.04079191386718192
+      },
+      "t_statistics": {
+        "intercept": -0.7027000047925431
+      }
+    },
+    {
+      "candidate_id": "islands_1_Composition_2",
+      "valid": true,
+      "n": 123,
+      "lags": 6,
+      "mean": 0.03714790097659912,
+      "se": 0.02359224817757671,
+      "t": 1.5745807986161489,
+      "coefficients": {
+        "intercept": 0.03714790097659912
+      },
+      "standard_errors": {
+        "intercept": 0.02359224817757671
+      },
+      "t_statistics": {
+        "intercept": 1.5745807986161489
+      }
+    },
+    {
+      "candidate_id": "islands_1_Interactions_2",
+      "valid": false
+    },
+    {
+      "candidate_id": "islands_1_Temporal_3",
+      "valid": true,
+      "n": 120,
+      "lags": 6,
+      "mean": 0.017128307849639264,
+      "se": 0.02702257871465088,
+      "t": 0.6338517145424312,
+      "coefficients": {
+        "intercept": 0.017128307849639264
+      },
+      "standard_errors": {
+        "intercept": 0.02702257871465088
+      },
+      "t_statistics": {
+        "intercept": 0.6338517145424312
+      }
+    },
+    {
+      "candidate_id": "islands_1_Composition_3",
+      "valid": true,
+      "n": 121,
+      "lags": 6,
+      "mean": 0.0031194170214064523,
+      "se": 0.025064983022161556,
+      "t": 0.1244531870876743,
+      "coefficients": {
+        "intercept": 0.0031194170214064523
+      },
+      "standard_errors": {
+        "intercept": 0.025064983022161556
+      },
+      "t_statistics": {
+        "intercept": 0.1244531870876743
+      }
+    },
+    {
+      "candidate_id": "islands_1_Interactions_3",
+      "valid": true,
+      "n": 3,
+      "lags": 6,
+      "mean": null,
+      "se": null,
+      "t": null,
+      "coefficients": {},
+      "standard_errors": {},
+      "t_statistics": {}
+    },
+    {
+      "candidate_id": "islands_1_Temporal_4",
+      "valid": true,
+      "n": 114,
+      "lags": 6,
+      "mean": 0.03397023914729898,
+      "se": 0.028557163673158095,
+      "t": 1.1895522796344382,
+      "coefficients": {
+        "intercept": 0.03397023914729898
+      },
+      "standard_errors": {
+        "intercept": 0.028557163673158095
+      },
+      "t_statistics": {
+        "intercept": 1.1895522796344382
+      }
+    },
+    {
+      "candidate_id": "islands_1_Composition_4",
+      "valid": true,
+      "n": 123,
+      "lags": 6,
+      "mean": -0.05627730781370971,
+      "se": 0.026992543004895564,
+      "t": -2.084920557633375,
+      "coefficients": {
+        "intercept": -0.05627730781370971
+      },
+      "standard_errors": {
+        "intercept": 0.026992543004895564
+      },
+      "t_statistics": {
+        "intercept": -2.084920557633375
+      }
+    },
+    {
+      "candidate_id": "islands_1_Interactions_4",
+      "valid": true,
+      "n": 27,
+      "lags": 6,
+      "mean": -0.018509121899452724,
+      "se": 0.046071490430293405,
+      "t": -0.40174784289770693,
+      "coefficients": {
+        "intercept": -0.018509121899452724
+      },
+      "standard_errors": {
+        "intercept": 0.046071490430293405
+      },
+      "t_statistics": {
+        "intercept": -0.40174784289770693
+      }
+    },
+    {
+      "candidate_id": "islands_1_Temporal_5",
+      "valid": true,
+      "n": 123,
+      "lags": 6,
+      "mean": -0.010601269505709016,
+      "se": 0.020923045465523125,
+      "t": -0.5066790837489565,
+      "coefficients": {
+        "intercept": -0.010601269505709016
+      },
+      "standard_errors": {
+        "intercept": 0.020923045465523125
+      },
+      "t_statistics": {
+        "intercept": -0.5066790837489565
+      }
+    },
+    {
+      "candidate_id": "islands_1_Composition_5",
+      "valid": true,
+      "n": 120,
+      "lags": 6,
+      "mean": 0.05194379633798394,
+      "se": 0.027404615615962535,
+      "t": 1.8954396976736985,
+      "coefficients": {
+        "intercept": 0.05194379633798394
+      },
+      "standard_errors": {
+        "intercept": 0.027404615615962535
+      },
+      "t_statistics": {
+        "intercept": 1.8954396976736985
+      }
+    },
+    {
+      "candidate_id": "islands_1_Interactions_5",
+      "valid": false
+    },
+    {
+      "candidate_id": "islands_1_Temporal_6",
+      "valid": true,
+      "n": 48,
+      "lags": 6,
+      "mean": -0.02282657604776666,
+      "se": 0.04106086518885259,
+      "t": -0.5559204839639798,
+      "coefficients": {
+        "intercept": -0.02282657604776666
+      },
+      "standard_errors": {
+        "intercept": 0.04106086518885259
+      },
+      "t_statistics": {
+        "intercept": -0.5559204839639798
+      }
+    },
+    {
+      "candidate_id": "islands_1_Composition_6",
+      "valid": true,
+      "n": 114,
+      "lags": 6,
+      "mean": -0.020144264519623114,
+      "se": 0.025759457103798174,
+      "t": -0.7820143273381677,
+      "coefficients": {
+        "intercept": -0.020144264519623114
+      },
+      "standard_errors": {
+        "intercept": 0.025759457103798174
+      },
+      "t_statistics": {
+        "intercept": -0.7820143273381677
+      }
+    },
+    {
+      "candidate_id": "islands_1_Interactions_6",
+      "valid": true,
+      "n": 67,
+      "lags": 6,
+      "mean": -0.059956432720050135,
+      "se": 0.030888748111825834,
+      "t": -1.9410444380261453,
+      "coefficients": {
+        "intercept": -0.059956432720050135
+      },
+      "standard_errors": {
+        "intercept": 0.030888748111825834
+      },
+      "t_statistics": {
+        "intercept": -1.9410444380261453
+      }
+    }
+  ],
+  "reality_check": {
+    "calendar_n": 125,
+    "nominal_trials": 36,
+    "effective_n": {
+      "independent_1_Temporal_1": 85,
+      "independent_1_Composition_1": 124,
+      "independent_1_Interactions_1": 27,
+      "independent_1_Temporal_2": 120,
+      "independent_1_Composition_2": 121,
+      "independent_1_Interactions_2": 124,
+      "independent_1_Temporal_3": 48,
+      "independent_1_Composition_3": 115,
+      "independent_1_Interactions_3": 123,
+      "independent_1_Temporal_4": 121,
+      "independent_1_Composition_4": 114,
+      "independent_1_Interactions_4": 43,
+      "independent_1_Temporal_5": 118,
+      "independent_1_Composition_5": 91,
+      "independent_1_Interactions_5": 0,
+      "independent_1_Temporal_6": 48,
+      "independent_1_Composition_6": 27,
+      "independent_1_Interactions_6": 89,
+      "islands_1_Temporal_1": 91,
+      "islands_1_Composition_1": 121,
+      "islands_1_Interactions_1": 64,
+      "islands_1_Temporal_2": 27,
+      "islands_1_Composition_2": 123,
+      "islands_1_Interactions_2": 0,
+      "islands_1_Temporal_3": 120,
+      "islands_1_Composition_3": 121,
+      "islands_1_Interactions_3": 3,
+      "islands_1_Temporal_4": 114,
+      "islands_1_Composition_4": 123,
+      "islands_1_Interactions_4": 27,
+      "islands_1_Temporal_5": 123,
+      "islands_1_Composition_5": 120,
+      "islands_1_Interactions_5": 0,
+      "islands_1_Temporal_6": 48,
+      "islands_1_Composition_6": 114,
+      "islands_1_Interactions_6": 67
+    },
+    "p": null,
+    "caveat": "Research diagnostic; resamples joint IC and missingness. Warm-up and regime-dependent missingness weaken stationarity.",
+    "reason": "Full family contains an invalid/all-missing trial or has fewer than two months",
+    "family": "36 seed-1 candidate slots; corrected-run diagnostic"
+  }
+}

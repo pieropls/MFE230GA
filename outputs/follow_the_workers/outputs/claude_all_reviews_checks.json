@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "utc": "2026-09-29T10:17:35.843860+00:00",
+  "checks": [
+    "report generated from saved synthetic fixture",
+    "all four interaction rows identify Claude",
+    "no ChatGPT provider row"
+  ],
+  "source_sha256": "c415413f4df157c5974adbc4de73b5c559160cd38eecb41401cc7e001bdb6600",
+  "report": "work/synthetic_integration/20260929T101451889375/report/synthetic/report.md",
+  "final_integration_verified": true
+}

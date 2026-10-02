@@ -1,0 +1,13 @@
+{
+  "request_hash": "27cb55161b4da377a6ac064af88246c23557c570957d6807469d1517c0bcff87",
+  "request": {
+    "call_id": "islands_1_Interactions_2_migration__islands_1_Temporal_5_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nOur first attempt combined three-month momentum in average hours and in hourly pay as a rank product. It failed. Its next-month predictive correlation was slightly negative, insignificant and unchanged across common-index regimes.\\n\\nThe second attempt favored groups whose V02 flow rate rose faster than V03 over three months. It produced a meaningfully negative correlation, with a t-statistic near minus two, concentrated when the common index was low. Reversing its direction, perhaps conditioned on the low regime, looks promising.\\n\\nBoth features showed low overlap with base signals and moderate rank persistence.\", \"hypothesis\": \"Groups with higher twelve-month log growth in hourly pay (V05), lagged one month, outperform peers next month. The earlier own-history z-score signal reflects cross-sectional wage-growth differences, which this wider-coverage rank should capture.\", \"expression\": \"csrank(lchg(lag(V05,1),12))\"}"
+  }
+}

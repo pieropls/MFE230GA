@@ -1,0 +1,42 @@
+{
+  "request_hash": "03ea0f8b20178fea0bf0412d3bc8a2bb11386d7b7fccee41aa140e9e368c76f1",
+  "envelope": {
+    "response": "The task is to decide whether the hypothesis or expression \"uses or tests numbered claims.\" The claims are a migration report about prior attempts. The hypothesis describes a feature: change in V05/V01 ratio over 6 months, especially when T is high. This connects to claim 5 (regime dependence in high-T) and claim 8 (next: try a regime-conditioned pay-and-hours interaction). The hypothesis is a pay-and-hours feature (dollars per hour = pay/hours) with the \"especially when T is high\" regime idea. So it uses claims 5 and 8.\n\nThe expression itself is not regime-conditioned, but the hypothesis mentions it. Claim 2 concerns the failed interaction feature, which this one differs from. Claims 5 and 8 are the ones being used.\n\n```json\n{\"uses_claim\": true, \"claim_ids\": [5, 8]}\n```",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 489,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0038779999999999995,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "03ea0f8b20178fea0bf0412d3bc8a2bb11386d7b7fccee41aa140e9e368c76f1"
+  }
+}

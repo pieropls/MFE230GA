@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-02T06:21:17.056606+00:00",
+  "passed": false,
+  "fixed_live_call_budget": 5,
+  "synthetic_feedback_only": true,
+  "research_outputs_reused": false,
+  "checks": [
+    {
+      "role": "connection",
+      "passed": true
+    },
+    {
+      "role": "synthetic_candidate",
+      "passed": true
+    },
+    {
+      "role": "synthetic_migration",
+      "passed": false,
+      "error_type": "AssertionError"
+    },
+    {
+      "role": "synthetic_claim_judge",
+      "passed": true
+    },
+    {
+      "role": "synthetic_failure_judge",
+      "passed": true
+    }
+  ],
+  "model": "claude-opus-5-5",
+  "effort": "xhigh",
+  "offline_output_config": {
+    "effort": "xhigh"
+  },
+  "source_hashes": {
+    "params.py": "1b86c4a968d2f5b7d22c36efd1aef161c9ded1b3fe74281f35aa04cf098dbe10",
+    "agents.py": "dd9897d23fd89c6913fc14cd7e8fd878b1c4c89a1347d0613ae094a66865f392"
+  }
+}

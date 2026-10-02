@@ -1,0 +1,847 @@
+[
+  {
+    "file": "data/cache/provided/series_list.csv",
+    "sha256": "cb7597da117a1ef6bb3f8798bae417f800ec31c8937ad692f627d92ae9298295",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/vintage_audit.csv",
+    "sha256": "47f05ac3e60365b3ec3605820ca5a7989a7786583ce3ee91230e8133d8cbe31e",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTSJOL.csv",
+    "sha256": "dc9cba46a8a59718073ffcb115885d24ceac5dec4ba06222a715434c06e8ef09",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5300QUR.csv",
+    "sha256": "c7c34b3e0cfb1b3f4e06b5fa2d8facefeac95d46e83f20952821eb7879ec4031",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5200QUR.csv",
+    "sha256": "26bb1de6cab8c07589d4959c42fed3df7ef4c8e13bc2f867bbd52f29f8ef2d2b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5100LDR.csv",
+    "sha256": "bcd04bec6accd3784b6252c3f6f179166af54c28aeb757aaf3405bd5912ae948",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU4300000008.csv",
+    "sha256": "4cc37b8cd35728e45e935cbff80ecc6db65eb845d66656d7ab210323403c58e2",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU110099HIR.csv",
+    "sha256": "9bd440e5c43a1b2d5bc0fa1425bb02b8b8cd4e6eb72e52c79bd355b9d6de1d3d",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU540099QUR.csv",
+    "sha256": "5379cedb073b27bf16e6afefdac084a4fd3e485aa8acdeb18fe348dbc02b7b32",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5100HIR.csv",
+    "sha256": "e78f5fc10554c9cd91196548b94cc65147376442f628c36677d256144d4071f5",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU110099LDR.csv",
+    "sha256": "75caca36b88d45db08fdb85284d76d3e9646fa4eb5a933edcdeac84f27046c9b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU480099QUR.csv",
+    "sha256": "7a6b9d9aef6b45dbab777620da9b42c6969ba7b434a00d70ea33e08cc742ce12",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU3200QUR.csv",
+    "sha256": "9f9468d9c3f7e09f3fe97813b050d2eb58a9ad0cb5315a0667b473adabb18153",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU7200HIR.csv",
+    "sha256": "7fc67cde2372807f721ae3288de74c5fe2eb5a74f9837c8064a6af4714163a02",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU6200JOR.csv",
+    "sha256": "5172b54a4dc0b046302b9d223ae7965d4b6e197aac2ee3b8fb9bec96b65d0298",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU3100000007.csv",
+    "sha256": "adfac86f19aeb48b4ea87f5d564c1789a4959ce3f80360a0c8a8bad1bb758b6a",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU4400QUR.csv",
+    "sha256": "15d82e26a730e25674be7a5164db0d8d2c448d5e6e9c269877962162155b9a9e",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU4142000007.csv",
+    "sha256": "e5fd1e7e8175c4e82233ce8e4e6ac2dc782625baf17e1ded5a287370e853462b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU7200LDR.csv",
+    "sha256": "4b143bbb92d4ac1a1d208ecf5873afbfb1848effba4e0c22cacdb3b6f66c668b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU110099JOR.csv",
+    "sha256": "8a615c05693df181c21fc10318ed665e45f36417619d11c1906c0b6442a50b15",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU3400QUR.csv",
+    "sha256": "b0acbe4fdbe60fc946c9fc3ce523338571a56d0a2f0fd2e766fac536fe2405ef",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU6500000007.csv",
+    "sha256": "9b463ac8c8bb0befdc342d8554af443122f9f22b407b86ea9d1299eb540f92f5",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU4200QUR.csv",
+    "sha256": "67b58378eb46880d84c0a6d1f45f085b2d99b7d54eab36142ec6f7a1e2273086",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5100JOR.csv",
+    "sha256": "b843460afda84d5f663fd74e9b108d04f8a5d15914262bfc20908f34d7c3da07",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU4200000007.csv",
+    "sha256": "119eb5ee491ff91fb6743e0de056bb83e47d19f3599f99943ae9fd9d30458049",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU3200000007.csv",
+    "sha256": "5b11496825ea6bbd03c6ba1b8003f5a35ea1bda16253f78428e4b00209c93dea",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU5000000008.csv",
+    "sha256": "38326ad432bc8578efdbcef95bf2c10d79789a7ef8ff0b96ec931831e4c95540",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU7000000007.csv",
+    "sha256": "41def3156cc2237d27fa01b49e9737b3b62f69323513d5d8661f14b6caa4894e",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU6200HIR.csv",
+    "sha256": "1a4c837dc08c2e6bd9581f45626d81701e79245b241d487ba3442db7faa7824d",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU2300QUR.csv",
+    "sha256": "250dcf986a49759482b05972bb2aeecfd85fdee4026bb11cba13d647cc1f90e4",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU7200JOR.csv",
+    "sha256": "92a028f61a4fe90e31ee7ad90c84b121e412e1f8d673827e7f927f25fba88169",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/PCUOMFGOMFG.csv",
+    "sha256": "509027e4c19ad6abd7a32d416a908dff2fcd3ca79ab18217d5b1824ab2076730",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU5500000008.csv",
+    "sha256": "089d7e8f27e013d6737a7824cc335c07fa72f1a0e2d0f906a99ce8d883943e39",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU6200LDR.csv",
+    "sha256": "085022b8412d66c0e0ebff6da55a6793c4df8978b1075da9da13ed5520e7fadb",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU6000000007.csv",
+    "sha256": "3c6774623d1478bcfbd9b0167502057e9a36862364bfb82dc33a1cd86df4ed83",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU1000000007.csv",
+    "sha256": "9e50b3028cedbdb9a827ef3008923d34884b17cf3b7d97fdcaaea9c7110d2c0b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU3200HIR.csv",
+    "sha256": "c1432d607f508cd4c3f92b55b384b66e317d367f33dc34fed88447e66e7516c6",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU7200QUR.csv",
+    "sha256": "d9b0d34b2df3ec1ff78b44a27e4dfba8f2460bbd2a55f360294addff6d41a92d",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU2300JOR.csv",
+    "sha256": "b3b944bb37339a4def0d3d4ddddcdae29c31ee21bf09c4deb7d9bc4575a08b89",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CES2000000008.csv",
+    "sha256": "a0ee792bc5718571072de51391743bb4392a0646a014d50ea14c74a2a8066bd1",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU4400HIR.csv",
+    "sha256": "df52cf52bb2dd588681efd9c02fbf8562be6701be7e9d027d4ea34024a28c1de",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU5500000007.csv",
+    "sha256": "35153797b2357457b946f026ee476977ab1beb8b253634b7e34f5f82a37246a6",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU6000000008.csv",
+    "sha256": "fe231f82fb488732790982cec57ae1ff5afc3b98b258744f51fbcedf5c07b48f",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU1000000008.csv",
+    "sha256": "623f49568bf4159ad1bb0f27bb0064e6bda1c58a33e08efde7777b5f66b273ae",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU3200LDR.csv",
+    "sha256": "790a10febec7f6b52b3da5881039c0430572ca2e4e664003708ed0d6f0a3a7a8",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU4400LDR.csv",
+    "sha256": "79035a91dc4d1a11af8a63ad815408d05344e40fe78185ecd243aac369a99ee9",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU4200JOR.csv",
+    "sha256": "835ef3f78c09b72d456447b8e55de028f7c8f66daef48d7241455ff98df870dd",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU6500000008.csv",
+    "sha256": "990018286c96f326685ea11951b8b36d524748e013661f9e71259470298d94a8",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU540099LDR.csv",
+    "sha256": "5ac45339b05f618ba1c0f020874145457ba7f852b77583c12ad5c9d71e923d1f",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5300HIR.csv",
+    "sha256": "8b70b0370a22f3e00690f33dff27333fbaad33bd668c94fca52e1f2d1d0c4872",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5200HIR.csv",
+    "sha256": "0e0be4f1f39259a4b80be5f5dfb3e262594ff49f854cb0f285b971990cc16799",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU480099LDR.csv",
+    "sha256": "69fbcd53b4a7b68b1d286c8bf53def1a30d14efaab8ca0f40247cba703aa5cf1",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU110099QUR.csv",
+    "sha256": "7e910de85f7bbc20685b08c4af0b2c9498bcb7b6dcbba1619da51943333afd11",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU3400JOR.csv",
+    "sha256": "02db7dc156f83506eba921e892cf091b30349fe98250cc722bb21dd72ddf2ea0",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU4200000008.csv",
+    "sha256": "37b0da165f97b2ffc7c08e4c6ae9329bae55f27fc9d03fc58db91e301e35899f",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU540099HIR.csv",
+    "sha256": "0eb05d7ad948596897db9cdb3d396394fa1c4b73d5222da486fb55014cea389b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU3200000008.csv",
+    "sha256": "bfbc7ace93b206b1f220e3a64b30b84aad2dd2ac4f061e68aa4fe8fc8facbc2c",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU5000000007.csv",
+    "sha256": "159dfa00b5aeff3a944705f44ac7d3881a59fb78d8ab628bc4285e259160a6d3",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU2000000007.csv",
+    "sha256": "e55911a56d53a0dd2a380b03381d7cdcdc07c823c832538d17e4e17a94e4ed08",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5100QUR.csv",
+    "sha256": "cdb138dc88562eaa2a3d02a0b197b44a4005015b737c892dfd36a5139ef26853",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/PCU423000423000.csv",
+    "sha256": "af45e9ed1450ffac12eb3001e5d628ffce5c752b090a03d5ff24d332d87ea25b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5200LDR.csv",
+    "sha256": "8abc3f41b45ef3cea35c9eb29848999fdae02afb71454cd210add1202f1bed6b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5300LDR.csv",
+    "sha256": "638dfe46f80879062e9a22dece775ea3c93afc913a16209ff33cb78dd51abb6f",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU7000000008.csv",
+    "sha256": "95c51fe5d972dcf3a24b2ece95a12d206900d6d928fbd23d1dfc63f23be76029",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU480099HIR.csv",
+    "sha256": "e2fbf02efa6aaa72d881fe35383d024e64b05c2ff7010f81b7e51e9b79cc894a",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU4400JOR.csv",
+    "sha256": "36133d5909c4cbacc2e1eb7fd4c79be4148e7d265d3b1d453dea977033b1ac64",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU6200QUR.csv",
+    "sha256": "67ebd587065a5b0efeaaed9dc8ab3132ac3e0b51199753cc1115aa1d73918c5e",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU2300HIR.csv",
+    "sha256": "e7dcde8c7fd57eacee28ad67bd580e7e88ebce720d4339bc97200f217e789c9f",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU3100000008.csv",
+    "sha256": "6bd59e30987c6b6f621e33cb78627ca4ff68f1ee35d931a8f72e4b6fe878a7be",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU3200JOR.csv",
+    "sha256": "c31a9e96f79fabeb71ee0f4ffc68a4321a133f2454521af94c169fa6b81ea226",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU4142000008.csv",
+    "sha256": "a65099de71a5c4e687ed6c22202f42edf4385334b3ee23046ed38ca6c9335332",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU2300LDR.csv",
+    "sha256": "8400d19774cdda37666ec9bbabcbddbee8393830cec7f84182750b97570650bf",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/UNEMPLOY.csv",
+    "sha256": "a69fa3dc463bda14663f1b553bb4fd356e897c3ed9fb13bea7692b8dd813739d",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/PCUAINFOAINFO.csv",
+    "sha256": "9259431c854b1422fc426f01de8a0bd2a4a57f2b6f9ea8f272540e2eff49f3ce",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU3400HIR.csv",
+    "sha256": "8d810881572ede92f89f565cd974dabd1578d485b1e3b6e074521cf267f89fd2",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5200JOR.csv",
+    "sha256": "b8047f01efb1936218671c0ccd5abb198082fe5e45a61f76d369b2bc07405d33",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU5300JOR.csv",
+    "sha256": "a46517279bea2c8e2efb3f76710318de4a2d344ae705a92eb1f6e51368c816f0",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU4200HIR.csv",
+    "sha256": "b19f9112c30ad0762d9b3c3ebf0d8b770bb9dafab2f5ffd9cde3f208da920fe9",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/CEU4300000007.csv",
+    "sha256": "e84e1091fef422db0c0ba97ac251b5fd42cbc8de5204a2c01c9476157a8001a0",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU480099JOR.csv",
+    "sha256": "09bb89f384e1804639099bb284c6a3966aeeccfa1016eb255b526c6d11a0016b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU3400LDR.csv",
+    "sha256": "6e6853c65d899d680cfd6394bfc39c2c2e28ad645e9b899a60c7087a8fc1b165",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU4200LDR.csv",
+    "sha256": "51db5e2324483b38c812dfee7274244708f16db1f5bf9621f79afaeb77d532db",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/4_alfred_vintages/JTU540099JOR.csv",
+    "sha256": "a85f16709bb1762ac90e408eb8b9f8f48ee930e98b588568fd045b40230af4b9",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/2_definitions/1987_SIC_to_2002_NAICS.xls",
+    "sha256": "fcb8ad7e4162a4d95c39ebe51c12e8ec20dfa6a31f2e81bf8fb1de08fbedc937",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/2_definitions/Siccodes49.txt",
+    "sha256": "5d0c29b0325078ac3a51829840569af2d12eaed537328f979b6c56447c24827f",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTSJOL.csv",
+    "sha256": "c5e8706a44aed0988af3193cfb73865617f6ad26d11f74e76a927c3853cec375",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5300QUR.csv",
+    "sha256": "ead55368a19ff28944d97f8ea5d80f32c56f9100f711d07bcb7aba20d562dc1e",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5200QUR.csv",
+    "sha256": "0935635d943eb972c0e706e49cc907faf803995915587aeee326552a5252e3a3",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5100LDR.csv",
+    "sha256": "29aa4db7842ca580ddb2c295b4d7412439033fe252e168ac650ecffda29c7318",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU4300000008.csv",
+    "sha256": "5ee3f5a504314aac40add66974dff2cafb8e4b2b38c03573fd43ada17eee4c18",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU110099HIR.csv",
+    "sha256": "cb29c472423516a069421b3f3dc168159ba7de3f4ac88b9226e95786c56904d7",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU540099QUR.csv",
+    "sha256": "f45f3b06b3ff7332d46446187dc2cc9f9fcebcf4513abe396709932baf759d18",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5100HIR.csv",
+    "sha256": "b0a50d2d396c651935c3282c031fec7e3054a5977e22b4c986776996c31672ac",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU110099LDR.csv",
+    "sha256": "bcd7da15386d54b31f15d517e6059fd2de2997c1051b6adc51ce282520763cc5",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU480099QUR.csv",
+    "sha256": "3816a4c42d51cf4b3976c02c5106b340c518115d69cff719691c8ea4da00cd1b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU3200QUR.csv",
+    "sha256": "adc1002b5ccea9217cc0f10f7c685188771d2ec5adfb1720c4748510bd022b6c",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU7200HIR.csv",
+    "sha256": "fbfd0eb442178b20f159bc77fdafd8b09c94af97f19bde5d32d3e0c5c6a346dc",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU6200JOR.csv",
+    "sha256": "e00d04ff1d4d5b7ac2a5de6b5e7dc2a89e77ecbf06c7c419204bba8ba7070681",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU3100000007.csv",
+    "sha256": "5c6ac723732100a2d272ffc9efee4a9624308775c39e1cfb9ccd770b0bb67062",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU4400QUR.csv",
+    "sha256": "0fde20d0df1fa1255e8a3abe17326b77861d88ff9b7f2b7e810a761e792ffaab",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU4142000007.csv",
+    "sha256": "1805cccb3f565b94dbfe2908e850caae82d7b37466d9fdf1e9b0f80abd219c46",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU7200LDR.csv",
+    "sha256": "8b33c966d6ac0c600ca278b8aed23bd44d4d87db118878d5b8eeb98c90031d0c",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU110099JOR.csv",
+    "sha256": "400fc149a52aeabcfa60343fbba5a5165fafedd58da431edc4e7b96eb3813c5b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU3400QUR.csv",
+    "sha256": "cc70a3488ea0ec3c111b485d327502fe3572c305adee9fd5f66ce807d9fa24fa",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU6500000007.csv",
+    "sha256": "ddffb909c8fd40c0701769b17a3a92993069f5377754ef7d8dd088549e86ffde",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU4200QUR.csv",
+    "sha256": "a5c2a0a4b6e0585491c5d50a4b90c5720136c12f810a0e44c4f1242e99192ccd",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5100JOR.csv",
+    "sha256": "1cef67b7bddf25735d3252fa04f4bbfb535aa368b87b63d08101ce3d26e3717a",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU4200000007.csv",
+    "sha256": "22144d4141858b2931e44e53b6af85a3b44ae86c84d4d85de98165a37768b561",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU3200000007.csv",
+    "sha256": "1ee41fd1f69ac44b3f0136677908f0fbdf58997c4fdd3e0a008a990d1d302c78",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU5000000008.csv",
+    "sha256": "2e6e4a3ba50860416885414fd01bb1b5d67642102777c154edb39e758c2640b8",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU7000000007.csv",
+    "sha256": "63ade448d7b5fb4c68f77029a4bc21fb09a7be83abaaa4f0fd0f46370b546abf",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU6200HIR.csv",
+    "sha256": "a301768d38abc264d1fb04a1d66d994e4c2d792a5777d56ad087f3d6c1c374ed",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU2300QUR.csv",
+    "sha256": "afae5df6e9b014543a26e5439ab063a7f40909278d23b417ce62a7fc39eba403",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU7200JOR.csv",
+    "sha256": "1e0ac13d506e972cd010f3c9a5f8edbbd1842e6e103fa5c87f671e2ff6857366",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/PCUOMFGOMFG.csv",
+    "sha256": "a7b0dce93b880d60e492543336995dfc1caf054f832f8a56fe4bb3caef704f28",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU5500000008.csv",
+    "sha256": "de31797b3269f3d7e2bfcf287b0ebeac6d1aa798b2bb203ca6c1eb24ec18c9b5",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU6200LDR.csv",
+    "sha256": "08bb40a70a6fbf99055e644ebfe3b7ad2bf8c0667939cf51441e81359295a054",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU6000000007.csv",
+    "sha256": "7584258af7f4ae580449e0ad714303b4874a415d354b69f4fdcaa6f3f65b629c",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU1000000007.csv",
+    "sha256": "8b035c024f6fb0c32584709bad0a50ba879d9ed464cb2cb7a339d7e17ee63892",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU3200HIR.csv",
+    "sha256": "01ae28399d5c8f4783ba78619bd79a4240290061f97817df1695f897859a361b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU7200QUR.csv",
+    "sha256": "99f3c295cb8327efb80d9a3930a480cdc7481d6003fb382e71cea24034fb3c45",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU2300JOR.csv",
+    "sha256": "00433951c273627c638b621b6ca833ce837054d3b83e867bb50f692720c426f6",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CES2000000008.csv",
+    "sha256": "be057db2fc90bf50f9c7f5be7253ef556dbdeba30bb560e785b8e2e997ee5bf1",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU4400HIR.csv",
+    "sha256": "b7df686758d664a5f021669f8a18204e623ef4edfd0d33eeef8efd44a92f00e4",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU5500000007.csv",
+    "sha256": "5064be43d10d8a965b1a494e3348bbb45857f7e026541a558ee6243a8456ec97",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU6000000008.csv",
+    "sha256": "6bebc5f8bc118f437e8f8033481d3683f9c84d2e5ac4800e662127be5bb4a494",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU1000000008.csv",
+    "sha256": "2cf474b5446ece0cae2326f1c9f35a22bdedf9a74a2b40b0112fad4d93bb4509",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU3200LDR.csv",
+    "sha256": "41db12e106310903078a15def291453555ac778429ed7691fe03abbb1da3cabf",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU4400LDR.csv",
+    "sha256": "aa20bbe6ef297a645148008c64aac20e5412a3f3acb845b99c8af2e23f218037",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU4200JOR.csv",
+    "sha256": "4e7dae742fb6db35d3f18d5528dd5f20ef54f4766e78ac40504130901621497a",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU6500000008.csv",
+    "sha256": "6030898d6ae0047a8bb645eb6ea8eef102e246b6d9e86643d0a438d481e638da",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU540099LDR.csv",
+    "sha256": "f87c346e746a5d74556269443fa3aa7ba110488995e3ff75c761382d336085e8",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5300HIR.csv",
+    "sha256": "f1a9ca5f2720e604371c08c25be0db7214df5d1dc7d0e515ba770714f6060844",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5200HIR.csv",
+    "sha256": "0d0cccb6dd949c4cfa4642cb6144a2d0e1028570b916fcd6f99a1a4132af2695",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU480099LDR.csv",
+    "sha256": "deb35ca6acd39f2f17b371150622a9e1c3466a6af4d5bb8cdcc8f6c8f82e226a",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU110099QUR.csv",
+    "sha256": "352976bc91b3e613b0bf7323ecd149c2e6fb8df88f3b2c185068b4082c355029",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU3400JOR.csv",
+    "sha256": "00abffa05bbda9faf4d74da0f2914bc2e472ce628f48e50fd80e91202e45f09c",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU4200000008.csv",
+    "sha256": "18bd8b13eac0f0e0e36796ccd39f673e5aaaf10465e22fa68524c985e0d3ac72",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU540099HIR.csv",
+    "sha256": "393bb23d0e84f3cf2a7ccee7b56d5ce14fc87e5d47c48130b3c9d88d90877348",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU3200000008.csv",
+    "sha256": "f31517f0540f57676d7379ca2731d48bc64792153f65f508d781ba74d8c8af15",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU5000000007.csv",
+    "sha256": "4e956050cbc81c25d3c455ec2371e48907c053f84a0f4189bb6828189535373e",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU2000000007.csv",
+    "sha256": "4894b61ace51b6989a9495544d48664c33fdeae871991dd1fb722a7f9be6c917",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5100QUR.csv",
+    "sha256": "4ac06a8dab18a0a517c63f2017d915372a0c0e39e939c04b8dddac10771718a4",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/PCU423000423000.csv",
+    "sha256": "dc47259b5a6f46d760f3c4111a1eb085c857cffcf8ea05ea453a6b2b0395be46",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5200LDR.csv",
+    "sha256": "2966be8dc4d5f35c874805f7b1bad216748e4f5959058715f43df174d94c9642",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5300LDR.csv",
+    "sha256": "3c2ba8ed549c9bfbac382112489dac4b665009067fd119c9a866384e6208f174",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU7000000008.csv",
+    "sha256": "183f1e6afa2287fd1cc7d4820c3f8a6cf21dfc5d03c611ff9149b00e043fb60e",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU480099HIR.csv",
+    "sha256": "3f79176864e7fc6a9ddff88572717c284ff48d3b5952287d0b0e33037df85d74",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU4400JOR.csv",
+    "sha256": "df8b54c520c669fb5a57bf1ce25da2f62e9e3131747e0355867137ea81f913f9",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU6200QUR.csv",
+    "sha256": "53249e5f11de4558450260881a3a63b3035841bafb4ba9a90f8cc7bf620c0e70",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU2300HIR.csv",
+    "sha256": "6dbc16df0984d9c7cfa0eb2a02f753dbc6af7e3462194895afee88be61273d42",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU3100000008.csv",
+    "sha256": "0a9d725774e83e8bbe5628ff15551f61152573539483b21b9f12395ca5517cba",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU3200JOR.csv",
+    "sha256": "132beea6ea00a701131708847b688796288303c0fff6bb42758c70eabf32dec1",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU4142000008.csv",
+    "sha256": "f489ae7034fd62d375e985126ba4f4c33e7e69ac3ee88a69d12519636e4e87ee",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU2300LDR.csv",
+    "sha256": "ced106daacd1a02128c87b6daa3b0f5a2aa42ab9818d9872863ddaaafb1e6b3b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/UNEMPLOY.csv",
+    "sha256": "a51485759fd142971b01b0b7061fbc3554f5e33d4bcec95166f853e65f03a1c8",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/PCUAINFOAINFO.csv",
+    "sha256": "e5de55b9bc3077c5430d164947fce544176db3ee66cf817b2b2ac945c6102ffc",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU3400HIR.csv",
+    "sha256": "36fc442e479e4fde99f1a8c53b2bef351424e48a1cdf7360e625751c2f56d21e",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5200JOR.csv",
+    "sha256": "1f12fab8e464c9ff1d0b32d4c7e55d3473fe385e8757c4f6d02e1be6472301da",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU5300JOR.csv",
+    "sha256": "f3f57576fa22d05bd92f230a554f5680d6ec87c3e103085e7637081b08f51ad0",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU4200HIR.csv",
+    "sha256": "4ca50bdfa620b6b9047dd61f2ede96aa9a566c59e7a5d08550d238eeb07f0d23",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/CEU4300000007.csv",
+    "sha256": "c3eda0aee8a5a021334e6a41b409c898173ae353085bf19c55db43e225332873",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU480099JOR.csv",
+    "sha256": "bbaba65a2c1dbbfa1f99bef46b01466e09fa710992df3a5b706ae8e06896e7cb",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU3400LDR.csv",
+    "sha256": "fe8131fb58af304badf626e3fe8e444b381ebbe1b0a1ad7166cd367f07144a4d",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU4200LDR.csv",
+    "sha256": "c9c50c8ea2a4bfecc24c884d9dd7d16a0e50fa04480a43d9354fda69568618df",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/provided/3_fred_latest/JTU540099JOR.csv",
+    "sha256": "e22d8d4aa0fccca74fd5c6a647dc74b2c9511162eea82f705e4aacd9dc71245b",
+    "source": "provided archive"
+  },
+  {
+    "file": "data/cache/french/industry.zip",
+    "sha256": "16b3f20bf5bd1db8f5cd7a1b29f5cab1350eb0d5106c5309f77a6629590b1c0e",
+    "source": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/49_Industry_Portfolios_CSV.zip"
+  },
+  {
+    "file": "data/cache/french/ff5.zip",
+    "sha256": "36756c5c2559648519ac4b22913d860c6afd865cfebce920e3e8927f8e2d10b7",
+    "source": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_CSV.zip"
+  },
+  {
+    "file": "data/cache/french/momentum.zip",
+    "sha256": "c06d1c2e9a5e4f6985879722f23c6bb585f46b34eaf3fcb681d4de887e353f3e",
+    "source": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "request_hash": "d3a2da00d004a7101e36c6cfd204de6bf265340eaaca41b14a5606cae0664704",
+  "envelope": {
+    "response": "The report describes two failures: (1) a V02 standardized against its own expanding history, with a regime-dependent sign (unstable across T regimes), and (2) a slow-moving feature (V05 share of positive changes) with high rank autocorrelation of 0.77. The next steps suggested are V02 interacted with T, and faster-moving temporal features.\n\nThe proposed expression uses V06 and V04, not V02 or V05. It uses tsz with a 60 window, a rolling time-series z-score, which is not an expanding history, though still a temporal standardization. The hypothesis doesn't address regime dependence (no T interaction), and it doesn't explicitly address slow-moving features. A 60-period rolling z-score spread could be slow-moving too. The hypothesis describes \"cross-sectionally standardized\" while the expression uses tsz, a mismatch. There is no explicit avoidance of the failures.\n\n{\"avoids_failure\": false}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 483,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 308,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.004046,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "d3a2da00d004a7101e36c6cfd204de6bf265340eaaca41b14a5606cae0664704"
+  }
+}

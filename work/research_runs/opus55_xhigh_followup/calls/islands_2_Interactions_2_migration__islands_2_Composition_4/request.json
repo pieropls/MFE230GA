@@ -1,0 +1,13 @@
+{
+  "request_hash": "ac96c3f7dd6d149a935f7738a254f8caaad414fff35b06c0efea885354c6db52",
+  "request": {
+    "call_id": "islands_2_Interactions_2_migration__islands_2_Composition_4",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 4,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}. Return one bare JSON object without Markdown fences or commentary. uses_claim must be a JSON boolean. claim_ids must be an array of integer claim numbers, never quoted strings; use an empty array when uses_claim is false.",
+    "prompt": "{\"claims\": {\"1\": \"**Summary of findings**\", \"2\": \"Both interaction features failed.\", \"3\": \"Combining three-month hourly pay growth with the three-month change in average hours gave a slightly negative, insignificant information coefficient (about minus 0.02, t near minus 1.1).\", \"4\": \"It was identical in low and high T regimes, so this pairing looks uninformative.\", \"5\": \"Pairing V06's standardized stock level with rising V02 flows was also negative overall (about minus 0.05, t near minus 1.4).\", \"6\": \"Its sixty-month window cut coverage to roughly half.\", \"7\": \"However, its sign flipped by regime: negative when T was low and clearly positive when T was high.\", \"8\": \"Next steps: condition on T, use expanding windows to restore coverage, and test sign reversal.\"}, \"hypothesis\": \"If V03 is the informative leg of the flow mix, a three-month shift toward V03 relative to V04 in low-T regimes also predicts higher next-month relative returns, generalizing the V03/V02 composition result.\", \"expression\": \"regime(chg(ratio(V03,V04),3),\\\"low\\\")\"}"
+  }
+}

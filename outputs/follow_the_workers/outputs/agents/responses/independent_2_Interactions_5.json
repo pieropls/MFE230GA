@@ -1,0 +1,42 @@
+{
+  "request_hash": "e895be54dffc13f20c0a23ce4ecdb78d40f51bbc643bc6c741cf3b4db99bb12e",
+  "envelope": {
+    "response": "{\"name\":\"Separation-rate change interaction with hours, exp tsz\",\"hypothesis\":\"Groups with rising V02 over 3 months while hours (V01) are weak versus expanding-window history face labor stress and have lower next-month returns; the longer-history normalization should keep the negative sign and improve stability and coverage.\",\"falsified_if\":\"Mean IC is positive or |HAC t| is below 2 in development statistics, or low_T and high_T ICs have opposite signs.\",\"expression\":\"mult(chg(V02,3),tsz(V01,\\\"exp\\\"))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1239,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.004643400000000001,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "e895be54dffc13f20c0a23ce4ecdb78d40f51bbc643bc6c741cf3b4db99bb12e"
+  }
+}

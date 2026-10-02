@@ -1,0 +1,13 @@
+{
+  "request_hash": "6172a8f89fa896a3550f52dc98b887cc6662f431e547849886fbaf1b88ec2c01",
+  "request": {
+    "call_id": "islands_1_Interactions_4_migration__islands_1_Composition_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear.",
+    "prompt": "{\"report\": \"**Migration report**\\n\\nAcross four submissions, none produced a usable signal. The first interaction, pairing momentum in one flow rate with wage-level momentum, had essentially zero rank correlation (about 0.00, t near 0.1), in both low and high T states. It also had thin coverage, about half. The second was invalid because I used a non-whitelisted transformation, which wasted a slot. Restricting hours momentum to the high-T regime gave a tiny positive correlation (0.01), with no reliable t-statistic. An hours-versus-wage spread in the high-T regime was slightly negative (-0.02, t -0.4). Regime-gated features were highly persistent (0.45-0.50 autocorrelation). Next I would try other variables and lower-persistence constructions.\", \"hypothesis\": \"Groups whose V04 flow rate rose more than their V06 stock rate over 12 months (standardized across groups) have higher next-month returns, extending the positive 3- and 6-month versions. Expect positive IC in both T regimes.\", \"expression\": \"spread(chg(V04,12),chg(V06,12))\"}"
+  }
+}

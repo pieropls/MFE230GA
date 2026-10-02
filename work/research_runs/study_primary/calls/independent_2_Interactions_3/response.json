@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"Flow-rate spread interaction with T regime\", \"hypothesis\": \"Groups whose V03 flow rate rose over 3 months relative to V04 (cross-sectional spread) tend to have lower next-month returns, and this effect is stronger when T is high. Feature should correlate negatively.\", \"falsified_if\": \"Mean IC is positive or |HAC t| is below 2, or high_T IC is not more negative than low_T IC.\", \"expression\": \"regime(spread(chg(V03,3),chg(V04,3)),\\\"high\\\")\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 637,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 185,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0033794,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "d7031c7401f046206e0615e7e10d8ce4cd8df83735e1d28bb5462884c79e1dd1"
+}

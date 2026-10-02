@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"Wage-hours interaction tsz\",\"hypothesis\":\"Groups where average hourly dollars (V05) are unusually high versus their own history and average hours (V01) are also unusually high have stronger labor demand and higher next-month returns; the interaction should predict positively.\",\"falsified_if\":\"Cross-sectional rank correlation between this feature and next-month group returns is zero or negative in development statistics, with insignificant mean information coefficient.\",\"expression\":\"mult(tsz(V05,60),tsz(V01,60))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 41,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 177,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0021073999999999997,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "9c36f1fe0e17027a30336c6613679484020e9a8052a0cd4d3aa888efd87fe64b"
+}

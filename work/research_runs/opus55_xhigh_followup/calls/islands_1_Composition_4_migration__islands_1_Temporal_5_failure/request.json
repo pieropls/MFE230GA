@@ -1,0 +1,13 @@
+{
+  "request_hash": "8ba2f1cce866ac88500d29c7bde079b1a8198374345911764c7195df1217db77",
+  "request": {
+    "call_id": "islands_1_Composition_4_migration__islands_1_Temporal_5_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\n**Failure:** Static flow composition carried no signal. A smoothed level comparison of V02 against V03 gave a mean IC near 0.01 (t about 0.4). A three-month shift of V02 against V04 also failed, with IC essentially zero.\\n\\n**Partial success:** Groups whose V03 rate rose faster than their V02 rate over three months, relative to peers, outperformed modestly (IC 0.06, t about 2.1). The effect appears only in low common-index periods (IC 0.12) and disappears when the index is high. Restricting to low regimes gave t about 3.6 but only 58 percent coverage. That gain is largely mechanical rather than independent evidence.\", \"hypothesis\": \"Groups with higher twelve-month log growth in hourly pay (V05), lagged one month, outperform peers next month. The earlier own-history z-score signal reflects cross-sectional wage-growth differences, which this wider-coverage rank should capture.\", \"expression\": \"csrank(lchg(lag(V05,1),12))\"}"
+  }
+}

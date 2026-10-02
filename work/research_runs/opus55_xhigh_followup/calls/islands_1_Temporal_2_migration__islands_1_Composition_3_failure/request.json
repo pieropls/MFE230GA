@@ -1,0 +1,13 @@
+{
+  "request_hash": "77370683caa9c1af142ba50be4d91f5dd7034617093ea4daa1228811bf543d39",
+  "request": {
+    "call_id": "islands_1_Temporal_2_migration__islands_1_Composition_3_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 3,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nTwo temporal signals failed. Ranking groups by acceleration in average hours, lagged one month, gave a mean information coefficient near 0.02 and a HAC t-statistic near 0.7, well below two. Its ranks also turned over quickly. Ranking groups by how persistently the stock rate variable rose over six lagged months did worse, with coefficient near 0.01 and t-statistic near 0.5, despite stable ranks. Both looked somewhat stronger when the common index was high. Conditioning on high-index regimes merits testing, though that split may be noise. Coverage was about 95 percent, and overlap with base factors stayed low.\", \"hypothesis\": \"Groups whose V03 flow rate rose more than their V02 flow rate over three months, relative to peers, earn higher next-month relative returns, with the effect strongest when the common index is low.\", \"expression\": \"spread(chg(V03,3),chg(V02,3))\"}"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "**Migration report**\n\n**Failures:** The product of two long-history standardized measures (a flow rate and a stock rate) showed essentially zero predictive power (t-stat around -0.4), despite the stress-compounding rationale. The cross-sectional rank product of pay growth and hours change also produced nothing (mean IC zero), and was fairly redundant with existing features. One submission was invalid because the hypothesis exceeded the word limit, so count words carefully.\n\n**Tentative finding:** A spread between two flow rates, each standardized against its own history, gave a positive IC, opposite to my predicted sign (t-stat about 1.9). It looked stronger in high-T periods. Coverage was limited, at about 54%, so it is suggestive only."
+          }
+        ],
+        "usage": {
+          "input_tokens": 1243,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1247,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "**Migration report**\n\n**Failures:** The product of two long-history standardized measures (a flow rate and a stock rate) showed essentially zero predictive power (t-stat around -0.4), despite the stress-compounding rationale. The cross-sectional rank product of pay growth and hours change also produced nothing (mean IC zero), and was fairly redundant with existing features. One submission was invalid because the hypothesis exceeded the word limit, so count words carefully.\n\n**Tentative finding:** A spread between two flow rates, each standardized against its own history, gave a positive IC, opposite to my predicted sign (t-stat about 1.9). It looked stronger in high-T periods. Coverage was limited, at about 54%, so it is suggestive only.",
+      "usage": {
+        "input_tokens": 1243,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1247,
+        "output_tokens": 245,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 1243,
+          "outputTokens": 245,
+          "cacheReadInputTokens": 1247,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0051854,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0051854
+    }
+  ],
+  "stderr_present": false
+}

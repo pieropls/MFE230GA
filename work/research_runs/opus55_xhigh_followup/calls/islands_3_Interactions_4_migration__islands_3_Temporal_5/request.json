@@ -1,0 +1,13 @@
+{
+  "request_hash": "f13ab0dac1ae6aa7dd2af7a743f9a6c00ab7292137afcfa60a921c446e03a041",
+  "request": {
+    "call_id": "islands_3_Interactions_4_migration__islands_3_Temporal_5",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}. Return one bare JSON object without Markdown fences or commentary. uses_claim must be a JSON boolean. claim_ids must be an array of integer claim numbers, never quoted strings; use an empty array when uses_claim is false.",
+    "prompt": "{\"claims\": {\"1\": \"**Summary**\", \"2\": \"We tested four interaction-themed features, and none is convincing.\", \"3\": \"One failure: multiplying cross-sectional ranks of three-month hourly-pay momentum and hours momentum gave a slightly negative, insignificant information coefficient.\", \"4\": \"Contrasting three-month changes in two flow rates produced essentially zero signal.\", \"5\": \"Persistence of rising hours, restricted to high common-index regimes, was slightly negative and had reduced coverage.\", \"6\": \"The most informative feature was the stock rate standardized against its own expanding history, interacted with the common index.\", \"7\": \"It was weakly positive overall but sharply regime-dependent: positive when the index was low and strongly negative when it was high.\", \"8\": \"It also overlapped moderately with an existing base signal.\", \"9\": \"A suggested next step is to isolate that stock-rate signal within low-index regimes.\"}, \"hypothesis\": \"Groups whose stock rate is unusually high versus their own expanding history should outperform next month, but only when the common index is low. Regime conditioning should remove the offsetting high-index periods.\", \"expression\": \"regime(tsz(lag(V06,2),\\\"exp\\\"),\\\"low\\\")\"}"
+  }
+}

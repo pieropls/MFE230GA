@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-29T19:21:54.207729+00:00",
+  "approved": true,
+  "user_approval": "ok if they were included in the plan, lets apply all the fixes, discard all the old runs, and progress with the project as if we havent tried this yet",
+  "authorization_scope": "Corrected fresh experiment; exclude every old candidate and score, preserve audit history outside agent context; October and Sonnet retained.",
+  "previous_record_sha256": "ca3eefcfb67c3e00f99363b3947792706c38695dcc055fb6ae88c21fcecc4957",
+  "previous_params_sha256": "ec4e509b2abce3e5f4ad9c604644c9f0dfa228ea5d236eee5913f34dc507c620",
+  "params_sha256": "73cd51cefbd34677600cdb932fd2a657379fe26ff91e04c3507f3ce91d470178",
+  "params_snapshot": "outputs/prereg/params_v3.py",
+  "corrections": {
+    "prompts": "Preserve template and append original word caps/counting; distinguish feature JSON from migration prose; reinforce unchanged120 cap without extra research retries.",
+    "inference": "Detailed Section12:36 current-run seed1 slots for candidate IC reality check; those slots plus evaluated strategies for DSR. Invalid slots remain undefined when the test cannot be computed.",
+    "exclusion": "Retire entire technical run for implementation/protocol failures independently of investment performance. No old proposals, scores, reports or histories enter new research; no72-attempt pooled analysis.",
+    "F6": "Completed search:two exact groups below9. Information scope partial. Price coverage diagnostic retained; no F6 model."
+  },
+  "preflight": "Initial synthetic migration exceeded cap; after explicit JSON/prose mode clarification two fixed-budget synthetic reports passed. All preflight records retained; no economic performance used.",
+  "prior_exposure": "Prior agents received research feedback and technical failures were inspected. This is a disclosed corrected experiment, not a claim that prior events never occurred.",
+  "old_run_archive": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/retired_runs/technical_01"
+}

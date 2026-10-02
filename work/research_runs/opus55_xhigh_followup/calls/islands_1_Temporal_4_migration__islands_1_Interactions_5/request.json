@@ -1,0 +1,13 @@
+{
+  "request_hash": "2c2f6212defa1f811e91ecc1aaf74e7ea1a97b0e7c7179edbec470153e6fff0e",
+  "request": {
+    "call_id": "islands_1_Temporal_4_migration__islands_1_Interactions_5",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}. Return one bare JSON object without Markdown fences or commentary. uses_claim must be a JSON boolean. claim_ids must be an array of integer claim numbers, never quoted strings; use an empty array when uses_claim is false.",
+    "prompt": "{\"claims\": {\"1\": \"**Findings after four submissions**\", \"2\": \"Three ideas failed.\", \"3\": \"Acceleration in average hours, persistence of rises in the stock rate, and a three-month shift between two flow rates each gave near-zero mean rank correlations.\", \"4\": \"Their t-statistics were below one, so all three failed our falsification rule.\", \"5\": \"One idea worked modestly.\", \"6\": \"Annual hourly-pay growth, standardized against each group's own three-year history, produced a positive rank correlation with a t-statistic just above two.\", \"7\": \"It was stronger in low-T periods.\", \"8\": \"Caveats: coverage dropped to about sixty percent because of the long history requirement, and the signal is highly persistent.\", \"9\": \"Pay-based signals deserve further robustness testing.\"}, \"hypothesis\": \"Data-informed by submission 4, where relative V03 rises modestly predicted outperformance. Groups where V03 and hourly pay both rose over six months, via product of ranks, should outperform peers next month.\", \"expression\": \"mult(csrank(chg(V03,6)),csrank(lchg(V05,6)))\"}"
+  }
+}

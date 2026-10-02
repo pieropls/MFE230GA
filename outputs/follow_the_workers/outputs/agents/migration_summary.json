@@ -1,0 +1,44 @@
+{
+  "n": 36,
+  "defined_judgments": 8,
+  "uptake_rate": 0.25,
+  "improvement_with_uptake": -0.019307996881743932,
+  "improvement_without_uptake": 1.5478042706550122e-05,
+  "failure_avoidance_rate": null,
+  "failure_avoidance_n": 0,
+  "reports_total": 18,
+  "reports_admitted": 7,
+  "reports_rejected": 11,
+  "communication_observed": true,
+  "interpretation": "Only admitted reports were delivered; report rejection and undefined judgments separately.",
+  "unit": "report\u2013receiving-submission pair; uptake comparisons are associations, not causal effects",
+  "by_seed": {
+    "1": {
+      "n": 12,
+      "defined_judgments": 3,
+      "uptake_rate": 0.0,
+      "improvement_with_uptake": null,
+      "improvement_without_uptake": -0.04566032472570745,
+      "failure_avoidance_rate": null,
+      "failure_avoidance_n": 0
+    },
+    "2": {
+      "n": 20,
+      "defined_judgments": 4,
+      "uptake_rate": 0.25,
+      "improvement_with_uptake": 0.014971501500749336,
+      "improvement_without_uptake": 0.030466013221649213,
+      "failure_avoidance_rate": null,
+      "failure_avoidance_n": 0
+    },
+    "3": {
+      "n": 4,
+      "defined_judgments": 1,
+      "uptake_rate": 1.0,
+      "improvement_with_uptake": -0.0535874952642372,
+      "improvement_without_uptake": null,
+      "failure_avoidance_rate": null,
+      "failure_avoidance_n": 0
+    }
+  }
+}

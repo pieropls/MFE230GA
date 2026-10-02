@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"Separation-rate shock times hours momentum\",\"hypothesis\":\"Groups whose separation-type rate V03 is unusually high versus its own history while average hours V01 are falling face weakening conditions, so this interaction predicts lower next-month returns cross-sectionally; sign is negative, so higher values mean lower returns.\",\"falsified_if\":\"Mean cross-sectional IC is zero or positive, or HAC t-statistic is above -1, in development statistics.\",\"expression\":\"mult(csrank(tsz(V03,60)),csrank(chg(V01,3)))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 924,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 194,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0040434,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "8ddefcc8d43454922ad25df8eb30d1c46cfe6a16b8c9efeb19e67bb740c47133"
+}

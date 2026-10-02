@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"Composition_V05_V01_pay_per_hours_change\",\"hypothesis\":\"Groups whose V05 dollars per hour rose relative to V01 average hours over 6 months have a higher-paid, more intensive composition and earn higher next-month returns than other groups, especially when T is high.\",\"falsified_if\":\"Mean IC is zero or negative, or HAC t-stat is below 1 in development statistics.\",\"expression\":\"csrank(lchg(ratio(V05,V01),6))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1185,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1276,
+    "output_tokens": 166,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0042852,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "5ce3ccb000515b5fb91e0ca26a694fa80398fdda6a9604ec821aef995fd93464"
+}

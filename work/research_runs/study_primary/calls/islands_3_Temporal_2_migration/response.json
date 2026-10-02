@@ -1,0 +1,39 @@
+{
+  "response": "**Migration report**\n\nTwo features were tried, and neither found signal.\n\nThe first was a temporal standardization of the V03 flow rate against each group's own expanding history. It produced a mildly negative average rank correlation with next-month returns (t about -1.4). Coverage was only 71%. It had moderate overlap with base features and little regime difference by T. This suggests V03 momentum is not rewarded, and may weakly reverse.\n\nThe second was a relative three-month change comparison between V02 and V04. It scored essentially zero (t about 0.05) and showed no T-regime dependence, which failed my stated hypothesis.\n\nNext I would try level or persistence-based features on V01, V05 and V06, and would avoid long-history standardization because of its coverage cost.",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 716,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1247,
+    "output_tokens": 245,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0041314,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "f7ca19baa88726f5e20ba41c1bd79ab3a877e768165abb440e524de729cf6d84"
+}

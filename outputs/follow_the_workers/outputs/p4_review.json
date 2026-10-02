@@ -1,0 +1,93 @@
+{
+  "utc": "2026-09-29T19:44:02.702527+00:00",
+  "complete": true,
+  "open_flags": [],
+  "model": "claude-sonnet-5-5",
+  "evidence": [
+    "outputs/p4_request.json",
+    "outputs/p4_response.json",
+    "outputs/audits/p4/events.json"
+  ],
+  "decisions": [
+    {
+      "number": 1,
+      "accepted": true,
+      "test_id": "placebo",
+      "reason": "Retain the registered circular-shift placebo with causal refits and HAC inference. Do not add within-date shuffling, a0.10 cutoff or an uncomputed p-value. The reviewer claim that its proposed permutation result is already known is unsupported.",
+      "execution": "Existing prescribed sealed diagnostic; not yet run on sealed data"
+    },
+    {
+      "number": 2,
+      "accepted": false,
+      "test_id": null,
+      "reason": "Multiplicity is already recorded: candidate-only36-slot reality check and nominal candidate-plus-strategy DSR. Preserve undefined full-family results. Do not substitute a41-return-series SPA or new Bonferroni family after inspecting research outcomes.",
+      "execution": "No new test or threshold adopted"
+    },
+    {
+      "number": 3,
+      "accepted": false,
+      "test_id": null,
+      "reason": "Report the88-month research comparison,142-month sealed sample and registered HAC/bootstrap uncertainty. The additional minimum-track-record calculation and CI-includes-zero trading veto are not prescribed; no new gate adopted.",
+      "execution": "No new test or threshold adopted"
+    },
+    {
+      "number": 4,
+      "accepted": true,
+      "test_id": "cost_25",
+      "reason": "Use existing0/10/25bp industry-cost scenarios and break-even calculation. The prescribed25bp net-Sharpe/capacity gate stays fixed; do not replace cost grid with post-hoc multipliers.",
+      "execution": "Existing prescribed sealed diagnostic; not yet run on sealed data"
+    },
+    {
+      "number": 5,
+      "accepted": true,
+      "test_id": "placebo",
+      "reason": "Use existing factor attribution and causal circular-shift diagnostic. Active long-only performance and hedged excess performance are distinct quantities. No new matched-turnover random portfolio or95th-percentile gate is introduced.",
+      "execution": "Existing prescribed sealed diagnostic; not yet run on sealed data"
+    },
+    {
+      "number": 6,
+      "accepted": true,
+      "test_id": "halves",
+      "reason": "Use prescribed half-sample sign checks and report A0/A1/A3/A4 as different strategies, not data-vintage variants. No return-correlation veto or model reselection based on this audit.",
+      "execution": "Existing prescribed sealed diagnostic; not yet run on sealed data"
+    },
+    {
+      "number": 7,
+      "accepted": true,
+      "test_id": "tightness",
+      "reason": "Use registered regime, pandemic, half-period and profit-concentration diagnostics. Do not remove the observed best/worst5percent or introduce a rolling24-month pass threshold.",
+      "execution": "Existing prescribed sealed diagnostic; not yet run on sealed data"
+    },
+    {
+      "number": 8,
+      "accepted": true,
+      "test_id": "variant_gap",
+      "reason": "Timing assertions and P1 tests passed; compare the registered ASOF/FIRST/REVISED/FIXEDLAG variants. Do not choose a lag by searching new leads after research outcomes.",
+      "execution": "Existing prescribed sealed diagnostic; not yet run on sealed data"
+    },
+    {
+      "number": 9,
+      "accepted": false,
+      "test_id": null,
+      "reason": "Retain the predeclared nominal DSR with explicit dependence/adaptive-search caveats. Do not tune effective trial counts5/20/41/100 or add a0.95 DSR implementation gate. Within-run accounting does not certify all selection bias absent.",
+      "execution": "No new test or threshold adopted"
+    },
+    {
+      "number": 10,
+      "accepted": false,
+      "test_id": null,
+      "reason": "Sharpe/volatility use net excess returns; funded wealth is used separately for drawdown. A50percent hit rate is not a required condition for profitable payoffs. No supported stale-price correction or preregistered binomial trading gate exists; report this as a limitation, without fabricating unsmoothed inputs.",
+      "execution": "No new test or threshold adopted"
+    }
+  ],
+  "evidence_hashes": {
+    "stats.py": "c627a8ba4cb6f70fb141bb32688ec59afb62f500dca9a37cdafb30496a40ede7",
+    "outputs/research_summary.json": "d2c62bce7d486702474fe32baea55093193182539ca61120c3e8448e6c3f0336",
+    "outputs/selected_features.json": "f6f1a204138ce7513a6c4fbf5a1ede6613f698810506f0c2c57ca93e681f4b4e",
+    "outputs/p4_request.json": "78d33ede49c9a28e30c97df40929e3345c3d68889acb2f81f65a94e3fcbe4767",
+    "outputs/p4_response.json": "2ef33176fd463b5930bc8857a8f9837304faf89b492d840f3d285b45cae3056e"
+  },
+  "conclusion": "Research results provide no compelling implementation evidence. The reviewer cannot substitute its research-only verdict or invented thresholds for the registered sealed evaluation. No source, feature or selection change follows this audit.",
+  "sealed_test_opened": false,
+  "team_critique": null
+}

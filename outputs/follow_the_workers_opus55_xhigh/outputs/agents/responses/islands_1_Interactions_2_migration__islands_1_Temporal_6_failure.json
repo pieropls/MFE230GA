@@ -1,0 +1,42 @@
+{
+  "request_hash": "42447e3ec8f883b3f1e66518411a9593c3321939b28c8fbeaee93f0e5ffef0db",
+  "envelope": {
+    "response": "{\"avoids_failure\": false}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 464,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 383,
+      "output_tokens_details": {
+        "thinking_tokens": 370
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.009516,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "42447e3ec8f883b3f1e66518411a9593c3321939b28c8fbeaee93f0e5ffef0db"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "request_hash": "20a1b939ed3b40548d5ebb24ec35c1d15778223118b3662df2315e4e2b9bff0d",
+  "request": {
+    "call_id": "islands_2_Interactions_4_migration__islands_2_Temporal_5_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear.",
+    "prompt": "{\"report\": \"**Migration report**\\n\\n**Failures:** The product of two long-history standardized measures (a flow rate and a stock rate) showed essentially zero predictive power (t-stat around -0.4), despite the stress-compounding rationale. The cross-sectional rank product of pay growth and hours change also produced nothing (mean IC zero), and was fairly redundant with existing features. One submission was invalid because the hypothesis exceeded the word limit, so count words carefully.\\n\\n**Tentative finding:** A spread between two flow rates, each standardized against its own history, gave a positive IC, opposite to my predicted sign (t-stat about 1.9). It looked stronger in high-T periods. Coverage was limited, at about 54%, so it is suggestive only.\", \"hypothesis\": \"Groups whose V05 year-over-year change, smoothed over three months and standardized against its own expanding history, is high will have higher next-month returns, because smoothing reduces noise in the positive signal and raises rank stability.\", \"expression\": \"mavg(tsz(yoy(V05),\\\"exp\\\"),3)\"}"
+  }
+}

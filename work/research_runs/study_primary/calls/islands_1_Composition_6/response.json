@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V04_V06_spread_3m_and_6m_change_avg\",\"hypothesis\":\"Groups whose V04 flow rate rose more than their V06 stock rate over 12 months (standardized across groups) have higher next-month returns, extending the positive 3- and 6-month versions. Expect positive IC in both T regimes.\",\"falsified_if\":\"Mean rank IC is zero or negative, HAC t-statistic is below 1, or high_T and low_T IC have opposite signs in development statistics.\",\"expression\":\"spread(chg(V04,12),chg(V06,12))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 2149,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1276,
+    "output_tokens": 195,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0065032,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "5730d9526a05e6b91b91ccf8000aa9ad1c24c47be09ac7a5c26b82f026afda7a"
+}

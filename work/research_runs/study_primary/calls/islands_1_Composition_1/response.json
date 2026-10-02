@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V03_share_of_V02_plus_V03_flow_composition\",\"hypothesis\":\"Groups whose V03 flow rate is high relative to V02 flow rate, smoothed over 6 months, have higher next-month returns, because the composition of flows toward V03 signals stronger conditions in that group.\",\"falsified_if\":\"Cross-sectional rank correlation between this feature and next-month group returns is zero or negative in development statistics, or top-minus-bottom group return spread is not positive.\",\"expression\":\"csrank(mavg(ratio(V03,V02),6))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 41,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1276,
+    "output_tokens": 192,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0022572,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "ccd5e35f34e6dff4c1f9799062536c3d61332473e0f7eb51958d9f0e1e5947ae"
+}

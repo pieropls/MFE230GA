@@ -1,0 +1,43 @@
+{
+  "command": [
+    "/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+    "-p",
+    "--safe-mode",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--permission-prompts",
+    "none",
+    "--setting-sources",
+    "",
+    "--settings",
+    "{\"enabledPlugins\":{\"agents-md@builtin\":false}}",
+    "--system-prompt",
+    "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "xhigh",
+    "--max-turns",
+    "1",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "sandbox": "(version 1)\n(allow default)\n(deny file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30\"))\n(allow file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/opus55_xhigh_followup/calls/islands_2_Temporal_4_migration__islands_2_Interactions_5_failure\"))\n(allow file-read* (literal \"/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe\"))\n(deny file-read* (subpath \"/Users/alex/Downloads\"))\n(deny file-read* (subpath \"/Users/alex/.codex\"))",
+  "cli_sha256": "50a14c2f50f56668380fdda490167f1d3630d5cc18fb8aed3073c2c7ea7314fe",
+  "environment": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+    "CLAUDE_CODE_DISABLE_ATTACHMENTS": "1",
+    "DISABLE_UPDATES": "1",
+    "CLAUDE_CODE_MAX_RETRIES": "0",
+    "CLAUDE_CODE_EXTRA_BODY": "{\"messages\": [{\"role\": \"user\", \"content\": \"{\\\"report\\\": \\\"**Findings so far**\\\\n\\\\n**Failure:** Ranking groups by three-month change in average hours had no predictive power. Mean rank IC was slightly negative, with t near minus 0.7.\\\\n\\\\n**Promising:** Annual hourly-pay growth, standardized against each group's own five-year history, gave IC about 0.08 with HAC t near 1.8. Coverage was only 44 percent. An expanding-window log-growth version raised coverage to 63 percent. However, it weakened IC to 0.05, with t 1.4.\\\\n\\\\nThe pay signal is stronger when the common index is high (IC near 0.2) than when low (about 0.1). A high-regime-only version showed IC 0.19 but no t-statistic, so it is unconfirmed. Signals are persistent and have low correlation with base factors.\\\", \\\"hypothesis\\\": \\\"Groups whose V03 rate rose more than their V02 rate over three months, compared across groups, should earn higher next-month relative returns. The three-month horizon should strengthen the pooled six-month ratio result.\\\", \\\"expression\\\": \\\"spread(chg(V03,3),chg(V02,3))\\\"}\"}]}",
+    "TMPDIR": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/opus55_xhigh_followup/calls/islands_2_Temporal_4_migration__islands_2_Interactions_5_failure/tmp"
+  }
+}

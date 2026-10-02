@@ -1,0 +1,39 @@
+{
+  "response": "The report lists these failures: (1) a product of two long-history standardized measures (flow and stock) with zero predictive power; (2) a cross-sectional rank product of pay growth and hours change, which was redundant; (3) an invalid submission where the hypothesis exceeded the word limit.\n\nThe proposal uses a spread (not a product) of two flow rates, each standardized against its own history. That matches the tentative finding rather than the failures. It avoids the product form and the stock rate. It does not use the rank product of pay and hours.\n\nThe word limit: the hypothesis is about 30 words, which is likely under a typical limit, though the limit is not stated. The hypothesis is 31 words or so, and the report doesn't give the threshold, so this is unclear. Still, the main failures are avoided.\n\nThe proposal is a spread of two flow rates, so it avoids the product-of-flow-and-stock failure. The word limit is an unknown, but the hypothesis is fairly concise.\n\n{\"avoids_failure\": true}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 465,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 327,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0042,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "0aafdbb250742083e793d8ffb7fbcfe509f542fc3f57dfda6fdf4c526ad5e401"
+}

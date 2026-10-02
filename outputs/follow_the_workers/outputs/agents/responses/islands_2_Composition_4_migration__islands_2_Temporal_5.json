@@ -1,0 +1,42 @@
+{
+  "request_hash": "270eecb81d3dc1d8bc165408b78caff0a2315de4e2e3dcfc49ff3fe6c19caebc",
+  "envelope": {
+    "response": "The hypothesis tests a smoothed year-over-year change in a variable V05, standardized against its expanding history, and ranked across groups. Claims 2 and 10 are the closest matches. Claim 2 covers a three-month change in the ratio of flow rates, and claim 10 suggests trying changes in flow-rate ratios with longer smoothing. The hypothesis and expression, however, don't reference flow-rate ratios, so the link is only loose. V05 is not identified as a ratio, and the hypothesis does not say it tests any of the claims. It applies smoothing (three months), which loosely fits claim 10's \"longer smoothing,\" but nothing ties it explicitly to that claim.\n\nThe expression uses mavg over 3 periods of a time-series z-score of the yoy change, which is a smoothing approach consistent with claim 10's \"changes with longer smoothing.\" Claim 10 is the only one that plausibly connects. The connection is moderately weak, but the design follows the recommendation: a change-based signal with smoothing and no regime gating.\n\n```json\n{\"uses_claim\": true, \"claim_ids\": [10]}\n```",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 536,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 371,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.004782,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "270eecb81d3dc1d8bc165408b78caff0a2315de4e2e3dcfc49ff3fe6c19caebc"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-opus-5-5",
+        "content": [
+          {
+            "type": "thinking"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1977,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1307,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 7,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-opus-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\": \"V03_level_shift_3m_lowT\", \"hypothesis\": \"Both V03/V02 and V03/V04 shifts worked in low-T regimes, suggesting V03 drives the composition signal. Groups with larger three-month increases in V03 alone should earn higher next-month relative returns when T is low.\", \"falsified_if\": \"Low-T mean rank IC is at or below 0.05, or the HAC t-statistic is below 2.0 in development.\", \"expression\": \"regime(chg(V03,3),\\\"low\\\")\"}"
+          }
+        ],
+        "usage": {
+          "input_tokens": 1977,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1307,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 7,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "{\"name\": \"V03_level_shift_3m_lowT\", \"hypothesis\": \"Both V03/V02 and V03/V04 shifts worked in low-T regimes, suggesting V03 drives the composition signal. Groups with larger three-month increases in V03 alone should earn higher next-month relative returns when T is low.\", \"falsified_if\": \"Low-T mean rank IC is at or below 0.05, or the HAC t-statistic is below 2.0 in development.\", \"expression\": \"regime(chg(V03,3),\\\"low\\\")\"}",
+      "usage": {
+        "input_tokens": 1977,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1307,
+        "output_tokens": 1658,
+        "output_tokens_details": {
+          "thinking_tokens": 1479
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-opus-5-5": {
+          "inputTokens": 1977,
+          "outputTokens": 1658,
+          "cacheReadInputTokens": 1307,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0413294,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1479,
+          "canonicalModel": "claude-opus-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0413294
+    }
+  ],
+  "stderr_present": false
+}

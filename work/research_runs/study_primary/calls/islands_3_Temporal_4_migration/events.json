@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "**Migration Report**\n\nFour submissions, none convincing. Every mean rank correlation was near zero, and no HAC t-statistic exceeded 1.4 in magnitude.\n\n**Failures:** The expanding-window temporal z-score of V03 produced a slightly negative correlation (t about -1.4), opposite to my momentum hypothesis. The V02 versus V04 acceleration spread was essentially zero, with no regime difference. The V05 versus V01 year-over-year spread was also null, and its rank autocorrelation was high (0.73).\n\n**Tentative signal:** The V06 z-score showed a positive correlation in high-T regimes (0.06), contradicting my expected reversal sign. That is weak (t 0.93), and coverage was only 0.52.\n\n**Suggestion:** Try regime-conditioned versions with shorter horizons, and avoid features correlated above 0.4 with the base set."
+          }
+        ],
+        "usage": {
+          "input_tokens": 1316,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1247,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 5,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "**Migration Report**\n\nFour submissions, none convincing. Every mean rank correlation was near zero, and no HAC t-statistic exceeded 1.4 in magnitude.\n\n**Failures:** The expanding-window temporal z-score of V03 produced a slightly negative correlation (t about -1.4), opposite to my momentum hypothesis. The V02 versus V04 acceleration spread was essentially zero, with no regime difference. The V05 versus V01 year-over-year spread was also null, and its rank autocorrelation was high (0.73).\n\n**Tentative signal:** The V06 z-score showed a positive correlation in high-T regimes (0.06), contradicting my expected reversal sign. That is weak (t 0.93), and coverage was only 0.52.\n\n**Suggestion:** Try regime-conditioned versions with shorter horizons, and avoid features correlated above 0.4 with the base set.",
+      "usage": {
+        "input_tokens": 1316,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1247,
+        "output_tokens": 301,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 1316,
+          "outputTokens": 301,
+          "cacheReadInputTokens": 1247,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0058914,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0058914
+    }
+  ],
+  "stderr_present": false
+}

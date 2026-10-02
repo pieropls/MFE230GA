@@ -1,0 +1,13 @@
+{
+  "request_hash": "77b7df32cf2c23cb97649b2b36598c595bed0f141d3da3f0340e877fd24b51b7",
+  "request": {
+    "call_id": "islands_3_Composition_4_migration__islands_3_Temporal_6",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}. Return one bare JSON object without Markdown fences or commentary. uses_claim must be a JSON boolean. claim_ids must be an array of integer claim numbers, never quoted strings; use an empty array when uses_claim is false.",
+    "prompt": "{\"claims\": {\"1\": \"**Composition findings, four submissions**\", \"2\": \"Contrasting two smoothed flow rates across groups (V02 versus V03) failed: information coefficient near zero, t-statistic about minus 0.2.\", \"3\": \"Scaling smoothed V04 flow by V06 stock, standardized against own history, was weak overall but strongly negative in high common-index periods.\", \"4\": \"A cross-sectional stock-minus-flow contrast limited to high-index periods barely helped.\", \"5\": \"Inverting the ratio, V06 stock over unsmoothed V04 flow, standardized against own history and limited to high-index periods, worked best: information coefficient 0.09, t-statistic 1.56, low overlap with base signals.\", \"6\": \"Caveats: low rank persistence means high turnover, coverage is 73 percent, and significance is marginal.\"}, \"hypothesis\": \"Hours-rise persistence predicted returns positively when the common index was high (0.09) and negatively when low (-0.04). A continuous index interaction should use both regimes, keep full coverage and beat the regime-filtered t of 1.51.\", \"expression\": \"withT(persist(lag(V01,1),6))\"}"
+  }
+}

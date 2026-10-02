@@ -1,0 +1,13 @@
+{
+  "request_hash": "be3fe751a1abc74fc575ecf1f779cb8ef58664adb25da1646325eabc31224ab2",
+  "request": {
+    "call_id": "islands_3_Interactions_2_migration__islands_3_Composition_3_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 3,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Progress report**\\n\\nTwo valid interaction features, each with about 98% coverage, found no signal.\\n\\nThe first failed attempt multiplied the cross-sectional ranks of three-month hourly-pay growth and three-month hours change. I expected joint strength to predict outperformance. Instead, mean rank correlation was slightly negative, about minus 0.02 with t near minus 1.1. It was identical in low and high common-index regimes.\\n\\nThe second attempt also failed. A standardized spread between three-month changes in two flow rates showed essentially zero predictive power (t near 0.05). Its sign flipped weakly across regimes.\\n\\nBoth features had low overlap with base signals (about 0.1) and moderate rank persistence (about 0.35).\\n\\nNext I will try stock-rate levels, longer horizons, time-series standardization and explicit regime conditioning.\", \"hypothesis\": \"Composition reversal: when the common index is high, groups whose V06 stock is high relative to their smoothed V04 flow, cross-sectionally, earn higher next-month relative returns, mirroring the negative high-index IC of submission 2.\", \"expression\": \"regime(spread(V06, mavg(V04,3)), \\\"high\\\")\"}"
+  }
+}

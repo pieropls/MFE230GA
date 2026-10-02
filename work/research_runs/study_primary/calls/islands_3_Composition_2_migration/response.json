@@ -1,0 +1,39 @@
+{
+  "response": "**Findings so far**\n\nTwo composition-style features were tried. The first compared cross-sectional standing of average hours against hourly pay, smoothed over six months. It showed a small positive information coefficient (about 0.03), a weak t-statistic (about 1.0), high coverage, low overlap with base features, and slightly better performance when T was high. That is suggestive but not significant.\n\n**Failure**\n\nThe second compared two flow rates, smoothed over three months, and was restricted to high T. It gave a negative coefficient (about -0.07), an insignificant t-statistic, coverage of only 0.82, and no low-T comparison, so the regime hypothesis could not be tested.\n\n**Next steps**\n\nAvoid regime-only restrictions. Test flow-rate composition in both regimes. Check whether the hours-based signal strengthens with longer smoothing.",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 719,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1246,
+    "output_tokens": 277,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0044572,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "d5bfa35967e76e1445c1ec821f411dc1579386d014519cc3eee5be645d5a39fa"
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "bcfc6cdb49bbba9c4ffa32ced7cd845b9a3d7778c8453f3b49184bc5f972de0c",
+  "envelope": {
+    "response": "{\"name\":\"V04_V02_tsz_spread_reversed_mavg\",\"hypothesis\":\"Groups whose V04 rate is unusually low versus its own history relative to V02 (spread of expanding-window time-series z-scores, smoothed) earn higher next-month relative returns, since submission 4 showed positive IC opposite to the stated sign; the effect should hold across T regimes.\",\"falsified_if\":\"Mean cross-sectional rank correlation with next-month returns is zero or negative, or HAC t-statistic is below 1, in the full sample.\",\"expression\":\"spread(tsz(mavg(V02,3),\\\"exp\\\"),tsz(mavg(V04,3),\\\"exp\\\"))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1316,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0052274,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "bcfc6cdb49bbba9c4ffa32ced7cd845b9a3d7778c8453f3b49184bc5f972de0c"
+  }
+}

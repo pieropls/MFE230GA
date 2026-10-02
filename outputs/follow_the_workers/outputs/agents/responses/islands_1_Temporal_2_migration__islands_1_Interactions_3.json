@@ -1,0 +1,42 @@
+{
+  "request_hash": "e81061ad5eb81035815069a6d5ac266f4fb24fffd4f3e4d206dc83fcef14009e",
+  "envelope": {
+    "response": "The task asks whether the hypothesis or expression uses or tests numbered claims. The claims are prior migration report statements about V02 and V05 signals. The hypothesis concerns V01 (3-month change, standardized over 60 months, in the high-T regime). It does not reference any claim by number, and it tests a different variable than claims 3 to 9.\n\nIt does loosely relate to the regime-dependence noted in claims 5 and 6, and to the next step in claim 11 (test interaction with T, faster-moving features). But the hypothesis is about V01, not V02, so it does not directly test claim 11. It also does not reference or test any numbered claim explicitly.\n\n```json\n{\"uses_claim\": false, \"claim_ids\": []}\n```",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 511,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 240,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.003422,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "e81061ad5eb81035815069a6d5ac266f4fb24fffd4f3e4d206dc83fcef14009e"
+  }
+}

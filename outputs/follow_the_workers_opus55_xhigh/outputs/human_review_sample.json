@@ -1,0 +1,113 @@
+{
+  "utc": "2026-10-02T07:11:30.808053+00:00",
+  "run_id": "opus55_xhigh_followup",
+  "selection_source": "outputs/planned_migration_pairs.json",
+  "judgments_sha256": "e489cb9c5ec45f752ec4bff111c9813229a565761b6991f432378d6858ff6edc",
+  "items": [
+    {
+      "item": 1,
+      "report_id": "islands_1_Temporal_2_migration",
+      "candidate_id": "islands_1_Composition_3",
+      "human_uses_claim": false
+    },
+    {
+      "item": 2,
+      "report_id": "islands_1_Composition_2_migration",
+      "candidate_id": "islands_1_Temporal_3",
+      "human_uses_claim": false
+    },
+    {
+      "item": 3,
+      "report_id": "islands_1_Composition_2_migration",
+      "candidate_id": "islands_1_Interactions_4",
+      "human_uses_claim": false
+    },
+    {
+      "item": 4,
+      "report_id": "islands_1_Interactions_4_migration",
+      "candidate_id": "islands_1_Temporal_6",
+      "human_uses_claim": false
+    },
+    {
+      "item": 5,
+      "report_id": "islands_1_Interactions_4_migration",
+      "candidate_id": "islands_1_Composition_6",
+      "human_uses_claim": true
+    },
+    {
+      "item": 6,
+      "report_id": "islands_2_Composition_2_migration",
+      "candidate_id": "islands_2_Temporal_4",
+      "human_uses_claim": false
+    },
+    {
+      "item": 7,
+      "report_id": "islands_2_Composition_2_migration",
+      "candidate_id": "islands_2_Temporal_5",
+      "human_uses_claim": false
+    },
+    {
+      "item": 8,
+      "report_id": "islands_2_Interactions_2_migration",
+      "candidate_id": "islands_2_Temporal_3",
+      "human_uses_claim": false
+    },
+    {
+      "item": 9,
+      "report_id": "islands_2_Interactions_2_migration",
+      "candidate_id": "islands_2_Composition_4",
+      "human_uses_claim": false
+    },
+    {
+      "item": 10,
+      "report_id": "islands_2_Interactions_2_migration",
+      "candidate_id": "islands_2_Composition_5",
+      "human_uses_claim": false
+    },
+    {
+      "item": 11,
+      "report_id": "islands_3_Temporal_2_migration",
+      "candidate_id": "islands_3_Interactions_3",
+      "human_uses_claim": true
+    },
+    {
+      "item": 12,
+      "report_id": "islands_3_Temporal_2_migration",
+      "candidate_id": "islands_3_Composition_6",
+      "human_uses_claim": false
+    },
+    {
+      "item": 13,
+      "report_id": "islands_3_Interactions_2_migration",
+      "candidate_id": "islands_3_Composition_5",
+      "human_uses_claim": false
+    },
+    {
+      "item": 14,
+      "report_id": "islands_3_Interactions_2_migration",
+      "candidate_id": "islands_3_Temporal_6",
+      "human_uses_claim": false
+    },
+    {
+      "item": 15,
+      "report_id": "islands_3_Interactions_4_migration",
+      "candidate_id": "islands_3_Temporal_5",
+      "human_uses_claim": true
+    },
+    {
+      "item": 16,
+      "report_id": "islands_3_Interactions_4_migration",
+      "candidate_id": "islands_3_Temporal_6",
+      "human_uses_claim": false
+    },
+    {
+      "item": 17,
+      "report_id": "islands_3_Interactions_4_migration",
+      "candidate_id": "islands_3_Composition_6",
+      "human_uses_claim": false
+    }
+  ],
+  "completed_judgments_sha256": "6d0db8fbb03e691aaed2acee0d2b5c566ccd24c1ee19ea556dfa5675e5bca0bc",
+  "actual_judgments_match_planned_sample": true,
+  "submitted_at": "2026-10-02T07:53:57.570642+00:00"
+}

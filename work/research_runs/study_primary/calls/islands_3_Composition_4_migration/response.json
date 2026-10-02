@@ -1,0 +1,39 @@
+{
+  "response": "**Migration report**\n\nFour composition-style features were tried, all valid. None was statistically convincing.\n\nThe most promising was the smoothed cross-sectional contrast between average hours and hourly wage. Its mean IC was 0.03 (HAC t of 1.0), somewhat stronger in the high-T regime. That is suggestive but not significant.\n\nThe clearest failure was the high-T-only flow-rate contrast. It had an IC of -0.07 (t of -1.25), the opposite sign to my hypothesis, and coverage fell to 0.82.\n\nThe stock-versus-flow contrast and the wage-versus-turnover contrast both had ICs near zero.\n\nSmoothed features have rank autocorrelation of 0.97 to 1.0, so their effective sample is small. Base correlations were low, at most 0.18.",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1332,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1246,
+    "output_tokens": 269,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.005603199999999999,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "8f645369b895c201bc0f4e731b41c2d9cfca1bd10a3651f9e6a6e3247d83e945"
+}

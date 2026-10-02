@@ -1,0 +1,77 @@
+{
+  "unit": "three seeds per architecture; descriptive search variation, not additional sealed observations",
+  "metrics": {
+    "best_so_far_ic": {
+      "independent": {
+        "mean": 0.08308039130409826,
+        "minimum": 0.04610749138423598,
+        "maximum": 0.10209213096603909,
+        "seeds_with_defined_value": 3
+      },
+      "islands": {
+        "mean": 0.04885860641408032,
+        "minimum": 0.03701434808413165,
+        "maximum": 0.05761767482012537,
+        "seeds_with_defined_value": 3
+      },
+      "islands_minus_independent": -0.034221784890017946,
+      "largest_between_seed_range": 0.05598463958180311,
+      "absolute_gap_exceeds_seed_range": false,
+      "higher_is_better": true
+    },
+    "median_ic": {
+      "independent": {
+        "mean": 0.005159394798287587,
+        "minimum": -0.0035889460121532827,
+        "maximum": 0.009996354392655614,
+        "seeds_with_defined_value": 3
+      },
+      "islands": {
+        "mean": -0.0015371831720405998,
+        "minimum": -0.009379292676909255,
+        "maximum": 0.0043053780492395225,
+        "seeds_with_defined_value": 3
+      },
+      "islands_minus_independent": -0.006696577970328187,
+      "largest_between_seed_range": 0.013684670726148778,
+      "absolute_gap_exceeds_seed_range": false,
+      "higher_is_better": true
+    },
+    "invalid_rate": {
+      "independent": {
+        "mean": 0.12962962962962965,
+        "minimum": 0.05555555555555558,
+        "maximum": 0.2777777777777778,
+        "seeds_with_defined_value": 3
+      },
+      "islands": {
+        "mean": 0.05555555555555558,
+        "minimum": 0.0,
+        "maximum": 0.11111111111111116,
+        "seeds_with_defined_value": 3
+      },
+      "islands_minus_independent": -0.07407407407407407,
+      "largest_between_seed_range": 0.2222222222222222,
+      "absolute_gap_exceeds_seed_range": false,
+      "higher_is_better": false
+    },
+    "diversity": {
+      "independent": {
+        "mean": 0.8274674104943713,
+        "minimum": 0.8108018207282913,
+        "maximum": 0.8363241129785248,
+        "seeds_with_defined_value": 3
+      },
+      "islands": {
+        "mean": 0.7981474132863022,
+        "minimum": 0.7767127684407096,
+        "maximum": 0.831683201058201,
+        "seeds_with_defined_value": 3
+      },
+      "islands_minus_independent": -0.029319997208069104,
+      "largest_between_seed_range": 0.05497043261749146,
+      "absolute_gap_exceeds_seed_range": false,
+      "higher_is_better": true
+    }
+  }
+}
