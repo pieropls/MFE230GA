@@ -1,5 +1,7 @@
 # Morning brief, Sat 4 Oct 2026
 
+> Superseded on 3 Oct 2026 (evening) by `docs/process/HANDOFF.md`: TODO table, line numbers, open issues and push instructions live there now.
+
 Deliverables: `results/results_book.pdf` (27 pp.), `results/VERDICT.md`, `report/main.pdf` (19 pp., draft marks on), `docs/process/REVIEW.md`. Everything is committed; the frozen repo is untouched (3,067 files, fingerprint unchanged).
 
 ## Verdict in three lines

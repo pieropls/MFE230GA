@@ -382,7 +382,7 @@ The response asserted a permutation $p$-value ``already'' above 0.10 that nobody
 
 \subsection{Transcripts and verbatim excerpts}\label{app:transcripts}
 \begin{itemize}
-  \item P1: prompt \path{outputs/p1_request.json} (the instruction in \cref{sec:ai} followed by the manifest, crosswalk and as-of code); response \path{outputs/p1_response.md}; dispositions \path{outputs/p1_review.md}. \todo{Alex: add the disposition counts from p1\_review.md}
+  \item P1: prompt \path{outputs/p1_request.json} (the instruction in \cref{sec:ai} followed by the manifest, crosswalk and as-of code); response \path{outputs/p1_response.md}; dispositions \path{outputs/p1_review.md}: 25 findings, 5 not supported by the files, 1 metadata fix, 19 documented design choices, limitations or checks that found no error. % src: claim A07
   \item P2: system and turn prompts in \path{params.py} (\texttt{SYSTEM\_PROMPT}, \texttt{TURN\_PROMPT}); every call with its raw response in \path{outputs/agents/log.jsonl}; proposals in \path{outputs/candidates.csv}; selected features decoded in \path{analysis/output/tables/d7_selected_features.csv}.
   \item P3: migration reports in \path{outputs/agents/migrations.json}; the judge prompt in \path{agents.py}, function \path{trace_migrations}; judgments in \path{outputs/agents/migration_judgments.json}; the human audit in \path{outputs/human_review_submission.json} (the Opus folder also has a \path{.md} version).
   \item P4: prompt \path{outputs/p4_request.json}; response \path{outputs/p4_response.md}; dispositions \path{outputs/p4_review.md}.
