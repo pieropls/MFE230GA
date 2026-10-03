@@ -202,7 +202,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | C19 | CONF | Of the agent features that passed research selection, 4 of 4 (Sonnet) and 6 of 7 (Opus) failed the frozen sealed criterion (t >= 1.5 and positive IC in both test halves); the one Opus feature that passed it was not selected. | 4; 4; 6; 7 | y |
 | C23 | CONF | A1-T test: net return -4.9% a year, volatility 8.2%, maximum drawdown -36.3%. | -4.9; 8.2; -36.3 | y |
 | A06 | CONF | Logged model calls: 199 in the confirmatory (Sonnet) study and 294 in the Opus follow-up (candidate, migration and judge calls; the evaluation entries in the log are not calls). | 199; 294 | y |
-| F09 | FWD | The Q4 2026 book was first built at 2026-10-03T09:17:55Z; later notebook runs reproduce it byte for byte. | 2026-10-03T09:17:55+00:00 | y |
+| F09 | FWD | The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 9f4a50f, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it. | 2026-10-03T09:17:55+00:00 | y |
 | X01 | CONF | Opus follow-up: primary A4 test Sharpe +0.01, research Sharpe -0.40, placebo p 0.56, Sharpe at 25 bp -0.19. | 0.01; -0.4; 0.56; -0.19 | y |
 | X02 | CONF | Opus A4 one-month IC -0.002 (t = -0.10); alpha t 0.05; last 18 months Sharpe -1.41. | -0.002; -0.1; 0.05; -1.41 | y |
 | X03 | CONF | Opus A3 test Sharpe -0.46. | -0.46 | y |

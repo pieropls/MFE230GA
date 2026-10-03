@@ -10,6 +10,11 @@ Start with **[FINDINGS_AND_PROPOSAL.md](FINDINGS_AND_PROPOSAL.md)**. It covers w
 | `230ga-follow-the-workers/` | Clone of Alex's private repo `Aroesler1/230ga-follow-the-workers`, unmodified. Run `git pull` inside it to update. |
 | `analysis/` | Exploratory diagnostics on public data. Independent of the frozen studies; writes nothing into the team repo. |
 
+## Morning deliverables (4 Oct 2026)
+- `MORNING_BRIEF.md`: verdict, scoreboard, what changed, remaining todos with owners, risks, how to build.
+- `results/`: `results_book.pdf`, `VERDICT.md`, `claims.csv` (every number the report may use, verified by locator), `scoreboard.csv`.
+- `report/main.pdf`: report v1 (draft marks on); `report/REVIEW.md`: two independent review rounds.
+
 ## Overnight rebuild (3 Oct 2026)
 - `ITERATION_PROMPT.md`: the Claude Code task for the v2 iteration and report v1, including how to run it (model, effort, kickoff lines).
 - `CLAUDE.md`: rules Claude Code follows in this folder.

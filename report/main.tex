@@ -18,7 +18,7 @@ We test whether public labor-market flows predict which of 13 U.S.\ industry gro
 its forecasts were uncorrelated with returns (information coefficient, IC, of $-0.021$, $t=-1.08$) % src: claim C03
 and a placebo test could not tell it from noise ($p=0.72$). % src: claim C05
 We conclude: \emph{Do not implement}. The failure is informative: the preregistered signs of layoffs and hours were wrong, the one stable one-month signal (wage growth) was dropped during the build, and the labor market never tightened in the research years, so tightness could not be tested. % src: claims D03, D01, D06
-Read across horizons, the data are consistent with a slower, opposite effect: industries that hire and lose workers fastest earn lower returns over the following 9 to 24 months, as investment-based asset pricing predicts. A 12-month book on that sign is positive in every window (test Sharpe $+0.29$) % src: claim V_V2d_SR
+Read across horizons, the data are consistent with a slower, opposite effect: industries that hire and lose workers fastest earn lower returns over the following 9 to 24 months, which investment-based asset pricing would predict. A 12-month book on that sign is positive in every window (test Sharpe $+0.29$) % src: claim V_V2d_SR
 but is post hoc, lost money in the first half of the test and does not survive deflation. % src: claims R4a, R12
 It runs as paper books in a forward test frozen on 3 October 2026, with no capital. % src: claim F05
 \todo{Al Yazid: one sentence on Claude as research assistant, in the team's words}
@@ -84,7 +84,7 @@ The preregistered fixed rule A0 used $z(\text{F1})+z(\text{F2})-z(\text{F4})+z(\
 
 \subsection{Data}
 
-\begin{table}[H]
+\begin{table}[!htb]
 \centering\small
 \caption{Data sources (all free; links in \cref{app:data}). \hfill\tagc}
 \label{tab:data}
@@ -104,7 +104,7 @@ Ken French & 49 value-weighted industry portfolios $\to$ 13 groups; five factors
 
 \paragraph{Point-in-time data} Labor data are revised after first release, so today's values leak information. The frozen study rebuilt every series as it stood on each decision date from ALFRED, the St.\ Louis Fed archive of data vintages (78 series), % src: 230ga-follow-the-workers/outputs/follow_the_workers/report/report.md section 2b (78 core first-vintage dates)
 and kept three alternatives: first release, fully revised, and revised with fixed publication lags. The primary result barely depends on the choice: A3's test Sharpe is $-0.58$ as known, $-0.52$ on first releases, $-0.56$ revised and $-0.53$ with fixed lags. % src: claim C20
-Our post-hoc work (\cref{sec:survives}) uses revised data with fixed lags, which reproduces the frozen fixed-lag signal with a pooled correlation of 0.998, % src: claim S01
+Our post-hoc work (\cref{sec:survives}) uses revised data with fixed lags, which reproduces the frozen fixed-lag signal with a correlation of 0.998 across all group-months, % src: claim S01
 but as-known data pick the same top-three groups in only 42\% of months, % src: claim S02
 so post-hoc holdings, though not the conclusions, would have differed in real time.
 
@@ -170,9 +170,11 @@ In the test the cap, not the volatility target, bound in 87\% of A3's months, so
 
 \paragraph{Claude as research assistant} We used Claude (Anthropic) at four points of the build: auditing sources and code (P1), proposing signals as blinded agents (P2), judging whether ideas spread (P3) and red-teaming the robustness plan (P4). We used it again to review the finished study (P5) and to run this iteration (P6). Three of the prompts, verbatim, are below; outputs and our evaluation are in \cref{sec:claude}, transcripts in \cref{app:transcripts}.
 
+\noindent\begin{minipage}{\linewidth}
 \begin{promptbox}{Prompt P1: source and code review}
 Find mapping errors, timestamp or look-ahead errors, and code bugs in the material below. For each problem, give the exact line or row, why it is wrong, and a test that would confirm it. Do not report style issues. [followed by the series manifest, the industry crosswalk and the as-of code]
 \end{promptbox}
+\end{minipage}
 \begin{promptbox}{Prompt P2: blinded signal-search agent (system prompt, opening)}
 You are a quantitative researcher. You will propose one feature per turn to predict which of 13 anonymous groups (G01 to G13) will have higher returns next month relative to the others. You see only the variable dictionary below, the allowed operations, and summary statistics of your previous submissions. You do not know what the groups, variables or time periods are. Do not guess them and do not use knowledge about any real industry, company or date. [variable dictionary, grammar and JSON format follow]
 \end{promptbox}
@@ -181,12 +183,12 @@ Give 10 distinct reasons these results could be spurious, ranked by likelihood. 
 \end{promptbox}
 
 % =====================================================================
+\newpage
 \section{What did we learn?}
 
 \Cref{tab:sealed} reports the one-time test. No strategy made money; the primary lost 4.6\% a year with a 41\% drawdown % src: claim C02
 and failed four of the five gates. % src: claim C07
-Costs are not the explanation: A3 paid 1.1\% a year in trading costs against a gross loss of 3.5\%, % src: claim C15
-and it would lose money even if industry trading were free (break-even cost $-32$\,bp). % src: claim C06
+Costs are not the explanation: A3 paid 1.1\% a year in trading costs against a gross loss of 3.5\%. % src: claim C15
 
 \begin{table}[H]
 \centering\small
@@ -222,9 +224,9 @@ while the 12-month hiring-reversal book loads the other way, against profitabili
 \subsection{Time patterns of performance}
 \Cref{tab:windows} covers the course windows. For A3, ``post-2010'' is in effect the test, which starts in November 2014; ``full'' adds the research years in which the model was chosen and is descriptive. The primary's one bright spot, $+0.85$ over the last 18 months, rests on an IC $t$ of 0.44 and does not survive the whole test. % src: claim C10; results.json windows.A3.last_18.IC.t
 The post-hoc books show the opposite pattern: wage growth did well until 2024 and lost heavily in the last 18 months ($-1.71$), % src: claim V_V2a_SR
-while the 12-month hiring book is the only one positive in every window (cumulative paths in \cref{fig:cumulative}, appendix). % src: claim V_V2d_SR
+while the post-hoc 12-month hiring book is the only one positive in every window (cumulative paths in \cref{fig:cumulative}, appendix). % src: claim V_V2d_SR
 
-\begin{table}[H]
+\begin{table}[!htb]
 \centering\small
 \begin{threeparttable}
 \caption{Net Sharpe ratio by window. \hfill\tagc\ (A3) / \tagp\ (V2a, V2d)}
@@ -247,7 +249,8 @@ V2d $-$(hires+quits), 12m (post-hoc) & $+0.50$ & $+0.29$ & $+0.35$ & $+0.30$ & $
 
 \subsection{Robustness and limits}\label{sec:robust}
 
-\paragraph{What the universe allows} By the fundamental law of active management, the information ratio (IR) of a book is roughly $\mathrm{IC}\times\sqrt{\mathrm{BR}}\times\mathrm{TC}$, with BR the number of independent bets a year and TC the transfer coefficient between the signal and the weights actually held. With 13 groups a monthly book has BR of at most $13\times12=156$ and a 12-month book 13, so a monthly IC of 0.05 caps the IR near $0.05\sqrt{156}\approx0.6$ and a 12-month IC of 0.10 near $0.10\sqrt{13}\approx0.35$. % src: claim R11a (breadth per year) In the test, A3's IC of $-0.021$ and TC of 0.80 imply $-0.21$ against a realised $-0.58$; V2a's IC of $+0.049$ implies $+0.56$ against a realised $+0.16$; V2d's 12-month IC of $+0.096$ with a TC of 0.48 implies $+0.17$ against a realised $+0.29$. % src: claim R11a
+\paragraph{What the universe allows} By the fundamental law of active management, the information ratio (IR) of a book is roughly $\mathrm{IC}\times\sqrt{\mathrm{BR}}\times\mathrm{TC}$, with BR the number of independent bets a year and TC the transfer coefficient between the signal and the weights actually held. With 13 groups a monthly book has BR of at most $13\times12=156$ and a 12-month book 13. % src: claim R11a (breadth per year)
+In the test, A3's IC of $-0.021$ and TC of 0.80 imply $-0.21$ against a realised $-0.58$; V2a's IC of $+0.049$ implies $+0.56$ against a realised $+0.16$; V2d's 12-month IC of $+0.096$ with a TC of 0.48 implies $+0.17$ against a realised $+0.29$. % src: claim R11a
 A modest Sharpe ratio is the ceiling for this universe, and the preregistered overlay (hedge, volatility target, binding cap, 0.9 turnover a month) % src: claim C21
 cost the monthly books most of what their IC allowed.
 
@@ -265,8 +268,8 @@ cost the monthly books most of what their IC allowed.
 Losses were concentrated: health care cost the primary 26 points of cumulative return, construction 19 and finance 16, against 13 points of trading costs. % src: claim D09
 
 \paragraph{What survives, and how much}\label{sec:survives} After the test was opened we froze four variants in a hashed file (\path{analysis/v2_spec.md}) with a reading rule, ran each once and report all four (\cref{tab:v2}). None meets the rule, which required a positive Sharpe at 25\,bp, IC $t\ge2$, alpha $t\ge2$, positive IC in both test halves, placebo $p<0.05$ and a deflated Sharpe ratio (DSR) above 0.95. % src: claim V07
-The declared headline, a wage-growth rank (V2a), has the right IC ($+0.049$, $t=2.04$, placebo $p=0.02$) but no alpha ($t=0.29$) and a DSR of 0.02: % src: claim V01
-a value and momentum tilt that happened to work. Adding momentum (V2c) raises the Sharpe to $+0.35$ because momentum supplies the return. % src: claims V_V2c_SR, V05
+The declared headline, a wage-growth rank (V2a), has the right IC ($+0.049$, $t=2.04$, placebo $p=0.02$) but no alpha ($t=0.29$) and a DSR of 0.02. % src: claim V01
+Adding momentum (V2c) raises the Sharpe to $+0.35$ because momentum supplies the return. % src: claims V_V2c_SR, V05
 Of the four, V2d is the one whose sign tests the cost channel; it was not the declared headline (V2a was). V2d is $-\tfrac12(z(\text{F2})+z(\text{F3}))$, short the industries that hire and lose workers fastest, held twelve months. Its score has no one-month IC ($-0.020$, $t=-0.87$) and a positive IC from 9 to 24 months, peaking at 12 ($+0.096$, $t=2.43$; \cref{fig:horizon_profile}). % src: claim R2a
 Its alpha is $+0.26\%$ a month ($t=1.48$ in the test, $1.92$ over the full sample, with 12 Newey--West lags for the overlap; \cref{tab:v2} uses 6), and it fails the reading rule. % src: claims R6a, R6a2
 
@@ -278,21 +281,21 @@ Its alpha is $+0.26\%$ a month ($t=1.48$ in the test, $1.92$ over the full sampl
 \end{table}
 
 \begin{figure}[H]
-\centering\includegraphics[width=0.78\linewidth]{figures/fig_horizon_profile.pdf}
+\centering\includegraphics[width=0.7\linewidth]{figures/fig_horizon_profile.pdf}
 \caption{Post-hoc horizon profile: the hiring score has no one-month IC and a positive IC from 9 to 24 months, peaking at 12 (test $+0.096$, $t=2.43$). \hfill\tagp}
 \label{fig:horizon_profile}
 \end{figure}
 
-\paragraph{How robust is V2d?} We froze a second file (\path{analysis/v3_spec.md}) with eleven checks and a reading rule, raised the look count to 132 and ran it once. V2d is not carried by one component (hires alone $+0.19$, quits alone $+0.16$), % src: claim R1a
+\paragraph{How robust is V2d?} We froze a second file (\path{analysis/v3_spec.md}) with eleven checks and a reading rule, raised the look count to 132 and ran it once. V2d fails one pre-declared condition: it lost money in the first half of the test ($-0.21$) and made it in the second ($+0.64$), % src: claim R4a
+although its 12-month IC was positive in both halves ($+0.097$, $+0.095$), % src: claim R4c
+and a block bootstrap (blocks of 12 months, 5,000 draws) puts a 90\% interval of $[-0.07,+0.65]$ on its test Sharpe, which includes zero; the full-sample interval, $[+0.05,+0.64]$, does not. % src: claim R9a
+It is not carried by one component (hires alone $+0.19$, quits alone $+0.16$), % src: claim R1a
 by one holding period (positive from 9 to 18 months), % src: claim R3a
 by costs (break-even 68\,bp; $+0.22$ at 25\,bp, $+0.09$ at 50) % src: claim R5a
 or by one industry (dropping any one leaves the test Sharpe between $+0.18$ and $+0.48$). % src: claim R7a
-It fails one pre-declared condition: it lost money in the first half of the test ($-0.21$) and made it in the second ($+0.64$), % src: claim R4a
-although its 12-month IC was positive in both halves ($+0.097$, $+0.095$). % src: claim R4c
-A block-bootstrap 90\% interval for the test Sharpe, $[-0.07,+0.65]$, includes zero; the full-sample interval, $[+0.05,+0.64]$, does not. % src: claim R9a
 The one-month placebo in \cref{tab:v2} ($p=0.85$) does not fit a twelve-month signal; a horizon-matched placebo, added after the run and outside the reading rule, gives $p=0.06$ in the test and $0.04$ over the full sample, on overlapping returns that make it optimistic. % src: claim V09
 After 132 looks the DSR is 0.05 in the test and 0.16 over the full sample. % src: claim R12
-We read this as a hypothesis consistent with the economics and short of evidence, not as alpha; its behaviour across tightness regimes is in \cref{fig:v2d_tightness}. % src: claim R8a
+We read this as a hypothesis consistent with the economics and short of evidence, not as alpha; its behaviour across tightness regimes (\cref{fig:v2d_tightness}) is recorded without a claim, on 54 to 88 months per cell. % src: claim R8a
 
 \paragraph{Live forward test} On 3 October 2026 we froze a forward specification (hash \texttt{735a8ffa}, amended by \texttt{c76cde86} after a data-release check stopped the first run) and built the Q4 2026 books for the 30 September decision from data published by 29 September. % src: claims F08, F05
 Each book has three longs and three shorts, a 60-month beta hedge in SPY, and is held to 31 December; the holdings are in \cref{app:forward}. These are paper books with no capital behind them, kept so that the verdict can be checked against data nobody has seen; V2c and V2d were added after the historical v2 results had been seen and before any Q4 return beyond 1--2 October existed, which is a selection step and is recorded as one. One quarter has almost no power: a Q4 return anywhere between $-10\%$ and $+10\%$ is consistent with no skill (\cref{app:forward}).
@@ -304,7 +307,8 @@ Stock-level baskets by NAICS code from CRSP, which would raise breadth, are the 
 
 \subsection{Claude evaluation}\label{sec:claude}
 
-\Cref{tab:claude} records every Claude interaction. The models are taken from the call logs: Sonnet~5.5 at medium effort for the 199 logged calls of the confirmatory study, Opus~5.5 at extra-high effort for the 294 calls of the follow-up. % src: claim A06 \todo{Alex: exact name and vendor of the engineering assistant that wrote the pipeline code (``6 astra''); it is not documented in the repository}
+\Cref{tab:claude} records every Claude interaction. The models are taken from the call logs: Sonnet~5.5 at medium effort for the 199 logged calls of the confirmatory study, Opus~5.5 at extra-high effort for the 294 calls of the follow-up (effort is the model's reasoning setting). % src: claim A06
+\todo{Alex: exact name and vendor of the engineering assistant that wrote the pipeline code (``6 astra''); it is not documented in the repository}
 
 \begin{table}[H]
 \centering\scriptsize\setlength{\tabcolsep}{3pt}
@@ -328,14 +332,15 @@ P6 iteration & Rebuild the analysis, freeze and run v2/v3, build the forward boo
 \end{tabularx}
 \end{table}
 
-\paragraph{Agents: a stronger model followed the protocol, not the market} Compared with Sonnet, Opus produced more valid proposals (106 of 108 against 98), more admitted migration reports (15 of 18 against 7) and far more usable judge labels (84 of 88 against 8 of 36), % src: claims A01, A02
+\paragraph{Agents: Opus against Sonnet} Compared with Sonnet, Opus produced more valid proposals (106 of 108 against 98), more admitted migration reports (15 of 18 against 7) and far more usable judge labels (84 of 88 against 8 of 36), % src: claims A01, A02
 and more of its features passed the research filter (7 against 4), % src: claim X05
 yet no selected feature survived the test criterion in either study. % src: claim C19
 Communication raised research search scores for one model (best IC 0.136 against 0.059 for the independent arm) and lowered them for the other (0.049 against 0.083); neither gap exceeded the spread across repetitions. % src: claim A05
 
-\paragraph{Reflection} \prov{draft} Claude was most useful where the task had a checkable answer: reproducing numbers, auditing code and timing, listing failure modes. It was least useful where the task needed judgement about evidence: features that were artefacts of a regime gate, a judge that over-attributed, a red team that invented statistics. What protected us was mechanics, not prompts: blinding, a fixed evaluator, hashed specifications and a test opened once. \todo{Al Yazid: rewrite in the team's words; remove the draft mark}
+\paragraph{Reflection} \prov{draft} Claude was most useful where the task had a checkable answer: reproducing numbers, auditing code and timing, listing failure modes. It was least useful where the task needed judgement about evidence: features that were artefacts of a regime gate, a judge that over-attributed, a red team that invented statistics. What protected us was mechanics: blinding, a fixed evaluator, hashed specifications and a test opened once. \todo{Al Yazid: rewrite in the team's words; remove the draft mark}
 
 % =====================================================================
+\newpage
 \bibliographystyle{plainnat}
 \bibliography{refs}
 
@@ -467,7 +472,7 @@ The follow-up is evidence about agents (\cref{sec:claude}), not about the strate
   V2d is long finance, real estate and accommodation and short mining, durable manufacturing and retail. % src: claim F02
   V2c's tradable book has four legs, because its long durable-manufacturing and short professional-services positions both map to the industrials ETF and cancel. % src: claim F04
   \item Power: V2d's test volatility is about 9\% a year, so one quarter's return has a standard deviation near 5\%; a Q4 return between $-10\%$ and $+10\%$ is within two standard deviations of zero. % src: claim V04 (volatility 8.7%)
-  The book was first built at 09:17:55Z on 3 October; later runs of the notebook reproduce it byte for byte. % src: claim F09
+  The book was first built at 09:17:55Z on 3 October: commit \texttt{9f4a50f} (09:18:29Z) holds a byte-identical \path{book_2026Q4.csv} (SHA-256 \texttt{857275\ldots}); \path{book_first_build.sha256} records that first build and later notebook runs must reproduce it. % src: claim F09; git show 9f4a50f:analysis/forward/book_2026Q4.csv
   \item Evaluation: the ETF books from the 30 September close to the 31 December close after costs, and the same books on Ken French group returns once published; reported whatever they show. \todo{Elouan: weekly tracker (deferred by team decision)}
 \end{itemize}
 

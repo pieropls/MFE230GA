@@ -185,8 +185,8 @@ def register_claims():
                    'numbers': '199; 294', 'source': f'{rel(SON / "agents/log.jsonl")} | {rel(OPU / "agents/log.jsonl")} :: entries with kind != evaluation; equals the file count in agents/responses/',
                    'label': CONF, 'verified': 'y' if counts == [199, 199, 294, 294] else 'n', 'file_value': '; '.join(map(str, counts)),
                    'note': 'CLAUDE.md states 607 and 905; those figures do not match any file and are flagged in MORNING_BRIEF.md'})
-    claim('F09', 'The Q4 2026 book was first built at 2026-10-03T09:17:55Z; later notebook runs reproduce it byte for byte.', '2026-10-03T09:17:55+00:00',
-          'analysis/forward/book_first_build.sha256::line=2', FWD)
+    claim('F09', 'The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 9f4a50f, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it.', '2026-10-03T09:17:55+00:00',
+          'analysis/forward/book_first_build.sha256::line=2', FWD, note='book_first_build.sha256 was written on 3 Oct from the gate3.md of commit 9f4a50f; verify with: git show 9f4a50f:analysis/forward/book_2026Q4.csv | shasum -a 256')
     # --- exploratory Opus follow-up
     claim('X01', 'Opus follow-up: primary A4 test Sharpe +0.01, research Sharpe -0.40, placebo p 0.56, Sharpe at 25 bp -0.19.', [0.01, -0.40, 0.56, -0.19],
           [f'{RO}::variants.ASOF.A4.sharpe', f'{RSO}::strategies.A4.sharpe', f'{RO}::placebo.p', f'{RO}::sensitivities.cost_25.sharpe'], CONF, note='exploratory; after the test was seen')
