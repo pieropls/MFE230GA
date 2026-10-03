@@ -1,0 +1,9 @@
+candidate,study,arm,decoded,research_ic,research_n,test_ic,test_n,gated
+independent_1_Temporal_3,Sonnet,independent,"regime(yoy(Earnings),""low"")",0.06547578816038288,48.0,,3.0,True
+independent_1_Interactions_4,Sonnet,independent,"regime(spread(tsz(Layoffs,60),tsz(Hires,60)),""low"")",0.07015077945310504,43.0,,3.0,True
+islands_1_Composition_2,Sonnet,islands,"spread(chg(Layoffs,3),chg(Openings,3))",0.03714790097659912,123.0,-0.022828804048588208,142.0,False
+islands_1_Composition_5,Sonnet,islands,"spread(chg(Layoffs,6),chg(Openings,6))",0.05194379633798394,120.0,-0.004452491859630446,142.0,False
+independent_1_Interactions_6,Opus,independent,"mult(regime(tsz(Hires,""exp""),""high""),csrank(tsz(Openings,""exp"")))",0.0884844795139206,15.0,-0.02815551296719239,133.0,True
+islands_1_Temporal_4,Opus,islands,"tsz(lchg(lag(Earnings,1),12),36)",0.06359557165475099,78.0,0.021514023492473583,142.0,False
+islands_1_Composition_4,Opus,islands,"regime(spread(chg(Quits,3),chg(Hires,3)),""low"")",0.12471029887860235,48.0,,3.0,True
+islands_1_Temporal_6,Opus,islands,"tsz(lchg(lag(Hours,1),12),36)",0.05697584545689625,78.0,0.010698287964062816,142.0,False

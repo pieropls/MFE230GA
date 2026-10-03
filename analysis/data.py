@@ -202,7 +202,10 @@ def signals(folder=P.FRED, last_decision=None):
         z = standardize(value.reindex(decisions))
         z.index = z.index + 1                                         # earning month
         features[name] = z
-    t = to_decision(np.log(panel['V'] / panel['U']), P.JOLTS_LAG).reindex(decisions)  # month d-2 at d
+    # T at decision d uses the latest month <= d-2 with both V and U observed (frozen rule); this
+    # matters once: the Oct 2025 household survey (UNEMPLOY) was never collected.
+    ratio = np.log(panel['V'] / panel['U']).ffill()
+    t = to_decision(ratio, P.JOLTS_LAG).reindex(decisions)
     t.index = t.index + 1
     return features, t
 

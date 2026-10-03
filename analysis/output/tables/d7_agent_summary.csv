@@ -1,0 +1,9 @@
+item,Sonnet,Opus
+valid candidates,33.0,35.0
+regime-gated,9.0,6.0
+test IC undefined (<=3 active months),4.0,2.0
+"corr(research IC, test IC)",0.2247631353344597,0.3723554521264459
+passed research filter,4.0,7.0
+selected,4.0,4.0
+selected and regime-gated,2.0,2.0
+selected with positive test IC,0.0,2.0

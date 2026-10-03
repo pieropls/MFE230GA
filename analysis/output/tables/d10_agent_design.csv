@@ -1,0 +1,15 @@
+study,item,value,source
+Both,Arms,"islands (communicating), independent (control)",params.py AGENT
+Both,Agents per arm,"Temporal, Composition, Interactions",params.py AGENT
+Both,Proposals per agent x repetitions,6 x 3,params.py AGENT
+Both,Migration reports,"after proposals 2 and 4, at most 120 words",params.py AGENT
+Both,Selection (repetition 1 only),"t ≥ 1.5, same sign in both halves, |corr| < 0.8, at most 3 per arm",params.py MODEL
+Sonnet,Valid proposals,98 / 108,outputs/candidates.csv
+Sonnet,Migration reports admitted,7 / 18,outputs/agents/migration_summary.json
+Sonnet,Defined LLM-judge uptake labels,8 / 36,outputs/agents/migration_summary.json
+Sonnet,Human-audited judge pairs,8,outputs/human_review_submission.json
+Opus,Valid proposals,106 / 108,outputs/candidates.csv
+Opus,Migration reports admitted,15 / 18,outputs/agents/migration_summary.json
+Opus,Defined LLM-judge uptake labels,84 / 88,outputs/agents/migration_summary.json
+Opus,Human-audited judge pairs,17,outputs/human_review_submission.json
+Opus,Human-judge agreement,"10 / 17 (human yes 3, judge yes 10)",outputs/human_review_submission.json
