@@ -83,7 +83,7 @@ The frozen study is never edited, rerun or retuned; its code is imported read-on
 <summary><strong>Reproduce everything in three commands</strong></summary>
 
 ```bash
-git clone https://github.com/pieropls/GA.git follow-the-workers
+git clone https://github.com/pieropls/MFE230GA follow-the-workers
 cd follow-the-workers
 python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
 # 1. numbers, tables, figures (about 35 s); stops with analysis/output/STOP.md if any gate fails
