@@ -14,14 +14,12 @@
 % =====================================================================
 \section{Executive summary}
 % <= 225 words. Order: question, design, result, why, what survives, forward test, Claude.
-Can public labor-market flows predict which of 13 U.S.\ industry groups outperform? We rank the groups each month on the year-over-year change in job openings, hires, quits, layoffs, hours and wages, as known at the time, and hold a market-neutral book long the top three and short the bottom three. The design was preregistered, frozen and opened once on 142 untouched months (November 2014 to August 2026). The primary strategy lost 4.6\% a year after costs (Sharpe $-0.58$), % src: claims C01, C02
-its forecasts were uncorrelated with returns % src: claim C03
-and a placebo test could not tell it from noise. % src: claim C05
-We conclude: \emph{Do not implement}. It failed because the preregistered signs of layoffs and hours were wrong, the one stable one-month signal (wage growth) was dropped during the build, and the labor market never tightened in the research years, so the tightness hypothesis could not be tested. % src: claims D03, D01, D06
-Across horizons the data are consistent with a slower, opposite effect, which investment-based asset pricing would predict: industries that hire and lose workers fastest earn lower returns over the following 9 to 24 months. A 12-month book on that sign is post hoc, lost money in the first half of the test and does not survive deflation, % src: claims R4a, R12
-although it is positive in every window (test Sharpe $+0.29$); % src: claim V_V2d_SR
-it runs as paper books in a forward test frozen on 3 October 2026, with no capital. % src: claim F05
-\todo{Al Yazid: one sentence on Claude as research assistant, in the team's words}
+Can public labor-market flows predict which of 13 U.S.\ industry groups outperform? We rank the groups each month on the year-over-year change in openings, hires, quits, layoffs, hours and wages, as known at the time, and hold a market-neutral book long the top three and short the bottom three. The design was preregistered, frozen and opened once on 142 untouched months (November 2014 to August 2026). The primary strategy lost 4.6\% a year after costs (Sharpe $-0.58$); its forecasts were uncorrelated with returns and indistinguishable from a placebo. % src: claims C01, C02, C03, C05
+We conclude: \emph{Do not implement}. It failed because the preregistered signs of layoffs and hours were wrong, the one stable one-month signal (wage growth) was dropped during the build, and the labor market never tightened in the research years, so tightness went untested. % src: claims D03, D01, D06
+The data are consistent with a slower, opposite effect, as investment-based asset pricing predicts: industries that hire and lose workers fastest earn lower returns over the following 9 to 24 months. A 12-month book on that sign is post hoc, lost money in the first test half and does not survive deflation, % src: claims R4a, R12
+though positive in every window (test Sharpe $+0.29$); % src: claim V_V2d_SR
+it runs as a paper book in a forward test frozen on 3 October 2026. % src: claim F05
+Claude was a useful auditor and idea generator when a human checked every claim and it could not change the rules after seeing results. % src: docs/team_inputs/al_claude_section.md (bottom line)
 
 % =====================================================================
 \section{What did we try?}
@@ -109,6 +107,7 @@ The mapping is also coarse: labor data describe every establishment in an indust
 and kept three alternatives: first release, fully revised, and revised with fixed publication lags. The primary result barely depends on the choice: A3's test Sharpe is $-0.58$ as known, $-0.52$ on first releases, $-0.56$ revised and $-0.53$ with fixed lags. % src: claim C20
 Our post-hoc work (\cref{sec:survives}) uses revised data with fixed lags, which reproduces the frozen fixed-lag signal with a correlation of 0.998 across all group-months; % src: claim S01
 as-known data pick the same top-three groups in only 42\% of months, so post-hoc holdings, though not the conclusions, would have differed in real time. % src: claim S02
+One exception, found in the final code review: the federal shutdown of October--November 2025 delayed BLS releases, so two post-hoc earning months (November and December 2025) use labor data published after the decision date; the confirmatory as-known data are unaffected, and the v2/v3 numbers were left as frozen (\path{docs/process/OPEN_ISSUES.md}). % src: analysis/output/data_vintage.md (Known exception)
 
 \paragraph{Sample} Research (signal design and model selection): May 2004 to September 2014, 125 months. Test, opened once: November 2014 to August 2026, 142 months. % src: claim S05
 \Cref{fig:timeline} shows why H3 could not be learned: $V/U$ never exceeded 1 in the research period and exceeded it in 75 test months. % src: claim D06
@@ -185,7 +184,6 @@ Give 10 distinct reasons these results could be spurious, ranked by likelihood. 
 \end{promptbox}
 
 % =====================================================================
-\newpage
 \section{What did we learn?}
 
 \begin{keybox}[Answer to the thesis]
@@ -225,53 +223,33 @@ Primary: factor alpha $-0.38\%$ a month ($t=-1.86$), Sharpe $-0.79$ at 25\,bp co
 
 \subsection{Style and risk exposures}
 The H1 books are quality and growth tilts rather than bets on labor news. Regressed on the Fama--French five factors, momentum and an industry-momentum factor (\cref{fig:loadings}, appendix), the primary loads on profitability (RMW $+0.19$, $t=2.2$) and against value (HML $-0.15$, $t=-2.0$), with an alpha of $-0.38\%$ a month ($t=-1.86$). % src: claims C13, C04, C04b
-Such a tilt is plausible because industries adding workers and hours are the profitable, growing ones, so a long-hiring book buys profitability and sells value. The post-hoc wage-growth book tilts the same way but harder (HML $-0.43$, $t=-4.4$; momentum $+0.22$, $t=3.3$), % src: claim V11
+The tilt is plausible: industries adding workers and hours are the profitable, growing ones, so a long-hiring book buys profitability and sells value. The post-hoc wage-growth book tilts the same way but harder (HML $-0.43$, $t=-4.4$; momentum $+0.22$, $t=3.3$), % src: claim V11
 while the H2 book loads the other way, against profitability (RMW $-0.36$, $t=-4.45$). % src: claim R6b
 
 \subsection{Time patterns of performance}
-The H1 primary lost money in every window except the last 18 months, and that bright spot ($+0.85$) rests on an IC $t$ of 0.44 (\cref{tab:windows}, \cref{fig:cumulative}). % src: claim C10; results.json windows.A3.last_18.IC.t
+The H1 primary lost money in every window except the last 18 months, and that bright spot ($+0.85$) rests on an IC $t$ of 0.44 (\cref{fig:cumulative}; \cref{tab:windows} in \cref{app:results} has every window). % src: claim C10; results.json windows.A3.last_18.IC.t
 For A3, ``post-2010'' is in effect the test, which starts in November 2014; ``full'' adds the research years and is descriptive. The post-hoc books show the opposite pattern: wage growth did well until 2024 and lost heavily in the last 18 months ($-1.71$), % src: claim V_V2a_SR
 while the post-hoc H2 book is positive in every course window, although its two test halves split $-0.21$ and $+0.64$ (\cref{tab:v3}). % src: claims V_V2d_SR, R4a
 
-\begin{table}[H]
-\centering\small
-\begin{threeparttable}
-\caption{Net Sharpe ratio by window. \hfill\tagc\ (A3) / \tagp\ (V2a, V2d)}
-\label{tab:windows}
-\begin{tabular}{@{}lrrrrr@{}}
-\toprule
- & Research & Test & Full sample & Post-2010 & Last 18 months \\
-Window (returns) & 2004--14 & 2014--26 & 2004--26 & 2010--26 & 2025-03--2026-08 \\
-\midrule
-A3 primary, H1 (confirmatory)      & $-0.13$ & $-0.58$ & $-0.44$ & $-0.62$ & $+0.85$ \\ % src: claims C09, C01, C11, C10
-V2a wage growth (post-hoc)     & $+0.09$ & $+0.16$ & $+0.15$ & $+0.12$ & $-1.71$ \\ % src: claim V_V2a_SR
-V2d $-$(hires+quits), 12m, H2 (post-hoc) & $+0.50$ & $+0.29$ & $+0.35$ & $+0.30$ & $+0.29$ \\ % src: claim V_V2d_SR
-\bottomrule
-\end{tabular}
-\begin{tablenotes}\footnotesize
-\item A3's research figure uses the 88 months with a forecast; its full-sample figure starts in June 2007 and is descriptive. V2a and V2d use revised data with fixed lags over 125, 142, 268, 200 and 18 months. % src: claims C09, C11, S05
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
 
 \begin{figure}[H]
-\centering\includegraphics[width=0.62\linewidth]{figures/fig_cumulative.pdf}
+\centering\includegraphics[width=0.54\linewidth]{figures/fig_cumulative.pdf}
 \caption{Every preregistered H1 strategy lost money in the test; the post-hoc wage-growth book gained until 2024 and gave much of it back. \hfill\tagc\ (A0--A4) / \tagp\ (momentum, V2a)}
 \label{fig:cumulative}
 \end{figure}
 
 \subsection{Robustness and limits}\label{sec:robust}
 
-\paragraph{What the universe allows} In the test, A3's IC of $-0.021$ and transfer coefficient (TC) of 0.80 imply an IR of $-0.21$ against a realised $-0.58$; V2a's IC of $+0.049$ implies $+0.56$ against $+0.16$; the H2 book's 12-month IC of $+0.096$ with a TC of 0.48 implies $+0.17$ against $+0.29$. % src: claim R11a
-A modest Sharpe ratio is the ceiling here, and the preregistered overlay (hedge, volatility target, binding cap, 0.9 turnover a month) cost the monthly books most of what their IC allowed. % src: claim C21
+\paragraph{What the universe allows} In the test the fundamental law implies IRs of $-0.21$ for A3 (IC $-0.021$, TC 0.80), $+0.56$ for V2a and $+0.17$ for the H2 book (12-month IC $+0.096$, TC 0.48) against realised $-0.58$, $+0.16$ and $+0.29$; % src: claim R11a
+the preregistered overlay (hedge, volatility target, binding cap, 0.9 turnover a month) cost the monthly books most of what their IC allowed. % src: claim C21
 
 \paragraph{Why H1 failed} Four post-hoc explanations (figures in \cref{app:results}).
 \begin{enumerate}[leftmargin=*]
   \item \emph{Signs not supported by the data.} Layoffs carry a positive IC in both periods and hours a negative one, the opposite of the signs A0 imposed (\cref{tab:hyp}); wage growth, dropped during the build, is the only signal with a positive IC in both periods ($+0.029$ research, $+0.049$ test). % src: claims D03, D01
   \item \emph{Wrong horizon.} At one month no hiring signal predicts returns; at twelve months hires ($-0.062$, $t=-2.1$) and quits ($-0.065$, $t=-1.7$) carry the H2 sign. % src: claim D04
-  \item \emph{An untestable moderator (H3).} Tightness terciles were set on an expanding window, so 133 of 142 test months fell in the ``high'' tercile; a split on whether $T$ rose or fell over 12 months (93/32 research months, 88/54 test) would have been testable. % src: claims D06, D07
-  \item \emph{Fragile agent features.} The two features selected for the primary carried a regime gate (switched on only in the ``low tightness'' regime) and were active in 3 of 142 test months; % src: claim D12
-  every selected feature, in both studies, failed the frozen test criterion of $t\ge1.5$ with a positive IC in both halves. % src: claim C19
+  \item \emph{An untestable moderator (H3).} Tightness terciles were set on an expanding window, so 133 of 142 test months fell in the ``high'' tercile; a split on whether $T$ rose or fell over 12 months (88/54 test months) would have been testable. % src: claims D06, D07
+  \item \emph{Fragile agent features.} The two features selected for the primary were gated to the ``low tightness'' regime and active in 3 of 142 test months; % src: claim D12
+  every selected feature, in both studies, failed the frozen test criterion. % src: claim C19
 \end{enumerate}
 Losses concentrated in health care (26 points of cumulative return), construction (19) and finance (16), against 13 points of trading costs. % src: claim D09
 
@@ -280,21 +258,18 @@ The declared headline, a wage-growth rank (V2a), has the right IC ($+0.049$, $t=
 a composite of all six signals with signs learned on research data (V2b) is negative, and the average rank of wage growth and 12-month industry momentum (V2c) reaches $+0.35$ because momentum supplies the return. % src: claims V_V2b_SR, V_V2c_SR, V05
 
 V2d is the H2 book: $-\tfrac12(z(\text{F2})+z(\text{F3}))$, short the industries that hire and lose workers fastest, held twelve months. Its score has no one-month IC ($-0.020$, $t=-0.87$) and a positive IC from 9 to 24 months, peaking at 12 ($+0.096$, $t=2.43$; \cref{fig:horizon_profile}); its alpha is $+0.26\%$ a month ($t=1.48$ test, $1.92$ full sample, 12 Newey--West lags; \cref{tab:v2} uses 6), and it fails the rule. % src: claims R2a, R6a, R6a2
+Where V2d came from matters. Its sign is the one the investment channel predicts \citep{BeloLinBazdresch2014}; its 12-month horizon was chosen from a horizon profile that included the test period (\cref{fig:horizon}), so the horizon is fitted on the test. On the research years alone the 12-month IC is $+0.047$ ($t=0.90$) with a horizon-matched placebo $p$ of 0.26: % src: claim V13
+the research sample alone would not have selected it.
 
 \begin{table}[H]
 \centering\footnotesize
-\caption{Post-hoc variants frozen in \texttt{analysis/v2\_spec.md}: net Sharpe by window and test statistics at 10\,bp. IC, alpha $t$ and placebo are one-month statistics with 6 Newey--West lags; DSR counts the 112 looks declared in that file. \hfill\tagp} % src: analysis/v2_spec.md section 5 (N_trials = 112)
+\caption{Post-hoc variants frozen in \texttt{analysis/v2\_spec.md}: net Sharpe by window and test statistics at 10\,bp. Every column, the test window included, is post hoc: the variants were chosen after the test had been opened. Test figures are the test slice of a continuous run from May 2004 (A3's sealed ledger starts from an empty book in November 2014). IC, alpha $t$ and placebo are one-month statistics with 6 Newey--West lags; DSR counts the 112 looks declared in that file as independent trials, a rough deflation since the looks are correlated. \hfill\tagp} % src: analysis/v2_spec.md section 5 (N_trials = 112)
 \label{tab:v2}
 \input{tables/v2_results}
 \end{table}
 
 \begin{figure}[H]
-\centering\includegraphics[width=0.6\linewidth]{figures/fig_v2_windows.pdf}
-\caption{V2d is the only post-hoc variant positive in every window; V2a and V2c lost heavily in the last 18 months. \hfill\tagp\ / \tagc\ (A3 bars)}
-\label{fig:v2_windows}
-\end{figure}
-\begin{figure}[H]
-\centering\includegraphics[width=0.56\linewidth]{figures/fig_horizon_profile.pdf}
+\centering\includegraphics[width=0.46\linewidth]{figures/fig_horizon_profile.pdf}
 \caption{Post-hoc horizon profile of the H2 score: no one-month IC and a positive IC from 9 to 24 months, peaking at 12 (test $+0.096$, $t=2.43$). \hfill\tagp}
 \label{fig:horizon_profile}
 \end{figure}
@@ -323,41 +298,55 @@ Placebo & one-month $p=0.85$ (\cref{tab:v2}); horizon-matched $p=0.06$ test, $0.
 \paragraph{Forward test} Four paper books with no capital behind them were frozen on 3 October 2026 (hash \texttt{735a8ffa}, amended by \texttt{c76cde86} after a data-release check stopped the first run) for the 30 September decision, from data published by 29 September; each has three longs, three shorts and a SPY beta hedge, held to 31 December (\cref{app:forward}). % src: claims F08, F05
 V2c and V2d were added after the historical v2 results had been seen, a selection step recorded as one. One quarter has little statistical power: a Q4 return between $-10\%$ and $+10\%$ is consistent with no skill, and no position of any size is recommended.
 
-\paragraph{Limits} With 142 test months only a Sharpe near 0.6 reaches $t\approx2$, so a null does not rule out a smaller effect, and none of the post-hoc Sharpe ratios is distinguishable from zero after deflation. % src: claim C22
+\paragraph{Limits} With 142 test months only a Sharpe near 0.6 reaches $t\approx2$, so a null does not rule out a smaller effect; % src: claim C22
+the best post-hoc test Sharpe, V2c's $+0.35$, corresponds to $t\approx1.2$ over those months, and none of the post-hoc Sharpe ratios is distinguishable from zero after deflation. % src: claim V14
 The 49-to-13 mapping dilutes the labor signal; the one near-positive result in the Opus follow-up came from a single long position in a group that is 60\% semiconductors (\cref{app:opus}). % src: claims X04, S03
 All post-hoc numbers use revised data with fixed lags; the as-known rerun was not run for lack of an API key. % src: claim R10
 Stock-level baskets by NAICS code from CRSP are the follow-up we would run next.
 
 \subsection{Claude evaluation}\label{sec:claude}
 
-Claude was the AI research assistant, which this term's version of the course allows. \Cref{tab:claude} records every interaction. The models are taken from the call logs: Sonnet~5.5 at medium reasoning effort for the 199 logged calls of the confirmatory study, Opus~5.5 at extra-high reasoning effort for the 294 calls of the follow-up. % src: claim A06; effort settings from the frozen params.py (AGENT)
+Claude was the AI research assistant in every role, which this term's version of the course allows; the switch from the ChatGPT template is logged as preregistration amendments 001 and 002 (\path{outputs/deviations.md} in the frozen study). \Cref{tab:claude} records every interaction; \cref{app:claude} has the detail and \cref{app:opus} compares the Opus and Sonnet agents. The models are taken from the call logs: Sonnet~5.5 at medium reasoning effort for the 199 logged calls of the confirmatory study, Opus~5.5 at extra-high reasoning effort for the 294 calls of the follow-up. % src: claim A06; effort settings from the frozen params.py (AGENT); outputs/prereg_amendments/001_claude_subscription.json, 002_claude_all_reviews.json
 \todo{Alex: exact name and vendor of the engineering assistant that wrote the pipeline code (``6 astra''); it is not documented in the repository}
 
-\paragraph{Agents: Opus against Sonnet} A stronger model followed the protocol better and found no more signal: more valid proposals (106 of 108 against 98), more admitted migration reports (15 of 18 against 7), far more usable judge labels (84 of 88 against 8 of 36) % src: claims A01, A02
-and more features past the research filter (7 against 4), % src: claim X05
-yet no selected feature survived the test criterion in either study. % src: claim C19
-Communication raised research search scores for Opus (best IC 0.136 against 0.059) and lowered them for Sonnet (0.049 against 0.083); neither gap exceeded the spread across repetitions. % src: claim A05
+\paragraph{When the judge and the human disagreed} In the follow-up we hand-checked 17 report--proposal pairs. The judge said ``uses a claim'' 10 times, the human 3; all 7 disagreements were a machine yes against a human no, and the judge never missed a true yes. % src: claims A02, A03
+In four, the proposal cites a result from another report; three are judgment calls. The judge trusts a proposal's own account of where its idea came from, so its 62\% uptake rate overstates communication between islands (\path{outputs/human_review_submission.md}, Opus study). % src: claim A04; human_review_submission.md items 2, 3, 12, 13 (clear errors) and 8, 16, 17 (judgment calls)
 
-\paragraph{Reflection} \prov{draft} Claude was most useful where the task had a checkable answer (reproducing numbers, auditing code and timing) and least useful where it needed judgement about evidence (features that were artefacts of a regime gate, a judge that over-attributed, a red team that invented statistics). What protected us was mechanics: blinding, a fixed evaluator, hashed specifications and a test opened once. \todo{Al Yazid: rewrite in the team's words; remove the draft mark}
+\paragraph{Reflection} Claude was good at fast, wide first-pass audits (P1 listed every place the mapping is approximate), at structured scepticism (P4 proposed the standard battery) and at following a blind protocol (98 of 108 valid proposals; blinding audit passed). % src: claims A01, A08
+It was bad at calibration (design choices became ``confirmed errors''; a $p$-value it never computed), at holding rules fixed (new thresholds after seeing results), at counting and formats, at judging provenance (7 false yes in 17) and at seeing past its feedback: shown IC by tightness tercile, the agents built regime gates. % src: claims A07, A10, A09, A03, D12
+Sharing did not help. % src: claim A05
+Claude is a useful auditor and idea generator when a human checks every claim against the code and data, and when it cannot change the rules after seeing results.
 
 \begin{table}[H]
 \centering\scriptsize\setlength{\tabcolsep}{3pt}
-\caption{Claude as research assistant: six interactions (what we asked, in the first column; prompts in \cref{sec:ai}). \hfill\tagc\ (P1--P4) / \tagp\ (P5--P6)}
+\caption{Claude as research assistant: six interactions (what we asked, in the first column; prompts in \cref{sec:ai}, detail in \cref{app:claude}). \hfill\tagc\ (P1--P4) / \tagp\ (P5--P6)}
 \label{tab:claude}
 \begin{tabularx}{\textwidth}{@{}Y Y Y Y p{2.2cm}@{}}
 \toprule
 Interaction & What it got right & What it got wrong & What we changed & Our critique \\
 \midrule
-P1 audit: find mapping, timing and code errors in the manifest, crosswalk and as-of code & Numbered findings, among them the shared CES series for groups 9 and 10 & Several alleged look-ahead errors were not errors & Mapping metadata relabelled; no basket changed & \todo{critique: Alex} \\
-P2 agents: propose features from six anonymous variables within a grammar & Valid grammar in 98 of 108 proposals (106 for Opus); both studies rediscovered wage growth blind % src: claims A01, A02
- & The best research $t$-statistics came from regime gates active in 3 test months; every selected feature failed the frozen test criterion % src: claims D12, C19
- & Selection stayed mechanical; v2 restores wage growth as a public, ungated signal & \todo{critique: Elouan} \\
-P3 judge: write migration reports; judge whether later proposals used a reported claim & Opus: 15 of 18 reports admitted, 84 of 88 labels usable % src: claim A02
- & Sonnet: 28 of 36 judge outputs broke the required JSON-only output format; the judge said yes 10 times where the human said 3, all 7 disagreements judge-yes % src: frozen report.md section 3d (28 undefined); claims A01, A02, A03
- & Judge labels reported as associations next to the human labels & \todo{critique: Al Yazid} \\
-P4 red team: ten reasons the research results could be spurious, each with a test & Ranked, specific; called ``do not implement'' from research tables before the test was opened & Quoted p-values it had not computed; proposed unregistered thresholds & No new test adopted; each concern was already covered & \todo{critique: Romain} \\
-P5 review: read the frozen study and say what is wrong with it & Wrong signs, dropped wage signal, 12-month hiring sign, 3-month agent features, one-bin tightness split & Guessed the engineering assistant's vendor from a path in the code; a momentum definition that included the latest month; wage ICs with a non-frozen start date & Momentum redefined; wage ICs recomputed; the guess withdrawn with a correction note & \todo{critique: Piero} \\
-P6 iteration: rebuild the analysis, freeze and run v2/v3, build the forward book, draft this report & Reproduced the sealed returns to $10^{-16}$; froze every spec before running; stopped at a failed gate & Assumed August JOLTS would not be out by 29 September; it was, so its own check stopped the run & Amendment 001, disclosed; run logs that keep every result reproducible & \todo{critique: Alex} \\ % src: claim S04
+P1 audit (Sonnet): find mapping, look-ahead and code bugs in the manifest, crosswalk and as-of code & Flagged every real scope gap: transport without utilities, Telcm for Information, groups 9 and 10 sharing one CES series % src: p1_review.md items 1, 3, 4
+ & Called design choices ``confirmed errors''; 5 of 25 findings wrong (the ``vanished'' group-10 series had 584 shared rows); no look-ahead bug % src: claim A07
+ & All 25 tested; one metadata fix to the crosswalk; no number or timing rule changed % src: claim A07
+ & \todo{critique: Alex} \\
+P2 agents (Sonnet; 3 independent, 3 islands, 3 seeds): blind to names and dates, propose six features each in a 14-operation grammar & 98 of 108 proposals valid; blinding audit of all 199 calls passed; best research IC 0.08 independent, 0.05 islands % src: claims A01, A08, A05
+ & Both independent-arm picks switch on only in the low-tightness tercile; 11 of 18 migration reports broke the rules, 10 over 120 words % src: claims D12, A09
+ & Invalid proposals used their slot; selection mechanical, two per arm, seed 1 only; no engineer edits % src: outputs/selected_features.json; deviations.md (run-1-only eligibility)
+ & IC shown by tightness tercile pushed agents to regime gates; both A3 picks were off for most of the test \\
+P3 judge (Sonnet; Opus in the follow-up): does a later island proposal use or test a claim from an earlier report? & Follow-up: agreed with the human on 10 of 17 pairs; caught all 3 human ``yes'' cases % src: claims A02, A03
+ & Main run: 28 of 36 answers not clean JSON, 8 usable; follow-up: all 7 disagreements false ``yes'' % src: claims A01, A03
+ & Undefined labels kept as missing; no repair parsing or extra calls; uptake reported as descriptive % src: frozen report.md section 3d
+ & \todo{critique: Elouan} \\
+P4 red team (Sonnet): from anonymous research tables, ten reasons the results could be spurious, each with a test & Read the tables correctly: no IC $t$ above 1.3, negative Sharpes; 6 of 10 concerns matched registered tests % src: p4_response.md item 1; claim A10
+ & Stated a permutation $p$ it never computed; proposed thresholds after seeing results (95th percentile, DSR 0.95, rolling 24 months) % src: p4_review.md items 1, 5, 7, 9
+ & Registered diagnostics kept; the 4 new tests and every new threshold rejected as post hoc % src: claim A10
+ & \todo{critique: Romain} \\
+P5 post-mortem (Opus, after the sealed test): why did the frozen strategies lose money? & Agent features active in about 3 of 142 test months, which fits the low-$T$ gate: $T$ stayed high after 2014 % src: claim D12
+ & Its fixes (wage growth back, two A0 signs flipped) read the sealed results; its ``stable'' wage signal: $-1.71$ over the last 18 months % src: claim V_V2a_SR
+ & v2: four variants frozen before running, all reported, V2a the headline; labelled post hoc (\path{docs/FINDINGS_AND_PROPOSAL.md}) % src: claim V07
+ & \todo{critique: Piero} \\
+P6 iteration (Opus, Fable): rebuild the analysis, freeze and run v2/v3, build the forward book, draft this report & Reproduced the sealed returns to $10^{-16}$; froze every spec before running; stopped at a failed gate % src: claim S04
+ & Assumed August JOLTS would not be out by 29 September; it was, so its own check stopped the run & Amendment 001, disclosed; run logs keep every result reproducible & \todo{critique: Alex} \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -369,8 +358,29 @@ P6 iteration: rebuild the analysis, freeze and run v2/v3, build the forward book
 % =====================================================================
 \clearpage
 \appendix
-\section{Claude interaction transcripts}\label{app:transcripts}
-Paths are relative to \path{230ga-follow-the-workers/outputs/follow_the_workers/} unless stated; the Opus follow-up has the same files under \path{follow_the_workers_opus55_xhigh/}.
+\section{Detailed evaluation of Claude}\label{app:claude}
+Condensed from the team's evaluation (\path{docs/team_inputs/al_claude_section.md}). Paths are relative to \path{230ga-follow-the-workers/outputs/follow_the_workers/} unless stated; the Opus follow-up has the same files under \path{follow_the_workers_opus55_xhigh/}.
+
+Claude took every AI role: Sonnet~5.5 for the confirmatory study, Opus~5.5 at extra-high effort for the follow-up. This term's course allows it; the switch from the ChatGPT template is logged as preregistration amendments 001 and 002 (\path{outputs/prereg_amendments/}, \path{outputs/deviations.md}), and the log file keeps the template name \path{chatgpt_log.md} with Claude content. % src: claim A06; deviations.md (All-Claude approval, September 29)
+
+\paragraph{P1, data and code audit} The system prompt made Claude ``a careful data and code auditor'' with no tools; the prompt in \cref{sec:ai} was followed by the manifest, the crosswalk and the as-of code (38,717 characters). % src: claim A07 (prompt length)
+It returned 25 numbered findings, all tested (\path{outputs/p1_review.md}): five were claims the files did not support, among them that group 10's CES series ``silently vanishes'' (584 shared, nonmissing rows were present); one led to a metadata fix (the crosswalk now separates the prescribed match from the verified French scope); the rest were documented design choices or limitations, and none was a look-ahead error. % src: claim A07
+
+\paragraph{P2, signal agents} Six agents (three independent, three islands) over three seeds proposed six features each in a 14-operation grammar, blind to names and dates, with research-period feedback only. 98 of 108 proposals passed validation; the blinding audit of all 199 calls passed (108 proposals, 18 migration reports, one syntax repair). % src: claims A01, A08
+Islands exchanged migration reports capped at 120 words; 11 of 18 were rejected, 10 of them for running to 121--133 words although the prompt asked the agent to check its count. % src: claim A09
+Selection was mechanical, two per arm from seed 1 only, and no engineer edited a proposal. Both independent-arm picks, decoded after the test, were low-tightness gates: \texttt{regime(yoy(Earnings),"low")} and \texttt{regime(spread(tsz(Layoffs,60),tsz(Hires,60)),"low")}, active in 3 of 142 test months. % src: claim D12; analysis/output/tables/d7_selected_features.csv
+The agents optimised what they were shown: IC split by tightness tercile. Blinded, they could not know that $T$ would stay high after 2014. Next time, keep regime splits out of agent feedback, or require a minimum share of active months in research.
+
+\paragraph{P3, judge} In the follow-up, items 2, 3 and 13 cite ``submission 2's significant negative IC'', a result that exists in another report; item 12 cites ``submission 4'' from a report with two submissions. Items 8, 16 and 17 are judgment calls (a methodological tip reused; a report's topic shared but its result contradicted). The same proposal paired with two reports (items 12 and 17) got a yes both times, which is what a judge that matches on vocabulary would do. With 17 dependent pairs the sample is small. In the confirmatory study only 8 of 36 judge outputs were usable and 8 pairs were audited. % src: claims A01, A02, A03; human_review_submission.md (Opus)
+
+\paragraph{P4, red team} Six of the ten concerns were already covered by registered diagnostics (placebo, 25\,bp costs, test halves, tightness, data-vintage variants); for the other four no additional test was adopted. % src: claim A10; p4_review.md
+The response asserted a permutation $p$-value ``already'' above 0.10 that nobody had computed, and proposed a 95th-percentile gate, a DSR of 0.95 and a rolling 24-month threshold after seeing the research tables. % src: p4_review.md items 1, 5, 9, 7
+
+\paragraph{P5, post-mortem} Written from the sealed results, so its fixes are post hoc by construction; the review's own errors (a vendor guess from a code path, a momentum definition that included the latest month, wage ICs from a non-frozen start date) are recorded with their corrections in \path{docs/FINDINGS_AND_PROPOSAL.md}.
+
+\paragraph{Bottom line} Every Claude output needed a human check: 25 P1 dispositions, 10 P4 dispositions and 25 hand-labelled migration pairs (8 Sonnet, 17 Opus). % src: claims A07, A10, A01, A02
+
+\subsection{Transcripts and verbatim excerpts}\label{app:transcripts}
 \begin{itemize}
   \item P1: prompt \path{outputs/p1_request.json} (the instruction in \cref{sec:ai} followed by the manifest, crosswalk and as-of code); response \path{outputs/p1_response.md}; dispositions \path{outputs/p1_review.md}. \todo{Alex: add the disposition counts from p1\_review.md}
   \item P2: system and turn prompts in \path{params.py} (\texttt{SYSTEM\_PROMPT}, \texttt{TURN\_PROMPT}); every call with its raw response in \path{outputs/agents/log.jsonl}; proposals in \path{outputs/candidates.csv}; selected features decoded in \path{analysis/output/tables/d7_selected_features.csv}.
@@ -452,6 +462,31 @@ V2d: $+0.34$, $+0.29$, $+0.22$ and $+0.09$ at 0, 10, 25 and 50\,bp; break-even 6
 \caption{Hires and quits turn negative at 12 months ($t=-2.1$, $-1.7$): the investment channel shows up slowly, not within a month. \hfill\tagp}
 \label{fig:horizon}
 \end{figure}
+\begin{table}[H]
+\centering\small
+\begin{threeparttable}
+\caption{Net Sharpe ratio by window. \hfill\tagc\ (A3) / \tagp\ (V2a, V2d)}
+\label{tab:windows}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+ & Research & Test & Full sample & Post-2010 & Last 18 months \\
+Window (returns) & 2004--14 & 2014--26 & 2004--26 & 2010--26 & 2025-03--2026-08 \\
+\midrule
+A3 primary, H1 (confirmatory)      & $-0.13$ & $-0.58$ & $-0.44$ & $-0.62$ & $+0.85$ \\ % src: claims C09, C01, C11, C10
+V2a wage growth (post-hoc)     & $+0.09$ & $+0.16$ & $+0.15$ & $+0.12$ & $-1.71$ \\ % src: claim V_V2a_SR
+V2d $-$(hires+quits), 12m, H2 (post-hoc) & $+0.50$ & $+0.29$ & $+0.35$ & $+0.30$ & $+0.29$ \\ % src: claim V_V2d_SR
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item A3's research figure uses the 88 months with a forecast; its full-sample figure starts in June 2007 and is descriptive. V2a and V2d use revised data with fixed lags over 125, 142, 268, 200 and 18 months. % src: claims C09, C11, S05
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+\begin{figure}[H]
+\centering\includegraphics[width=0.7\linewidth]{figures/fig_v2_windows.pdf}
+\caption{Net Sharpe by window. V2d is the only post-hoc variant positive in every window; V2a and V2c lost heavily in the last 18 months. \hfill\tagp\ / \tagc\ (A3 bars)}
+\label{fig:v2_windows}
+\end{figure}
 \begin{figure}[H]
 \centering
 \begin{subfigure}[t]{0.48\linewidth}\centering\includegraphics[width=\linewidth]{figures/fig_industry_pnl.pdf}\end{subfigure}\hfill
@@ -489,7 +524,9 @@ V2d: $+0.34$, $+0.29$, $+0.22$ and $+0.09$ at 0, 10, 25 and 50\,bp; break-even 6
 After the test had been opened, the agent experiment was rerun with Claude Opus~5.5 at extra-high effort, with fresh agents and the same frozen evaluator, selection rule and portfolio. Because the test period was already known to the team, the run is exploratory. Its research-selected primary, A4, earned a test Sharpe of $+0.01$ (research $-0.40$) with an IC of $-0.002$ ($t=-0.10$), an alpha $t$ of 0.05, a placebo $p$ of 0.56 and a Sharpe of $-0.19$ at 25\,bp; it failed gates G2 to G5 and had a Sharpe of $-1.41$ over the last 18 months. % src: claims X01, X02
 Its gross return came from one long position: durable manufacturing contributed $+0.27$ of cumulative gross return (sum of monthly contributions, in units of the book) in a group that is 60\% semiconductors. % src: claims X04, S03
 Opus's other strategy, A3, earned $-0.46$. % src: claim X03
-The follow-up is evidence about agents (\cref{sec:claude}), not about the strategy.
+The follow-up is evidence about agents, not about the strategy. A stronger model followed the protocol better and found no more signal: 106 of 108 valid proposals against 98, 15 of 18 admitted migration reports against 7, 84 of 88 usable judge labels against 8 of 36, % src: claims A01, A02
+yet no selected feature survived the test criterion in either study. % src: claim C19
+Communication raised research search scores for Opus and lowered them for Sonnet; neither gap exceeded the spread across repetitions. % src: claim A05
 
 \section{Forward-test specification}\label{app:forward}
 \begin{itemize}

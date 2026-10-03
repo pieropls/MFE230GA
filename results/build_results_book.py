@@ -183,6 +183,35 @@ def register_claims():
                    'label': CONF, 'verified': 'y' if counts == [199, 199, 294, 294] else 'n', 'file_value': '; '.join(map(str, counts)),
                    'note': 'an earlier draft of CLAUDE.md stated 607 and 905; corrected to the logged counts on 3 Oct 2026'})
     CALL_COUNTS[:] = [counts[0], counts[2]]
+    # A07-A10: facts behind the team's Claude evaluation (docs/team_inputs/al_claude_section.md), counted from the frozen files
+    p1 = (SON / 'p1_review.md').read_text()
+    p1_items = re.findall(r'^\d+\. \*\*(\w+):\*\*', p1, flags=re.M)
+    p1_prompt_chars = len(json.loads((SON / 'p1_request.json').read_text())['prompt'])
+    shared = json.loads((SON / 'p1_claim_checks.json').read_text())['shared_CES_equal_nonmissing_rows']
+    a07 = [len(p1_items), p1_items.count('claim_not_supported'), p1_items.count('fixed_metadata'), shared['asof'], p1_prompt_chars]
+    CLAIMS.append({'claim_id': 'A07', 'sentence': 'P1 audit: 25 numbered findings, 5 not supported by the files, 1 metadata fix, none a look-ahead error; the shared group-9/10 CES series had 584 nonmissing rows; the prompt body ran to 38,717 characters.',
+                   'numbers': '25; 5; 1; 584; 38717', 'source': f'{rel(SON / "p1_review.md")} :: numbered items and their bold disposition tags | {rel(SON / "p1_claim_checks.json")}::shared_CES_equal_nonmissing_rows.asof | {rel(SON / "p1_request.json")}::len(prompt)',
+                   'label': CONF, 'verified': 'y' if a07 == [25, 5, 1, 584, 38717] else 'n', 'file_value': '; '.join(map(str, a07)), 'note': 'dispositions: documented_design, documented_limitation, checked_no_error, checked_question, nonblocking_error_message, documented_diagnostic are not errors'})
+    BA = rel(SON / 'agents/blinding_audit.json')
+    claim('A08', 'The blinding audit of all 199 Sonnet calls passed (108 candidate calls, 18 migration calls, 1 syntax repair).', [199, 108, 18, 1, 'True'],
+          [f'{BA}::total_calls', f'{BA}::candidate_calls', f'{BA}::migration_calls', f'{BA}::syntax_repairs', f'{BA}::passed'], CONF)
+    migs = json.loads((SON / 'agents/migrations.json').read_text())
+    invalid = [m for m in migs if not m.get('valid')]
+    over = [m for m in invalid if any('words; maximum is 120' in str(r_) for r_ in m.get('reasons', []) or m.get('rejection_reasons', []) or [])]
+    a09 = [len(migs), len(invalid), len(over)]
+    CLAIMS.append({'claim_id': 'A09', 'sentence': 'Sonnet migration reports: 11 of 18 rejected, 10 of them for exceeding the 120-word cap (121 to 133 words).',
+                   'numbers': '18; 11; 10', 'source': f'{rel(SON / "agents/migrations.json")} :: valid == False; reasons containing "maximum is 120"',
+                   'label': CONF, 'verified': 'y' if a09 == [18, 11, 10] else 'n', 'file_value': '; '.join(map(str, a09)), 'note': ''})
+    p4 = (SON / 'p4_review.md').read_text()
+    a10 = [len(re.findall(r'^\d+\. \*\*Covered by', p4, flags=re.M)), len(re.findall(r'^\d+\. \*\*No additional test adopted', p4, flags=re.M))]
+    CLAIMS.append({'claim_id': 'A10', 'sentence': 'P4 red team: 6 of 10 concerns were covered by registered diagnostics; for the other 4 no additional test was adopted.',
+                   'numbers': '6; 4', 'source': f'{rel(SON / "p4_review.md")} :: items tagged "Covered by" vs "No additional test adopted"',
+                   'label': CONF, 'verified': 'y' if a10 == [6, 4] else 'n', 'file_value': '; '.join(map(str, a10)), 'note': ''})
+    # V13-V14: provenance and power statements added in the final report pass
+    claim('V13', 'On the research years alone the V2d 12-month IC is +0.047 (t 0.90) and its horizon-matched placebo p is 0.26.', [0.047, 0.90, 0.26],
+          [f'{t("v3_r2_horizon_profile.csv")}::col=ic;window=research;h=12', f'{t("v3_r2_horizon_profile.csv")}::col=t;window=research;h=12', f'{t("v2d_placebo_12m.csv")}::col=placebo_p_12m;window=research'], POST)
+    claim('V14', 'The best post-hoc test Sharpe (V2c, +0.35) corresponds to t of about 1.2 over 142 months (Sharpe times sqrt(142/12)).', 1.2,
+          f'{t("v2_window_stats.csv")}::col=sharpe;variant=V2c;window=test', POST, scale=(142 / 12) ** 0.5, decimals=1, note='IID approximation; the Sharpe is read from the file and scaled by sqrt(142/12) = 3.44')
     claim('F09', 'The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 9f4a50f, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it.', '2026-10-03T09:17:55+00:00',
           'analysis/forward/book_first_build.sha256::line=2', FWD, note='book_first_build.sha256 was written on 3 Oct from the gate3.md of commit 9f4a50f; verify with: git show 9f4a50f:analysis/forward/book_2026Q4.csv | shasum -a 256')
     # --- exploratory Opus follow-up

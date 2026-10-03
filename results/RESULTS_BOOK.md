@@ -176,7 +176,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 
 ## 7. Claims register
 
-`results/claims.csv`: 100 claims, 100 verified against their source files.
+`results/claims.csv`: 106 claims, 106 verified against their source files.
 
 | ID | Label | Claim | Numbers | Verified |
 |---|---|---|---|---|
@@ -202,6 +202,12 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | C19 | CONF | Of the agent features that passed research selection, 4 of 4 (Sonnet) and 6 of 7 (Opus) failed the frozen sealed criterion (t >= 1.5 and positive IC in both test halves); the one Opus feature that passed it was not selected. | 4; 4; 6; 7 | y |
 | C23 | CONF | A1-T test: net return -4.9% a year, volatility 8.2%, maximum drawdown -36.3%. | -4.9; 8.2; -36.3 | y |
 | A06 | CONF | Logged model calls: 199 in the confirmatory (Sonnet) study and 294 in the Opus follow-up (candidate, migration and judge calls; the evaluation entries in the log are not calls). | 199; 294 | y |
+| A07 | CONF | P1 audit: 25 numbered findings, 5 not supported by the files, 1 metadata fix, none a look-ahead error; the shared group-9/10 CES series had 584 nonmissing rows; the prompt body ran to 38,717 characters. | 25; 5; 1; 584; 38717 | y |
+| A08 | CONF | The blinding audit of all 199 Sonnet calls passed (108 candidate calls, 18 migration calls, 1 syntax repair). | 199; 108; 18; 1; True | y |
+| A09 | CONF | Sonnet migration reports: 11 of 18 rejected, 10 of them for exceeding the 120-word cap (121 to 133 words). | 18; 11; 10 | y |
+| A10 | CONF | P4 red team: 6 of 10 concerns were covered by registered diagnostics; for the other 4 no additional test was adopted. | 6; 4 | y |
+| V13 | POST-HOC | On the research years alone the V2d 12-month IC is +0.047 (t 0.90) and its horizon-matched placebo p is 0.26. | 0.047; 0.9; 0.26 | y |
+| V14 | POST-HOC | The best post-hoc test Sharpe (V2c, +0.35) corresponds to t of about 1.2 over 142 months (Sharpe times sqrt(142/12)). | 1.2 | y |
 | F09 | FWD | The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 9f4a50f, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it. | 2026-10-03T09:17:55+00:00 | y |
 | X01 | CONF | Opus follow-up: primary A4 test Sharpe +0.01, research Sharpe -0.40, placebo p 0.56, Sharpe at 25 bp -0.19. | 0.01; -0.4; 0.56; -0.19 | y |
 | X02 | CONF | Opus A4 one-month IC -0.002 (t = -0.10); alpha t 0.05; last 18 months Sharpe -1.41. | -0.002; -0.1; 0.05; -1.41 | y |
