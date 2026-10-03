@@ -176,7 +176,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 
 ## 7. Claims register
 
-`results/claims.csv`: 97 claims, 97 verified against their source files.
+`results/claims.csv`: 100 claims, 100 verified against their source files.
 
 | ID | Label | Claim | Numbers | Verified |
 |---|---|---|---|---|
@@ -199,7 +199,10 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | C16 | CONF | All four Holm-adjusted comparisons in the Sonnet study had adjusted p = 1.0. | 1.0; 1.0; 1.0; 1.0 | y |
 | C17 | CONF | Of the 142 test months, A3 was in the expanding-tercile "high" tightness bin in 133. | 133 | y |
 | C18 | CONF | The cross-validated ridge penalty was 1000, the top of the grid, for every learned model. | 1000; 1000; 1000; 1000 | y |
-| C19 | CONF | Four of four agent features that passed research selection failed the test (Sonnet); six of six in the Opus study. | 4; 6 | y |
+| C19 | CONF | Of the agent features that passed research selection, 4 of 4 (Sonnet) and 6 of 7 (Opus) failed the frozen sealed criterion (t >= 1.5 and positive IC in both test halves); the one Opus feature that passed it was not selected. | 4; 4; 6; 7 | y |
+| C23 | CONF | A1-T test: net return -4.9% a year, volatility 8.2%, maximum drawdown -36.3%. | -4.9; 8.2; -36.3 | y |
+| A06 | CONF | Logged model calls: 199 in the confirmatory (Sonnet) study and 294 in the Opus follow-up (candidate, migration and judge calls; the evaluation entries in the log are not calls). | 199; 294 | y |
+| F09 | FWD | The Q4 2026 book was first built at 2026-10-03T09:17:55Z; later notebook runs reproduce it byte for byte. | 2026-10-03T09:17:55+00:00 | y |
 | X01 | CONF | Opus follow-up: primary A4 test Sharpe +0.01, research Sharpe -0.40, placebo p 0.56, Sharpe at 25 bp -0.19. | 0.01; -0.4; 0.56; -0.19 | y |
 | X02 | CONF | Opus A4 one-month IC -0.002 (t = -0.10); alpha t 0.05; last 18 months Sharpe -1.41. | -0.002; -0.1; 0.05; -1.41 | y |
 | X03 | CONF | Opus A3 test Sharpe -0.46. | -0.46 | y |
@@ -242,7 +245,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | F02 | FWD | V2d Q4 2026 book: long finance, real estate and accommodation & food; short mining, durable manufacturing and retail. | 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 | y |
 | F03 | FWD | SPY hedge per unit tranche: V2a -0.40, V2b -0.06, V2c -0.24, V2d -0.02. | -0.4; -0.06; -0.24; -0.02 | y |
 | F04 | FWD | V2c's long durable manufacturing and short professional services both map to XLI and cancel, so its tradable book has four legs. | 0.0 | y |
-| F05 | FWD | The forward spec was frozen at 2026-10-03T09:03:56Z and amendment 001 at 2026-10-03T09:16:11Z, before the book was built at 2026-10-03T09:17:55Z. | True; True | y |
+| F05 | FWD | The forward spec was frozen at 2026-10-03T09:03:56Z and amendment 001 at 2026-10-03T09:16:11Z, before the book was built (gate3.md records the order). | True; True | y |
 | S01 | POST-HOC | Our rebuilt A0 signal matches the frozen fixed-lag scores with pooled correlation 0.998. | 0.998 | y |
 | S02 | POST-HOC | As-known (ASOF) scores pick the same top three groups as our revised-data signal in only 42% of test months. | 42 | y |
 | S03 | POST-HOC | Durable manufacturing is 60% semiconductors (Chips) by market cap in August 2026; nondurable manufacturing is 60% pharmaceuticals. | Chips 60%, Mach 9%, Autos 7%; Drugs 60%, Hshld 9%, Soda 7% | y |

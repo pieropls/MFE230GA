@@ -168,8 +168,25 @@ def register_claims():
     claim('C17', 'Of the 142 test months, A3 was in the expanding-tercile "high" tightness bin in 133.', 133, f'{R}::windows.A3.T_high.n', CONF)
     claim('C18', 'The cross-validated ridge penalty was 1000, the top of the grid, for every learned model.', [1000, 1000, 1000, 1000],
           [f'{rel(SON / "selected_features.json")}::models.{m}.alpha' for m in ['A1', 'A1-T', 'A3', 'A4']], CONF)
-    claim('C19', 'Four of four agent features that passed research selection failed the test (Sonnet); six of six in the Opus study.', [4, 6],
-          [f'{R}::research_pass_sealed_failure_count', f'{RO}::research_pass_sealed_failure_count'], CONF)
+    claim('C19', 'Of the agent features that passed research selection, 4 of 4 (Sonnet) and 6 of 7 (Opus) failed the frozen sealed criterion (t >= 1.5 and positive IC in both test halves); the one Opus feature that passed it was not selected.', [4, 4, 6, 7],
+          [f'{R}::research_pass_sealed_failure_count', f'{t("d7_agent_summary.csv")}::col=Sonnet;item=passed research filter', f'{RO}::research_pass_sealed_failure_count', f'{t("d7_agent_summary.csv")}::col=Opus;item=passed research filter'], CONF)
+    claim('C23', 'A1-T test: net return -4.9% a year, volatility 8.2%, maximum drawdown -36.3%.', [-4.9, 8.2, -36.3],
+          [f'{R}::variants.ASOF.A1-T.mean_net_annual', f'{R}::variants.ASOF.A1-T.volatility', f'{R}::variants.ASOF.A1-T.max_drawdown'], CONF, scale=100)
+    claim('C24', 'Every selected agent feature (4 Sonnet, 4 Opus) failed the frozen sealed criterion.', [0, 0],
+          [f'{t("d7_selected_features.csv")}::col=sealed_pass_count;study=ALL', f'{t("d7_selected_features.csv")}::col=sealed_pass_count;study=ALL'], CONF) if False else None
+    # A06: logged model calls per study, counted directly from log.jsonl (non-evaluation entries) and the responses folder
+    counts = []
+    for study in [SON, OPU]:
+        rows_ = [json.loads(l) for l in (study / 'agents/log.jsonl').read_text().splitlines()]
+        n_calls = sum(1 for r_ in rows_ if r_.get('kind') != 'evaluation')
+        n_files = len(list((study / 'agents/responses').glob('*.json')))
+        counts += [n_calls, n_files]
+    CLAIMS.append({'claim_id': 'A06', 'sentence': 'Logged model calls: 199 in the confirmatory (Sonnet) study and 294 in the Opus follow-up (candidate, migration and judge calls; the evaluation entries in the log are not calls).',
+                   'numbers': '199; 294', 'source': f'{rel(SON / "agents/log.jsonl")} | {rel(OPU / "agents/log.jsonl")} :: entries with kind != evaluation; equals the file count in agents/responses/',
+                   'label': CONF, 'verified': 'y' if counts == [199, 199, 294, 294] else 'n', 'file_value': '; '.join(map(str, counts)),
+                   'note': 'CLAUDE.md states 607 and 905; those figures do not match any file and are flagged in MORNING_BRIEF.md'})
+    claim('F09', 'The Q4 2026 book was first built at 2026-10-03T09:17:55Z; later notebook runs reproduce it byte for byte.', '2026-10-03T09:17:55+00:00',
+          'analysis/forward/book_first_build.sha256::line=2', FWD)
     # --- exploratory Opus follow-up
     claim('X01', 'Opus follow-up: primary A4 test Sharpe +0.01, research Sharpe -0.40, placebo p 0.56, Sharpe at 25 bp -0.19.', [0.01, -0.40, 0.56, -0.19],
           [f'{RO}::variants.ASOF.A4.sharpe', f'{RSO}::strategies.A4.sharpe', f'{RO}::placebo.p', f'{RO}::sensitivities.cost_25.sharpe'], CONF, note='exploratory; after the test was seen')
@@ -271,7 +288,7 @@ def register_claims():
           [f'{hb}::col=spy_hedge_weight_per_unit;variant={v}' for v in ['V2a', 'V2b', 'V2c', 'V2d']], FWD)
     eb = rel(P.FORWARD / 'book_2026Q4_etf.csv')
     claim('F04', "V2c's long durable manufacturing and short professional services both map to XLI and cancel, so its tradable book has four legs.", 0.0, f'{eb}::col=v2c_weight;etf=XLI', FWD, decimals=6)
-    claim('F05', 'The forward spec was frozen at 2026-10-03T09:03:56Z and amendment 001 at 2026-10-03T09:16:11Z, before the book was built at 2026-10-03T09:17:55Z.',
+    claim('F05', 'The forward spec was frozen at 2026-10-03T09:03:56Z and amendment 001 at 2026-10-03T09:16:11Z, before the book was built (gate3.md records the order).',
           ['True', 'True'], [f'{rel(P.OUT / "gate3.md")}::table=0||row=Forward spec frozen before the book was built||col=pass',
                              f'{rel(P.OUT / "gate3.md")}::table=0||row=Amendment 001 frozen after the v2 results and before the book||col=pass'], FWD)
     # --- data and design facts

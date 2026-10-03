@@ -211,7 +211,7 @@ def industry_pnl(pnl):
     ax.set_yticks(range(len(order)), order)
     ax.invert_yaxis()
     ax.set_xlabel('Cumulative contribution (% points)')
-    ax.set_title('A3 test-period P&L by industry')
+    ax.set_title('A3 P&L by industry, test')
     ax.grid(axis='y', visible=False)
     return save(fig, 'fig_industry_pnl.pdf')
 

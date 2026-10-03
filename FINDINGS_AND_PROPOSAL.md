@@ -8,7 +8,7 @@
 
 ## 0. Summary
 
-**Where we are.** Alex ran the blueprint end to end twice. An AI coding agent was the engineer (possibly OpenAI Codex, see §4.1), and Claude did every research role, called through the Claude Code CLI:
+**Where we are.** Alex ran the blueprint end to end twice. An AI coding agent was the engineer (engineering assistant: to be confirmed by Alex; see §4.1), and Claude did every research role, called through the Claude Code CLI:
 - an original study whose research agents were Claude **Sonnet 5.5**;
 - an exploratory follow-up with Claude **Opus 5.5** at extra-high effort, requested after the first study's test results had been seen.
 
@@ -162,7 +162,7 @@ Organised by the grading rubric: Thesis 40%, Execution 40%, Originality 20%. Cou
 | Factor exposures | Weak | Table present, no interpretation. |
 | Briefing checklist §10.2 | Open | Team critique, Q4/midterm point, contribution statement and submitter choice are all still open. |
 
-One thing to check with Alex: [agents.py](230ga-follow-the-workers/outputs/follow_the_workers/agents.py) sandboxes the agent calls so they cannot read `/Users/alex/.codex` ("cannot read study inputs or Codex context"). That suggests **the engineering agent that wrote and ran the pipeline may have been OpenAI Codex**. If so, the coding-support interaction was with an OpenAI model and can be documented, which partly addresses the requirement.
+One thing to check with Alex: which engineering assistant wrote and ran the pipeline code. It is not documented in the repository (engineering assistant: to be confirmed by Alex). Once confirmed, the coding-support interaction can be documented as such. *Correction, 3 Oct: an earlier version of this paragraph guessed a vendor from a sandbox path in the code; that guess is withdrawn.*
 
 ### 4.2 Thesis (40%): the central question is never actually tested
 
@@ -377,7 +377,7 @@ What I need before starting: answers to §8, especially decisions 1, 2, 5 and 6.
 6. **FRED API key** for the exact as-known rebuild: free, at https://fredaccount.stlouisfed.org. Without it I use the slower ALFRED CSV route.
 7. **Output format.** Markdown plus PDF? Word? A Google Doc for joint editing?
 8. **Repo etiquette.** Work locally in `analysis/`, or on a branch of Alex's repo with a pull request?
-9. **For Alex.** Was the engineering agent Codex (see §4.1)? Are there any ChatGPT logs from the build?
+9. **For Alex.** Which engineering assistant built the pipeline (name and vendor; see §4.1)? Are there any logs from the build?
 10. **Team critique.** Who writes which rows of the AI-interaction log? The course grades *our* critique.
 
 ---
