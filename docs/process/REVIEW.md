@@ -6,9 +6,9 @@ Reviewer: a fresh Claude subagent that had not seen the project, given `docs/cou
 
 | | Thesis | Execution | Originality | Total |
 |---|---|---|---|---|
-| Round 1 (commit `ad1dec3`) | 32 | 30 | 17 | 79 |
-| Round 2 (commit `dd9a851`) | 33 | 31 | 17 | 81 |
-| Round 3, fresh reviewer, after the presentation iteration (commit `64a3ba8`) | 32 | 30 | 18 | 80 |
+| Round 1 (commit `bd1b58f`) | 32 | 30 | 17 | 79 |
+| Round 2 (commit `0892186`) | 33 | 31 | 17 | 81 |
+| Round 3, fresh reviewer, after the presentation iteration (commit `cc7d516`) | 32 | 30 | 18 | 80 |
 | Reviewers' estimate once the human items are written | | | | 87–89 |
 
 Round 3 (`docs/process/REVIEW_round3.md`) graded the restructured report (H1/H2/H3 framing, answer box, figures in the body). Its deductions: the thesis frame reads as retrofitted because H2 was formulated after the test was opened (now stated explicitly in 2.1); the critique cells, Reflection and executive-summary sentence are still TODO; Appendix A gave paths rather than transcripts (verbatim excerpts added); the headline box called H2 "supported" (changed to "consistent with the data, not established"); Section 3 runs about 4.5 pages against the 4-page budget after the added figures and table, while the main body stays at 10 pages.
@@ -21,7 +21,7 @@ Round 1: 32 numbers; 30 matched their source file at the printed precision; 2 di
 ## Fixes applied by the editor (Claude) between and after the rounds
 - Call counts replaced by the log counts (199 Sonnet, 294 Opus; claim A06); docs/process/project_rules.md's 607/905 flagged in `docs/process/MORNING_BRIEF.md`.
 - "6 of 6" Opus features corrected to "6 of 7"; "failed the test" defined as the frozen sealed criterion (t ≥ 1.5 and positive IC in both halves); claim C19 rewritten.
-- The Q4 book's first build (09:17:55Z) recorded in `analysis/forward/book_first_build.sha256` and enforced by the notebook; commit `9f4a50f` cited as the independent evidence; `gate3.md` shows the first-build time again.
+- The Q4 book's first build (09:17:55Z) recorded in `analysis/forward/book_first_build.sha256` and enforced by the notebook; commit `3e8ecd7` cited as the independent evidence; `gate3.md` shows the first-build time again.
 - Horizon-matched placebo for V2d (claim V09) added next to the pre-declared one-month placebo; Table 6 caption states the one-month statistics and 6 Newey–West lags; the 12-lag alpha is labelled.
 - Figure 1 box overlap fixed; Figure 9 title shortened; A1-T numbers registered (claim C23) and the `\prov` marks removed; "78 series" and the "28 undefined judge labels" cited to the frozen report.
 - Executive summary rebalanced: IC defined, the sign statement tightened (layoffs and hours), the 12-month reversal framed as "consistent with ... would predict", "paper books ... no capital"; 225 words by LaTeX token count.

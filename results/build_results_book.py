@@ -212,8 +212,8 @@ def register_claims():
           [f'{t("v3_r2_horizon_profile.csv")}::col=ic;window=research;h=12', f'{t("v3_r2_horizon_profile.csv")}::col=t;window=research;h=12', f'{t("v2d_placebo_12m.csv")}::col=placebo_p_12m;window=research'], POST)
     claim('V14', 'The best post-hoc test Sharpe (V2c, +0.35) corresponds to t of about 1.2 over 142 months (Sharpe times sqrt(142/12)).', 1.2,
           f'{t("v2_window_stats.csv")}::col=sharpe;variant=V2c;window=test', POST, scale=(142 / 12) ** 0.5, decimals=1, note='IID approximation; the Sharpe is read from the file and scaled by sqrt(142/12) = 3.44')
-    claim('F09', 'The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 9f4a50f, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it.', '2026-10-03T09:17:55+00:00',
-          'analysis/forward/book_first_build.sha256::line=2', FWD, note='book_first_build.sha256 was written on 3 Oct from the gate3.md of commit 9f4a50f; verify with: git show 9f4a50f:analysis/forward/book_2026Q4.csv | shasum -a 256')
+    claim('F09', 'The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 3e8ecd7, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it.', '2026-10-03T09:17:55+00:00',
+          'analysis/forward/book_first_build.sha256::line=2', FWD, note='book_first_build.sha256 was written on 3 Oct from the gate3.md of commit 3e8ecd7; verify with: git show 3e8ecd7:analysis/forward/book_2026Q4.csv | shasum -a 256')
     # --- exploratory Opus follow-up
     claim('X01', 'Opus follow-up: primary A4 test Sharpe +0.01, research Sharpe -0.40, placebo p 0.56, Sharpe at 25 bp -0.19.', [0.01, -0.40, 0.56, -0.19],
           [f'{RO}::variants.ASOF.A4.sharpe', f'{RSO}::strategies.A4.sharpe', f'{RO}::placebo.p', f'{RO}::sensitivities.cost_25.sharpe'], CONF, note='exploratory; after the test was seen')

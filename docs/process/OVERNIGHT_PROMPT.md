@@ -2,7 +2,7 @@
 
 Read `docs/process/project_rules.md` and this file. Then work through Stages 1–6 in order, without asking questions. Commit after every stage. If a gate fails, write `analysis/output/STOP.md` and stop.
 
-## Where we stand (verified, committed in 9f4a50f)
+## Where we stand (verified, committed in 3e8ecd7)
 
 - **Confirmatory study.** The primary strategy, A3, has a test Sharpe of −0.58. The verdict is "Do not implement" and it stands.
 - **v2 (post-hoc).** Four variants were frozen before running and all four are reported. None passes the reading rule; the deflated Sharpe is at most 0.18.

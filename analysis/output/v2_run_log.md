@@ -1,6 +1,6 @@
 # v2 run log
 
-The four v2 variants were run once, at **2026-10-03T09:01:55+00:00** (first execution after the spec froze at 2026-10-03T09:00:13+00:00, commit d76fbb3).
+The four v2 variants were run once, at **2026-10-03T09:01:55+00:00** (first execution after the spec froze at 2026-10-03T09:00:13+00:00, commit 44ae263).
 Later executions of `run.ipynb` must reproduce these files byte-for-byte; the notebook stops (STOP.md) if they do not.
 
 | file | sha256 of first run |

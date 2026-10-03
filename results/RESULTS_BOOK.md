@@ -208,7 +208,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | A10 | CONF | P4 red team: 6 of 10 concerns were covered by registered diagnostics; for the other 4 no additional test was adopted. | 6; 4 | y |
 | V13 | POST-HOC | On the research years alone the V2d 12-month IC is +0.047 (t 0.90) and its horizon-matched placebo p is 0.26. | 0.047; 0.9; 0.26 | y |
 | V14 | POST-HOC | The best post-hoc test Sharpe (V2c, +0.35) corresponds to t of about 1.2 over 142 months (Sharpe times sqrt(142/12)). | 1.2 | y |
-| F09 | FWD | The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 9f4a50f, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it. | 2026-10-03T09:17:55+00:00 | y |
+| F09 | FWD | The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 3e8ecd7, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it. | 2026-10-03T09:17:55+00:00 | y |
 | X01 | CONF | Opus follow-up: primary A4 test Sharpe +0.01, research Sharpe -0.40, placebo p 0.56, Sharpe at 25 bp -0.19. | 0.01; -0.4; 0.56; -0.19 | y |
 | X02 | CONF | Opus A4 one-month IC -0.002 (t = -0.10); alpha t 0.05; last 18 months Sharpe -1.41. | -0.002; -0.1; 0.05; -1.41 | y |
 | X03 | CONF | Opus A3 test Sharpe -0.46. | -0.46 | y |

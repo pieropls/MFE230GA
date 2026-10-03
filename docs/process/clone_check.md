@@ -3,7 +3,7 @@
 A plain clone of the public repository, run from a temporary folder on the same machine and deleted afterwards. No submodule, no access to Alex's private repository: his study is part of this repository's history (`frozen_provenance.md`).
 
 ```
-git clone https://github.com/pieropls/GA.git gh_clone        # commit e1176fe
+git clone https://github.com/pieropls/GA.git gh_clone        # commit 0d05ba4
 ```
 
 | Check | Result |

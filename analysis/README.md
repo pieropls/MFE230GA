@@ -19,4 +19,4 @@ How to run: from the project root, `jupyter nbconvert --to notebook --execute --
 
 Run logs: `output/v2_run_log.md` and `output/v3_run_log.md` record the SHA-256 of each output at its first run; the notebook recomputes them every run and stops if any differs. `forward/book_first_build.sha256` does the same for the Q4 book.
 
-`output/diagnostics.md` is the 3 Oct baseline behind `../docs/FINDINGS_AND_PROPOSAL.md`. It was produced by the earlier `diagnostics.py`, which you can recover with `git show 771e482:analysis/diagnostics.py` (it has since been folded into the notebook).
+`output/diagnostics.md` is the 3 Oct baseline behind `../docs/FINDINGS_AND_PROPOSAL.md`. It was produced by the earlier `diagnostics.py`, which you can recover with `git show f6c95ef:analysis/diagnostics.py` (it has since been folded into the notebook).

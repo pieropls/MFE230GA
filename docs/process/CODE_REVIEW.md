@@ -37,12 +37,12 @@ Findings are ordered most severe first. "Changes a reported number" follows the 
 
 ## 3. `v2_spec.md` points at module hashes that no longer match the working tree
 
-- **(a) Where:** `analysis/v2_spec.md` lines "Code at freeze (commit a0bdff3): params.py sha256 1d9617..., data.py 5275fe..., stats.py 8e02fc..." and "Signals (exactly `analysis/data.py::signals` at the commit above)".
-- **(b) What happened:** `git diff a0bdff3 HEAD -- analysis/{params,data,stats}.py` shows 20 insertions / 4 deletions made for the v3 battery (commit f10a2fd): `signals(..., groups=None)` plus one line inside the loop, `P.SEED`, `factor_attribution(..., lags=P.HAC_LAGS)`, and new `block_bootstrap_sharpe`. Current hashes: params `4a73bed2...`, data `5f178457...`, stats `942fa12f...`. All three differ from the spec.
+- **(a) Where:** `analysis/v2_spec.md` lines "Code at freeze (commit a56e6ce): params.py sha256 1d9617..., data.py 5275fe..., stats.py 8e02fc..." and "Signals (exactly `analysis/data.py::signals` at the commit above)".
+- **(b) What happened:** `git diff a56e6ce HEAD -- analysis/{params,data,stats}.py` shows 20 insertions / 4 deletions made for the v3 battery (commit 925fdee): `signals(..., groups=None)` plus one line inside the loop, `P.SEED`, `factor_attribution(..., lags=P.HAC_LAGS)`, and new `block_bootstrap_sharpe`. Current hashes: params `4a73bed2...`, data `5f178457...`, stats `942fa12f...`. All three differ from the spec.
 - **(c) Why it matters:** the spec's code pointer is the only link between "what was frozen" and "what ran". The v2 outputs still byte-match `v2_run_log.md` (verified), so the results did not change, and the diff is additive, but a reader cannot verify this from the spec alone; the notebook does not assert module hashes.
 - **(d) Severity:** MINOR (reproducibility/documentation).
 - **(e) Changes a reported number:** NO.
-- **(f) Fix:** append to `v3_run_log.md` (or a new `analysis/output/code_hashes.md`) the module hashes at f10a2fd and at HEAD with the one-paragraph diff summary above; optionally have cell 36/54 print the three hashes so each run records them. Do not edit `v2_spec.md` (it is hashed).
+- **(f) Fix:** append to `v3_run_log.md` (or a new `analysis/output/code_hashes.md`) the module hashes at 925fdee and at HEAD with the one-paragraph diff summary above; optionally have cell 36/54 print the three hashes so each run records them. Do not edit `v2_spec.md` (it is hashed).
 
 ## 4. Results Book hard-codes the retracted "607 / 905 calls" figures, contradicting its own verified claim A06
 

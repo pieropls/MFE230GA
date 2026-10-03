@@ -118,11 +118,11 @@ Gates, in the order the notebook runs them: **Gate 1** rebuilds the 13 group ret
 
 | Artefact | SHA-256 (first 8) | Frozen (UTC, 3 Oct 2026) | First run | Commit |
 |---|---|---|---|---|
-| [analysis/v2_spec.md](analysis/v2_spec.md) (V2a–V2d, reading rule, 112 looks) | `ca658234` | 09:00:13 | 09:01:55 | `d76fbb3` |
-| [analysis/forward/spec_frozen.md](analysis/forward/spec_frozen.md) | `735a8ffa` | 09:03:56 | book 09:17:55 | `45991d4` |
-| [analysis/forward/spec_amendment_001.md](analysis/forward/spec_amendment_001.md) | `c76cde86` | 09:16:11 | book 09:17:55 | `96b828f` |
-| [analysis/forward/book_2026Q4.csv](analysis/forward/book_2026Q4.csv) (first build) | `85727526` | 09:17:55 | | `9f4a50f` |
-| [analysis/v3_spec.md](analysis/v3_spec.md) (R1–R11, 132 looks) | `312aef1d` | 09:52:27 | 09:53:32 | `8fd75ae` |
+| [analysis/v2_spec.md](analysis/v2_spec.md) (V2a–V2d, reading rule, 112 looks) | `ca658234` | 09:00:13 | 09:01:55 | `44ae263` |
+| [analysis/forward/spec_frozen.md](analysis/forward/spec_frozen.md) | `735a8ffa` | 09:03:56 | book 09:17:55 | `f90b66c` |
+| [analysis/forward/spec_amendment_001.md](analysis/forward/spec_amendment_001.md) | `c76cde86` | 09:16:11 | book 09:17:55 | `22c67db` |
+| [analysis/forward/book_2026Q4.csv](analysis/forward/book_2026Q4.csv) (first build) | `85727526` | 09:17:55 | | `3e8ecd7` |
+| [analysis/v3_spec.md](analysis/v3_spec.md) (R1–R11, 132 looks) | `312aef1d` | 09:52:27 | 09:53:32 | `c7014d9` |
 | Frozen study folder (3,067 files) | `eb109be9` | imported at `c67c486` with Alex's history | checked every run | [provenance](docs/process/frozen_provenance.md) |
 
 - [analysis/output/v2_run_log.md](analysis/output/v2_run_log.md) and [v3_run_log.md](analysis/output/v3_run_log.md) hold the hashes of the first run; later runs must reproduce them or the notebook stops.
