@@ -237,7 +237,7 @@ def loadings(frame):
     ax.set_xticks(range(len(factors)), [names.get(f, f) for f in factors])
     ax.set_ylabel('Loading (±2 s.e., Newey–West)')
     ax.set_title('Factor exposures of the long–short books')
-    ax.legend(loc='upper left', ncol=len(strategies))
+    ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1), ncol=len(strategies))
     ax.grid(axis='x', visible=False)
     return save(fig, 'fig_loadings.pdf')
 
@@ -345,6 +345,6 @@ def v2_windows(frame, a3):
     ax.set_xticks(range(len(windows)), windows)
     ax.set_ylabel('Annualised net Sharpe ratio')
     ax.set_title('v2 strategies by window, with the preregistered primary for contrast')
-    ax.legend(loc='upper left', ncol=3, fontsize=7)
+    ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1), ncol=5, fontsize=7, columnspacing=1.0)
     ax.grid(axis='x', visible=False)
     return save(fig, 'fig_v2_windows.pdf')

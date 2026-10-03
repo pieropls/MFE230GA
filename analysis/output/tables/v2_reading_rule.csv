@@ -1,0 +1,5 @@
+variant,sharpe_25bp_positive,ic_t_ge_2,alpha_t_ge_2,ic_positive_both_halves,placebo_p_lt_0.05,dsr_gt_0.95,reading
+V2a,True,True,False,True,True,False,not distinguishable from noise after the looks already taken
+V2b,False,False,False,True,False,False,not distinguishable from noise after the looks already taken
+V2c,True,False,False,True,False,False,not distinguishable from noise after the looks already taken
+V2d,True,False,False,False,False,False,not distinguishable from noise after the looks already taken

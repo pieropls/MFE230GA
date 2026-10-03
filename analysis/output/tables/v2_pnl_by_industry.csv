@@ -1,0 +1,121 @@
+variant,window,component,contribution
+V2a,test,Mining & logging,-0.48179669235363587
+V2a,test,Construction,0.22938981975393657
+V2a,test,Durable mfg,0.19381306540704007
+V2a,test,Nondurable mfg,0.11585535894362649
+V2a,test,Wholesale,0.04257172177467691
+V2a,test,Retail,0.24784645676017736
+V2a,test,Transport & utilities,-0.21056172448418276
+V2a,test,Information,0.1855071463122002
+V2a,test,Finance & insurance,0.14078450674251727
+V2a,test,Real estate,0.20982729751480295
+V2a,test,Prof. & business svcs,-0.11302506866929526
+V2a,test,Health care,-0.0994402741366753
+V2a,test,Accommodation & food,-0.19107220619643067
+V2a,test,Market hedge,-0.0160097217062386
+V2a,test,Trading costs,-0.05599978609308273
+V2a,full,Mining & logging,-0.4443322483974584
+V2a,full,Construction,0.17132029171761923
+V2a,full,Durable mfg,0.10886699951659067
+V2a,full,Nondurable mfg,0.053761534407248956
+V2a,full,Wholesale,0.23224295920618887
+V2a,full,Retail,0.38891905933621657
+V2a,full,Transport & utilities,-0.3757392126745931
+V2a,full,Information,0.1950603193659549
+V2a,full,Finance & insurance,0.3506603020941713
+V2a,full,Real estate,0.3453719154602823
+V2a,full,Prof. & business svcs,-0.17314684043638537
+V2a,full,Health care,0.011445589053067404
+V2a,full,Accommodation & food,-0.38408363811691143
+V2a,full,Market hedge,-0.08694488716317754
+V2a,full,Trading costs,-0.10512907351950909
+V2b,test,Mining & logging,-0.10602986523017655
+V2b,test,Construction,0.0048994437720443484
+V2b,test,Durable mfg,0.07244287182051445
+V2b,test,Nondurable mfg,0.10276583515845085
+V2b,test,Wholesale,-0.02768592630468614
+V2b,test,Retail,0.013869489953818176
+V2b,test,Transport & utilities,-0.10654818818644815
+V2b,test,Information,-0.06190046945711011
+V2b,test,Finance & insurance,0.05097608398617532
+V2b,test,Real estate,0.15338680342035305
+V2b,test,Prof. & business svcs,-0.2109788310718951
+V2b,test,Health care,0.04879426282968398
+V2b,test,Accommodation & food,0.026592529174189784
+V2b,test,Market hedge,-0.014069628596102814
+V2b,test,Trading costs,-0.10470431844535277
+V2b,full,Mining & logging,-0.2802725349473368
+V2b,full,Construction,-0.09834399797674064
+V2b,full,Durable mfg,0.17140689691565927
+V2b,full,Nondurable mfg,-0.012562532963512604
+V2b,full,Wholesale,0.03898891799800973
+V2b,full,Retail,0.05880630091334561
+V2b,full,Transport & utilities,-0.2883440204676697
+V2b,full,Information,0.3017118159896218
+V2b,full,Finance & insurance,0.12606339440991937
+V2b,full,Real estate,0.11115285396098976
+V2b,full,Prof. & business svcs,-0.17211502208223062
+V2b,full,Health care,0.15705018529563572
+V2b,full,Accommodation & food,-0.09288534835498434
+V2b,full,Market hedge,-0.022967696378832454
+V2b,full,Trading costs,-0.19655481585852913
+V2c,test,Mining & logging,-0.13512340034422832
+V2c,test,Construction,0.12860755936409796
+V2c,test,Durable mfg,0.21039091421676054
+V2c,test,Nondurable mfg,0.04596019369047409
+V2c,test,Wholesale,0.0235334733249062
+V2c,test,Retail,0.19355404735280296
+V2c,test,Transport & utilities,-0.14854958657552325
+V2c,test,Information,0.13065501517861594
+V2c,test,Finance & insurance,0.06171676508200872
+V2c,test,Real estate,0.027947212114560166
+V2c,test,Prof. & business svcs,0.12451173679166941
+V2c,test,Health care,-0.06579563532969883
+V2c,test,Accommodation & food,-0.14139512961784306
+V2c,test,Market hedge,-0.02498653484287118
+V2c,test,Trading costs,-0.07003034985963584
+V2c,full,Mining & logging,-0.1834113180840382
+V2c,full,Construction,0.09537887859288947
+V2c,full,Durable mfg,-0.012397360143797526
+V2c,full,Nondurable mfg,0.0504509232618776
+V2c,full,Wholesale,0.23736025817437567
+V2c,full,Retail,0.35102631062806966
+V2c,full,Transport & utilities,-0.2452039804938739
+V2c,full,Information,0.19870538987043035
+V2c,full,Finance & insurance,0.3079580981549045
+V2c,full,Real estate,0.14347171116621407
+V2c,full,Prof. & business svcs,0.04743024186023216
+V2c,full,Health care,-0.0760127670968235
+V2c,full,Accommodation & food,-0.1739963334623165
+V2c,full,Market hedge,0.04271696230921593
+V2c,full,Trading costs,-0.13547640979312645
+V2d,test,Mining & logging,0.09175605430133815
+V2d,test,Construction,0.0847768983002411
+V2d,test,Durable mfg,0.05150238283313972
+V2d,test,Nondurable mfg,-0.009263201258150028
+V2d,test,Wholesale,0.08455129903657277
+V2d,test,Retail,0.04313987565391771
+V2d,test,Transport & utilities,-0.02990473510106044
+V2d,test,Information,0.06868855958845148
+V2d,test,Finance & insurance,0.057092984067185534
+V2d,test,Real estate,-0.1666541607793282
+V2d,test,Prof. & business svcs,0.10954094489361504
+V2d,test,Health care,0.052035244347159046
+V2d,test,Accommodation & food,-0.03191036275321162
+V2d,test,Market hedge,-0.05011914523583802
+V2d,test,Trading costs,-0.05264611765049075
+V2d,full,Mining & logging,0.3910337400740158
+V2d,full,Construction,0.008905071676939547
+V2d,full,Durable mfg,0.11877240465184359
+V2d,full,Nondurable mfg,0.14247198495142863
+V2d,full,Wholesale,0.04455474393104995
+V2d,full,Retail,0.0905461741708501
+V2d,full,Transport & utilities,-0.192368540566154
+V2d,full,Information,-0.27765976130010805
+V2d,full,Finance & insurance,0.15949370909567784
+V2d,full,Real estate,-0.11727471983493791
+V2d,full,Prof. & business svcs,0.17573461627356454
+V2d,full,Health care,-0.02478038310853615
+V2d,full,Accommodation & food,0.09503999309976022
+V2d,full,Market hedge,0.08954008061641525
+V2d,full,Trading costs,-0.1032945261298436
