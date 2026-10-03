@@ -13,7 +13,7 @@ Report: [`report/main.pdf`](report/main.pdf) · Results Book: [`results/results_
 4. **Forward test:** four paper books, frozen on 3 October 2026 for the 30 September decision and held to 31 December, with no capital behind them (`analysis/forward/`).
 5. **Claude as research assistant:** useful auditor and idea generator when a human checked every claim against the code and data and it could not change the rules after seeing results; all 25 P1 findings, 10 P4 concerns and 25 judge labels needed that check.
 
-## Scoreboard
+## Every strategy we ran
 
 Net Sharpe ratios after 10 bp industry costs and 2 bp hedge costs, annualised. Source: [`results/scoreboard.csv`](results/scoreboard.csv), built by `results/build_results_book.py` from the frozen `results.json` and `analysis/output/tables/`.
 
@@ -52,7 +52,7 @@ docs/                        FINDINGS_AND_PROPOSAL.md (diagnosis of the frozen s
                              team_inputs/ (teammates' drafts), process/ (prompts, brief, review rounds, HANDOFF, OPEN_ISSUES)
 ```
 
-## Pipeline
+## How the pipeline fits together
 
 ```mermaid
 flowchart LR
@@ -73,7 +73,7 @@ flowchart LR
   G3 -.fail.-> X
 ```
 
-## Reproduce
+## Reproduce everything in three commands
 
 ```bash
 git clone --recurse-submodules <repo-url> follow-the-workers
@@ -106,7 +106,7 @@ Gates, in the order the notebook runs them: **Gate 1** rebuilds the 13 group ret
 - `results/claims.csv` is the only source the report may quote; each claim has a machine-readable locator and is re-verified on every build (100 of 100 verified). `report/check_sources.py` fails the build if a `% src:` comment swallows text.
 - The forward test is evaluated once, on 31 December 2026, whatever it shows.
 
-## AI use
+## How we used Claude
 
 Claude did every AI job, which this term's course allows; the switch from the ChatGPT template is logged as preregistration amendments 001 and 002 in the frozen study. Confirmatory study: Claude Sonnet 5.5 at medium effort, 199 logged calls (P1 audit, P2 blinded signal agents, P3 migration judge, P4 red team). Follow-up: Claude Opus 5.5 at extra-high effort, 294 calls. Post-mortem review and this iteration: Claude Code (Opus 5.5, then Fable 5.1) under `CLAUDE.md`; prompts in `docs/process/`. The engineering assistant that wrote the frozen pipeline is not documented in the repository (open item for Alex). The report's §3.4 and Appendix A evaluate what Claude got right and wrong.
 
@@ -116,7 +116,7 @@ Claude did every AI job, which this term's course allows; the switch from the Ch
 - **BLS JOLTS and CES via FRED**: industry openings, hires, quits and layoffs rates (not seasonally adjusted), average weekly hours and hourly earnings; `JTSJOL` and `UNEMPLOY` for tightness. BLS data are U.S. government works in the public domain; FRED and ALFRED redistribute them under the St. Louis Fed terms of use. Current values in `analysis/data/fred/`, the 29 September 2026 vintage in `analysis/data/alfred_2026-09-29/`.
 - The frozen study's own ALFRED vintage files sit inside the submodule and are not duplicated here.
 
-## Team
+## Team and contributions
 
 | Who | Did |
 |---|---|

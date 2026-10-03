@@ -27,7 +27,7 @@ Public labor flows do carry information about industry returns, but as slow cost
 ## 3. What we can claim
 
 - The preregistered strategy fails cleanly and we know why: wrong signs [D03], wrong horizon [D04, R2a], an untestable moderator [D06, D07], agent features active in 3 test months [D12], over-shrinkage and a binding risk cap [C18, D13], concentrated losses [D09]. Costs were not the cause [C15].
-- Wage growth is the only short-horizon labor signal with a positive IC in both periods [D01]; both blinded agent runs rediscovered it [D7b table].
+- Wage growth is the only short-horizon labor signal whose IC exceeds 1.5 standard errors in both periods [D01]; both blinded agent runs rediscovered it [D7b table].
 - Hiring and quits predict returns with a negative sign at 9–24 months and not at 1 month [R2a, R2b]; hires alone carry most of it [R1a, R1b].
 - V2d's return is not carried by one industry [R7a], survives realistic costs [R5a], longer holding periods [R3a], and is not a factor tilt that FF5 + momentum explains (alpha t 1.5–1.9) [R6a], but it loads against profitability [R6b].
 - The 13-group universe caps what any IC can deliver: a 0.1 twelve-month IC with breadth 13 implies an IR near 0.35 at best [R11a]; V2a realised far less than its IC implied because of the hedge, the cap and turnover [R11a].
@@ -80,7 +80,7 @@ Source: `results/scoreboard.csv` (built from results.json, research_summary.json
 ## 3. Figures
 
 - **`report/figures/fig_timeline.pdf`** [POST-HOC]: Tightness never exceeded V/U = 1 in the research period, so the tightness moderator could not be learned there. Source: analysis/data/fred (JTSJOL, UNEMPLOY).
-- **`report/figures/fig_ic_signals.pdf`** [POST-HOC]: Only wage growth has a positive IC in both periods; layoffs and hours carry the opposite sign to the one A0 imposed. Source: analysis/output/tables/d1_signal_ic.csv.
+- **`report/figures/fig_ic_signals.pdf`** [POST-HOC]: Only wage growth has an IC above 1.5 standard errors in both periods; layoffs and hours carry the opposite sign to the one A0 imposed. Source: analysis/output/tables/d1_signal_ic.csv.
 - **`report/figures/fig_horizon.pdf`** [POST-HOC]: Hires and quits turn negative at 12 months (t -2.1, -1.7): the investment/cost channel shows up slowly, not at one month. Source: analysis/output/tables/d2_horizon_ic.csv.
 - **`report/figures/fig_tightness.pdf`** [POST-HOC]: Split by whether T rose or fell over 12 months, hires and quits predict returns only while the market tightens; the split is balanced in both periods. Source: analysis/output/tables/d3_tightness_ic.csv.
 - **`report/figures/fig_cumulative.pdf`** [CONFIRMATORY (A0-A4) / POST-HOC (momentum, V2a)]: Every preregistered strategy lost money in the test; the post-hoc wage-growth book gained until 2024 and gave much of it back. Source: sealed/initial/ASOF_*_ledger.csv; analysis/output/tables/v2_monthly_net.csv.

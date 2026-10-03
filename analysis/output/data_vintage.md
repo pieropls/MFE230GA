@@ -1,6 +1,6 @@
 # Data vintage used in this iteration
 
-Written by analysis/run.ipynb on 2026-10-03T21:58:04+00:00.
+Written by analysis/run.ipynb on 2026-10-03T22:18:48+00:00.
 
 **Choice: option (c)** of docs/process/ITERATION_PROMPT.md Part 1 step 2.
 

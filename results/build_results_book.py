@@ -432,7 +432,7 @@ def scoreboard_tex(frame):
 # ---------------------------------------------------------------- content
 FIGURES = [
     ('fig_timeline.pdf', 'POST-HOC', 'Tightness never exceeded V/U = 1 in the research period, so the tightness moderator could not be learned there.', 'analysis/data/fred (JTSJOL, UNEMPLOY)'),
-    ('fig_ic_signals.pdf', 'POST-HOC', 'Only wage growth has a positive IC in both periods; layoffs and hours carry the opposite sign to the one A0 imposed.', 'analysis/output/tables/d1_signal_ic.csv'),
+    ('fig_ic_signals.pdf', 'POST-HOC', 'Only wage growth has an IC above 1.5 standard errors in both periods; layoffs and hours carry the opposite sign to the one A0 imposed.', 'analysis/output/tables/d1_signal_ic.csv'),
     ('fig_horizon.pdf', 'POST-HOC', 'Hires and quits turn negative at 12 months (t -2.1, -1.7): the investment/cost channel shows up slowly, not at one month.', 'analysis/output/tables/d2_horizon_ic.csv'),
     ('fig_tightness.pdf', 'POST-HOC', 'Split by whether T rose or fell over 12 months, hires and quits predict returns only while the market tightens; the split is balanced in both periods.', 'analysis/output/tables/d3_tightness_ic.csv'),
     ('fig_cumulative.pdf', 'CONFIRMATORY (A0-A4) / POST-HOC (momentum, V2a)', 'Every preregistered strategy lost money in the test; the post-hoc wage-growth book gained until 2024 and gave much of it back.', 'sealed/initial/ASOF_*_ledger.csv; analysis/output/tables/v2_monthly_net.csv'),

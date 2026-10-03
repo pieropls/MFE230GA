@@ -21,7 +21,7 @@ Public labor flows do carry information about industry returns, but as slow cost
 ## 3. What we can claim
 
 - The preregistered strategy fails cleanly and we know why: wrong signs [D03], wrong horizon [D04, R2a], an untestable moderator [D06, D07], agent features active in 3 test months [D12], over-shrinkage and a binding risk cap [C18, D13], concentrated losses [D09]. Costs were not the cause [C15].
-- Wage growth is the only short-horizon labor signal with a positive IC in both periods [D01]; both blinded agent runs rediscovered it [D7b table].
+- Wage growth is the only short-horizon labor signal whose IC exceeds 1.5 standard errors in both periods [D01]; both blinded agent runs rediscovered it [D7b table].
 - Hiring and quits predict returns with a negative sign at 9–24 months and not at 1 month [R2a, R2b]; hires alone carry most of it [R1a, R1b].
 - V2d's return is not carried by one industry [R7a], survives realistic costs [R5a], longer holding periods [R3a], and is not a factor tilt that FF5 + momentum explains (alpha t 1.5–1.9) [R6a], but it loads against profitability [R6b].
 - The 13-group universe caps what any IC can deliver: a 0.1 twelve-month IC with breadth 13 implies an IR near 0.35 at best [R11a]; V2a realised far less than its IC implied because of the hedge, the cap and turnover [R11a].
