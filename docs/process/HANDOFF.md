@@ -4,21 +4,19 @@ Written for the team by Claude Code (Fable 5.1) at the end of `FINAL_PROMPT.md`.
 
 ## Repository
 
-No GitHub URL was supplied, so nothing has been pushed. The local repository is at commit `HEAD` of `main` with the frozen study as a submodule. To publish, from the project root:
+`https://github.com/pieropls/GA` (public). Alex's frozen study is imported **with his commit history** at `c67c486` (`docs/process/frozen_provenance.md`), so a plain clone is enough and no access to his private repository is needed:
 
 ```bash
-git remote add origin <GITHUB_URL>
-git push -u origin main
-# then verify from a clean directory:
-git clone --recurse-submodules <GITHUB_URL> ftw && cd ftw
+git clone https://github.com/pieropls/GA.git ftw && cd ftw
+pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute --inplace analysis/run.ipynb   # ~35 s, must not write analysis/output/STOP.md
 python3 -B results/build_results_book.py                                # 106 claims, 0 unverified
 cd report && python3 -B check_sources.py && latexmk -pdf main.tex
 ```
 
-Whoever clones needs read access to Alex's private repository `Aroesler1/230ga-follow-the-workers` (the submodule, pinned to `c67c486`). A local fresh-clone check passed end to end: `clone_check.md`.
+A fresh clone from GitHub was checked end to end: `clone_check.md`. Never push anything to Alex's repository.
 
-Deliverables: `report/main.pdf` (21 pages, draft marks on), `results/results_book.pdf`, `results/VERDICT.md`, `README.md`.
+Deliverables: `report/main.pdf` (22 pages, draft marks on), `results/results_book.pdf`, `results/VERDICT.md`, `README.md`.
 
 ## What changed in this pass (stages 1 to 5, one commit each)
 
@@ -26,7 +24,8 @@ Deliverables: `report/main.pdf` (21 pages, draft marks on), `results/results_boo
 2. **Code review** (`CODE_REVIEW.md`). One MAJOR finding: the fixed-lag rule assumes the normal BLS calendar, which the Oct–Nov 2025 shutdown broke, so two post-hoc earning months use data released after the decision. Not corrected (it would change v2/v3 numbers after the run logs were frozen); disclosed in `data_vintage.md`, report §2.2 and `OPEN_ISSUES.md` #3. Result-neutral fixes applied: Results Book call counts 199/294, slice-vs-cold-start note, unused helpers removed, `code_hashes.md` and `environment.txt` added.
 3. **Report.** Al's Claude section integrated (Table 8, judge paragraph, Reflection, Appendix A, summary sentence); V2d provenance stated; v2 test columns labelled post hoc; power line extended; six new claims (A07–A10, V13, V14), 106 verified. Summary 230 printed words; main body 10 pages; §3 about 4.4 pages (the Claude table is half a page; the window figure and table moved to Appendix D). 9 `\todo` marks remain (below).
 4. **README** front page, `analysis/README.md`, `results/README.md`.
-5. **Submodule** pinned at `c67c486`; fingerprint re-checked (`eb109be9…`, 3,067 files); fresh-clone check recorded.
+5. **Frozen study** first as a submodule, then (final changes) imported with Alex's history as a subtree at `c67c486`; fingerprint re-checked (`eb109be9…`, 3,067 files) after each step; fresh-clone check recorded.
+6. **Final changes**: new section, paragraph and appendix titles; every figure title rewritten as a finding and checked against its table; one wording corrected ("only wage growth has a positive IC in both periods" became "IC above 1.5 standard errors in both periods", since F2 and F4 are also positive in both with t below 1.1); cleanup; push.
 
 No result changed at any stage: every v2/v3 table and the Q4 book are byte-identical to their first runs (checked by the notebook on every run), the sealed result stands, and the fingerprint is unchanged.
 

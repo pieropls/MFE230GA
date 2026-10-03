@@ -3,7 +3,7 @@
 **MFE 230GA, Active Equity Management, UC Berkeley Haas, Fall 2026. Final project.**
 Romain Almeida · Elouan Bahri · Al Yazid Bensaid · Piero Pelosi · Alex Roesler
 
-Report: [`report/main.pdf`](report/main.pdf) · Results Book: [`results/results_book.pdf`](results/results_book.pdf) · Verdict: [`results/VERDICT.md`](results/VERDICT.md) · Every number with its source: [`results/claims.csv`](results/claims.csv)
+Repository: https://github.com/pieropls/GA · Report: [`report/main.pdf`](report/main.pdf) · Results Book: [`results/results_book.pdf`](results/results_book.pdf) · Verdict: [`results/VERDICT.md`](results/VERDICT.md) · Every number with its source: [`results/claims.csv`](results/claims.csv)
 
 ## The answer in five lines
 
@@ -44,7 +44,7 @@ Net Sharpe ratios after 10 bp industry costs and 2 bp hedge costs, annualised. S
 README.md                    this page
 CLAUDE.md                    rules every agent and teammate follows here (frozen folder read-only, labels, provenance)
 requirements.txt             Python packages (loose pins; recorded versions in the comment)
-230ga-follow-the-workers/    Alex's frozen preregistered study, a git submodule pinned to c67c486. READ-ONLY.
+230ga-follow-the-workers/    Alex's frozen preregistered study, imported with his git history at c67c486. READ-ONLY.
 analysis/                    our iteration: params.py, data.py, stats.py, plots.py, run.ipynb; frozen specs; forward test; outputs
 results/                     claims register (claims.csv), scoreboard, Results Book (PDF + md), VERDICT.md
 report/                      LaTeX report on the house template: main.tex, preamble.tex, refs.bib, figures/, tables/, code/
@@ -76,7 +76,7 @@ flowchart LR
 ## Reproduce everything in three commands
 
 ```bash
-git clone --recurse-submodules <repo-url> follow-the-workers
+git clone https://github.com/pieropls/GA.git follow-the-workers
 cd follow-the-workers
 python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
 # 1. numbers, tables, figures (about 35 s); stops with analysis/output/STOP.md if any gate fails
@@ -98,9 +98,9 @@ Gates, in the order the notebook runs them: **Gate 1** rebuilds the 13 group ret
 | `analysis/forward/spec_amendment_001.md` | `c76cde86` | 09:16:11 | book 09:17:55 | `96b828f` |
 | `analysis/forward/book_2026Q4.csv` (first build) | `85727526` | 09:17:55 | | `9f4a50f` |
 | `analysis/v3_spec.md` (R1–R11, 132 looks) | `312aef1d` | 09:52:27 | 09:53:32 | `8fd75ae` |
-| Frozen study folder (3,067 files) | `eb109be9` | pinned at `c67c486` | checked every run | |
+| Frozen study folder (3,067 files) | `eb109be9` | imported at `c67c486` with Alex's history | checked every run | `docs/process/frozen_provenance.md` |
 
-- The frozen study is never edited, rerun or retuned; its code is imported read-only and the sealed result (A3, Sharpe −0.58) stands.
+- The frozen study is never edited, rerun or retuned; its code is imported read-only and the sealed result (A3, Sharpe −0.58) stands. It lives in this repository with Alex's commit history (a subtree import, not a submodule), so a plain `git clone` is enough.
 - Every result carries exactly one label, CONFIRMATORY, POST-HOC or FORWARD TEST; post-hoc specs were written and hashed before they ran, every pre-declared variant is reported, and every look is counted in the deflated Sharpe ratio.
 - `analysis/output/v2_run_log.md` and `v3_run_log.md` hold the hashes of the first run; later runs must reproduce them or the notebook stops.
 - `results/claims.csv` is the only source the report may quote; each claim has a machine-readable locator and is re-verified on every build (100 of 100 verified). `report/check_sources.py` fails the build if a `% src:` comment swallows text.
@@ -114,7 +114,7 @@ Claude did every AI job, which this term's course allows; the switch from the Ch
 
 - **Ken French Data Library**: 49 value-weighted industry portfolios, five factors and momentum (CRSP build 202608). Free for academic and non-commercial use with attribution. `analysis/data/french/`.
 - **BLS JOLTS and CES via FRED**: industry openings, hires, quits and layoffs rates (not seasonally adjusted), average weekly hours and hourly earnings; `JTSJOL` and `UNEMPLOY` for tightness. BLS data are U.S. government works in the public domain; FRED and ALFRED redistribute them under the St. Louis Fed terms of use. Current values in `analysis/data/fred/`, the 29 September 2026 vintage in `analysis/data/alfred_2026-09-29/`.
-- The frozen study's own ALFRED vintage files sit inside the submodule and are not duplicated here.
+- The frozen study's own ALFRED vintage files sit inside `230ga-follow-the-workers/` and are not duplicated here.
 
 ## Team and contributions
 
