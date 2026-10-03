@@ -1,4 +1,4 @@
-# Alex's frozen study is a git submodule pinned to c67c486 (read-only here)
+# Alex's frozen study (230ga-follow-the-workers/) is imported with his history at c67c486 and is read-only
 # secrets
 .env
 analysis/.env
