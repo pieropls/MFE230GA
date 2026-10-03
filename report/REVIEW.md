@@ -8,7 +8,10 @@ Reviewer: a fresh Claude subagent that had not seen the project, given `FinalPro
 |---|---|---|---|---|
 | Round 1 (commit `ad1dec3`) | 32 | 30 | 17 | 79 |
 | Round 2 (commit `dd9a851`) | 33 | 31 | 17 | 81 |
-| Reviewer's estimate once the human items are written | | | | 87–89 |
+| Round 3, fresh reviewer, after the presentation iteration (commit `64a3ba8`) | 32 | 30 | 18 | 80 |
+| Reviewers' estimate once the human items are written | | | | 87–89 |
+
+Round 3 (`report/REVIEW_round3.md`) graded the restructured report (H1/H2/H3 framing, answer box, figures in the body). Its deductions: the thesis frame reads as retrofitted because H2 was formulated after the test was opened (now stated explicitly in 2.1); the critique cells, Reflection and executive-summary sentence are still TODO; Appendix A gave paths rather than transcripts (verbatim excerpts added); the headline box called H2 "supported" (changed to "consistent with the data, not established"); Section 3 runs about 4.5 pages against the 4-page budget after the added figures and table, while the main body stays at 10 pages.
 
 The reviewer's reading of the deductions: the thesis as traded (demand news at one month) is not the thesis the report ends up believing (cost news at a year), and the 13-group universe is introduced as a limit rather than a design constraint; under Execution, the rubric's explicit "critically evaluate the AI" item is still TODO in six places (critique cells and the Reflection).
 
@@ -26,6 +29,8 @@ Round 1: 32 numbers; 30 matched their source file at the printed precision; 2 di
 - Jargon defined at first use: Newey–West/HAC, circular-shift placebo, Holm correction, DSR and "looks", blocked cross-validation, tranche, regime gate, ALFRED, block bootstrap (12-month blocks, 5,000 draws), "effort"; Ledoit–Wolf (2004) cited.
 - Appendix fixes: `.md` → `.json`, "lost 1.41" → Sharpe, unit of "+0.27", book holdings and the power line moved to Appendix G.
 - Layout: Section 3 starts on a fresh page; Tables 2 and 5 float; the P1 prompt box is unbreakable.
+- Round 3, editor items applied: H2 no longer called "supported" (headline box, summary order, Figure 12 caption, the "six of seven" opener); BR, TC, V2b and V2c defined where first used; the date on which H2's horizon range was written stated in 2.1; verbatim excerpts of P1, P2, P3 and P4 added to Appendix A; aphoristic sentences and colon-led openers removed; Table 5 note corrected (A3's full-sample figure starts in June 2007); "?." heading fixed; `% src` comments added for the design counts, the 112 looks and the months per cell; "25 findings" dropped (no register claim).
+- Round 3, not applied (needs a decision): moving Figure 6 or Table 7 to the appendix to bring Section 3 under 4 pages; the brief for this iteration asked for both figures and the table in the body, so Section 3 is left at about 4.5 pages with the main body at 10.
 - Regression caught in round 2 and fixed: two `% src:` comments placed mid-line had swallowed a sentence (the fundamental-law comparison) and one TODO. `report/check_sources.py` now fails the build step if a `% src:` comment is followed by LaTeX on the same line.
 
 ## Fixes left (need a human)
