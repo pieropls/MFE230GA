@@ -1,6 +1,6 @@
 # v2 results (POST-HOC)
 
-First run at **2026-10-03T09:01:55+00:00** (this file regenerated at 2026-10-03T22:19:02+00:00; outputs verified identical to the first run, see v2_run_log.md). Specification `analysis/v2_spec.md` was frozen at **2026-10-03T09:00:13+00:00** (sha256 `ca6582347904489bdb6fac1496f895fd18c91eba47ca2bc8566e35cdf44a5832`, commit d76fbb3) before this run. All four variants are reported. Labor data are revised FRED values with fixed lags (`data_vintage.md`); returns and portfolio construction are the frozen study's (Gate 1).
+First run at **2026-10-03T09:01:55+00:00** (this file regenerated at 2026-10-03T22:21:18+00:00; outputs verified identical to the first run, see v2_run_log.md). Specification `analysis/v2_spec.md` was frozen at **2026-10-03T09:00:13+00:00** (sha256 `ca6582347904489bdb6fac1496f895fd18c91eba47ca2bc8566e35cdf44a5832`, commit d76fbb3) before this run. All four variants are reported. Labor data are revised FRED values with fixed lags (`data_vintage.md`); returns and portfolio construction are the frozen study's (Gate 1).
 
 The confirmatory verdict is unchanged: primary A3, test Sharpe -0.58, **Do not implement**.
 

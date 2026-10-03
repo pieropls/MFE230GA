@@ -211,7 +211,7 @@ def industry_pnl(pnl):
     ax.set_yticks(range(len(order)), order)
     ax.invert_yaxis()
     ax.set_xlabel('Cumulative contribution (% points)')
-    ax.set_title('Losses concentrated in health care, construction and finance')
+    ax.set_title('Losses: health care, construction, finance')
     ax.grid(axis='y', visible=False)
     return save(fig, 'fig_industry_pnl.pdf')
 
@@ -383,7 +383,7 @@ def v2d_holding(frame):
     short = {'research': 'research', 'test': 'test', 'full': 'full', 'post-2010': 'post-2010', 'last 18m': 'last 18m'}
     ax.set_xticks(range(len(windows)), [short.get(w, w) for w in windows], fontsize=7, rotation=20)
     ax.set_ylabel('Net Sharpe (10 bp)')
-    ax.set_title('V2d is positive at every holding period from 6 to 18 months')
+    ax.set_title('Positive at every holding period, 6 to 18 months')
     ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.22), ncol=2, fontsize=6.8, title='Holding period', title_fontsize=6.8)
     ax.grid(axis='x', visible=False)
     return save(fig, 'fig_v2d_holding.pdf')
@@ -401,7 +401,7 @@ def v2d_dropone(frame, baseline):
     ax.axvline(0, color=DGREY, lw=0.8)
     ax.set_yticks(y, frame.index, fontsize=7.5)
     ax.set_xlabel('Net Sharpe, industry removed')
-    ax.set_title('No single industry drives the H2 book')
+    ax.set_title('No single industry drives V2d')
     ax.set_xlim(0, max(frame.full_sharpe.max(), frame.test_sharpe.max()) * 1.35)
     ax.legend(loc='lower right', fontsize=7, title='dashed: all 13', title_fontsize=6.5)
     ax.grid(axis='y', visible=False)
