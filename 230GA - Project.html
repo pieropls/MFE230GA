@@ -1,0 +1,1346 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>230GA - Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=JetBrains+Mono:wght@400;500;600;700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>
+:root{
+  --bg:#F3F4F6; --band:#E7EAEE; --surface:#FFFFFF; --surface-2:#F8F9FA;
+  --ink:#131B26; --muted:#546071; --faint:#858F9E; --rule:#D2D7DE;
+  --navy:#1F4F8B; --navy-soft:#DDE7F4;
+  --dem:#0F7667; --dem-soft:#D5EDE8;
+  --cost:#BF4A16; --cost-ink:#9E3B0E; --cost-soft:#F8E2D5;
+  --llm:#6B4796; --llm-soft:#EEE7F6;
+  --good:#2E7D3A; --good-soft:#E1F0E3; --bad:#B3362D; --bad-soft:#F7E0DD;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --sans:"Public Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E131A; --band:#151C25; --surface:#1A222D; --surface-2:#161D27;
+    --ink:#E4E9F0; --muted:#A3AEBD; --faint:#768295; --rule:#2C3644;
+    --navy:#90B5E7; --navy-soft:#1B2A3F;
+    --dem:#52C4AF; --dem-soft:#13302B;
+    --cost:#F08A50; --cost-ink:#F5A274; --cost-soft:#3A2217;
+    --llm:#BB9EE1; --llm-soft:#2A2238;
+    --good:#76C788; --good-soft:#163020; --bad:#EF8A80; --bad-soft:#3A1D1A;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E131A; --band:#151C25; --surface:#1A222D; --surface-2:#161D27;
+  --ink:#E4E9F0; --muted:#A3AEBD; --faint:#768295; --rule:#2C3644;
+  --navy:#90B5E7; --navy-soft:#1B2A3F;
+  --dem:#52C4AF; --dem-soft:#13302B;
+  --cost:#F08A50; --cost-ink:#F5A274; --cost-soft:#3A2217;
+  --llm:#BB9EE1; --llm-soft:#2A2238;
+  --good:#76C788; --good-soft:#163020; --bad:#EF8A80; --bad-soft:#3A1D1A;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.6 var(--sans);padding-inline:20px;padding-block:0 64px;-webkit-font-smoothing:antialiased}
+a{color:var(--navy);text-underline-offset:2px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--navy);outline-offset:2px;border-radius:3px}
+.wrap{max-width:1180px;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
+p{margin:0}
+.eyebrow{font:600 11.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+code,.mono{font-family:var(--mono);font-size:.88em}
+
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);margin-inline:-20px;padding-inline:20px}
+nav.top .wrap{display:flex;gap:16px;align-items:center;overflow-x:auto;scrollbar-width:none;padding-block:11px}
+nav.top .wrap::-webkit-scrollbar{display:none}
+nav.top b{font:800 14px/1 var(--display);font-stretch:112%;white-space:nowrap;margin-right:6px}
+nav.top a{font:500 12.5px/1 var(--mono);color:var(--muted);text-decoration:none;white-space:nowrap}
+nav.top a:hover{color:var(--ink)}
+nav.top a.go{color:var(--llm);font-weight:700}
+
+header.hero{padding-block:44px 6px;display:grid;gap:12px}
+.hero h1{font-size:clamp(40px,6vw,72px);font-weight:900;font-stretch:118%;letter-spacing:-.02em}
+.hero .sub{font:700 clamp(19px,2.4vw,28px)/1.2 var(--display);color:var(--navy)}
+.team{font:500 13px/1.5 var(--mono);color:var(--muted)}
+.team b{color:var(--ink);font-weight:600}
+
+section{padding-block:40px 8px;border-top:1px solid var(--rule);margin-top:34px}
+section > .head{display:grid;gap:10px;margin-bottom:20px}
+section h2{font-size:clamp(26px,3.2vw,36px);font-weight:800;font-stretch:108%;letter-spacing:-.01em}
+section .intro{max-width:78ch;color:var(--muted);font-size:15.5px}
+section .intro b{color:var(--ink);font-weight:600}
+h3{font-size:17px;font-weight:700}
+.step{font:800 13px/1 var(--mono);color:var(--navy);letter-spacing:.06em}
+
+.recap{display:grid;grid-template-columns:repeat(3,1fr);border:1.5px solid var(--ink);border-radius:12px;background:var(--surface);overflow:hidden;margin-top:18px}
+.recap > div{padding:18px 20px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);display:grid;gap:7px;align-content:start}
+.recap > div:nth-child(3n){border-right:0}
+.recap > div:nth-last-child(-n+3){border-bottom:0}
+.recap .k{font:700 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
+.recap .v{font:700 17px/1.3 var(--display)}
+.recap p{font-size:14px;color:var(--muted);line-height:1.5}
+.recap p b{color:var(--ink);font-weight:600}
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.qs div{background:var(--navy-soft);border:1px solid var(--navy);border-radius:10px;padding:12px 14px;font-size:14px}
+.qs b{font:800 13px var(--mono);color:var(--navy);margin-right:6px}
+.qs .qnote{display:block;margin-top:6px;font-size:12.5px;color:var(--muted);line-height:1.45}
+
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tbl{border:1px solid var(--rule);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:820px}
+th,td{text-align:left;vertical-align:top;padding:8px 11px;border-bottom:1px solid var(--rule)}
+thead th{font:600 10.5px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--surface-2)}
+tbody tr:last-child td{border-bottom:0}
+td.b{font-weight:600}
+td.m{font-family:var(--mono);font-size:12.2px}
+td.mut{color:var(--muted)}
+.ok{color:var(--good);font:700 11.5px var(--mono);white-space:nowrap}
+.cf{color:var(--cost-ink);font:700 11.5px var(--mono);white-space:nowrap}
+.ap{color:var(--navy);font:700 11.5px var(--mono);white-space:nowrap}
+.tier{display:inline-block;font:600 10.5px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:5px 7px;border-radius:4px;white-space:nowrap;border:1px dashed var(--faint);color:var(--muted)}
+.sub-h{margin:26px 0 10px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.sub-h p{font-size:13.5px;color:var(--muted)}
+.decide{margin-top:18px;border:1.5px solid var(--ink);border-radius:10px;background:var(--surface);padding:14px 18px;display:grid;gap:8px}
+.decide ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14px;color:var(--muted)}
+.decide li b{color:var(--ink);font-weight:600}
+
+figure{margin:0}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px 16px 12px}
+.panel svg{width:100%;height:auto;display:block}
+figcaption{font-size:13px;color:var(--muted);margin-top:10px;line-height:1.5}
+figcaption b{color:var(--ink);font-weight:600}
+.figs{display:grid;grid-template-columns:1fr;gap:16px;align-items:start}
+.figs .narrow{max-width:680px}
+.pipe{background:var(--surface-2);border:1px solid var(--rule);border-radius:12px;padding:10px}
+.pipe svg{display:block;width:100%;min-width:1040px;height:auto}
+
+.dg{color:var(--muted);font-family:var(--sans)}
+.dg text{fill:var(--ink)}
+.dg .band{fill:var(--band)}
+.dg .band-s{fill:var(--navy-soft);stroke:var(--navy);stroke-width:1;stroke-dasharray:6 4}
+.dg .box{fill:var(--surface);stroke:var(--rule);stroke-width:1}
+.dg .box-k{fill:var(--surface);stroke:var(--ink);stroke-width:1.5}
+.dg .box-l{fill:var(--surface);stroke:var(--llm);stroke-width:1.2}
+.dg .box-lf{fill:var(--llm-soft);stroke:var(--llm);stroke-width:1.2}
+.dg .box-p{fill:var(--surface);stroke:var(--faint);stroke-width:1.2;stroke-dasharray:4 3}
+.dg .box-g{fill:var(--good-soft);stroke:var(--good);stroke-width:1.3}
+.dg .box-b{fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.3}
+.dg .w{stroke:var(--faint);stroke-width:1.3;fill:none}
+.dg .wk{stroke:var(--muted);stroke-width:1.6;fill:none}
+.dg .wl{stroke:var(--llm);stroke-width:1.4;fill:none;stroke-dasharray:3 3}
+.dg .seal{stroke:var(--ink);stroke-width:2;stroke-dasharray:9 5;fill:none}
+.dg .bgc{fill:var(--surface-2)}
+.dg .ah{fill:var(--muted)} .dg .ahl{fill:var(--llm)}
+.dg .t{font:700 12.5px var(--display)}
+.dg .tl{font:700 12.5px var(--display);fill:var(--llm)}
+.dg .l{font-size:10.8px;fill:var(--muted)}
+.dg .li{font-size:10.8px;fill:var(--ink)}
+.dg .tag{font:500 9.5px var(--mono);fill:var(--faint)}
+.dg .tagl{font:500 9.5px var(--mono);fill:var(--llm)}
+.dg .sw{font:700 10.5px var(--mono);letter-spacing:.1em;fill:var(--ink)}
+.dg .day{font:600 10px var(--mono);fill:var(--navy)}
+.dg .fg{fill:var(--good)} .dg .fb{fill:var(--bad)}
+.dg .bar-d{fill:var(--faint)} .dg .bar-f{fill:var(--navy)}
+.dg .blk-d{fill:var(--band);stroke:var(--faint)} .dg .blk-f{fill:var(--navy-soft);stroke:var(--navy)}
+.dg .ev{fill:var(--cost-soft);stroke:var(--cost)}
+.dg .axis{stroke:var(--muted);stroke-width:1}
+.dg .tick{stroke:var(--muted);stroke-width:1}
+
+.ctrl{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 18px;margin-top:14px;padding:0;list-style:none;counter-reset:c}
+.ctrl li{display:grid;grid-template-columns:30px 1fr;gap:8px;background:var(--surface);border:1px solid var(--rule);border-radius:9px;padding:11px 13px;font-size:14px;color:var(--muted);counter-increment:c}
+.ctrl li::before{content:counter(c);font:800 18px/1 var(--display);color:var(--navy)}
+.ctrl li b{color:var(--ink);font-weight:600}
+
+.stages{display:grid;gap:12px}
+.stg{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:16px 18px;display:grid;grid-template-columns:210px 1fr;gap:10px 22px}
+.stg.seal{border:1.5px solid var(--ink)}
+.stg.ai{border-left:3px solid var(--llm)}
+.stg .meta{display:grid;gap:6px;align-content:start;grid-row:span 3}
+.stg .meta h3{font-size:16.5px}
+.stg .meta .when{font:600 11px/1.3 var(--mono);color:var(--navy)}
+.stg .meta .out{font:500 11.5px/1.45 var(--mono);color:var(--faint)}
+.stg ul{margin:0;padding-left:18px;display:grid;gap:5px;font-size:14px;color:var(--muted)}
+.stg li b{color:var(--ink);font-weight:600}
+.stg code{color:var(--ink)}
+.fx{font:500 12.5px/1.7 var(--mono);background:var(--surface-2);border:1px solid var(--rule);border-radius:8px;padding:10px 12px;color:var(--ink);white-space:pre-wrap;overflow-x:auto}
+
+.plan{display:grid;grid-template-columns:170px repeat(5,1fr);border:1px solid var(--rule);border-radius:10px;background:var(--surface);min-width:900px;overflow:hidden}
+.plan > div{padding:10px 12px;border-bottom:1px solid var(--rule);border-left:1px solid var(--rule);font-size:13px;line-height:1.45}
+.plan > div:nth-child(6n+1){border-left:0}
+.plan .h{font:700 12px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--surface-2);color:var(--muted)}
+.plan .h b{display:block;font:900 20px/1.1 var(--display);font-stretch:112%;color:var(--ink);letter-spacing:0;text-transform:none}
+.plan .r{font-weight:700;font-family:var(--display);font-size:14px}
+.plan .p{color:var(--llm)}
+.plan .cp{background:var(--navy-soft);font-weight:600;border-bottom:0}
+.plan .cp.first{font:700 11.5px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--navy)}
+
+.rub{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rub > div{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px;display:grid;gap:10px;align-content:start}
+.rub .w{font:900 34px/1 var(--display);font-stretch:112%}
+.rub .w small{font:600 12px var(--mono);letter-spacing:.08em;color:var(--muted);margin-left:6px;text-transform:uppercase}
+.rub ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14px;color:var(--muted)}
+.rub li b{color:var(--ink);font-weight:600}
+
+.src{columns:2;column-gap:32px;font-size:13.5px;padding-left:18px;margin:0}
+.src li{break-inside:avoid;margin-bottom:6px;color:var(--muted)}
+
+.dl{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;background:var(--surface);border:2px solid var(--llm);border-radius:12px;padding:22px}
+.dl-file{width:74px;height:92px;border-radius:6px 18px 6px 6px;background:var(--llm-soft);border:1.5px solid var(--llm);display:flex;align-items:flex-end;justify-content:center;padding-bottom:12px}
+.dl-file span{font:800 18px/1 var(--mono);color:var(--llm)}
+.dl-body{display:grid;gap:8px;min-width:0}
+.dl-name{font:700 clamp(15px,2vw,19px)/1.3 var(--mono);word-break:break-all}
+.dl-meta{font-size:13.5px;color:var(--muted)}
+.dl-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:6px}
+.btn-primary{font:700 14px/1 var(--sans);background:var(--llm);color:var(--surface);border:1.5px solid var(--llm);border-radius:8px;padding:11px 18px;cursor:pointer}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-ghost{font:600 14px/1 var(--sans);background:transparent;color:var(--ink);border:1.5px solid var(--rule);border-radius:8px;padding:11px 16px;cursor:pointer}
+.btn-ghost:hover{border-color:var(--llm);color:var(--llm)}
+.btn-primary:focus-visible,.btn-ghost:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.dl-status{font:500 12.5px var(--mono);color:var(--muted)}
+.dl-toc{margin-top:8px;font-size:13.5px;color:var(--muted)}
+.dl-toc summary{cursor:pointer;font-weight:600;color:var(--ink)}
+.dl-toc ol{margin:8px 0 0;padding-left:20px;columns:2;column-gap:28px}
+.dl-toc li{break-inside:avoid;margin-bottom:3px}
+@media (max-width:560px){.dl{grid-template-columns:1fr}.dl-file{display:none}.dl-toc ol{columns:1}}
+footer{margin-top:28px;font:500 12px/1.5 var(--mono);color:var(--faint)}
+
+@media (max-width:980px){
+  .recap{grid-template-columns:1fr 1fr}
+  .recap > div:nth-child(3n){border-right:1px solid var(--rule)}
+  .recap > div:nth-child(2n){border-right:0}
+  .recap > div:nth-last-child(-n+3){border-bottom:1px solid var(--rule)}
+  .recap > div:nth-last-child(-n+2){border-bottom:0}
+  .figs{grid-template-columns:1fr}
+}
+@media (max-width:820px){
+  .qs,.ctrl,.rub{grid-template-columns:1fr}
+  .stg{grid-template-columns:1fr}
+  .stg .meta{grid-row:auto}
+  .src{columns:1}
+}
+@media (max-width:560px){
+  body{padding-inline:16px}
+  nav.top{margin-inline:-16px;padding-inline:16px}
+  .recap{grid-template-columns:1fr}
+  .recap > div{border-right:0!important;border-bottom:1px solid var(--rule)!important}
+  .recap > div:last-child{border-bottom:0!important}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<nav class="top" aria-label="Sections">
+  <div class="wrap">
+    <b>230GA – Project</b>
+    <a href="#recap">Recap</a>
+    <a href="#changes">Review changes</a>
+    <a href="#horizon">Horizon &amp; overfitting</a>
+    <a href="#data">1 · Data</a>
+    <a href="#pipeline">2 · Pipeline</a>
+    <a href="#graph">3 · Graph</a>
+    <a href="#plan">5-day plan</a>
+    <a href="#rubric">Rubric</a>
+    <a href="#sources">Sources</a>
+    <a href="#prompt" class="go">4 · Build prompt (.md)</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header class="hero" id="recap">
+  <p class="eyebrow">Final project blueprint · v4, after second review · 24 Sep 2026</p>
+  <h1>230GA – Project</h1>
+  <p class="sub">Follow the Workers: labor-conditioned industry rotation, tested with blinded research agents</p>
+  <p class="team"><b>Team</b> Romain Almeida · Elouan Bahri · Piero Pelosi · Alex Roesler · Al Yazid Bensaid</p>
+
+  <div class="recap">
+    <div><span class="k">We predict</span><span class="v">Which of 13 US industry groups will beat the others next month</span><p>A cross-sectional ranking of <b>1-month relative returns</b>, not the direction of the market.</p></div>
+    <div><span class="k">With</span><span class="v">Monthly BLS labor data per industry, exactly as published</span><p>JOLTS openings, hires, quits, layoffs; CES weekly hours and hourly earnings; read <b>as known on each decision date</b> (ALFRED vintages). National tightness <b>T = log(openings ÷ unemployed)</b> changes how the signals are read.</p></div>
+    <div><span class="k">For how long</span><span class="v">Predict 1 month, hold 3 months</span><p>Signals update monthly. Each position is held 3 months (three overlapping tranches). <b>6 months is reported, never used to decide</b>: too few independent observations.</p></div>
+    <div><span class="k">How we trade</span><span class="v">Long the top 3, short the bottom 3</span><p>Dollar-neutral, market-beta hedged, 10% volatility target, gross cap 2×, cost charged on every trade (10 bp base).</p></div>
+    <div><span class="k">How we test</span><span class="v">Research on 2004–2014, one sealed run on 2014–2026</span><p>All choices frozen with a hash, then the sealed period (as-known data, about Nov 2014 → Aug 2026) runs <b>once</b>. A five-part gate decides. <b>“Do not implement” is the expected outcome</b>, and the report is built so it is still informative.</p></div>
+    <div><span class="k">The AI experiment</span><span class="v">Blinded ChatGPT agents propose features</span><p>3 “islands” that share short findings vs 3 independent agents, 18 candidates per run, <b>3 seeds per arm; only seed 1 can feed the strategy</b>. Company-level postings (LinkUp) and layoff notices (WARN) join only if the day-1 audit passes.</p></div>
+  </div>
+  <div class="qs">
+    <div><b>Q1</b>Does public labor information predict industry returns?</div>
+    <div><b>Q2</b>Does company-level recruiting and layoff data add to it?</div>
+    <div><b>Q3</b>Do agents that share findings search better than agents that do not?<span class="qnote">Answered on the research period, 18 candidates per arm and seed. The sealed A4 vs A3 comparison is one draw and is reported descriptively, not as a test.</span></div>
+  </div>
+</header>
+
+<section id="changes">
+  <div class="head">
+    <p class="eyebrow">What the review changed</p>
+    <h2>Review points, implemented</h2>
+    <p class="intro">Every point from the external review is in the plan below. Where the review offered options, the choice made for a 5-day build is stated. Two changes come from my own source checks (marked <b>new</b>).</p>
+  </div>
+  <div class="tbl scroll">
+  <table>
+    <thead><tr><th style="width:26%">Review point</th><th>What the plan now does</th><th style="width:15%">Where</th></tr></thead>
+    <tbody>
+      <tr><td class="b">Real-time history is shorter than the data history</td><td>Checked: JOLTS was first published in 2002; ALFRED vintages start 11 Aug 2010 for construction openings and 7 Oct 2014 for durable goods. Primary results use <b>as-known vintages only</b>, from S* (the first date all admitted series have vintages, set by the audit). Earlier years are the research period on the S* vintage with fixed publication lags. Today's revised data is a hindsight diagnostic only.</td><td class="m">Stage 1, 2</td></tr>
+      <tr><td class="b">V/U = 1 hard-coded as the switch</td><td>Tightness enters as a <b>continuous interaction</b> (feature × T). The V/U &gt; 1 split is a prespecified descriptive comparison. V/U stays below 1 until 2018, so the research period could not calibrate a threshold anyway.</td><td class="m">Stage 3, 8</td></tr>
+      <tr><td class="b">Forcing 49 portfolios into 15 groups</td><td><b>13 defensible groups</b>; 7 ambiguous portfolios excluded (Agric, Other, Boxes, Books, Softw, Fun, PerSv). One universe for every comparison. Groups sharing one macro series are flagged as non-independent.</td><td class="m">Data H</td></tr>
+      <tr><td class="b">“Pay squeeze”</td><td>Renamed <b>wage–price pressure proxy (F6)</b>. It enters models only if ≥ 9 of 13 groups have an exact NAICS-scope output-price match; otherwise it is a diagnostic.</td><td class="m">Stage 1, 3</td></tr>
+      <tr><td class="b">Named vs blind ChatGPT stock picks</td><td>Replaced by <b>blinded research agents</b>: 3 islands with migration vs 3 independent agents, 6 submissions each, same model, evaluator and selection rule.</td><td class="m">Stage 4, 5</td></tr>
+      <tr><td class="b">“No fitting, nothing to overfit”</td><td>Removed. Explicit overfitting budget: pre-registration hash, bounded grammar, every trial logged, reality check and deflated Sharpe over the full candidate library.</td><td class="m">Overfitting</td></tr>
+      <tr><td class="b">Alpha t ≥ 2 → implement</td><td>Five-part gate: timing, prediction, incremental alpha, robustness, implementability, plus a stated power limit.</td><td class="m">Stage 9</td></tr>
+      <tr><td class="b">1,000 independent shuffles</td><td><b>Circular time-shift placebo</b> (keeps serial and cross-sectional structure) and paired stationary-bootstrap comparisons with Holm correction.</td><td class="m">Stage 8</td></tr>
+      <tr><td class="b">Sealed evaluation, run once</td><td>Test-period returns load only inside the final-evaluation function, which checks the freeze hash. Reruns need a logged reason; both results are reported.</td><td class="m">Stage 7, 8</td></tr>
+      <tr><td class="b">One-month primary target</td><td>Adopted. 3-month holding via tranches; 3- and 6-month ICs with overlap-robust errors, descriptive only.</td><td class="m">Horizon</td></tr>
+      <tr><td class="b">Cost convention</td><td><code>cost = c · Σ|w_target − w_pretrade|</code>, no double counting; hedge, borrow and financing costs reported separately.</td><td class="m">Stage 6</td></tr>
+      <tr><td class="b">Company-level recruiting and layoffs</td><td>LinkUp (Dewey) and Revelio WARN (WRDS), <b>gated on day 1</b>. Company-level products (layoff × recruiting contraction) are computed before aggregating to groups.</td><td class="m">Stage 1, 3</td></tr>
+      <tr><td class="b">Stock baskets from CRSP</td><td>Kept as an extension. For 5 days the plan takes the review's fallback: native French portfolios, defensible subset only.</td><td class="m">Data F</td></tr>
+      <tr><td class="b">new · Seasonally adjusted JOLTS is incomplete on FRED</td><td>Verified: FRED carries SA JOLTS rates for only some industries (none for wholesale, information, finance, real estate, mining or transport-utilities). All groups use <b>not-seasonally-adjusted</b> series with <b>year-over-year</b> changes, which removes seasonality and seasonal-factor revisions.</td><td class="m">Stage 1, 3</td></tr>
+      <tr><td class="b">new · Research data must not carry later revisions</td><td>The research period uses the vintage as of S*, so no revision published after S* reaches it.</td><td class="m">Stage 2</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="sub-h"><h3>Second review · nine edits applied before the freeze</h3><p>Seven clarify or add pre-registration text; two change substance (edits 2 and 3)</p></div>
+  <div class="tbl scroll">
+  <table>
+    <thead><tr><th style="width:4%">#</th><th style="width:24%">Edit</th><th>What the plan now does</th><th style="width:14%">Where</th></tr></thead>
+    <tbody>
+      <tr><td class="m">1</td><td class="b">Q3 wording</td><td>Q3 asks whether sharing agents <b>search better</b>. It is answered on the research period; the sealed A4 vs A3 comparison is one draw with one base algorithm, reported descriptively.</td><td class="m">Recap, Stage 8</td></tr>
+      <tr><td class="m">2</td><td class="b">Half-sample IC removed from agent feedback</td><td>Stage 7 selects on same-sign IC in both halves, so agents no longer see it and cannot target the filter. IC in low vs high T stays (not a selection criterion); the report notes agents saw the thesis variable.</td><td class="m">Stage 6</td></tr>
+      <tr><td class="m">3</td><td class="b">Replication seeds</td><td><b>3 seeds per arm.</b> Seed 1 is the only strategy-producing run; seeds 2–3 measure search behaviour (best-so-far IC by submission, median IC, invalid rate, diversity) and never enter selection. They give error bars on the search, not power on the sealed window.</td><td class="m">Stage 5</td></tr>
+      <tr><td class="m">4</td><td class="b">Migration tracing</td><td>Each migration report is traced forward: do its ideas reappear in the receiving islands' later submissions, and do those score better than that island's own earlier best?</td><td class="m">Stage 5, 9</td></tr>
+      <tr><td class="m">5</td><td class="b">Scope of the trial count</td><td>Deflated Sharpe and reality check use the 36 seed-1 candidates. Process seeds are excluded, so the library is not misread as 108.</td><td class="m">Stage 7</td></tr>
+      <tr><td class="m">6</td><td class="b">Comparison family</td><td>Holm across three: A1 vs A0, A2 vs A1, A3 vs base. A4 vs A3 is reported with its interval, outside the family.</td><td class="m">Stage 8</td></tr>
+      <tr><td class="m">7</td><td class="b">Tightness is extrapolated</td><td>V/U stays below 1 (T below 0) in research, so any feature × T effect is estimated outside the observed range. <b>Q1 is judged on main effects</b> (A1); A1-T and the V/U split are descriptive. The boundary stays at S*: 142 sealed months need Sharpe ≈ 0.58 for t ≈ 2, 92 months ≈ 0.72, 68 months ≈ 0.84.</td><td class="m">Stage 3, 6, 8</td></tr>
+      <tr><td class="m">8</td><td class="b">Overfitting control 5</td><td>Adds: replication seeds are for process measurement only and are excluded from the candidate library by pre-registration.</td><td class="m">Controls</td></tr>
+      <tr><td class="m">9</td><td class="b">Expected outcome</td><td>“Do not implement” is the pre-registered expected outcome. The contribution is carried by the research-vs-sealed gap, the count of candidates that pass research and fail the test, and the architecture comparison.</td><td class="m">Stage 9</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="decide">
+    <p class="eyebrow">Team decisions, made before day 1</p>
+    <ul>
+      <li><b>Company data drop without discussion if day 1 runs over.</b> The gate is time-boxed at 3 hours; Q2 is secondary. The evaluator and as-of panels are what everything else waits on.</li>
+      <li><b>Any slack goes to cross-sectional width, not A2.</b> With shared and approximate CES series, effective width is about 8–9 groups, not 13. NAICS-based CRSP baskets would raise the attainable Sharpe for a given IC more than any agent refinement. They are the named follow-up, not part of this run.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="horizon">
+  <div class="head">
+    <p class="eyebrow">Why 1-month prediction with 3-month holding</p>
+    <h2>Horizon and overfitting</h2>
+    <p class="intro">You were right to worry. With S* ≈ October 2014, the sealed test has <b>142 monthly returns</b>. At a 6-month horizon that is only <b>23 non-overlapping observations</b>, and all 13 groups move with the same few labor cycles. So the model is trained and tested on 1-month returns, positions are held 3 months to match your trading horizon, and 6 months is described but never decides anything.</p>
+  </div>
+
+  <div class="figs">
+    <figure class="panel narrow">
+      <svg class="dg" viewBox="0 0 560 206" role="img" aria-label="Independent observations by horizon. Research period: 126 at 1 month, 42 at 3 months, 21 at 6 months. Sealed test: 142, 47 and 23.">
+        <rect class="bar-d" x="130" y="8" width="12" height="10" rx="2"/><text x="148" y="17" class="tag">research 2004–2014</text>
+        <rect class="bar-f" x="280" y="8" width="12" height="10" rx="2"/><text x="298" y="17" class="tag">sealed test 2014–2026</text>
+        <text x="120" y="56" text-anchor="end" class="li" style="font-weight:600">1-month target</text>
+        <rect class="bar-d" x="130" y="36" width="327.6" height="15" rx="2"/><text x="463" y="48" class="tag">126</text>
+        <rect class="bar-f" x="130" y="54" width="369.2" height="15" rx="2"/><text x="505" y="66" class="tag" style="fill:var(--navy);font-weight:700">142</text>
+        <text x="120" y="112" text-anchor="end" class="li" style="font-weight:600">3-month hold</text>
+        <rect class="bar-d" x="130" y="92" width="109.2" height="15" rx="2"/><text x="245" y="104" class="tag">42</text>
+        <rect class="bar-f" x="130" y="110" width="122.2" height="15" rx="2"/><text x="258" y="122" class="tag" style="fill:var(--navy);font-weight:700">47</text>
+        <text x="120" y="168" text-anchor="end" class="li" style="font-weight:600">6-month hold</text>
+        <rect class="bar-d" x="130" y="148" width="54.6" height="15" rx="2"/><text x="191" y="160" class="tag">21</text>
+        <rect class="bar-f" x="130" y="166" width="59.8" height="15" rx="2"/><text x="196" y="178" class="tag" style="fill:var(--navy);font-weight:700">23</text>
+        <line class="axis" x1="130" y1="190" x2="500" y2="190"/>
+        <text x="130" y="203" class="tag">0</text><text x="499" y="203" text-anchor="end" class="tag">non-overlapping periods</text>
+      </svg>
+      <figcaption><b>Independent observations per horizon</b>, if S* = Oct 2014. With 11.8 sealed years, an annualized Sharpe of about <b>0.58</b> is needed for t ≈ 2 (0.72 with 92 months, 0.84 with 68), which is why the boundary is not moved earlier. A null result will not rule out a smaller effect.</figcaption>
+    </figure>
+
+    <figure class="panel">
+      <svg class="dg" viewBox="0 0 1000 170" role="img" aria-label="Sample split: research period May 2004 to October 2014 on the S* vintage with fixed lags; sealed test November 2014 to August 2026 on as-known vintages; last 18 months March 2025 to August 2026. The financial crisis falls in research, COVID in the test. V/U exceeds 1 only from 2018.">
+        <rect class="blk-d" x="53.3" y="40" width="420" height="34" rx="4"/>
+        <text x="263" y="61" text-anchor="middle" class="li" style="font-weight:600">research · pseudo-real-time (S* vintage + lags) · agents allowed</text>
+        <rect class="blk-f" x="473.3" y="40" width="473.4" height="34" rx="4"/>
+        <text x="710" y="61" text-anchor="middle" class="li" style="font-weight:700">sealed test · as-known vintages · run once</text>
+        <line x1="473.3" y1="28" x2="473.3" y2="86" style="stroke:var(--ink);stroke-width:2.4"/>
+        <text x="473.3" y="22" text-anchor="middle" class="t" style="font-size:11px">S* ≈ Oct 2014 (set by audit)</text>
+        <rect class="ev" x="200" y="80" width="60" height="10" rx="2"/><text x="230" y="104" text-anchor="middle" class="tag">GFC</text>
+        <rect class="ev" x="686.7" y="80" width="33.3" height="10" rx="2"/><text x="703" y="104" text-anchor="middle" class="tag">COVID</text>
+        <line x1="606.7" y1="76" x2="606.7" y2="94" class="tick"/><text x="606.7" y="104" text-anchor="middle" class="tag">V/U &gt; 1 from 2018</text>
+        <path class="w" d="M886.7,112 v6 h60 v-6"/><text x="916.7" y="130" text-anchor="middle" class="tag">last 18m</text>
+        <line class="axis" x1="40" y1="146" x2="960" y2="146"/>
+        <text x="40" y="162" text-anchor="middle" class="tag">2004</text><text x="120" y="162" text-anchor="middle" class="tag">2006</text><text x="200" y="162" text-anchor="middle" class="tag">2008</text><text x="280" y="162" text-anchor="middle" class="tag">2010</text><text x="360" y="162" text-anchor="middle" class="tag">2012</text><text x="440" y="162" text-anchor="middle" class="tag">2014</text><text x="520" y="162" text-anchor="middle" class="tag">2016</text><text x="600" y="162" text-anchor="middle" class="tag">2018</text><text x="680" y="162" text-anchor="middle" class="tag">2020</text><text x="760" y="162" text-anchor="middle" class="tag">2022</text><text x="840" y="162" text-anchor="middle" class="tag">2024</text><text x="920" y="162" text-anchor="middle" class="tag">2026</text>
+      </svg>
+      <figcaption><b>Sample split.</b> Research holds one full cycle (2008–09) and no tight labor market; the test holds COVID and the 2021–23 tight market. The course's “post-2010” and “full sample” windows are reported with the research part labeled pseudo-real-time.</figcaption>
+    </figure>
+  </div>
+
+  <h3 style="margin:24px 0 4px">Ten controls against overfitting</h3>
+  <ol class="ctrl">
+    <li><span><b>Pre-registration.</b> Every constant lives in <code>params.py</code>, hashed before any return is loaded.</span></li>
+    <li><span><b>Sealed test in code.</b> Test-period returns load only inside the final function, after the freeze hash matches.</span></li>
+    <li><span><b>Few parameters.</b> The fixed-rule benchmark has none; the ridge has one penalty, chosen once on research data.</span></li>
+    <li><span><b>Transformations fixed in advance.</b> Year-over-year changes of 3-month averages; no lookback search.</span></li>
+    <li><span><b>Bounded search.</b> 36 agent candidates in total, 14-operation grammar, at most 3 nested; invalid tries count. Replication seeds are run for process measurement only and are excluded from the candidate library by pre-registration.</span></li>
+    <li><span><b>Everything logged</b>, including failures; the trial count feeds the deflated Sharpe ratio.</span></li>
+    <li><span><b>Library-level test.</b> Reality check of the best candidate against all 36, not just the winner.</span></li>
+    <li><span><b>Selection on research data only</b>, including the choice of primary strategy, before the seal opens.</span></li>
+    <li><span><b>Dependence-aware inference.</b> Newey-West errors, block bootstrap, circular time-shift placebo.</span></li>
+    <li><span><b>Honest counting.</b> Report independent periods, not industry-months; shared macro series are not independent evidence.</span></li>
+  </ol>
+</section>
+
+<section id="data">
+  <div class="head">
+    <p class="step">STEP 1</p>
+    <h2>Complete data, with verified links</h2>
+    <p class="intro">Every public link below was opened on 23 Sep 2026. <span class="ok">✓</span> means the exact series or file page exists. <span class="ap">≈</span> marks an imperfect industry match that is kept and flagged. <span class="cf">access</span> means the source exists but your WRDS or Dewey account must be checked on day 1. One free FRED API key covers every FRED and ALFRED series.</p>
+  </div>
+
+  <div class="sub-h"><h3>A · Returns, factors, definitions</h3><p>Ken French Data Library, free CSV</p></div>
+  <div class="tbl scroll"><table>
+    <thead><tr><th>File</th><th>What we take</th><th>Link</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td class="b">49 industry portfolios</td><td>Monthly value-weighted returns; number of firms and average firm size (to value-weight members in a group)</td><td class="m"><a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/49_Industry_Portfolios_CSV.zip">49_Industry_Portfolios_CSV.zip</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">Fama-French 5 factors</td><td>Mkt-RF, SMB, HML, RMW, CMA, RF (monthly)</td><td class="m"><a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_CSV.zip">F-F_Research_Data_5_Factors_2x3_CSV.zip</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">Momentum factor</td><td>Mom (monthly)</td><td class="m"><a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip">F-F_Momentum_Factor_CSV.zip</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">49 industry definitions</td><td>SIC ranges per portfolio</td><td class="m"><a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Siccodes49.zip">Siccodes49.zip</a> · <a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_49_ind_port.html">detail page</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">SIC → NAICS concordance</td><td>Checks the group mapping</td><td class="m"><a href="https://www.census.gov/naics/concordances/1987_SIC_to_2002_NAICS.xls">1987_SIC_to_2002_NAICS.xls</a> · <a href="https://www.census.gov/naics/concordances/concordances.html">all concordances</a></td><td><span class="ok">✓</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h"><h3>B · JOLTS rates by industry</h3><p>FRED, not seasonally adjusted, monthly from Dec 2000. Pattern <code>JTU + industry code + measure</code>; all 52 IDs appear in FRED's JOLTS release tables.</p></div>
+  <div class="tbl scroll"><table>
+    <thead><tr><th>Group</th><th>Job openings rate</th><th>Hires rate</th><th>Quits rate</th><th>Layoffs &amp; discharges rate</th></tr></thead>
+    <tbody>
+      <tr><td class="b">1 Mining &amp; logging</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU110099JOR">JTU110099JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU110099HIR">JTU110099HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU110099QUR">JTU110099QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU110099LDR">JTU110099LDR</a></td></tr>
+      <tr><td class="b">2 Construction</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU2300JOR">JTU2300JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU2300HIR">JTU2300HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU2300QUR">JTU2300QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU2300LDR">JTU2300LDR</a></td></tr>
+      <tr><td class="b">3 Durable manufacturing</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU3200JOR">JTU3200JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU3200HIR">JTU3200HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU3200QUR">JTU3200QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU3200LDR">JTU3200LDR</a></td></tr>
+      <tr><td class="b">4 Nondurable manufacturing</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU3400JOR">JTU3400JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU3400HIR">JTU3400HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU3400QUR">JTU3400QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU3400LDR">JTU3400LDR</a></td></tr>
+      <tr><td class="b">5 Wholesale trade</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU4200JOR">JTU4200JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU4200HIR">JTU4200HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU4200QUR">JTU4200QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU4200LDR">JTU4200LDR</a></td></tr>
+      <tr><td class="b">6 Retail trade</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU4400JOR">JTU4400JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU4400HIR">JTU4400HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU4400QUR">JTU4400QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU4400LDR">JTU4400LDR</a></td></tr>
+      <tr><td class="b">7 Transport, warehousing, utilities</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU480099JOR">JTU480099JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU480099HIR">JTU480099HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU480099QUR">JTU480099QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU480099LDR">JTU480099LDR</a></td></tr>
+      <tr><td class="b">8 Information</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5100JOR">JTU5100JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5100HIR">JTU5100HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5100QUR">JTU5100QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5100LDR">JTU5100LDR</a></td></tr>
+      <tr><td class="b">9 Finance &amp; insurance</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5200JOR">JTU5200JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5200HIR">JTU5200HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5200QUR">JTU5200QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5200LDR">JTU5200LDR</a></td></tr>
+      <tr><td class="b">10 Real estate &amp; rental</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5300JOR">JTU5300JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5300HIR">JTU5300HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5300QUR">JTU5300QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU5300LDR">JTU5300LDR</a></td></tr>
+      <tr><td class="b">11 Professional &amp; business services</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU540099JOR">JTU540099JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU540099HIR">JTU540099HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU540099QUR">JTU540099QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU540099LDR">JTU540099LDR</a></td></tr>
+      <tr><td class="b">12 Health care &amp; social assistance</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU6200JOR">JTU6200JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU6200HIR">JTU6200HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU6200QUR">JTU6200QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU6200LDR">JTU6200LDR</a></td></tr>
+      <tr><td class="b">13 Accommodation &amp; food</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU7200JOR">JTU7200JOR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU7200HIR">JTU7200HIR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU7200QUR">JTU7200QUR</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/JTU7200LDR">JTU7200LDR</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h"><h3>C · CES hours and earnings</h3><p>FRED, production and nonsupervisory employees, not seasonally adjusted unless noted. Pattern <code>CEU + 8-digit industry + 07 (hours) or 08 (earnings)</code>. FRED lacks several detailed industries, so some groups use their supersector.</p></div>
+  <div class="tbl scroll"><table>
+    <thead><tr><th>Group</th><th>Avg weekly hours</th><th>Avg hourly earnings</th><th>Match</th><th>Starts</th></tr></thead>
+    <tbody>
+      <tr><td class="b">1 Mining &amp; logging</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU1000000007">CEU1000000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU1000000008">CEU1000000008</a></td><td><span class="ok">✓ exact</span></td><td class="m mut">1947</td></tr>
+      <tr><td class="b">2 Construction</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU2000000007">CEU2000000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CES2000000008">CES2000000008</a> (SA; NSA not on FRED)</td><td><span class="ok">✓ exact</span></td><td class="m mut">1947</td></tr>
+      <tr><td class="b">3 Durable manufacturing</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU3100000007">CEU3100000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU3100000008">CEU3100000008</a></td><td><span class="ok">✓ exact</span></td><td class="m mut">1939</td></tr>
+      <tr><td class="b">4 Nondurable manufacturing</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU3200000007">CEU3200000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU3200000008">CEU3200000008</a></td><td><span class="ok">✓ exact</span></td><td class="m mut">1939</td></tr>
+      <tr><td class="b">5 Wholesale trade</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU4142000007">CEU4142000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU4142000008">CEU4142000008</a></td><td><span class="ok">✓ exact</span></td><td class="m mut">1972</td></tr>
+      <tr><td class="b">6 Retail trade</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU4200000007">CEU4200000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU4200000008">CEU4200000008</a></td><td><span class="ok">✓ exact</span></td><td class="m mut">1972</td></tr>
+      <tr><td class="b">7 Transport, warehousing, utilities</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU4300000007">CEU4300000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU4300000008">CEU4300000008</a></td><td><span class="ap">≈ transport &amp; warehousing only</span></td><td class="m mut">1972</td></tr>
+      <tr><td class="b">8 Information</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU5000000007">CEU5000000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU5000000008">CEU5000000008</a></td><td><span class="ok">✓ exact</span></td><td class="m mut">1964</td></tr>
+      <tr><td class="b">9 Finance &amp; insurance</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU5500000007">CEU5500000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU5500000008">CEU5500000008</a></td><td><span class="ap">≈ financial activities</span></td><td class="m mut">1964</td></tr>
+      <tr><td class="b">10 Real estate &amp; rental</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU5500000007">CEU5500000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU5500000008">CEU5500000008</a></td><td><span class="ap">≈ same series as group 9</span></td><td class="m mut">1964</td></tr>
+      <tr><td class="b">11 Professional &amp; business services</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU6000000007">CEU6000000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU6000000008">CEU6000000008</a></td><td><span class="ok">✓ exact</span></td><td class="m mut">1964</td></tr>
+      <tr><td class="b">12 Health care &amp; social assistance</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU6500000007">CEU6500000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU6500000008">CEU6500000008</a></td><td><span class="ap">≈ education &amp; health</span></td><td class="m mut">1964</td></tr>
+      <tr><td class="b">13 Accommodation &amp; food</td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU7000000007">CEU7000000007</a></td><td class="m"><a href="https://fred.stlouisfed.org/series/CEU7000000008">CEU7000000008</a></td><td><span class="ap">≈ leisure &amp; hospitality</span></td><td class="m mut">1964</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h"><h3>D · Tightness, vintages, tools</h3></div>
+  <div class="tbl scroll"><table>
+    <thead><tr><th>Item</th><th>Use</th><th>Link</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td class="b">Job openings, total nonfarm (SA, thousands)</td><td>Numerator of T = log(V/U)</td><td class="m"><a href="https://fred.stlouisfed.org/series/JTSJOL">JTSJOL</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">Unemployment level (SA, thousands)</td><td>Denominator of T, matched reference month</td><td class="m"><a href="https://fred.stlouisfed.org/series/UNEMPLOY">UNEMPLOY</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">ALFRED</td><td>What was known on each date. Verified first vintages: <code>JTS2300JOR</code> 11 Aug 2010, <code>JTS3200JOR</code> 7 Oct 2014. The rest are measured by the audit</td><td class="m"><a href="https://alfred.stlouisfed.org/">alfred.stlouisfed.org</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">FRED API · real-time periods</td><td>realtime_start / realtime_end semantics</td><td class="m"><a href="https://fred.stlouisfed.org/docs/api/fred/realtime_period.html">realtime_period</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">FRED API · vintage dates</td><td>First vintage per series → S*</td><td class="m"><a href="https://fred.stlouisfed.org/docs/api/fred/series_vintagedates.html">series/vintagedates</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">FRED API key (free account)</td><td>Required for every FRED call</td><td class="m"><a href="https://fred.stlouisfed.org/docs/api/api_key.html">api_key</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">fredapi (Python)</td><td><code>get_series_all_releases</code>, <code>get_series_first_release</code>, <code>get_series_as_of_date</code>, <code>get_series_vintage_dates</code></td><td class="m"><a href="https://github.com/mortada/fredapi">github.com/mortada/fredapi</a></td><td><span class="ok">✓</span></td></tr>
+      <tr><td class="b">JOLTS history</td><td>First published 2002, data from Dec 2000</td><td class="m"><a href="https://www.bls.gov/opub/hom/jlt/history.htm">bls.gov JOLTS history</a></td><td><span class="ok">✓</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h"><h3>E · Company-level data, gated on day 1</h3><p>Real and documented; downloadable only if your institutional access works</p></div>
+  <div class="tbl scroll"><table>
+    <thead><tr><th>Source</th><th>What it gives</th><th>Links</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td class="b">LinkUp job postings via Dewey</td><td>Raw postings since 2007: <code>created</code> (first observed), <code>delete_date</code>, <code>last_checked</code>, <code>company_id</code>, <code>ticker_symbol</code>, <code>naics_code</code>, point-in-time company reference</td><td class="m"><a href="https://www.deweydata.io/data-partners/linkup">Dewey · LinkUp</a><br><a href="https://data.support.linkup.com/kb/article/56-data-dictionary-raw-data-package-feeds/">LinkUp data dictionary</a><br><a href="https://guides.lib.berkeley.edu/c.php?g=1466092&amp;p=10907087">Berkeley library · Dewey guide</a><br><a href="https://docs.deweydata.io/article/data-access-options">Dewey download (pip install deweypy)</a></td><td><span class="cf">access</span></td></tr>
+      <tr><td class="b">Revelio WARN notices on WRDS</td><td>Schema <code>revelio_layoffs</code>, records from 1989: <code>notice_date</code>, <code>layoff_date</code>, <code>num_employees</code>, <code>state</code>, <code>rcid</code>; NAICS through Revelio's company reference</td><td class="m"><a href="https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/revelio-labs/">WRDS · Revelio</a><br><a href="https://www.data-dictionary.reveliolabs.com/data.html">Revelio data dictionary</a></td><td><span class="cf">access</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h"><h3>F · Optional or diagnostic only</h3></div>
+  <div class="tbl scroll"><table>
+    <thead><tr><th>Source</th><th>Role</th><th>Links</th><th>Tier</th></tr></thead>
+    <tbody>
+      <tr><td class="b">PPI by industry (FRED)</td><td>Output prices for F6. These exist: total manufacturing, information, merchant wholesalers of durable goods. Only exact-scope matches count</td><td class="m"><a href="https://fred.stlouisfed.org/series/PCUOMFGOMFG">PCUOMFGOMFG</a> · <a href="https://fred.stlouisfed.org/series/PCUAINFOAINFO">PCUAINFOAINFO</a> · <a href="https://fred.stlouisfed.org/series/PCU423000423000">PCU423000423000</a></td><td><span class="tier">if ≥ 9 groups</span></td></tr>
+      <tr><td class="b">CRSP stock baskets (WRDS)</td><td>Cleaner NAICS-based groups; extension after the 5-day version</td><td class="m">WRDS · CRSP</td><td><span class="tier">extension</span></td></tr>
+      <tr><td class="b">Indeed Hiring Lab</td><td>Postings by sector from Feb 2020; too short for research, descriptive only</td><td class="m"><a href="https://github.com/hiring-lab/job_postings_tracker">job_postings_tracker</a></td><td><span class="tier">descriptive</span></td></tr>
+      <tr><td class="b">Scraped state WARN lists</td><td>Current listings only, not historical; no substitute for Revelio</td><td class="m"><a href="https://github.com/biglocalnews/warn-scraper">warn-scraper</a></td><td><span class="tier">not used</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h"><h3>G · Frequencies and timing at each decision date</h3><p>Decision date d = last trading day of the month; information cutoff d − 1 day</p></div>
+  <div class="tbl scroll"><table>
+    <thead><tr><th>Source</th><th>Frequency</th><th>Published</th><th>Example</th><th>Latest month usable at d</th></tr></thead>
+    <tbody>
+      <tr><td class="b">JOLTS</td><td>monthly</td><td>about 5 weeks after month end</td><td class="mut">July 2026 data on 1 Sep 2026</td><td class="m">d − 2</td></tr>
+      <tr><td class="b">CES hours, earnings</td><td>monthly</td><td>first Friday of the next month</td><td class="mut">August 2026 data on 4 Sep 2026</td><td class="m">d − 1</td></tr>
+      <tr><td class="b">Unemployment (CPS)</td><td>monthly</td><td>same day as CES</td><td class="mut">August 2026 on 4 Sep 2026</td><td class="m">d − 1 (V/U uses matched d − 2)</td></tr>
+      <tr><td class="b">LinkUp postings</td><td>daily</td><td>continuous scraping</td><td class="mut"><code>created</code> timestamp</td><td class="m">through d</td></tr>
+      <tr><td class="b">WARN notices</td><td>events</td><td>notice date + 30-day buffer</td><td class="mut">unless a collection date exists</td><td class="m">information date ≤ d</td></tr>
+      <tr><td class="b">Returns (French)</td><td>monthly</td><td>monthly updates</td><td class="mut">target is month d + 1</td><td class="m">—</td></tr>
+      <tr><td class="b">Trading</td><td>monthly</td><td>rebalance at month-end close</td><td class="mut">⅓ of the book renewed each month</td><td class="m">held 3 months</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="sub-h"><h3>H · Universe: 13 groups</h3><p>Same universe for every strategy; excluded portfolios listed with the reason</p></div>
+  <div class="tbl scroll"><table>
+    <thead><tr><th>Group (JOLTS code)</th><th>French 49 members</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td class="b">1 Mining &amp; logging (110099)</td><td class="m">Gold Mines Coal Oil</td><td class="mut"></td></tr>
+      <tr><td class="b">2 Construction (2300)</td><td class="m">Cnstr</td><td class="mut"></td></tr>
+      <tr><td class="b">3 Durable mfg (3200)</td><td class="m">Toys BldMt Steel FabPr Mach ElcEq Autos Aero Ships Guns Hardw Chips LabEq MedEq</td><td class="mut"></td></tr>
+      <tr><td class="b">4 Nondurable mfg (3400)</td><td class="m">Food Soda Beer Smoke Hshld Clths Drugs Chems Rubbr Txtls Paper</td><td class="mut">Hshld approximate</td></tr>
+      <tr><td class="b">5 Wholesale (4200)</td><td class="m">Whlsl</td><td class="mut"></td></tr>
+      <tr><td class="b">6 Retail (4400)</td><td class="m">Rtail</td><td class="mut"></td></tr>
+      <tr><td class="b">7 Transport, warehousing, utilities (480099)</td><td class="m">Trans Util</td><td class="mut"></td></tr>
+      <tr><td class="b">8 Information (5100)</td><td class="m">Telcm</td><td class="mut"></td></tr>
+      <tr><td class="b">9 Finance &amp; insurance (5200)</td><td class="m">Banks Insur Fin</td><td class="mut"></td></tr>
+      <tr><td class="b">10 Real estate (5300)</td><td class="m">RlEst</td><td class="mut"></td></tr>
+      <tr><td class="b">11 Prof. &amp; business services (540099)</td><td class="m">BusSv</td><td class="mut"></td></tr>
+      <tr><td class="b">12 Health care (6200)</td><td class="m">Hlth</td><td class="mut"></td></tr>
+      <tr><td class="b">13 Accommodation &amp; food (7200)</td><td class="m">Meals</td><td class="mut"></td></tr>
+      <tr><td class="b" style="color:var(--faint)">Excluded</td><td class="m" style="color:var(--faint)">Agric Other Boxes Books Softw Fun PerSv</td><td class="mut">outside JOLTS nonfarm, or SIC spans two NAICS sectors (containers, printing vs publishing, software, film vs recreation, education)</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="pipeline">
+  <div class="head">
+    <p class="step">STEP 2</p>
+    <h2>Pipeline, fully detailed</h2>
+    <p class="intro">The stages in the order they run. Each lists its rules and its output file. The evaluator (6) is built before the agents (5) run, so the agents can never shape it.</p>
+  </div>
+
+  <div class="stages">
+    <div class="stg seal"><div class="meta"><span class="when">Day 1 · before any return</span><h3>0 · Pre-register</h3><span class="out">→ params.py, prereg_v0.json</span></div>
+      <ul><li>Every constant on this page goes into <code>params.py</code>: dates, universe, series IDs, formulas, windows, grammar, budgets, seeds, costs, comparison family, gate thresholds.</li><li>Six statements are written verbatim as pre-registration text: tightness is extrapolated, the sealed boundary stays at S*, the seed roles, the trial-count scope, the Holm family, and the expected outcome.</li><li>SHA-256 of <code>params.py</code> saved with a timestamp. Later changes are allowed only for reasons unrelated to performance, logged in <code>deviations.md</code>.</li></ul></div>
+
+    <div class="stg"><div class="meta"><span class="when">Day 1</span><h3>1 · Download and audit</h3><span class="out">→ manifest.csv, checkpoints.md</span></div>
+      <ul><li>Download every file in Step 1; validate every series ID through the FRED API; cache raw responses.</li><li><b>Vintage audit:</b> first vintage per series. A series is admitted if its first vintage is on or before 30 Jun 2015; a measure is admitted if ≥ 11 of 13 groups have it. <b>S* = latest first vintage among admitted series.</b></li><li>If fewer than 3 JOLTS measures pass, the primary switches to pseudo-real-time and every result says so.</li><li><b>F6 price matches:</b> exact NAICS-scope PPIs only; F6 enters models only with ≥ 9 groups.</li><li><b>Company-data gate:</b> LinkUp needs <code>created</code> history from 2008, a point-in-time company mapping, scrape-failure detection and ≥ 20 cohort companies per group-month in ≥ 10 groups. WARN needs a company mapping covering ≥ 10 groups from 2008. Otherwise skipped, with the reason. <b>Time-boxed at 3 hours</b>: if access is not working by then, company data and A2 drop without discussion.</li><li><b>P1 (ChatGPT):</b> audit the manifest, crosswalk and as-of code; confirmed errors are fixed before Stage 2.</li></ul></div>
+
+    <div class="stg"><div class="meta"><span class="when">Day 1–2</span><h3>2 · As-of panels</h3><span class="out">→ panel_asof.parquet + variants</span></div>
+      <ul><li>For each decision date d, take the value with the latest <code>realtime_start</code> ≤ d − 1 day (fredapi all releases + merge_asof).</li><li><b>Research period</b> (before S*): no vintages exist, so use the S* vintage with fixed lags (JOLTS ≤ d − 2, CES and CPS ≤ d − 1). No later revision leaks in.</li><li>Variants from the same code: <b>ASOF</b> (primary), <b>FIRST</b> (first releases, robustness), <b>REVISED</b> (today's values, hindsight diagnostic), <b>FIXEDLAG</b> (sensitivity).</li><li>5 random values hand-checked against the ALFRED website; asserts that no observation is newer than allowed.</li></ul></div>
+
+    <div class="stg"><div class="meta"><span class="when">Day 2</span><h3>3 · Features</h3><span class="out">→ features.parquet</span></div>
+      <ul><li>avg3(X, m) = mean of months m, m−1, m−2. JOLTS use the latest month m_J; CES the latest m_C.</li></ul>
+      <div class="fx">F1 openings   = avg3(JOR, m_J) − avg3(JOR, m_J − 12)
+F2 hires      = avg3(HIR, m_J) − avg3(HIR, m_J − 12)
+F3 quits      = avg3(QUR, m_J) − avg3(QUR, m_J − 12)
+F4 layoffs    = avg3(LDR, m_J) − avg3(LDR, m_J − 12)
+F5 hours      = log avg3(H, m_C) − log avg3(H, m_C − 12)
+F6 wage–price = Δ12 log avg3(E) − Δ12 log avg3(P)   (only if admitted)
+T             = log(JTSJOL / UNEMPLOY), matched month  (common to all groups)
+A0 fixed rule = mean(z1, z2, −z4, z5)          (signs set by economics, no fitting)</div>
+      <ul><li>Standardize: divide by the group's own expanding standard deviation (min 24 months), then z-score across groups, winsorize ±3.</li><li><b>Tightness is extrapolated.</b> V/U stays below 1 (T below 0) throughout research, so any feature × T effect is estimated outside the range observed there and applied to a test period containing the 2021–23 tight market. Q1 is judged on main effects; interactions are descriptive.</li><li><b>Company level first</b> (if admitted), over a cohort with ≥ 24 months of history: new-posting growth, breadth, concentration, WARN intensity, <b>retrenchment = mean(WARN × falling postings)</b>, <b>reallocation = mean(WARN × rising postings)</b>, public–private divergence (same reference month; the leading version is a separate feature).</li></ul></div>
+
+    <div class="stg ai"><div class="meta"><span class="when">Day 2</span><h3>4 · Blinding</h3><span class="out">→ blind_map.json (local, secret)</span></div>
+      <ul><li>Variables become V01…Vk with type metadata; groups G01…G13 in random order; time t = 1…n, no dates.</li><li>Agents never see names, tickers, dates, vendors, series IDs, raw values or the panel. Calls go through the API with <b>no tools</b>; that, not a prompt instruction, is the security boundary.</li></ul></div>
+
+    <div class="stg"><div class="meta"><span class="when">Day 2 · built before agents</span><h3>6 · Fixed evaluator and portfolio</h3><span class="out">→ evaluator tested on a synthetic signal</span></div>
+      <ul><li><b>Target:</b> next-month relative return (group excess return minus the cross-sectional mean).</li><li><b>Models:</b> A1 = ridge on z-feature main effects; A1-T adds each feature × T and is descriptive only. Monthly walk-forward refit on an expanding window; penalty chosen once by 5-fold blocked CV on research data, then frozen. Optional comparator: depth-2 LightGBM, fixed settings.</li><li><b>Portfolio:</b> each month a new tranche goes long the top 3 and short the bottom 3, equal-weight; the book is the average of the last 3 tranches. Market beta hedged (60-month betas); 10% volatility target (Ledoit-Wolf, 60 months); gross cap 2×.</li><li><b>Costs:</b> c · Σ|w_target − w_pretrade| with c = 10 bp (0 and 25 bp sensitivities); hedge trades 2 bp; borrow and financing reported separately.</li><li><b>Feedback returned to agents</b>, rounded to 2 decimals: coverage, mean IC, Newey-West t, IC in low vs high T, max correlation with base features, rank persistence. <b>Never the IC in each half</b>: Stage 7 selects on it. Keeping the T split means agents see the thesis variable during search; the report says so.</li></ul></div>
+
+    <div class="stg ai"><div class="meta"><span class="when">Day 3 · research data only</span><h3>5 · Agent research</h3><span class="out">→ agents/log.jsonl, candidates.csv</span></div>
+      <ul><li><b>Islands:</b> 3 ChatGPT agents (starting emphases temporal, composition, interactions), 6 submissions each; after submissions 2 and 4, each writes a ≤ 120-word report, including a failure, sent to the other two. No code shared.</li><li><b>Independent control:</b> same 3 emphases, model, prompts and evaluator, 6 submissions each, no reports.</li><li><b>3 seeds per arm.</b> Seed 1 is the only strategy-producing run (36 candidates). Seeds 2–3 measure search behaviour and never enter selection or the trial count.</li><li><b>Q3 process metrics</b>, per arm and seed: best-so-far IC by submission index, median IC of valid candidates, invalid-submission rate, diversity (1 − mean pairwise Jaccard of expression tokens). Arms compared against the spread across seeds.</li><li><b>Migration tracing:</b> each report is split into claims; a separate ChatGPT judge tags which later submissions of the receiving islands use them (team spot-checks 20%); uptake and score effect are reported.</li><li>Each submission: name, falsifiable hypothesis, falsification condition, expression in a 14-operation grammar (max 3 nested, 2 variables plus T, no negative lags). Invalid ones count against the budget.</li><li><b>P2</b> = seed-1 first submissions; <b>P3</b> = seed-1 migration reports and their tracing. The engineer (the coding model) never proposes, edits or ranks features.</li></ul></div>
+
+    <div class="stg"><div class="meta"><span class="when">Day 4 · morning</span><h3>7 · Select, red-team, freeze</h3><span class="out">→ selected_features.json, FREEZE.json</span></div>
+      <ul><li><b>Selection per architecture</b> (seed 1 only): research-period t ≥ 1.5, same-sign IC in both halves, max |correlation| &lt; 0.8; up to 3 features. None qualify → strategy equals its base.</li><li><b>Strategies (final list):</b> A0 fixed rule · A1 public ridge (main effects) · A1-T with tightness interactions (descriptive) · A2 hybrid ridge (if admitted) · A3 base + independent features · A4 base + island features (· A5 LightGBM comparator).</li><li>Reality check of the best candidate against the 36 seed-1 candidates; deflated Sharpe counting seed-1 candidates plus strategies. Process seeds excluded, so the library is never read as 108.</li><li><b>Primary strategy</b> = best research-period net Sharpe among A0–A4, recorded now.</li><li><b>P4 red team</b> (ChatGPT) on research results; its runnable tests join the prespecified diagnostics.</li><li><b>Freeze:</b> hash of code, params and selected features.</li></ul></div>
+
+    <div class="stg seal"><div class="meta"><span class="when">Day 4 · once</span><h3>8 · Sealed final evaluation</h3><span class="out">→ outputs/final/*</span></div>
+      <ul><li>Every strategy on as-known data: IC at 1, 3, 6 months (overlap-robust errors), gross and net long–short returns, Sharpe, drawdown, turnover, long-only active return and IR.</li><li><b>Tests</b> (block bootstrap, Holm across 3): A1 vs A0 (Q1) · A2 vs A1 on the overlap sample (Q2) · A3 vs base. <b>Descriptive, with intervals:</b> A4 vs A3 (one draw of Q3), A1-T vs A1, V/U above vs below 1.</li><li><b>Research-vs-sealed accounting:</b> each seed-1 candidate and strategy shown with both statistics; count of candidates that pass research and fail the test.</li><li><b>Placebo:</b> circular time shift of the frozen features, every shift from 24 months to T − 24.</li><li><b>Attribution:</b> FF5 + Mom + group momentum. <b>Windows:</b> halves, ex-2020, last 18 months, T terciles. <b>Variants:</b> first release, revised (the revision gap), fixed lag. Drop-one-group.</li><li>Implementation: cost breakeven, capacity, candidate ETF proxies (French portfolios are research series, not tradable).</li></ul></div>
+
+    <div class="stg"><div class="meta"><span class="when">Day 4–5</span><h3>9 · Gate, decode, report</h3><span class="out">→ report.md, chatgpt_log.md, figures</span></div>
+      <ul><li><b>Implement only if all hold</b> for the primary strategy: G1 as-known timing with no open audit flags · G2 1-month IC t ≥ 2 · G3 alpha after attribution t ≥ 2 · G4 positive IC in both halves, placebo p &lt; 0.05, no group above 50% of P&amp;L · G5 net Sharpe &gt; 0 at 25 bp. Otherwise: “Do not implement”, naming the failed criteria.</li><li><b>Expected outcome, pre-registered:</b> “Do not implement”. The report leads with what carries the contribution anyway: the research-vs-sealed gap, the candidates that pass research and fail the test, and the comparison of the two search architectures.</li><li>Decode the blind map only now, for interpretation; nothing flows back into selection.</li><li>Report in the course template; four-field ChatGPT logs with a column left for the team's own critique.</li></ul></div>
+  </div>
+</section>
+
+<section id="graph">
+  <div class="head">
+    <p class="step">STEP 3</p>
+    <h2>Graph recap</h2>
+    <p class="intro">Three bands, top to bottom. Nothing from the sealed test period crosses the seal line before the freeze.</p>
+  </div>
+  <div class="pipe scroll">
+  <svg class="dg" viewBox="0 0 1200 830" role="img" aria-label="Pipeline recap. Pre-registration first. Build band: sources feed audit, as-of panels, features and a fixed evaluator. Research band on 2004–2014 data only: blinding, island agents and independent agents, candidate library, then selection, red team and freeze. A seal line separates the sealed test band: final evaluation once, prespecified diagnostics, then the gate deciding implement or do not implement.">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
+      <marker id="al" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="ahl" d="M0,0 L10,5 L0,10 z"/></marker>
+    </defs>
+    <rect class="box-k" x="20" y="14" width="1160" height="40" rx="8"/>
+    <text x="36" y="39" class="sw">0 · PRE-REGISTER</text>
+    <text x="190" y="39" class="li">params.py + SHA-256 before any return is loaded · every later change goes to deviations.md with a reason unrelated to results</text>
+
+    <rect class="band" x="20" y="70" width="1160" height="262" rx="10"/>
+    <text x="36" y="93" class="sw">BUILD</text><text x="94" y="93" class="day">days 1–2</text>
+    <rect class="box" x="36" y="106" width="196" height="30" rx="5"/><text x="46" y="125" class="li">JOLTS rates · 13 groups × 4</text>
+    <rect class="box" x="36" y="142" width="196" height="30" rx="5"/><text x="46" y="161" class="li">CES hours and earnings</text>
+    <rect class="box" x="36" y="178" width="196" height="30" rx="5"/><text x="46" y="197" class="li">V/U · JTSJOL, UNEMPLOY</text>
+    <rect class="box" x="36" y="214" width="196" height="30" rx="5"/><text x="46" y="233" class="li">French 49 · FF5 · Mom</text>
+    <rect class="box-p" x="36" y="250" width="196" height="30" rx="5"/><text x="46" y="269" class="l">LinkUp postings · gated</text>
+    <rect class="box-p" x="36" y="286" width="196" height="30" rx="5"/><text x="46" y="305" class="l">WARN notices · gated</text>
+    <line class="wk" x1="234" y1="211" x2="255" y2="211" marker-end="url(#a)"/>
+
+    <rect class="box" x="258" y="106" width="196" height="210" rx="6"/>
+    <text x="270" y="128" class="t">1 · Audit and manifest</text>
+    <text x="270" y="150" class="l">check every series ID</text><text x="270" y="168" class="l">first vintage → S*</text><text x="270" y="186" class="l">13 groups, 7 excluded</text><text x="270" y="204" class="l">LinkUp / WARN gate</text><text x="270" y="222" class="l">F6 price matches</text><text x="270" y="240" class="tagl">P1 · ChatGPT data audit</text>
+    <text x="270" y="304" class="tag">→ manifest.csv</text>
+    <line class="wk" x1="455" y1="211" x2="479" y2="211" marker-end="url(#a)"/>
+
+    <rect class="box" x="482" y="106" width="196" height="210" rx="6"/>
+    <text x="494" y="128" class="t">2 · As-of panels</text>
+    <text x="494" y="150" class="l">value known at d − 1 day</text><text x="494" y="168" class="l">research: S* vintage</text><text x="494" y="186" class="l">+ fixed publication lags</text><text x="494" y="204" class="l">variants: first release,</text><text x="494" y="222" class="l">revised, fixed lag</text>
+    <text x="494" y="304" class="tag">→ panel[d, group, var]</text>
+    <line class="wk" x1="679" y1="211" x2="703" y2="211" marker-end="url(#a)"/>
+
+    <rect class="box" x="706" y="106" width="196" height="210" rx="6"/>
+    <text x="718" y="128" class="t">3 · Features</text>
+    <text x="718" y="150" class="l">F1–F4 JOLTS, year on year</text><text x="718" y="168" class="l">F5 hours, F6 wage–price*</text><text x="718" y="186" class="l">T = log(V/U), common</text><text x="718" y="204" class="l">company level first,</text><text x="718" y="222" class="l">then group (if admitted)</text>
+    <text x="718" y="304" class="tag">→ z-scores, A0 score</text>
+    <line class="wk" x1="903" y1="211" x2="927" y2="211" marker-end="url(#a)"/>
+
+    <rect class="box-k" x="930" y="106" width="234" height="210" rx="6"/>
+    <text x="942" y="128" class="t">6 · Fixed evaluator</text>
+    <text x="942" y="150" class="l">ridge + feature × T, walk-forward</text><text x="942" y="168" class="l">top 3 / bottom 3, 3 tranches</text><text x="942" y="186" class="l">β-hedged, 10% vol, cap 2×</text><text x="942" y="204" class="l">cost c · Σ|Δw|, c = 10 bp</text><text x="942" y="222" class="l">built and tested first</text>
+    <text x="942" y="304" class="tag">owns fitting, costs and the seal</text>
+
+    <path class="wk" d="M804,316 V338 H134 V389" marker-end="url(#a)"/>
+    <text x="146" y="351" class="tag">features → blinding</text>
+    <path class="wk" d="M1047,316 V348 H754 V389" marker-end="url(#a)"/>
+    <text x="1164" y="374" text-anchor="end" class="tag">evaluator scores candidates on research data only</text>
+
+    <rect class="band" x="20" y="356" width="1160" height="246" rx="10"/>
+    <text x="36" y="378" class="sw">RESEARCH</text><text x="120" y="378" class="day">day 3 · returns May 2004 → S* · pseudo-real-time</text>
+    <rect class="box-l" x="36" y="392" width="196" height="196" rx="6"/>
+    <text x="48" y="414" class="tl">4 · Blinding</text>
+    <text x="48" y="436" class="l">V01…Vk, G01…G13</text><text x="48" y="454" class="l">time index, no dates</text><text x="48" y="472" class="l">no names, no raw data</text><text x="48" y="490" class="l">API calls with no tools</text>
+    <text x="48" y="576" class="tagl">blind_map.json stays local</text>
+    <line class="wk" x1="233" y1="438" x2="255" y2="438" marker-end="url(#a)"/>
+    <line class="wk" x1="233" y1="542" x2="255" y2="542" marker-end="url(#a)"/>
+
+    <rect class="box-lf" x="258" y="392" width="372" height="92" rx="6"/>
+    <text x="270" y="410" class="tl">5a · Islands (ChatGPT)</text><text x="620" y="410" text-anchor="end" class="tagl">reports after 2, 4 · 3 seeds</text>
+    <rect class="box-l" x="270" y="420" width="100" height="54" rx="5"/><text x="280" y="442" class="t">Temporal</text><text x="280" y="460" class="l">6 tries</text>
+    <rect class="box-l" x="390" y="420" width="100" height="54" rx="5"/><text x="400" y="442" class="t">Composition</text><text x="400" y="460" class="l">6 tries</text>
+    <rect class="box-l" x="510" y="420" width="100" height="54" rx="5"/><text x="520" y="442" class="t">Interactions</text><text x="520" y="460" class="l">6 tries</text>
+    <line class="wl" x1="373" y1="447" x2="387" y2="447" marker-start="url(#al)" marker-end="url(#al)"/>
+    <line class="wl" x1="493" y1="447" x2="507" y2="447" marker-start="url(#al)" marker-end="url(#al)"/>
+
+    <rect class="box-l" x="258" y="496" width="372" height="92" rx="6"/>
+    <text x="270" y="514" class="tl">5b · Independent agents (control)</text><text x="620" y="514" text-anchor="end" class="tagl">no reports · 3 seeds</text>
+    <rect class="box" x="270" y="524" width="100" height="54" rx="5"/><text x="280" y="546" class="t">Temporal</text><text x="280" y="564" class="l">6 tries</text>
+    <rect class="box" x="390" y="524" width="100" height="54" rx="5"/><text x="400" y="546" class="t">Composition</text><text x="400" y="564" class="l">6 tries</text>
+    <rect class="box" x="510" y="524" width="100" height="54" rx="5"/><text x="520" y="546" class="t">Interactions</text><text x="520" y="564" class="l">6 tries</text>
+
+    <line class="wk" x1="631" y1="438" x2="653" y2="438" marker-end="url(#a)"/>
+    <line class="wk" x1="631" y1="542" x2="653" y2="542" marker-end="url(#a)"/>
+    <rect class="box" x="656" y="392" width="196" height="196" rx="6"/>
+    <text x="668" y="414" class="t">Candidate library</text>
+    <text x="668" y="436" class="li" style="font-weight:600">36 seed-1 candidates</text><text x="668" y="454" class="l">+ 72 process-only (seeds 2–3)</text><text x="668" y="472" class="l">invalid tries count</text><text x="668" y="490" class="l">scored by evaluator 6</text><text x="668" y="508" class="l">no half-sample IC shown</text><text x="668" y="526" class="l">migration traced per claim</text>
+    <text x="668" y="576" class="tag">→ candidates.csv</text>
+    <line class="wk" x1="853" y1="490" x2="875" y2="490" marker-end="url(#a)"/>
+
+    <rect class="box" x="878" y="392" width="286" height="196" rx="6"/>
+    <text x="890" y="414" class="t">7 · Select, red-team, freeze</text>
+    <text x="890" y="436" class="l">t ≥ 1.5, both halves, |ρ| &lt; 0.8</text><text x="890" y="454" class="l">seed 1 only · up to 3 per arm</text><text x="890" y="472" class="l">reality check + DSR over 36, not 108</text><text x="890" y="490" class="l">P4 red team → added tests</text><text x="890" y="508" class="l">primary strategy chosen here</text>
+    <rect class="box-k" x="890" y="546" width="262" height="30" rx="5"/><text x="1021" y="566" text-anchor="middle" class="t">FREEZE · hash of code + config</text>
+
+    <path class="wk" d="M1021,577 V612 H216 V656" marker-end="url(#a)"/>
+    <line class="seal" x1="20" y1="632" x2="1180" y2="632"/>
+    <rect class="bgc" x="420" y="621" width="360" height="22" rx="4"/>
+    <text x="600" y="636" text-anchor="middle" class="sw">SEAL · test returns load only in step 8</text>
+
+    <rect class="band-s" x="20" y="652" width="1160" height="166" rx="10"/>
+    <text x="36" y="674" class="sw">SEALED TEST</text><text x="148" y="674" class="day">day 4 · run once · returns after S* → Aug 2026 · as-known</text>
+    <rect class="box-k" x="36" y="688" width="360" height="118" rx="6"/>
+    <text x="48" y="710" class="t">8 · Final evaluation, once</text>
+    <text x="48" y="730" class="l">A0 fixed rule · A1 ridge · A1-T (descriptive)</text><text x="48" y="748" class="l">A2 hybrid* · A3 independent · A4 islands</text><text x="48" y="766" class="l">variants: as-known · first release · revised</text><text x="48" y="784" class="l">horizons 1, 3, 6 months</text>
+    <line class="wk" x1="397" y1="747" x2="423" y2="747" marker-end="url(#a)"/>
+    <rect class="box" x="426" y="688" width="360" height="118" rx="6"/>
+    <text x="438" y="710" class="t">Prespecified diagnostics</text>
+    <text x="438" y="730" class="l">tests: Holm across 3 · A4 vs A3 descriptive</text><text x="438" y="748" class="l">circular time-shift placebo</text><text x="438" y="766" class="l">halves · ex-2020 · last 18 months · T terciles</text><text x="438" y="784" class="l">research-vs-sealed gap · FF5 + Mom attribution</text>
+    <line class="wk" x1="787" y1="747" x2="813" y2="747" marker-end="url(#a)"/>
+    <rect class="box-k" x="816" y="688" width="348" height="118" rx="6"/>
+    <text x="828" y="710" class="t">9 · Gate → verdict</text><text x="1152" y="710" text-anchor="end" class="tag">report · day 5</text>
+    <text x="828" y="730" class="l">timing · prediction · increment</text><text x="828" y="746" class="l">robustness · implementability</text>
+    <rect class="box-g" x="828" y="762" width="150" height="32" rx="5"/><text x="840" y="783" class="t fg">Implement</text>
+    <rect class="box-b" x="990" y="762" width="162" height="32" rx="5"/><text x="1002" y="783" class="t fb">Do not implement</text>
+  </svg>
+  </div>
+</section>
+
+<section id="plan">
+  <div class="head">
+    <p class="eyebrow">Who checks what while the coding model runs the build</p>
+    <h2>5-day plan</h2>
+    <p class="intro">The coding model writes and runs the code; the five of you own the checks it cannot do: access, hand verification, the ChatGPT critique and the write-up. Assign the roles as you like.</p>
+  </div>
+  <div class="scroll">
+  <div class="plan">
+    <div class="h">Role</div>
+    <div class="h"><b>Day 1</b>audit</div>
+    <div class="h"><b>Day 2</b>panels</div>
+    <div class="h"><b>Day 3</b>agents</div>
+    <div class="h"><b>Day 4</b>freeze &amp; test</div>
+    <div class="h"><b>Day 5</b>report</div>
+
+    <div class="r">Data &amp; timestamps</div>
+    <div>Keys (FRED, OpenAI); try WRDS and Dewey access; read the manifest and S*.</div>
+    <div>Hand-check 5 as-of values on the ALFRED website.</div>
+    <div>Check the research panel has no value newer than allowed.</div>
+    <div>Confirm the freeze hash before the seal opens.</div>
+    <div>Data section and appendix.</div>
+
+    <div class="r">Features &amp; mappings</div>
+    <div>Review the 13-group crosswalk against the concordance.</div>
+    <div>Recompute F1 and F5 for one group by hand.</div>
+    <div>Watch agent submissions for any leaked name or date.</div>
+    <div>Read the decoded features after the test.</div>
+    <div>Economic interpretation.</div>
+
+    <div class="r">Portfolio &amp; evaluation</div>
+    <div>Read the gate and cost rules; nothing changes later.</div>
+    <div>Check the synthetic-signal test of the evaluator.</div>
+    <div>Check the selection rule is applied as written.</div>
+    <div>Read final results and diagnostics once.</div>
+    <div>Tables, figures, section 3.</div>
+
+    <div class="r">Agents &amp; reporting</div>
+    <div>Run <span class="p">P1</span> by hand in ChatGPT too; log it.</div>
+    <div>Read the blinded briefing before agents start.</div>
+    <div>Log <span class="p">P2</span> and <span class="p">P3</span>; spot-check 20% of the migration tracing.</div>
+    <div>Run <span class="p">P4</span> red team; add its tests before the freeze.</div>
+    <div>Section 3d and the team's own critique.</div>
+
+    <div class="cp first">Checkpoint</div>
+    <div class="cp">Manifest and S* agreed</div>
+    <div class="cp">Evaluator passes the synthetic test</div>
+    <div class="cp">36 seed-1 + 72 process candidates logged</div>
+    <div class="cp">One sealed run, verdict written</div>
+    <div class="cp">Submit</div>
+  </div>
+  </div>
+</section>
+
+<section id="rubric">
+  <div class="head">
+    <p class="eyebrow">Evaluation criteria from the brief</p>
+    <h2>How it scores</h2>
+  </div>
+  <div class="rub">
+    <div><span class="w">40<small>Thesis</small></span><ul><li><b>One question anyone gets:</b> is hiring demand news or cost news, and does tightness decide?</li><li><b>Three questions, each able to fail:</b> Q1 and Q2 tested on the sealed period, Q3 on the search process</li><li><b>Mechanism kept apart from returns:</b> labor data describe the economy; only the sealed test speaks to returns</li></ul></div>
+    <div><span class="w">40<small>Execution</small></span><ul><li><b>As-known data</b> with a measured revision gap</li><li><b>Risk control:</b> beta hedge, vol target, costs, turnover</li><li><b>Horizons</b> 1, 3, 6 months with honest sample sizes</li><li><b>Windows:</b> full, post-2010, last 18 months, labeled</li><li><b>Sealed test</b>, placebo, paired tests, five-part gate, expected outcome stated in advance</li></ul></div>
+    <div><span class="w">20<small>Originality</small></span><ul><li><b>Industry JOLTS</b> as an equity signal, conditioned on tightness</li><li><b>Blinded ChatGPT agents:</b> islands vs independent, matched budgets, 3 seeds, migration traced claim by claim</li><li><b>Company-level interactions</b> of layoffs and recruiting (if admitted)</li><li><b>ChatGPT scored</b>, not just used (P1–P4)</li></ul></div>
+  </div>
+</section>
+
+<section id="sources">
+  <div class="head"><p class="eyebrow">Checked for this version</p><h2>Sources</h2></div>
+  <ul class="src">
+    <li><a href="https://www.bls.gov/opub/hom/jlt/history.htm">BLS · JOLTS history (first published 2002)</a></li>
+    <li><a href="https://fred.stlouisfed.org/release/tables?rid=192&amp;eid=6614">FRED · JOLTS release tables</a></li>
+    <li><a href="https://alfred.stlouisfed.org/series?seid=JTS2300JOR">ALFRED · JTS2300JOR vintages</a></li>
+    <li><a href="https://alfred.stlouisfed.org/series/downloaddata?seid=JTS3200JOR">ALFRED · JTS3200JOR vintages</a></li>
+    <li><a href="https://fred.stlouisfed.org/docs/api/fred/realtime_period.html">FRED API · real-time periods</a></li>
+    <li><a href="https://fred.stlouisfed.org/docs/api/fred/series_vintagedates.html">FRED API · vintage dates</a></li>
+    <li><a href="https://github.com/mortada/fredapi">fredapi</a></li>
+    <li><a href="https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html">Ken French Data Library</a></li>
+    <li><a href="https://www.census.gov/naics/concordances/concordances.html">Census · NAICS concordances</a></li>
+    <li><a href="https://www.deweydata.io/data-partners/linkup">Dewey · LinkUp</a></li>
+    <li><a href="https://data.support.linkup.com/kb/article/56-data-dictionary-raw-data-package-feeds/">LinkUp · RAW data dictionary</a></li>
+    <li><a href="https://guides.lib.berkeley.edu/c.php?g=1466092&amp;p=10907087">UC Berkeley Library · Dewey guide</a></li>
+    <li><a href="https://docs.deweydata.io/article/data-access-options">Dewey · data access options</a></li>
+    <li><a href="https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/revelio-labs/">WRDS · Revelio Labs (revelio_layoffs)</a></li>
+    <li><a href="https://www.data-dictionary.reveliolabs.com/data.html">Revelio · data dictionary</a></li>
+    <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1267462">Belo, Lin &amp; Bazdresch · Labor hiring and returns</a></li>
+  </ul>
+</section>
+
+<section id="prompt">
+  <div class="head">
+    <p class="step">STEP 4</p>
+    <h2>Build-and-run prompt</h2>
+    <p class="intro">One Markdown file, model-agnostic, ready to paste as the first message of a session with any model that can run code and reach the internet (for example Claude Code on your laptop), at its highest reasoning-effort setting. Set <code>FRED_API_KEY</code> and <code>OPENAI_API_KEY</code> first. The model builds the codebase, runs stages 0–9 in order, and stops early only for a missing key.</p>
+  </div>
+  <div class="dl">
+    <div class="dl-file" aria-hidden="true"><span>.md</span></div>
+    <div class="dl-body">
+      <p class="dl-name">230GA_build-and-run_prompt.md</p>
+      <p class="dl-meta"><span id="dl-size">—</span> · 6,131 words · 16 sections · includes all nine second-review edits</p>
+      <div class="dl-actions">
+        <button class="btn-primary" type="button" id="dl-save">Download .md</button>
+        <button class="btn-ghost" type="button" id="dl-copy">Copy text</button>
+        <span class="dl-status" id="dl-status" role="status"></span>
+      </div>
+      <details class="dl-toc"><summary>What's inside</summary><ol><li>0. Your role</li><li>1. The project</li><li>2. Non-negotiable rules</li><li>3. Environment</li><li>4. Repository layout</li><li>5. Stage 0 — Pre-registration (before any return file is read)</li><li>6. Stage 1 — Download and audit (`outputs/manifest.csv`)</li><li>7. Stage 2 — As-of panels (`outputs/panel_asof.parquet` and variants)</li><li>8. Stage 3 — Features (`outputs/features.parquet`)</li><li>9. Stage 4 — Blinding (`outputs/blind_map.json` stays local and secret)</li><li>10. Stage 6 — Evaluator and portfolio (build and unit-test BEFORE Stage 5)</li><li>11. Stage 5 — Agent research (research period only)</li><li>12. Stage 7 — Selection, red team, freeze</li><li>13. Stage 8 — Sealed final evaluation (run once)</li><li>14. Stage 9 — Gate, decode, figures, report</li><li>15. Final checklist before you stop</li></ol></details>
+    </div>
+  </div>
+  <footer>Blueprint only: every threshold on this page is a pre-registered design choice, not a result.</footer>
+</section>
+
+</div>
+
+<script type="text/markdown" id="prompt-md">
+# 230GA · Follow the Workers — build-and-run prompt
+
+> **How to use this file.** Paste the whole file as the first message of a session with a model that can write and run code and reach the internet (for example Claude Code on your laptop), at the highest reasoning-effort setting available. Set `FRED_API_KEY` and `OPENAI_API_KEY` first. The model builds the codebase and runs Stages 0 to 9 in order in one go. It stops early only if a required key is missing.
+>
+> Team: Romain Almeida, Elouan Bahri, Piero Pelosi, Alex Roesler, Al Yazid Bensaid · UC Berkeley MFE · course 230GA · blueprint v4.
+
+---
+
+## 0. Your role
+
+You are the lead research engineer for a five-person MFE team. In this session you will build, run and document the pre-registered research pipeline specified below, end to end, and deliver results, figures, logs and a draft report.
+
+You are **the engineer, not the researcher**:
+
+- Implement this specification exactly. Do not invent features, do not tune any parameter after seeing a result, and never look at sealed-period returns before the freeze in Stage 7.
+- When reality forces a deviation (a series is missing, an API changed, a field has another name), first write it to `outputs/deviations.md` with the reason and a UTC timestamp, then choose the most conservative option and continue. Never make a deviation whose reason depends on performance.
+- Do not ask the user questions. The only reason to stop early is a missing required API key (Section 3).
+- After every stage, append a short plain-English status to `outputs/checkpoints.md` so a person can follow the run without reading code.
+- Work carefully and verify as you go: this is a long task where one silent look-ahead bug invalidates everything. Prefer an explicit assert over an assumption.
+
+---
+
+## 1. The project
+
+We test whether public labor-market data by industry predicts which US industries outperform. Every month, for 13 industry groups, we measure how job openings, hires, quits, layoffs, weekly hours and pay changed over the past year, exactly as those numbers were known on the decision date. We rank the groups, go long the top 3 and short the bottom 3, and hold each position 3 months through three overlapping monthly tranches. National labor tightness `T = log(job openings / unemployed)` is recorded as a conditioning variable.
+
+Blinded ChatGPT research agents propose additional features on the research period only, in two architectures with equal budgets: three **island** agents that exchange short findings, and three **independent** agents that do not. A fixed evaluator scores everything. All choices are frozen, then the sealed test period is opened exactly once.
+
+The report answers three questions:
+
+| | Question | Where it is answered |
+|---|---|---|
+| **Q1** | Does public labor information predict industry returns? | Sealed test: A1 vs A0 and the gate. Judged on the **main effect**. |
+| **Q2** | Do company-level recruiting and layoff data add to it? | Sealed test: A2 vs A1, only if the company data pass the Stage 1 gate. |
+| **Q3** | Do agents that share findings **search better** than agents that do not? | **Research period**, with process metrics and dispersion across 3 seeds per arm. The sealed A4 vs A3 comparison is a single draw (one base algorithm, one opening of the seal) and is reported descriptively, never as a test. |
+
+**Horizon.** The model target is the 1-month-ahead relative return, because that is where the data has enough independent observations to test honestly: about 142 sealed months if the sealed start S\* is October 2014, versus 47 non-overlapping 3-month periods and 23 non-overlapping 6-month periods. Positions are held 3 months through tranches. 3- and 6-month results are reported with overlap-robust errors and never decide anything.
+
+**Expected outcome (pre-registered).** Given about 142 sealed months and a five-part gate, "Do not implement" is the expected outcome. The report is built so that three things carry the contribution whatever the verdict: the research-versus-sealed performance gap, the number of candidates that pass in research and fail in the sealed test, and the comparison of the two search architectures.
+
+---
+
+## 2. Non-negotiable rules
+
+| # | Rule |
+|---|---|
+| R1 | **No look-ahead.** A value used at decision date `d` must have been published on or before `d − 1 day`. Primary results use ALFRED vintages. Today's revised values never enter primary results. |
+| R2 | **Sealed test.** Returns after the research period are loaded only inside `final_evaluation()`. It refuses to run unless `outputs/FREEZE.json` exists and the SHA-256 of `params.py`, `data.py`, `stats.py`, `agents.py` and `outputs/selected_features.json` matches. It runs once. A rerun needs a written reason appended to `outputs/reruns.log`, and both results are reported. |
+| R3 | **No tuning on results.** Every parameter lives in `params.py`, hashed at Stage 0 (`prereg_v0.json`) and at Stage 7 (`FREEZE.json`). Changes in between are allowed only for reasons unrelated to performance and are listed in `deviations.md`. |
+| R4 | **Blinding.** Research agents never see company names, tickers, industry names, calendar dates, vendor names, series IDs, raw values, the data panel or this prompt. They see only an anonymized variable dictionary, anonymous group labels, a time index, the grammar and rounded research-period summaries. Call them through the OpenAI API with **no tools** (no browsing, no code execution). That is the security boundary, not a sentence in a prompt. |
+| R5 | **Log everything.** Every download, every candidate (invalid ones included), every migration report, every model fit, every figure. Delete nothing. |
+| R6 | **Small codebase.** Exactly these files: `params.py`, `data.py`, `stats.py`, `plots.py`, `agents.py`, `run.ipynb` (Section 4). No classes unless unavoidable, no frameworks, no test suite: inline asserts. |
+| R7 | **Honest reporting.** Report every prespecified metric even when it is bad. State sample sizes, effective cross-sectional width and limits. |
+| R8 | **Time-box the company data.** If LinkUp or WARN access is not working within 3 hours of wall time in Stage 1, drop it and A2 without further discussion (team decision). The evaluator and the as-of panels are what everything else waits on. |
+| R9 | **No scope creep.** Do not build CRSP stock baskets or any other universe in this run. Name NAICS-based CRSP baskets as the recommended follow-up in the report's limits section. |
+
+---
+
+## 3. Environment
+
+- Python 3.11 or later.
+  `pip install pandas numpy scipy statsmodels scikit-learn matplotlib fredapi requests openai pyyaml pyarrow duckdb`
+  Optional: `wrds`, `deweypy`, `lightgbm`.
+- Environment variables:
+
+| Variable | Required | Notes |
+|---|---|---|
+| `FRED_API_KEY` | yes | Free account at https://fredaccount.stlouisfed.org |
+| `OPENAI_API_KEY` | yes for Stage 5, P1, P4 | The research agents are ChatGPT models; this also satisfies the course's ChatGPT requirement. |
+| `OPENAI_MODEL` | no | Default `gpt-5`. Record the exact model id the API returns in every log line. |
+| `WRDS_USERNAME` | no | Password via `~/.pgpass`. Needed only for Revelio WARN. |
+| `DEWEY_API_KEY`, `DEWEY_PROJECT_ID` | no | Needed only for LinkUp. |
+
+- If `FRED_API_KEY` is missing: stop and ask for it.
+- If `OPENAI_API_KEY` is missing: run Stages 0 to 4 and 6, write every agent's first prompt to `outputs/agents/manual/` with paste instructions for ChatGPT, and stop before Stage 5.
+- FRED allows 120 requests per minute: sleep 0.6 s between calls and cache every raw response under `data/cache/`.
+- Seed every random process with 230.
+
+---
+
+## 4. Repository layout
+
+| File | Contents |
+|---|---|
+| `params.py` | Every constant in this prompt, plus the pre-registration statements of Section 5 verbatim as `PREREG_NOTES`. |
+| `data.py` | Downloads, vintage audit, as-of panels, crosswalk, features, returns, portfolio construction and backtest. |
+| `stats.py` | Rank IC, Newey-West, stationary bootstrap, blocked ridge CV, reality check, deflated Sharpe, circular-shift placebo, factor regressions, process metrics. |
+| `plots.py` | Every figure. |
+| `agents.py` | Blinding, grammar parser, agent orchestration (both arms, all seeds), migration tracing, logging. |
+| `run.ipynb` | Orchestrates Stages 0 to 9, with a short markdown cell before each stage explaining it. |
+| `outputs/` | Manifest, panels, logs, candidates, freeze files, final results, figures, checkpoints, deviations. |
+| `report/` | `report.md` and `chatgpt_log.md`. |
+
+---
+
+## 5. Stage 0 — Pre-registration (before any return file is read)
+
+1. Write `params.py` with every constant in this prompt: dates, universe, series IDs, feature formulas, windows, thresholds, grammar, budgets, seeds, costs, comparison family, gate.
+2. Include these statements verbatim in `PREREG_NOTES`:
+   - **Tightness is extrapolated.** "V/U stays below 1 (T below 0) throughout the research period. Any feature × T interaction is therefore estimated outside the support observed in research and applied to a test period containing the 2021–23 tight regime. Q1 is judged on the main effect. The interaction model and the V/U above-versus-below-1 split are reported as descriptive, not as tests."
+   - **Sealed boundary.** "The research/sealed boundary stays at S\*. Moving it earlier to capture tight-regime variation in research costs power where power is scarce: about 142 sealed months need an annualized Sharpe near 0.58 for t ≈ 2, 92 months about 0.72, 68 months about 0.84. No split solves both problems; this is a limitation of the data, not a design error."
+   - **Seeds.** "Each agent arm is run with three seeds. Seed 1 is the only strategy-producing run: only its candidates may supply features to A3 and A4. Seeds 2 and 3 measure search behaviour and never enter selection."
+   - **Trial count.** "The deflated Sharpe ratio and the reality check use the 36 candidates of seed 1 plus the strategies evaluated in research. Process-measurement seeds are excluded, since none of their candidates is eligible for selection."
+   - **Comparison family.** "Holm correction applies to A1 vs A0, A2 vs A1 (if admitted) and A3 vs its base. A4 vs A3 is reported with its interval, outside the family, as descriptive."
+   - **Expected outcome.** The paragraph in Section 1.
+3. Save `outputs/prereg_v0.json` with the SHA-256 of `params.py` and a UTC timestamp.
+
+---
+
+## 6. Stage 1 — Download and audit (`outputs/manifest.csv`)
+
+### 6.1 Returns and factors (Ken French, free)
+
+| File | URL | Use |
+|---|---|---|
+| 49 industry portfolios | https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/49_Industry_Portfolios_CSV.zip | Sections "Average Value Weighted Returns -- Monthly", "Number of Firms in Portfolios", "Average Firm Size" |
+| Fama-French 5 factors | https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_CSV.zip | Mkt-RF, SMB, HML, RMW, CMA, RF |
+| Momentum | https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip | Mom |
+| Definitions | https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Siccodes49.zip | Manifest documentation |
+| SIC→NAICS concordance | https://www.census.gov/naics/concordances/1987_SIC_to_2002_NAICS.xls | Crosswalk check |
+
+- Values are percent; `-99.99` and `-999` mean missing.
+- Portfolio market cap = number of firms × average firm size, from the prior month.
+- Group return = value-weighted mean of member portfolio returns using prior-month caps.
+- Excess return = group return − RF. **Model target** = relative return = excess return minus the cross-sectional mean of the 13 groups that month.
+
+### 6.2 Universe (fixed: do not add, split or merge)
+
+| G | Group | JOLTS code | French members | CES code | Match |
+|---|---|---|---|---|---|
+| 1 | Mining and logging | 110099 | Gold Mines Coal Oil | 10000000 | exact |
+| 2 | Construction | 2300 | Cnstr | 20000000 | exact |
+| 3 | Durable manufacturing | 3200 | Toys BldMt Steel FabPr Mach ElcEq Autos Aero Ships Guns Hardw Chips LabEq MedEq | 31000000 | exact |
+| 4 | Nondurable manufacturing | 3400 | Food Soda Beer Smoke Hshld Clths Drugs Chems Rubbr Txtls Paper | 32000000 | exact (Hshld approximate) |
+| 5 | Wholesale trade | 4200 | Whlsl | 41420000 | exact |
+| 6 | Retail trade | 4400 | Rtail | 42000000 | exact |
+| 7 | Transportation, warehousing and utilities | 480099 | Trans Util | 43000000 | approximate (CES covers transportation and warehousing only) |
+| 8 | Information | 5100 | Telcm | 50000000 | exact |
+| 9 | Finance and insurance | 5200 | Banks Insur Fin | 55000000 | approximate (CES financial activities) |
+| 10 | Real estate and rental and leasing | 5300 | RlEst | 55000000 | approximate (same CES series as group 9) |
+| 11 | Professional and business services | 540099 | BusSv | 60000000 | exact |
+| 12 | Health care and social assistance | 6200 | Hlth | 65000000 | approximate (CES private education and health) |
+| 13 | Accommodation and food services | 7200 | Meals | 70000000 | approximate (CES leisure and hospitality) |
+
+- Excluded French portfolios, with reasons recorded in the manifest: Agric (outside JOLTS nonfarm), Other, Boxes, Books, Softw, Fun, PerSv (SIC spans two NAICS sectors).
+- Every strategy uses this same universe.
+- Groups 9 and 10 share CES series and several groups use approximate supersectors, so the effective cross-sectional width is closer to 8–9 than 13. Never count shared series as independent evidence, and state this in the report.
+
+### 6.3 JOLTS rates (FRED, not seasonally adjusted, monthly from December 2000)
+
+- Series ID = `JTU` + JOLTS code + measure, with measure ∈ {`JOR` job openings rate, `HIR` hires rate, `QUR` quits rate, `LDR` layoffs and discharges rate}. Example: https://fred.stlouisfed.org/series/JTU480099JOR. All 52 IDs are listed in FRED's JOLTS release tables.
+- Use NSA for every group because FRED carries seasonally adjusted JOLTS for only some industries. Every feature is a year-over-year change, which removes seasonality without seasonal-factor revisions.
+- Tightness: `JTSJOL` (job openings, total nonfarm, SA, thousands) and `UNEMPLOY` (unemployment level, SA, thousands).
+
+### 6.4 CES hours and earnings (FRED, production and nonsupervisory employees)
+
+- Hours = `CEU` + CES code + `07`. Earnings = `CEU` + CES code + `08`.
+- Exception: construction earnings = `CES2000000008` (seasonally adjusted; the NSA series is not on FRED; year-over-year changes make this acceptable). Note it in the manifest.
+
+### 6.5 Output prices for F6 (optional)
+
+Search FRED (API `fred/series/search`) for "Producer Price Index by Industry" series whose NAICS scope equals the group's JOLTS industry. Accept only exact scope matches (`PCUOMFGOMFG`, total manufacturing, is **not** a match for group 3 or 4 alone). Record the candidates and the decision per group. F6 enters models only if at least 9 of 13 groups have an accepted match with vintages; otherwise F6 is a diagnostic only.
+
+### 6.6 Vintage audit and S\*
+
+- For every series call `https://api.stlouisfed.org/fred/series/vintagedates` and store the first vintage date. Sanity values: `JTS2300JOR` first vintage 2010-08-11; `JTS3200JOR` 2014-10-07.
+- A series is admitted if its first vintage is on or before 2015-06-30. A measure (for example `QUR`) is admitted if at least 11 of 13 groups have it admitted. A group missing an admitted measure gets 0 for that feature after cross-sectional standardization, flagged.
+- **S\*** = the latest first-vintage date among admitted series. The first sealed decision is the last trading day of the month containing S\*.
+- If fewer than 3 JOLTS measures are admitted, the primary switches to the FIXEDLAG variant (Stage 2) and every final result is labeled "pseudo-real-time".
+- Before Stage 2, write to `checkpoints.md`: S\*, the number of research and sealed months, the non-overlapping counts at 1, 3 and 6 months, and the minimum detectable annualized Sharpe (`2 / sqrt(sealed years)`).
+
+### 6.7 Company-level data gate (skip cleanly if access fails; see R8)
+
+**LinkUp via Dewey** (https://www.deweydata.io/data-partners/linkup; `pip install deweypy`). Use raw postings with `created` (first observed), `delete_date`, `last_checked`, `company_id`, `ticker_symbol`, `naics_code` and the point-in-time company reference. Admit **Tier 1** (new-posting flows by `created`) only if all hold:
+
+- records from 2008 with `created` timestamps;
+- the `company_id` → ticker and NAICS mapping is point-in-time;
+- scrape logs or coverage fields separate collection failures from inactivity;
+- at least 20 cohort companies per group-month in at least 10 of 13 groups.
+
+**Tier 2** (active postings, ages, removals, reappearances) is admitted only if historical snapshots exist, because postings can disappear and reappear. If raw data exceed 50 GB or 6 hours of processing, use Dewey's LinkUp company analytics only if their documentation confirms counts by first-observed date.
+
+**WARN notices via WRDS**, schema `revelio_layoffs` (fields `notice_date`, `layoff_date`, `num_employees`, `state`, `rcid`). Map `rcid` to NAICS and public identifiers through Revelio's company reference tables. Information date = `notice_date` + 30 days unless a verified collection date exists. Treat amendments as versions of one event. Admit if the mapping covers at least 10 of 13 groups from 2008.
+
+If any check fails, record why and continue with the public pipeline. Never substitute scraped current state WARN lists; they are not historical.
+
+### 6.8 Manifest and P1
+
+- Manifest: one row per series or dataset with source, ID or table, URL, group, measure, frequency, observation start and end, first vintage, admitted (yes/no), reason, mapping quality, flags.
+- **P1 — ChatGPT data audit and coding.** Send ChatGPT (API, no tools) the manifest, the crosswalk table and the source code of your as-of function, with this prompt:
+
+```text
+Find mapping errors, timestamp or look-ahead errors, and code bugs in the material below.
+For each problem, give the exact line or row, why it is wrong, and a test that would confirm it.
+Do not report style issues.
+```
+
+Test every claim. Fix confirmed ones before Stage 2. Log the prompt, a summary of the output, what was wrong and what changed.
+
+---
+
+## 7. Stage 2 — As-of panels (`outputs/panel_asof.parquet` and variants)
+
+- **Decision dates** `d`: the last trading day of each month. **Information cutoff**: `realtime_start ≤ d − 1 calendar day`.
+- **Method**: `fredapi.get_series_all_releases` once per series; for each `d` and observation month `m`, take the value with the latest `realtime_start` at or before the cutoff (`pandas.merge_asof`).
+- **Variants** from the same code path:
+
+| Variant | Definition | Role |
+|---|---|---|
+| ASOF | Latest value known at `d` | Primary |
+| FIRST | First release only (`get_series_first_release`) | Robustness |
+| REVISED | Today's values | Hindsight diagnostic only |
+| FIXEDLAG | Today's values; JOLTS months ≤ `d − 2`, CES and CPS months ≤ `d − 1` | Sensitivity |
+
+- **Research period** (decisions before S\*): vintages do not exist, so use the vintage as of S\* with the FIXEDLAG availability rule. No revision published after S\* can reach the research period. Label it pseudo-real-time.
+- **Periods** (returns are earned in month `d + 1`):
+  - Research: first decision at the end of April 2004 through the last decision before S\*.
+  - Sealed test: decisions from S\* through the latest month with French returns.
+  - Last 18 months: the final 18 return months of the sealed test.
+- **Checks**: assert that no row at `d` contains an observation month later than allowed. Write 5 random (series, `d`, value) triples to `checkpoints.md` for the team to verify by hand on the ALFRED website.
+
+---
+
+## 8. Stage 3 — Features (`outputs/features.parquet`)
+
+Notation: `avg3(X, m)` = mean of `X(m)`, `X(m−1)`, `X(m−2)`. `m_J` = latest JOLTS month available at `d`; `m_C` = latest CES month available at `d`.
+
+```text
+F1 openings    = avg3(JOR, m_J) − avg3(JOR, m_J − 12)
+F2 hires       = avg3(HIR, m_J) − avg3(HIR, m_J − 12)
+F3 quits       = avg3(QUR, m_J) − avg3(QUR, m_J − 12)
+F4 layoffs     = avg3(LDR, m_J) − avg3(LDR, m_J − 12)
+F5 hours       = log avg3(H, m_C) − log avg3(H, m_C − 12)
+F6 wage–price  = [log avg3(E, m_C) − log avg3(E, m_C − 12)] − [log avg3(P) − log avg3(P, −12)]   (only if admitted)
+T              = log(JTSJOL / UNEMPLOY) at the latest month available for both at d (matched reference month)
+A0 fixed rule  = mean(z1, z2, −z4, z5)   (no fitting; signs set by economics before any data)
+```
+
+- `T` is common to all groups: on its own it cannot rank them; it acts only through interactions, and every interaction is extrapolated (Section 5).
+- **Standardization** at each `d`: divide each feature by its own group's expanding standard deviation (at least 24 observations, as-of `d`), then z-score across the 13 groups, winsorize at ±3, set missing to 0 (flagged).
+
+**Company-level features** (only if admitted). Cohort at `d`: companies with at least 24 months of scrape history before `d` and no collection-failure flag. Compute company-level quantities first, then aggregate within group:
+
+```text
+N_i(m)  = postings of company i with created in month m;  Nbar_i = 3-month mean
+H1 new-posting growth   = log( Σ_i Nbar_i(m) / Σ_i Nbar_i(m−12) )
+H2 breadth              = share of cohort companies with Nbar_i(m) > Nbar_i(m−12)
+H3 concentration        = share of Σ_i |ΔNbar_i| from the 5 largest contributors
+W_i                     = 1 if company i has a WARN event with information date in (d − 3 months, d]
+H4 notice intensity     = YoY change of Σ num_employees over the last 3 months / group employment (CEU + CES code + "01", as-of d)
+H5 retrenchment         = mean_i [ W_i × 1(Nbar_i(m) < Nbar_i(m−12)) ]    (product per company, then average)
+H6 reallocation         = mean_i [ W_i × 1(Nbar_i(m) > Nbar_i(m−12)) ]
+H7 public–private gap   = z(H1) − z(F1), same reference month m_J
+H7L leading version     = same with LinkUp's latest month (a separate feature; never mix with H7)
+```
+
+Save `(d, group, feature, value, variant, flags)`.
+
+---
+
+## 9. Stage 4 — Blinding (`outputs/blind_map.json` stays local and secret)
+
+- Map variables to `V01…Vk`, groups to `G01…G13` in random order (seed 230), research decision dates to `t = 1…n`.
+- The variable dictionary sent to agents lists, per variable: id, type (rate in percent of employment, hours, dollars per hour, count, share or index), stock or flow, monthly frequency, availability lag in months, coverage share, and whether it is common to all groups. Nothing else.
+- Use the same blind map for every arm and every seed.
+
+---
+
+## 10. Stage 6 — Evaluator and portfolio (build and unit-test BEFORE Stage 5)
+
+**Target and metrics.** Next-month relative return of each group. Per month: Spearman rank IC between score and target, and the long–short return.
+
+**Models** (identical machinery for every strategy):
+
+| Name | Features | Role |
+|---|---|---|
+| A0 | Fixed rule of Stage 3 | Benchmark, no fitting |
+| A1 | Ridge on standardized main effects F1–F5 (+F6 if admitted) | Public model; Q1 |
+| A1-T | A1 plus each feature × T | Descriptive only (extrapolated) |
+| A2 | A1 plus admitted company-level features | Q2, overlap sample |
+| A5 | LightGBM, `max_depth=2`, 200 trees, `learning_rate=0.03`, A1's features | Optional comparator, not tuned |
+
+- Ridge is refit every month on an expanding window starting with the first research decision; first prediction after 36 months.
+- The ridge penalty is chosen once on the research period by 5-fold blocked cross-validation (contiguous folds, 1-month purge) over `logspace(-2, 3, 11)`, then frozen.
+
+**Portfolio** (identical for every strategy):
+
+- Each month rank groups by score. New tranche: long the top 3, short the bottom 3, equal weight within legs, dollar-neutral. Book = average of the three most recent tranches (3-month holding). Sensitivities: 1-month and 6-month holding.
+- Beta: each group's beta to Mkt-RF from the prior 60 months (at least 36). Hedge the book's ex-ante beta to zero with a Mkt-RF position.
+- Volatility target 10% annualized using a Ledoit-Wolf covariance of group returns over the prior 60 months. Gross leverage cap 2.0 (sum of absolute weights). If the cap binds, accept lower volatility.
+- Costs: `cost_t = c × Σ_g |w_target − w_pretrade|`, with pretrade weights after drift; `c` = 10 bp base, 0 and 25 bp sensitivities; no double counting. Hedge trades cost 2 bp. Borrow and financing reported separately (0 base, 25 bp per year sensitivity).
+- Long-only version: equal-weight the top 3 groups against an equal-weight 13-group benchmark; report active return, tracking error and information ratio.
+
+**Feedback returned to agents** (research period only, rounded to 2 decimals):
+
+- coverage, mean IC, Newey-West t (6 lags);
+- IC when T is in its lower versus upper expanding tercile (kept deliberately: it is not a selection criterion; note in the report that agents observed the thesis variable during search);
+- maximum absolute correlation with the base features, rank autocorrelation, validity status.
+
+**Never return the IC in each half of the research period.** Stage 7 selects on it; an agent that saw it could target it across six submissions.
+
+**Unit check.** Before Stage 5, run the evaluator on a synthetic signal with a known IC and record the check in `checkpoints.md`.
+
+---
+
+## 11. Stage 5 — Agent research (research period only)
+
+### 11.1 Design
+
+| | Islands | Independent (control) |
+|---|---|---|
+| Agents | 3: Temporal, Composition, Interactions | 3: same emphases |
+| Submissions per agent | 6 | 6 |
+| Migration | After submissions 2 and 4, each island writes a ≤ 120-word report, including at least one failure, sent to the other two. Findings only: no specs, no formulas, no code. | None |
+| Seeds | 3 (seed 1 strategy-producing; seeds 2–3 process only) | 3 (same) |
+| Candidates per seed | 18 | 18 |
+
+- Emphases: **Temporal** (changes, persistence, acceleration, recovery), **Composition** (breadth, concentration, dispersion across variables), **Interactions** (events, continuous regimes, disagreement between variables).
+- Same model, same temperature (0.7 where supported), same starting prompts, same evaluator for every arm and seed. Pass the API `seed` parameter as 230 + seed number where supported, and record whether it was honoured.
+- **Seed 1 is the only strategy-producing run.** Only its 36 candidates (18 per arm) are eligible for Stage 7. Seeds 2 and 3 measure search behaviour and never enter selection or the trial count.
+- Invalid or unparseable submissions count against the budget. One retry is allowed for JSON syntax only; log both attempts.
+- You, the engineer, must not propose, edit or rank features.
+
+### 11.2 Submission format and grammar
+
+Each submission is JSON only:
+
+```json
+{"name": "...", "hypothesis": "≤ 40 words", "falsified_if": "≤ 30 words", "expression": "..."}
+```
+
+Allowed operations (the parser rejects anything else, and any negative lag):
+
+```text
+lag(x,k)        k ∈ {1,2,3,6,12}
+mavg(x,w)       w ∈ {3,6,12}
+chg(x,k)        lchg(x,k)        yoy(x)
+accel(x)        = chg(chg(x,3),3)
+persist(x,k)    = share of the last k months with chg(x,1) > 0,  k ∈ {3,6}
+tsz(x,w)        w ∈ {36, 60, "exp"}
+csrank(x)       ratio(x,y)       spread(x,y) = z(x) − z(y)       mult(x,y)
+withT(x)        = x × T
+regime(x, s)    = x × 1(T in its lower or upper expanding tercile),  s ∈ {"low","high"}
+Limits: at most 3 nested operations; at most 2 base variables plus T.
+```
+
+### 11.3 Prompts (use verbatim; fill the braces)
+
+System prompt:
+
+```text
+You are a quantitative researcher. You will propose one feature per turn to predict which of {n} anonymous groups (G01 to G{n}) will have higher returns next month relative to the others. You see only the variable dictionary below, the allowed operations, and summary statistics of your previous submissions. You do not know what the groups, variables or time periods are. Do not guess them and do not use knowledge about any real industry, company or date.
+Starting emphasis: {emphasis}.
+Rules: return only JSON with keys name, hypothesis, falsified_if, expression; use only the allowed operations; state a hypothesis that the statistics could falsify.
+Variable dictionary: {dictionary}
+Allowed operations: {grammar}
+```
+
+Turn prompt:
+
+```text
+Submission {i} of 6. Your previous submissions and their development statistics: {history}.
+{migration_reports}   ← islands only; empty for independent agents
+Propose your next feature.
+```
+
+Migration prompt (islands, after submissions 2 and 4):
+
+```text
+In at most 120 words, report to the other researchers what you learned so far, including at least one thing that failed. Do not include formulas.
+```
+
+### 11.4 Process metrics for Q3 (pre-specified; computed per arm and seed)
+
+| Metric | Definition |
+|---|---|
+| Best-so-far IC curve | For submission index i = 1…6, the best research-period mean IC among the arm's valid candidates submitted up to i |
+| Median IC | Median research-period mean IC of the arm's valid candidates |
+| Invalid rate | Share of submissions that failed parsing or validation |
+| Diversity | 1 − mean pairwise Jaccard similarity of the candidates' token sets (operations + base variables) |
+
+Q3 is answered on these metrics: arm means with the range across the 3 seeds, and whether the between-arm gap exceeds the between-seed range. The seeds give error bars on the search process only. They add no power on the sealed window (every seed would face the same 142 months), so they are never pooled into a sealed test.
+
+### 11.5 Migration tracing
+
+Trace every migration report forward (all seeds; seed 1 reported first):
+
+1. Split the report into numbered claims.
+2. For each later submission by the two receiving islands, ask a separate ChatGPT judge call (no tools) whether the submission uses or tests any claim. Input: the report and the submission's hypothesis and expression. Output JSON: `{"uses_claim": true|false, "claim_ids": [...]}`.
+3. The team spot-checks 20% of the judgments; record agreement.
+4. Report the uptake rate, and whether submissions that use a claim score better than the receiving island's own earlier best, compared with submissions that do not. Also record whether reported failures were avoided.
+
+### 11.6 Logging
+
+Log every call to `outputs/agents/log.jsonl`: arm, seed, agent, submission index, prompt, raw response, parsed spec, validity, evaluator feedback, tokens, model id, timestamp. Save the full library to `outputs/candidates.csv` with a `seed` column. Before Stage 7, grep the log to prove that no prompt contains a date, industry name, ticker or series ID, and record the result.
+
+**P2** (blind hypothesis generation) = the first submissions of seed 1. **P3** (migration) = the seed-1 migration reports and their tracing.
+
+---
+
+## 12. Stage 7 — Selection, red team, freeze
+
+**Selection rule per architecture** (seed 1 only; fixed): keep candidates with research-period Newey-West t ≥ 1.5, same-sign IC in both halves of the research period, and maximum absolute correlation below 0.8 with the base features and already-selected candidates. Take up to 3 by t. If none qualify, the architecture's strategy equals its base.
+
+**Final strategy list** (no others):
+
+| Strategy | Definition |
+|---|---|
+| A0 | Fixed rule (public) |
+| A1 | Public ridge, main effects |
+| A1-T | A1 + feature × T (descriptive) |
+| A2 | A1 + admitted company-level features (only if admitted; overlap sample) |
+| A3 | Base (A2 if admitted, else A1) + independent-arm features from seed 1 |
+| A4 | Same base + island-arm features from seed 1 |
+| A5 | Optional LightGBM comparator |
+
+**Research-period multiple testing.** Stationary-bootstrap reality check (mean block 6 months, 5,000 draws) of the best candidate against the 36 seed-1 candidates; deflated Sharpe ratio for each strategy using the count of seed-1 candidates plus strategies evaluated in research. Seeds 2 and 3 are excluded from both.
+
+**Primary strategy** for the implementation decision = the strategy among A0 to A4 with the highest research-period net Sharpe after costs (ties go to the simpler one). Record it now.
+
+**P4 — ChatGPT red team** (API, no tools). Send the research-period tables (no dates, no names) with this prompt:
+
+```text
+Give 10 distinct reasons these results could be spurious, ranked by likelihood.
+For each, name a test that can be run with this data and the result that would make us say "do not implement".
+```
+
+Add the specific, runnable tests to the prespecified diagnostics. Log accepted and rejected ones with reasons.
+
+**Freeze.** Write `outputs/selected_features.json`, then `outputs/FREEZE.json` with the SHA-256 of `params.py`, `data.py`, `stats.py`, `agents.py` and `selected_features.json`, plus the UTC time. Nothing changes after this.
+
+---
+
+## 13. Stage 8 — Sealed final evaluation (run once)
+
+Run every strategy of Stage 7 on the sealed period with the ASOF variant. For each, report:
+
+- mean IC and Newey-West t at horizons 1, 3 and 6 months (overlapping horizons use h + 5 lags);
+- gross and net long–short return, volatility, Sharpe, maximum drawdown, turnover, hit rate;
+- long-only active return, tracking error and information ratio.
+
+**Paired comparisons** (one-sided; stationary bootstrap, mean block 6 months, 5,000 draws; metrics: difference in mean IC and in net long–short return):
+
+| Comparison | Status |
+|---|---|
+| A1 vs A0 | Test, Holm family |
+| A2 vs A1 (overlap sample) | Test, Holm family, only if admitted |
+| A3 vs its base | Test, Holm family |
+| A4 vs A3 | **Descriptive**: report the interval; outside the Holm family |
+| A1-T vs A1, V/U above vs below 1 | **Descriptive**: extrapolated tightness |
+
+**Placebo.** Circular time shift of the frozen feature panel against returns, for every shift from 24 months to (number of sealed months − 24). p-value = share of shifted mean ICs at or above the actual one.
+
+**Attribution.** Regress net long–short returns on Mkt-RF, SMB, HML, RMW, CMA, Mom and a group-momentum long–short (12-1 momentum of the 13 groups, top 3 minus bottom 3), Newey-West with 6 lags.
+
+**Windows.** Whole sealed period; first and second half; excluding March–December 2020; last 18 months; T terciles.
+
+**Variants.** FIRST, REVISED, FIXEDLAG. Report the as-known minus revised gap.
+
+**Course windows** (label clearly): "post-2010" = January 2010 onward, pseudo-real-time before S\* and as-known after; "full" = May 2004 onward, same labeling.
+
+**Drop-one-group.** Recompute with each group removed; flag any group contributing more than 50% of cumulative profit.
+
+**Research-versus-sealed accounting.** For every seed-1 candidate and every strategy, the research-period statistic next to its sealed statistic; count the candidates that pass the Stage 7 filter in research and fail in the sealed test.
+
+**Implementation.** Cost breakeven (the cost that sets net Sharpe to 0), turnover, capacity notes, and candidate ETF proxies per group (for example ITB or XHB construction, XRT retail, IYT transportation, XLU utilities, XLF, KBE or KIE financials, IYR real estate, PEJ leisure). Verify each exists, and state that French portfolios are research series, not tradable.
+
+---
+
+## 14. Stage 9 — Gate, decode, figures, report
+
+**Gate.** Implement only if every criterion holds for the primary strategy on the sealed period:
+
+| | Criterion |
+|---|---|
+| G1 | Timing: primary results use ASOF data and no audit flag is open. |
+| G2 | Prediction: mean 1-month IC above 0 with Newey-West t ≥ 2.0. |
+| G3 | Incremental: net long–short alpha after the attribution factors above 0 with Newey-West t ≥ 2.0. |
+| G4 | Robust: positive mean IC in both halves; placebo p < 0.05; no single group above 50% of cumulative profit. |
+| G5 | Implementable: net Sharpe above 0 at 25 bp; turnover and capacity documented. |
+
+Otherwise write **"Do not implement"** and name the failed criteria. Always add the power statement: with about 142 sealed months, only an annualized Sharpe near 0.6 or higher reaches t ≈ 2, so a null result does not rule out a smaller effect. Recall that "Do not implement" was the expected outcome, and lead with what the study learned.
+
+**Decode.** Only now open `blind_map.json` to interpret the selected features in economic terms. Nothing from this step goes back into selection.
+
+**Figures** (`outputs/figures/`, from `plots.py`):
+
+1. Pipeline diagram.
+2. Sample-split timeline (research, S\*, sealed test, last 18 months).
+3. Cumulative net long–short for every strategy.
+4. IC by horizon with confidence intervals.
+5. IC by T tercile.
+6. As-known versus revised gap.
+7. Placebo distribution.
+8. Best-so-far IC curves by submission, islands versus independent, with the range across seeds.
+9. Migration uptake and its effect on scores.
+10. Research-versus-sealed scatter for all seed-1 candidates.
+11. Factor loadings.
+12. Drawdowns.
+
+**Report** (`report/report.md`), in the course template:
+
+1. Executive summary (one paragraph, verdict first)
+2. What did you try: 2a Ideas; 2b Data (manifest summary, links, admission decisions); 2c Implementation (risk model, turnover and costs, ChatGPT prompts)
+3. What did you learn: 3a Style and risk exposures; 3b Time patterns (full, post-2010, last 18 months); 3c Robustness and limits (effective width of 8–9 groups, extrapolated tightness, power, NAICS CRSP baskets as the recommended follow-up); 3d ChatGPT evaluation (P1–P4, Q3 process metrics, migration tracing)
+4. Appendices (logs, tables, code snippets)
+
+**ChatGPT log** (`report/chatgpt_log.md`): for P1, P2, P3 and P4, four fields (prompt, output summary, what was wrong, what we changed) plus a column "Team critique" left empty for the students.
+
+---
+
+## 15. Final checklist before you stop
+
+- [ ] `prereg_v0.json` and `FREEZE.json` exist; `final_evaluation()` ran exactly once, or `reruns.log` explains why.
+- [ ] The agent-log grep found no date, industry name, ticker or series ID.
+- [ ] Only seed-1 candidates reached Stage 7 and the trial count.
+- [ ] Agents never received the half-sample IC.
+- [ ] Every number in the report comes from a saved file in `outputs/`.
+- [ ] `deviations.md` lists every departure from this prompt, each with its reason.
+- [ ] `run.ipynb` runs top to bottom from an empty cache.
+- [ ] `checkpoints.md` ends with the verdict, the open limitations and the exact commands to reproduce the run.
+</script>
+<script>
+(function(){
+  var FILE='230GA_build-and-run_prompt.md';
+  var md=document.getElementById('prompt-md').textContent.replace(/^\n/,'');
+  var status=document.getElementById('dl-status');
+  var saveBtn=document.getElementById('dl-save');
+  var copyBtn=document.getElementById('dl-copy');
+  try{document.getElementById('dl-size').textContent=(new Blob([md]).size/1024).toFixed(1)+' KB';}catch(e){}
+  var dlP=null;
+  try{ if(window.claude && typeof window.claude.use==='function'){ dlP=window.claude.use('downloads'); } }catch(e){ dlP=null; }
+  if(dlP){ dlP.then(function(dl){ if(!dl){ saveBtn.hidden=true; status.textContent='Download is not available in this view. Use Copy text.'; } }).catch(function(){}); }
+  else { saveBtn.hidden=true; status.textContent='Download is not available in this view. Use Copy text.'; }
+  saveBtn.addEventListener('click',function(){
+    if(!dlP) return;
+    status.textContent='Waiting for your confirmation…';
+    dlP.then(function(dl){
+      if(!dl){ saveBtn.hidden=true; status.textContent='Download is not available in this view. Use Copy text.'; return; }
+      return dl.save({filename:FILE,data:md}).then(function(res){
+        status.textContent = res && res.status==='delivered' ? 'Sent.' : 'Saved.';
+      },function(err){
+        var c=err && err.code;
+        if(c==='declined') status.textContent='Download cancelled.';
+        else if(c==='rate_limited') status.textContent='A save prompt is already open.';
+        else { status.textContent='Download is not available here. Use Copy text.'; }
+      });
+    });
+  });
+  copyBtn.addEventListener('click',function(){
+    function fallback(){ status.textContent='Copy is blocked in this view.'; }
+    try{ navigator.clipboard.writeText(md).then(function(){ status.textContent='Copied the full prompt.'; },fallback); }catch(e){ fallback(); }
+  });
+})();
+</script>
+
+</body></html>

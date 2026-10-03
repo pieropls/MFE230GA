@@ -1,0 +1,21 @@
+# Alex's frozen study is its own git repository (read-only here; update with git pull inside it)
+230ga-follow-the-workers/
+# secrets
+.env
+analysis/.env
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+# latex build
+report/*.aux
+report/*.log
+report/*.out
+report/*.fls
+report/*.fdb_latexmk
+report/*.bbl
+report/*.blg
+report/*.synctex.gz
+report/*.toc
+# os
+.DS_Store
