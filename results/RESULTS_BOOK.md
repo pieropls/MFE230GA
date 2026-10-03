@@ -176,7 +176,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 
 ## 7. Claims register
 
-`results/claims.csv`: 88 claims, 88 verified against their source files.
+`results/claims.csv`: 97 claims, 97 verified against their source files.
 
 | ID | Label | Claim | Numbers | Verified |
 |---|---|---|---|---|
@@ -247,6 +247,15 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | S02 | POST-HOC | As-known (ASOF) scores pick the same top three groups as our revised-data signal in only 42% of test months. | 42 | y |
 | S03 | POST-HOC | Durable manufacturing is 60% semiconductors (Chips) by market cap in August 2026; nondurable manufacturing is 60% pharmaceuticals. | Chips 60%, Mach 9%, Autos 7%; Drugs 60%, Hshld 9%, Soda 7% | y |
 | S04 | CONF | Gate 1: the 13 group returns match all 50 saved ledgers to 1.5e-16 and our estimators match results.json to 3.6e-15. | 1.51e-16; 3.55e-15 | y |
+| C20 | CONF | A3 under the four data variants: Sharpe -0.58 (as-known), -0.52 (first release), -0.56 (revised), -0.53 (fixed lag); IC -0.021, -0.040, -0.026, -0.021. | -0.58; -0.52; -0.56; -0.53; -0.021; -0.04; -0.026; -0.021 | y |
+| C21 | CONF | A3 turned over 0.91 of its industry book a month in the test. | 0.91 | y |
+| C22 | CONF | The frozen power statement: 142 sealed months require roughly 0.6 annualised Sharpe for IID t of about 2. | 142 sealed months require roughly 0.6 annualized Sharpe for IID t≈2; a null does not rule out a smaller effect. | y |
+| S05 | POST-HOC | Windows: research 125 months, test 142, full sample 268, post-2010 200, last 18 months 18. | 125; 142; 268; 200; 18 | y |
+| F06 | FWD | V2b Q4 2026 book: long durable manufacturing, retail and transport & utilities; short real estate, health care and accommodation & food. | 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 | y |
+| F07 | FWD | V2c Q4 2026 book: long construction, durable manufacturing and finance; short retail, transport & utilities and professional services. | 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 | y |
+| F08 | FWD | Hashes: v2 spec ca658234..., forward spec 735a8ffa..., amendment 001 c76cde86..., v3 spec 312aef1d... (first 8 hex digits). | ca6582347904489bdb6fac1496f895fd18c91eba47ca2bc8566e35cdf44a5832; 735a8ffa9c9c23fd710dfae778a535cad649685aa157dcded3ae0e9996dfb21f; c76cde86a85ff703d317cfeb15dc02a42e342d81a299da2aab959adeb372b12b; 312aef1dd9551aa7044d37ccf8562a8e66cddfe741e0e1097c15cff18ed8bfde | y |
+| V12 | POST-HOC | V2a turnover 0.39 and V2d turnover 0.37 of the industry book per month in the test; A3 0.91. | 0.39; 0.37 | y |
+| X05 | POST-HOC | Opus study: 7 island-arm candidates passed the research filter against 4 in the Sonnet study. | 7; 4 | y |
 | R1a | POST-HOC | Held 12 months, hires alone earn a test Sharpe of +0.19 and quits alone +0.16; openings +0.42 and layoffs +0.16 (both with the same negative sign, for contrast). | 0.19; 0.16; 0.42; 0.16 | y |
 | R1b | POST-HOC | Hires alone have a test 12-month IC of +0.093 (t 2.90); quits alone +0.085 (t 1.75). | 0.093; 2.9; 0.085; 1.75 | y |
 | R2a | POST-HOC | Test-window IC of the V2d score by horizon: -0.020 at 1 month (t -0.87), +0.069 at 9 (t 1.98), +0.096 at 12 (t 2.43), +0.085 at 18 (t 2.00), +0.063 at 24 (t 1.86). | -0.02; -0.87; 0.069; 1.98; 0.096; 2.43; 0.085; 2.0; 0.063; 1.86 | y |

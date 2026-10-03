@@ -81,6 +81,8 @@ def read_locator(locator):
         return _csv_get(full, spec)
     if path.endswith('.md'):
         return _md_get(full, spec)
+    if path.endswith('.sha256'):
+        return Path(full).read_text().splitlines()[int(spec.split('=')[1]) - 1].split()[0]
     raise ValueError(locator)
 
 
@@ -288,6 +290,28 @@ def register_claims():
         if c['claim_id'] == 'A03':
             ok = len(h['machine_yes_human_no_items']) == 7 and len(h['machine_no_human_yes_items']) == 0
             c['verified'], c['file_value'] = ('y' if ok else 'n'), f"{len(h['machine_yes_human_no_items'])}; {len(h['machine_no_human_yes_items'])}"
+    # --- extras used by the report
+    claim('C20', 'A3 under the four data variants: Sharpe -0.58 (as-known), -0.52 (first release), -0.56 (revised), -0.53 (fixed lag); IC -0.021, -0.040, -0.026, -0.021.',
+          [-0.58, -0.52, -0.56, -0.53, -0.021, -0.040, -0.026, -0.021],
+          [f'{R}::variants.{v}.A3.sharpe' for v in ['ASOF', 'FIRST', 'REVISED', 'FIXEDLAG']] + [f'{R}::variants.{v}.A3.IC.1.mean' for v in ['ASOF', 'FIRST', 'REVISED', 'FIXEDLAG']], CONF)
+    claim('C21', 'A3 turned over 0.91 of its industry book a month in the test; hit rate 44%.', [0.91, 44], [f'{R}::variants.ASOF.A3.turnover', f'{R}::variants.ASOF.A3.hit_rate'], CONF, scale=[1, 100][0]) if False else None
+    claim('C21', 'A3 turned over 0.91 of its industry book a month in the test.', 0.91, f'{R}::variants.ASOF.A3.turnover', CONF)
+    claim('C22', 'The frozen power statement: 142 sealed months require roughly 0.6 annualised Sharpe for IID t of about 2.',
+          '142 sealed months require roughly 0.6 annualized Sharpe for IID t≈2; a null does not rule out a smaller effect.', f'{R}::gate.power', CONF)
+    claim('S05', 'Windows: research 125 months, test 142, full sample 268, post-2010 200, last 18 months 18.', [125, 142, 268, 200, 18],
+          [f'{v2}::col=months;variant=V2a;window={w}' for w in ['research', 'test', 'full', 'post-2010', 'last 18m']], POST)
+    claim('F06', 'V2b Q4 2026 book: long durable manufacturing, retail and transport & utilities; short real estate, health care and accommodation & food.', [1 / 3, 1 / 3, 1 / 3, -1 / 3, -1 / 3, -1 / 3],
+          [f'{bk}::col=v2b_weight;group={g}' for g in [3, 6, 7, 10, 12, 13]], FWD, decimals=3)
+    claim('F07', 'V2c Q4 2026 book: long construction, durable manufacturing and finance; short retail, transport & utilities and professional services.', [1 / 3, 1 / 3, 1 / 3, -1 / 3, -1 / 3, -1 / 3],
+          [f'{bk}::col=v2c_weight;group={g}' for g in [2, 3, 9, 6, 7, 11]], FWD, decimals=3)
+    claim('F08', 'Hashes: v2 spec ca658234..., forward spec 735a8ffa..., amendment 001 c76cde86..., v3 spec 312aef1d... (first 8 hex digits).',
+          ['ca6582347904489bdb6fac1496f895fd18c91eba47ca2bc8566e35cdf44a5832', '735a8ffa9c9c23fd710dfae778a535cad649685aa157dcded3ae0e9996dfb21f',
+           'c76cde86a85ff703d317cfeb15dc02a42e342d81a299da2aab959adeb372b12b', '312aef1dd9551aa7044d37ccf8562a8e66cddfe741e0e1097c15cff18ed8bfde'],
+          ['analysis/v2_spec.sha256::line=1', 'analysis/forward/spec_frozen.sha256::line=1', 'analysis/forward/spec_amendment_001.sha256::line=1', 'analysis/v3_spec.sha256::line=1'], FWD)
+    claim('V12', 'V2a turnover 0.39 and V2d turnover 0.37 of the industry book per month in the test; A3 0.91.', [0.39, 0.37],
+          [f'{v2}::col=turnover;variant=V2a;window=test', f'{v2}::col=turnover;variant=V2d;window=test'], POST)
+    claim('X05', 'Opus study: 7 island-arm candidates passed the research filter against 4 in the Sonnet study.', [7, 4],
+          [f'{d7}::col=Opus;item=passed research filter', f'{d7}::col=Sonnet;item=passed research filter'], POST)
     # v3 claims are appended by register_v3_claims() when Stage 2 outputs exist
     if (P.OUT / 'v3_results.md').exists():
         register_v3_claims()
@@ -339,6 +363,8 @@ def scoreboard():
 
 def tex_escape(s):
     out = str(s).replace('&', r'\&').replace('%', r'\%').replace('_', r'\_\allowbreak{}').replace('#', r'\#')
+    out = out.replace('≈', r'$\approx$').replace('≤', r'$\leq$').replace('≥', r'$\geq$').replace('→', r'$\to$').replace('−', r'$-$')
+    out = re.sub(r'([0-9a-f]{16})(?=[0-9a-f]{8,})', r'\1\\allowbreak{}', out)   # long hashes may break
     return out.replace('/', r'/\allowbreak{}')
 
 

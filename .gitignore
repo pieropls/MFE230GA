@@ -19,3 +19,4 @@ report/*.synctex.gz
 report/*.toc
 # os
 .DS_Store
+report/build.log
