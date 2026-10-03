@@ -1,7 +1,9 @@
-# MFE 230GA (Active Equity Management, Fall 2026) "Follow the Workers": rules for Claude Code in this folder
+# MFE 230GA (Equity Markets, Fall 2026) "Follow the Workers": project rules
 
-## Team (title page, alphabetical)
-Romain Almeida · Elouan Bahri · Al Yazid Bensaid · Piero Pelosi · Alex Roesler
+*This file was the repository's root `docs/process/project_rules.md` (the rules Claude Code and the team followed) until 3 Oct 2026; it is kept here unchanged in substance as part of the record of the P6 interaction (report, Appendix A.1).*
+
+## Team (title page order)
+Piero Pelosi · Alex Roesler · Romain Almeida · Elouan Bahri · Al Yazid Bensaid
 
 ## What is where
 - `230ga-follow-the-workers/` is Alex's frozen, preregistered study. **Read-only.** Never edit it, rerun its sealed evaluation, or retune it. Import its code read-only (via `sys.path`) when you need its exact functions.

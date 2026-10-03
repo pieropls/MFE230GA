@@ -44,12 +44,12 @@ Deliverables: `results/results_book.pdf` (27 pp.), `results/VERDICT.md`, `report
 Build with `\draftfalse` (preamble.tex, line 74) for the submission so no red TODO text or gold `\prov` boxes remain.
 
 ## Open risks
-- **`CLAUDE.md` says 607 and 905 logged calls; the logs hold 199 and 294** (candidate + migration + judge calls; `agents/responses/` has the same counts). The report uses the log counts. Please check where 607/905 came from before anyone quotes them.
+- **`docs/process/project_rules.md` says 607 and 905 logged calls; the logs hold 199 and 294** (candidate + migration + judge calls; `agents/responses/` has the same counts). The report uses the log counts. Please check where 607/905 came from before anyone quotes them.
 - **Course compliance:** the brief asks for ChatGPT; every AI role used Claude. Confirm with the instructors or document the substitution clearly (the report already states the models from the logs).
 - **Post-hoc data:** every v2/v3 number uses revised FRED data with fixed lags; as-known data pick the same top-3 groups in only 42% of months. The as-known rerun (R10) needs a FRED key.
 - **V2c's ETF book has four legs** (two positions cancel in XLI); track V2c on French group returns.
 - **One quarter of forward test has almost no power**; say so whenever the Q4 result is discussed.
-- **Section 3 is about 4.5 pages** (CLAUDE.md allows 4) after iteration 1 put `fig_cumulative`, `fig_v2_windows` and the robustness table in the body; the main body is exactly 10 pages before the critiques are written. Options: move Figure 6 (horizon profile) or Table 7 to Appendix D. The executive summary is 225 printed words with the Claude sentence still to add, so cut elsewhere when it goes in.
+- **Section 3 is about 4.5 pages** (docs/process/project_rules.md allows 4) after iteration 1 put `fig_cumulative`, `fig_v2_windows` and the robustness table in the body; the main body is exactly 10 pages before the critiques are written. Options: move Figure 6 (horizon profile) or Table 7 to Appendix D. The executive summary is 225 printed words with the Claude sentence still to add, so cut elsewhere when it goes in.
 
 ## How to build on Overleaf
 Upload the `report/` folder (main.tex, preamble.tex, refs.bib, figures/, tables/, code/). Compiler: pdfLaTeX; main document `main.tex`; the bibliography runs automatically (natbib + plainnat). Locally: `cd report && latexmk -pdf main.tex`. The Results Book builds the same way from `results/results_book.tex` (it `\input`s `../report/preamble`). Regenerate numbers, tables and figures with `analysis/run.ipynb` (about 35 s); it stops with `analysis/output/STOP.md` if any gate fails.

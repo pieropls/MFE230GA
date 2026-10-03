@@ -1,6 +1,6 @@
 """Every figure (vector PDF in report/figures/) and the booktabs table writer.
 
-Style (CLAUDE.md): default matplotlib fonts, bold titles, minimal formatting, light grid at most.
+Style (docs/process/project_rules.md): default matplotlib fonts, bold titles, minimal formatting, light grid at most.
 Colours: confirmatory #1F4E79, post-hoc #B35C00, forward test #2E7D32, greys otherwise.
 """
 import re

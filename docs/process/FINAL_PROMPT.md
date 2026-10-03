@@ -1,6 +1,6 @@
 # Final pass: clean repo, final code review, complete report v1, push to GitHub
 
-Read `CLAUDE.md` and this file. Then work through Stages 1–6 in order without asking questions. Commit after every stage.
+Read `docs/process/project_rules.md` and this file. Then work through Stages 1–6 in order without asking questions. Commit after every stage.
 
 **Golden rule.** No result may change. If any fix would change a number in `results/claims.csv`, a table or a figure, do not apply it. Write it to `docs/process/OPEN_ISSUES.md` and carry on.
 
@@ -14,7 +14,7 @@ Target layout. The frozen study keeps its path, because the code references it.
 
 ```
 README.md                    ← new: the front page (Stage 4)
-CLAUDE.md                    ← stays at root (Claude Code rules)
+docs/process/project_rules.md                    ← stays at root (Claude Code rules)
 requirements.txt             ← new: loose pins (pandas>=2, numpy, matplotlib, scipy, statsmodels, jupyter …)
 .gitignore
 230ga-follow-the-workers/    ← Alex's frozen study, as a git SUBMODULE pinned to commit c67c486 (Stage 5)
@@ -94,7 +94,7 @@ docs/
 
 Write a beautiful, clean README in plain English. It is the first thing graders and the team see.
 
-1. **Header.** Title, one-line question, team (all five names), course (MFE 230GA – Active Equity Management, Fall 2026; instructors Raffaele Savi and Gerald Garvey, BlackRock), and links to `report/main.pdf` and `results/results_book.pdf`.
+1. **Header.** Title, one-line question, team (all five names), course (MFE 230GA – Equity Markets, Fall 2026; instructors Raffaele Savi and Gerald Garvey, BlackRock), and links to `report/main.pdf` and `results/results_book.pdf`.
 2. **The answer in five lines.** H1 rejected (confirmatory); H2 consistent with the data but not established (post-hoc, fragile in time); H3 untestable as designed; the verdict, "Do not implement"; the forward test is live.
 3. **Scoreboard.** One table with every strategy, Alex's and ours: label, research / test / full / last-18-month Sharpe, verdict. Below it, a legend for CONFIRMATORY / POST-HOC / FORWARD TEST.
 4. **Key figures.** Export 2–3 figures to `docs/img/*.png`: the horizon profile, the cumulative returns, the timeline. Embed them.

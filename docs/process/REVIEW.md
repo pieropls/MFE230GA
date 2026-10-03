@@ -19,7 +19,7 @@ The reviewer's reading of the deductions: the thesis as traded (demand news at o
 Round 1: 32 numbers; 30 matched their source file at the printed precision; 2 did not (607/905 calls not in any file; the book build time 09:17:55Z not in any file at the time). Round 2: 13 further numbers; all matched.
 
 ## Fixes applied by the editor (Claude) between and after the rounds
-- Call counts replaced by the log counts (199 Sonnet, 294 Opus; claim A06); CLAUDE.md's 607/905 flagged in `docs/process/MORNING_BRIEF.md`.
+- Call counts replaced by the log counts (199 Sonnet, 294 Opus; claim A06); docs/process/project_rules.md's 607/905 flagged in `docs/process/MORNING_BRIEF.md`.
 - "6 of 6" Opus features corrected to "6 of 7"; "failed the test" defined as the frozen sealed criterion (t ≥ 1.5 and positive IC in both halves); claim C19 rewritten.
 - The Q4 book's first build (09:17:55Z) recorded in `analysis/forward/book_first_build.sha256` and enforced by the notebook; commit `9f4a50f` cited as the independent evidence; `gate3.md` shows the first-build time again.
 - Horizon-matched placebo for V2d (claim V09) added next to the pre-declared one-month placebo; Table 6 caption states the one-month statistics and 6 Newey–West lags; the 12-lag alpha is labelled.
@@ -37,7 +37,7 @@ Round 1: 32 numbers; 30 matched their source file at the printed precision; 2 di
 - Five "Our critique" cells in Table 7 (P1 Alex, P2 Elouan, P3 Al Yazid, P4 Romain, P5 Piero, P6 Alex), at most ~25 words each so Section 3 stays within four pages.
 - The Reflection paragraph in the team's words (Al Yazid); remove `\prov{draft}`.
 - One sentence on Claude in the executive summary (Al Yazid); the summary has about 5 words of slack, so cut elsewhere if needed.
-- Alex: name and vendor of the engineering assistant ("6 astra"); confirm the freeze hashes and the single opening against `FREEZE.json` and `evaluation_started.json`; P1 disposition counts; check where CLAUDE.md's 607/905 call counts came from.
+- Alex: name and vendor of the engineering assistant ("6 astra"); confirm the freeze hashes and the single opening against `FREEZE.json` and `evaluation_started.json`; P1 disposition counts; check where docs/process/project_rules.md's 607/905 call counts came from.
 - Elouan: verify every `refs.bib` entry (including the added Ledoit–Wolf 2004); data-link access dates; weekly tracker if wanted.
 - Romain: final prose pass; the reviewer still flags a few aphoristic sentences.
 - Build the submission with `\draftfalse` and re-measure the page budget after the critiques are in.

@@ -4,14 +4,14 @@
 
 ## 0. How to run this (Piero)
 
-- **Where:** open Claude Code in `project/`, so it reads `CLAUDE.md` automatically.
+- **Where:** open Claude Code in `project/`, so it reads `docs/process/project_rules.md` automatically.
 - **Baseline first:** in `project/`, run `git init && git add -A && git commit -m baseline`. Every part can then be rolled back.
 - **Two sessions.** Claude Code cannot change its own model, so the work is split.
 
 | Session | Parts | Model | Effort | Paste this to start |
 |---|---|---|---|---|
-| A | 1–3 (code, numbers, figures, v2) | Opus 5.5 | high | `Read CLAUDE.md and ITERATION_PROMPT.md. Execute Parts 1, 2 and 3 end to end without asking me questions. Commit after each part. Stop only if a gate fails (write analysis/output/STOP.md).` |
-| B (new session) | 4–5 (report v1, review, handoff) | Fable 5.1 if available, else Opus 5.5 | high (Opus: xhigh) | `Read CLAUDE.md and ITERATION_PROMPT.md. Parts 1–3 are done. Execute Parts 4 and 5 end to end without asking me questions. Commit when done.` |
+| A | 1–3 (code, numbers, figures, v2) | Opus 5.5 | high | `Read docs/process/project_rules.md and ITERATION_PROMPT.md. Execute Parts 1, 2 and 3 end to end without asking me questions. Commit after each part. Stop only if a gate fails (write analysis/output/STOP.md).` |
+| B (new session) | 4–5 (report v1, review, handoff) | Fable 5.1 if available, else Opus 5.5 | high (Opus: xhigh) | `Read docs/process/project_rules.md and ITERATION_PROMPT.md. Parts 1–3 are done. Execute Parts 4 and 5 end to end without asking me questions. Commit when done.` |
 
 - **Effort:** don't use max. It is slow and burns limits for no gain. Haiku and Sonnet are not needed, because nothing here reruns the agents.
 - **Timing:** expect about 3h for session A and 2–3h for session B. Between sessions, open `analysis/output/v2_results.md` and the figures in `report/figures/` for 5 minutes.
@@ -47,7 +47,7 @@
 
 ## Part 1: Rebuild the analysis core (session A)
 
-1. Build `analysis/` in the layout from `CLAUDE.md`: `params.py`, `data.py`, `stats.py`, `plots.py` and `run.ipynb` in the notebook format given there.
+1. Build `analysis/` in the layout from `docs/process/project_rules.md`: `params.py`, `data.py`, `stats.py`, `plots.py` and `run.ipynb` in the notebook format given there.
    - Reuse `french.py`, `signals.py` and `diagnostics.py`.
    - Keep it small and flat.
 2. **Data vintage.** Use the best of these that is available, and record which one in `analysis/output/data_vintage.md`:
@@ -83,7 +83,7 @@ Every item below gets a CSV in `analysis/output/tables/`. Items marked "fig" als
 | D9 | Risk overlay: months with the cap binding, ex-ante vs realised volatility | — |
 | D10 | Agent-experiment design diagram: 2 arms × 3 agents × 3 repetitions, migration reports, mechanical selection, LLM judge with human audit | `fig_agents.pdf` |
 
-Open every figure as an image. Check that it is readable at its print width, has no overlaps and follows the style in `CLAUDE.md`. Fix anything that fails. Write `analysis/output/diagnostics_v2.md`, listing every number and the file it came from.
+Open every figure as an image. Check that it is readable at its print width, has no overlaps and follows the style in `docs/process/project_rules.md`. Fix anything that fails. Write `analysis/output/diagnostics_v2.md`, listing every number and the file it came from.
 
 ## Part 3: The v2 iteration (session A)
 
@@ -165,7 +165,7 @@ Turn `report/main.tex` into a complete, beautifully presented first draft. The s
 **Rules:**
 - Every figure gets a caption that states the finding in one sentence, plus its label tag.
 - Every number gets a `% src`. Remove `\prov` only once a number is verified. Keep `\todo` only where a human is needed.
-- Follow the writing style in `CLAUDE.md` strictly, especially "must not read as AI-written".
+- Follow the writing style in `docs/process/project_rules.md` strictly, especially "must not read as AI-written".
 
 **Build and look:**
 - `latexmk -pdf`, with zero errors, zero undefined references and no overfull box above 5pt.

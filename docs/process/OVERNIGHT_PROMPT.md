@@ -1,6 +1,6 @@
 # Overnight prompt: organise everything, test the core finding, then write report v1
 
-Read `CLAUDE.md` and this file. Then work through Stages 1–6 in order, without asking questions. Commit after every stage. If a gate fails, write `analysis/output/STOP.md` and stop.
+Read `docs/process/project_rules.md` and this file. Then work through Stages 1–6 in order, without asking questions. Commit after every stage. If a gate fails, write `analysis/output/STOP.md` and stop.
 
 ## Where we stand (verified, committed in 9f4a50f)
 
@@ -31,7 +31,7 @@ Create `results/` containing `RESULTS_BOOK.md` and a compiled `results_book.pdf`
    - Selected features and their research→test fate.
    - Human vs judge, 10/17.
    - Sonnet vs Opus.
-6. **AI-interaction inventory.** For each Claude use (P1–P4 in the build, P5 the post-mortem review, P6 this iteration): purpose, model, the exact prompt file, the output file, what was right, what was wrong, and what changed. Leave the team-critique cells empty. Models come from `CLAUDE.md` "AI-use facts".
+6. **AI-interaction inventory.** For each Claude use (P1–P4 in the build, P5 the post-mortem review, P6 this iteration): purpose, model, the exact prompt file, the output file, what was right, what was wrong, and what changed. Leave the team-critique cells empty. Models come from `docs/process/project_rules.md` "AI-use facts".
 7. **Claims register (`results/claims.csv`).** Every claim the report may make, with columns: `claim_id`, `sentence`, `number(s)`, `source file + row/column`, `label` (CONF / POST-HOC / FWD), `verified` (y/n). Verify each number against its file. **The report may only use claims in this register.**
 8. **Known issues.** List each one with a fix or a disclosure line:
    - V2c's ETF legs cancel (both map to XLI);
@@ -65,7 +65,7 @@ The point is to find out whether the core finding holds up, not to raise the Sha
 
 Then:
 - Write `analysis/output/v3_results.md` with every result and its reading.
-- Create the figures in the house style from `CLAUDE.md`.
+- Create the figures in the house style from `docs/process/project_rules.md`.
 - Update the Results Book and the claims register.
 
 **Gate 2:** the v3 spec timestamp is earlier than the first v3 output; `run.ipynb` runs top to bottom; and the v2 result files are still byte-identical.
@@ -89,14 +89,14 @@ Rules for writing the verdict:
 
 Write the report **only from the claims register and VERDICT.md**.
 
-- **Rebuild `report/main.tex` on the house template (Appendix A).** It must start `\input{preamble}`, `\begin{document}`, `\MakeCover`. Remove the skeleton's old preamble and port its content. The cover carries the logo, the course (MFE 230GA – Active Equity Management, Fall 2026), the instructors (Raffaele Savi and Gerald Garvey, BlackRock), the GSI (Vinicio DeSola) and all five names. The logo is used automatically if `report/figures/berkeley_mfe_logo.pdf` or `.png` exists; otherwise the typographic mark appears.
+- **Rebuild `report/main.tex` on the house template (Appendix A).** It must start `\input{preamble}`, `\begin{document}`, `\MakeCover`. Remove the skeleton's old preamble and port its content. The cover carries the logo, the course (MFE 230GA – Equity Markets, Fall 2026), the instructors (Raffaele Savi and Gerald Garvey, BlackRock), the GSI (Vinicio DeSola) and all five names. The logo is used automatically if `report/figures/berkeley_mfe_logo.pdf` or `.png` exists; otherwise the typographic mark appears.
 - **Template rules:**
   - no bold in body text, only in titles; use `\emph` for emphasis ("\emph{Do not implement}");
   - every caption is one finding sentence, then `\hfill` and the label pill (`\tagc`, `\tagp` or `\tagf`);
   - tables are booktabs, either full width (`tabularx` with `Y` columns) or wrapped in `threeparttable` so the caption matches the table width;
   - boxes: `keybox[Title]` for the integrity box, `promptbox{Title}` for Claude prompts, `lstlisting` for code;
   - figures at `\linewidth`, or two side by side with `subcaption`;
-  - `\draftfalse` stays OFF in v1 so the remaining `\todo`/`\prov` marks stay visible. Follow `ITERATION_PROMPT.md` Part 4 for structure, and `CLAUDE.md` for style, labels, figures and page budget.
+  - `\draftfalse` stays OFF in v1 so the remaining `\todo`/`\prov` marks stay visible. Follow `ITERATION_PROMPT.md` Part 4 for structure, and `docs/process/project_rules.md` for style, labels, figures and page budget.
 
 - **Title page:** all five names.
 - **Executive summary:** at most 230 words. It covers "Do not implement", why, what survives (V2d / the thesis result, honestly sized), the forward test, and one line on Claude.
@@ -218,7 +218,7 @@ Full preamble:
 % ---------- REPORT INFO ----------
 \newcommand{\ReportTitle}{Follow the Workers}
 \newcommand{\ReportSubtitle}{Do labor-market flows predict which U.S.\ industries outperform?}
-\newcommand{\CourseName}{MFE 230GA \textendash{} Active Equity Management}
+\newcommand{\CourseName}{MFE 230GA \textendash{} Equity Markets}
 \newcommand{\CourseShort}{MFE 230GA}
 \newcommand{\Term}{Fall 2026}
 \newcommand{\SubmitDate}{October 4, 2026}

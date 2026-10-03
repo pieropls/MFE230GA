@@ -181,7 +181,7 @@ def register_claims():
     CLAIMS.append({'claim_id': 'A06', 'sentence': 'Logged model calls: 199 in the confirmatory (Sonnet) study and 294 in the Opus follow-up (candidate, migration and judge calls; the evaluation entries in the log are not calls).',
                    'numbers': '199; 294', 'source': f'{rel(SON / "agents/log.jsonl")} | {rel(OPU / "agents/log.jsonl")} :: entries with kind != evaluation; equals the file count in agents/responses/',
                    'label': CONF, 'verified': 'y' if counts == [199, 199, 294, 294] else 'n', 'file_value': '; '.join(map(str, counts)),
-                   'note': 'an earlier draft of CLAUDE.md stated 607 and 905; corrected to the logged counts on 3 Oct 2026'})
+                   'note': 'an earlier draft of docs/process/project_rules.md stated 607 and 905; corrected to the logged counts on 3 Oct 2026'})
     CALL_COUNTS[:] = [counts[0], counts[2]]
     # A07-A10: facts behind the team's Claude evaluation (docs/team_inputs/al_claude_section.md), counted from the frozen files
     p1 = (SON / 'p1_review.md').read_text()
@@ -480,7 +480,7 @@ AI_ROWS = [
      'Guessed the engineering assistant was OpenAI Codex (unverified); used a momentum definition that included month m-1; quoted W ICs with a non-frozen start date.',
      'Momentum redefined on m-12..m-2; W ICs recomputed with the frozen feature start; Codex guess withdrawn (to be confirmed by Alex).'),
     ('P6', 'This iteration: rebuild, diagnostics, frozen v2/v3 specs, forward test, report', 'claude-opus-5-5 (Parts 1-3); claude-fable-5-1 (overnight)',
-     'docs/process/ITERATION_PROMPT.md, docs/process/OVERNIGHT_PROMPT.md, CLAUDE.md', 'analysis/run.ipynb, analysis/output/*.md, results/, report/main.tex',
+     'docs/process/ITERATION_PROMPT.md, docs/process/OVERNIGHT_PROMPT.md, docs/process/project_rules.md', 'analysis/run.ipynb, analysis/output/*.md, results/, report/main.tex',
      'Reproduced the sealed A0 returns to 1e-16; froze specs before running; reported all variants; stopped at a failed gate instead of working around it.',
      'The forward spec assumed August JOLTS would not be out by 29 Sep; it was released that day, so the pre-committed check stopped the run.',
      'Amendment 001 (fixed-lag rule, V2c/V2d added, disclosed); run log guarantees v2 outputs never changed.'),

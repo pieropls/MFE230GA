@@ -1,6 +1,6 @@
 # analysis/: v2 iteration code (post-hoc and forward test)
 
-Layout follows `../CLAUDE.md`: small and flat. `run.ipynb` regenerates every number, table and figure top to bottom in about 35 s and stops with `output/STOP.md` if a gate fails.
+Layout follows `../docs/process/project_rules.md`: small and flat. `run.ipynb` regenerates every number, table and figure top to bottom in about 35 s and stops with `output/STOP.md` if a gate fails.
 
 | File | Contents |
 |---|---|

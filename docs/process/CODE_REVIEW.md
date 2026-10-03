@@ -46,8 +46,8 @@ Findings are ordered most severe first. "Changes a reported number" follows the 
 
 ## 4. Results Book hard-codes the retracted "607 / 905 calls" figures, contradicting its own verified claim A06
 
-- **(a) Where:** `results/build_results_book.py:502` and `:531` (literal text "(607 calls)" / "(905 calls)"); rendered in `results/RESULTS_BOOK.md:164` and `results/results_book.tex:111`. Also the A06 note at `:233` says "CLAUDE.md states 607 and 905", which is stale (CLAUDE.md now says 199/294 and explains the double count).
-- **(b) What it does:** claim A06 counts 199 and 294 from `agents/log.jsonl` and is marked verified, while section 5 of the same book prints 607/905 from CLAUDE.md's old text.
+- **(a) Where:** `results/build_results_book.py:502` and `:531` (literal text "(607 calls)" / "(905 calls)"); rendered in `results/RESULTS_BOOK.md:164` and `results/results_book.tex:111`. Also the A06 note at `:233` says "docs/process/project_rules.md states 607 and 905", which is stale (docs/process/project_rules.md now says 199/294 and explains the double count).
+- **(b) What it does:** claim A06 counts 199 and 294 from `agents/log.jsonl` and is marked verified, while section 5 of the same book prints 607/905 from docs/process/project_rules.md's old text.
 - **(c) Why it matters:** a number in the Results Book without a `% src` that is known to be wrong. `report/main.tex` does not contain 607/905 (checked), so the report itself is clean.
 - **(d) Severity:** MINOR (report-facing, not analytical).
 - **(e) Changes a reported number:** NO analysis number; yes for the Results Book text.
@@ -110,7 +110,7 @@ Findings are ordered most severe first. "Changes a reported number" follows the 
 - **Drop-one (R7)**: `signals(groups=...)` standardises on 12 groups with the 11-group minimum, matching the frozen `drop_group_diagnostic`; reduced `relative` returns are recomputed on 12 groups.
 - **V2b signs** are learned on research months only and held fixed under the placebo shift.
 - **Reading rules** in cells 39 and 78 implement v2_spec §6 and v3_spec §3 literally.
-- **Figures**: ±2 s.e. bars use the HAC s.e.; colours follow CLAUDE.md; no custom fonts.
+- **Figures**: ±2 s.e. bars use the HAC s.e.; colours follow docs/process/project_rules.md; no custom fonts.
 
 ## Overall assessment
 

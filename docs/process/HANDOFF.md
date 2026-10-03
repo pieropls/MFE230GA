@@ -20,7 +20,7 @@ Deliverables: `report/main.pdf` (22 pages, draft marks on), `results/results_boo
 
 ## What changed in this pass (stages 1 to 5, one commit each)
 
-1. **Layout.** `docs/` holds the diagnosis (`FINDINGS_AND_PROPOSAL.md`), the blueprint, the course sheet, `img/`, `team_inputs/` and `process/` (prompts, brief, review rounds, code review, open issues, this file). Every moved path was repointed (claims register, `% src` comments, notebook, scripts, CLAUDE.md). `requirements.txt` added; `build.log`, caches and dead code removed.
+1. **Layout.** `docs/` holds the diagnosis (`FINDINGS_AND_PROPOSAL.md`), the blueprint, the course sheet, `img/`, `team_inputs/` and `process/` (prompts, brief, review rounds, code review, open issues, this file). Every moved path was repointed (claims register, `% src` comments, notebook, scripts, docs/process/project_rules.md). `requirements.txt` added; `build.log`, caches and dead code removed.
 2. **Code review** (`CODE_REVIEW.md`). One MAJOR finding: the fixed-lag rule assumes the normal BLS calendar, which the Oct–Nov 2025 shutdown broke, so two post-hoc earning months use data released after the decision. Not corrected (it would change v2/v3 numbers after the run logs were frozen); disclosed in `data_vintage.md`, report §2.2 and `OPEN_ISSUES.md` #3. Result-neutral fixes applied: Results Book call counts 199/294, slice-vs-cold-start note, unused helpers removed, `code_hashes.md` and `environment.txt` added.
 3. **Report.** Al's Claude section integrated (Table 8, judge paragraph, Reflection, Appendix A, summary sentence); V2d provenance stated; v2 test columns labelled post hoc; power line extended; six new claims (A07–A10, V13, V14), 106 verified. Summary 230 printed words; main body 10 pages; §3 about 4.4 pages (the Claude table is half a page; the window figure and table moved to Appendix D). 9 `\todo` marks remain (below).
 4. **README** front page, `analysis/README.md`, `results/README.md`.
@@ -58,7 +58,7 @@ Al's P2 critique is in (Table 8, row P2). Build with `\draftfalse` (`preamble.te
 `OPEN_ISSUES.md` has eight entries. The ones that need a decision:
 
 - **#3 shutdown exception** (Piero, next iteration): apply the ALFRED availability rule or carry Aug/Sep 2025 forward, then re-freeze a new run log; expect marginal changes to v2/v3 numbers.
-- **§3 length**: about 4.4 pages against the 4-page target in CLAUDE.md; the Claude table alone is half a page. Romain can decide whether Table 6 (v2 results) or the robustness table goes to Appendix D.
+- **§3 length**: about 4.4 pages against the 4-page target in docs/process/project_rules.md; the Claude table alone is half a page. Romain can decide whether Table 6 (v2 results) or the robustness table goes to Appendix D.
 - **Course compliance**: the brief asks for ChatGPT; every AI role used Claude. The report states this once with the amendment reference; confirm with the instructors if needed.
 
 ## Answer to Al's V2d question
