@@ -19,7 +19,7 @@ We conclude: \emph{Do not implement}. It failed because the preregistered signs 
 The data are consistent with a slower, opposite effect, as investment-based asset pricing predicts: industries that hire and lose workers fastest earn lower returns over the following 9 to 24 months. A 12-month book on that sign is post hoc, lost money in the first test half and does not survive deflation, % src: claims R4a, R12
 though positive in every window (test Sharpe $+0.29$); % src: claim V_V2d_SR
 it runs as a paper book in a forward test frozen on 3 October 2026. % src: claim F05
-Claude was a useful auditor and idea generator when a human checked every claim and it could not change the rules after seeing results. % src: docs/team_inputs/al_claude_section.md (bottom line)
+Claude was a useful auditor and idea generator when a human checked every claim and it could not change the rules after seeing results. % src: the team's written Claude evaluation (Al Yazid Bensaid, 3 Oct 2026), bottom line; condensed in Appendix A
 
 % =====================================================================
 \section{What did we try? Labor flows as industry news}
@@ -107,7 +107,7 @@ The mapping is also coarse: labor data describe every establishment in an indust
 and kept three alternatives: first release, fully revised, and revised with fixed publication lags. The primary result barely depends on the choice: A3's test Sharpe is $-0.58$ as known, $-0.52$ on first releases, $-0.56$ revised and $-0.53$ with fixed lags. % src: claim C20
 Our post-hoc work (\cref{sec:survives}) uses revised data with fixed lags, which reproduces the frozen fixed-lag signal with a correlation of 0.998 across all group-months; % src: claim S01
 as-known data pick the same top-three groups in only 42\% of months, so post-hoc holdings, though not the conclusions, would have differed in real time. % src: claim S02
-One exception, found in the final code review: the federal shutdown of October--November 2025 delayed BLS releases, so two post-hoc earning months (November and December 2025) use labor data published after the decision date; the confirmatory as-known data are unaffected, and the v2/v3 numbers were left as frozen (\path{docs/process/OPEN_ISSUES.md}). % src: analysis/output/data_vintage.md (Known exception)
+One exception, found in the final code review: the federal shutdown of October--November 2025 delayed BLS releases, so two post-hoc earning months (November and December 2025) use labor data published after the decision date; the confirmatory as-known data are unaffected, and the v2/v3 numbers were left as frozen (\path{docs/OPEN_ISSUES.md}). % src: analysis/output/data_vintage.md (Known exception)
 
 \paragraph{Sample} Research (signal design and model selection): May 2004 to September 2014, 125 months. Test, opened once: November 2014 to August 2026, 142 months. % src: claim S05
 \Cref{fig:timeline} shows why H3 could not be learned: $V/U$ never exceeded 1 in the research period and exceeded it in 75 test months. % src: claim D06
@@ -359,7 +359,7 @@ P6 iteration (Opus, Fable): rebuild the analysis, freeze and run v2/v3, build th
 \clearpage
 \appendix
 \section{Claude, interaction by interaction}\label{app:claude}
-Condensed from the team's evaluation (\path{docs/team_inputs/al_claude_section.md}). Paths are relative to \path{230ga-follow-the-workers/outputs/follow_the_workers/} unless stated; the Opus follow-up has the same files under \path{follow_the_workers_opus55_xhigh/}.
+Condensed from the team's written evaluation (Al Yazid Bensaid, 3 October 2026). Paths are relative to \path{230ga-follow-the-workers/outputs/follow_the_workers/} unless stated; the Opus follow-up has the same files under \path{follow_the_workers_opus55_xhigh/}.
 
 Claude took every AI role: Sonnet~5.5 for the confirmatory study, Opus~5.5 at extra-high effort for the follow-up. This term's course allows it; the switch from the ChatGPT template is logged as preregistration amendments 001 and 002 (\path{outputs/prereg_amendments/}, \path{outputs/deviations.md}), and the log file keeps the template name \path{chatgpt_log.md} with Claude content. % src: claim A06; deviations.md (All-Claude approval, September 29)
 
@@ -387,7 +387,7 @@ The response asserted a permutation $p$-value ``already'' above 0.10 that nobody
   \item P3: migration reports in \path{outputs/agents/migrations.json}; the judge prompt in \path{agents.py}, function \path{trace_migrations}; judgments in \path{outputs/agents/migration_judgments.json}; the human audit in \path{outputs/human_review_submission.json} (the Opus folder also has a \path{.md} version).
   \item P4: prompt \path{outputs/p4_request.json}; response \path{outputs/p4_response.md}; dispositions \path{outputs/p4_review.md}.
   \item P5: the review and its output, \path{docs/FINDINGS_AND_PROPOSAL.md}, with the numbers in \path{analysis/output/diagnostics.md}.
-  \item P6: the task files \path{docs/process/ITERATION_PROMPT.md} and \path{docs/process/OVERNIGHT_PROMPT.md}; the rules in \path{docs/process/project_rules.md}; outputs in \path{analysis/run.ipynb}, \path{analysis/output/}, \path{results/} and this report.
+  \item P6: three task prompts (rebuild and diagnostics; v2/v3 freeze, forward test and report draft; final repository pass) and a one-page rules file (frozen folder read-only, one label per result, specs hashed before they run, a source comment on every number, stop at a failed gate), kept outside the repository; outputs in \path{analysis/run.ipynb}, \path{analysis/output/}, \path{results/} and this report.
 \end{itemize}
 
 \paragraph{Verbatim excerpts} Four short excerpts, copied from the files above without editing.

@@ -55,7 +55,7 @@ Both studies conclude **"Do not implement"**. The engineering discipline is exce
 | Path | What it is | Owner |
 |---|---|---|
 | [docs/FINDINGS_AND_PROPOSAL.md](docs/FINDINGS_AND_PROPOSAL.md) | This document | Claude |
-| [docs/blueprint.html](230GA%20-%20Project.html) | Blueprint v4 artifact (design, data links, pipeline, rubric map) | Piero |
+| Blueprint v4 (HTML artifact, kept outside the repository) | Design, data links, pipeline, rubric map | Piero |
 | [docs/course/FinalProject.pdf](docs/course/FinalProject.pdf) | Course assignment sheet | Professor |
 | [230ga-follow-the-workers/](230ga-follow-the-workers/) | Clone of Alex's private repo, left untouched (`git pull` updates it) | Alex |
 | [analysis/](analysis/) | My exploratory rebuild from public data, plus `diagnostics.py`. Independent of the frozen pipeline. | Claude |

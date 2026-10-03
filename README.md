@@ -105,11 +105,11 @@ Gates, in the order the notebook runs them: **Gate 1** rebuilds the 13 group ret
 |---|---|
 | [README.md](README.md) | this page |
 | [requirements.txt](requirements.txt) | Python packages (loose pins; recorded versions in the comment) |
-| [230ga-follow-the-workers/](230ga-follow-the-workers/) | Alex's frozen preregistered study, imported with his git history at `c67c486`. Read-only ([provenance](docs/process/frozen_provenance.md)) |
+| [230ga-follow-the-workers/](230ga-follow-the-workers/) | Alex's frozen preregistered study, imported with his git history at `c67c486`. Read-only ([provenance](docs/frozen_provenance.md)) |
 | [analysis/](analysis/) | our iteration: `params.py`, `data.py`, `stats.py`, `plots.py`, `run.ipynb`; frozen specs; forward test; outputs ([README](analysis/README.md)) |
 | [results/](results/) | claims register, scoreboard, Results Book (PDF + markdown), verdict ([README](results/README.md)) |
 | [report/](report/) | LaTeX report on the house template: `main.tex`, `preamble.tex`, `refs.bib`, `figures/`, `tables/`, `code/` |
-| [docs/](docs/) | [diagnosis of the frozen study](docs/FINDINGS_AND_PROPOSAL.md), [blueprint](docs/blueprint.html), [course sheet](docs/course/FinalProject.pdf), `img/`, [team inputs](docs/team_inputs/), [process](docs/process/) (project rules, prompts, brief, review rounds, code review, handoff, open issues) |
+| [docs/](docs/) | [diagnosis of the frozen study](docs/FINDINGS_AND_PROPOSAL.md), [provenance of the frozen study](docs/frozen_provenance.md), [open issues](docs/OPEN_ISSUES.md), [commit map](docs/commit_map.md), [course sheet](docs/course/FinalProject.pdf), `img/` |
 
 </details>
 
@@ -123,12 +123,12 @@ Gates, in the order the notebook runs them: **Gate 1** rebuilds the 13 group ret
 | [analysis/forward/spec_amendment_001.md](analysis/forward/spec_amendment_001.md) | `c76cde86` | 09:16:11 | book 09:17:55 | `22c67db` |
 | [analysis/forward/book_2026Q4.csv](analysis/forward/book_2026Q4.csv) (first build) | `85727526` | 09:17:55 | | `3e8ecd7` |
 | [analysis/v3_spec.md](analysis/v3_spec.md) (R1–R11, 132 looks) | `312aef1d` | 09:52:27 | 09:53:32 | `c7014d9` |
-| Frozen study folder (3,067 files) | `eb109be9` | imported at `c67c486` with Alex's history | checked every run | [provenance](docs/process/frozen_provenance.md) |
+| Frozen study folder (3,067 files) | `eb109be9` | imported at `c67c486` with Alex's history | checked every run | [provenance](docs/frozen_provenance.md) |
 
 - [analysis/output/v2_run_log.md](analysis/output/v2_run_log.md) and [v3_run_log.md](analysis/output/v3_run_log.md) hold the hashes of the first run; later runs must reproduce them or the notebook stops.
 - [report/check_sources.py](report/check_sources.py) fails the build if a `% src:` comment swallows text.
 - The forward test is evaluated once, on 31 December 2026, whatever it shows.
-- Issues found and deliberately not fixed, because fixing them would change a frozen file or a recorded result: [docs/process/OPEN_ISSUES.md](docs/process/OPEN_ISSUES.md).
+- Issues found and deliberately not fixed, because fixing them would change a frozen file or a recorded result: [docs/OPEN_ISSUES.md](docs/OPEN_ISSUES.md).
 
 </details>
 
@@ -136,7 +136,7 @@ Gates, in the order the notebook runs them: **Gate 1** rebuilds the 13 group ret
 
 ## How we used Claude
 
-Claude did every AI job, which this term's course allows; the switch from the ChatGPT template is logged as preregistration amendments 001 and 002 in the frozen study. Confirmatory study: Claude Sonnet 5.5 at medium effort, 199 logged calls (P1 audit, P2 blinded signal agents, P3 migration judge, P4 red team). Follow-up: Claude Opus 5.5 at extra-high effort, 294 calls. Post-mortem review and this iteration: Claude Code (Opus 5.5, then Fable 5.1) under the [project rules](docs/process/project_rules.md); prompts in [docs/process/](docs/process/). The engineering assistant that wrote the frozen pipeline is not documented in the repository (open item for Alex). Section 3.4 and Appendix A of the [report](report/main.pdf) evaluate what Claude got right and wrong.
+Claude did every AI job, which this term's course allows; the switch from the ChatGPT template is logged as preregistration amendments 001 and 002 in the frozen study. Confirmatory study: Claude Sonnet 5.5 at medium effort, 199 logged calls (P1 audit, P2 blinded signal agents, P3 migration judge, P4 red team). Follow-up: Claude Opus 5.5 at extra-high effort, 294 calls. Post-mortem review and this iteration: Claude Code (Opus 5.5, then Fable 5.1) under a one-page rules file (frozen folder read-only, one label per result, specs hashed before they run, a source comment on every number, stop at a failed gate). The engineering assistant that wrote the frozen pipeline is not documented in the repository (open item for Alex). Section 3.4 and Appendix A of the [report](report/main.pdf) evaluate what Claude got right and wrong.
 
 ---
 
@@ -160,4 +160,4 @@ Claude did every AI job, which this term's course allows; the switch from the Ch
 | Al Yazid Bensaid | Claude evaluation |
 | Elouan Bahri | references and data appendix |
 
-Open items and who owns them: [docs/process/HANDOFF.md](docs/process/HANDOFF.md).
+Issues found and deliberately not fixed: [docs/OPEN_ISSUES.md](docs/OPEN_ISSUES.md).

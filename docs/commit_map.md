@@ -1,6 +1,6 @@
 # Commit map after the history rewrite of 3 Oct 2026
 
-The history of `main` was rewritten once, on 3 Oct 2026, to remove tool-attribution trailer lines from commit messages (`git filter-branch --msg-filter`). Authors, author dates, committer dates, file contents and commit order are unchanged; Alex Roesler's two imported commits (`8a520b0`, `c67c486`) are untouched and keep their hashes. Every commit hash cited in this repository was updated to the new value, with two exceptions that cannot be edited because the files are SHA-256-hashed and checked by the notebook: `analysis/v2_spec.md` cites `a0bdff3` (now `a56e6ce`) and `analysis/forward/spec_amendment_001.md` cites `45991d4` (now `f90b66c`). See `OPEN_ISSUES.md` #9.
+The history of `main` was rewritten once, on 3 Oct 2026, to remove tool-attribution trailer lines from commit messages (`git filter-branch --msg-filter`). Authors, author dates, committer dates, file contents and commit order are unchanged; Alex Roesler's two imported commits (`8a520b0`, `c67c486`) are untouched and keep their hashes. Every commit hash cited in this repository was updated to the new value, with two exceptions that cannot be edited because the files are SHA-256-hashed and checked by the notebook: `analysis/v2_spec.md` cites `a0bdff3` (now `a56e6ce`) and `analysis/forward/spec_amendment_001.md` cites `45991d4` (now `f90b66c`). See `docs/OPEN_ISSUES.md` #9.
 
 | old | new |
 |---|---|
