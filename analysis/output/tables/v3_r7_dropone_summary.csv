@@ -1,0 +1,7 @@
+statistic,test_sharpe,full_sharpe
+minimum,0.18405490659750104,0.2313849406616241
+median,0.3026891231778837,0.34344805121872624
+maximum,0.4765507360777538,0.5393726246166338
+all 13 groups (V2d),0.2928175594619901,0.3513864909801854
+industry whose removal lowers test Sharpe most,Health care,
+industry whose removal raises test Sharpe most,Real estate,

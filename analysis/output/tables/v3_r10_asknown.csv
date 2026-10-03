@@ -1,0 +1,2 @@
+check,status,note
+R10 as-known (ALFRED vintage) rerun of V2a-V2d,not run: no key,analysis/.env has no FRED_API_KEY; historical v2/v3 results use revised data with fixed lags (data_vintage.md)

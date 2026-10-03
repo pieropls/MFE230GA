@@ -348,3 +348,82 @@ def v2_windows(frame, a3):
     ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1), ncol=5, fontsize=7, columnspacing=1.0)
     ax.grid(axis='x', visible=False)
     return save(fig, 'fig_v2_windows.pdf')
+
+
+# ---------------------------------------------------------------- v3 robustness figures (V2d)
+def horizon_profile(frame):
+    """frame: columns window, h, ic, se, t. Lines per window with ±2 s.e."""
+    fig, ax = plt.subplots(figsize=(P.FULL_WIDTH, 2.9))
+    styles = {'research': (GREY, 'o', '--'), 'test': (PH, 's', '-'), 'full': (DGREY, '^', '-')}
+    for w, (colour, marker, ls) in styles.items():
+        sub = frame[frame.window == w].sort_values('h')
+        ax.errorbar(sub.h, sub.ic, yerr=2 * sub.se, fmt=marker, ls=ls, color=colour, ms=4.5, capsize=2, lw=1.1,
+                    label={'research': 'Research 2004–2014', 'test': 'Test 2014–2026', 'full': 'Full sample'}[w])
+    ax.axhline(0, color=DGREY, lw=0.8)
+    ax.set_xticks(sorted(frame.h.unique()))
+    ax.set_xlabel('Return horizon h (months)')
+    ax.set_ylabel('Mean rank IC of −(hires + quits) (±2 s.e.)')
+    ax.set_title('Hiring predicts industry returns slowly: IC of the V2d score by horizon')
+    ax.legend(loc='upper left', ncol=3)
+    ax.grid(axis='x', visible=False)
+    return save(fig, 'fig_horizon_profile.pdf')
+
+
+def v2d_holding(frame):
+    """frame: index holding (months), columns windows (Sharpe)."""
+    windows = list(frame.columns)
+    fig, ax = plt.subplots(figsize=(P.HALF_WIDTH, 2.9))
+    n = len(frame)
+    width = 0.8 / n
+    shades = ['#F1D7BF', '#E3B48A', '#B35C00', '#7A3E00']
+    for i, (h, row) in enumerate(frame.iterrows()):
+        x = np.arange(len(windows)) + (i - (n - 1) / 2) * width
+        ax.bar(x, row.to_numpy(), width, color=shades[i], edgecolor=PH, lw=0.4, label=f'{h} months')
+    ax.axhline(0, color=DGREY, lw=0.8)
+    short = {'research': 'research', 'test': 'test', 'full': 'full', 'post-2010': 'post-2010', 'last 18m': 'last 18m'}
+    ax.set_xticks(range(len(windows)), [short.get(w, w) for w in windows], fontsize=7, rotation=20)
+    ax.set_ylabel('Net Sharpe (10 bp)')
+    ax.set_title('V2d by holding period')
+    ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.22), ncol=2, fontsize=6.8, title='Holding period', title_fontsize=6.8)
+    ax.grid(axis='x', visible=False)
+    return save(fig, 'fig_v2d_holding.pdf')
+
+
+def v2d_dropone(frame, baseline):
+    """frame: index industry name, columns test_sharpe, full_sharpe. baseline: dict window->V2d Sharpe."""
+    frame = frame.sort_values('test_sharpe')
+    fig, ax = plt.subplots(figsize=(P.HALF_WIDTH, 3.4))
+    y = np.arange(len(frame))
+    ax.barh(y + 0.18, frame.test_sharpe, 0.36, color=PH, label='Test')
+    ax.barh(y - 0.18, frame.full_sharpe, 0.36, color=LGREY, label='Full sample')
+    ax.axvline(baseline['test'], color=PH, lw=0.9, ls='--')
+    ax.axvline(baseline['full'], color=GREY, lw=0.9, ls=':')
+    ax.axvline(0, color=DGREY, lw=0.8)
+    ax.set_yticks(y, frame.index, fontsize=7.5)
+    ax.set_xlabel('Net Sharpe, industry removed')
+    ax.set_title('V2d: drop one industry')
+    ax.set_xlim(0, max(frame.full_sharpe.max(), frame.test_sharpe.max()) * 1.35)
+    ax.legend(loc='lower right', fontsize=7, title='dashed: all 13', title_fontsize=6.5)
+    ax.grid(axis='y', visible=False)
+    return save(fig, 'fig_v2d_dropone.pdf')
+
+
+def v2d_tightness(frame):
+    """frame: columns window, regime, sharpe, ic12, ic12_se, n."""
+    regimes = ['T rising', 'T falling', 'V/U > 1', 'V/U < 1']
+    fig, axes = plt.subplots(1, 2, figsize=(P.FULL_WIDTH, 2.6))
+    for ax, metric, label in [(axes[0], 'sharpe', 'Net Sharpe (10 bp)'), (axes[1], 'ic12', 'Mean 12-month rank IC (±2 s.e.)')]:
+        x = np.arange(len(regimes))
+        for i, (w, colour) in enumerate([('test', PH), ('full', GREY)]):
+            sub = frame[frame.window == w].set_index('regime').reindex(regimes)
+            err = 2 * sub.ic12_se if metric == 'ic12' else None
+            ax.bar(x + (i - 0.5) * 0.38, sub[metric], 0.38, color=colour, yerr=err, capsize=2, ecolor=DGREY, label={'test': 'Test', 'full': 'Full sample'}[w])
+            for xi, n in zip(x + (i - 0.5) * 0.38, sub.n):
+                ax.text(xi, ax.get_ylim()[0], f'{int(n)}m', ha='center', va='bottom', fontsize=6, color=DGREY)
+        ax.axhline(0, color=DGREY, lw=0.8)
+        ax.set_xticks(x, regimes, fontsize=7.5)
+        ax.set_ylabel(label)
+        ax.grid(axis='x', visible=False)
+    axes[0].legend(loc='upper left', fontsize=7)
+    fig.suptitle('V2d conditional on labor-market tightness at the decision date', fontweight='bold', fontsize=9.5)
+    return save(fig, 'fig_v2d_tightness.pdf')

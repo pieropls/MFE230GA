@@ -1,0 +1,39 @@
+\clearpage\section{V2d robustness battery (v3)}
+Spec \path{analysis/v3_spec.md} frozen 2026-10-03T09:52:27Z, first run 09:53:32Z; every check run once; $N_{\text{trials}}$ raised to 132. Results: \path{analysis/output/v3_results.md}. \hfill \tagp
+
+\emph{Reading against the pre-declared rule: fragile in one dimension (R4).} V2d lost money in the first half of the test (Sharpe $-0.21$) and made it in the second ($+0.64$); the other six conditions hold. The 12-month IC is positive in both halves.
+
+\subsection*{R1 Components \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r1_components}}\par\medskip
+\subsection*{R2 Horizon profile \hfill \tagp}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_horizon_profile.pdf}
+\caption{The V2d score has no one-month IC and a positive IC from 9 to 24 months, peaking at 12 (test $+0.096$, $t=2.43$). \textcolor{mute}{\footnotesize Source: analysis/output/tables/v3\_r2\_horizon\_profile.csv.} \hfill \tagp}\end{figure}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r2_horizon_profile}}\par\medskip
+\subsection*{R3 Holding period \hfill \tagp}
+\begin{figure}[H]\centering\includegraphics[width=0.55\linewidth]{../report/figures/fig_v2d_holding.pdf}
+\caption{Longer holding helps: test Sharpe $+0.05$ at 6 months, $+0.29$ at 12, $+0.30$ at 18. \textcolor{mute}{\footnotesize Source: v3\_r3\_holding.csv.} \hfill \tagp}\end{figure}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r3_holding}}\par\medskip
+\subsection*{R4 Sub-periods \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r4_subperiods}}\par\medskip
+\subsection*{R5 Costs \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r5_costs}}\par\medskip
+\subsection*{R6 Factor regression, 12 HAC lags \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r6_alpha}}\par\medskip
+\subsection*{R7 Drop one industry \hfill \tagp}
+\begin{figure}[H]\centering\includegraphics[width=0.55\linewidth]{../report/figures/fig_v2d_dropone.pdf}
+\caption{No single industry carries V2d: removing any one leaves the test Sharpe between $+0.18$ and $+0.48$. \textcolor{mute}{\footnotesize Source: v3\_r7\_dropone.csv.} \hfill \tagp}\end{figure}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r7_dropone_summary}}\par\medskip
+\subsection*{R8 Tightness moderator \hfill \tagp}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_v2d_tightness.pdf}
+\caption{V2d earned its return when tightness was falling or $V/U>1$; in tightening months the Sharpe was zero although the 12-month IC was highest. \textcolor{mute}{\footnotesize Source: v3\_r8\_tightness.csv.} \hfill \tagp}\end{figure}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r8_tightness}}\par\medskip
+\subsection*{R9 Block-bootstrap interval \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r9_bootstrap}}\par\medskip
+\subsection*{R10 As-known data \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r10_asknown}}\par\medskip
+\subsection*{R11 Fundamental law, test window \hfill \tagc\ (A3) / \tagp}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r11_fundamental_law}}\par\medskip
+\subsection*{Deflated Sharpe at 112 and 132 trials \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_dsr132}}\par\medskip
+\subsection*{Reading rule \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_reading}}\par\medskip

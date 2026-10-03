@@ -176,7 +176,7 @@ def standardize(raw):
     return z
 
 
-def signals(folder=P.FRED, last_decision=None):
+def signals(folder=P.FRED, last_decision=None, groups=None):
     """Standardised F1..F5 and W plus tightness T, indexed by earning month.
 
     F1..F4 = avg3(rate, m_J) - avg3(rate, m_J-12) with m_J = d - 2 (JOLTS)
@@ -199,6 +199,7 @@ def signals(folder=P.FRED, last_decision=None):
     decisions = pd.period_range(P.SIGNAL_START, end, freq='M')
     features = {}
     for name, value in raw.items():
+        value = value[list(groups)] if groups is not None else value   # drop-one-industry diagnostics
         z = standardize(value.reindex(decisions))
         z.index = z.index + 1                                         # earning month
         features[name] = z

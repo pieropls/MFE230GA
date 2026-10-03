@@ -74,10 +74,10 @@ def group_momentum(total):
     return out.rename('group_momentum')
 
 
-def factor_attribution(net, returns):
-    """Net returns on FF5 + Mom + group momentum, HAC(6)."""
+def factor_attribution(net, returns, lags=P.HAC_LAGS):
+    """Net returns on FF5 + Mom + group momentum, HAC (6 lags by default)."""
     factors = returns['factors'][['Mkt-RF', 'SMB', 'HML', 'RMW', 'CMA', 'Mom']].join(group_momentum(returns['total']))
-    return hac(net, factors)
+    return hac(net, factors, lags=lags)
 
 
 def placebo(scores, target, months, min_shift=P.PLACEBO_MIN_SHIFT):
@@ -112,3 +112,17 @@ def deflated_sharpe(net, n_trials=P.N_TRIALS, trial_var=None):
 def window(frame, name):
     a, b = P.WINDOWS[name]
     return frame.loc[a:b]
+
+
+def block_bootstrap_sharpe(net, block=12, draws=5000, seed=P.SEED, level=0.90):
+    """Circular moving-block bootstrap of monthly returns; percentile interval for the annualised Sharpe."""
+    r = np.asarray(pd.Series(net).dropna(), dtype=float)
+    n = len(r)
+    rng = np.random.default_rng(seed)
+    n_blocks = int(np.ceil(n / block))
+    starts = rng.integers(0, n, size=(draws, n_blocks))
+    idx = (starts[:, :, None] + np.arange(block)[None, None, :]).reshape(draws, -1)[:, :n] % n
+    samples = r[idx]
+    sharpes = np.sqrt(12) * samples.mean(axis=1) / samples.std(axis=1, ddof=1)
+    lo, hi = np.quantile(sharpes, [(1 - level) / 2, 1 - (1 - level) / 2])
+    return {'sharpe': float(np.sqrt(12) * r.mean() / r.std(ddof=1)), 'low': float(lo), 'high': float(hi), 'n': n, 'block': block, 'draws': draws}

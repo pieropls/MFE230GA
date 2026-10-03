@@ -55,6 +55,26 @@ Each table is in `analysis/output/tables/<name>.csv` with a LaTeX fragment in `r
 - `d10_agent_design`: D10 agent experiment design [CONFIRMATORY]
 - `v2_results`: v2 variants: Sharpe by window and test statistics [POST-HOC]
 
+### 4b. V2d robustness battery (v3, POST-HOC)
+
+Spec `analysis/v3_spec.md` frozen 2026-10-03T09:52:27Z (sha256 `312aef1d…`), first run 09:53:32Z; results in `analysis/output/v3_results.md`; N_trials raised to 132. **Reading against the pre-declared rule: fragile in one dimension (R4): V2d lost money in the first half of the test (Sharpe −0.21) and made it in the second (+0.64). The other six conditions hold.**
+
+| ID | Table | Figure | One-line result |
+|---|---|---|---|
+| R1 | `v3_r1_components` | — | Hires alone +0.19 and quits alone +0.16 test Sharpe; openings +0.42 and layoffs +0.16 with the same sign. Not carried by one component. |
+| R2 | `v3_r2_horizon_profile` | `fig_horizon_profile.pdf` | IC −0.020 at 1 month, +0.069 at 9, +0.096 at 12 (t 2.43), +0.085 at 18, +0.063 at 24. The thesis horizon pattern. |
+| R3 | `v3_r3_holding` | `fig_v2d_holding.pdf` | Test Sharpe +0.05 (6m), +0.14 (9m), +0.29 (12m), +0.30 (18m). |
+| R4 | `v3_r4_subperiods` | — | Test halves −0.21 / +0.64; ex-pandemic +0.37; pre-2020 +0.14; 2020 onward +0.37. The 12-month IC is positive in both halves (+0.097, +0.095). |
+| R5 | `v3_r5_costs` | — | Test Sharpe +0.34 / +0.29 / +0.22 / +0.09 at 0 / 10 / 25 / 50 bp; break-even 68 bp. |
+| R6 | `v3_r6_alpha` | `fig_loadings.pdf` (V2d added) | Alpha +0.26%/month, t 1.48 test and 1.92 full (HAC 12). Loads against RMW (−0.36, t −4.45). |
+| R7 | `v3_r7_dropone(_summary)` | `fig_v2d_dropone.pdf` | Drop-one test Sharpe from +0.18 (no health care) to +0.48 (no real estate), median +0.30. |
+| R8 | `v3_r8_tightness` | `fig_v2d_tightness.pdf` | Sharpe −0.00 when T rose, +0.66 when it fell; +0.72 when V/U > 1, −0.14 when V/U < 1. The IC is highest when T rises (+0.115). |
+| R9 | `v3_r9_bootstrap` | — | 90% interval [−0.07, +0.65] test (includes 0), [+0.05, +0.64] full (excludes 0). |
+| R10 | `v3_r10_asknown` | — | Not run: no FRED key. |
+| R11 | `v3_r11_fundamental_law` | — | Implied IR: A3 −0.21 (realised −0.58), V2a +0.56 (realised +0.16), V2d +0.17 with ceiling +0.35 (realised +0.29). |
+| — | `v3_dsr132` | — | V2d DSR at 132 trials: 0.05 test, 0.16 full. |
+
+
 ## 5. The agent experiment
 
 
@@ -103,7 +123,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 
 ## 7. Claims register
 
-`results/claims.csv`: 67 claims, 67 verified against their source files.
+`results/claims.csv`: 88 claims, 88 verified against their source files.
 
 | ID | Label | Claim | Numbers | Verified |
 |---|---|---|---|---|
@@ -174,6 +194,27 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | S02 | POST-HOC | As-known (ASOF) scores pick the same top three groups as our revised-data signal in only 42% of test months. | 42 | y |
 | S03 | POST-HOC | Durable manufacturing is 60% semiconductors (Chips) by market cap in August 2026; nondurable manufacturing is 60% pharmaceuticals. | Chips 60%, Mach 9%, Autos 7%; Drugs 60%, Hshld 9%, Soda 7% | y |
 | S04 | CONF | Gate 1: the 13 group returns match all 50 saved ledgers to 1.5e-16 and our estimators match results.json to 3.6e-15. | 1.51e-16; 3.55e-15 | y |
+| R1a | POST-HOC | Held 12 months, hires alone earn a test Sharpe of +0.19 and quits alone +0.16; openings +0.42 and layoffs +0.16 (both with the same negative sign, for contrast). | 0.19; 0.16; 0.42; 0.16 | y |
+| R1b | POST-HOC | Hires alone have a test 12-month IC of +0.093 (t 2.90); quits alone +0.085 (t 1.75). | 0.093; 2.9; 0.085; 1.75 | y |
+| R2a | POST-HOC | Test-window IC of the V2d score by horizon: -0.020 at 1 month (t -0.87), +0.069 at 9 (t 1.98), +0.096 at 12 (t 2.43), +0.085 at 18 (t 2.00), +0.063 at 24 (t 1.86). | -0.02; -0.87; 0.069; 1.98; 0.096; 2.43; 0.085; 2.0; 0.063; 1.86 | y |
+| R2b | POST-HOC | The 12-month IC of the V2d score is +0.047 (t 0.90) in research and +0.071 (t 2.06) over the full sample. | 0.047; 0.9; 0.071; 2.06 | y |
+| R3a | POST-HOC | Test Sharpe by holding period: +0.05 at 6 months, +0.14 at 9, +0.29 at 12, +0.30 at 18. | 0.05; 0.14; 0.29; 0.3 | y |
+| R3b | POST-HOC | Research Sharpe by holding period: +0.31 at 6 months, +0.43 at 9, +0.50 at 12, +0.58 at 18. | 0.31; 0.43; 0.5; 0.58 | y |
+| R4a | POST-HOC | V2d test Sharpe was -0.21 in the first half (71 months) and +0.64 in the second half. | -0.21; 71; 0.64 | y |
+| R4b | POST-HOC | V2d test Sharpe excluding Mar 2020-Dec 2021: +0.37; pre-2020: +0.14; 2020 onward: +0.37. Full-sample halves: +0.33 and +0.38. | 0.37; 0.14; 0.37; 0.33; 0.38 | y |
+| R4c | POST-HOC | The 12-month IC of V2d was positive in both test halves (+0.097 and +0.095) even though the first-half Sharpe was negative. | 0.097; 0.095 | y |
+| R5a | POST-HOC | V2d test Sharpe: +0.34 at 0 bp, +0.29 at 10, +0.22 at 25, +0.09 at 50 bp; break-even industry cost 68 bp (69 bp full sample). | 0.34; 0.29; 0.22; 0.09; 68; 69 | y |
+| R6a | POST-HOC | With 12 HAC lags, V2d alpha is +0.26% a month in the test and +0.26% over the full sample. | 0.26; 0.26 | y |
+| R6a2 | POST-HOC | The t-statistics of the V2d alpha with 12 HAC lags are 1.48 (test) and 1.92 (full sample). | 1.48; 1.92 | y |
+| R6b | POST-HOC | V2d loads against profitability in the test: RMW -0.36 (t -4.45) and SMB -0.17 (t -2.24); market, momentum and industry-momentum loadings are small. | -0.36; -4.45; -0.17; -2.24 | y |
+| R7a | POST-HOC | Dropping any one industry leaves the V2d test Sharpe between +0.18 (without health care) and +0.48 (without real estate), median +0.30. | 0.18; 0.3; 0.48; Health care; Real estate | y |
+| R8a | POST-HOC | V2d net Sharpe by regime at the decision (test): -0.00 when T rose over 12 months, +0.66 when it fell; +0.72 when V/U > 1, -0.14 when V/U < 1. | -0.0; 0.66; 0.72; -0.14 | y |
+| R8b | POST-HOC | The 12-month IC of V2d is highest when T is rising (+0.115, t 2.52) although the Sharpe in those months is zero. | 0.115; 2.52 | y |
+| R9a | POST-HOC | Block-bootstrap 90% interval for the V2d Sharpe: [-0.07, +0.65] in the test (includes zero) and [+0.05, +0.64] over the full sample (excludes zero). | -0.07; 0.65; 0.05; 0.64 | y |
+| R11a | POST-HOC | Fundamental law, test window: A3 IC -0.021 x sqrt(156) x TC 0.80 implies IR -0.21 (realised -0.58); V2a IC +0.049 x sqrt(156) x TC 0.91 implies +0.56 (realised +0.16); V2d IC +0.096 x sqrt(13) x TC 0.48 implies +0.17, ceiling +0.35 (realised +0.29). | -0.021; 0.8; -0.21; -0.58; 0.049; 0.91; 0.56; 0.16; 0.096; 0.48; 0.17; 0.35; 0.29 | y |
+| R12 | POST-HOC | With N_trials raised to 132, the V2d deflated Sharpe is 0.05 in the test and 0.16 over the full sample; the benchmark Sharpe that 132 null trials would produce is 0.76 (test) and 0.56 (full). | 0.05; 0.16; 0.76; 0.56 | y |
+| R13 | POST-HOC | Against the pre-declared battery rule, V2d fails only R4 (both test halves positive); R1, R2, R3, R5, R7 and R9 hold. | no; yes; yes; yes; yes; yes; yes | y |
+| R10 | POST-HOC | R10 (as-known ALFRED rerun) was not run: no FRED API key. | not run: no key | y |
 
 ## 8. Known issues
 

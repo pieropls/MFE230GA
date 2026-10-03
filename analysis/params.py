@@ -71,6 +71,7 @@ PORTFOLIO = {'longs': 3, 'shorts': 3, 'holding': 3, 'risk_window': 60, 'risk_min
 COST_GRID_BPS = [0, 10, 25]
 
 # ---------- inference ----------
+SEED = 230              # the frozen study's seed; used by the block bootstrap
 HAC_LAGS = 6
 PLACEBO_MIN_SHIFT = 24
 N_TRIALS = 112          # ~108 diagnostic looks already taken + the 4 v2 variants
