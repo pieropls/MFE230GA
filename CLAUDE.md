@@ -62,7 +62,7 @@ Romain Almeida · Elouan Bahri · Al Yazid Bensaid · Piero Pelosi · Alex Roesl
   - Appendices: free.
 
 ## AI-use facts (verified from the agent logs, 3 Oct 2026)
-- Main (confirmatory) study: every agent, judge and review call used `claude-sonnet-5-5` at medium effort (607 logged calls, `outputs/follow_the_workers/outputs/agents/`).
-- Follow-up (exploratory) study: `claude-opus-5-5` at xhigh effort (905 logged calls).
+- Main (confirmatory) study: every agent, judge and review call used `claude-sonnet-5-5` at medium effort (199 logged calls in `outputs/follow_the_workers/outputs/agents/`).
+- Follow-up (exploratory) study: `claude-opus-5-5` at xhigh effort (294 logged calls).
 - The code was built with an engineering assistant Alex calls "6 astra". It is not documented in the repo. Write `\todo{exact name and vendor of the engineering assistant, from Alex}` and never guess it.
-- Alex said all agents used Opus 5.5. The logs contradict this for the main study, so always state models from the logs.
+- Alex said all agents used Opus 5.5. The logs contradict this for the main study, so always state models and call counts from the logs. (An earlier draft of this file said 607/905 calls; that came from double-counting model fields across files and is wrong.)
