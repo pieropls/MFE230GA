@@ -1,0 +1,13 @@
+{
+  "request_hash": "edd7820475803f3f974674d07cfe81a135321d7553028517d2582f74be1800b4",
+  "request": {
+    "call_id": "islands_3_Temporal_2_migration__islands_3_Interactions_6",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}. Return one bare JSON object without Markdown fences or commentary. uses_claim must be a JSON boolean. claim_ids must be an array of integer claim numbers, never quoted strings; use an empty array when uses_claim is false.",
+    "prompt": "{\"claims\": {\"1\": \"**Findings**\", \"2\": \"Our first feature ranked groups by how persistently average hours rose over the prior six available months.\", \"3\": \"It was valid, with 95% coverage, but weak: mean information coefficient about 0.05, HAC t-statistic near 1.35, not significant.\", \"4\": \"It predicted only when the common index was high and turned slightly negative when the index was low.\", \"5\": \"Overlap with base factors was low, and ranks were stable.\", \"6\": \"**Failure**\", \"7\": \"Our second submission was rejected as invalid because the blinded payload contained a forbidden name or identifier.\", \"8\": \"It used up a slot.\", \"9\": \"The exact trigger is unclear, so use neutral naming.\", \"10\": \"**Next**\", \"11\": \"Condition the hours signal on the high-index regime, respecting the index's two-month lag.\"}, \"hypothesis\": \"In high common-index regimes, groups whose V06 stock rate is elevated relative to V04 flow rate, versus own history, earn higher next-month relative returns, mirroring the negative high-regime V04-minus-V06 spread result.\", \"expression\": \"regime(tsz(ratio(V06,V04),\\\"exp\\\"),\\\"high\\\")\"}"
+  }
+}

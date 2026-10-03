@@ -1,0 +1,39 @@
+{
+  "response": "The report lists failures: regime-gating a spread of flow rates (coverage 58%, no high-T output), a stock-versus-flow standardized spread (negative, correlated 0.33 with base features), and a pay-per-hours change that was flat.\n\nThe proposed hypothesis uses pay growth net of hours growth, which is a spread of standardized (tsz) yoy changes of pay and hours. This is close to the \"pay-per-hours change\" (flat) failure, and it is also a standardized spread like submission 3. It doesn't use regime gating, so it avoids failure 2, but it doesn't explicitly address the flat pay-per-hours result or the spread correlation with base features. It doesn't explicitly avoid those failures; it plausibly repeats them.\n\n\n{\"avoids_failure\": false}\n```",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 264,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.00368,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "0a6ddf4adcb676b9d88a4678b657a907af6dcd89d54722b607c0e31de1f796b0"
+}

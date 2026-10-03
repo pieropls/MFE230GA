@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-02T06:37:47.151738+00:00",
+  "ready_for_research": true,
+  "open_flags": [],
+  "evidence_hashes": {
+    "params.py": "1b86c4a968d2f5b7d22c36efd1aef161c9ded1b3fe74281f35aa04cf098dbe10",
+    "data.py": "517f2e9e0fd284f60d0797b4b916612c22e55f361dd41125dc31b6974458dca8",
+    "stats.py": "c627a8ba4cb6f70fb141bb32688ec59afb62f500dca9a37cdafb30496a40ede7",
+    "agents.py": "7c15e14b903db31710e51b7663f195c4d6cd6c9d4f1dbf7b688bcdb89d4e6e43",
+    "plots.py": "ea3e37cdd7bfd70a010ede3c115373d9606978efaa011f511f88bc25747c4dd0",
+    "run.ipynb": "53398646bc6c9388c70beac0dcc1cd01736f5c923cbc61cba6e2180dac74458d"
+  },
+  "fresh_run": "opus55_xhigh_followup",
+  "scope": "Exploratory Opusxhigh follow-up after original test exposure; all research contexts fresh",
+  "approved_changes": [
+    "005:Opus5.5/xhigh and separate namespace",
+    "006:explicit existing JSON/type requirements",
+    "007:narrow statistical-language false-positive fix"
+  ],
+  "readiness_scope": "Research only; new human review and P4 required before evaluation",
+  "validation": [
+    "28 offline tests",
+    "current-source full synthetic and inline checks",
+    "two fixed synthetic preflight sets;final roles pass",
+    "fresh OpusP1 findings verified"
+  ]
+}

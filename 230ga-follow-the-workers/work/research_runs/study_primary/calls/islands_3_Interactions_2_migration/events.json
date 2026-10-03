@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "**Progress report**\n\n**Failure:** My first attempt combined the cross-sectional ranks of recent changes in hourly pay and in average hours. It had a slightly negative information coefficient and an insignificant t-statistic. It was weak in both low and high regimes of the common index, so the demand-strength interaction idea showed no support.\n\n**Mixed result:** My second attempt used a spread between two flow rates, restricted to the high regime of the common index. It had a small positive coefficient, which contradicts my hypothesized negative sign, and its t-statistic was also insignificant. Coverage fell to 0.82, and the low regime was undefined.\n\n**Takeaways:** Both results were statistically indistinguishable from noise. Regime gating cuts coverage and raises rank persistence. Base correlations were low, so both features were novel but not predictive."
+          }
+        ],
+        "usage": {
+          "input_tokens": 698,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1247,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 3,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "**Progress report**\n\n**Failure:** My first attempt combined the cross-sectional ranks of recent changes in hourly pay and in average hours. It had a slightly negative information coefficient and an insignificant t-statistic. It was weak in both low and high regimes of the common index, so the demand-strength interaction idea showed no support.\n\n**Mixed result:** My second attempt used a spread between two flow rates, restricted to the high regime of the common index. It had a small positive coefficient, which contradicts my hypothesized negative sign, and its t-statistic was also insignificant. Coverage fell to 0.82, and the low regime was undefined.\n\n**Takeaways:** Both results were statistically indistinguishable from noise. Regime gating cuts coverage and raises rank persistence. Base correlations were low, so both features were novel but not predictive.",
+      "usage": {
+        "input_tokens": 698,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1247,
+        "output_tokens": 275,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 698,
+          "outputTokens": 275,
+          "cacheReadInputTokens": 1247,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.004395400000000001,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.004395400000000001
+    }
+  ],
+  "stderr_present": false
+}

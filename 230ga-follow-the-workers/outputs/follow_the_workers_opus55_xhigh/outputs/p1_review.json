@@ -1,0 +1,118 @@
+{
+  "utc": "2026-10-02T06:37:47.150600+00:00",
+  "complete": true,
+  "open_flags": [],
+  "model": "claude-opus-5-5",
+  "effort": "xhigh",
+  "evidence": [
+    "outputs/p1_response.md",
+    "outputs/p1_claim_checks.json",
+    "outputs/p1_additional_checks.json",
+    "outputs/p1_dispositions.json",
+    "outputs/audits/p1/events.json"
+  ],
+  "decisions": [
+    {
+      "number": 1,
+      "status": "Prescribed research limitation",
+      "reason": "Research deliberately uses the October30,2014 frozen snapshot with fixed lags and timing=frozen_snapshot_fixed_lag; it is pseudo-real-time, not historical ASOF. This is disclosed and retained for the fixed comparison. The primary test uses the actual as-known filter. Labor-only checks verify the distinction and no unpublished ASOF rows."
+    },
+    {
+      "number": 2,
+      "status": "Prescribed archive limitation",
+      "reason": "FIRST is the earliest archived vintage, not a promise of original release before archival inception. Inception-seeded observations were counted in p1_claim_checks.json; report this limitation. The first public-feature reference months in the test are2014-08/09, after core archive inception."
+    },
+    {
+      "number": 3,
+      "status": "Prescribed source exception; unsupported copied-date allegation",
+      "reason": "Construction earnings CES2000000008 is the stated SA exception, flagged in the manifest. All78 archive minima agree with live metadata, including this series; the uniform date was not copied. Mixed adjustment and revised-data diagnostics remain disclosed."
+    },
+    {
+      "number": 4,
+      "status": "Metadata/scope limitation",
+      "reason": "prescribed_match explicitly preserves original labels while verified_French_scope records approximate scope for every basket. Manifest mapping_quality mixes historical mapping annotations and must not be read as an independent exact-match certification. Save manifest_scope_notes.json and disclose scope limitations; no basket or numerical feature changes."
+    },
+    {
+      "number": 5,
+      "status": "No dropped group; shared-signal limitation",
+      "reason": "Unique source storage is keyed by series_id; build_features rejoins the full mapping. Independent checks verify584 equal/nonmissing CES H/E pairs for groups9/10 in bothASOF/FIRST. Shared CES reduces information diversity but does not omit group10."
+    },
+    {
+      "number": 6,
+      "status": "No current input defect; hypothetical-input limitation",
+      "reason": "Scanned every fixed labor vintage:zero interval gaps and zero closed final intervals. Overlap checks already fail closed and pinned hashes reject changed input bytes. No frozen input is silently disappearing through the hypothesized defect. Withdrawals/gaps would require explicit handling in any future new-source study."
+    },
+    {
+      "number": 7,
+      "status": "No current input defect",
+      "reason": "Every fixed observation date is month-start;zero duplicate observation_month/realtime_start keys. The proposed malformed-date case is outside the validated/pinned input schema and does not affect this experiment."
+    },
+    {
+      "number": 8,
+      "status": "Unsupported; evidence omitted from audit excerpt",
+      "reason": "French archives are pinned in input_hashes.json and hashes verified. Date-only independent checks confirm1202industrymonths192607\u2013202608 and all endpoints202608. Guarded return parsing separately selects monthly tables and rejects missing/sentinel/nonfinite values; do not open later numeric returns just to duplicate that audit."
+    },
+    {
+      "number": 9,
+      "status": "Prescribed diagnostic limitation",
+      "reason": "Fixed-lag and frozen-snapshot research are approximations;102 delayed first-publication cases are explicitly recorded. Primary ASOF/FIRST modes filter actual release_date<=cutoff before observation bounds. Retain fixed-lag as diagnostic and do not present it as publication-safe actual history."
+    },
+    {
+      "number": 10,
+      "status": "Future design question; not an unverified substitution",
+      "reason": "Finer CES suggestions were not established as eligible by this packet. The current task preserves fixed mappings to compare models. Do not claim suggested series exist with suitable comparable vintages, or substitute them after observing the original test."
+    },
+    {
+      "number": 11,
+      "status": "Refuted on all current series",
+      "reason": "All78 cached minima were recomputed and agree with the preserved live first-vintage responses. Uniform source onboarding dates are real archive metadata."
+    },
+    {
+      "number": 12,
+      "status": "Pagination concern refuted; optional scope limitation retained",
+      "reason": "All23 recorded searches havecount=received=unique, including exactly200where the endpoint count is200. Representative subsets are not claimed as exhaustive scope matches; any broader mining aggregate still lacks logging. Two exact PPI groups remain below9 and F6 is not admitted."
+    },
+    {
+      "number": 13,
+      "status": "Current configuration passes",
+      "reason": "Asserted exactlyASOF,FIRST,REVISED,FIXEDLAG. No unsupported variant is configured; no source behavior changed."
+    },
+    {
+      "number": 14,
+      "status": "Current types pass",
+      "reason": "Snapshot is daily ISO string and series_map lag dtype is integer;JOLTS lag2/CES lag1. Hypothetical alternate configuration types are not the frozen parameter contract."
+    },
+    {
+      "number": 15,
+      "status": "Coverage and snapshot checks pass",
+      "reason": "Snapshot is nonempty for every admitted core series;all research decisions precede the snapshot. Prepared-panel/features coverage audit passed. Historical snapshot use across2004\u20132014 is intentional and disclosed, not missing CES during the archive-start gap."
+    },
+    {
+      "number": 16,
+      "status": "Disclosed adjustment limitation",
+      "reason": "National JTSJOL/UNEMPLOY are SA;sector series are NSA except prescribed construction earnings. ASOF publication filtering still applies. Keep the adjustment distinction visible."
+    },
+    {
+      "number": 17,
+      "status": "Disclosed mapping limitation",
+      "reason": "The supplied Census audit measures row-level spillovers using an older correspondence, not complete or capitalization-weighted sector coverage. Missing logging/publishing/software and excluded auxiliary rows are limitations, not proof of an exact crosswalk. Do not change fixed baskets for this comparison."
+    },
+    {
+      "number": 18,
+      "status": "Disclosed approximations",
+      "reason": "CES group7 excludesutilities;group12includeseducation;group13includesleisure. Retain shared/supersector flags and effective-width caveats."
+    }
+  ],
+  "evidence_hashes": {
+    "data.py": "517f2e9e0fd284f60d0797b4b916612c22e55f361dd41125dc31b6974458dca8",
+    "outputs/manifest.csv": "6b6017045a25f0be4f52e2df30ec165fd2433177c5a709844b3a5518c06f733f",
+    "outputs/crosswalk.csv": "f877974ae108ec834bc7bb9f40ed9fe7f14b1fbe76f9f00c5d7052c7dc007e79",
+    "outputs/p1_request.json": "58f2d245fb0b77def216b2a7179d754c603fced2dd6c305e4f50349e65a6cbf5",
+    "outputs/p1_response.json": "5183bab8d93d38df92e109a354ab0ab66edfd1d6d34e632e04258063d391c44f",
+    "outputs/p1_claim_checks.json": "e9de59cb153be075bcfa475392ae769cd45cf1e667c9a5105395ce0ad4150230",
+    "outputs/p1_additional_checks.json": "a1b16a6c6b1cde55d211deaaca00a2b58d92f5e5e58453348db06e817b178901",
+    "outputs/manifest_scope_notes.json": "34c44990e30d8c447d5f1a3b1b7c2c6436004d0954a30a28bc191c807afc49e7"
+  },
+  "conclusion": "No new blocking current-input/numeric-pipeline error confirmed. Fixed-design and source-scope limitations remain explicitly disclosed. No economic or numeric code changes follow this audit.",
+  "team_critique": null
+}

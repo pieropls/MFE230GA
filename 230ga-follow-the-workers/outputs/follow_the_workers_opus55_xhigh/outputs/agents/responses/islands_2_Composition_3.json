@@ -1,0 +1,42 @@
+{
+  "request_hash": "784bc0660f1e507930738e3e951c6953bac2a02af0bff632b5c1744037daedae",
+  "envelope": {
+    "response": "{\"name\": \"flow_mix_V03_over_V02_3m_lowT\", \"hypothesis\": \"Three-month shifts in flow mix toward V03 relative to V02 signal improving activity composition when T is low. Groups with larger shifts earn higher next-month relative returns, and the shorter horizon outperforms six months.\", \"falsified_if\": \"Low-T mean rank IC is at or below 0.05, or the HAC t-statistic is below 2.0 in development.\", \"expression\": \"regime(chg(ratio(V03,V02),3),\\\"low\\\")\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 882,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1307,
+      "output_tokens": 2025,
+      "output_tokens_details": {
+        "thinking_tokens": 1838
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0442894,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "784bc0660f1e507930738e3e951c6953bac2a02af0bff632b5c1744037daedae"
+  }
+}

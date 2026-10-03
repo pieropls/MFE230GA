@@ -1,0 +1,42 @@
+{
+  "request_hash": "7315db7df09516f90107d02a84aaaff4ffa3cb2d7b59ac878440d1ae216cec9e",
+  "envelope": {
+    "response": "The task is to decide whether the hypothesis or expression uses or tests any of the numbered claims.\n\nThe hypothesis concerns 3-month changes in the V04 flow rate, ranked cross-sectionally and gated to low-T regimes, with a negative predicted rank correlation. Claim 3 covers an interaction of flow-rate momentum with wage-level momentum, in both low and high T states. That interaction is a different construct from the one here, which uses no wage variable. Claim 6 covers hours momentum restricted to the high-T regime, and claim 7 covers an hours-versus-wage spread in the high-T regime. Neither matches, since this hypothesis uses V04 in the low regime. Claim 8 says regime-gated features are persistent, but that is an observation and the hypothesis does not test it. Claim 9 proposes trying other variables, which is a general suggestion.\n\nThe hypothesis is a new, distinct signal. It does not build on any specific claim or test one directly. It is loosely related to claim 3 because both involve flow-rate momentum, but the construction differs.\n\n{\"uses_claim\": false, \"claim_ids\": []}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 502,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 374,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.004744,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "7315db7df09516f90107d02a84aaaff4ffa3cb2d7b59ac878440d1ae216cec9e"
+  }
+}

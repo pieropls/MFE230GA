@@ -1,0 +1,42 @@
+{
+  "request_hash": "213764889152b828a115f3d5aa7432aa70d2245f53fc17223b6ae53f8006ee3a",
+  "envelope": {
+    "response": "The report lists these failures: near-zero rank correlation from the interaction, thin coverage, use of a non-whitelisted transformation, regime-gated features with high persistence, and a weak hours-versus-wage spread.\n\nThe hypothesis proposes a spread of 6-month changes between two variables. It doesn't gate by regime, so it avoids the high-persistence regime-gating issue. It doesn't explicitly address coverage, transformation validity, or the near-zero IC. It also resembles the failed hours-versus-wage spread. It expects positive IC in both regimes, but the report found zero in both regimes for a similar construction. Nothing in it explicitly avoids a specific failure. Its \"extending the 3-month version\" claim is unsupported by the report.\n\nThe lack of regime gating is incidental rather than an explicit avoidance. The evidence is unclear about whether it avoids anything explicitly.\n\n{\"avoids_failure\": false}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 478,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 307,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.004026,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "213764889152b828a115f3d5aa7432aa70d2245f53fc17223b6ae53f8006ee3a"
+  }
+}

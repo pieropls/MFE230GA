@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V01_hours_accel_smoothed\",\"hypothesis\":\"Groups with accelerating average hours V01 (change over 3 months minus prior 3-month change) will have higher next-month returns, because hours adjust before other flows and the acceleration is only slowly priced in.\",\"falsified_if\":\"Mean cross-sectional rank IC is non-positive or HAC t-statistic is below 1 in the development sample.\",\"expression\":\"mavg(accel(V01),3)\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1230,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 159,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0043054,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "0f0bd605d450a2f0ebf3668dbf62882b54ddcbbea0284e4077241307c16658fe"
+}

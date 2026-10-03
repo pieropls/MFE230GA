@@ -1,0 +1,42 @@
+{
+  "request_hash": "9d82aa41f2aec1e8e6e24f936aab65e4d7ec539255ae1144ab46232d484634fb",
+  "envelope": {
+    "response": "The task is to decide whether the hypothesis or expression uses or tests any of the numbered claims.\n\nThe hypothesis concerns pay growth relative to history, net of hours growth, and next-month returns. The expression is a spread of two time-series z-scores of year-over-year changes, tsz(yoy(V05)) minus tsz(yoy(V01)).\n\nClaim 9 is the closest match: \"The pay-per-hours change was flat.\" That is a result about a pay-per-hours change. The hypothesis tests something similar, since pay strength net of hours is close to pay per hours. But claim 9 reports a result. It does not define this specific test, and this expression uses yoy with tsz rather than a ratio change. Claim 8 covers a stock-versus-flow standardized spread, which is a different construct. Claims 2, 6 and 10 are about flow-rate ratios and regime gating, which the expression does not involve.\n\nThe expression is a standardized spread of two variables, which resembles claim 8's \"standardized spread.\" But claim 8 is stock versus flow, and this one is pay versus hours, so it does not match.\n\nThe overlap with claim 9 is thematic, not a direct use or test of it, so I judge that no claim is used.\n\n{\"uses_claim\": false, \"claim_ids\": []}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 545,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 419,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.00528,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "9d82aa41f2aec1e8e6e24f936aab65e4d7ec539255ae1144ab46232d484634fb"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-28T08:08:28.240724+00:00",
+  "params_sha256": "1eb0e06cc176b2ff3385e916841f2b637db6f81e2ab4845ca9a856facecba376",
+  "input_archive_sha256": "ce3c625da9baf3319d45af617aac9dbea6bdef219c2be6f4c9fe51b0193756a3",
+  "notes": [
+    "V/U stays below 1 (T below 0) throughout the research period. Any feature \u00d7 T interaction is therefore estimated outside the support observed in research and applied to a test period containing the 2021\u201323 tight regime. Q1 is judged on the main effect. The interaction model and the V/U above-versus-below-1 split are reported as descriptive, not as tests. This supplied hypothesis will be checked and a factual discrepancy reported without moving the split.",
+    "Core vintage coverage begins March 4, 2011. The first sealed decision is deliberately October 31, 2014. Moving the boundary later to capture tight-regime variation costs sealed observations. The Sharpe values 0.58/0.72/0.84 for 142/92/68 months are IID t\u22482 approximations, not formal power calculations.",
+    "Each agent arm is run with three seeds. Seed 1 is the only strategy-producing run: only its candidates may supply features to A3 and A4. Seeds 2 and 3 measure search behaviour and never enter selection.",
+    "The deflated Sharpe ratio and the reality check use the 36 candidates of seed 1 plus the strategies evaluated in research. Process-measurement seeds are excluded, since none of their candidates is eligible for selection.",
+    "Holm correction applies jointly to IC and return endpoints for A1 vs A0, A2 vs A1 if admitted, and A3 vs its base. A4 vs A3 is descriptive and outside the family.",
+    "Given about 142 sealed months and a five-part gate, Do not implement is the expected outcome. Contributions regardless of verdict: research-versus-sealed gap, candidate failures, and search-architecture comparison."
+  ],
+  "python": "3.14.2",
+  "selection_end": "2014-09",
+  "first_sealed_decision": "2014-10-31"
+}

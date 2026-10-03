@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"Hours level relative to own history, ranked\",\"hypothesis\":\"Groups whose average hours V01 are unusually high versus their own expanding history (time-series z-score) are in a stronger labor-input phase and earn higher returns next month than groups with unusually low hours.\",\"falsified_if\":\"Mean cross-sectional rank IC is zero or negative in development statistics, or HAC t-stat is below 1.\",\"expression\":\"csrank(tsz(V01,\\\"exp\\\"))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1239,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1276,
+    "output_tokens": 163,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0043632,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "5cb009613a8bbeac6ddedeaf7aa4dae4c0860a4582447ae0eb20323363c86fbd"
+}

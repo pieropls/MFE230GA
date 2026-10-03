@@ -1,0 +1,13 @@
+{
+  "request_hash": "7a575401f8e9b5ffee5e7513f77dc810917ed98918b28a07908fdc8bed70849e",
+  "request": {
+    "call_id": "islands_3_Temporal_2_migration__islands_3_Interactions_4_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 4,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings**\\nOur first feature ranked groups by how persistently average hours rose over the prior six available months. It was valid, with 95% coverage, but weak: mean information coefficient about 0.05, HAC t-statistic near 1.35, not significant. It predicted only when the common index was high and turned slightly negative when the index was low. Overlap with base factors was low, and ranks were stable.\\n\\n**Failure**\\nOur second submission was rejected as invalid because the blinded payload contained a forbidden name or identifier. It used up a slot. The exact trigger is unclear, so use neutral naming.\\n\\n**Next**\\nCondition the hours signal on the high-index regime, respecting the index's two-month lag.\", \"hypothesis\": \"Groups whose V06 stock rate is elevated versus its own expanding history show persistent strength; interacted with the common index, this positively predicts next-month relative returns, more strongly when the index is high.\", \"expression\": \"withT(tsz(V06,\\\"exp\\\"))\"}"
+  }
+}

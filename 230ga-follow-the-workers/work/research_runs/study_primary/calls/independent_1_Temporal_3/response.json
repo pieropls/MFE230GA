@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V05_yoy_wage_growth_low_T\",\"hypothesis\":\"Groups with higher year-over-year change in V05 (dollars per hour) will have higher next-month returns in low-T regimes, because accelerating compensation signals stronger conditions not yet fully priced in. The effect should vanish in high T.\",\"falsified_if\":\"Mean IC in the low-T regime is non-positive, or is not above the high-T IC, or the HAC t-statistic is below 1.\",\"expression\":\"regime(yoy(V05),\\\"low\\\")\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 627,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 182,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0033293999999999997,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "356829841d93b237559883c80a472d6b273ba2f5edb9f3188eb3df7f78993eeb"
+}

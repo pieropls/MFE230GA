@@ -1,0 +1,13 @@
+{
+  "request_hash": "1f4c398358d740706442a00ec227bb170fe636013f39e9fa0733d88f1fc35d25",
+  "request": {
+    "call_id": "islands_1_Temporal_2_migration__islands_1_Composition_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nTwo temporal signals failed. Ranking groups by acceleration in average hours, lagged one month, gave a mean information coefficient near 0.02 and a HAC t-statistic near 0.7, well below two. Its ranks also turned over quickly. Ranking groups by how persistently the stock rate variable rose over six lagged months did worse, with coefficient near 0.01 and t-statistic near 0.5, despite stable ranks. Both looked somewhat stronger when the common index was high. Conditioning on high-index regimes merits testing, though that split may be noise. Coverage was about 95 percent, and overlap with base factors stayed low.\", \"hypothesis\": \"Flow composition, not flow levels, carries the earlier signal: groups whose V03-to-V02 ratio rose most in log terms over three months earn higher next-month relative returns, without conditioning on T regimes.\", \"expression\": \"csrank(lchg(ratio(V03,V02),3))\"}"
+  }
+}

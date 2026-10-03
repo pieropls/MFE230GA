@@ -1,0 +1,42 @@
+{
+  "request_hash": "3475d364c8ddb986f68f9285a0a94596e4790ace1c1bf2a90ac382da0008b9f0",
+  "envelope": {
+    "response": "**Progress report**\n\n**Failure:** My first attempt combined the cross-sectional ranks of recent changes in hourly pay and in average hours. It had a slightly negative information coefficient and an insignificant t-statistic. It was weak in both low and high regimes of the common index, so the demand-strength interaction idea showed no support.\n\n**Mixed result:** My second attempt used a spread between two flow rates, restricted to the high regime of the common index. It had a small positive coefficient, which contradicts my hypothesized negative sign, and its t-statistic was also insignificant. Coverage fell to 0.82, and the low regime was undefined.\n\n**Takeaways:** Both results were statistically indistinguishable from noise. Regime gating cuts coverage and raises rank persistence. Base correlations were low, so both features were novel but not predictive.",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 698,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1247,
+      "output_tokens": 275,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.004395400000000001,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "3475d364c8ddb986f68f9285a0a94596e4790ace1c1bf2a90ac382da0008b9f0"
+  }
+}

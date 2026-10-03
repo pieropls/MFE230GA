@@ -1,0 +1,42 @@
+{
+  "request_hash": "cd59cfd6a93fc69aec980d4200d5d8d435c98aa9769d74d9f077a93f05200908",
+  "envelope": {
+    "response": "The report describes several failures: the high-T-only flow-rate contrast had a wrong-sign IC and dropped coverage to 0.82; the stock-versus-flow contrast had an IC near zero; smoothed features have rank autocorrelation of 0.97 to 1.0, so the effective sample is small.\n\nThe proposed hypothesis is a stock-versus-flow contrast (V06 vs V03), restricted to the high-T regime. That is essentially the stock-versus-flow contrast that already showed IC near zero, combined with the high-T-only restriction that failed for the flow-rate contrast. It does not explicitly address any of these failures. The expression uses lag(V06,2) and lag(V03,2), which is not smoothing, so it might sidestep the autocorrelation issue, but this isn't explicitly stated as an avoidance. It also repeats the high-T-only regime restriction, which is tied to a failure (coverage fell to 0.82 and the sign was opposite).\n\nThe proposal does not explicitly avoid the failures, and it arguably repeats them.\n\n{\"avoids_failure\": false}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 517,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 363,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.004664,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "cd59cfd6a93fc69aec980d4200d5d8d435c98aa9769d74d9f077a93f05200908"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "utc": "2026-09-29T19:25:55.170359+00:00",
+  "complete": true,
+  "open_flags": [],
+  "audit_model": "claude-sonnet-5-5",
+  "evidence": [
+    "outputs/p1_request.json",
+    "outputs/p1_response.json",
+    "outputs/audits/p1/events.json",
+    "outputs/p1_claim_checks.json",
+    "outputs/census_crosswalk_check.json",
+    "outputs/ppi_admission.json"
+  ],
+  "findings": [
+    {
+      "number": 1,
+      "disposition": "documented_design",
+      "reason": "Shared CES is explicitly prescribed; panel is keyed by series_id and downstream features map to both groups.584 nonmissing shared H/E pairs verified in ASOF and FIRST."
+    },
+    {
+      "number": 2,
+      "disposition": "claim_not_supported",
+      "reason": "Current JOLTS flags are not shared-CES flags; CES mapping_quality contains the actual scope descriptions, not exact. Checked affected manifest rows."
+    },
+    {
+      "number": 3,
+      "disposition": "documented_limitation",
+      "reason": "CES transport excludes utilities as specified and flagged. Keep prescribed series rather than invent a substitute."
+    },
+    {
+      "number": 4,
+      "disposition": "documented_limitation",
+      "reason": "CES50000000 is the prescribed Information series. French Telcm is an approximate proxy; PPI Information has separately documented partial scope."
+    },
+    {
+      "number": 5,
+      "disposition": "documented_design",
+      "reason": "Construction SA earnings exception is explicitly prescribed. Vintage filtering controls publication availability; seasonal adjustment alone does not establish sealed lookahead."
+    },
+    {
+      "number": 6,
+      "disposition": "checked_question",
+      "reason": "Prescribed IDs, schema, dates, archive hashes and live first-vintage metadata verified. Finding identifies no concrete conflicting value."
+    },
+    {
+      "number": 7,
+      "disposition": "documented_limitation",
+      "reason": "All78 live archive-inception dates match pinned minima. FIRST means earliest archived vintage, not a recovered original historical publication. Frozen research snapshot is explicitly pseudo-real-time."
+    },
+    {
+      "number": 8,
+      "disposition": "documented_limitation",
+      "reason": "Manifest observation_end describes pinned file coverage; row-level release_date and cutoff control availability."
+    },
+    {
+      "number": 9,
+      "disposition": "documented_limitation",
+      "reason": "French returns are a pinned current historical snapshot, not vintage returns. Numeric sealed rows remain guarded."
+    },
+    {
+      "number": 10,
+      "disposition": "fixed_metadata",
+      "reason": "Crosswalk now separates prescribed_match from verified_French_scope and correspondence counts. All13 baskets are approximate; membership unchanged."
+    },
+    {
+      "number": 11,
+      "disposition": "claim_not_supported",
+      "reason": "outside_scope_portfolios lists only portfolios with spillovers. Detail audit contains every prescribed member, including Util; all13 memberships checked."
+    },
+    {
+      "number": 12,
+      "disposition": "documented_limitation",
+      "reason": "Fixed French industry proxies do not replicate the full JOLTS scope. Oil includes upstream extraction but also spillovers; logging coverage incomplete. No silent remapping."
+    },
+    {
+      "number": 13,
+      "disposition": "claim_not_supported",
+      "reason": "Both FIRST and ASOF filter publication dates before applying the observation-month bound. No observed future-release row is admitted."
+    },
+    {
+      "number": 14,
+      "disposition": "checked_no_error",
+      "reason": "Inclusive interval disjointness and ISO string comparison are checked; malformed/reversed/overlapping dates fail."
+    },
+    {
+      "number": 15,
+      "disposition": "nonblocking_error_message",
+      "reason": "Period parsing may reject malformed observation dates before the explicit ISO validation. It still rejects input; no incorrect value admitted. No numerical change needed."
+    },
+    {
+      "number": 16,
+      "disposition": "documented_design",
+      "reason": "Snapshot research branch is prescribed and labeled. ASOF/FIRST vintage filtering precedes month bound, so a minus-one bound cannot admit unpublished values."
+    },
+    {
+      "number": 17,
+      "disposition": "documented_design",
+      "reason": "REVISED is intentionally a labeled hindsight diagnostic. It is not the ASOF strategy."
+    },
+    {
+      "number": 18,
+      "disposition": "claim_not_supported",
+      "reason": "Actual RESEARCH_SNAPSHOT is an ISO string; verified value and type."
+    },
+    {
+      "number": 19,
+      "disposition": "checked_no_error",
+      "reason": "Day-minus-one cutoff is the approved rule; release filter prevents unpublished JOLTS observations regardless of upper month bound."
+    },
+    {
+      "number": 20,
+      "disposition": "checked_no_error",
+      "reason": "Nonoverlapping inclusive vintage intervals yield one active row; schema self-tests exercise the filter."
+    },
+    {
+      "number": 21,
+      "disposition": "checked_no_error",
+      "reason": "Empty subsets are not evidence of a timestamp error; explicit model coverage gates still apply."
+    },
+    {
+      "number": 22,
+      "disposition": "claim_not_supported",
+      "reason": "Same keyed-series versus group distinction as finding1. Both groups retain nonmissing H/E values downstream."
+    },
+    {
+      "number": 23,
+      "disposition": "documented_diagnostic",
+      "reason": "Information is retained as a rejected-scope coverage diagnostic, not counted as an exact match or supplied to a model. Earliest archive date is not index inception."
+    },
+    {
+      "number": 24,
+      "disposition": "checked_no_error",
+      "reason": "Two exact-scope groups are below the fixed nine-group model threshold."
+    },
+    {
+      "number": 25,
+      "disposition": "documented_design",
+      "reason": "Snapshot2014-10-30, first sealed decision2014-10-31, feature start2002-04, endpoint2026-08; fixed source selection and vintage availability rules apply. Audit timestamp is not an economic observation date."
+    }
+  ],
+  "evidence_hashes": {
+    "data.py": "517f2e9e0fd284f60d0797b4b916612c22e55f361dd41125dc31b6974458dca8",
+    "outputs/manifest.csv": "6b6017045a25f0be4f52e2df30ec165fd2433177c5a709844b3a5518c06f733f",
+    "outputs/crosswalk.csv": "f877974ae108ec834bc7bb9f40ed9fe7f14b1fbe76f9f00c5d7052c7dc007e79",
+    "outputs/p1_request.json": "f6123e7998bf3e0f1d65440685d7549a7b22faf187d654bfa758ad922fa154c7",
+    "outputs/p1_response.json": "df5da733ee03bef354e1bdfd44d77d9c19f672e1bfaf617b614859eb8b019cf0",
+    "outputs/census_crosswalk_check.json": "3a718b6e88d5462a6cf50d1faec698f09f3154e02b7d8933887cbfb9729b970a",
+    "outputs/ppi_admission.json": "fa0f00a583d6d208bc1f4ceaaff267a2bb29a4a9585ac7ded94ec8b6568b6137"
+  },
+  "review_note": "Main assistant verified/dispositioned every fresh Sonnet finding. Only subsequent code change adds metadata-only crosswalk generation and notebook wiring; numerical as-of/feature functions unchanged.",
+  "team_critique": null
+}

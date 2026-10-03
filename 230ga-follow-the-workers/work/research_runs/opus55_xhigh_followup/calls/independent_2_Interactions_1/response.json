@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"pay_hours_joint_momentum\",\"hypothesis\": \"Groups where hourly pay and average hours rise together over three months see stronger labor demand. The product of their cross-sectional ranks should predict higher relative returns next month.\",\"falsified_if\": \"Mean monthly cross-sectional rank correlation between the feature and next-month relative returns is zero or negative, or its t-statistic is below 1.5.\",\"expression\": \"mult(csrank(lchg(V05,3)),csrank(chg(V01,3)))\"}",
+  "model": "claude-opus-5-5",
+  "tokens": {
+    "input_tokens": 41,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1308,
+    "output_tokens": 516,
+    "output_tokens_details": {
+      "thinking_tokens": 341
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0107456,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-opus-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "bd69da2d32867083413127b6a5659bbd037275d72d1a6928a010b78f904dac1d"
+}

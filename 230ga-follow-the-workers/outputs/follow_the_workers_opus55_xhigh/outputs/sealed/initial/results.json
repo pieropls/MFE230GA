@@ -1,0 +1,6337 @@
+{
+  "variants": {
+    "ASOF": {
+      "A0": {
+        "n": 142,
+        "mean_net_annual": -0.034706452244761904,
+        "volatility": 0.0965528053211072,
+        "sharpe": -0.3594556587904215,
+        "max_drawdown": -0.40275325504118087,
+        "hit_rate": 0.4647887323943662,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.0245860271739339,
+        "turnover": 0.831767686555703,
+        "hedge_turnover": 0.0580053467331493,
+        "cost": 0.0008433687559023327,
+        "borrow_financing": 0.0,
+        "active_return": -0.014163746045249831,
+        "tracking_error": 0.060756412387649734,
+        "information_ratio": -0.233123476002493,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.019768965850199924,
+            "se": 0.0277298655517372,
+            "t": -0.7129124305819597,
+            "coefficients": {
+              "intercept": -0.019768965850199924
+            },
+            "standard_errors": {
+              "intercept": 0.0277298655517372
+            },
+            "t_statistics": {
+              "intercept": -0.7129124305819597
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.013932496075353226,
+            "se": 0.04254731448899851,
+            "t": -0.3274588829561913,
+            "coefficients": {
+              "intercept": -0.013932496075353226
+            },
+            "standard_errors": {
+              "intercept": 0.04254731448899851
+            },
+            "t_statistics": {
+              "intercept": -0.3274588829561913
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.049530761209593335,
+            "se": 0.058575499103642764,
+            "t": -0.8455883768391664,
+            "coefficients": {
+              "intercept": -0.049530761209593335
+            },
+            "standard_errors": {
+              "intercept": 0.058575499103642764
+            },
+            "t_statistics": {
+              "intercept": -0.8455883768391664
+            }
+          }
+        }
+      },
+      "A1": {
+        "n": 142,
+        "mean_net_annual": -0.03988047365744615,
+        "volatility": 0.0785850954783422,
+        "sharpe": -0.5074813921736225,
+        "max_drawdown": -0.3773615474577662,
+        "hit_rate": 0.4507042253521127,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.02881443189266481,
+        "turnover": 0.9101124581365323,
+        "hedge_turnover": 0.06028844464289672,
+        "cost": 0.0009221701470651115,
+        "borrow_financing": 0.0,
+        "active_return": -0.023514408857603586,
+        "tracking_error": 0.053309036140989495,
+        "information_ratio": -0.44109611727763504,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.014370209288980916,
+            "se": 0.01933258264605952,
+            "t": -0.7433155493019417,
+            "coefficients": {
+              "intercept": -0.014370209288980916
+            },
+            "standard_errors": {
+              "intercept": 0.01933258264605952
+            },
+            "t_statistics": {
+              "intercept": -0.7433155493019417
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.026530612244897958,
+            "se": 0.02768773447019314,
+            "t": -0.9582081290709838,
+            "coefficients": {
+              "intercept": -0.026530612244897958
+            },
+            "standard_errors": {
+              "intercept": 0.02768773447019314
+            },
+            "t_statistics": {
+              "intercept": -0.9582081290709838
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.003930376193149917,
+            "se": 0.050129319366186385,
+            "t": -0.0784047388403415,
+            "coefficients": {
+              "intercept": -0.003930376193149917
+            },
+            "standard_errors": {
+              "intercept": 0.050129319366186385
+            },
+            "t_statistics": {
+              "intercept": -0.0784047388403415
+            }
+          }
+        }
+      },
+      "A1-T": {
+        "n": 142,
+        "mean_net_annual": -0.048780867166331954,
+        "volatility": 0.08224811995473058,
+        "sharpe": -0.5930940086312122,
+        "max_drawdown": -0.36317597435321325,
+        "hit_rate": 0.43661971830985913,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.03795433484978862,
+        "turnover": 0.889817157168998,
+        "hedge_turnover": 0.061969346048063714,
+        "cost": 0.0009022110263786108,
+        "borrow_financing": 0.0,
+        "active_return": -0.033327804155879506,
+        "tracking_error": 0.05242441427124524,
+        "information_ratio": -0.6357305965010999,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.028664096385687347,
+            "se": 0.020157968208587364,
+            "t": -1.421973489048184,
+            "coefficients": {
+              "intercept": -0.028664096385687347
+            },
+            "standard_errors": {
+              "intercept": 0.020157968208587364
+            },
+            "t_statistics": {
+              "intercept": -1.421973489048184
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.04297488226059655,
+            "se": 0.026023139344164926,
+            "t": -1.6514103733696008,
+            "coefficients": {
+              "intercept": -0.04297488226059655
+            },
+            "standard_errors": {
+              "intercept": 0.026023139344164926
+            },
+            "t_statistics": {
+              "intercept": -1.6514103733696008
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.027071468677308093,
+            "se": 0.039230039191858,
+            "t": -0.6900698861123401,
+            "coefficients": {
+              "intercept": -0.027071468677308093
+            },
+            "standard_errors": {
+              "intercept": 0.039230039191858
+            },
+            "t_statistics": {
+              "intercept": -0.6900698861123401
+            }
+          }
+        }
+      },
+      "A3": {
+        "n": 142,
+        "mean_net_annual": -0.03416601342958561,
+        "volatility": 0.0749707644575118,
+        "sharpe": -0.45572449043051344,
+        "max_drawdown": -0.256741843154743,
+        "hit_rate": 0.4295774647887324,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.022559867233346187,
+        "turnover": 0.9549951869956321,
+        "hedge_turnover": 0.06091831345493426,
+        "cost": 0.0009671788496866189,
+        "borrow_financing": 0.0,
+        "active_return": -0.02705088490346283,
+        "tracking_error": 0.04947883504967197,
+        "information_ratio": -0.5467162853835656,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": 0.0010278064182403356,
+            "se": 0.021307495570151252,
+            "t": 0.04823684767909304,
+            "coefficients": {
+              "intercept": 0.0010278064182403356
+            },
+            "standard_errors": {
+              "intercept": 0.021307495570151252
+            },
+            "t_statistics": {
+              "intercept": 0.04823684767909304
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.013186813186813195,
+            "se": 0.025867801563102265,
+            "t": -0.5097771124710813,
+            "coefficients": {
+              "intercept": -0.013186813186813195
+            },
+            "standard_errors": {
+              "intercept": 0.025867801563102265
+            },
+            "t_statistics": {
+              "intercept": -0.5097771124710813
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": 0.00040105879521937574,
+            "se": 0.04151223299997172,
+            "t": 0.009661219506540373,
+            "coefficients": {
+              "intercept": 0.00040105879521937574
+            },
+            "standard_errors": {
+              "intercept": 0.04151223299997172
+            },
+            "t_statistics": {
+              "intercept": 0.009661219506540373
+            }
+          }
+        }
+      },
+      "A4": {
+        "n": 142,
+        "mean_net_annual": 0.0007498033575391017,
+        "volatility": 0.08367183697188686,
+        "sharpe": 0.00896123934497853,
+        "max_drawdown": -0.25248847981325684,
+        "hit_rate": 0.5,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.012147268735984474,
+        "turnover": 0.9364326708303273,
+        "hedge_turnover": 0.06678055353393479,
+        "cost": 0.0009497887815371141,
+        "borrow_financing": 0.0,
+        "active_return": -0.010478454868428308,
+        "tracking_error": 0.044678587265738805,
+        "information_ratio": -0.2345296821071058,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.0024766098844053504,
+            "se": 0.02395475004160532,
+            "t": -0.10338700592174416,
+            "coefficients": {
+              "intercept": -0.0024766098844053504
+            },
+            "standard_errors": {
+              "intercept": 0.02395475004160532
+            },
+            "t_statistics": {
+              "intercept": -0.10338700592174416
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": 0.01660125588697018,
+            "se": 0.02926157809296896,
+            "t": 0.567339732471885,
+            "coefficients": {
+              "intercept": 0.01660125588697018
+            },
+            "standard_errors": {
+              "intercept": 0.02926157809296896
+            },
+            "t_statistics": {
+              "intercept": 0.567339732471885
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": 0.060158819282906874,
+            "se": 0.04454298623370632,
+            "t": 1.3505789433889333,
+            "coefficients": {
+              "intercept": 0.060158819282906874
+            },
+            "standard_errors": {
+              "intercept": 0.04454298623370632
+            },
+            "t_statistics": {
+              "intercept": 1.3505789433889333
+            }
+          }
+        }
+      }
+    },
+    "FIRST": {
+      "A0": {
+        "n": 142,
+        "mean_net_annual": -0.014717033996876967,
+        "volatility": 0.08978969360411872,
+        "sharpe": -0.16390560437553253,
+        "max_drawdown": -0.2825687771687795,
+        "hit_rate": 0.4647887323943662,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.00461371317118909,
+        "turnover": 0.8299237088574215,
+        "hedge_turnover": 0.06009846641617224,
+        "cost": 0.000841943402140656,
+        "borrow_financing": 0.0,
+        "active_return": 0.010330346216006848,
+        "tracking_error": 0.0647131451236691,
+        "information_ratio": 0.1596328875109561,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.021352371731675444,
+            "se": 0.027433318732794636,
+            "t": -0.7783371723870274,
+            "coefficients": {
+              "intercept": -0.021352371731675444
+            },
+            "standard_errors": {
+              "intercept": 0.027433318732794636
+            },
+            "t_statistics": {
+              "intercept": -0.7783371723870274
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": 0.010125588697017272,
+            "se": 0.04354207480319332,
+            "t": 0.23254722570718367,
+            "coefficients": {
+              "intercept": 0.010125588697017272
+            },
+            "standard_errors": {
+              "intercept": 0.04354207480319332
+            },
+            "t_statistics": {
+              "intercept": 0.23254722570718367
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.03689740916018289,
+            "se": 0.05464389803989792,
+            "t": -0.6752338409906713,
+            "coefficients": {
+              "intercept": -0.03689740916018289
+            },
+            "standard_errors": {
+              "intercept": 0.05464389803989792
+            },
+            "t_statistics": {
+              "intercept": -0.6752338409906713
+            }
+          }
+        }
+      },
+      "A1": {
+        "n": 142,
+        "mean_net_annual": -0.04555306398379726,
+        "volatility": 0.08043301930502045,
+        "sharpe": -0.5663478056325301,
+        "max_drawdown": -0.3966342348783125,
+        "hit_rate": 0.44366197183098594,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.03481320507043446,
+        "turnover": 0.8831461404753153,
+        "hedge_turnover": 0.05921051152459089,
+        "cost": 0.0008949882427802334,
+        "borrow_financing": 0.0,
+        "active_return": -0.03705019045211895,
+        "tracking_error": 0.051449920119791485,
+        "information_ratio": -0.720121437814763,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.0381889782223892,
+            "se": 0.01999441951066618,
+            "t": -1.9099818427845328,
+            "coefficients": {
+              "intercept": -0.0381889782223892
+            },
+            "standard_errors": {
+              "intercept": 0.01999441951066618
+            },
+            "t_statistics": {
+              "intercept": -1.9099818427845328
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.03771585557299843,
+            "se": 0.02711730807531606,
+            "t": -1.3908406936354374,
+            "coefficients": {
+              "intercept": -0.03771585557299843
+            },
+            "standard_errors": {
+              "intercept": 0.02711730807531606
+            },
+            "t_statistics": {
+              "intercept": -1.3908406936354374
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.04255233817277612,
+            "se": 0.04038087937854296,
+            "t": -1.0537744305634662,
+            "coefficients": {
+              "intercept": -0.04255233817277612
+            },
+            "standard_errors": {
+              "intercept": 0.04038087937854296
+            },
+            "t_statistics": {
+              "intercept": -1.0537744305634662
+            }
+          }
+        }
+      },
+      "A1-T": {
+        "n": 142,
+        "mean_net_annual": -0.05123281978282156,
+        "volatility": 0.07771266690046252,
+        "sharpe": -0.6592595753848288,
+        "max_drawdown": -0.3873014103540704,
+        "hit_rate": 0.4084507042253521,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.040332847391540576,
+        "turnover": 0.8966303379088587,
+        "hedge_turnover": 0.05850347348945569,
+        "cost": 0.0009083310326067502,
+        "borrow_financing": 0.0,
+        "active_return": -0.0345302629186887,
+        "tracking_error": 0.04915000513786547,
+        "information_ratio": -0.7025485108665099,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.05406957334864659,
+            "se": 0.020406382561350193,
+            "t": -2.6496402871057936,
+            "coefficients": {
+              "intercept": -0.05406957334864659
+            },
+            "standard_errors": {
+              "intercept": 0.020406382561350193
+            },
+            "t_statistics": {
+              "intercept": -2.6496402871057936
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.06342229199372057,
+            "se": 0.02832105285228614,
+            "t": -2.2394044573311467,
+            "coefficients": {
+              "intercept": -0.06342229199372057
+            },
+            "standard_errors": {
+              "intercept": 0.02832105285228614
+            },
+            "t_statistics": {
+              "intercept": -2.2394044573311467
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.05803320766824417,
+            "se": 0.030682583122756603,
+            "t": -1.8914055389685298,
+            "coefficients": {
+              "intercept": -0.05803320766824417
+            },
+            "standard_errors": {
+              "intercept": 0.030682583122756603
+            },
+            "t_statistics": {
+              "intercept": -1.8914055389685298
+            }
+          }
+        }
+      },
+      "A3": {
+        "n": 142,
+        "mean_net_annual": -0.033851078892987024,
+        "volatility": 0.07574280103411953,
+        "sharpe": -0.4469214028371921,
+        "max_drawdown": -0.3034503794966563,
+        "hit_rate": 0.43661971830985913,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.02255083020551865,
+        "turnover": 0.929977467989256,
+        "hedge_turnover": 0.05854961316554404,
+        "cost": 0.0009416873906223646,
+        "borrow_financing": 0.0,
+        "active_return": -0.020616476430540626,
+        "tracking_error": 0.05277793802080558,
+        "information_ratio": -0.3906267884587194,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.01770143599655621,
+            "se": 0.02107789440554323,
+            "t": -0.8398104505116483,
+            "coefficients": {
+              "intercept": -0.01770143599655621
+            },
+            "standard_errors": {
+              "intercept": 0.02107789440554323
+            },
+            "t_statistics": {
+              "intercept": -0.8398104505116483
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.024999999999999994,
+            "se": 0.028557098949401637,
+            "t": -0.8754390648817577,
+            "coefficients": {
+              "intercept": -0.024999999999999994
+            },
+            "standard_errors": {
+              "intercept": 0.028557098949401637
+            },
+            "t_statistics": {
+              "intercept": -0.8754390648817577
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.020734739712841913,
+            "se": 0.03715737076110057,
+            "t": -0.5580249433188843,
+            "coefficients": {
+              "intercept": -0.020734739712841913
+            },
+            "standard_errors": {
+              "intercept": 0.03715737076110057
+            },
+            "t_statistics": {
+              "intercept": -0.5580249433188843
+            }
+          }
+        }
+      },
+      "A4": {
+        "n": 142,
+        "mean_net_annual": -0.004784664620520699,
+        "volatility": 0.08748048311519478,
+        "sharpe": -0.05469408089825277,
+        "max_drawdown": -0.3324118399805186,
+        "hit_rate": 0.5422535211267606,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.006568875459266061,
+        "turnover": 0.9318231169740651,
+        "hedge_turnover": 0.07152611504082418,
+        "cost": 0.0009461283399822298,
+        "borrow_financing": 0.0,
+        "active_return": -0.015747624928173446,
+        "tracking_error": 0.04875499958759685,
+        "information_ratio": -0.32299507868685534,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.013700179797786856,
+            "se": 0.027983577426063146,
+            "t": -0.48957928392053546,
+            "coefficients": {
+              "intercept": -0.013700179797786856
+            },
+            "standard_errors": {
+              "intercept": 0.027983577426063146
+            },
+            "t_statistics": {
+              "intercept": -0.48957928392053546
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": 0.011616954474097335,
+            "se": 0.03310861664425416,
+            "t": 0.3508740518795853,
+            "coefficients": {
+              "intercept": 0.011616954474097335
+            },
+            "standard_errors": {
+              "intercept": 0.03310861664425416
+            },
+            "t_statistics": {
+              "intercept": 0.3508740518795853
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": 0.04211117349803481,
+            "se": 0.04824625533614548,
+            "t": 0.872838175825962,
+            "coefficients": {
+              "intercept": 0.04211117349803481
+            },
+            "standard_errors": {
+              "intercept": 0.04824625533614548
+            },
+            "t_statistics": {
+              "intercept": 0.872838175825962
+            }
+          }
+        }
+      }
+    },
+    "REVISED": {
+      "A0": {
+        "n": 142,
+        "mean_net_annual": -0.023487865976340862,
+        "volatility": 0.08865912006096073,
+        "sharpe": -0.26492329227033773,
+        "max_drawdown": -0.28309474577179883,
+        "hit_rate": 0.47183098591549294,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.01361983040535818,
+        "turnover": 0.8094661775296246,
+        "hedge_turnover": 0.06435060026132942,
+        "cost": 0.0008223362975818905,
+        "borrow_financing": 0.0,
+        "active_return": -0.015187460840011359,
+        "tracking_error": 0.05961230009757307,
+        "information_ratio": -0.2547705895453222,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.007771948007130415,
+            "se": 0.025926761835029184,
+            "t": -0.29976547231709727,
+            "coefficients": {
+              "intercept": -0.007771948007130415
+            },
+            "standard_errors": {
+              "intercept": 0.025926761835029184
+            },
+            "t_statistics": {
+              "intercept": -0.29976547231709727
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": 0.001020408163265308,
+            "se": 0.04161989757291763,
+            "t": 0.02451731558150914,
+            "coefficients": {
+              "intercept": 0.001020408163265308
+            },
+            "standard_errors": {
+              "intercept": 0.04161989757291763
+            },
+            "t_statistics": {
+              "intercept": 0.02451731558150914
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.02827464506296623,
+            "se": 0.05830733863788692,
+            "t": -0.4849242946683549,
+            "coefficients": {
+              "intercept": -0.02827464506296623
+            },
+            "standard_errors": {
+              "intercept": 0.05830733863788692
+            },
+            "t_statistics": {
+              "intercept": -0.4849242946683549
+            }
+          }
+        }
+      },
+      "A1": {
+        "n": 142,
+        "mean_net_annual": -0.04388491733491736,
+        "volatility": 0.08472605441012088,
+        "sharpe": -0.517962480850225,
+        "max_drawdown": -0.3728733659156567,
+        "hit_rate": 0.47183098591549294,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.033004280513773146,
+        "turnover": 0.8942817308979147,
+        "hedge_turnover": 0.0621900209871823,
+        "cost": 0.0009067197350953513,
+        "borrow_financing": 0.0,
+        "active_return": -0.032631397755720784,
+        "tracking_error": 0.05298571872083839,
+        "information_ratio": -0.615852696603838,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.021755859414889958,
+            "se": 0.022226034138058064,
+            "t": -0.9788457661745864,
+            "coefficients": {
+              "intercept": -0.021755859414889958
+            },
+            "standard_errors": {
+              "intercept": 0.022226034138058064
+            },
+            "t_statistics": {
+              "intercept": -0.9788457661745864
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.03873626373626374,
+            "se": 0.033797086080945976,
+            "t": -1.146142115432323,
+            "coefficients": {
+              "intercept": -0.03873626373626374
+            },
+            "standard_errors": {
+              "intercept": 0.033797086080945976
+            },
+            "t_statistics": {
+              "intercept": -1.146142115432323
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.0008021175904387541,
+            "se": 0.05285632650888552,
+            "t": -0.015175432032793888,
+            "coefficients": {
+              "intercept": -0.0008021175904387541
+            },
+            "standard_errors": {
+              "intercept": 0.05285632650888552
+            },
+            "t_statistics": {
+              "intercept": -0.015175432032793888
+            }
+          }
+        }
+      },
+      "A1-T": {
+        "n": 142,
+        "mean_net_annual": -0.074979651108107,
+        "volatility": 0.08462650244011469,
+        "sharpe": -0.8860067348425016,
+        "max_drawdown": -0.5442059015551227,
+        "hit_rate": 0.4295774647887324,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.06428121179619352,
+        "turnover": 0.8785443834947861,
+        "hedge_turnover": 0.06496112915668102,
+        "cost": 0.0008915366093261225,
+        "borrow_financing": 0.0,
+        "active_return": -0.03886696233333088,
+        "tracking_error": 0.05105953534199448,
+        "information_ratio": -0.7612086963385333,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.03171967374784927,
+            "se": 0.022147368624277578,
+            "t": -1.4322095904918786,
+            "coefficients": {
+              "intercept": -0.03171967374784927
+            },
+            "standard_errors": {
+              "intercept": 0.022147368624277578
+            },
+            "t_statistics": {
+              "intercept": -1.4322095904918786
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.07201726844583989,
+            "se": 0.031234926087569354,
+            "t": -2.3056647627061553,
+            "coefficients": {
+              "intercept": -0.07201726844583989
+            },
+            "standard_errors": {
+              "intercept": 0.031234926087569354
+            },
+            "t_statistics": {
+              "intercept": -2.3056647627061553
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.04564049089596535,
+            "se": 0.044067277250093274,
+            "t": -1.035700268862623,
+            "coefficients": {
+              "intercept": -0.04564049089596535
+            },
+            "standard_errors": {
+              "intercept": 0.044067277250093274
+            },
+            "t_statistics": {
+              "intercept": -1.035700268862623
+            }
+          }
+        }
+      },
+      "A3": {
+        "n": 142,
+        "mean_net_annual": -0.045917667270580845,
+        "volatility": 0.07570904321234861,
+        "sharpe": -0.6065017509439531,
+        "max_drawdown": -0.32360215111212587,
+        "hit_rate": 0.4295774647887324,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.03491688313526803,
+        "turnover": 0.9045607025136403,
+        "hedge_turnover": 0.06085654381213922,
+        "cost": 0.000916732011276068,
+        "borrow_financing": 0.0,
+        "active_return": -0.03690553515466866,
+        "tracking_error": 0.05051791530519301,
+        "information_ratio": -0.7305435097967105,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.01398487009591049,
+            "se": 0.020396980383861958,
+            "t": -0.6856343357066366,
+            "coefficients": {
+              "intercept": -0.01398487009591049
+            },
+            "standard_errors": {
+              "intercept": 0.020396980383861958
+            },
+            "t_statistics": {
+              "intercept": -0.6856343357066366
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.02880690737833595,
+            "se": 0.03266133128730213,
+            "t": -0.8819881567269525,
+            "coefficients": {
+              "intercept": -0.02880690737833595
+            },
+            "standard_errors": {
+              "intercept": 0.03266133128730213
+            },
+            "t_statistics": {
+              "intercept": -0.8819881567269525
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": 0.007058634795861074,
+            "se": 0.049294743592148804,
+            "t": 0.14319244368653752,
+            "coefficients": {
+              "intercept": 0.007058634795861074
+            },
+            "standard_errors": {
+              "intercept": 0.049294743592148804
+            },
+            "t_statistics": {
+              "intercept": 0.14319244368653752
+            }
+          }
+        }
+      },
+      "A4": {
+        "n": 142,
+        "mean_net_annual": 0.015500683022523231,
+        "volatility": 0.08511332868889727,
+        "sharpe": 0.18211816246995446,
+        "max_drawdown": -0.22794464498382105,
+        "hit_rate": 0.5422535211267606,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.02565092911162529,
+        "turnover": 0.8332076751559815,
+        "hedge_turnover": 0.0632308280126196,
+        "cost": 0.0008458538407585055,
+        "borrow_financing": 0.0,
+        "active_return": -0.002228697943723571,
+        "tracking_error": 0.04882807059179481,
+        "information_ratio": -0.045643784747417135,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.004174605575198223,
+            "se": 0.024909450997759156,
+            "t": -0.16759123176073887,
+            "coefficients": {
+              "intercept": -0.004174605575198223
+            },
+            "standard_errors": {
+              "intercept": 0.024909450997759156
+            },
+            "t_statistics": {
+              "intercept": -0.16759123176073887
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": 0.02409733124018839,
+            "se": 0.03537876559866647,
+            "t": 0.6811241385170513,
+            "coefficients": {
+              "intercept": 0.02409733124018839
+            },
+            "standard_errors": {
+              "intercept": 0.03537876559866647
+            },
+            "t_statistics": {
+              "intercept": 0.6811241385170513
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": 0.060279136921472694,
+            "se": 0.05088753244934443,
+            "t": 1.184556098912382,
+            "coefficients": {
+              "intercept": 0.060279136921472694
+            },
+            "standard_errors": {
+              "intercept": 0.05088753244934443
+            },
+            "t_statistics": {
+              "intercept": 1.184556098912382
+            }
+          }
+        }
+      }
+    },
+    "FIXEDLAG": {
+      "A0": {
+        "n": 142,
+        "mean_net_annual": -0.024533203134227573,
+        "volatility": 0.08964577609119283,
+        "sharpe": -0.27366825525913224,
+        "max_drawdown": -0.28309474577179883,
+        "hit_rate": 0.47183098591549294,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.014670675726820624,
+        "turnover": 0.8089024129577501,
+        "hedge_turnover": 0.06487435496414581,
+        "cost": 0.0008218772839505793,
+        "borrow_financing": 0.0,
+        "active_return": -0.011946447839754015,
+        "tracking_error": 0.058193711925142194,
+        "information_ratio": -0.20528760659092163,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.0040187655634795,
+            "se": 0.02594493429179377,
+            "t": -0.15489596228234087,
+            "coefficients": {
+              "intercept": -0.0040187655634795
+            },
+            "standard_errors": {
+              "intercept": 0.02594493429179377
+            },
+            "t_statistics": {
+              "intercept": -0.15489596228234087
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": 0.006279434850863421,
+            "se": 0.04307313385919135,
+            "t": 0.14578541861827998,
+            "coefficients": {
+              "intercept": 0.006279434850863421
+            },
+            "standard_errors": {
+              "intercept": 0.04307313385919135
+            },
+            "t_statistics": {
+              "intercept": 0.14578541861827998
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.02895644501483918,
+            "se": 0.05894295424396841,
+            "t": -0.49126219386606795,
+            "coefficients": {
+              "intercept": -0.02895644501483918
+            },
+            "standard_errors": {
+              "intercept": 0.05894295424396841
+            },
+            "t_statistics": {
+              "intercept": -0.49126219386606795
+            }
+          }
+        }
+      },
+      "A1": {
+        "n": 142,
+        "mean_net_annual": -0.04035389233746853,
+        "volatility": 0.08469339336150156,
+        "sharpe": -0.47647036841733037,
+        "max_drawdown": -0.3409552667252743,
+        "hit_rate": 0.4507042253521127,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.029443504509895663,
+        "turnover": 0.8969548258491351,
+        "hedge_turnover": 0.061220798909682,
+        "cost": 0.0009091989856310716,
+        "borrow_financing": 0.0,
+        "active_return": -0.034029727362709816,
+        "tracking_error": 0.05350427261259153,
+        "information_ratio": -0.6360188766439069,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.015332119239430585,
+            "se": 0.023078086459952418,
+            "t": -0.6643583412358096,
+            "coefficients": {
+              "intercept": -0.015332119239430585
+            },
+            "standard_errors": {
+              "intercept": 0.023078086459952418
+            },
+            "t_statistics": {
+              "intercept": -0.6643583412358096
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.039560439560439566,
+            "se": 0.03404899399266465,
+            "t": -1.1618680883482864,
+            "coefficients": {
+              "intercept": -0.039560439560439566
+            },
+            "standard_errors": {
+              "intercept": 0.03404899399266465
+            },
+            "t_statistics": {
+              "intercept": -1.1618680883482864
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": 0.004171011470281544,
+            "se": 0.05405304579785364,
+            "t": 0.07716515154169477,
+            "coefficients": {
+              "intercept": 0.004171011470281544
+            },
+            "standard_errors": {
+              "intercept": 0.05405304579785364
+            },
+            "t_statistics": {
+              "intercept": 0.07716515154169477
+            }
+          }
+        }
+      },
+      "A1-T": {
+        "n": 142,
+        "mean_net_annual": -0.06343491900675852,
+        "volatility": 0.08305922332805597,
+        "sharpe": -0.7637311843889021,
+        "max_drawdown": -0.4820677712558432,
+        "hit_rate": 0.4295774647887324,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.052878873571828175,
+        "turnover": 0.8674713878882764,
+        "hedge_turnover": 0.06099532511291953,
+        "cost": 0.0008796704529108602,
+        "borrow_financing": 0.0,
+        "active_return": -0.03236157097031686,
+        "tracking_error": 0.05355314600106457,
+        "information_ratio": -0.604288886588914,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.020807943639263683,
+            "se": 0.022824497100953495,
+            "t": -0.9116495994294844,
+            "coefficients": {
+              "intercept": -0.020807943639263683
+            },
+            "standard_errors": {
+              "intercept": 0.022824497100953495
+            },
+            "t_statistics": {
+              "intercept": -0.9116495994294844
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.06279434850863423,
+            "se": 0.03134223031132927,
+            "t": -2.003506064657306,
+            "coefficients": {
+              "intercept": -0.06279434850863423
+            },
+            "standard_errors": {
+              "intercept": 0.03134223031132927
+            },
+            "t_statistics": {
+              "intercept": -2.003506064657306
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": -0.03954439720863079,
+            "se": 0.045642131002867466,
+            "t": -0.8664012030057583,
+            "coefficients": {
+              "intercept": -0.03954439720863079
+            },
+            "standard_errors": {
+              "intercept": 0.045642131002867466
+            },
+            "t_statistics": {
+              "intercept": -0.8664012030057583
+            }
+          }
+        }
+      },
+      "A3": {
+        "n": 142,
+        "mean_net_annual": -0.04296316298945742,
+        "volatility": 0.07721904672554401,
+        "sharpe": -0.5563803855564203,
+        "max_drawdown": -0.3146363609835924,
+        "hit_rate": 0.43661971830985913,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.031888474254604504,
+        "turnover": 0.9099361587833724,
+        "hedge_turnover": 0.06477284560518547,
+        "cost": 0.0009228907279044095,
+        "borrow_financing": 0.0,
+        "active_return": -0.03540774995703438,
+        "tracking_error": 0.05145386020258859,
+        "information_ratio": -0.6881456477244646,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.015164042647831845,
+            "se": 0.020932668093294363,
+            "t": -0.7244199631049203,
+            "coefficients": {
+              "intercept": -0.015164042647831845
+            },
+            "standard_errors": {
+              "intercept": 0.020932668093294363
+            },
+            "t_statistics": {
+              "intercept": -0.7244199631049203
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": -0.029513343799058088,
+            "se": 0.03244571408935774,
+            "t": -0.9096222606713571,
+            "coefficients": {
+              "intercept": -0.029513343799058088
+            },
+            "standard_errors": {
+              "intercept": 0.03244571408935774
+            },
+            "t_statistics": {
+              "intercept": -0.9096222606713571
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": 0.004692387904066741,
+            "se": 0.049376302030820454,
+            "t": 0.0950331983374894,
+            "coefficients": {
+              "intercept": 0.004692387904066741
+            },
+            "standard_errors": {
+              "intercept": 0.049376302030820454
+            },
+            "t_statistics": {
+              "intercept": 0.0950331983374894
+            }
+          }
+        }
+      },
+      "A4": {
+        "n": 142,
+        "mean_net_annual": 0.013068626674834246,
+        "volatility": 0.08561798941580054,
+        "sharpe": 0.15263879430019026,
+        "max_drawdown": -0.22794464498382105,
+        "hit_rate": 0.5352112676056338,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.02327343925938439,
+        "turnover": 0.8376249058019712,
+        "hedge_turnover": 0.06388071455270543,
+        "cost": 0.0008504010487125122,
+        "borrow_financing": 0.0,
+        "active_return": -0.0026961570650809808,
+        "tracking_error": 0.04925957166133236,
+        "information_ratio": -0.05473366848614728,
+        "IC": {
+          "1": {
+            "n": 142,
+            "lags": 6,
+            "mean": -0.004425768436580784,
+            "se": 0.02572036109568523,
+            "t": -0.17207256228308696,
+            "coefficients": {
+              "intercept": -0.004425768436580784
+            },
+            "standard_errors": {
+              "intercept": 0.02572036109568523
+            },
+            "t_statistics": {
+              "intercept": -0.17207256228308696
+            }
+          },
+          "3": {
+            "n": 140,
+            "lags": 8,
+            "mean": 0.015502354788069078,
+            "se": 0.035872948572142835,
+            "t": 0.43214609908334783,
+            "coefficients": {
+              "intercept": 0.015502354788069078
+            },
+            "standard_errors": {
+              "intercept": 0.035872948572142835
+            },
+            "t_statistics": {
+              "intercept": 0.43214609908334783
+            }
+          },
+          "6": {
+            "n": 137,
+            "lags": 11,
+            "mean": 0.055586749017405956,
+            "se": 0.050560507634998086,
+            "t": 1.0994104216415876,
+            "coefficients": {
+              "intercept": 0.055586749017405956
+            },
+            "standard_errors": {
+              "intercept": 0.050560507634998086
+            },
+            "t_statistics": {
+              "intercept": 1.0994104216415876
+            }
+          }
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "comparison": "A1 vs A0",
+      "endpoint": "IC",
+      "inferential": true,
+      "n": 142,
+      "calendar_n": 142,
+      "difference": 0.0053987565612190185,
+      "p_one_sided": 0.4391121775644871,
+      "low": -0.061615500090236884,
+      "high": 0.07355797591868785,
+      "holm_p": 1.0
+    },
+    {
+      "comparison": "A1 vs A0",
+      "endpoint": "return",
+      "inferential": true,
+      "n": 142,
+      "calendar_n": 142,
+      "difference": -0.00043116845105702143,
+      "p_one_sided": 0.5386922615476905,
+      "low": -0.007984352128619535,
+      "high": 0.0068755851477127,
+      "holm_p": 1.0
+    },
+    {
+      "comparison": "A3 vs A1",
+      "endpoint": "IC",
+      "inferential": true,
+      "n": 142,
+      "calendar_n": 142,
+      "difference": 0.015398015707221253,
+      "p_one_sided": 0.2001599680063987,
+      "low": -0.018476456441114005,
+      "high": 0.054847883956762135,
+      "holm_p": 0.8006398720255948
+    },
+    {
+      "comparison": "A3 vs A1",
+      "endpoint": "return",
+      "inferential": true,
+      "n": 142,
+      "calendar_n": 142,
+      "difference": 0.00047620501898837863,
+      "p_one_sided": 0.382123575284943,
+      "low": -0.0025111661644782093,
+      "high": 0.003471798285182973,
+      "holm_p": 1.0
+    },
+    {
+      "comparison": "A4 vs A3",
+      "endpoint": "IC",
+      "inferential": false,
+      "n": 142,
+      "calendar_n": 142,
+      "difference": -0.0035044163026456817,
+      "p_one_sided": 0.5454909018196361,
+      "low": -0.05680542503891521,
+      "high": 0.05039440478194525
+    },
+    {
+      "comparison": "A4 vs A3",
+      "endpoint": "return",
+      "inferential": false,
+      "n": 142,
+      "calendar_n": 142,
+      "difference": 0.0029096513989270594,
+      "p_one_sided": 0.07438512297540492,
+      "low": -0.0010981251548213002,
+      "high": 0.006819943523862455
+    },
+    {
+      "comparison": "A1-T vs A1",
+      "endpoint": "IC",
+      "inferential": false,
+      "n": 142,
+      "calendar_n": 142,
+      "difference": -0.014293887096706434,
+      "p_one_sided": 0.8244351129774046,
+      "low": -0.044363960911209054,
+      "high": 0.01627316941873794
+    },
+    {
+      "comparison": "A1-T vs A1",
+      "endpoint": "return",
+      "inferential": false,
+      "n": 142,
+      "calendar_n": 142,
+      "difference": -0.0007416994590738167,
+      "p_one_sided": 0.7084583083383323,
+      "low": -0.00354192286209051,
+      "high": 0.001973279127082353
+    }
+  ],
+  "attribution": {
+    "A0": {
+      "n": 142,
+      "lags": 6,
+      "mean": -0.002518556603113657,
+      "se": 0.0027303829813149685,
+      "t": -0.9224188036436944,
+      "coefficients": {
+        "intercept": -0.002518556603113657,
+        "Mkt-RF": -0.014664587469923888,
+        "SMB": 0.024262867837944818,
+        "HML": 0.09109970121116802,
+        "RMW": 0.004894536370975762,
+        "CMA": -0.04478262305076383,
+        "Mom": -0.05769927820755104,
+        "group_momentum": 0.2225268967497609
+      },
+      "standard_errors": {
+        "intercept": 0.0027303829813149685,
+        "Mkt-RF": 0.04719853484060535,
+        "SMB": 0.11473155781872237,
+        "HML": 0.15209799799237278,
+        "RMW": 0.08985611530740446,
+        "CMA": 0.20855116375132493,
+        "Mom": 0.0801230507408982,
+        "group_momentum": 0.11529264758054387
+      },
+      "t_statistics": {
+        "intercept": -0.9224188036436944,
+        "Mkt-RF": -0.3107000570981242,
+        "SMB": 0.2114751015259509,
+        "HML": 0.5989539797607091,
+        "RMW": 0.05447082098120076,
+        "CMA": -0.21473206979637066,
+        "Mom": -0.7201333158685991,
+        "group_momentum": 1.9301048368613685
+      }
+    },
+    "A1": {
+      "n": 142,
+      "lags": 6,
+      "mean": -0.0035263335545669635,
+      "se": 0.0020476744474650483,
+      "t": -1.7221163056131532,
+      "coefficients": {
+        "intercept": -0.0035263335545669635,
+        "Mkt-RF": -0.01133590831772667,
+        "SMB": 0.11705641935394245,
+        "HML": -0.14540676857203327,
+        "RMW": 0.21268859693703704,
+        "CMA": 0.053774392036023466,
+        "Mom": 0.01333527516191476,
+        "group_momentum": -0.019047382669001023
+      },
+      "standard_errors": {
+        "intercept": 0.0020476744474650483,
+        "Mkt-RF": 0.05711349611527085,
+        "SMB": 0.11597690937629096,
+        "HML": 0.07398400409733683,
+        "RMW": 0.09132783796421873,
+        "CMA": 0.1144596445112905,
+        "Mom": 0.08612643244360377,
+        "group_momentum": 0.09191921897930534
+      },
+      "t_statistics": {
+        "intercept": -1.7221163056131532,
+        "Mkt-RF": -0.19848037834783688,
+        "SMB": 1.0093079733151793,
+        "HML": -1.9653811705126059,
+        "RMW": 2.3288473884640317,
+        "CMA": 0.4698109300061566,
+        "Mom": 0.15483371113330158,
+        "group_momentum": -0.20721871748376522
+      }
+    },
+    "A1-T": {
+      "n": 142,
+      "lags": 6,
+      "mean": -0.004194115188590617,
+      "se": 0.0020349626131469173,
+      "t": -2.0610281297034407,
+      "coefficients": {
+        "intercept": -0.004194115188590617,
+        "Mkt-RF": -0.016430633293741895,
+        "SMB": 0.14891524223582708,
+        "HML": -0.1242388922943131,
+        "RMW": 0.2926804437904518,
+        "CMA": 0.07962928641334335,
+        "Mom": -0.032629636914574336,
+        "group_momentum": -0.012780844429432999
+      },
+      "standard_errors": {
+        "intercept": 0.0020349626131469173,
+        "Mkt-RF": 0.07006262324772634,
+        "SMB": 0.09007487018004366,
+        "HML": 0.11412834085632899,
+        "RMW": 0.10264070321776225,
+        "CMA": 0.1429060464917304,
+        "Mom": 0.07840530293293814,
+        "group_momentum": 0.09336650554348855
+      },
+      "t_statistics": {
+        "intercept": -2.0610281297034407,
+        "Mkt-RF": -0.23451353278119083,
+        "SMB": 1.6532384885836857,
+        "HML": -1.0885893141188465,
+        "RMW": 2.8515046625265392,
+        "CMA": 0.557214256276772,
+        "Mom": -0.4161661991470553,
+        "group_momentum": -0.1368889662843802
+      }
+    },
+    "A3": {
+      "n": 142,
+      "lags": 6,
+      "mean": -0.0024354211484961716,
+      "se": 0.0015797250492468704,
+      "t": -1.541674071483042,
+      "coefficients": {
+        "intercept": -0.0024354211484961716,
+        "Mkt-RF": -0.059316983692540334,
+        "SMB": 0.16359423726373098,
+        "HML": -0.011092238326592493,
+        "RMW": 0.1871778401042509,
+        "CMA": 0.021669653169827184,
+        "Mom": 0.03625249197373121,
+        "group_momentum": 0.027612651758412633
+      },
+      "standard_errors": {
+        "intercept": 0.0015797250492468704,
+        "Mkt-RF": 0.049230313662554634,
+        "SMB": 0.09393588328471285,
+        "HML": 0.058059831130442684,
+        "RMW": 0.08562751407822358,
+        "CMA": 0.09802780292934697,
+        "Mom": 0.07839009779897749,
+        "group_momentum": 0.0764399604715007
+      },
+      "t_statistics": {
+        "intercept": -1.541674071483042,
+        "Mkt-RF": -1.204887380956457,
+        "SMB": 1.7415521262294273,
+        "HML": -0.19104840835088938,
+        "RMW": 2.1859543876663023,
+        "CMA": 0.2210561955106295,
+        "Mom": 0.46246264504857,
+        "group_momentum": 0.36123320300129574
+      }
+    },
+    "A4": {
+      "n": 142,
+      "lags": 6,
+      "mean": 9.19067145194783e-05,
+      "se": 0.0017539712525032373,
+      "t": 0.05239921372047041,
+      "coefficients": {
+        "intercept": 9.19067145194783e-05,
+        "Mkt-RF": -0.04356327032135289,
+        "SMB": 0.012387871438184844,
+        "HML": -0.19159155694847668,
+        "RMW": 0.14858947354863045,
+        "CMA": 0.09811608842154981,
+        "Mom": 0.051819105960628206,
+        "group_momentum": 0.05046788999301183
+      },
+      "standard_errors": {
+        "intercept": 0.0017539712525032373,
+        "Mkt-RF": 0.0665911358971023,
+        "SMB": 0.11771002341934722,
+        "HML": 0.0847357515490013,
+        "RMW": 0.13338629888777156,
+        "CMA": 0.09558848371383245,
+        "Mom": 0.08356953308936514,
+        "group_momentum": 0.08113839569219525
+      },
+      "t_statistics": {
+        "intercept": 0.05239921372047041,
+        "Mkt-RF": -0.6541902271898103,
+        "SMB": 0.10524058256324101,
+        "HML": -2.261047473423097,
+        "RMW": 1.1139785329350094,
+        "CMA": 1.0264425651450269,
+        "Mom": 0.6200717419973546,
+        "group_momentum": 0.6219976321009064
+      }
+    }
+  },
+  "windows": {
+    "A0": {
+      "whole": {
+        "n": 142,
+        "mean_net_annual": -0.034706452244761904,
+        "volatility": 0.0965528053211072,
+        "sharpe": -0.3594556587904215,
+        "max_drawdown": -0.40275325504118087,
+        "hit_rate": 0.4647887323943662,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.0245860271739339,
+        "turnover": 0.831767686555703,
+        "hedge_turnover": 0.0580053467331493,
+        "cost": 0.0008433687559023327,
+        "borrow_financing": 0.0,
+        "active_return": -0.014163746045249831,
+        "tracking_error": 0.060756412387649734,
+        "information_ratio": -0.233123476002493,
+        "IC": {
+          "n": 142,
+          "lags": 6,
+          "mean": -0.019768965850199924,
+          "se": 0.0277298655517372,
+          "t": -0.7129124305819597,
+          "coefficients": {
+            "intercept": -0.019768965850199924
+          },
+          "standard_errors": {
+            "intercept": 0.0277298655517372
+          },
+          "t_statistics": {
+            "intercept": -0.7129124305819597
+          }
+        }
+      },
+      "first_half": {
+        "n": 71,
+        "mean_net_annual": -0.04918414665162471,
+        "volatility": 0.0899485073571136,
+        "sharpe": -0.546803366690164,
+        "max_drawdown": -0.3100543381670201,
+        "hit_rate": 0.43661971830985913,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.03814828318028673,
+        "turnover": 0.9072357572296988,
+        "hedge_turnover": 0.062097660242323625,
+        "cost": 0.0009196552892781635,
+        "borrow_financing": 0.0,
+        "active_return": -0.03348845897571796,
+        "tracking_error": 0.049751732640650775,
+        "information_ratio": -0.673111411367319,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": -0.001782999336878567,
+          "se": 0.03767936971232031,
+          "t": -0.047320306854696834,
+          "coefficients": {
+            "intercept": -0.001782999336878567
+          },
+          "standard_errors": {
+            "intercept": 0.03767936971232031
+          },
+          "t_statistics": {
+            "intercept": -0.047320306854696834
+          }
+        }
+      },
+      "second_half": {
+        "n": 71,
+        "mean_net_annual": -0.02022875783789909,
+        "volatility": 0.10320803861127387,
+        "sharpe": -0.195999828211922,
+        "max_drawdown": -0.24984517394434658,
+        "hit_rate": 0.49295774647887325,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.011023771167581065,
+        "turnover": 0.7562996158817074,
+        "hedge_turnover": 0.05391303322397495,
+        "cost": 0.0007670822225265021,
+        "borrow_financing": 0.0,
+        "active_return": 0.005160966885218292,
+        "tracking_error": 0.06997893922575346,
+        "information_ratio": 0.07375028747676368,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": -0.03775493236352127,
+          "se": 0.04099646234771375,
+          "t": -0.9209314707035141,
+          "coefficients": {
+            "intercept": -0.03775493236352127
+          },
+          "standard_errors": {
+            "intercept": 0.04099646234771375
+          },
+          "t_statistics": {
+            "intercept": -0.9209314707035141
+          }
+        }
+      },
+      "ex_pandemic": {
+        "n": 132,
+        "mean_net_annual": -0.016299208871911705,
+        "volatility": 0.09136788841433131,
+        "sharpe": -0.1783909987937855,
+        "max_drawdown": null,
+        "hit_rate": 0.4772727272727273,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.006317272104158512,
+        "turnover": 0.8201103522879504,
+        "hedge_turnover": 0.05858855845740712,
+        "cost": 0.0008318280639794317,
+        "borrow_financing": 0.0,
+        "active_return": -0.0031041121576817466,
+        "tracking_error": 0.060289909675714445,
+        "information_ratio": -0.051486429062144096,
+        "IC": {
+          "n": 132,
+          "lags": 6,
+          "mean": -0.007988226499857087,
+          "se": 0.026980360473993856,
+          "t": -0.2960756031246088,
+          "coefficients": {
+            "intercept": -0.007988226499857087
+          },
+          "standard_errors": {
+            "intercept": 0.026980360473993856
+          },
+          "t_statistics": {
+            "intercept": -0.2960756031246088
+          }
+        }
+      },
+      "last_18": {
+        "n": 18,
+        "mean_net_annual": -0.18706586696428393,
+        "volatility": 0.11998312372472959,
+        "sharpe": -1.5591014899183524,
+        "max_drawdown": -0.23086143766280154,
+        "hit_rate": 0.2777777777777778,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.17833260317858232,
+        "turnover": 0.7160056118239966,
+        "hedge_turnover": 0.058831851589007673,
+        "cost": 0.0007277719821417982,
+        "borrow_financing": 0.0,
+        "active_return": -0.05990480600051738,
+        "tracking_error": 0.08184308761786088,
+        "information_ratio": -0.731947043349867,
+        "IC": {
+          "n": 18,
+          "lags": 6,
+          "mean": -0.12835796344065062,
+          "se": 0.055634087772327256,
+          "t": -2.3071819558888618,
+          "coefficients": {
+            "intercept": -0.12835796344065062
+          },
+          "standard_errors": {
+            "intercept": 0.055634087772327256
+          },
+          "t_statistics": {
+            "intercept": -2.3071819558888618
+          }
+        }
+      },
+      "T_low": {
+        "n": 3,
+        "mean_net_annual": -0.046012195022856056,
+        "volatility": 0.0732154067433481,
+        "sharpe": -0.6284496265130213,
+        "max_drawdown": -0.028107384744823216,
+        "hit_rate": 0.6666666666666666,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.036990193214462334,
+        "turnover": 0.7428823408000614,
+        "hedge_turnover": 0.044755716163743346,
+        "cost": 0.0007518334840328102,
+        "borrow_financing": 0.0,
+        "active_return": -0.1505873127760895,
+        "tracking_error": 0.05991301152660232,
+        "information_ratio": -2.5134325405964004,
+        "IC": {
+          "n": 3,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_middle": {
+        "n": 6,
+        "mean_net_annual": -0.28530014036751705,
+        "volatility": 0.09881183048861013,
+        "sharpe": -2.887307511223599,
+        "max_drawdown": -0.13779119001489382,
+        "hit_rate": 0.16666666666666666,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.27480250245579496,
+        "turnover": 0.8633098526226415,
+        "hedge_turnover": 0.05746653343769434,
+        "cost": 0.0008748031593101805,
+        "borrow_financing": 0.0,
+        "active_return": -0.15392507018707094,
+        "tracking_error": 0.05743447777290127,
+        "information_ratio": -2.6800116612132907,
+        "IC": {
+          "n": 6,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_high": {
+        "n": 133,
+        "mean_net_annual": -0.02314645707881592,
+        "volatility": 0.09621681229733425,
+        "sharpe": -0.24056561973065083,
+        "max_drawdown": null,
+        "hit_rate": 0.47368421052631576,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.013018272664063586,
+        "turnover": 0.8323496643065699,
+        "hedge_turnover": 0.058328517947291755,
+        "cost": 0.0008440153678960281,
+        "borrow_financing": 0.0,
+        "active_return": -0.004781500593795356,
+        "tracking_error": 0.06039085756410896,
+        "information_ratio": -0.0791759015629058,
+        "IC": {
+          "n": 133,
+          "lags": 6,
+          "mean": -0.005242880006302858,
+          "se": 0.026872697725121283,
+          "t": -0.19510062070923678,
+          "coefficients": {
+            "intercept": -0.005242880006302858
+          },
+          "standard_errors": {
+            "intercept": 0.026872697725121283
+          },
+          "t_statistics": {
+            "intercept": -0.19510062070923678
+          }
+        }
+      },
+      "VU_below_1": {
+        "n": 67,
+        "mean_net_annual": -0.06824463442138945,
+        "volatility": 0.09328070883515537,
+        "sharpe": -0.7316050153734425,
+        "max_drawdown": null,
+        "hit_rate": 0.3880597014925373,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.05764249835206439,
+        "turnover": 0.8707911611643399,
+        "hedge_turnover": 0.06360088973040388,
+        "cost": 0.0008835113391104204,
+        "borrow_financing": 0.0,
+        "active_return": -0.045014797624118405,
+        "tracking_error": 0.05610675099528629,
+        "information_ratio": -0.8023062612893098,
+        "IC": {
+          "n": 67,
+          "lags": 6,
+          "mean": -0.04123534629471095,
+          "se": 0.041949818451518246,
+          "t": -0.9829684088470366,
+          "coefficients": {
+            "intercept": -0.04123534629471095
+          },
+          "standard_errors": {
+            "intercept": 0.041949818451518246
+          },
+          "t_statistics": {
+            "intercept": -0.9829684088470366
+          }
+        }
+      },
+      "VU_above_1": {
+        "n": 75,
+        "mean_net_annual": -0.004745676166974609,
+        "volatility": 0.09920555810374093,
+        "sharpe": -0.04783679722875986,
+        "max_drawdown": null,
+        "hit_rate": 0.5333333333333333,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": 0.004944420411862676,
+        "turnover": 0.7969067159053208,
+        "hedge_turnover": 0.05300666165560186,
+        "cost": 0.0008075080482364413,
+        "borrow_financing": 0.0,
+        "active_return": 0.013396526698539427,
+        "tracking_error": 0.0639522484921673,
+        "information_ratio": 0.20947702409838176,
+        "IC": {
+          "n": 75,
+          "lags": 6,
+          "mean": -0.0005923326531034117,
+          "se": 0.03449505420051281,
+          "t": -0.01717152405850129,
+          "coefficients": {
+            "intercept": -0.0005923326531034117
+          },
+          "standard_errors": {
+            "intercept": 0.03449505420051281
+          },
+          "t_statistics": {
+            "intercept": -0.01717152405850129
+          }
+        }
+      }
+    },
+    "A1": {
+      "whole": {
+        "n": 142,
+        "mean_net_annual": -0.03988047365744615,
+        "volatility": 0.0785850954783422,
+        "sharpe": -0.5074813921736225,
+        "max_drawdown": -0.3773615474577662,
+        "hit_rate": 0.4507042253521127,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.02881443189266481,
+        "turnover": 0.9101124581365323,
+        "hedge_turnover": 0.06028844464289672,
+        "cost": 0.0009221701470651115,
+        "borrow_financing": 0.0,
+        "active_return": -0.023514408857603586,
+        "tracking_error": 0.053309036140989495,
+        "information_ratio": -0.44109611727763504,
+        "IC": {
+          "n": 142,
+          "lags": 6,
+          "mean": -0.014370209288980916,
+          "se": 0.01933258264605952,
+          "t": -0.7433155493019417,
+          "coefficients": {
+            "intercept": -0.014370209288980916
+          },
+          "standard_errors": {
+            "intercept": 0.01933258264605952
+          },
+          "t_statistics": {
+            "intercept": -0.7433155493019417
+          }
+        }
+      },
+      "first_half": {
+        "n": 71,
+        "mean_net_annual": -0.03761202325279339,
+        "volatility": 0.06625425018970514,
+        "sharpe": -0.5676922332544593,
+        "max_drawdown": -0.22661950443430656,
+        "hit_rate": 0.38028169014084506,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.0262284316128973,
+        "turnover": 0.9361642449174915,
+        "hedge_turnover": 0.062341958702575084,
+        "cost": 0.0009486326366580065,
+        "borrow_financing": 0.0,
+        "active_return": -0.03280930964548764,
+        "tracking_error": 0.03874716855698963,
+        "information_ratio": -0.8467537336884747,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": -0.01516090028111491,
+          "se": 0.030371671457850104,
+          "t": -0.49917898993986065,
+          "coefficients": {
+            "intercept": -0.01516090028111491
+          },
+          "standard_errors": {
+            "intercept": 0.030371671457850104
+          },
+          "t_statistics": {
+            "intercept": -0.49917898993986065
+          }
+        }
+      },
+      "second_half": {
+        "n": 71,
+        "mean_net_annual": -0.04214892406209893,
+        "volatility": 0.08971600749688181,
+        "sharpe": -0.4698038314239949,
+        "max_drawdown": -0.2403372945803528,
+        "hit_rate": 0.5211267605633803,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.031400432172432324,
+        "turnover": 0.8840606713555731,
+        "hedge_turnover": 0.05823493058321838,
+        "cost": 0.0008957076574722168,
+        "borrow_financing": 0.0,
+        "active_return": -0.01421950806971953,
+        "tracking_error": 0.0648718475347137,
+        "information_ratio": -0.2191938199711439,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": -0.013579518296846916,
+          "se": 0.024254897257022436,
+          "t": -0.5598670715010052,
+          "coefficients": {
+            "intercept": -0.013579518296846916
+          },
+          "standard_errors": {
+            "intercept": 0.024254897257022436
+          },
+          "t_statistics": {
+            "intercept": -0.5598670715010052
+          }
+        }
+      },
+      "ex_pandemic": {
+        "n": 132,
+        "mean_net_annual": -0.038598668225358485,
+        "volatility": 0.0804133566904549,
+        "sharpe": -0.480003196159826,
+        "max_drawdown": null,
+        "hit_rate": 0.45454545454545453,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.027508929976826104,
+        "turnover": 0.911917115235925,
+        "hedge_turnover": 0.061138694042196164,
+        "cost": 0.0009241448540443643,
+        "borrow_financing": 0.0,
+        "active_return": -0.020994724013168934,
+        "tracking_error": 0.053732899772880434,
+        "information_ratio": -0.39072382287034496,
+        "IC": {
+          "n": 132,
+          "lags": 6,
+          "mean": -0.008340979389960985,
+          "se": 0.021048404912211993,
+          "t": -0.3962760800521119,
+          "coefficients": {
+            "intercept": -0.008340979389960985
+          },
+          "standard_errors": {
+            "intercept": 0.021048404912211993
+          },
+          "t_statistics": {
+            "intercept": -0.3962760800521119
+          }
+        }
+      },
+      "last_18": {
+        "n": 18,
+        "mean_net_annual": 0.0625125842787099,
+        "volatility": 0.08516125861882093,
+        "sharpe": 0.7340495583621448,
+        "max_drawdown": -0.07078832219698294,
+        "hit_rate": 0.7222222222222222,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.07203548648515523,
+        "turnover": 0.7823827967237377,
+        "hedge_turnover": 0.05596193573353658,
+        "cost": 0.000793575183870445,
+        "borrow_financing": 0.0,
+        "active_return": 0.09442593111975625,
+        "tracking_error": 0.06982623154516795,
+        "information_ratio": 1.3522988285380355,
+        "IC": {
+          "n": 18,
+          "lags": 6,
+          "mean": 0.03588980990271355,
+          "se": 0.06868192259835122,
+          "t": 0.5225510373755192,
+          "coefficients": {
+            "intercept": 0.03588980990271355
+          },
+          "standard_errors": {
+            "intercept": 0.06868192259835122
+          },
+          "t_statistics": {
+            "intercept": 0.5225510373755192
+          }
+        }
+      },
+      "T_low": {
+        "n": 3,
+        "mean_net_annual": -0.011212673095186185,
+        "volatility": 0.03163307977845362,
+        "sharpe": -0.35446036787172147,
+        "max_drawdown": -0.012051329007920275,
+        "hit_rate": 0.3333333333333333,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 6.151705203315955e-05,
+        "turnover": 0.9255126713877067,
+        "hedge_turnover": 0.07001587106952566,
+        "cost": 0.0009395158456016118,
+        "borrow_financing": 0.0,
+        "active_return": -0.12480894989440644,
+        "tracking_error": 0.017831738607288896,
+        "information_ratio": -6.999258605293237,
+        "IC": {
+          "n": 3,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_middle": {
+        "n": 6,
+        "mean_net_annual": -0.005807934105132931,
+        "volatility": 0.07085167113104228,
+        "sharpe": -0.08197314209273883,
+        "max_drawdown": -0.03423630204738737,
+        "hit_rate": 0.5,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.003422789919468816,
+        "turnover": 0.7629320637410059,
+        "hedge_turnover": 0.03147469154569915,
+        "cost": 0.0007692270020501457,
+        "borrow_financing": 0.0,
+        "active_return": 0.0449383677260269,
+        "tracking_error": 0.04045434466262215,
+        "information_ratio": 1.1108415696954244,
+        "IC": {
+          "n": 6,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_high": {
+        "n": 133,
+        "mean_net_annual": -0.04206422282286465,
+        "volatility": 0.07990629674252463,
+        "sharpe": -0.5264193754142389,
+        "max_drawdown": null,
+        "hit_rate": 0.45112781954887216,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.030920079845348235,
+        "turnover": 0.9164048019457025,
+        "hedge_turnover": 0.06136889756998921,
+        "cost": 0.0009286785814597004,
+        "borrow_financing": 0.0,
+        "active_return": -0.024317664770320685,
+        "tracking_error": 0.054143987313343966,
+        "information_ratio": -0.44912955208837224,
+        "IC": {
+          "n": 133,
+          "lags": 6,
+          "mean": -0.01422720353897474,
+          "se": 0.02062243518227632,
+          "t": -0.6898895990325198,
+          "coefficients": {
+            "intercept": -0.01422720353897474
+          },
+          "standard_errors": {
+            "intercept": 0.02062243518227632
+          },
+          "t_statistics": {
+            "intercept": -0.6898895990325198
+          }
+        }
+      },
+      "VU_below_1": {
+        "n": 67,
+        "mean_net_annual": -0.029446372415275944,
+        "volatility": 0.06600344024631544,
+        "sharpe": -0.44613390310241824,
+        "max_drawdown": null,
+        "hit_rate": 0.44776119402985076,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.017967925321327044,
+        "turnover": 0.9434656453114961,
+        "hedge_turnover": 0.06535806258788843,
+        "cost": 0.0009565372578290739,
+        "borrow_financing": 0.0,
+        "active_return": -0.0004659625717126048,
+        "tracking_error": 0.0440632700450828,
+        "information_ratio": -0.010574852280274724,
+        "IC": {
+          "n": 67,
+          "lags": 6,
+          "mean": -0.006305211871341395,
+          "se": 0.028427913565814297,
+          "t": -0.22179650492970626,
+          "coefficients": {
+            "intercept": -0.006305211871341395
+          },
+          "standard_errors": {
+            "intercept": 0.028427913565814297
+          },
+          "t_statistics": {
+            "intercept": -0.22179650492970626
+          }
+        }
+      },
+      "VU_above_1": {
+        "n": 75,
+        "mean_net_annual": -0.049201604100451546,
+        "volatility": 0.08869056255518243,
+        "sharpe": -0.5547558013271003,
+        "max_drawdown": null,
+        "hit_rate": 0.4533333333333333,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.03850397776305988,
+        "turnover": 0.8803169442602315,
+        "hedge_turnover": 0.05575958594537081,
+        "cost": 0.0008914688614493056,
+        "borrow_financing": 0.0,
+        "active_return": -0.04410435420633285,
+        "tracking_error": 0.060060991847862046,
+        "information_ratio": -0.7343261050042551,
+        "IC": {
+          "n": 75,
+          "lags": 6,
+          "mean": -0.02157494031540555,
+          "se": 0.025935538510809597,
+          "t": -0.8318678367296439,
+          "coefficients": {
+            "intercept": -0.02157494031540555
+          },
+          "standard_errors": {
+            "intercept": 0.025935538510809597
+          },
+          "t_statistics": {
+            "intercept": -0.8318678367296439
+          }
+        }
+      }
+    },
+    "A1-T": {
+      "whole": {
+        "n": 142,
+        "mean_net_annual": -0.048780867166331954,
+        "volatility": 0.08224811995473058,
+        "sharpe": -0.5930940086312122,
+        "max_drawdown": -0.36317597435321325,
+        "hit_rate": 0.43661971830985913,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.03795433484978862,
+        "turnover": 0.889817157168998,
+        "hedge_turnover": 0.061969346048063714,
+        "cost": 0.0009022110263786108,
+        "borrow_financing": 0.0,
+        "active_return": -0.033327804155879506,
+        "tracking_error": 0.05242441427124524,
+        "information_ratio": -0.6357305965010999,
+        "IC": {
+          "n": 142,
+          "lags": 6,
+          "mean": -0.028664096385687347,
+          "se": 0.020157968208587364,
+          "t": -1.421973489048184,
+          "coefficients": {
+            "intercept": -0.028664096385687347
+          },
+          "standard_errors": {
+            "intercept": 0.020157968208587364
+          },
+          "t_statistics": {
+            "intercept": -1.421973489048184
+          }
+        }
+      },
+      "first_half": {
+        "n": 71,
+        "mean_net_annual": -0.04167381970314053,
+        "volatility": 0.07556684875783658,
+        "sharpe": -0.5514828312702241,
+        "max_drawdown": -0.20767614928423495,
+        "hit_rate": 0.39436619718309857,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.030556032541563354,
+        "turnover": 0.9141333360070483,
+        "hedge_turnover": 0.061744637288583856,
+        "cost": 0.0009264822634647648,
+        "borrow_financing": 0.0,
+        "active_return": -0.02546574345559735,
+        "tracking_error": 0.04513202931984777,
+        "information_ratio": -0.5642499094185035,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": -0.011518898977800264,
+          "se": 0.030076070677443632,
+          "t": -0.3829921501826758,
+          "coefficients": {
+            "intercept": -0.011518898977800264
+          },
+          "standard_errors": {
+            "intercept": 0.030076070677443632
+          },
+          "t_statistics": {
+            "intercept": -0.3829921501826758
+          }
+        }
+      },
+      "second_half": {
+        "n": 71,
+        "mean_net_annual": -0.055887914629523375,
+        "volatility": 0.08892276737028623,
+        "sharpe": -0.6284994977360372,
+        "max_drawdown": -0.23866210615184202,
+        "hit_rate": 0.4788732394366197,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.04535263715801391,
+        "turnover": 0.8655009783309481,
+        "hedge_turnover": 0.06219405480754358,
+        "cost": 0.0008779397892924568,
+        "borrow_financing": 0.0,
+        "active_return": -0.04118986485616166,
+        "tracking_error": 0.05906395588423915,
+        "information_ratio": -0.6973773469709793,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": -0.045809293793574436,
+          "se": 0.026238539768064912,
+          "t": -1.745878169993637,
+          "coefficients": {
+            "intercept": -0.045809293793574436
+          },
+          "standard_errors": {
+            "intercept": 0.026238539768064912
+          },
+          "t_statistics": {
+            "intercept": -1.745878169993637
+          }
+        }
+      },
+      "ex_pandemic": {
+        "n": 132,
+        "mean_net_annual": -0.03744664722349193,
+        "volatility": 0.07955499371418925,
+        "sharpe": -0.4707014038367403,
+        "max_drawdown": null,
+        "hit_rate": 0.45454545454545453,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.026752509206219056,
+        "turnover": 0.8790901583364069,
+        "hedge_turnover": 0.060440048848330874,
+        "cost": 0.0008911781681060731,
+        "borrow_financing": 0.0,
+        "active_return": -0.029826426196548583,
+        "tracking_error": 0.050400891539744926,
+        "information_ratio": -0.5917837023384435,
+        "IC": {
+          "n": 132,
+          "lags": 6,
+          "mean": -0.022843610847140518,
+          "se": 0.021766765650967784,
+          "t": -1.0494719892445232,
+          "coefficients": {
+            "intercept": -0.022843610847140518
+          },
+          "standard_errors": {
+            "intercept": 0.021766765650967784
+          },
+          "t_statistics": {
+            "intercept": -1.0494719892445232
+          }
+        }
+      },
+      "last_18": {
+        "n": 18,
+        "mean_net_annual": -0.03966065833174376,
+        "volatility": 0.10680167041972886,
+        "sharpe": -0.3713486706329405,
+        "max_drawdown": -0.0948722438024796,
+        "hit_rate": 0.5555555555555556,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.030033474081446097,
+        "turnover": 0.7865389558090448,
+        "hedge_turnover": 0.07863199191212757,
+        "cost": 0.0008022653541914702,
+        "borrow_financing": 0.0,
+        "active_return": -0.02456423939239514,
+        "tracking_error": 0.07571476668922512,
+        "information_ratio": -0.3244312895160891,
+        "IC": {
+          "n": 18,
+          "lags": 6,
+          "mean": -0.05019077617787254,
+          "se": 0.04512586770814703,
+          "t": -1.1122395806875776,
+          "coefficients": {
+            "intercept": -0.05019077617787254
+          },
+          "standard_errors": {
+            "intercept": 0.04512586770814703
+          },
+          "t_statistics": {
+            "intercept": -1.1122395806875776
+          }
+        }
+      },
+      "T_low": {
+        "n": 3,
+        "mean_net_annual": -0.1962654072536099,
+        "volatility": 0.03713201406939355,
+        "sharpe": -5.285611679636406,
+        "max_drawdown": -0.048091423942313916,
+        "hit_rate": 0.0,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.1798519864994409,
+        "turnover": 1.3402042211479468,
+        "hedge_turnover": 0.1379042084973744,
+        "cost": 0.0013677850628474213,
+        "borrow_financing": 0.0,
+        "active_return": -0.07688270144572491,
+        "tracking_error": 0.020353652979265852,
+        "information_ratio": -3.777341665599039,
+        "IC": {
+          "n": 3,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_middle": {
+        "n": 6,
+        "mean_net_annual": 0.08099471847509852,
+        "volatility": 0.09857674456499255,
+        "sharpe": 0.8216412383318052,
+        "max_drawdown": -0.046051233212264786,
+        "hit_rate": 0.6666666666666666,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.09000759366979733,
+        "turnover": 0.7391536038837394,
+        "hedge_turnover": 0.05959664503913612,
+        "cost": 0.0007510729328915666,
+        "borrow_financing": 0.0,
+        "active_return": -0.0025399329274151325,
+        "tracking_error": 0.07035912632543052,
+        "information_ratio": -0.036099551828816585,
+        "IC": {
+          "n": 6,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_high": {
+        "n": 133,
+        "mean_net_annual": -0.05130868591510449,
+        "volatility": 0.08204563427932524,
+        "sharpe": -0.6253676550348009,
+        "max_drawdown": null,
+        "hit_rate": 0.43609022556390975,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.040526354520228916,
+        "turnover": 0.8864549024906124,
+        "hedge_turnover": 0.06036356874509856,
+        "cost": 0.0008985276162396322,
+        "borrow_financing": 0.0,
+        "active_return": -0.03373428938521221,
+        "tracking_error": 0.05229450389040949,
+        "information_ratio": -0.6450828839662993,
+        "IC": {
+          "n": 133,
+          "lags": 6,
+          "mean": -0.03188444629396446,
+          "se": 0.02131293517606185,
+          "t": -1.4960138540549903,
+          "coefficients": {
+            "intercept": -0.03188444629396446
+          },
+          "standard_errors": {
+            "intercept": 0.02131293517606185
+          },
+          "t_statistics": {
+            "intercept": -1.4960138540549903
+          }
+        }
+      },
+      "VU_below_1": {
+        "n": 67,
+        "mean_net_annual": -0.039658678603172355,
+        "volatility": 0.07200873256174634,
+        "sharpe": -0.5507481827869373,
+        "max_drawdown": null,
+        "hit_rate": 0.44776119402985076,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.02829723155162466,
+        "turnover": 0.9323932571614398,
+        "hedge_turnover": 0.07196998567100506,
+        "cost": 0.0009467872542956407,
+        "borrow_financing": 0.0,
+        "active_return": -0.014241928583963608,
+        "tracking_error": 0.046767950492873536,
+        "information_ratio": -0.304523256500919,
+        "IC": {
+          "n": 67,
+          "lags": 6,
+          "mean": -0.018686996555799727,
+          "se": 0.028794284459678455,
+          "t": -0.6489828417847201,
+          "coefficients": {
+            "intercept": -0.018686996555799727
+          },
+          "standard_errors": {
+            "intercept": 0.028794284459678455
+          },
+          "t_statistics": {
+            "intercept": -0.6489828417847201
+          }
+        }
+      },
+      "VU_above_1": {
+        "n": 75,
+        "mean_net_annual": -0.05693002228275454,
+        "volatility": 0.0908461380518739,
+        "sharpe": -0.6266641984301746,
+        "max_drawdown": null,
+        "hit_rate": 0.4266666666666667,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.046581347129481775,
+        "turnover": 0.8517825078424169,
+        "hedge_turnover": 0.05303544131823612,
+        "cost": 0.0008623895961060644,
+        "borrow_financing": 0.0,
+        "active_return": -0.05037785300012437,
+        "tracking_error": 0.05686688399024287,
+        "information_ratio": -0.8858908641586223,
+        "IC": {
+          "n": 75,
+          "lags": 6,
+          "mean": -0.037576972233720286,
+          "se": 0.029909005340547655,
+          "t": -1.2563765262623818,
+          "coefficients": {
+            "intercept": -0.037576972233720286
+          },
+          "standard_errors": {
+            "intercept": 0.029909005340547655
+          },
+          "t_statistics": {
+            "intercept": -1.2563765262623818
+          }
+        }
+      }
+    },
+    "A3": {
+      "whole": {
+        "n": 142,
+        "mean_net_annual": -0.03416601342958561,
+        "volatility": 0.0749707644575118,
+        "sharpe": -0.45572449043051344,
+        "max_drawdown": -0.256741843154743,
+        "hit_rate": 0.4295774647887324,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.022559867233346187,
+        "turnover": 0.9549951869956321,
+        "hedge_turnover": 0.06091831345493426,
+        "cost": 0.0009671788496866189,
+        "borrow_financing": 0.0,
+        "active_return": -0.02705088490346283,
+        "tracking_error": 0.04947883504967197,
+        "information_ratio": -0.5467162853835656,
+        "IC": {
+          "n": 142,
+          "lags": 6,
+          "mean": 0.0010278064182403356,
+          "se": 0.021307495570151252,
+          "t": 0.04823684767909304,
+          "coefficients": {
+            "intercept": 0.0010278064182403356
+          },
+          "standard_errors": {
+            "intercept": 0.021307495570151252
+          },
+          "t_statistics": {
+            "intercept": 0.04823684767909304
+          }
+        }
+      },
+      "first_half": {
+        "n": 71,
+        "mean_net_annual": -0.040221420026865844,
+        "volatility": 0.06593523493177975,
+        "sharpe": -0.6100140549810911,
+        "max_drawdown": -0.2232232467277625,
+        "hit_rate": 0.38028169014084506,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.028317519647314764,
+        "turnover": 0.9787342944092204,
+        "hedge_turnover": 0.06628701943351209,
+        "cost": 0.0009919916982959226,
+        "borrow_financing": 0.0,
+        "active_return": -0.038982809190894835,
+        "tracking_error": 0.03869222739567146,
+        "information_ratio": -1.0075100818635188,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": -0.028548388106860556,
+          "se": 0.029034728441400842,
+          "t": -0.9832497026613547,
+          "coefficients": {
+            "intercept": -0.028548388106860556
+          },
+          "standard_errors": {
+            "intercept": 0.029034728441400842
+          },
+          "t_statistics": {
+            "intercept": -0.9832497026613547
+          }
+        }
+      },
+      "second_half": {
+        "n": 71,
+        "mean_net_annual": -0.028110606832305374,
+        "volatility": 0.08347377863240107,
+        "sharpe": -0.33675972614224026,
+        "max_drawdown": -0.10970621338666886,
+        "hit_rate": 0.4788732394366197,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.016802214819377603,
+        "turnover": 0.9312560795820437,
+        "hedge_turnover": 0.055549607476356455,
+        "cost": 0.0009423660010773147,
+        "borrow_financing": 0.0,
+        "active_return": -0.015118960616030831,
+        "tracking_error": 0.058396301011093936,
+        "information_ratio": -0.25890271051857516,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": 0.03060400094334123,
+          "se": 0.028590129466054742,
+          "t": 1.0704393969141544,
+          "coefficients": {
+            "intercept": 0.03060400094334123
+          },
+          "standard_errors": {
+            "intercept": 0.028590129466054742
+          },
+          "t_statistics": {
+            "intercept": 1.0704393969141544
+          }
+        }
+      },
+      "ex_pandemic": {
+        "n": 132,
+        "mean_net_annual": -0.034133075324774706,
+        "volatility": 0.07644732605392618,
+        "sharpe": -0.4464914220897292,
+        "max_drawdown": null,
+        "hit_rate": 0.4318181818181818,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.022494324334579888,
+        "turnover": 0.9574956723509318,
+        "hedge_turnover": 0.06200121749318041,
+        "cost": 0.000969895915849568,
+        "borrow_financing": 0.0,
+        "active_return": -0.025638052840381138,
+        "tracking_error": 0.050031975889651234,
+        "information_ratio": -0.5124333465647554,
+        "IC": {
+          "n": 132,
+          "lags": 6,
+          "mean": 0.007932177367341125,
+          "se": 0.02305451898469049,
+          "t": 0.34406171616976877,
+          "coefficients": {
+            "intercept": 0.007932177367341125
+          },
+          "standard_errors": {
+            "intercept": 0.02305451898469049
+          },
+          "t_statistics": {
+            "intercept": 0.34406171616976877
+          }
+        }
+      },
+      "last_18": {
+        "n": 18,
+        "mean_net_annual": -0.07784684334390397,
+        "volatility": 0.12221144551266915,
+        "sharpe": -0.6369848831861982,
+        "max_drawdown": -0.10970621338666842,
+        "hit_rate": 0.3888888888888889,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.06845981399508193,
+        "turnover": 0.7736516982309372,
+        "hedge_turnover": 0.04300373752116975,
+        "cost": 0.000782252445735171,
+        "borrow_financing": 0.0,
+        "active_return": 0.015834575091502465,
+        "tracking_error": 0.07888021181897248,
+        "information_ratio": 0.20074204577242136,
+        "IC": {
+          "n": 18,
+          "lags": 6,
+          "mean": 0.006721389036630339,
+          "se": 0.03788826821326075,
+          "t": 0.17740027068003805,
+          "coefficients": {
+            "intercept": 0.006721389036630339
+          },
+          "standard_errors": {
+            "intercept": 0.03788826821326075
+          },
+          "t_statistics": {
+            "intercept": 0.17740027068003805
+          }
+        }
+      },
+      "T_low": {
+        "n": 3,
+        "mean_net_annual": -0.008941272254089243,
+        "volatility": 0.030995282102910013,
+        "sharpe": -0.28847203985440695,
+        "max_drawdown": -0.01148634225381473,
+        "hit_rate": 0.3333333333333333,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.0019128505613788815,
+        "turnover": 0.892963377513959,
+        "hedge_turnover": 0.05773428554192392,
+        "cost": 0.0009045102346223439,
+        "borrow_financing": 0.0,
+        "active_return": -0.12480894987300648,
+        "tracking_error": 0.017831738597131525,
+        "information_ratio": -6.999258608080071,
+        "IC": {
+          "n": 3,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_middle": {
+        "n": 6,
+        "mean_net_annual": -0.030014062754260426,
+        "volatility": 0.09551229245472052,
+        "sharpe": -0.31424293128017194,
+        "max_drawdown": -0.05908739526852824,
+        "hit_rate": 0.5,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.020892331032799194,
+        "turnover": 0.7551369469981765,
+        "hedge_turnover": 0.02503681561796899,
+        "cost": 0.0007601443101217701,
+        "borrow_financing": 0.0,
+        "active_return": 0.0035735282814905733,
+        "tracking_error": 0.07165726948412102,
+        "information_ratio": 0.04986972441480559,
+        "IC": {
+          "n": 6,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_high": {
+        "n": 133,
+        "mean_net_annual": -0.034922298599348325,
+        "volatility": 0.07511598875383672,
+        "sharpe": -0.46491165434555487,
+        "max_drawdown": null,
+        "hit_rate": 0.42857142857142855,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.0231871106212218,
+        "turnover": 0.9654105619462316,
+        "hedge_turnover": 0.06260884782155698,
+        "cost": 0.000977932331510543,
+        "borrow_financing": 0.0,
+        "active_return": -0.02622736824332065,
+        "tracking_error": 0.04892902286909185,
+        "information_ratio": -0.5360288578312956,
+        "IC": {
+          "n": 133,
+          "lags": 6,
+          "mean": 0.002625903869825797,
+          "se": 0.0226607712135638,
+          "t": 0.11587883947453827,
+          "coefficients": {
+            "intercept": 0.002625903869825797
+          },
+          "standard_errors": {
+            "intercept": 0.0226607712135638
+          },
+          "t_statistics": {
+            "intercept": 0.11587883947453827
+          }
+        }
+      },
+      "VU_below_1": {
+        "n": 67,
+        "mean_net_annual": -0.047785245907288415,
+        "volatility": 0.07417522947279742,
+        "sharpe": -0.6442210728153243,
+        "max_drawdown": null,
+        "hit_rate": 0.417910447761194,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.03598687170296272,
+        "turnover": 0.9690384603334293,
+        "hedge_turnover": 0.07079695013523123,
+        "cost": 0.0009831978503604753,
+        "borrow_financing": 0.0,
+        "active_return": -0.024422263328441284,
+        "tracking_error": 0.04429228938019091,
+        "information_ratio": -0.5513885976588013,
+        "IC": {
+          "n": 67,
+          "lags": 6,
+          "mean": -0.01130880090130935,
+          "se": 0.028597632171596738,
+          "t": -0.3954453583238017,
+          "coefficients": {
+            "intercept": -0.01130880090130935
+          },
+          "standard_errors": {
+            "intercept": 0.028597632171596738
+          },
+          "t_statistics": {
+            "intercept": -0.3954453583238017
+          }
+        }
+      },
+      "VU_above_1": {
+        "n": 75,
+        "mean_net_annual": -0.021999499082837774,
+        "volatility": 0.07599932024323704,
+        "sharpe": -0.2894696822606837,
+        "max_drawdown": null,
+        "hit_rate": 0.44,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.010565076573822083,
+        "turnover": 0.9424498628138666,
+        "hedge_turnover": 0.05209339802053566,
+        "cost": 0.0009528685424179735,
+        "borrow_financing": 0.0,
+        "active_return": -0.029399120177148748,
+        "tracking_error": 0.05398167527215879,
+        "information_ratio": -0.5446129641017539,
+        "IC": {
+          "n": 75,
+          "lags": 6,
+          "mean": 0.01204850895703806,
+          "se": 0.03135466402057267,
+          "t": 0.38426528662953285,
+          "coefficients": {
+            "intercept": 0.01204850895703806
+          },
+          "standard_errors": {
+            "intercept": 0.03135466402057267
+          },
+          "t_statistics": {
+            "intercept": 0.38426528662953285
+          }
+        }
+      }
+    },
+    "A4": {
+      "whole": {
+        "n": 142,
+        "mean_net_annual": 0.0007498033575391017,
+        "volatility": 0.08367183697188686,
+        "sharpe": 0.00896123934497853,
+        "max_drawdown": -0.25248847981325684,
+        "hit_rate": 0.5,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.012147268735984474,
+        "turnover": 0.9364326708303273,
+        "hedge_turnover": 0.06678055353393479,
+        "cost": 0.0009497887815371141,
+        "borrow_financing": 0.0,
+        "active_return": -0.010478454868428308,
+        "tracking_error": 0.044678587265738805,
+        "information_ratio": -0.2345296821071058,
+        "IC": {
+          "n": 142,
+          "lags": 6,
+          "mean": -0.0024766098844053504,
+          "se": 0.02395475004160532,
+          "t": -0.10338700592174416,
+          "coefficients": {
+            "intercept": -0.0024766098844053504
+          },
+          "standard_errors": {
+            "intercept": 0.02395475004160532
+          },
+          "t_statistics": {
+            "intercept": -0.10338700592174416
+          }
+        }
+      },
+      "first_half": {
+        "n": 71,
+        "mean_net_annual": -0.03555444751767229,
+        "volatility": 0.07883557567837113,
+        "sharpe": -0.4509949627656084,
+        "max_drawdown": -0.25248847981325684,
+        "hit_rate": 0.4084507042253521,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.02475284647735825,
+        "turnover": 0.8882241331047044,
+        "hedge_turnover": 0.059546434607327565,
+        "cost": 0.0009001334200261699,
+        "borrow_financing": 0.0,
+        "active_return": -0.013142417610075292,
+        "tracking_error": 0.04143422186720593,
+        "information_ratio": -0.3171875087263835,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": -0.034206083555575265,
+          "se": 0.031829035692302166,
+          "t": -1.0746817429925464,
+          "coefficients": {
+            "intercept": -0.034206083555575265
+          },
+          "standard_errors": {
+            "intercept": 0.031829035692302166
+          },
+          "t_statistics": {
+            "intercept": -1.0746817429925464
+          }
+        }
+      },
+      "second_half": {
+        "n": 71,
+        "mean_net_annual": 0.03705405423275049,
+        "volatility": 0.08754492577273175,
+        "sharpe": 0.42325758923987783,
+        "max_drawdown": -0.16893426744975226,
+        "hit_rate": 0.5915492957746479,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.04904738394932719,
+        "turnover": 0.9846412085559499,
+        "hedge_turnover": 0.074014672460542,
+        "cost": 0.0009994441430480586,
+        "borrow_financing": 0.0,
+        "active_return": -0.00781449212678132,
+        "tracking_error": 0.04798827670230132,
+        "information_ratio": -0.16284169100839102,
+        "IC": {
+          "n": 71,
+          "lags": 6,
+          "mean": 0.029252863786764567,
+          "se": 0.0338234098715608,
+          "t": 0.8648703338264184,
+          "coefficients": {
+            "intercept": 0.029252863786764567
+          },
+          "standard_errors": {
+            "intercept": 0.0338234098715608
+          },
+          "t_statistics": {
+            "intercept": 0.8648703338264184
+          }
+        }
+      },
+      "ex_pandemic": {
+        "n": 132,
+        "mean_net_annual": 0.011426765009243712,
+        "volatility": 0.08008997897948458,
+        "sharpe": 0.14267409175086349,
+        "max_drawdown": null,
+        "hit_rate": 0.5,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": 0.02269460372075569,
+        "turnover": 0.9257775123737197,
+        "hedge_turnover": 0.06604523459471975,
+        "cost": 0.0009389865592926638,
+        "borrow_financing": 0.0,
+        "active_return": -0.0070594560409224785,
+        "tracking_error": 0.04484528936925637,
+        "information_ratio": -0.15741800622123042,
+        "IC": {
+          "n": 132,
+          "lags": 6,
+          "mean": -0.0008743550554683559,
+          "se": 0.025625412496245864,
+          "t": -0.03412062364250524,
+          "coefficients": {
+            "intercept": -0.0008743550554683559
+          },
+          "standard_errors": {
+            "intercept": 0.025625412496245864
+          },
+          "t_statistics": {
+            "intercept": -0.03412062364250524
+          }
+        }
+      },
+      "last_18": {
+        "n": 18,
+        "mean_net_annual": -0.1280122235708221,
+        "volatility": 0.09078223633699498,
+        "sharpe": -1.4101021161852056,
+        "max_drawdown": -0.16893426744975237,
+        "hit_rate": 0.2777777777777778,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.11225346004327923,
+        "turnover": 1.2914388562916765,
+        "hedge_turnover": 0.10895718835114995,
+        "cost": 0.0013132302939619063,
+        "borrow_financing": 0.0,
+        "active_return": -0.061807877179105186,
+        "tracking_error": 0.05217894039470883,
+        "information_ratio": -1.1845368401803111,
+        "IC": {
+          "n": 18,
+          "lags": 6,
+          "mean": -0.06744897298386476,
+          "se": 0.040316823783006536,
+          "t": -1.6729733807129512,
+          "coefficients": {
+            "intercept": -0.06744897298386476
+          },
+          "standard_errors": {
+            "intercept": 0.040316823783006536
+          },
+          "t_statistics": {
+            "intercept": -1.6729733807129512
+          }
+        }
+      },
+      "T_low": {
+        "n": 3,
+        "mean_net_annual": -0.3089783176997815,
+        "volatility": 0.04049814775075048,
+        "sharpe": -7.629443193338534,
+        "max_drawdown": -0.07512051670138087,
+        "hit_rate": 0.0,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.292657652764605,
+        "turnover": 1.3437751468928425,
+        "hedge_turnover": 0.08140132185934996,
+        "cost": 0.0013600554112647122,
+        "borrow_financing": 0.0,
+        "active_return": -0.1420917369985471,
+        "tracking_error": 0.05274414375796337,
+        "information_ratio": -2.6939813005703392,
+        "IC": {
+          "n": 3,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_middle": {
+        "n": 6,
+        "mean_net_annual": 0.03727535316794402,
+        "volatility": 0.06144606261176168,
+        "sharpe": 0.6066353413637438,
+        "max_drawdown": -0.035086422697505615,
+        "hit_rate": 0.6666666666666666,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.048295504674883506,
+        "turnover": 0.9066061500480709,
+        "hedge_turnover": 0.058699044317759165,
+        "cost": 0.0009183459589116226,
+        "borrow_financing": 0.0,
+        "active_return": 0.00042584087192180237,
+        "tracking_error": 0.02611320829833738,
+        "information_ratio": 0.016307489568369717,
+        "IC": {
+          "n": 6,
+          "lags": 6,
+          "mean": null,
+          "se": null,
+          "t": null,
+          "coefficients": {},
+          "standard_errors": {},
+          "t_statistics": {}
+        }
+      },
+      "T_high": {
+        "n": 133,
+        "mean_net_annual": 0.006088382788437836,
+        "volatility": 0.08438788288695599,
+        "sharpe": 0.07214759489337692,
+        "max_drawdown": null,
+        "hit_rate": 0.5037593984962406,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": 0.017391820231235408,
+        "turnover": 0.928590052007064,
+        "hedge_turnover": 0.06681534113033184,
+        "cost": 0.0009419531202331305,
+        "borrow_financing": 0.0,
+        "active_return": -0.008001657334982773,
+        "tracking_error": 0.04506136338803521,
+        "information_ratio": -0.17757246415467737,
+        "IC": {
+          "n": 133,
+          "lags": 6,
+          "mean": -0.004998988096032872,
+          "se": 0.025201003282045976,
+          "t": -0.19836464604543405,
+          "coefficients": {
+            "intercept": -0.004998988096032872
+          },
+          "standard_errors": {
+            "intercept": 0.025201003282045976
+          },
+          "t_statistics": {
+            "intercept": -0.19836464604543405
+          }
+        }
+      },
+      "VU_below_1": {
+        "n": 67,
+        "mean_net_annual": -0.03364077109838839,
+        "volatility": 0.07217765270479258,
+        "sharpe": -0.46608291954269454,
+        "max_drawdown": null,
+        "hit_rate": 0.417910447761194,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": -0.022074288920648256,
+        "turnover": 0.9497410945608555,
+        "hedge_turnover": 0.07066210125411007,
+        "cost": 0.0009638735148116776,
+        "borrow_financing": 0.0,
+        "active_return": -0.019399606759759276,
+        "tracking_error": 0.04178657113708945,
+        "information_ratio": -0.46425457346368215,
+        "IC": {
+          "n": 67,
+          "lags": 6,
+          "mean": -0.021978021978021983,
+          "se": 0.036221379527154554,
+          "t": -0.606769324220394,
+          "coefficients": {
+            "intercept": -0.021978021978021983
+          },
+          "standard_errors": {
+            "intercept": 0.036221379527154554
+          },
+          "t_statistics": {
+            "intercept": -0.606769324220394
+          }
+        }
+      },
+      "VU_above_1": {
+        "n": 75,
+        "mean_net_annual": 0.031472049871500984,
+        "volatility": 0.0923273105669106,
+        "sharpe": 0.34087476043930526,
+        "max_drawdown": null,
+        "hit_rate": 0.5733333333333334,
+        "drawdown_note": "Unavailable for disconnected conditional months",
+        "mean_gross_annual": 0.04271852690924304,
+        "turnover": 0.924543812297722,
+        "hedge_turnover": 0.0633130375705782,
+        "cost": 0.0009372064198118375,
+        "borrow_financing": 0.0,
+        "active_return": -0.002508892512172645,
+        "tracking_error": 0.04727375125310121,
+        "information_ratio": -0.05307157662907191,
+        "IC": {
+          "n": 75,
+          "lags": 6,
+          "mean": 0.014944651585892196,
+          "se": 0.031923280982674,
+          "t": 0.46814271985399103,
+          "coefficients": {
+            "intercept": 0.014944651585892196
+          },
+          "standard_errors": {
+            "intercept": 0.031923280982674
+          },
+          "t_statistics": {
+            "intercept": 0.46814271985399103
+          }
+        }
+      }
+    }
+  },
+  "placebo": {
+    "p": 0.5578947368421052,
+    "shifts": [
+      {
+        "shift": 24,
+        "mean_ic": -0.02629559185962495
+      },
+      {
+        "shift": 25,
+        "mean_ic": -0.038636219349288056
+      },
+      {
+        "shift": 26,
+        "mean_ic": -0.02034011736566134
+      },
+      {
+        "shift": 27,
+        "mean_ic": 0.0044661664717368646
+      },
+      {
+        "shift": 28,
+        "mean_ic": 0.016074436452754855
+      },
+      {
+        "shift": 29,
+        "mean_ic": -0.017593343962484055
+      },
+      {
+        "shift": 30,
+        "mean_ic": 0.012820756927869097
+      },
+      {
+        "shift": 31,
+        "mean_ic": 0.0023542973094276796
+      },
+      {
+        "shift": 32,
+        "mean_ic": 0.006916319235356701
+      },
+      {
+        "shift": 33,
+        "mean_ic": 0.000500514867368922
+      },
+      {
+        "shift": 34,
+        "mean_ic": 0.01160938845052741
+      },
+      {
+        "shift": 35,
+        "mean_ic": 0.02518235571167629
+      },
+      {
+        "shift": 36,
+        "mean_ic": 0.010931423151861746
+      },
+      {
+        "shift": 37,
+        "mean_ic": 0.02732994931356332
+      },
+      {
+        "shift": 38,
+        "mean_ic": 0.012745140445752196
+      },
+      {
+        "shift": 39,
+        "mean_ic": -0.012764287560229279
+      },
+      {
+        "shift": 40,
+        "mean_ic": -0.010150625279683264
+      },
+      {
+        "shift": 41,
+        "mean_ic": 0.005807197466546695
+      },
+      {
+        "shift": 42,
+        "mean_ic": 0.014571453818421686
+      },
+      {
+        "shift": 43,
+        "mean_ic": 0.0160360623148063
+      },
+      {
+        "shift": 44,
+        "mean_ic": 0.012284850507910077
+      },
+      {
+        "shift": 45,
+        "mean_ic": 0.028105780639357873
+      },
+      {
+        "shift": 46,
+        "mean_ic": -0.004498735220326986
+      },
+      {
+        "shift": 47,
+        "mean_ic": 0.00432012638333879
+      },
+      {
+        "shift": 48,
+        "mean_ic": -0.0027382517307245457
+      },
+      {
+        "shift": 49,
+        "mean_ic": -0.007256213974523025
+      },
+      {
+        "shift": 50,
+        "mean_ic": 0.005787823985987511
+      },
+      {
+        "shift": 51,
+        "mean_ic": 0.002860830607966352
+      },
+      {
+        "shift": 52,
+        "mean_ic": 0.019341577547935702
+      },
+      {
+        "shift": 53,
+        "mean_ic": 0.014429448200167875
+      },
+      {
+        "shift": 54,
+        "mean_ic": 0.016088217585766923
+      },
+      {
+        "shift": 55,
+        "mean_ic": -1.6284374295066985e-05
+      },
+      {
+        "shift": 56,
+        "mean_ic": 0.00404042924351035
+      },
+      {
+        "shift": 57,
+        "mean_ic": -0.07167952124814268
+      },
+      {
+        "shift": 58,
+        "mean_ic": -0.0024394074764190468
+      },
+      {
+        "shift": 59,
+        "mean_ic": -0.05692381298473285
+      },
+      {
+        "shift": 60,
+        "mean_ic": -0.005810765916886278
+      },
+      {
+        "shift": 61,
+        "mean_ic": -0.0008544037813586395
+      },
+      {
+        "shift": 62,
+        "mean_ic": 0.005305457608762693
+      },
+      {
+        "shift": 63,
+        "mean_ic": -0.042605226362184286
+      },
+      {
+        "shift": 64,
+        "mean_ic": -0.011261251665443279
+      },
+      {
+        "shift": 65,
+        "mean_ic": 7.419177416128951e-05
+      },
+      {
+        "shift": 66,
+        "mean_ic": 0.006771024793298231
+      },
+      {
+        "shift": 67,
+        "mean_ic": -0.005650452027129876
+      },
+      {
+        "shift": 68,
+        "mean_ic": -0.023756494176410032
+      },
+      {
+        "shift": 69,
+        "mean_ic": -0.005261863946436836
+      },
+      {
+        "shift": 70,
+        "mean_ic": -0.031017448331234893
+      },
+      {
+        "shift": 71,
+        "mean_ic": -0.04287523009959773
+      },
+      {
+        "shift": 72,
+        "mean_ic": 0.0009485549010602411
+      },
+      {
+        "shift": 73,
+        "mean_ic": -0.021271149577740643
+      },
+      {
+        "shift": 74,
+        "mean_ic": -0.014877914317481814
+      },
+      {
+        "shift": 75,
+        "mean_ic": 0.01025489588542248
+      },
+      {
+        "shift": 76,
+        "mean_ic": -0.015659351315094265
+      },
+      {
+        "shift": 77,
+        "mean_ic": 0.0036349709235411367
+      },
+      {
+        "shift": 78,
+        "mean_ic": 0.024505242580255892
+      },
+      {
+        "shift": 79,
+        "mean_ic": -0.006714715207016892
+      },
+      {
+        "shift": 80,
+        "mean_ic": 0.01634811516141354
+      },
+      {
+        "shift": 81,
+        "mean_ic": 0.011004230154249468
+      },
+      {
+        "shift": 82,
+        "mean_ic": 0.017152960109729422
+      },
+      {
+        "shift": 83,
+        "mean_ic": 0.010361709668626725
+      },
+      {
+        "shift": 84,
+        "mean_ic": -0.006891047168804214
+      },
+      {
+        "shift": 85,
+        "mean_ic": -0.007128375636721878
+      },
+      {
+        "shift": 86,
+        "mean_ic": -0.006680601905294704
+      },
+      {
+        "shift": 87,
+        "mean_ic": 0.0173342985540827
+      },
+      {
+        "shift": 88,
+        "mean_ic": 0.03849543872144934
+      },
+      {
+        "shift": 89,
+        "mean_ic": 0.01507463170843209
+      },
+      {
+        "shift": 90,
+        "mean_ic": 0.020278854557266857
+      },
+      {
+        "shift": 91,
+        "mean_ic": 0.012398162066359537
+      },
+      {
+        "shift": 92,
+        "mean_ic": -0.0013742388688339137
+      },
+      {
+        "shift": 93,
+        "mean_ic": 0.017247337595513116
+      },
+      {
+        "shift": 94,
+        "mean_ic": 0.02367070494780269
+      },
+      {
+        "shift": 95,
+        "mean_ic": 0.008675431277456359
+      },
+      {
+        "shift": 96,
+        "mean_ic": 0.005702567361908456
+      },
+      {
+        "shift": 97,
+        "mean_ic": -0.021744315220896728
+      },
+      {
+        "shift": 98,
+        "mean_ic": -0.011394149746263236
+      },
+      {
+        "shift": 99,
+        "mean_ic": -0.009924374985954158
+      },
+      {
+        "shift": 100,
+        "mean_ic": 0.00038645766257984433
+      },
+      {
+        "shift": 101,
+        "mean_ic": -0.03764859792439249
+      },
+      {
+        "shift": 102,
+        "mean_ic": -0.011704338477021436
+      },
+      {
+        "shift": 103,
+        "mean_ic": -0.037165752203092206
+      },
+      {
+        "shift": 104,
+        "mean_ic": -0.029640493179306664
+      },
+      {
+        "shift": 105,
+        "mean_ic": -0.04937561203004855
+      },
+      {
+        "shift": 106,
+        "mean_ic": -0.03879727888538409
+      },
+      {
+        "shift": 107,
+        "mean_ic": -0.03288570429219251
+      },
+      {
+        "shift": 108,
+        "mean_ic": -0.026346149317000696
+      },
+      {
+        "shift": 109,
+        "mean_ic": -0.0019923261308786573
+      },
+      {
+        "shift": 110,
+        "mean_ic": -0.0023509419008994215
+      },
+      {
+        "shift": 111,
+        "mean_ic": -0.003959366870934052
+      },
+      {
+        "shift": 112,
+        "mean_ic": -0.0190247312605738
+      },
+      {
+        "shift": 113,
+        "mean_ic": -0.015211098239591627
+      },
+      {
+        "shift": 114,
+        "mean_ic": -0.012522977882620185
+      },
+      {
+        "shift": 115,
+        "mean_ic": 0.00038608483941003966
+      },
+      {
+        "shift": 116,
+        "mean_ic": 0.02623890945017381
+      },
+      {
+        "shift": 117,
+        "mean_ic": 0.03196552388821965
+      },
+      {
+        "shift": 118,
+        "mean_ic": -0.003927437247777876
+      }
+    ]
+  },
+  "sensitivities": {
+    "holding_1": {
+      "n": 142,
+      "mean_net_annual": -0.033437505569229774,
+      "volatility": 0.09547229768241622,
+      "sharpe": -0.3502325426424527,
+      "max_drawdown": -0.36427277319600504,
+      "hit_rate": 0.4788732394366197,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": -0.008966435478198743,
+      "turnover": 2.00967096736945,
+      "hedge_turnover": 0.14792436774901224,
+      "cost": 0.0020392558409192533,
+      "borrow_financing": 0.0,
+      "active_return": -0.01926268837247517,
+      "tracking_error": 0.06189859086797139,
+      "information_ratio": -0.3111975265085137
+    },
+    "holding_6": {
+      "n": 142,
+      "mean_net_annual": 0.022558779976664146,
+      "volatility": 0.08195043836212325,
+      "sharpe": 0.27527345097266265,
+      "max_drawdown": -0.16524583253922853,
+      "hit_rate": 0.5563380281690141,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.029682276202033182,
+      "turnover": 0.585557912069772,
+      "hedge_turnover": 0.04033386688823627,
+      "cost": 0.0005936246854474193,
+      "borrow_financing": 0.0,
+      "active_return": -5.979352111085525e-05,
+      "tracking_error": 0.036637875715956246,
+      "information_ratio": -0.0016320138638609562
+    },
+    "cost_0": {
+      "n": 142,
+      "mean_net_annual": 0.011987083870793601,
+      "volatility": 0.08362656940308175,
+      "sharpe": 0.1433406147873365,
+      "max_drawdown": -0.21790165234715453,
+      "hit_rate": 0.5070422535211268,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.012147268735984474,
+      "turnover": 0.9359257781955215,
+      "hedge_turnover": 0.0667436938295283,
+      "cost": 1.334873876590566e-05,
+      "borrow_financing": 0.0,
+      "active_return": -0.005440005769576124,
+      "tracking_error": 0.04470876937966748,
+      "information_ratio": -0.1216764819308606
+    },
+    "cost_25": {
+      "n": 142,
+      "mean_net_annual": -0.016129511192597454,
+      "volatility": 0.08376771687544231,
+      "sharpe": -0.19255044537719815,
+      "max_drawdown": -0.3055153708309527,
+      "hit_rate": 0.5,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.012147268735984474,
+      "turnover": 0.9372124486839807,
+      "hedge_turnover": 0.06683602835937848,
+      "cost": 0.0023563983273818274,
+      "borrow_financing": 0.0,
+      "active_return": -0.018039527464233446,
+      "tracking_error": 0.04464664738089555,
+      "information_ratio": -0.4040511107213085
+    },
+    "borrow_25": {
+      "n": 142,
+      "mean_net_annual": -0.0016406363750758914,
+      "volatility": 0.08367304484071085,
+      "sharpe": -0.019607704944874255,
+      "max_drawdown": -0.2601237486470336,
+      "hit_rate": 0.5,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.012147268735984474,
+      "turnover": 0.9365305197300752,
+      "hedge_turnover": 0.06678825945961307,
+      "cost": 0.0009498881716219976,
+      "borrow_financing": 0.0001991039209663654,
+      "active_return": -0.010478454868428308,
+      "tracking_error": 0.044678587265738805,
+      "information_ratio": -0.2345296821071058
+    }
+  },
+  "candidate_accounting": [
+    {
+      "candidate_id": "independent_1_Temporal_1",
+      "research": {
+        "n": 64,
+        "lags": 6,
+        "mean": -0.048423654863817195,
+        "se": 0.02976307597958303,
+        "t": -1.6269707773831914,
+        "coefficients": {
+          "intercept": -0.048423654863817195
+        },
+        "standard_errors": {
+          "intercept": 0.02976307597958303
+        },
+        "t_statistics": {
+          "intercept": -1.6269707773831914
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.07980554646856944,
+        "se": 0.023196285145616117,
+        "t": -3.440445138848103,
+        "coefficients": {
+          "intercept": -0.07980554646856944
+        },
+        "standard_errors": {
+          "intercept": 0.023196285145616117
+        },
+        "t_statistics": {
+          "intercept": -3.440445138848103
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Composition_1",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": 0.02211351001141028,
+        "se": 0.0294742858484073,
+        "t": 0.7502644890242599,
+        "coefficients": {
+          "intercept": 0.02211351001141028
+        },
+        "standard_errors": {
+          "intercept": 0.0294742858484073
+        },
+        "t_statistics": {
+          "intercept": 0.7502644890242599
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.045744209556847,
+        "se": 0.021156333354462927,
+        "t": 2.162199318304713,
+        "coefficients": {
+          "intercept": 0.045744209556847
+        },
+        "standard_errors": {
+          "intercept": 0.021156333354462927
+        },
+        "t_statistics": {
+          "intercept": 2.162199318304713
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": true,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Interactions_1",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": -0.023204577212056415,
+        "se": 0.021561597762933447,
+        "t": -1.0761993367647091,
+        "coefficients": {
+          "intercept": -0.023204577212056415
+        },
+        "standard_errors": {
+          "intercept": 0.021561597762933447
+        },
+        "t_statistics": {
+          "intercept": -1.0761993367647091
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.024232750813577182,
+        "se": 0.01884292363524784,
+        "t": -1.2860398568005154,
+        "coefficients": {
+          "intercept": -0.024232750813577182
+        },
+        "standard_errors": {
+          "intercept": 0.01884292363524784
+        },
+        "t_statistics": {
+          "intercept": -1.2860398568005154
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Temporal_2",
+      "research": {
+        "n": 114,
+        "lags": 6,
+        "mean": 0.013610313487975315,
+        "se": 0.022617843183615323,
+        "t": 0.6017511651082104,
+        "coefficients": {
+          "intercept": 0.013610313487975315
+        },
+        "standard_errors": {
+          "intercept": 0.022617843183615323
+        },
+        "t_statistics": {
+          "intercept": 0.6017511651082104
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.02091688562290924,
+        "se": 0.026150103897088463,
+        "t": 0.7998777253515278,
+        "coefficients": {
+          "intercept": 0.02091688562290924
+        },
+        "standard_errors": {
+          "intercept": 0.026150103897088463
+        },
+        "t_statistics": {
+          "intercept": 0.7998777253515278
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Composition_2",
+      "research": {
+        "n": 48,
+        "lags": 6,
+        "mean": -0.013406124832804858,
+        "se": 0.02781745166535995,
+        "t": -0.48193216956314555,
+        "coefficients": {
+          "intercept": -0.013406124832804858
+        },
+        "standard_errors": {
+          "intercept": 0.02781745166535995
+        },
+        "t_statistics": {
+          "intercept": -0.48193216956314555
+        }
+      },
+      "sealed": {
+        "n": 3,
+        "lags": 6,
+        "mean": null,
+        "se": null,
+        "t": null,
+        "coefficients": {},
+        "standard_errors": {},
+        "t_statistics": {}
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Interactions_2",
+      "research": {
+        "n": 91,
+        "lags": 6,
+        "mean": -0.010105492773016991,
+        "se": 0.03153876167648021,
+        "t": -0.3204150142823485,
+        "coefficients": {
+          "intercept": -0.010105492773016991
+        },
+        "standard_errors": {
+          "intercept": 0.03153876167648021
+        },
+        "t_statistics": {
+          "intercept": -0.3204150142823485
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.003810930062158647,
+        "se": 0.02209959897319712,
+        "t": 0.17244340346540343,
+        "coefficients": {
+          "intercept": 0.003810930062158647
+        },
+        "standard_errors": {
+          "intercept": 0.02209959897319712
+        },
+        "t_statistics": {
+          "intercept": 0.17244340346540343
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Temporal_3",
+      "research": {
+        "n": 120,
+        "lags": 6,
+        "mean": 0.00960550547797686,
+        "se": 0.02182147359868602,
+        "t": 0.44018592211642643,
+        "coefficients": {
+          "intercept": 0.00960550547797686
+        },
+        "standard_errors": {
+          "intercept": 0.02182147359868602
+        },
+        "t_statistics": {
+          "intercept": 0.44018592211642643
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.04484035346335126,
+        "se": 0.024694389714284767,
+        "t": 1.815811363720919,
+        "coefficients": {
+          "intercept": 0.04484035346335126
+        },
+        "standard_errors": {
+          "intercept": 0.024694389714284767
+        },
+        "t_statistics": {
+          "intercept": 1.815811363720919
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Composition_3",
+      "research": {
+        "n": 121,
+        "lags": 6,
+        "mean": 0.027654726553822846,
+        "se": 0.027888636877285922,
+        "t": 0.9916127014564278,
+        "coefficients": {
+          "intercept": 0.027654726553822846
+        },
+        "standard_errors": {
+          "intercept": 0.027888636877285922
+        },
+        "t_statistics": {
+          "intercept": 0.9916127014564278
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.00920446709900036,
+        "se": 0.025586316549860315,
+        "t": -0.3597417815520073,
+        "coefficients": {
+          "intercept": -0.00920446709900036
+        },
+        "standard_errors": {
+          "intercept": 0.025586316549860315
+        },
+        "t_statistics": {
+          "intercept": -0.3597417815520073
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Interactions_3",
+      "research": {
+        "n": 15,
+        "lags": 6,
+        "mean": 0.0591784334140775,
+        "se": 0.07178855203353826,
+        "t": 0.8243435998880496,
+        "coefficients": {
+          "intercept": 0.0591784334140775
+        },
+        "standard_errors": {
+          "intercept": 0.07178855203353826
+        },
+        "t_statistics": {
+          "intercept": 0.8243435998880496
+        }
+      },
+      "sealed": {
+        "n": 133,
+        "lags": 6,
+        "mean": -0.03243247807891799,
+        "se": 0.025827685113327958,
+        "t": -1.2557253171009792,
+        "coefficients": {
+          "intercept": -0.03243247807891799
+        },
+        "standard_errors": {
+          "intercept": 0.025827685113327958
+        },
+        "t_statistics": {
+          "intercept": -1.2557253171009792
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Temporal_4",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": -0.010601269505709016,
+        "se": 0.020923045465523125,
+        "t": -0.5066790837489565,
+        "coefficients": {
+          "intercept": -0.010601269505709016
+        },
+        "standard_errors": {
+          "intercept": 0.020923045465523125
+        },
+        "t_statistics": {
+          "intercept": -0.5066790837489565
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.07320092294521496,
+        "se": 0.022030978468285094,
+        "t": -3.322636035008252,
+        "coefficients": {
+          "intercept": -0.07320092294521496
+        },
+        "standard_errors": {
+          "intercept": 0.022030978468285094
+        },
+        "t_statistics": {
+          "intercept": -3.322636035008252
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Composition_4",
+      "research": {
+        "n": 120,
+        "lags": 6,
+        "mean": -0.021354186359229164,
+        "se": 0.026439316874396292,
+        "t": -0.8076678554395048,
+        "coefficients": {
+          "intercept": -0.021354186359229164
+        },
+        "standard_errors": {
+          "intercept": 0.026439316874396292
+        },
+        "t_statistics": {
+          "intercept": -0.8076678554395048
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.028311072963213686,
+        "se": 0.023144923138100394,
+        "t": -1.2232087699876155,
+        "coefficients": {
+          "intercept": -0.028311072963213686
+        },
+        "standard_errors": {
+          "intercept": 0.023144923138100394
+        },
+        "t_statistics": {
+          "intercept": -1.2232087699876155
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Interactions_4",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": -0.028203108332816106,
+        "se": 0.02451774764252251,
+        "t": -1.1503139988235243,
+        "coefficients": {
+          "intercept": -0.028203108332816106
+        },
+        "standard_errors": {
+          "intercept": 0.02451774764252251
+        },
+        "t_statistics": {
+          "intercept": -1.1503139988235243
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.0013117510700243404,
+        "se": 0.022437192877940233,
+        "t": 0.05846324347080093,
+        "coefficients": {
+          "intercept": 0.0013117510700243404
+        },
+        "standard_errors": {
+          "intercept": 0.022437192877940233
+        },
+        "t_statistics": {
+          "intercept": 0.05846324347080093
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Temporal_5",
+      "research": {
+        "n": 88,
+        "lags": 6,
+        "mean": -0.029808619102122968,
+        "se": 0.0297839363067977,
+        "t": -1.0008287284484836,
+        "coefficients": {
+          "intercept": -0.029808619102122968
+        },
+        "standard_errors": {
+          "intercept": 0.0297839363067977
+        },
+        "t_statistics": {
+          "intercept": -1.0008287284484836
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.07747822211456543,
+        "se": 0.023287447042427186,
+        "t": -3.3270380378496864,
+        "coefficients": {
+          "intercept": -0.07747822211456543
+        },
+        "standard_errors": {
+          "intercept": 0.023287447042427186
+        },
+        "t_statistics": {
+          "intercept": -3.3270380378496864
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Composition_5",
+      "research": {
+        "n": 114,
+        "lags": 6,
+        "mean": -0.018342599976624435,
+        "se": 0.02239435656839955,
+        "t": -0.8190724265999896,
+        "coefficients": {
+          "intercept": -0.018342599976624435
+        },
+        "standard_errors": {
+          "intercept": 0.02239435656839955
+        },
+        "t_statistics": {
+          "intercept": -0.8190724265999896
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.015370866200548946,
+        "se": 0.026657074824583665,
+        "t": -0.5766148874809639,
+        "coefficients": {
+          "intercept": -0.015370866200548946
+        },
+        "standard_errors": {
+          "intercept": 0.026657074824583665
+        },
+        "t_statistics": {
+          "intercept": -0.5766148874809639
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Interactions_5",
+      "research": {
+        "n": 27,
+        "lags": 6,
+        "mean": -0.04812821829359268,
+        "se": 0.034966922215766895,
+        "t": -1.3763927518874177,
+        "coefficients": {
+          "intercept": -0.04812821829359268
+        },
+        "standard_errors": {
+          "intercept": 0.034966922215766895
+        },
+        "t_statistics": {
+          "intercept": -1.3763927518874177
+        }
+      },
+      "sealed": {
+        "n": 133,
+        "lags": 6,
+        "mean": -0.023632722550713636,
+        "se": 0.02326656483825332,
+        "t": -1.01573750637474,
+        "coefficients": {
+          "intercept": -0.023632722550713636
+        },
+        "standard_errors": {
+          "intercept": 0.02326656483825332
+        },
+        "t_statistics": {
+          "intercept": -1.01573750637474
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Temporal_6",
+      "research": {
+        "n": 72,
+        "lags": 6,
+        "mean": -0.0070751364315331175,
+        "se": 0.035789572731094586,
+        "t": -0.19768708849061278,
+        "coefficients": {
+          "intercept": -0.0070751364315331175
+        },
+        "standard_errors": {
+          "intercept": 0.035789572731094586
+        },
+        "t_statistics": {
+          "intercept": -0.19768708849061278
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.01853632086662268,
+        "se": 0.028680910211453678,
+        "t": -0.6462947211215154,
+        "coefficients": {
+          "intercept": -0.01853632086662268
+        },
+        "standard_errors": {
+          "intercept": 0.028680910211453678
+        },
+        "t_statistics": {
+          "intercept": -0.6462947211215154
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Composition_6",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": 0.010824561392109109,
+        "se": 0.027287830085788792,
+        "t": 0.3966809144618071,
+        "coefficients": {
+          "intercept": 0.010824561392109109
+        },
+        "standard_errors": {
+          "intercept": 0.027287830085788792
+        },
+        "t_statistics": {
+          "intercept": 0.3966809144618071
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.046693841506673245,
+        "se": 0.02581213792603068,
+        "t": -1.8089877576387836,
+        "coefficients": {
+          "intercept": -0.046693841506673245
+        },
+        "standard_errors": {
+          "intercept": 0.02581213792603068
+        },
+        "t_statistics": {
+          "intercept": -1.8089877576387836
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "independent_1_Interactions_6",
+      "research": {
+        "n": 15,
+        "lags": 6,
+        "mean": 0.0884844795139206,
+        "se": 0.05387878458494979,
+        "t": 1.6422879653940334,
+        "coefficients": {
+          "intercept": 0.0884844795139206
+        },
+        "standard_errors": {
+          "intercept": 0.05387878458494979
+        },
+        "t_statistics": {
+          "intercept": 1.6422879653940334
+        }
+      },
+      "sealed": {
+        "n": 133,
+        "lags": 6,
+        "mean": -0.02815551296719239,
+        "se": 0.025760300459560976,
+        "t": -1.0929807674949856,
+        "coefficients": {
+          "intercept": -0.02815551296719239
+        },
+        "standard_errors": {
+          "intercept": 0.025760300459560976
+        },
+        "t_statistics": {
+          "intercept": -1.0929807674949856
+        }
+      },
+      "passed_research_filter": true,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": true
+    },
+    {
+      "candidate_id": "islands_1_Temporal_1",
+      "research": {
+        "n": 119,
+        "lags": 6,
+        "mean": 0.019187026704871175,
+        "se": 0.02621224699956804,
+        "t": 0.7319871014944794,
+        "coefficients": {
+          "intercept": 0.019187026704871175
+        },
+        "standard_errors": {
+          "intercept": 0.02621224699956804
+        },
+        "t_statistics": {
+          "intercept": 0.7319871014944794
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.05239364482336334,
+        "se": 0.02710469510366296,
+        "t": 1.9330099314152698,
+        "coefficients": {
+          "intercept": 0.05239364482336334
+        },
+        "standard_errors": {
+          "intercept": 0.02710469510366296
+        },
+        "t_statistics": {
+          "intercept": 1.9330099314152698
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Composition_1",
+      "research": {
+        "n": 124,
+        "lags": 6,
+        "mean": 0.01106660778640483,
+        "se": 0.029213585279722704,
+        "t": 0.3788171729159932,
+        "coefficients": {
+          "intercept": 0.01106660778640483
+        },
+        "standard_errors": {
+          "intercept": 0.029213585279722704
+        },
+        "t_statistics": {
+          "intercept": 0.3788171729159932
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.028302391509402475,
+        "se": 0.024696226709266203,
+        "t": 1.1460208817561273,
+        "coefficients": {
+          "intercept": 0.028302391509402475
+        },
+        "standard_errors": {
+          "intercept": 0.024696226709266203
+        },
+        "t_statistics": {
+          "intercept": 1.1460208817561273
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Interactions_1",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": -0.023204577212056415,
+        "se": 0.021561597762933447,
+        "t": -1.0761993367647091,
+        "coefficients": {
+          "intercept": -0.023204577212056415
+        },
+        "standard_errors": {
+          "intercept": 0.021561597762933447
+        },
+        "t_statistics": {
+          "intercept": -1.0761993367647091
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.024232750813577182,
+        "se": 0.01884292363524784,
+        "t": -1.2860398568005154,
+        "coefficients": {
+          "intercept": -0.024232750813577182
+        },
+        "standard_errors": {
+          "intercept": 0.01884292363524784
+        },
+        "t_statistics": {
+          "intercept": -1.2860398568005154
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Temporal_2",
+      "research": {
+        "n": 118,
+        "lags": 6,
+        "mean": 0.011691438848708397,
+        "se": 0.025627835698451562,
+        "t": 0.4562007883254377,
+        "coefficients": {
+          "intercept": 0.011691438848708397
+        },
+        "standard_errors": {
+          "intercept": 0.025627835698451562
+        },
+        "t_statistics": {
+          "intercept": 0.4562007883254377
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.05114648130795278,
+        "se": 0.021390656015027248,
+        "t": 2.3910665139031564,
+        "coefficients": {
+          "intercept": 0.05114648130795278
+        },
+        "standard_errors": {
+          "intercept": 0.021390656015027248
+        },
+        "t_statistics": {
+          "intercept": 2.3910665139031564
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Composition_2",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": 0.0010706229288202362,
+        "se": 0.022875939379952154,
+        "t": 0.04680126621416478,
+        "coefficients": {
+          "intercept": 0.0010706229288202362
+        },
+        "standard_errors": {
+          "intercept": 0.022875939379952154
+        },
+        "t_statistics": {
+          "intercept": 0.04680126621416478
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.015552950291241858,
+        "se": 0.023291421292682937,
+        "t": 0.6677544532727961,
+        "coefficients": {
+          "intercept": 0.015552950291241858
+        },
+        "standard_errors": {
+          "intercept": 0.023291421292682937
+        },
+        "t_statistics": {
+          "intercept": 0.6677544532727961
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Interactions_2",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": -0.05627730781370971,
+        "se": 0.026992543004895564,
+        "t": -2.084920557633375,
+        "coefficients": {
+          "intercept": -0.05627730781370971
+        },
+        "standard_errors": {
+          "intercept": 0.026992543004895564
+        },
+        "t_statistics": {
+          "intercept": -2.084920557633375
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.011092855511127573,
+        "se": 0.024466278818663856,
+        "t": -0.4533936522731646,
+        "coefficients": {
+          "intercept": -0.011092855511127573
+        },
+        "standard_errors": {
+          "intercept": 0.024466278818663856
+        },
+        "t_statistics": {
+          "intercept": -0.4533936522731646
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Temporal_3",
+      "research": {
+        "n": 121,
+        "lags": 6,
+        "mean": 0.010040981982550205,
+        "se": 0.02351083783585079,
+        "t": 0.427078866889171,
+        "coefficients": {
+          "intercept": 0.010040981982550205
+        },
+        "standard_errors": {
+          "intercept": 0.02351083783585079
+        },
+        "t_statistics": {
+          "intercept": 0.427078866889171
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.0008129405371459673,
+        "se": 0.022023778546173354,
+        "t": -0.036911946578177715,
+        "coefficients": {
+          "intercept": -0.0008129405371459673
+        },
+        "standard_errors": {
+          "intercept": 0.022023778546173354
+        },
+        "t_statistics": {
+          "intercept": -0.036911946578177715
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Composition_3",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": 0.05627730781370971,
+        "se": 0.026992543004895564,
+        "t": 2.084920557633375,
+        "coefficients": {
+          "intercept": 0.05627730781370971
+        },
+        "standard_errors": {
+          "intercept": 0.026992543004895564
+        },
+        "t_statistics": {
+          "intercept": 2.084920557633375
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.011092855511127573,
+        "se": 0.024466278818663856,
+        "t": 0.4533936522731646,
+        "coefficients": {
+          "intercept": 0.011092855511127573
+        },
+        "standard_errors": {
+          "intercept": 0.024466278818663856
+        },
+        "t_statistics": {
+          "intercept": 0.4533936522731646
+        }
+      },
+      "passed_research_filter": true,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": true
+    },
+    {
+      "candidate_id": "islands_1_Interactions_3",
+      "research": {
+        "n": 67,
+        "lags": 6,
+        "mean": 0.03842363889916603,
+        "se": 0.03379202478531239,
+        "t": 1.1370623436529546,
+        "coefficients": {
+          "intercept": 0.03842363889916603
+        },
+        "standard_errors": {
+          "intercept": 0.03379202478531239
+        },
+        "t_statistics": {
+          "intercept": 1.1370623436529546
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.022100161447370363,
+        "se": 0.025315916236405077,
+        "t": -0.872974979099893,
+        "coefficients": {
+          "intercept": -0.022100161447370363
+        },
+        "standard_errors": {
+          "intercept": 0.025315916236405077
+        },
+        "t_statistics": {
+          "intercept": -0.872974979099893
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Temporal_4",
+      "research": {
+        "n": 78,
+        "lags": 6,
+        "mean": 0.06359557165475099,
+        "se": 0.029463592043190868,
+        "t": 2.158445975002839,
+        "coefficients": {
+          "intercept": 0.06359557165475099
+        },
+        "standard_errors": {
+          "intercept": 0.029463592043190868
+        },
+        "t_statistics": {
+          "intercept": 2.158445975002839
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.021514023492473583,
+        "se": 0.02109861175960137,
+        "t": 1.0196890552613336,
+        "coefficients": {
+          "intercept": 0.021514023492473583
+        },
+        "standard_errors": {
+          "intercept": 0.02109861175960137
+        },
+        "t_statistics": {
+          "intercept": 1.0196890552613336
+        }
+      },
+      "passed_research_filter": true,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": true
+    },
+    {
+      "candidate_id": "islands_1_Composition_4",
+      "research": {
+        "n": 48,
+        "lags": 6,
+        "mean": 0.12471029887860235,
+        "se": 0.03506828526626492,
+        "t": 3.5562131975289795,
+        "coefficients": {
+          "intercept": 0.12471029887860235
+        },
+        "standard_errors": {
+          "intercept": 0.03506828526626492
+        },
+        "t_statistics": {
+          "intercept": 3.5562131975289795
+        }
+      },
+      "sealed": {
+        "n": 3,
+        "lags": 6,
+        "mean": null,
+        "se": null,
+        "t": null,
+        "coefficients": {},
+        "standard_errors": {},
+        "t_statistics": {}
+      },
+      "passed_research_filter": true,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": true
+    },
+    {
+      "candidate_id": "islands_1_Interactions_4",
+      "research": {
+        "n": 120,
+        "lags": 6,
+        "mean": 0.04008797322246866,
+        "se": 0.02032265034630868,
+        "t": 1.9725760439385835,
+        "coefficients": {
+          "intercept": 0.04008797322246866
+        },
+        "standard_errors": {
+          "intercept": 0.02032265034630868
+        },
+        "t_statistics": {
+          "intercept": 1.9725760439385835
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.030782037239619104,
+        "se": 0.01936232783206978,
+        "t": 1.5897901071912894,
+        "coefficients": {
+          "intercept": 0.030782037239619104
+        },
+        "standard_errors": {
+          "intercept": 0.01936232783206978
+        },
+        "t_statistics": {
+          "intercept": 1.5897901071912894
+        }
+      },
+      "passed_research_filter": true,
+      "sealed_predictive_pass": true,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Temporal_5",
+      "research": {
+        "n": 113,
+        "lags": 6,
+        "mean": 0.0027671695793745534,
+        "se": 0.029599683533832816,
+        "t": 0.09348645826607042,
+        "coefficients": {
+          "intercept": 0.0027671695793745534
+        },
+        "standard_errors": {
+          "intercept": 0.029599683533832816
+        },
+        "t_statistics": {
+          "intercept": 0.09348645826607042
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.024637713899313397,
+        "se": 0.023072772174341297,
+        "t": 1.067826341505354,
+        "coefficients": {
+          "intercept": 0.024637713899313397
+        },
+        "standard_errors": {
+          "intercept": 0.023072772174341297
+        },
+        "t_statistics": {
+          "intercept": 1.067826341505354
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Composition_5",
+      "valid": false
+    },
+    {
+      "candidate_id": "islands_1_Interactions_5",
+      "research": {
+        "n": 120,
+        "lags": 6,
+        "mean": 0.027949735798187943,
+        "se": 0.023292918302506047,
+        "t": 1.1999241758891532,
+        "coefficients": {
+          "intercept": 0.027949735798187943
+        },
+        "standard_errors": {
+          "intercept": 0.023292918302506047
+        },
+        "t_statistics": {
+          "intercept": 1.1999241758891532
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.02235005938215579,
+        "se": 0.023989357757914113,
+        "t": 0.931665599708791,
+        "coefficients": {
+          "intercept": 0.02235005938215579
+        },
+        "standard_errors": {
+          "intercept": 0.023989357757914113
+        },
+        "t_statistics": {
+          "intercept": 0.931665599708791
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    },
+    {
+      "candidate_id": "islands_1_Temporal_6",
+      "research": {
+        "n": 78,
+        "lags": 6,
+        "mean": 0.05697584545689625,
+        "se": 0.027385720578404937,
+        "t": 2.080494661214964,
+        "coefficients": {
+          "intercept": 0.05697584545689625
+        },
+        "standard_errors": {
+          "intercept": 0.027385720578404937
+        },
+        "t_statistics": {
+          "intercept": 2.080494661214964
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.010698287964062816,
+        "se": 0.02776338315925496,
+        "t": 0.38533805129928944,
+        "coefficients": {
+          "intercept": 0.010698287964062816
+        },
+        "standard_errors": {
+          "intercept": 0.02776338315925496
+        },
+        "t_statistics": {
+          "intercept": 0.38533805129928944
+        }
+      },
+      "passed_research_filter": true,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": true
+    },
+    {
+      "candidate_id": "islands_1_Composition_6",
+      "research": {
+        "n": 123,
+        "lags": 6,
+        "mean": 0.04344929349657234,
+        "se": 0.025814998802320403,
+        "t": 1.6831026733445698,
+        "coefficients": {
+          "intercept": 0.04344929349657234
+        },
+        "standard_errors": {
+          "intercept": 0.025814998802320403
+        },
+        "t_statistics": {
+          "intercept": 1.6831026733445698
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.00853544955641007,
+        "se": 0.0286483429613266,
+        "t": 0.29793868245477134,
+        "coefficients": {
+          "intercept": 0.00853544955641007
+        },
+        "standard_errors": {
+          "intercept": 0.0286483429613266
+        },
+        "t_statistics": {
+          "intercept": 0.29793868245477134
+        }
+      },
+      "passed_research_filter": true,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": true
+    },
+    {
+      "candidate_id": "islands_1_Interactions_6",
+      "research": {
+        "n": 114,
+        "lags": 6,
+        "mean": 0.019842806755913774,
+        "se": 0.02371583111805235,
+        "t": 0.8366903380758833,
+        "coefficients": {
+          "intercept": 0.019842806755913774
+        },
+        "standard_errors": {
+          "intercept": 0.02371583111805235
+        },
+        "t_statistics": {
+          "intercept": 0.8366903380758833
+        }
+      },
+      "sealed": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.009011278222207634,
+        "se": 0.027314388687665263,
+        "t": 0.32990956983331576,
+        "coefficients": {
+          "intercept": 0.009011278222207634
+        },
+        "standard_errors": {
+          "intercept": 0.027314388687665263
+        },
+        "t_statistics": {
+          "intercept": 0.32990956983331576
+        }
+      },
+      "passed_research_filter": false,
+      "sealed_predictive_pass": false,
+      "research_pass_sealed_failure": false
+    }
+  ],
+  "research_pass_sealed_failure_count": 6,
+  "candidate_failure_definition": "Passed complete research eligibility filter; failed sealed t>=1.5 and positive IC in each half. No sealed reselection.",
+  "course_windows": {
+    "A0": {
+      "full": {
+        "n": 268,
+        "mean_net_annual": -0.04161954913713031,
+        "volatility": 0.08632945839332698,
+        "sharpe": -0.4821013581193437,
+        "max_drawdown": -0.5648455674148742,
+        "hit_rate": 0.45149253731343286,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.032465548096665776,
+        "turnover": 0.750993404122917,
+        "hedge_turnover": 0.05920007957896839,
+        "cost": 0.0007628334200387106,
+        "borrow_financing": 0.0,
+        "active_return": -0.013063236561116673,
+        "tracking_error": 0.057884410249769536,
+        "information_ratio": -0.22567797624177546,
+        "IC": {
+          "n": 268,
+          "lags": 6,
+          "mean": -0.015410652640605042,
+          "se": 0.018818993758457525,
+          "t": -0.8188882380429758,
+          "coefficients": {
+            "intercept": -0.015410652640605042
+          },
+          "standard_errors": {
+            "intercept": 0.018818993758457525
+          },
+          "t_statistics": {
+            "intercept": -0.8188882380429758
+          }
+        },
+        "first_observed_return": "2004-05",
+        "requested_start": "2004-05",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      },
+      "post_2010": {
+        "n": 200,
+        "mean_net_annual": -0.035656022106526575,
+        "volatility": 0.08723956109360019,
+        "sharpe": -0.408713909831239,
+        "max_drawdown": -0.4782436384720443,
+        "hit_rate": 0.465,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.02618110203582795,
+        "turnover": 0.7783591216382826,
+        "hedge_turnover": 0.056087754599681565,
+        "cost": 0.0007895766725582187,
+        "borrow_financing": 0.0,
+        "active_return": -0.011646373507153328,
+        "tracking_error": 0.05510496522722967,
+        "information_ratio": -0.2113488949521806,
+        "IC": {
+          "n": 200,
+          "lags": 6,
+          "mean": -0.012611251447064445,
+          "se": 0.0223988564723967,
+          "t": -0.5630310396696349,
+          "coefficients": {
+            "intercept": -0.012611251447064445
+          },
+          "standard_errors": {
+            "intercept": 0.0223988564723967
+          },
+          "t_statistics": {
+            "intercept": -0.5630310396696349
+          }
+        },
+        "first_observed_return": "2010-01",
+        "requested_start": "2010-01",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      }
+    },
+    "A1": {
+      "full": {
+        "n": 231,
+        "mean_net_annual": -0.03792428862571653,
+        "volatility": 0.07328572734945922,
+        "sharpe": -0.5174853275983263,
+        "max_drawdown": -0.5780799167945962,
+        "hit_rate": 0.42857142857142855,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.027080620824435,
+        "turnover": 0.889382109084643,
+        "hedge_turnover": 0.07128437177742383,
+        "cost": 0.0009036389834401278,
+        "borrow_financing": 0.0,
+        "active_return": -0.021739607297181017,
+        "tracking_error": 0.051355495333406595,
+        "information_ratio": -0.42331608635151197,
+        "IC": {
+          "n": 231,
+          "lags": 6,
+          "mean": -0.01863948164864065,
+          "se": 0.017585710510164807,
+          "t": -1.0599220109910685,
+          "coefficients": {
+            "intercept": -0.01863948164864065
+          },
+          "standard_errors": {
+            "intercept": 0.017585710510164807
+          },
+          "t_statistics": {
+            "intercept": -1.0599220109910685
+          }
+        },
+        "first_observed_return": "2007-06",
+        "requested_start": "2004-05",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      },
+      "post_2010": {
+        "n": 200,
+        "mean_net_annual": -0.048270802660006176,
+        "volatility": 0.07287292028457264,
+        "sharpe": -0.662396984661876,
+        "max_drawdown": -0.5331671968379434,
+        "hit_rate": 0.42,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.03742715075209181,
+        "turnover": 0.889677654939048,
+        "hedge_turnover": 0.06980002026907652,
+        "cost": 0.0009036376589928635,
+        "borrow_financing": 0.0,
+        "active_return": -0.02638199584083907,
+        "tracking_error": 0.04979045802685227,
+        "information_ratio": -0.5298604770137104,
+        "IC": {
+          "n": 200,
+          "lags": 6,
+          "mean": -0.030127502403081055,
+          "se": 0.01741244891127635,
+          "t": -1.7302277558195964,
+          "coefficients": {
+            "intercept": -0.030127502403081055
+          },
+          "standard_errors": {
+            "intercept": 0.01741244891127635
+          },
+          "t_statistics": {
+            "intercept": -1.7302277558195964
+          }
+        },
+        "first_observed_return": "2010-01",
+        "requested_start": "2010-01",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      }
+    },
+    "A1-T": {
+      "full": {
+        "n": 231,
+        "mean_net_annual": -0.0428296033320454,
+        "volatility": 0.07403494065609646,
+        "sharpe": -0.5785052699777988,
+        "max_drawdown": -0.5618701940366052,
+        "hit_rate": 0.42857142857142855,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.03241569846672467,
+        "turnover": 0.8541692689155448,
+        "hedge_turnover": 0.06828068263924765,
+        "cost": 0.0008678254054433944,
+        "borrow_financing": 0.0,
+        "active_return": -0.026798608850879386,
+        "tracking_error": 0.04993525963707549,
+        "information_ratio": -0.5366670574189263,
+        "IC": {
+          "n": 231,
+          "lags": 6,
+          "mean": -0.030527963498667952,
+          "se": 0.017489453363089713,
+          "t": -1.745507012991905,
+          "coefficients": {
+            "intercept": -0.030527963498667952
+          },
+          "standard_errors": {
+            "intercept": 0.017489453363089713
+          },
+          "t_statistics": {
+            "intercept": -1.745507012991905
+          }
+        },
+        "first_observed_return": "2007-06",
+        "requested_start": "2004-05",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      },
+      "post_2010": {
+        "n": 200,
+        "mean_net_annual": -0.054786187774416586,
+        "volatility": 0.07549382573011869,
+        "sharpe": -0.7257042181207055,
+        "max_drawdown": -0.5375698527997606,
+        "hit_rate": 0.415,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.04433783797485521,
+        "turnover": 0.8568674702736925,
+        "hedge_turnover": 0.06914173178211061,
+        "cost": 0.0008706958166301144,
+        "borrow_financing": 0.0,
+        "active_return": -0.03148736152908442,
+        "tracking_error": 0.048811137355303534,
+        "information_ratio": -0.6450855938857403,
+        "IC": {
+          "n": 200,
+          "lags": 6,
+          "mean": -0.04264990773107138,
+          "se": 0.017225582618531573,
+          "t": -2.4759631459540814,
+          "coefficients": {
+            "intercept": -0.04264990773107138
+          },
+          "standard_errors": {
+            "intercept": 0.017225582618531573
+          },
+          "t_statistics": {
+            "intercept": -2.4759631459540814
+          }
+        },
+        "first_observed_return": "2010-01",
+        "requested_start": "2010-01",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      }
+    },
+    "A3": {
+      "full": {
+        "n": 231,
+        "mean_net_annual": -0.03313223823267593,
+        "volatility": 0.0715456586392836,
+        "sharpe": -0.4630922247808339,
+        "max_drawdown": -0.5207363363723596,
+        "hit_rate": 0.42424242424242425,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.021944631148999572,
+        "turnover": 0.917819628467374,
+        "hedge_turnover": 0.07240480919494563,
+        "cost": 0.0009323005903063631,
+        "borrow_financing": 0.0,
+        "active_return": -0.023277699535567263,
+        "tracking_error": 0.04924614564736677,
+        "information_ratio": -0.4726806378361093,
+        "IC": {
+          "n": 231,
+          "lags": 6,
+          "mean": -0.011338536928184303,
+          "se": 0.0178323662544376,
+          "t": -0.6358402898640946,
+          "coefficients": {
+            "intercept": -0.011338536928184303
+          },
+          "standard_errors": {
+            "intercept": 0.0178323662544376
+          },
+          "t_statistics": {
+            "intercept": -0.6358402898640946
+          }
+        },
+        "first_observed_return": "2007-06",
+        "requested_start": "2004-05",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      },
+      "post_2010": {
+        "n": 200,
+        "mean_net_annual": -0.044654973539753944,
+        "volatility": 0.07032540714102119,
+        "sharpe": -0.6349763955181776,
+        "max_drawdown": -0.4697194837343499,
+        "hit_rate": 0.405,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.03341486465664591,
+        "turnover": 0.922433447842821,
+        "hedge_turnover": 0.07121146208091321,
+        "cost": 0.0009366757402590037,
+        "borrow_financing": 0.0,
+        "active_return": -0.029006216396170105,
+        "tracking_error": 0.046840629479805954,
+        "information_ratio": -0.6192533430549932,
+        "IC": {
+          "n": 200,
+          "lags": 6,
+          "mean": -0.018727878283921,
+          "se": 0.018740009493574385,
+          "t": -0.9993526572301075,
+          "coefficients": {
+            "intercept": -0.018727878283921
+          },
+          "standard_errors": {
+            "intercept": 0.018740009493574385
+          },
+          "t_statistics": {
+            "intercept": -0.9993526572301075
+          }
+        },
+        "first_observed_return": "2010-01",
+        "requested_start": "2010-01",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      }
+    },
+    "A4": {
+      "full": {
+        "n": 231,
+        "mean_net_annual": -0.010422292276619663,
+        "volatility": 0.07821090141843615,
+        "sharpe": -0.13325881798573522,
+        "max_drawdown": -0.4342765778925811,
+        "hit_rate": 0.4675324675324675,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": 0.0005047167150448015,
+        "turnover": 0.8963577199910973,
+        "hedge_turnover": 0.07113181323803848,
+        "cost": 0.0009105840826387049,
+        "borrow_financing": 0.0,
+        "active_return": -0.011126291766979235,
+        "tracking_error": 0.047151462874145234,
+        "information_ratio": -0.23596917441728332,
+        "IC": {
+          "n": 231,
+          "lags": 6,
+          "mean": 0.00734403079032502,
+          "se": 0.018892036138287167,
+          "t": 0.38873685909595457,
+          "coefficients": {
+            "intercept": 0.00734403079032502
+          },
+          "standard_errors": {
+            "intercept": 0.018892036138287167
+          },
+          "t_statistics": {
+            "intercept": 0.38873685909595457
+          }
+        },
+        "first_observed_return": "2007-06",
+        "requested_start": "2004-05",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      },
+      "post_2010": {
+        "n": 200,
+        "mean_net_annual": -0.013572723792397108,
+        "volatility": 0.07505770691504371,
+        "sharpe": -0.18083051494978122,
+        "max_drawdown": -0.34652550526291814,
+        "hit_rate": 0.455,
+        "drawdown_note": "Funded NAV",
+        "mean_gross_annual": -0.0026243447574956476,
+        "turnover": 0.8980958478537618,
+        "hedge_turnover": 0.07134535860679868,
+        "cost": 0.0009123649195751216,
+        "borrow_financing": 0.0,
+        "active_return": -0.013736246690836527,
+        "tracking_error": 0.041595342189783516,
+        "information_ratio": -0.33023521307177445,
+        "IC": {
+          "n": 200,
+          "lags": 6,
+          "mean": -0.0001714905910207556,
+          "se": 0.019764633319348437,
+          "t": -0.00867663913870217,
+          "coefficients": {
+            "intercept": -0.0001714905910207556
+          },
+          "standard_errors": {
+            "intercept": 0.019764633319348437
+          },
+          "t_statistics": {
+            "intercept": -0.00867663913870217
+          }
+        },
+        "first_observed_return": "2010-01",
+        "requested_start": "2010-01",
+        "label": "Descriptive mixed pseudo-real-time research and ASOF sealed; unavailable burn-in excluded"
+      }
+    }
+  },
+  "drop_one_group": {
+    "1": {
+      "n": 142,
+      "mean_net_annual": 0.012725272135332023,
+      "volatility": 0.07694672252087802,
+      "sharpe": 0.16537770184921474,
+      "max_drawdown": -0.1680427512014726,
+      "hit_rate": 0.5140845070422535,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.023867680218390377,
+      "turnover": 0.9157767337967799,
+      "hedge_turnover": 0.06378636562374819,
+      "cost": 0.0009285340069215295,
+      "borrow_financing": 0.0,
+      "active_return": 0.014905406120671821,
+      "tracking_error": 0.043420745600789346,
+      "information_ratio": 0.3432784470748668,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.0135416730500143,
+        "se": 0.02342230010233156,
+        "t": 0.5781529991013266,
+        "coefficients": {
+          "intercept": 0.0135416730500143
+        },
+        "standard_errors": {
+          "intercept": 0.02342230010233156
+        },
+        "t_statistics": {
+          "intercept": 0.5781529991013266
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.0014572702371465139,
+        "se": 0.0017091434911312453,
+        "t": 0.8526318853322129,
+        "coefficients": {
+          "intercept": 0.0014572702371465139,
+          "Mkt-RF": -0.046570030312050426,
+          "SMB": 0.008060914034790825,
+          "HML": -0.05219913233516869,
+          "RMW": 0.11170612751052218,
+          "CMA": 0.043194566550879096,
+          "Mom": -0.005712660088579739,
+          "group_momentum": 0.0548157561820368
+        },
+        "standard_errors": {
+          "intercept": 0.0017091434911312453,
+          "Mkt-RF": 0.04702075688164021,
+          "SMB": 0.12050154050787105,
+          "HML": 0.0665268766754093,
+          "RMW": 0.12385451001816024,
+          "CMA": 0.08797063778709477,
+          "Mom": 0.05974604131474614,
+          "group_momentum": 0.08507577313785235
+        },
+        "t_statistics": {
+          "intercept": 0.8526318853322129,
+          "Mkt-RF": -0.9904143063727293,
+          "SMB": 0.06689469695422104,
+          "HML": -0.7846322410392572,
+          "RMW": 0.9019140885070976,
+          "CMA": 0.4910111787005335,
+          "Mom": -0.09561570880462295,
+          "group_momentum": 0.6443168737734092
+        }
+      }
+    },
+    "2": {
+      "n": 142,
+      "mean_net_annual": 0.0027899451897785976,
+      "volatility": 0.08362669314843499,
+      "sharpe": 0.03336189779531907,
+      "max_drawdown": -0.2768946053133726,
+      "hit_rate": 0.5070422535211268,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.014303257871181727,
+      "turnover": 0.9455385775113075,
+      "hedge_turnover": 0.06952072969476605,
+      "cost": 0.0009594427234502611,
+      "borrow_financing": 0.0,
+      "active_return": -0.008528477886194572,
+      "tracking_error": 0.04263098025129451,
+      "information_ratio": -0.20005352529832107,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.0028533636909972276,
+        "se": 0.025083782154337285,
+        "t": 0.11375332768562763,
+        "coefficients": {
+          "intercept": 0.0028533636909972276
+        },
+        "standard_errors": {
+          "intercept": 0.025083782154337285
+        },
+        "t_statistics": {
+          "intercept": 0.11375332768562763
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.00012031019245904701,
+        "se": 0.0017607145626840968,
+        "t": -0.06833032168237525,
+        "coefficients": {
+          "intercept": -0.00012031019245904701,
+          "Mkt-RF": 0.0073897369583311185,
+          "SMB": 0.08503245273055321,
+          "HML": -0.07116986857131381,
+          "RMW": 0.16371174264052907,
+          "CMA": 0.026462436763525457,
+          "Mom": 0.048226103492590856,
+          "group_momentum": 0.1956934385840685
+        },
+        "standard_errors": {
+          "intercept": 0.0017607145626840968,
+          "Mkt-RF": 0.045909221457779745,
+          "SMB": 0.11270043256138283,
+          "HML": 0.1428013859264858,
+          "RMW": 0.11707118229709972,
+          "CMA": 0.16829423652508702,
+          "Mom": 0.08609149397751859,
+          "group_momentum": 0.1023887032436779
+        },
+        "t_statistics": {
+          "intercept": -0.06833032168237525,
+          "Mkt-RF": 0.1609641096860478,
+          "SMB": 0.7544997902669085,
+          "HML": -0.49838359837734403,
+          "RMW": 1.398394886156239,
+          "CMA": 0.15723911471906404,
+          "Mom": 0.5601726868067167,
+          "group_momentum": 1.9112795883187614
+        }
+      }
+    },
+    "3": {
+      "n": 142,
+      "mean_net_annual": -0.005049036599053582,
+      "volatility": 0.0803761927726806,
+      "sharpe": -0.0628175635705119,
+      "max_drawdown": -0.29689338874210525,
+      "hit_rate": 0.5140845070422535,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.006515268995552128,
+      "turnover": 0.950305823779181,
+      "hedge_turnover": 0.06693154552313922,
+      "cost": 0.0009636921328838087,
+      "borrow_financing": 0.0,
+      "active_return": -0.003210094203014736,
+      "tracking_error": 0.042667426995633514,
+      "information_ratio": -0.07523524217533083,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.01054186460110599,
+        "se": 0.027495812436107558,
+        "t": -0.3833989130382047,
+        "coefficients": {
+          "intercept": -0.01054186460110599
+        },
+        "standard_errors": {
+          "intercept": 0.027495812436107558
+        },
+        "t_statistics": {
+          "intercept": -0.3833989130382047
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.00019749372793872343,
+        "se": 0.001854065975172684,
+        "t": -0.10651925583194485,
+        "coefficients": {
+          "intercept": -0.00019749372793872343,
+          "Mkt-RF": -0.038888136488751154,
+          "SMB": -0.037811881179866245,
+          "HML": -0.1156067695676002,
+          "RMW": 0.11277413114371991,
+          "CMA": 0.17208762386615306,
+          "Mom": 0.012099230028912743,
+          "group_momentum": 0.06754467272671255
+        },
+        "standard_errors": {
+          "intercept": 0.001854065975172684,
+          "Mkt-RF": 0.07103705945660366,
+          "SMB": 0.0936756253765406,
+          "HML": 0.062212967178116814,
+          "RMW": 0.11279964045152742,
+          "CMA": 0.09822330374034366,
+          "Mom": 0.07497958576714213,
+          "group_momentum": 0.07424782642914729
+        },
+        "t_statistics": {
+          "intercept": -0.10651925583194485,
+          "Mkt-RF": -0.5474344910420709,
+          "SMB": -0.40364695755034224,
+          "HML": -1.858242337752771,
+          "RMW": 0.9997738529333481,
+          "CMA": 1.7520040287086251,
+          "Mom": 0.16136698949615855,
+          "group_momentum": 0.9097191928058476
+        }
+      }
+    },
+    "4": {
+      "n": 142,
+      "mean_net_annual": -0.011927285521828226,
+      "volatility": 0.09448010292502455,
+      "sharpe": -0.12624124183367177,
+      "max_drawdown": -0.3673091899901154,
+      "hit_rate": 0.49295774647887325,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": -0.0006349977350457408,
+      "turnover": 0.9274418167744793,
+      "hedge_turnover": 0.06791082728697174,
+      "cost": 0.0009410239822318739,
+      "borrow_financing": 0.0,
+      "active_return": -0.010246532849235533,
+      "tracking_error": 0.04906518014308785,
+      "information_ratio": -0.20883512134988122,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.017949453121141525,
+        "se": 0.025954071072568467,
+        "t": -0.6915852650227489,
+        "coefficients": {
+          "intercept": -0.017949453121141525
+        },
+        "standard_errors": {
+          "intercept": 0.025954071072568467
+        },
+        "t_statistics": {
+          "intercept": -0.6915852650227489
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.0011250660873143538,
+        "se": 0.0019568777794175853,
+        "t": -0.5749291545684581,
+        "coefficients": {
+          "intercept": -0.0011250660873143538,
+          "Mkt-RF": -0.03653897862920204,
+          "SMB": -0.04376036488211564,
+          "HML": -0.1917731127165314,
+          "RMW": 0.13513181489749213,
+          "CMA": 0.06826710111850058,
+          "Mom": 0.04713416603612969,
+          "group_momentum": 0.06377337929726899
+        },
+        "standard_errors": {
+          "intercept": 0.0019568777794175853,
+          "Mkt-RF": 0.08089280877872786,
+          "SMB": 0.11001332235580662,
+          "HML": 0.10245895973538927,
+          "RMW": 0.14683311910761485,
+          "CMA": 0.11468007295092936,
+          "Mom": 0.09184710350129932,
+          "group_momentum": 0.09807115447912566
+        },
+        "t_statistics": {
+          "intercept": -0.5749291545684581,
+          "Mkt-RF": -0.4516962531137945,
+          "SMB": -0.3977733236760659,
+          "HML": -1.8717066151345385,
+          "RMW": 0.9203088221428657,
+          "CMA": 0.5952830283576075,
+          "Mom": 0.5131807562713494,
+          "group_momentum": 0.6502766245179982
+        }
+      }
+    },
+    "5": {
+      "n": 142,
+      "mean_net_annual": 0.009532643015351363,
+      "volatility": 0.08983659920500521,
+      "sharpe": 0.10611090690997857,
+      "max_drawdown": -0.21557550892576727,
+      "hit_rate": 0.5563380281690141,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.020625238386229636,
+      "turnover": 0.9113243529854572,
+      "hedge_turnover": 0.06529297293865648,
+      "cost": 0.0009243829475731884,
+      "borrow_financing": 0.0,
+      "active_return": -0.009808431715139159,
+      "tracking_error": 0.04627600603887128,
+      "information_ratio": -0.21195501847977535,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.001939929072293121,
+        "se": 0.024885371009533704,
+        "t": 0.07795459716272364,
+        "coefficients": {
+          "intercept": 0.001939929072293121
+        },
+        "standard_errors": {
+          "intercept": 0.024885371009533704
+        },
+        "t_statistics": {
+          "intercept": 0.07795459716272364
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.000578607480660995,
+        "se": 0.0021126989872879243,
+        "t": 0.27387123491915644,
+        "coefficients": {
+          "intercept": 0.000578607480660995,
+          "Mkt-RF": -0.009838783665299108,
+          "SMB": 0.01859837764137299,
+          "HML": -0.1908343594562456,
+          "RMW": 0.1439520822410483,
+          "CMA": 0.10562147306700195,
+          "Mom": 0.03971385853903231,
+          "group_momentum": 0.07501031776825133
+        },
+        "standard_errors": {
+          "intercept": 0.0021126989872879243,
+          "Mkt-RF": 0.06008460015206892,
+          "SMB": 0.12350950052733015,
+          "HML": 0.11975074835165607,
+          "RMW": 0.1489835813781266,
+          "CMA": 0.14393362093128387,
+          "Mom": 0.07934069202415647,
+          "group_momentum": 0.08389511448235543
+        },
+        "t_statistics": {
+          "intercept": 0.27387123491915644,
+          "Mkt-RF": -0.163748841473489,
+          "SMB": 0.15058256702493542,
+          "HML": -1.593596383179567,
+          "RMW": 0.9662278279892592,
+          "CMA": 0.7338207180755029,
+          "Mom": 0.5005484263603451,
+          "group_momentum": 0.8940963753500483
+        }
+      }
+    },
+    "6": {
+      "n": 142,
+      "mean_net_annual": 0.005257682963525779,
+      "volatility": 0.09303196763078028,
+      "sharpe": 0.05651479913218816,
+      "max_drawdown": -0.22987715695726652,
+      "hit_rate": 0.5422535211267606,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.015651381304035435,
+      "turnover": 0.8543666799084341,
+      "hedge_turnover": 0.05887424233685172,
+      "cost": 0.0008661415283758045,
+      "borrow_financing": 0.0,
+      "active_return": -0.010332750324664144,
+      "tracking_error": 0.05310295946061252,
+      "information_ratio": -0.1945795569515884,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.006502009181783973,
+        "se": 0.027546995827224783,
+        "t": -0.23603333091436476,
+        "coefficients": {
+          "intercept": -0.006502009181783973
+        },
+        "standard_errors": {
+          "intercept": 0.027546995827224783
+        },
+        "t_statistics": {
+          "intercept": -0.23603333091436476
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.0005035438594984026,
+        "se": 0.0020377767279112545,
+        "t": 0.24710452946164574,
+        "coefficients": {
+          "intercept": 0.0005035438594984026,
+          "Mkt-RF": -0.06680910120069714,
+          "SMB": 0.035172044358520116,
+          "HML": -0.289719707756536,
+          "RMW": 0.2610402316491934,
+          "CMA": 0.14622545840771967,
+          "Mom": 0.04064770021778712,
+          "group_momentum": 0.007777207494086377
+        },
+        "standard_errors": {
+          "intercept": 0.0020377767279112545,
+          "Mkt-RF": 0.0814717037595326,
+          "SMB": 0.11704216581467297,
+          "HML": 0.08417349892746905,
+          "RMW": 0.13098351558663412,
+          "CMA": 0.09577034565152824,
+          "Mom": 0.08283534909296619,
+          "group_momentum": 0.09183989377838878
+        },
+        "t_statistics": {
+          "intercept": 0.24710452946164574,
+          "Mkt-RF": -0.8200282812040756,
+          "SMB": 0.300507463388983,
+          "HML": -3.4419349492193834,
+          "RMW": 1.9929243041009854,
+          "CMA": 1.5268344017445477,
+          "Mom": 0.4907047614680559,
+          "group_momentum": 0.08468223529148358
+        }
+      }
+    },
+    "7": {
+      "n": 142,
+      "mean_net_annual": 0.004034998891713264,
+      "volatility": 0.090073919230534,
+      "sharpe": 0.044796528519938615,
+      "max_drawdown": -0.2283616510904587,
+      "hit_rate": 0.5211267605633803,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.015218480507012855,
+      "turnover": 0.9199925171530942,
+      "hedge_turnover": 0.0598214206093582,
+      "cost": 0.0009319568012749658,
+      "borrow_financing": 0.0,
+      "active_return": -0.004148769171938806,
+      "tracking_error": 0.04540915676655251,
+      "information_ratio": -0.09136415356196854,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.002664578146023546,
+        "se": 0.026361433340552454,
+        "t": 0.10107865196861503,
+        "coefficients": {
+          "intercept": 0.002664578146023546
+        },
+        "standard_errors": {
+          "intercept": 0.026361433340552454
+        },
+        "t_statistics": {
+          "intercept": 0.10107865196861503
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.000353769202197941,
+        "se": 0.001971337367563088,
+        "t": 0.17945644820564657,
+        "coefficients": {
+          "intercept": 0.000353769202197941,
+          "Mkt-RF": -0.03576839254044618,
+          "SMB": 0.11570941647160689,
+          "HML": -0.21966796418035675,
+          "RMW": 0.1719662282179284,
+          "CMA": 0.15859048945071577,
+          "Mom": 0.06228669910714768,
+          "group_momentum": 0.06165110215015947
+        },
+        "standard_errors": {
+          "intercept": 0.001971337367563088,
+          "Mkt-RF": 0.08359106948015135,
+          "SMB": 0.14601733306042344,
+          "HML": 0.10234932939260455,
+          "RMW": 0.14911027019823828,
+          "CMA": 0.10204018517880589,
+          "Mom": 0.09799688332486188,
+          "group_momentum": 0.10510647916183369
+        },
+        "t_statistics": {
+          "intercept": 0.17945644820564657,
+          "Mkt-RF": -0.4278972952839102,
+          "SMB": 0.7924361721065345,
+          "HML": -2.1462569953704973,
+          "RMW": 1.1532822520494646,
+          "CMA": 1.5541964097067866,
+          "Mom": 0.6355987761433787,
+          "group_momentum": 0.5865585322788193
+        }
+      }
+    },
+    "8": {
+      "n": 142,
+      "mean_net_annual": 0.005525149290910948,
+      "volatility": 0.07734780392355026,
+      "sharpe": 0.0714325295695783,
+      "max_drawdown": -0.24435809437086942,
+      "hit_rate": 0.5140845070422535,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.016947855815952255,
+      "turnover": 0.9386522232002201,
+      "hedge_turnover": 0.06619993609944538,
+      "cost": 0.0009518922104201092,
+      "borrow_financing": 0.0,
+      "active_return": -4.0711500864215524e-05,
+      "tracking_error": 0.03918908566311396,
+      "information_ratio": -0.001038847938790634,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.014712475816771906,
+        "se": 0.028026903017123836,
+        "t": -0.5249411898197563,
+        "coefficients": {
+          "intercept": -0.014712475816771906
+        },
+        "standard_errors": {
+          "intercept": 0.028026903017123836
+        },
+        "t_statistics": {
+          "intercept": -0.5249411898197563
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": 3.251647638557705e-05,
+        "se": 0.00184799056656511,
+        "t": 0.01759558569934475,
+        "coefficients": {
+          "intercept": 3.251647638557705e-05,
+          "Mkt-RF": 0.03752628323261621,
+          "SMB": -0.05626690370759466,
+          "HML": -0.10509890065181574,
+          "RMW": -0.036564021236721006,
+          "CMA": 0.2396684273493933,
+          "Mom": 0.06542231236858059,
+          "group_momentum": 0.07646556475911907
+        },
+        "standard_errors": {
+          "intercept": 0.00184799056656511,
+          "Mkt-RF": 0.06799581083853412,
+          "SMB": 0.08167339175632182,
+          "HML": 0.07582290483446433,
+          "RMW": 0.1028368545790568,
+          "CMA": 0.10270606051238512,
+          "Mom": 0.06544443892677007,
+          "group_momentum": 0.08277452883257594
+        },
+        "t_statistics": {
+          "intercept": 0.01759558569934475,
+          "Mkt-RF": 0.5518911057877932,
+          "SMB": -0.6889257626947933,
+          "HML": -1.3861101850590718,
+          "RMW": -0.3555536717491886,
+          "CMA": 2.33353734096823,
+          "Mom": 0.9996619031570545,
+          "group_momentum": 0.9237813351228166
+        }
+      }
+    },
+    "9": {
+      "n": 142,
+      "mean_net_annual": 0.004501615096201304,
+      "volatility": 0.08524346163453227,
+      "sharpe": 0.05280891941602818,
+      "max_drawdown": -0.233045349661131,
+      "hit_rate": 0.5211267605633803,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.016434991591695956,
+      "turnover": 0.9803131169673002,
+      "hedge_turnover": 0.07067462161960647,
+      "cost": 0.0009944480412912215,
+      "borrow_financing": 0.0,
+      "active_return": -0.01399080433737125,
+      "tracking_error": 0.046127026353737076,
+      "information_ratio": -0.3033103463049869,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.010931520737903398,
+        "se": 0.024376511518177543,
+        "t": 0.4484448371438125,
+        "coefficients": {
+          "intercept": 0.010931520737903398
+        },
+        "standard_errors": {
+          "intercept": 0.024376511518177543
+        },
+        "t_statistics": {
+          "intercept": 0.4484448371438125
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.0004707843238571216,
+        "se": 0.0017107156857640688,
+        "t": 0.27519729185557323,
+        "coefficients": {
+          "intercept": 0.0004707843238571216,
+          "Mkt-RF": -0.05265714907698417,
+          "SMB": 0.0029958846132912137,
+          "HML": -0.06535704465977754,
+          "RMW": 0.16460151463761377,
+          "CMA": -0.014934351017190345,
+          "Mom": -0.004894851496769711,
+          "group_momentum": 0.1428684389020393
+        },
+        "standard_errors": {
+          "intercept": 0.0017107156857640688,
+          "Mkt-RF": 0.0588505287475143,
+          "SMB": 0.11901084295784664,
+          "HML": 0.10741228177264353,
+          "RMW": 0.13786747255254247,
+          "CMA": 0.13466435202419158,
+          "Mom": 0.08931689227314166,
+          "group_momentum": 0.0726224018736414
+        },
+        "t_statistics": {
+          "intercept": 0.27519729185557323,
+          "Mkt-RF": -0.8947608491828254,
+          "SMB": 0.025173207237531702,
+          "HML": -0.6084690091410301,
+          "RMW": 1.193911164033871,
+          "CMA": -0.11090055231920237,
+          "Mom": -0.05480319984489243,
+          "group_momentum": 1.967277798806789
+        }
+      }
+    },
+    "10": {
+      "n": 142,
+      "mean_net_annual": -0.015965300358785357,
+      "volatility": 0.0868988448542965,
+      "sharpe": -0.18372281456162523,
+      "max_drawdown": -0.3667625302016688,
+      "hit_rate": 0.528169014084507,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": -0.005530555451519257,
+      "turnover": 0.8592505848955864,
+      "hedge_turnover": 0.05155745354960969,
+      "cost": 0.0008695620756055083,
+      "borrow_financing": 0.0,
+      "active_return": -0.015672096153326157,
+      "tracking_error": 0.04519513148884489,
+      "information_ratio": -0.3467651412231063,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.017718823120346654,
+        "se": 0.02156575034951716,
+        "t": -0.8216186700289501,
+        "coefficients": {
+          "intercept": -0.017718823120346654
+        },
+        "standard_errors": {
+          "intercept": 0.02156575034951716
+        },
+        "t_statistics": {
+          "intercept": -0.8216186700289501
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.0015716480412937745,
+        "se": 0.002023155691940954,
+        "t": -0.7768300025323227,
+        "coefficients": {
+          "intercept": -0.0015716480412937745,
+          "Mkt-RF": -0.015287969925869763,
+          "SMB": 0.07981875537620269,
+          "HML": -0.3130887817489466,
+          "RMW": 0.16415498128210285,
+          "CMA": 0.13471176416089953,
+          "Mom": 0.09606568713093619,
+          "group_momentum": -0.042122167590415496
+        },
+        "standard_errors": {
+          "intercept": 0.002023155691940954,
+          "Mkt-RF": 0.08043290305207032,
+          "SMB": 0.11370934648710498,
+          "HML": 0.093760238070962,
+          "RMW": 0.12214608403880814,
+          "CMA": 0.08694487988125169,
+          "Mom": 0.08954544967272182,
+          "group_momentum": 0.09415363611799253
+        },
+        "t_statistics": {
+          "intercept": -0.7768300025323227,
+          "Mkt-RF": -0.19007109461127744,
+          "SMB": 0.7019542178553845,
+          "HML": -3.339249005660447,
+          "RMW": 1.343923405927182,
+          "CMA": 1.5493927226639141,
+          "Mom": 1.0728148385210536,
+          "group_momentum": -0.4473769609665245
+        }
+      }
+    },
+    "11": {
+      "n": 142,
+      "mean_net_annual": -0.017722983279314784,
+      "volatility": 0.0908735430684354,
+      "sharpe": -0.19502907756075816,
+      "max_drawdown": -0.3225515889237962,
+      "hit_rate": 0.5070422535211268,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": -0.006513474331010606,
+      "turnover": 0.9208355073016379,
+      "hedge_turnover": 0.06645119195188395,
+      "cost": 0.0009341257456920145,
+      "borrow_financing": 0.0,
+      "active_return": -0.01799839755311257,
+      "tracking_error": 0.049018244172364174,
+      "information_ratio": -0.3671775245523752,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.02092519939745085,
+        "se": 0.026549146742892337,
+        "t": -0.7881684334376163,
+        "coefficients": {
+          "intercept": -0.02092519939745085
+        },
+        "standard_errors": {
+          "intercept": 0.026549146742892337
+        },
+        "t_statistics": {
+          "intercept": -0.7881684334376163
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.0014013841641109612,
+        "se": 0.0019628959395992626,
+        "t": -0.7139370640284999,
+        "coefficients": {
+          "intercept": -0.0014013841641109612,
+          "Mkt-RF": -0.032315649815013024,
+          "SMB": 0.05163117560182018,
+          "HML": -0.25399930289617456,
+          "RMW": 0.14216670529473138,
+          "CMA": 0.0729911619960819,
+          "Mom": 0.0035417068533935177,
+          "group_momentum": 0.06741247628801335
+        },
+        "standard_errors": {
+          "intercept": 0.0019628959395992626,
+          "Mkt-RF": 0.07106896755811501,
+          "SMB": 0.13502509032614482,
+          "HML": 0.10110196407854256,
+          "RMW": 0.14119421109948013,
+          "CMA": 0.11242458023504306,
+          "Mom": 0.09470982724089565,
+          "group_momentum": 0.08833608598371279
+        },
+        "t_statistics": {
+          "intercept": -0.7139370640284999,
+          "Mkt-RF": -0.45470830554260755,
+          "SMB": 0.38238208526362205,
+          "HML": -2.512308294019406,
+          "RMW": 1.0068876350360147,
+          "CMA": 0.6492455817356064,
+          "Mom": 0.03739534699377227,
+          "group_momentum": 0.7631363280057791
+        }
+      }
+    },
+    "12": {
+      "n": 142,
+      "mean_net_annual": 0.007747651744509693,
+      "volatility": 0.07739084301630089,
+      "sharpe": 0.10011070357351966,
+      "max_drawdown": -0.22757748213232565,
+      "hit_rate": 0.5492957746478874,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": 0.019718053244268716,
+      "turnover": 0.9824101672527584,
+      "hedge_turnover": 0.07561645530246776,
+      "cost": 0.0009975334583132523,
+      "borrow_financing": 0.0,
+      "active_return": -0.004627881328460097,
+      "tracking_error": 0.03717284357012693,
+      "information_ratio": -0.12449629578995092,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.005288606662674108,
+        "se": 0.02712022232176686,
+        "t": 0.19500602170320114,
+        "coefficients": {
+          "intercept": 0.005288606662674108
+        },
+        "standard_errors": {
+          "intercept": 0.02712022232176686
+        },
+        "t_statistics": {
+          "intercept": 0.19500602170320114
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": 0.0007404105665263928,
+        "se": 0.0016529793519292637,
+        "t": 0.44792487314631463,
+        "coefficients": {
+          "intercept": 0.0007404105665263928,
+          "Mkt-RF": -0.04843665883566767,
+          "SMB": -0.049847599537966455,
+          "HML": -0.12522043731978233,
+          "RMW": 0.1570067595236895,
+          "CMA": 0.14928338026971819,
+          "Mom": -3.405894190967873e-05,
+          "group_momentum": 0.06007874635226285
+        },
+        "standard_errors": {
+          "intercept": 0.0016529793519292637,
+          "Mkt-RF": 0.06260066766039454,
+          "SMB": 0.09526322142269593,
+          "HML": 0.07774932041945308,
+          "RMW": 0.11468861337801092,
+          "CMA": 0.09113339064851482,
+          "Mom": 0.07807079572422623,
+          "group_momentum": 0.052115996462486075
+        },
+        "t_statistics": {
+          "intercept": 0.44792487314631463,
+          "Mkt-RF": -0.7737402913725153,
+          "SMB": -0.5232617456508829,
+          "HML": -1.6105663257791236,
+          "RMW": 1.3689829783380412,
+          "CMA": 1.6380755638235547,
+          "Mom": -0.00043625713807230815,
+          "group_momentum": 1.152788979013545
+        }
+      }
+    },
+    "13": {
+      "n": 142,
+      "mean_net_annual": -0.024891577562757006,
+      "volatility": 0.09099988151240657,
+      "sharpe": -0.2735341755292658,
+      "max_drawdown": -0.41289154620484125,
+      "hit_rate": 0.4788732394366197,
+      "drawdown_note": "Funded NAV",
+      "mean_gross_annual": -0.013895716803020718,
+      "turnover": 0.902184450998572,
+      "hedge_turnover": 0.07068639489725657,
+      "cost": 0.0009163217299780236,
+      "borrow_financing": 0.0,
+      "active_return": -0.01761258402885889,
+      "tracking_error": 0.050393977174132645,
+      "information_ratio": -0.3494977974848049,
+      "IC": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.00876536407473934,
+        "se": 0.026718434280823645,
+        "t": -0.32806428635043244,
+        "coefficients": {
+          "intercept": -0.00876536407473934
+        },
+        "standard_errors": {
+          "intercept": 0.026718434280823645
+        },
+        "t_statistics": {
+          "intercept": -0.32806428635043244
+        }
+      },
+      "alpha": {
+        "n": 142,
+        "lags": 6,
+        "mean": -0.0024302960543909984,
+        "se": 0.0021214950955132056,
+        "t": -1.145558177122767,
+        "coefficients": {
+          "intercept": -0.0024302960543909984,
+          "Mkt-RF": -0.013387355956768371,
+          "SMB": 0.031808660634910974,
+          "HML": -0.145942564509257,
+          "RMW": 0.14275564631644444,
+          "CMA": -0.01748459472630879,
+          "Mom": 0.06709916233554122,
+          "group_momentum": 0.09845193090307396
+        },
+        "standard_errors": {
+          "intercept": 0.0021214950955132056,
+          "Mkt-RF": 0.05947767022911778,
+          "SMB": 0.11649144985115292,
+          "HML": 0.114006757591412,
+          "RMW": 0.1258489280570529,
+          "CMA": 0.14795781696060806,
+          "Mom": 0.08811162013100023,
+          "group_momentum": 0.09807716358535427
+        },
+        "t_statistics": {
+          "intercept": -1.145558177122767,
+          "Mkt-RF": -0.22508205020805408,
+          "SMB": 0.27305575366736806,
+          "HML": -1.2801220523462258,
+          "RMW": 1.1343413767634714,
+          "CMA": -0.11817283524103257,
+          "Mom": 0.761524555283189,
+          "group_momentum": 1.0038211475946033
+        }
+      }
+    }
+  },
+  "group_profit_share": 30.80433933508715,
+  "cost_breakeven_bps": 10.667251528856365,
+  "gate": {
+    "primary": "A4",
+    "criteria": {
+      "G1": true,
+      "G2": false,
+      "G3": false,
+      "G4": false,
+      "G5": false
+    },
+    "verdict": "Do not implement",
+    "failed": [
+      "G2",
+      "G3",
+      "G4",
+      "G5"
+    ],
+    "power": "142 sealed months require roughly 0.6 annualized Sharpe for IID t\u22482; a null does not rule out a smaller effect."
+  }
+}

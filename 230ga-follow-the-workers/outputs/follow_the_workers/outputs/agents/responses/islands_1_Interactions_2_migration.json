@@ -1,0 +1,42 @@
+{
+  "request_hash": "d3a08b070fe4f60fa57fb726e5ed9e80f708a55eecd0a37852039e855c0b3383",
+  "envelope": {
+    "response": "**Migration report**\n\n**What failed:** My first feature multiplied a standardized three-month change in one flow rate by a standardized wage-level momentum, both on a five-year window. It was valid, but had roughly 51% coverage and essentially zero predictive power. Mean rank correlation was about zero, the t-statistic was near zero, and results were flat whether the common index was low or high. It was also nearly uncorrelated with the baseline features, so it added no known signal.\n\n**Second failure:** My second attempt was rejected as invalid. I used a numeric constant as a ratio numerator, which is not an allowed operation or variable.\n\n**Lessons:** Use only listed variables and operations. Long rolling windows cut coverage. Next I will try shorter windows, or regime conditioning on the common index instead of a plain product.",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 709,
+      "cache_creation_input_tokens": 1247,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 265,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1247,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.009056000000000002,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "d3a08b070fe4f60fa57fb726e5ed9e80f708a55eecd0a37852039e855c0b3383"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "request_hash": "637c814cbd6a6c8814570fa2f385191e1f117d9ea8e967dfb1e9eba088484d60",
+  "request": {
+    "call_id": "connection",
+    "kind": "connection_test",
+    "requested_model": "claude-sonnet-5-5",
+    "system": "Return only the exact JSON requested by the user. Do not use tools.",
+    "prompt": "Return exactly {\"status\":\"ready\"}."
+  }
+}

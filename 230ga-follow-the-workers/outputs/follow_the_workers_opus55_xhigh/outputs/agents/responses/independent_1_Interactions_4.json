@@ -1,0 +1,42 @@
+{
+  "request_hash": "806215fdbbf7a698d703b6ec8af8fcf049267aa237688d4c77245c2623516304",
+  "envelope": {
+    "response": "{\"name\": \"T_scaled_V03_minus_V04_momentum\", \"hypothesis\": \"Groups whose V03 flow rate rises faster than their V04 flow rate, relative to peers over three months, earn higher next-month relative returns; scaling by T should strengthen predictiveness when T is elevated.\", \"falsified_if\": \"Mean rank IC is non-positive, HAC t-statistic below 2, or high-T IC not exceeding low-T IC over the development sample.\", \"expression\": \"withT(spread(chg(V03,3),chg(V04,3)))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 954,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1308,
+      "output_tokens": 1595,
+      "output_tokens_details": {
+        "thinking_tokens": 1405
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0359776,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "806215fdbbf7a698d703b6ec8af8fcf049267aa237688d4c77245c2623516304"
+  }
+}

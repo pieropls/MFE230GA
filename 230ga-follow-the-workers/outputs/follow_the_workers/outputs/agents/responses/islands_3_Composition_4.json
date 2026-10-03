@@ -1,0 +1,42 @@
+{
+  "request_hash": "5a6d59705d2367128677dd4aa1c37b736769292764380a80fc54af307b61b738",
+  "envelope": {
+    "response": "{\"name\":\"composition_wage_hours_flow_v03_spread\",\"hypothesis\":\"Groups whose flow rate V03 is low relative to hourly wage V05 on a cross-sectional basis, smoothed over 12 months, have higher next-month returns, because a low-turnover, high-pay composition signals stability. Expect positive rank IC.\",\"falsified_if\":\"Mean rank IC against next-month returns is zero or negative, or the top-minus-bottom tercile return spread is not positive in development data.\",\"expression\":\"mavg(spread(V05,V03),12)\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 952,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1276,
+      "output_tokens": 190,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0040592,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "5a6d59705d2367128677dd4aa1c37b736769292764380a80fc54af307b61b738"
+  }
+}

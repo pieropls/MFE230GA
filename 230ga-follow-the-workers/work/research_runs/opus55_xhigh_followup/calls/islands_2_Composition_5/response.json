@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"V03_level_shift_3m_lowT\", \"hypothesis\": \"Both V03/V02 and V03/V04 shifts worked in low-T regimes, suggesting V03 drives the composition signal. Groups with larger three-month increases in V03 alone should earn higher next-month relative returns when T is low.\", \"falsified_if\": \"Low-T mean rank IC is at or below 0.05, or the HAC t-statistic is below 2.0 in development.\", \"expression\": \"regime(chg(V03,3),\\\"low\\\")\"}",
+  "model": "claude-opus-5-5",
+  "tokens": {
+    "input_tokens": 1977,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1307,
+    "output_tokens": 1658,
+    "output_tokens_details": {
+      "thinking_tokens": 1479
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0413294,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-opus-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "e200b69269280aab68a6a952287d7f6b2ff7a15773f5839ea2721db5ee543ee5"
+}

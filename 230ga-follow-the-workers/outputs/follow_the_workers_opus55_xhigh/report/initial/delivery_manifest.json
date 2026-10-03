@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-02T08:05:15.940826+00:00",
+  "exploratory_followup": true,
+  "presentation_only": true,
+  "evaluation_rerun": false,
+  "figure_count": 12,
+  "report_sha256": "66857639b6a43ca4ac23e36ca611c5f25e31a21ea63b88257c5637c7b426fe22",
+  "result_sha256": "90181738ab660bf13a032cff024247e3cad0df56a9676bbfcccf5f8295ce7a35",
+  "baseline_result_sha256": "a6a09b02013e25407a45ad6f4631d86e53fefdbeb75ddf543b173e8c560302ed",
+  "remaining_team_work": [
+    "Complete team critique",
+    "Review final layout and submission requirements"
+  ],
+  "interaction_log_sha256": "be66ffbb353739a94ef5b984aee51d9eae7e0ad135268fbc8b5c2c0a6743d247",
+  "validation_sha256": "eea1c31093ff75eae205490ccde5ee397e862317eb5e1bc4fc04299cf0c855d9"
+}

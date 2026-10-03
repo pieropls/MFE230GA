@@ -1,0 +1,548 @@
+[
+  {
+    "series_id": "CES2000000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:22.801660+00:00"
+  },
+  {
+    "series_id": "CEU1000000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:23.634570+00:00"
+  },
+  {
+    "series_id": "CEU1000000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:24.580336+00:00"
+  },
+  {
+    "series_id": "CEU2000000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:25.678285+00:00"
+  },
+  {
+    "series_id": "CEU3100000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:26.689794+00:00"
+  },
+  {
+    "series_id": "CEU3100000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:27.638659+00:00"
+  },
+  {
+    "series_id": "CEU3200000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:28.523196+00:00"
+  },
+  {
+    "series_id": "CEU3200000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:29.401717+00:00"
+  },
+  {
+    "series_id": "CEU4142000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:30.524419+00:00"
+  },
+  {
+    "series_id": "CEU4142000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:31.471301+00:00"
+  },
+  {
+    "series_id": "CEU4200000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:32.391797+00:00"
+  },
+  {
+    "series_id": "CEU4200000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:33.276690+00:00"
+  },
+  {
+    "series_id": "CEU4300000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:34.127133+00:00"
+  },
+  {
+    "series_id": "CEU4300000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:35.007329+00:00"
+  },
+  {
+    "series_id": "CEU5000000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:36.174444+00:00"
+  },
+  {
+    "series_id": "CEU5000000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:37.051689+00:00"
+  },
+  {
+    "series_id": "CEU5500000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:37.954454+00:00"
+  },
+  {
+    "series_id": "CEU5500000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:38.953859+00:00"
+  },
+  {
+    "series_id": "CEU6000000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:39.814236+00:00"
+  },
+  {
+    "series_id": "CEU6000000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:40.850899+00:00"
+  },
+  {
+    "series_id": "CEU6500000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:41.764616+00:00"
+  },
+  {
+    "series_id": "CEU6500000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:42.702248+00:00"
+  },
+  {
+    "series_id": "CEU7000000007",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:43.762280+00:00"
+  },
+  {
+    "series_id": "CEU7000000008",
+    "vintage_dates": [
+      "2011-03-04"
+    ],
+    "retrieved_at": "2026-09-29T19:11:44.663276+00:00"
+  },
+  {
+    "series_id": "JTSJOL",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:45.504483+00:00"
+  },
+  {
+    "series_id": "JTU110099HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:46.331079+00:00"
+  },
+  {
+    "series_id": "JTU110099JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:47.273951+00:00"
+  },
+  {
+    "series_id": "JTU110099LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:48.130938+00:00"
+  },
+  {
+    "series_id": "JTU110099QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:48.986029+00:00"
+  },
+  {
+    "series_id": "JTU2300HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:49.952701+00:00"
+  },
+  {
+    "series_id": "JTU2300JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:50.894000+00:00"
+  },
+  {
+    "series_id": "JTU2300LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:51.767389+00:00"
+  },
+  {
+    "series_id": "JTU2300QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:52.698275+00:00"
+  },
+  {
+    "series_id": "JTU3200HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:53.678817+00:00"
+  },
+  {
+    "series_id": "JTU3200JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:54.576221+00:00"
+  },
+  {
+    "series_id": "JTU3200LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:55.572697+00:00"
+  },
+  {
+    "series_id": "JTU3200QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:56.720581+00:00"
+  },
+  {
+    "series_id": "JTU3400HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:57.593728+00:00"
+  },
+  {
+    "series_id": "JTU3400JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:58.496338+00:00"
+  },
+  {
+    "series_id": "JTU3400LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:11:59.386036+00:00"
+  },
+  {
+    "series_id": "JTU3400QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:01.945354+00:00"
+  },
+  {
+    "series_id": "JTU4200HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:02.868250+00:00"
+  },
+  {
+    "series_id": "JTU4200JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:03.800105+00:00"
+  },
+  {
+    "series_id": "JTU4200LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:04.744769+00:00"
+  },
+  {
+    "series_id": "JTU4200QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:05.590590+00:00"
+  },
+  {
+    "series_id": "JTU4400HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:06.557882+00:00"
+  },
+  {
+    "series_id": "JTU4400JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:07.441989+00:00"
+  },
+  {
+    "series_id": "JTU4400LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:08.289834+00:00"
+  },
+  {
+    "series_id": "JTU4400QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:09.197445+00:00"
+  },
+  {
+    "series_id": "JTU480099HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:10.408525+00:00"
+  },
+  {
+    "series_id": "JTU480099JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:11.290661+00:00"
+  },
+  {
+    "series_id": "JTU480099LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:12.156044+00:00"
+  },
+  {
+    "series_id": "JTU480099QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:13.243354+00:00"
+  },
+  {
+    "series_id": "JTU5100HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:14.082207+00:00"
+  },
+  {
+    "series_id": "JTU5100JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:14.920961+00:00"
+  },
+  {
+    "series_id": "JTU5100LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:15.911080+00:00"
+  },
+  {
+    "series_id": "JTU5100QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:16.742494+00:00"
+  },
+  {
+    "series_id": "JTU5200HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:17.633537+00:00"
+  },
+  {
+    "series_id": "JTU5200JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:18.500753+00:00"
+  },
+  {
+    "series_id": "JTU5200LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:19.397750+00:00"
+  },
+  {
+    "series_id": "JTU5200QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:20.514345+00:00"
+  },
+  {
+    "series_id": "JTU5300HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:21.382845+00:00"
+  },
+  {
+    "series_id": "JTU5300JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:22.302971+00:00"
+  },
+  {
+    "series_id": "JTU5300LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:23.161952+00:00"
+  },
+  {
+    "series_id": "JTU5300QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:24.155100+00:00"
+  },
+  {
+    "series_id": "JTU540099HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:25.319098+00:00"
+  },
+  {
+    "series_id": "JTU540099JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:26.226752+00:00"
+  },
+  {
+    "series_id": "JTU540099LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:27.536977+00:00"
+  },
+  {
+    "series_id": "JTU540099QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:28.499305+00:00"
+  },
+  {
+    "series_id": "JTU6200HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:29.416950+00:00"
+  },
+  {
+    "series_id": "JTU6200JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:30.464913+00:00"
+  },
+  {
+    "series_id": "JTU6200LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:31.425271+00:00"
+  },
+  {
+    "series_id": "JTU6200QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:32.404748+00:00"
+  },
+  {
+    "series_id": "JTU7200HIR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:33.281030+00:00"
+  },
+  {
+    "series_id": "JTU7200JOR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:34.153409+00:00"
+  },
+  {
+    "series_id": "JTU7200LDR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:35.345371+00:00"
+  },
+  {
+    "series_id": "JTU7200QUR",
+    "vintage_dates": [
+      "2010-08-11"
+    ],
+    "retrieved_at": "2026-09-29T19:12:36.643585+00:00"
+  },
+  {
+    "series_id": "UNEMPLOY",
+    "vintage_dates": [
+      "1961-02-09"
+    ],
+    "retrieved_at": "2026-09-29T19:12:37.568618+00:00"
+  }
+]

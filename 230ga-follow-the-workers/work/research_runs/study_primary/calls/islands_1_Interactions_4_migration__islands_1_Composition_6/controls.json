@@ -1,0 +1,43 @@
+{
+  "command": [
+    "/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+    "-p",
+    "--safe-mode",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--permission-prompts",
+    "none",
+    "--setting-sources",
+    "",
+    "--settings",
+    "{\"enabledPlugins\":{\"agents-md@builtin\":false}}",
+    "--system-prompt",
+    "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}.",
+    "--model",
+    "claude-sonnet-5-5",
+    "--effort",
+    "medium",
+    "--max-turns",
+    "1",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "sandbox": "(version 1)\n(allow default)\n(deny file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30\"))\n(allow file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_1_Interactions_4_migration__islands_1_Composition_6\"))\n(allow file-read* (literal \"/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe\"))\n(deny file-read* (subpath \"/Users/alex/Downloads\"))\n(deny file-read* (subpath \"/Users/alex/.codex\"))",
+  "cli_sha256": "50a14c2f50f56668380fdda490167f1d3630d5cc18fb8aed3073c2c7ea7314fe",
+  "environment": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+    "CLAUDE_CODE_DISABLE_ATTACHMENTS": "1",
+    "DISABLE_UPDATES": "1",
+    "CLAUDE_CODE_MAX_RETRIES": "0",
+    "CLAUDE_CODE_EXTRA_BODY": "{\"messages\": [{\"role\": \"user\", \"content\": \"{\\\"claims\\\": {\\\"1\\\": \\\"**Migration report**\\\", \\\"2\\\": \\\"Across four submissions, none produced a usable signal.\\\", \\\"3\\\": \\\"The first interaction, pairing momentum in one flow rate with wage-level momentum, had essentially zero rank correlation (about 0.00, t near 0.1), in both low and high T states.\\\", \\\"4\\\": \\\"It also had thin coverage, about half.\\\", \\\"5\\\": \\\"The second was invalid because I used a non-whitelisted transformation, which wasted a slot.\\\", \\\"6\\\": \\\"Restricting hours momentum to the high-T regime gave a tiny positive correlation (0.01), with no reliable t-statistic.\\\", \\\"7\\\": \\\"An hours-versus-wage spread in the high-T regime was slightly negative (-0.02, t -0.4).\\\", \\\"8\\\": \\\"Regime-gated features were highly persistent (0.45-0.50 autocorrelation).\\\", \\\"9\\\": \\\"Next I would try other variables and lower-persistence constructions.\\\"}, \\\"hypothesis\\\": \\\"Groups whose V04 flow rate rose more than their V06 stock rate over 12 months (standardized across groups) have higher next-month returns, extending the positive 3- and 6-month versions. Expect positive IC in both T regimes.\\\", \\\"expression\\\": \\\"spread(chg(V04,12),chg(V06,12))\\\"}\"}]}",
+    "TMPDIR": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_1_Interactions_4_migration__islands_1_Composition_6/tmp"
+  }
+}

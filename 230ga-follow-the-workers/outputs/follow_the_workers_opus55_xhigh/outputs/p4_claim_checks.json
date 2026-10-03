@@ -1,0 +1,90 @@
+{
+  "utc": "2026-10-02T07:37:05.987488+00:00",
+  "passed": true,
+  "saved_outputs_only": true,
+  "new_return_read_or_backtest": false,
+  "strategies": {
+    "A0": {
+      "n": 88,
+      "accounting_reconciled": true,
+      "reported_metrics_reconciled": true,
+      "mean_gross_annual": -0.02678866090746762,
+      "gross_sharpe": -0.33896422826854383,
+      "net_sharpe": -0.44092492572895914,
+      "funded_max_drawdown": -0.24068887851746168
+    },
+    "A1": {
+      "n": 88,
+      "accounting_reconciled": true,
+      "reported_metrics_reconciled": true,
+      "mean_gross_annual": -0.02447151462417066,
+      "gross_sharpe": -0.3797530863975741,
+      "net_sharpe": -0.5405542667423431,
+      "funded_max_drawdown": -0.35470609183850277
+    },
+    "A1-T": {
+      "n": 88,
+      "accounting_reconciled": true,
+      "reported_metrics_reconciled": true,
+      "mean_gross_annual": -0.02250162192802958,
+      "gross_sharpe": -0.3826448067130139,
+      "net_sharpe": -0.5481302825971346,
+      "funded_max_drawdown": -0.31957801618121995
+    },
+    "A3": {
+      "n": 88,
+      "accounting_reconciled": true,
+      "reported_metrics_reconciled": true,
+      "mean_gross_annual": -0.021590988311149684,
+      "gross_sharpe": -0.32531403025295097,
+      "net_sharpe": -0.4816985534175596,
+      "funded_max_drawdown": -0.3618804232908305
+    },
+    "A4": {
+      "n": 88,
+      "accounting_reconciled": true,
+      "reported_metrics_reconciled": true,
+      "mean_gross_annual": -0.01748095261702415,
+      "gross_sharpe": -0.25373499053043785,
+      "net_sharpe": -0.40294263247307166,
+      "funded_max_drawdown": -0.3220377013819694
+    }
+  },
+  "benchmark_claim": "Active return belongs to a separate long-only portfolio and subtracts the same equal-weight group excess-return benchmark. Subtracting it from hedged long-short net return does not infer a benchmark.",
+  "same_calendar_and_group_universe": true,
+  "nominal_trial_count": 41,
+  "candidate_slots": 36,
+  "valid_candidate_slots": 35,
+  "strategy_count": 5,
+  "A2_exclusion": {
+    "LinkUp_Tier1": {
+      "admitted": false,
+      "reason": "No collection-success/failure history; PIT mapping and cohort gates unverified"
+    },
+    "LinkUp_Tier2": {
+      "admitted": false,
+      "reason": "No dated historical snapshots/version history"
+    },
+    "WARN": {
+      "admitted": false,
+      "reason": "No amendment history or dated mapping; group coverage unverified"
+    }
+  },
+  "new_threshold_or_selection_change": false,
+  "evidence_hashes": {
+    "params.py": "1b86c4a968d2f5b7d22c36efd1aef161c9ded1b3fe74281f35aa04cf098dbe10",
+    "data.py": "517f2e9e0fd284f60d0797b4b916612c22e55f361dd41125dc31b6974458dca8",
+    "stats.py": "c627a8ba4cb6f70fb141bb32688ec59afb62f500dca9a37cdafb30496a40ede7",
+    "outputs/research_summary.json": "75d6f80f803887a0448f53bef32ef9e99379d17ed9e10b11cf983fd77da2e964",
+    "outputs/research_A0_ledger.csv": "213a86c69ba1236bb76967acf502c4a207f35d5a391206a67b5bbd82576f533c",
+    "outputs/research_A1-T_ledger.csv": "ec151870a068a9e2ba200b8b233cd3bb820881cffdfe8e22be9fc54c45474a15",
+    "outputs/research_A1_ledger.csv": "5185005757dad26f36de256fa4bb91eab08f6f837d3f23b2bd18834074f6686f",
+    "outputs/research_A3_ledger.csv": "fcf0f2c50ac49a55acc0deb9fede95bd594ea1f04c782e1e364e4bb1284bba72",
+    "outputs/research_A4_ledger.csv": "2abafd2a4efaeba736576f02a4d60dd70173fe430409789d1d01bc736c320bf0",
+    "outputs/research_A0_weights.csv": "ce73c0623ee8e1eae844afb303db53d339f24860336f9b8b65473450a6a11563",
+    "outputs/research_A1-T_weights.csv": "1a9d8fa089efcf8393e90f659af15f83afaac27eff47c23b1dfd53677461e091",
+    "outputs/research_A1_weights.csv": "c2c0b32dbbb64efad07c865c3c5ddaf42eeff8809232eec84fffdfd7338b2b2e",
+    "outputs/research_A3_weights.csv": "b77502957593eda2851345be535a7bd3af574e0210e9f55fa4d74579f429d534",
+    "outputs/research_A4_weights.csv": "39587d19495e10343d25b057065607cf541070e3162060b5acd9571038209991"
+  }
+}

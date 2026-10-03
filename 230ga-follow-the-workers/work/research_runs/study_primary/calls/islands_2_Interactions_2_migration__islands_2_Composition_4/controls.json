@@ -1,0 +1,43 @@
+{
+  "command": [
+    "/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+    "-p",
+    "--safe-mode",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--permission-prompts",
+    "none",
+    "--setting-sources",
+    "",
+    "--settings",
+    "{\"enabledPlugins\":{\"agents-md@builtin\":false}}",
+    "--system-prompt",
+    "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}.",
+    "--model",
+    "claude-sonnet-5-5",
+    "--effort",
+    "medium",
+    "--max-turns",
+    "1",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "sandbox": "(version 1)\n(allow default)\n(deny file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30\"))\n(allow file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_2_Interactions_2_migration__islands_2_Composition_4\"))\n(allow file-read* (literal \"/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe\"))\n(deny file-read* (subpath \"/Users/alex/Downloads\"))\n(deny file-read* (subpath \"/Users/alex/.codex\"))",
+  "cli_sha256": "50a14c2f50f56668380fdda490167f1d3630d5cc18fb8aed3073c2c7ea7314fe",
+  "environment": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+    "CLAUDE_CODE_DISABLE_ATTACHMENTS": "1",
+    "DISABLE_UPDATES": "1",
+    "CLAUDE_CODE_MAX_RETRIES": "0",
+    "CLAUDE_CODE_EXTRA_BODY": "{\"messages\": [{\"role\": \"user\", \"content\": \"{\\\"claims\\\": {\\\"1\\\": \\\"**Migration report**\\\", \\\"2\\\": \\\"**Failed:** My first feature, an interaction of two standardized stress-type variables (one flow rate, one stock rate), showed essentially no predictive power.\\\", \\\"3\\\": \\\"Mean IC was slightly negative, the HAC t-stat was weak, and coverage was only about half, likely because of the long history requirement.\\\", \\\"4\\\": \\\"My second submission was invalid because the hypothesis exceeded the word limit by two words, which wasted a slot.\\\", \\\"5\\\": \\\"**Learned:** The interaction's IC looked much stronger in the high-T regime than in the low-T regime, so the effect may be regime-dependent.\\\", \\\"6\\\": \\\"Base correlation was low, so the feature is novel.\\\", \\\"7\\\": \\\"Rank autocorrelation was moderate.\\\", \\\"8\\\": \\\"**Next:** Try a regime-conditioned pay-and-hours interaction, and count words carefully before submitting.\\\"}, \\\"hypothesis\\\": \\\"Groups whose V05 dollars per hour rose relative to V01 average hours over 6 months have a higher-paid, more intensive composition and earn higher next-month returns than other groups, especially when T is high.\\\", \\\"expression\\\": \\\"csrank(lchg(ratio(V05,V01),6))\\\"}\"}]}",
+    "TMPDIR": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_2_Interactions_2_migration__islands_2_Composition_4/tmp"
+  }
+}

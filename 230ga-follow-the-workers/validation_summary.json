@@ -1,0 +1,28 @@
+{
+  "validated_at_utc": "2026-10-02T08:18:03.264385+00:00",
+  "export_hashes": 3058,
+  "saved_ledgers_reconciled": 40,
+  "portable_links_verified": 106,
+  "offline_tests": {
+    "run": 28,
+    "passed": 28
+  },
+  "original_local_freezes_verified": true,
+  "new_experiment_or_model_calls": false,
+  "source_and_numeric_outputs_unchanged": true,
+  "secret_scan": {
+    "passed": true,
+    "text_files_scanned": 2977,
+    "secret_pattern_matches": 0,
+    "total_files": 3066,
+    "total_bytes": 40875446,
+    "largest_file_bytes": 7816207,
+    "raw_archives_or_parquet_present": false,
+    "note": "Pattern scan plus allowlisted export, not a guarantee that arbitrary secrets are detectable."
+  },
+  "limitations": [
+    "Review export omits raw inputs; original full freeze cannot be checked using clone alone",
+    "Automated pattern scans cannot detect every possible secret",
+    "Team critique and final submission-format review remain"
+  ]
+}

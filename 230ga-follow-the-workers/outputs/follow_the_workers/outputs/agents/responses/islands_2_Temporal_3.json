@@ -1,0 +1,42 @@
+{
+  "request_hash": "1748e7ad64aeb64e5a39f2ec58c1079defb5b988cb1e7cd7b869813162a675d9",
+  "envelope": {
+    "response": "{\"name\":\"V05_persist6_reversal\",\"hypothesis\":\"Groups whose V05 rose in fewer of the last 6 months will have higher returns next month, because persistent upward momentum in this average appears to be overpriced and later reverses, as submission 2's negative IC suggests.\",\"falsified_if\":\"Mean cross-sectional rank IC of the negated feature is non-positive, or HAC t-statistic is below 1, in development data.\",\"expression\":\"mult(persist(V05,6),-1)\"}\n\nWait: mult(x,y) takes two variables, and -1 is not a variable, so that expression may be invalid. Here is a corrected version using only allowed operations:\n\n{\"name\":\"V05_yoy_tsz_reversal\",\"hypothesis\":\"Groups whose V05 year-over-year change is unusually high relative to its own expanding history will have lower returns next month, because strong upward momentum in this average is overpriced and later reverses.\",\"falsified_if\":\"Mean cross-sectional rank IC is non-negative, or HAC t-statistic is above -1, in development data.\",\"expression\":\"tsz(yoy(V05),\\\"exp\\\")\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 896,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 377,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0058174,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "1748e7ad64aeb64e5a39f2ec58c1079defb5b988cb1e7cd7b869813162a675d9"
+  }
+}

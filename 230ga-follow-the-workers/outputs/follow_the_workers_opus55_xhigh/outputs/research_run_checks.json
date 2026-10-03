@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-02T07:28:57.574140+00:00",
+  "passed": true,
+  "call_counts": {
+    "candidate": 108,
+    "judge": 168,
+    "migration": 18
+  },
+  "schema_counts": {
+    "failure_schema_valid": 84,
+    "claim_schema_valid": 84
+  },
+  "exact_model": "claude-opus-5-5",
+  "effort": "xhigh",
+  "zero_tools_and_no_extra_context_verified": true,
+  "no_api_key_source": true,
+  "source_hashes_unchanged": true,
+  "human_sample_matches_completed_judgments": true,
+  "syntax_repairs": 0,
+  "transport_failures": 0,
+  "screening_limitations": "Four documented false positives; see runtime_observations.json",
+  "evidence_hashes": {
+    "outputs/agents/log.jsonl": "46bb2c897637b532fb73707e5020b91d4fc1930c246b5825b6b9f81e95103def",
+    "outputs/agents/candidate_records.json": "c2fd1569d1eff41c95b49d8c9b73997789daadffecd12734b98ffc3f9f6f5a43",
+    "outputs/agents/migrations.json": "1128c65a70ebdc18cd364e60367b911aa3e6ae61d18c58bfe49c9191b09cf3ac",
+    "outputs/selected_features.json": "d0c33e54c2c70c566cd90a3a79019c0ac7ba651ccb7eb2f3f2bfd9aba7cfe54e",
+    "outputs/research_summary.json": "75d6f80f803887a0448f53bef32ef9e99379d17ed9e10b11cf983fd77da2e964",
+    "outputs/agents/migration_judgments_before_human.json": "6d0db8fbb03e691aaed2acee0d2b5c566ccd24c1ee19ea556dfa5675e5bca0bc"
+  },
+  "human_review_note": "Machine judgments preserved before human answers; only human fields may subsequently change in the active judgment file."
+}

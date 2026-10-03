@@ -1,0 +1,13 @@
+{
+  "request_hash": "b58f89de2dc4492198264181a249e112e89d960c0d80f82f08949d919aa6ae76",
+  "request": {
+    "call_id": "islands_1_Temporal_2_migration__islands_1_Interactions_4_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 4,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nTwo temporal signals failed. Ranking groups by acceleration in average hours, lagged one month, gave a mean information coefficient near 0.02 and a HAC t-statistic near 0.7, well below two. Its ranks also turned over quickly. Ranking groups by how persistently the stock rate variable rose over six lagged months did worse, with coefficient near 0.01 and t-statistic near 0.5, despite stable ranks. Both looked somewhat stronger when the common index was high. Conditioning on high-index regimes merits testing, though that split may be noise. Coverage was about 95 percent, and overlap with base factors stayed low.\", \"hypothesis\": \"Submission 2's significant negative IC suggests a genuine reversal: groups where V03 rose more than V02, relative to peers, outperform. Testing at a six-month horizon, not the snooped three-month one, checks whether this is robust rather than noise.\", \"expression\": \"spread(chg(V03,6),chg(V02,6))\"}"
+  }
+}

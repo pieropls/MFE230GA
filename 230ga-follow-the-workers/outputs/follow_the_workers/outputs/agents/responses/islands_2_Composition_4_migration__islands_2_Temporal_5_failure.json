@@ -1,0 +1,42 @@
+{
+  "request_hash": "c7c9ac4ae473a870318504f790767391efea1f80376b25495bacb8e686b6e7c9",
+  "envelope": {
+    "response": "The report lists these failures: regime-gating a spread between flow rates (58% coverage, no high-T output, slightly negative IC); a stock-versus-flow standardized spread (negative, correlated 0.33 with base features); and a flat pay-per-hours change.\n\nThe hypothesis uses a single variable V05 with year-over-year change, expanding-history standardization, and three-month smoothing. It has no regime gating, so it avoids the first failure. It is not a stock-versus-flow spread, so it avoids the second, provided V05 is not a stock-flow construct, and that is unknown. The standardization against its own history is not the same as a cross-variable spread. The pay-per-hours change is not clearly related to V05.\n\nThe report's suggested next step is changes in flow-rate ratios with longer smoothing and no regime gating. The hypothesis uses smoothing and no gating, but it is not a ratio. It does not explicitly acknowledge or address any failure. It merely happens to not repeat them, and whether V05 is a flat pay-per-hours-like variable is unclear.\n\n\"Explicitly avoids\" is a high bar. The hypothesis never mentions avoiding gating or spreads, though its structure is consistent with avoidance, so the evidence is ambiguous.\n\n{\"avoids_failure\": null}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 511,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 427,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.005292,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "c7c9ac4ae473a870318504f790767391efea1f80376b25495bacb8e686b6e7c9"
+  }
+}

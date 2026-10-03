@@ -1,0 +1,13 @@
+{
+  "request_hash": "90b7e883def9725694e6a653db9860bbd5570ccdacac4ca0cf63cb6b0c107001",
+  "request": {
+    "call_id": "islands_2_Composition_2_migration__islands_2_Temporal_3_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 3,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nOur composition theme compares two employment-rate flow variables, V02 and V03. Failure: ranking groups by the three-month rise in V02's share relative to V03 gave a negative information coefficient near minus 0.04, with a t-statistic of about minus 1.4. It was weakest when the common index was low. Reversing the mix to favor V03, lengthening to six months and restricting to low-index periods gave a positive coefficient near 0.05, with a t-statistic of about 1.9. Caveats: coverage is only 58 percent, and there is no high-index evidence. Rank persistence is low, near 0.22, and overlap with base factors is small. Next, test robustness outside the low regime.\", \"hypothesis\": \"Groups whose twelve-month log hourly-pay growth is unusually high versus their expanding own history face tightening demand not yet priced, earning higher relative returns next month; expanding windows should preserve the signal while raising coverage.\", \"expression\": \"csrank(tsz(lchg(V05,12),\\\"exp\\\"))\"}"
+  }
+}

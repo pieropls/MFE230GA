@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"name\":\"tightness_x_wage_momentum\",\"hypothesis\":\"Groups where the flow rate V03 has recently fallen relative to its own history, interacted with rising wage level V05 momentum, earn higher next-month returns; the product of the two standardized signals should positively rank-correlate with future group returns.\",\"falsified_if\":\"Cross-sectional rank correlation of this feature with next-month group returns is zero or negative on average, or its top-minus-bottom tercile spread is not positive.\",\"expression\":\"mult(tsz(chg(V03,3),60), tsz(lchg(V05,3),60))\"}"
+          }
+        ],
+        "usage": {
+          "input_tokens": 41,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1277,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 6,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "{\"name\":\"tightness_x_wage_momentum\",\"hypothesis\":\"Groups where the flow rate V03 has recently fallen relative to its own history, interacted with rising wage level V05 momentum, earn higher next-month returns; the product of the two standardized signals should positively rank-correlate with future group returns.\",\"falsified_if\":\"Cross-sectional rank correlation of this feature with next-month group returns is zero or negative on average, or its top-minus-bottom tercile spread is not positive.\",\"expression\":\"mult(tsz(chg(V03,3),60), tsz(lchg(V05,3),60))\"}",
+      "usage": {
+        "input_tokens": 41,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1277,
+        "output_tokens": 202,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 41,
+          "outputTokens": 202,
+          "cacheReadInputTokens": 1277,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0023574,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0023574
+    }
+  ],
+  "stderr_present": false
+}

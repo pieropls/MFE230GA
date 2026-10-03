@@ -1,0 +1,42 @@
+{
+  "request_hash": "16bd05b89601682f01098195d82f0a7e1acde40fd687c8209c7b7614711f1840",
+  "envelope": {
+    "response": "{\"name\":\"V03_V04_spread_tsz60_mavg3\",\"hypothesis\":\"Groups with V03 high relative to V04, both standardized on a 60-month window and lightly smoothed over 3 months, will have higher next-month returns, extending the only significant positive result (submission 4) with modest noise reduction.\",\"falsified_if\":\"Mean IC is non-positive or HAC t-stat is below 1.0 in development statistics, or coverage falls below 0.54.\",\"expression\":\"spread(mavg(tsz(V03,60),3),mavg(tsz(V04,60),3))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 2084,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 197,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0063934,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "16bd05b89601682f01098195d82f0a7e1acde40fd687c8209c7b7614711f1840"
+  }
+}

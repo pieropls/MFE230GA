@@ -1,0 +1,44 @@
+{
+  "utc": "2026-09-29T19:18:19.460331+00:00",
+  "passed": true,
+  "fixed_live_call_budget": 2,
+  "synthetic_feedback_only": true,
+  "research_outputs_reused": false,
+  "checks": [
+    {
+      "kind": "connection",
+      "passed": true
+    },
+    {
+      "kind": "candidate_format",
+      "passed": true
+    },
+    {
+      "call_id": "migration_mode_1",
+      "passed": true,
+      "word_count": 113,
+      "reasons": []
+    },
+    {
+      "call_id": "migration_mode_2",
+      "passed": true,
+      "word_count": 111,
+      "reasons": []
+    }
+  ],
+  "offline_capture": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/claude_schema_inspection/study_primary_preflight_verified",
+  "cli_path": "/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+  "cli_sha256": "50a14c2f50f56668380fdda490167f1d3630d5cc18fb8aed3073c2c7ea7314fe",
+  "source_hashes": {
+    "params.py": "73cd51cefbd34677600cdb932fd2a657379fe26ff91e04c3507f3ce91d470178",
+    "agents.py": "12f3e130be2de7508982c30c768b540f2024c2cefeff3c78d77a74439713d12c"
+  },
+  "earlier_preflight_calls": 3,
+  "superseded_preflight": "restart_transport_checks_initial.json",
+  "revision_reason": "Proposal JSON system rule conflicted with prose report mode; explicitly distinguish modes and reinforce existing cap",
+  "prior_source_hashes": {
+    "params.py": "1e36c0f446b6b151ad288fdbe1e3d014dd5de98ec085e79d71c011c56d4db7d8",
+    "agents.py": "12f3e130be2de7508982c30c768b540f2024c2cefeff3c78d77a74439713d12c"
+  },
+  "rebinding_basis": "Only F6 source-admission text changed after preflight; exact current system and migration prompts verified against both passed calls"
+}

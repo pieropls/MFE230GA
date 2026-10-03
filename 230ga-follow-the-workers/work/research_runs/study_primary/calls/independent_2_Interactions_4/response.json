@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"Separation-rate change interaction with wage tsz\",\"hypothesis\":\"Groups with rising V02 over 3 months while hourly dollars (V05) are unusually low versus own history face labor weakness and should have lower next-month returns; the feature should correlate negatively, building on the earlier V02 result.\",\"falsified_if\":\"Mean IC is positive or |HAC t| is below 2 in development statistics, or low_T and high_T ICs have opposite signs.\",\"expression\":\"mult(chg(V02,3),tsz(V05,60))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 936,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 183,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0039574,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "68c21e0db9affdcd5b540f95b4cad6e8d7c5f8b7dda1a4f7d950827fb02a2c25"
+}

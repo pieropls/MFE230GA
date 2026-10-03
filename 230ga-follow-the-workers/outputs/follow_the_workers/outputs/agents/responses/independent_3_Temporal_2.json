@@ -1,0 +1,42 @@
+{
+  "request_hash": "d12700df53c020546ef925cfd95afa9104bfc13769df4a4beab321d3a740bfe1",
+  "envelope": {
+    "response": "{\"name\":\"V05_yoy_persist6_wage_momentum\",\"hypothesis\":\"Groups whose V05 hourly dollar level has risen in a larger share of recent months (6-month persistence of increases) will have higher next-month returns, because steady gains signal durable conditions that are only gradually priced in.\",\"falsified_if\":\"Mean cross-sectional rank IC is non-positive or the HAC t-statistic is below 1.0 across development months.\",\"expression\":\"persist(V05,6)\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 329,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 164,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0025533999999999995,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "d12700df53c020546ef925cfd95afa9104bfc13769df4a4beab321d3a740bfe1"
+  }
+}

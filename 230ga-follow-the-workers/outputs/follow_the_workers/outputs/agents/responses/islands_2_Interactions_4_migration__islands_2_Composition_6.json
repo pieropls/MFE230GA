@@ -1,0 +1,42 @@
+{
+  "request_hash": "b0fc72d7dc4daece5e693ede40d89bfca0816cd15e8a31b0f9a30406984e04b8",
+  "envelope": {
+    "response": "The hypothesis is a spread between two flow rates, each standardized against its own history, and it predicts the opposite sign to an earlier attempt. That matches claim 5: \"A spread between two flow rates, each standardized against its own history, gave a positive IC, opposite to my predicted sign (t-stat about 1.9).\"\n\nThe hypothesis also says \"the prior V03-minus-V04 spread had negative IC,\" which refers to the same finding. That is another reason to count claim 5.\n\nClaim 2 is about a product of a flow rate and a stock rate, and the expression is a spread rather than a product, so it doesn't apply. Claims 6 and 7 are caveats about claim 5 (stronger in high-T periods, limited coverage), and the hypothesis doesn't use them. The remaining claims are unrelated.\n\n{\"uses_claim\": true, \"claim_ids\": [5]}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 479,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 289,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.003848,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "b0fc72d7dc4daece5e693ede40d89bfca0816cd15e8a31b0f9a30406984e04b8"
+  }
+}

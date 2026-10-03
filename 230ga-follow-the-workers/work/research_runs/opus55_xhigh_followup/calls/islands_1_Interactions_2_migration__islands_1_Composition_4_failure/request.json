@@ -1,0 +1,13 @@
+{
+  "request_hash": "6c5730e9dbc906b26ca191eddf4439e9ebc7f58edd46c969ed33209b8c6094f8",
+  "request": {
+    "call_id": "islands_1_Interactions_2_migration__islands_1_Composition_4_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 4,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nOur first attempt combined three-month momentum in average hours and in hourly pay as a rank product. It failed. Its next-month predictive correlation was slightly negative, insignificant and unchanged across common-index regimes.\\n\\nThe second attempt favored groups whose V02 flow rate rose faster than V03 over three months. It produced a meaningfully negative correlation, with a t-statistic near minus two, concentrated when the common index was low. Reversing its direction, perhaps conditioned on the low regime, looks promising.\\n\\nBoth features showed low overlap with base signals and moderate rank persistence.\", \"hypothesis\": \"Relative shifts from V02 toward V03 flow predict higher next-month relative returns mainly when the common index is low. Restricting the signal to low-T regimes should strengthen its information coefficient versus the unconditional version.\", \"expression\": \"regime(spread(chg(V03,3),chg(V02,3)),\\\"low\\\")\"}"
+  }
+}

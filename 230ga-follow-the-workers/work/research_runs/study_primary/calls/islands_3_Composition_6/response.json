@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"composition_hours_wage_spread_yoy_change\",\"hypothesis\":\"Groups whose 12-month change in V01 hours rises more than the change in V05 wage, cross-sectionally standardized, have higher next-month returns, because improving hours-heavy composition signals strengthening demand. Expect a positive rank IC.\",\"falsified_if\":\"Mean rank IC against next-month returns is zero or negative, or HAC t-statistic is below 1 in development data.\",\"expression\":\"spread(yoy(V01),yoy(V05))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1567,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1276,
+    "output_tokens": 182,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0052092,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "9421feb4f073122e06d4c04eedecc4749a1411f5e2b5e6dbfc26342e344940a8"
+}

@@ -1,0 +1,13 @@
+{
+  "request_hash": "49126e8edbd659aa221cfb830772ca604d9b5e04724ac9ede034876b5cdab0f8",
+  "request": {
+    "call_id": "islands_1_Temporal_4_migration__islands_1_Composition_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings after four submissions**\\n\\nThree ideas failed. Acceleration in average hours, persistence of rises in the stock rate, and a three-month shift between two flow rates each gave near-zero mean rank correlations. Their t-statistics were below one, so all three failed our falsification rule.\\n\\nOne idea worked modestly. Annual hourly-pay growth, standardized against each group's own three-year history, produced a positive rank correlation with a t-statistic just above two. It was stronger in low-T periods. Caveats: coverage dropped to about sixty percent because of the long history requirement, and the signal is highly persistent. Pay-based signals deserve further robustness testing.\", \"hypothesis\": \"Flow composition, not flow levels, carries the earlier signal: groups whose V03-to-V02 ratio rose most in log terms over three months earn higher next-month relative returns, without conditioning on T regimes.\", \"expression\": \"csrank(lchg(ratio(V03,V02),3))\"}"
+  }
+}

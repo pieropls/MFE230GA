@@ -1,0 +1,13 @@
+{
+  "request_hash": "8a26db8c18446004535b53794a2513027963d779d58f6f87411f207cc2dbb79d",
+  "request": {
+    "call_id": "islands_2_Temporal_4_migration__islands_2_Composition_5_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\n**Failure:** Ranking groups by three-month change in average hours had no predictive power. Mean rank IC was slightly negative, with t near minus 0.7.\\n\\n**Promising:** Annual hourly-pay growth, standardized against each group's own five-year history, gave IC about 0.08 with HAC t near 1.8. Coverage was only 44 percent. An expanding-window log-growth version raised coverage to 63 percent. However, it weakened IC to 0.05, with t 1.4.\\n\\nThe pay signal is stronger when the common index is high (IC near 0.2) than when low (about 0.1). A high-regime-only version showed IC 0.19 but no t-statistic, so it is unconfirmed. Signals are persistent and have low correlation with base factors.\", \"hypothesis\": \"Both V03/V02 and V03/V04 shifts worked in low-T regimes, suggesting V03 drives the composition signal. Groups with larger three-month increases in V03 alone should earn higher next-month relative returns when T is low.\", \"expression\": \"regime(chg(V03,3),\\\"low\\\")\"}"
+  }
+}

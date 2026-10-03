@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-02T06:49:36.979087+00:00",
+  "run_id": "opus55_xhigh_followup",
+  "findings": [
+    {
+      "candidate_id": "islands_1_Composition_5",
+      "failure": "Blinded payload contains a forbidden name or identifier",
+      "cause": "Standalone Information group-name screen matched relative-return information in a statistical hypothesis; this is a lexical false positive, not an observed identity leak.",
+      "action": "Preserve invalid slot and raw response. No source, prompt, candidate or budget change during study. Disclose rejection and resulting missing candidate in final report.",
+      "effect": "Rejected candidate receives no research performance score and its specification is withheld from later histories under the current safety screen."
+    },
+    {
+      "candidate_id": "islands_3_Temporal_2",
+      "failure": "Blinded payload contains a forbidden name or identifier",
+      "cause": "Standalone Information group-name screen matched adding information beyond in a statistical hypothesis; this is a lexical false positive, not an observed identity leak.",
+      "action": "Preserve invalid slot and raw response. No source, prompt, candidate or budget change during study. Disclose this as screening failure rather than economic-reasoning failure.",
+      "effect": "This is a process-only repetition, so this candidate was never eligible to supply a trading feature; its specification is withheld from later histories under the current screen."
+    },
+    {
+      "report_id": "islands_3_Composition_2_migration",
+      "failure": "Blinded payload contains a forbidden name or identifier",
+      "cause": "Standalone Information group-name screen matched timely information in a statistical report; this is a lexical false positive, not an observed identity leak.",
+      "action": "Preserve rejected report and raw response; no delivery, replacement call or mid-study screen change. Disclose this as an implementation limitation, separately from genuine word-limit violations.",
+      "effect": "The report was not delivered or traced; communication in the third process repetition is reduced."
+    },
+    {
+      "report_id": "islands_3_Temporal_4_migration",
+      "failure": "Migration report needs an explicit unsuccessful attempt or finding",
+      "cause": "The report includes a Failures heading, a rejected submission, and an attempt that disappointed with low coverage and negative conditional correlation. The keyword check matches singular failure and specific verbs, but misses plural Failures, rejected and disappointed. This is a semantic-admission false negative.",
+      "action": "Preserve rejected report/raw response and current budget; no late delivery, replacement call, parsing rescue or mid-study source change. Disclose as screening error rather than absence of a reported unsuccessful finding.",
+      "effect": "The report was not delivered or traced; communication in the third process repetition is reduced."
+    }
+  ],
+  "study_source_changed": false,
+  "prior_outputs_sent_to_agents": false,
+  "updated_at": "2026-10-02T07:09:47.222058+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "utc": "2026-09-29T10:54:25.584660+00:00",
+  "approved": true,
+  "user_approval": "make sure going forward all these errors that arose will be fixed and we are only deviating from the project guidelines i send in the claude sonnet 5.5 for all roles, and the october stuff.",
+  "authorization_scope": "Correct implementation to supplied guidelines. Does not authorize a research restart or adopt the two pending prompt/trial clarifications.",
+  "previous_record_sha256": "10c6e45d929a36bb6113a67d1e52923dd212ad5c5596adc4aad12a60e7a8479d",
+  "previous_params_sha256": "9fccbba2fef13ae05d0829f5d2d2ae25f1b486a5258fcbbf31a988227bb1ebac",
+  "params_sha256": "ec4e509b2abce3e5f4ad9c604644c9f0dfa228ea5d236eee5913f34dc507c620",
+  "params_snapshot": "outputs/prereg/params_v2.py",
+  "corrections": {
+    "startup_risk": "Restore the section10 fixed10-percent target and gross cap2 from the first nonzero book; remove unrequested occupied-slot multiplier.",
+    "context": "Retire the unused permission for injected present-date context; no dates allowed in study calls.",
+    "prereg_text": "Restore original tightness, Holm and expected-outcome wording; preserve approved October wording."
+  },
+  "retained_deviations": [
+    "Claude Sonnet 5.5 subscription for all study model roles",
+    "October boundary and October return purge"
+  ],
+  "pending": [
+    "Prompt contract clarification",
+    "Earlier-search accounting for a corrected rerun"
+  ],
+  "exposure": "70 proposals privately evaluated on research data;83 successful calls preserved. No feature selection, research strategy comparison or sealed evaluation. Corrections chosen from specification and synthetic cases, without using performance.",
+  "prior_state_manifest": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/protocol_alignment/before_corrections/manifest.json"
+}

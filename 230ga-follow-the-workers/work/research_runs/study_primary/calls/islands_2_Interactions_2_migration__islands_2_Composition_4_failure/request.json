@@ -1,0 +1,13 @@
+{
+  "request_hash": "9612c6164d6f2c84e8a7c8b4ba3ddc60d30caab52986328654f31f54aeac1760",
+  "request": {
+    "call_id": "islands_2_Interactions_2_migration__islands_2_Composition_4_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 4,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear.",
+    "prompt": "{\"report\": \"**Migration report**\\n\\n**Failed:** My first feature, an interaction of two standardized stress-type variables (one flow rate, one stock rate), showed essentially no predictive power. Mean IC was slightly negative, the HAC t-stat was weak, and coverage was only about half, likely because of the long history requirement. My second submission was invalid because the hypothesis exceeded the word limit by two words, which wasted a slot.\\n\\n**Learned:** The interaction's IC looked much stronger in the high-T regime than in the low-T regime, so the effect may be regime-dependent. Base correlation was low, so the feature is novel. Rank autocorrelation was moderate.\\n\\n**Next:** Try a regime-conditioned pay-and-hours interaction, and count words carefully before submitting.\", \"hypothesis\": \"Groups whose V05 dollars per hour rose relative to V01 average hours over 6 months have a higher-paid, more intensive composition and earn higher next-month returns than other groups, especially when T is high.\", \"expression\": \"csrank(lchg(ratio(V05,V01),6))\"}"
+  }
+}

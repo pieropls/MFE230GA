@@ -1,0 +1,42 @@
+{
+  "request_hash": "4ec3fdc1ec49d38f4165c6dd9f4b982170084fbff1d2631fdb1f021c6e81eacd",
+  "envelope": {
+    "response": "{\"name\":\"Hours momentum times wage tsz, high-T regime\",\"hypothesis\":\"In high-T regimes, groups with rising hours (V01 3-month change rank) and low standardized wage level (V05 tsz) earn higher next-month relative returns; the interaction of hours rank and inverted wage pressure has positive IC, with HAC t above 1.\",\"falsified_if\":\"Development high-T IC is zero or negative, or HAC t-stat is below 1.\",\"expression\":\"regime(spread(csrank(chg(V01,3)),tsz(V05,60)),\\\"high\\\")\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 1502,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0052194,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "4ec3fdc1ec49d38f4165c6dd9f4b982170084fbff1d2631fdb1f021c6e81eacd"
+  }
+}

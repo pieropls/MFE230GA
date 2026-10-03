@@ -1,0 +1,42 @@
+{
+  "request_hash": "e6354ac1ba07ebb0c2d700196b5625720a26d96c5c1c05f77eb7a805810bace4",
+  "envelope": {
+    "response": "**Findings after four submissions**\n\nThree ideas failed. Acceleration in average hours, persistence of rises in the stock rate, and a three-month shift between two flow rates each gave near-zero mean rank correlations. Their t-statistics were below one, so all three failed our falsification rule.\n\nOne idea worked modestly. Annual hourly-pay growth, standardized against each group's own three-year history, produced a positive rank correlation with a t-statistic just above two. It was stronger in low-T periods. Caveats: coverage dropped to about sixty percent because of the long history requirement, and the signal is highly persistent. Pay-based signals deserve further robustness testing.",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 1255,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1278,
+      "output_tokens": 2010,
+      "output_tokens_details": {
+        "thinking_tokens": 1792
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0454756,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "e6354ac1ba07ebb0c2d700196b5625720a26d96c5c1c05f77eb7a805810bace4"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "fcabe82c9fe2491b3576afb91983993b12b41e81cc4b49f8763836be480c9ff5",
+  "envelope": {
+    "response": "{\"name\":\"V05_persist6_reversal_lowV02\",\"hypothesis\":\"Groups whose V05 has risen in a larger share of the last 6 months will have lower next-month returns, because persistent gains are already priced in and reverse. Submission 2 showed a negative IC, so this feature flips its sign by ranking on the inverse.\",\"falsified_if\":\"Mean cross-sectional rank IC is non-negative or HAC t-statistic is above -1.0 across development months for this feature.\",\"expression\":\"csrank(ratio(1,persist(V05,6)))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 613,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 188,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0033614,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "fcabe82c9fe2491b3576afb91983993b12b41e81cc4b49f8763836be480c9ff5"
+  }
+}

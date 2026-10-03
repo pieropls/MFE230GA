@@ -1,0 +1,13 @@
+{
+  "request_hash": "796b53b38df13f5449ad70d7e5643d0b33b345698badec5910986200efb68d39",
+  "request": {
+    "call_id": "islands_3_Composition_4_migration__islands_3_Temporal_5_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear.",
+    "prompt": "{\"report\": \"**Migration report**\\n\\nFour composition-style features were tried, all valid. None was statistically convincing.\\n\\nThe most promising was the smoothed cross-sectional contrast between average hours and hourly wage. Its mean IC was 0.03 (HAC t of 1.0), somewhat stronger in the high-T regime. That is suggestive but not significant.\\n\\nThe clearest failure was the high-T-only flow-rate contrast. It had an IC of -0.07 (t of -1.25), the opposite sign to my hypothesis, and coverage fell to 0.82.\\n\\nThe stock-versus-flow contrast and the wage-versus-turnover contrast both had ICs near zero.\\n\\nSmoothed features have rank autocorrelation of 0.97 to 1.0, so their effective sample is small. Base correlations were low, at most 0.18.\", \"hypothesis\": \"Groups whose V03 flow rate has risen over the past 6 months, relative to other groups, will earn higher next-month returns, because rising flow rates persist. The effect should be stronger in the low-T regime.\", \"expression\": \"csrank(chg(lag(V03,2),6))\"}"
+  }
+}

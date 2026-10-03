@@ -1,0 +1,13 @@
+{
+  "request_hash": "d27daa9bde92c046ae21ac50867e227d119b3ade6257a4fe621702897c93b129",
+  "request": {
+    "call_id": "islands_3_Composition_4_migration__islands_3_Temporal_5_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 3,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Composition findings, four submissions**\\n\\nContrasting two smoothed flow rates across groups (V02 versus V03) failed: information coefficient near zero, t-statistic about minus 0.2.\\n\\nScaling smoothed V04 flow by V06 stock, standardized against own history, was weak overall but strongly negative in high common-index periods.\\n\\nA cross-sectional stock-minus-flow contrast limited to high-index periods barely helped.\\n\\nInverting the ratio, V06 stock over unsmoothed V04 flow, standardized against own history and limited to high-index periods, worked best: information coefficient 0.09, t-statistic 1.56, low overlap with base signals.\\n\\nCaveats: low rank persistence means high turnover, coverage is 73 percent, and significance is marginal.\", \"hypothesis\": \"Groups whose stock rate is unusually high versus their own expanding history should outperform next month, but only when the common index is low. Regime conditioning should remove the offsetting high-index periods.\", \"expression\": \"regime(tsz(lag(V06,2),\\\"exp\\\"),\\\"low\\\")\"}"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "61c91cd8e61fbb99751f2fe63c7ef2a42423be6e878d0ff72a26e11ca6d1add3",
+  "envelope": {
+    "response": "The report describes several failures: the high-T-only flow-rate contrast had the opposite sign and coverage dropped to 0.82; stock-vs-flow and wage-vs-turnover ICs were near zero; smoothed features have high rank autocorrelation, giving a small effective sample.\n\nThe proposed hypothesis uses V06 (stock rate) crossed with the 6-month change in V01 (hours), with a positive sign. It does not restrict to a high-T regime, so it sidesteps the coverage failure, but only incidentally. It does not address the smoothing or autocorrelation problem explicitly. The 6-month change is a form of smoothing, and may still have high autocorrelation. It is also a composition feature of the same general kind, with no explicit acknowledgment of any failure. Nothing here explicitly avoids a named failure.\n\n{\"avoids_failure\": false}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 505,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 286,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.00387,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "61c91cd8e61fbb99751f2fe63c7ef2a42423be6e878d0ff72a26e11ca6d1add3"
+  }
+}

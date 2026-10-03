@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"highT_V02z_amplified_by_V06rank\", \"hypothesis\": \"In high-T regimes, a group's V02 elevation versus own history predicts higher next-month relative returns, amplified when its V06 is also elevated versus own history relative to peers; interaction should exceed V02 alone.\", \"falsified_if\": \"High-T mean rank IC is non-positive or HAC t-statistic below 2 over the development sample.\", \"expression\": \"mult(regime(tsz(V02,\\\"exp\\\"),\\\"high\\\"),csrank(tsz(V06,\\\"exp\\\")))\"}",
+  "model": "claude-opus-5-5",
+  "tokens": {
+    "input_tokens": 1556,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1308,
+    "output_tokens": 4171,
+    "output_tokens_details": {
+      "thinking_tokens": 3974
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0899056,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-opus-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "4097c4b8b0bf7562ba695a7ff0cc0c1ff311da608291faae0e311a0695450392"
+}

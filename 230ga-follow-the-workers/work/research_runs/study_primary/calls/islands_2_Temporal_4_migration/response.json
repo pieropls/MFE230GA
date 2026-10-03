@@ -1,0 +1,39 @@
+{
+  "response": "**Migration report**\n\n**What worked:** Standardizing V05's year-over-year change against its own expanding history gave a modestly positive rank IC (about 0.06, HAC t 2.2). Correlation with base features was low. Lagging it one month weakened the signal (IC 0.04, t 1.4), so freshness matters. Signal strength appeared stronger when T was high.\n\n**What failed:** Counting the share of recent months in which V05 rose (six-month persistence) gave a negative IC (about -0.07, t -1.8). It contradicted my hypothesis and has high rank autocorrelation. Standardizing V03 against its expanding history produced essentially zero IC and weak coverage.\n\n**Caveat:** Coverage of the best feature is only about 63%, and its sign was opposite to my stated hypothesis, so treat it cautiously.",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1286,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1247,
+    "output_tokens": 279,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.005611400000000001,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "711ce949bea122c9f280f13ad998361c5f9b15f9af536ea5202adf1627dd7ffc"
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "9973cf885c07699bea32dfb40b27cbcc093f9af1963f65858dd9601cb42f1848",
+  "envelope": {
+    "response": "{\"name\":\"Flow-rate spread conditioned on common index regime\",\"hypothesis\":\"Groups with a higher separation rate (V03) relative to a hiring-type rate (V02) after cross-sectional standardization have weaker labor conditions, so in the high regime of T this spread predicts lower next-month returns; the sign is negative.\",\"falsified_if\":\"Mean cross-sectional IC of this feature in the high-T regime is zero or positive in development statistics.\",\"expression\":\"regime(spread(V03,V02),\\\"high\\\")\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 334,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 177,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0026934,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "9973cf885c07699bea32dfb40b27cbcc093f9af1963f65858dd9601cb42f1848"
+  }
+}

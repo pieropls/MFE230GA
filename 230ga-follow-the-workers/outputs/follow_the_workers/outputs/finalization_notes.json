@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-02T05:59:34.846095+00:00",
+  "run_id": "study_primary",
+  "recorded_before_sealed_opening": true,
+  "source_changes_after_research": false,
+  "human_review": {
+    "reviewed": 8,
+    "total_pairs": 36,
+    "coverage": 0.2222222222222222,
+    "human_yes": 1,
+    "human_no": 7,
+    "machine_defined_in_sample": 2,
+    "machine_undefined_in_sample": 6,
+    "matches_when_defined": 1,
+    "disagreements_when_defined": 1,
+    "comparable_agreement": 0.5,
+    "legacy_raw_match_fraction": 0.125,
+    "interpretation": "The existing agreement field counts undefined machine labels as nonmatches; 1/8 is not disagreement among eight usable machine decisions. Only two sampled machine labels are defined, with one match and one disagreement. The small comparable sample and 28/36 undefined full-sample judgments severely limit validation."
+  },
+  "judge_format_audit": {
+    "claim": {
+      "calls": 36,
+      "valid_whole_response_json": 8,
+      "not_whole_response_json": 28
+    },
+    "failure": {
+      "calls": 36,
+      "valid_whole_response_json": 2,
+      "not_whole_response_json": 34
+    }
+  },
+  "automated_migration_limits": {
+    "total_pairs": 36,
+    "defined_claim_judgments": 8,
+    "undefined_claim_judgments": 28,
+    "defined_failure_avoidance": 0,
+    "observed_uptake_among_defined": 0.25,
+    "handling": "Preserve strict registered whole-response JSON validation; no rescue parsing, replacement calls or human-label substitution. Report uptake conditional on eight usable labels and do not infer population uptake or causal communication benefit."
+  },
+  "restart_disclosure": "The earlier technical run was excluded in full and preserved for audit. No earlier candidates, scores, reports or failed-run explanations entered the fresh study agents. Earlier exposure cannot be erased; current-run search diagnostics do not certify absence of all restart or selection bias.",
+  "registered_clarifications": "Existing 40/30/120 word limits and proposal-JSON versus report-prose mode were made explicit before fresh research. Detailed section12 defines the 36 seed1 candidate-slot IC reality-check family; DSR includes those slots plus research strategies. No rule changed after fresh outcomes.",
+  "scope_limits": [
+    "October31,2014 first sealed decision uses October30 cutoff; October2014 return is excluded from selection; sealed returns November2014\u2013August2026 (142).",
+    "All13 fixed French group mappings are approximate under the Census correspondence scope check; basket membership unchanged.",
+    "PPI discovery found2 exact sectors versus9 required; F6 excluded, coverage diagnostic retained.",
+    "LinkUp/WARN and A2 excluded under admission rules; Q2 cannot be answered. Optional A5 omitted.",
+    "Capacity remains unverified; implementation gate G5 cannot pass. Student critique remains for the team."
+  ]
+}

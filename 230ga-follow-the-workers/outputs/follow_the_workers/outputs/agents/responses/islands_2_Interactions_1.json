@@ -1,0 +1,42 @@
+{
+  "request_hash": "37998542a51b4b5d2b3f0d043b0065ae30047487807973eefef3321f6eb575e4",
+  "envelope": {
+    "response": "{\"name\":\"V02_x_V06_interaction_tsz\",\"hypothesis\":\"Groups where the flow rate V02 is unusually high relative to its own history and the stock rate V06 is also elevated will have lower next-month returns than other groups, reflecting stress that compounds across the two variables.\",\"falsified_if\":\"The cross-sectional rank correlation between this feature and next-month group returns is non-negative or statistically indistinguishable from zero in development statistics.\",\"expression\":\"mult(tsz(V02,60),tsz(V06,60))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 41,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 180,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0021374000000000002,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "37998542a51b4b5d2b3f0d043b0065ae30047487807973eefef3321f6eb575e4"
+  }
+}

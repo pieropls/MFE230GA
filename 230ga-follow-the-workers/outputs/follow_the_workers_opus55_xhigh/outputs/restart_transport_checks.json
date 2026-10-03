@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-02T06:21:17.056606+00:00",
+  "passed": true,
+  "fixed_live_call_budget": 5,
+  "synthetic_feedback_only": true,
+  "research_outputs_reused": false,
+  "checks": [
+    {
+      "role": "connection",
+      "passed": true
+    },
+    {
+      "role": "synthetic_candidate",
+      "passed": true
+    },
+    {
+      "role": "synthetic_migration",
+      "passed": true,
+      "error_type": "AssertionError",
+      "revalidated_after_screen_fix": true
+    },
+    {
+      "role": "synthetic_claim_judge",
+      "passed": true
+    },
+    {
+      "role": "synthetic_failure_judge",
+      "passed": true
+    }
+  ],
+  "model": "claude-opus-5-5",
+  "effort": "xhigh",
+  "offline_output_config": {
+    "effort": "xhigh"
+  },
+  "source_hashes": {
+    "params.py": "1b86c4a968d2f5b7d22c36efd1aef161c9ded1b3fe74281f35aa04cf098dbe10",
+    "agents.py": "7c15e14b903db31710e51b7663f195c4d6cd6c9d4f1dbf7b688bcdb89d4e6e43"
+  },
+  "screen_fix": "Amendment007; same five responses revalidated with no new model call",
+  "utc_revalidated": "2026-10-02T06:23:35.685398+00:00"
+}

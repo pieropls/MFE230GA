@@ -1,0 +1,42 @@
+{
+  "request_hash": "796b53b38df13f5449ad70d7e5643d0b33b345698badec5910986200efb68d39",
+  "envelope": {
+    "response": "The report's failure: a high-T-only flow-rate contrast had a negative IC (opposite sign), and coverage fell to 0.82. The hypothesis is about flow-rate changes, with the effect stronger in the low-T regime. Does it explicitly avoid the failure? It's a different feature (change in flow rate, not a contrast), and it shifts the regime emphasis to low-T, which is arguably a response to the high-T failure. But the hypothesis doesn't explicitly address the sign problem or coverage; it still predicts a positive sign for flow-rate-related signals. The regime choice is not explicitly justified as avoiding the failure. Evidence is unclear.\n\n{\"avoids_failure\": null}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 495,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 234,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.00333,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "796b53b38df13f5449ad70d7e5643d0b33b345698badec5910986200efb68d39"
+  }
+}

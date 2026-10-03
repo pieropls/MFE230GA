@@ -1,0 +1,39 @@
+{
+  "response": "The hypothesis and expression concern V05's year-over-year change, standardized against its own expanding history, and predict a reversal. The claims are a migration report about a different feature: an interaction of two stress-type variables, a word-limit failure, and a regime-conditioned pay-and-hours interaction. None of them is referenced or tested by the hypothesis or expression, and neither cites any claim numbers.\n\n```json\n{\"uses_claim\": false, \"claim_ids\": []}\n```",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 479,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 155,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.002508,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "425297ef344b6ac81489c0a3571d0ac429120d696f70f851053e124b7508aca4"
+}

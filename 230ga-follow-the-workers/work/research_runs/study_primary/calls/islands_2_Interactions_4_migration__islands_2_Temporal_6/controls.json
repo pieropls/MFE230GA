@@ -1,0 +1,43 @@
+{
+  "command": [
+    "/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+    "-p",
+    "--safe-mode",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--permission-prompts",
+    "none",
+    "--setting-sources",
+    "",
+    "--settings",
+    "{\"enabledPlugins\":{\"agents-md@builtin\":false}}",
+    "--system-prompt",
+    "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}.",
+    "--model",
+    "claude-sonnet-5-5",
+    "--effort",
+    "medium",
+    "--max-turns",
+    "1",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "sandbox": "(version 1)\n(allow default)\n(deny file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30\"))\n(allow file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_2_Interactions_4_migration__islands_2_Temporal_6\"))\n(allow file-read* (literal \"/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe\"))\n(deny file-read* (subpath \"/Users/alex/Downloads\"))\n(deny file-read* (subpath \"/Users/alex/.codex\"))",
+  "cli_sha256": "50a14c2f50f56668380fdda490167f1d3630d5cc18fb8aed3073c2c7ea7314fe",
+  "environment": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+    "CLAUDE_CODE_DISABLE_ATTACHMENTS": "1",
+    "DISABLE_UPDATES": "1",
+    "CLAUDE_CODE_MAX_RETRIES": "0",
+    "CLAUDE_CODE_EXTRA_BODY": "{\"messages\": [{\"role\": \"user\", \"content\": \"{\\\"claims\\\": {\\\"1\\\": \\\"**Migration report**\\\", \\\"2\\\": \\\"**Failures:** The product of two long-history standardized measures (a flow rate and a stock rate) showed essentially zero predictive power (t-stat around -0.4), despite the stress-compounding rationale.\\\", \\\"3\\\": \\\"The cross-sectional rank product of pay growth and hours change also produced nothing (mean IC zero), and was fairly redundant with existing features.\\\", \\\"4\\\": \\\"One submission was invalid because the hypothesis exceeded the word limit, so count words carefully.\\\", \\\"5\\\": \\\"**Tentative finding:** A spread between two flow rates, each standardized against its own history, gave a positive IC, opposite to my predicted sign (t-stat about 1.9).\\\", \\\"6\\\": \\\"It looked stronger in high-T periods.\\\", \\\"7\\\": \\\"Coverage was limited, at about 54%, so it is suggestive only.\\\"}, \\\"hypothesis\\\": \\\"Groups with unusually high pay growth relative to their own history, net of unusual hours growth, will have higher next-month returns, because pay strength not explained by hours reflects durable strength priced in slowly.\\\", \\\"expression\\\": \\\"spread(tsz(yoy(V05),\\\\\\\"exp\\\\\\\"),tsz(yoy(V01),\\\\\\\"exp\\\\\\\"))\\\"}\"}]}",
+    "TMPDIR": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_2_Interactions_4_migration__islands_2_Temporal_6/tmp"
+  }
+}

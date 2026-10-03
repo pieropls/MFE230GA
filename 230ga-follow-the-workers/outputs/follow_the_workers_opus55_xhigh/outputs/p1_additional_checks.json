@@ -1,0 +1,181 @@
+{
+  "utc": "2026-10-02T06:35:11.312628+00:00",
+  "passed": true,
+  "labor_vintage_checks": {
+    "non_month_start_rows": 0,
+    "duplicate_month_vintage_rows": 0,
+    "interval_gaps": 0,
+    "closed_final_intervals": 0,
+    "snapshot_empty_series": 0,
+    "first_vintage_mismatches": 0
+  },
+  "french_date_and_hash_checks": {
+    "industry": {
+      "sha256": "16b3f20bf5bd1db8f5cd7a1b29f5cab1350eb0d5106c5309f77a6629590b1c0e",
+      "first_month": "192607",
+      "last_month": "202608",
+      "distinct_months": 1202
+    },
+    "ff5": {
+      "sha256": "36756c5c2559648519ac4b22913d860c6afd865cfebce920e3e8927f8e2d10b7",
+      "first_month": "196307",
+      "last_month": "202608",
+      "distinct_months": 758
+    },
+    "momentum": {
+      "sha256": "c06d1c2e9a5e4f6985879722f23c6bb585f46b34eaf3fcb681d4de887e353f3e",
+      "first_month": "192701",
+      "last_month": "202608",
+      "distinct_months": 1196
+    }
+  },
+  "return_values_parsed": false,
+  "ppi_pagination": [
+    {
+      "group": 1,
+      "count": 187,
+      "received": 187,
+      "unique": 187
+    },
+    {
+      "group": 1,
+      "count": 9,
+      "received": 9,
+      "unique": 9
+    },
+    {
+      "group": 2,
+      "count": 200,
+      "received": 200,
+      "unique": 200
+    },
+    {
+      "group": 3,
+      "count": 3629,
+      "received": 3629,
+      "unique": 3629
+    },
+    {
+      "group": 4,
+      "count": 3629,
+      "received": 3629,
+      "unique": 3629
+    },
+    {
+      "group": 5,
+      "count": 19,
+      "received": 19,
+      "unique": 19
+    },
+    {
+      "group": 6,
+      "count": 12,
+      "received": 12,
+      "unique": 12
+    },
+    {
+      "group": 7,
+      "count": 218,
+      "received": 218,
+      "unique": 218
+    },
+    {
+      "group": 7,
+      "count": 92,
+      "received": 92,
+      "unique": 92
+    },
+    {
+      "group": 7,
+      "count": 315,
+      "received": 315,
+      "unique": 315
+    },
+    {
+      "group": 8,
+      "count": 84,
+      "received": 84,
+      "unique": 84
+    },
+    {
+      "group": 9,
+      "count": 14,
+      "received": 14,
+      "unique": 14
+    },
+    {
+      "group": 9,
+      "count": 132,
+      "received": 132,
+      "unique": 132
+    },
+    {
+      "group": 10,
+      "count": 35,
+      "received": 35,
+      "unique": 35
+    },
+    {
+      "group": 10,
+      "count": 49,
+      "received": 49,
+      "unique": 49
+    },
+    {
+      "group": 10,
+      "count": 41,
+      "received": 41,
+      "unique": 41
+    },
+    {
+      "group": 11,
+      "count": 64,
+      "received": 64,
+      "unique": 64
+    },
+    {
+      "group": 11,
+      "count": 46,
+      "received": 46,
+      "unique": 46
+    },
+    {
+      "group": 11,
+      "count": 5,
+      "received": 5,
+      "unique": 5
+    },
+    {
+      "group": 12,
+      "count": 49,
+      "received": 49,
+      "unique": 49
+    },
+    {
+      "group": 12,
+      "count": 38,
+      "received": 38,
+      "unique": 38
+    },
+    {
+      "group": 13,
+      "count": 21,
+      "received": 21,
+      "unique": 21
+    },
+    {
+      "group": 13,
+      "count": 44,
+      "received": 44,
+      "unique": 44
+    }
+  ],
+  "parameter_types": "daily ISO snapshot and integer lags verified",
+  "configured_variants": [
+    "ASOF",
+    "FIRST",
+    "REVISED",
+    "FIXEDLAG"
+  ],
+  "all_pinned_hashes_match": true
+}

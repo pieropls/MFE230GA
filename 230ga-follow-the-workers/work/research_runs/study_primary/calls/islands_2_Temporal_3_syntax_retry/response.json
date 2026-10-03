@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V05_yoy_tsz_reversal\",\"hypothesis\":\"Groups whose V05 year-over-year change is unusually high relative to its own expanding history will have lower returns next month, because strong upward momentum in this average is overpriced and later reverses.\",\"falsified_if\":\"Mean cross-sectional rank IC is non-negative, or HAC t-statistic is above -1, in development data.\",\"expression\":\"tsz(yoy(V05),\\\"exp\\\")\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1299,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0044234,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "a74f1a4102088af97d16dd37433a1f5540ef4c9e75644774dea04937af1fbe5a"
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "c3cd9d6994b55fef0a37ea28c6d4bafcc57c4946612259ae180bb7ef03fdea1c",
+  "envelope": {
+    "response": "The report lists several failures: near-zero correlation for the interaction, thin coverage (~half), an invalid non-whitelisted transformation, tiny/insignificant regime-gated hours momentum, a slightly negative spread, and high persistence of regime-gated features.\n\nThe proposed expression, csrank(lchg(V01,3)), is a plain hours momentum feature without regime gating. Does it explicitly avoid any failure? It does not use a regime gate, so it sidesteps the high persistence of regime-gated features, but it does not explicitly address this. It also may use whitelisted transforms (unknown). The hypothesis is essentially the same hours momentum idea that yielded ~0.01 correlation in the high-T regime, only ungated. It doesn't address weak signal, coverage, or persistence explicitly.\n\nThe evidence is unclear as to whether it avoids a failure explicitly; it mostly repeats the failed idea in ungated form.\n\n{\"avoids_failure\": false}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 460,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 323,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.00415,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "c3cd9d6994b55fef0a37ea28c6d4bafcc57c4946612259ae180bb7ef03fdea1c"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "utc": "2026-09-29T19:25:44.656937+00:00",
+  "fixture_directory": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/synthetic_integration/20260929T192449066168",
+  "checks": [
+    "French cap",
+    "108 submissions and 18 migrations",
+    "cached replay",
+    "human-review accounting",
+    "candidate abstention",
+    "masked bootstrap",
+    "research selection",
+    "four sealed variants",
+    "13 drop-group diagnostics",
+    "course windows",
+    "12 figures",
+    "report"
+  ],
+  "evidence_hashes": {
+    "params.py": "73cd51cefbd34677600cdb932fd2a657379fe26ff91e04c3507f3ce91d470178",
+    "data.py": "517f2e9e0fd284f60d0797b4b916612c22e55f361dd41125dc31b6974458dca8",
+    "stats.py": "c627a8ba4cb6f70fb141bb32688ec59afb62f500dca9a37cdafb30496a40ede7",
+    "agents.py": "12f3e130be2de7508982c30c768b540f2024c2cefeff3c78d77a74439713d12c",
+    "plots.py": "5e4cd7496dc8e5e24e004bdbaeeee42247825ff446c34d3156d08cb626e5356e",
+    "run.ipynb": "7e0aad2023cacf9378e75eab325e3ff711d11b50668896f71661d6fa2bdcb189"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "660f8a2c07b9eddfdc0d9e6e5042caf03748d94dbebe9f53099f575914e69d1a",
+  "envelope": {
+    "response": "{\"name\":\"V05_yoy_persist6_temporal\",\"hypothesis\":\"Groups whose V05 dollars-per-hour level has risen in a larger share of recent months (persist over 6 months) will have higher returns next month, because steady upward momentum in this average reflects continuing strength that is priced in slowly.\",\"falsified_if\":\"Mean cross-sectional rank IC is non-positive or HAC t-statistic is below 1 in development data, or the top-minus-bottom quintile spread is negative.\",\"expression\":\"persist(V05,6)\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 329,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 182,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0027334,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "660f8a2c07b9eddfdc0d9e6e5042caf03748d94dbebe9f53099f575914e69d1a"
+  }
+}

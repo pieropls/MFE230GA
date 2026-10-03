@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"stock_rate_level_index_interaction\", \"hypothesis\": \"Groups whose V06 stock rate is elevated versus its own expanding history show persistent strength; interacted with the common index, this positively predicts next-month relative returns, more strongly when the index is high.\", \"falsified_if\": \"Mean rank IC is non-positive or HAC t-statistic below 2, or high-T IC does not exceed low-T IC across development periods.\", \"expression\": \"withT(tsz(V06,\\\"exp\\\"))\"}",
+  "model": "claude-opus-5-5",
+  "tokens": {
+    "input_tokens": 1114,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1308,
+    "output_tokens": 1609,
+    "output_tokens_details": {
+      "thinking_tokens": 1437
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0368976,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-opus-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "cc20f507d261cdc28753435c082678bf4db651e4709ae6852bfddf67521f05d9"
+}

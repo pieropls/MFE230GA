@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-02T06:05:45.258900+00:00",
+  "run_id": "initial",
+  "report_source": "Saved research, human-review and sealed artifacts; no evaluation rerun",
+  "presentation_only": true,
+  "frozen_source_or_result_changes": false,
+  "generated_report_sha256": "4709391cb1a65d7a42b463b029c807fd338518b2d376485938b9aaeef2dead13",
+  "report_sha256": "b2fd1a328afeff072a843280ea59a8b0b52b0a1e5e150b47c237a0f520ce0734",
+  "interaction_log_sha256": "95d7acfeb4557849c7bcbcafdcdf2a3812debab0e8881c4ec333c54871112360",
+  "figure_count": 12,
+  "sealed_results_sha256": "a6a09b02013e25407a45ad6f4631d86e53fefdbeb75ddf543b173e8c560302ed",
+  "remaining_team_work": [
+    "Complete team critique in the interaction log",
+    "Review assignment wording/provider substitution and final layout/page limits before submission"
+  ]
+}

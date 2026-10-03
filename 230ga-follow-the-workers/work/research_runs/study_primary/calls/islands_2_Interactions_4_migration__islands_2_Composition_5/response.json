@@ -1,0 +1,39 @@
+{
+  "response": "The hypothesis tests a spread between two flow rates, each standardized against its own history, and expects a positive IC. That matches claim 5, which describes a spread between two flow rates standardized against their own histories that gave a positive IC (opposite to the predicted sign).\n\nClaim 2 concerns a product of a flow rate and a stock rate, not a spread, so it doesn't apply. Claim 3 covers a cross-sectional rank product of pay growth and hours change, which is also different. Claims 6 and 7 refer to the same finding as claim 5 (stronger in high-T periods, 54% coverage), but the hypothesis does not test those specifics. Claims 1 and 4 are meta-level notes about the report and word limits.\n\nThe hypothesis and expression build on claim 5. Claims 6 and 7 are follow-on details of that finding, and the hypothesis does not test them.\n\n{\"uses_claim\": true, \"claim_ids\": [5]}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 471,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 311,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.004052,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "3ad08b845b3220f1ce1a1389d799b835d007a823f3e0cf1a46cc35ee63ac49cd"
+}

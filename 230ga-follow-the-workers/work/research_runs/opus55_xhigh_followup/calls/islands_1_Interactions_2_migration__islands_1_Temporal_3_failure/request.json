@@ -1,0 +1,13 @@
+{
+  "request_hash": "58d6761151606c898b86cfe74cbf33f9cc80da1f6425d28cb599f367d57bd7e1",
+  "request": {
+    "call_id": "islands_1_Interactions_2_migration__islands_1_Temporal_3_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 3,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\nOur first attempt combined three-month momentum in average hours and in hourly pay as a rank product. It failed. Its next-month predictive correlation was slightly negative, insignificant and unchanged across common-index regimes.\\n\\nThe second attempt favored groups whose V02 flow rate rose faster than V03 over three months. It produced a meaningfully negative correlation, with a t-statistic near minus two, concentrated when the common index was low. Reversing its direction, perhaps conditioned on the low regime, looks promising.\\n\\nBoth features showed low overlap with base signals and moderate rank persistence.\", \"hypothesis\": \"Reversing an observed negative signal: groups whose V03 flow rate rose more than V02 over three months, respecting the two-month lag, earn higher next-month relative returns, especially when T is low.\", \"expression\": \"spread(chg(lag(V03,2),3),chg(lag(V02,2),3))\"}"
+  }
+}

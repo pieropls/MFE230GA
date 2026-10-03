@@ -1,0 +1,42 @@
+{
+  "request_hash": "ed19a48d8743b1078a0111fa3183a195241ffb60b2c3980412c99677f6fea5b5",
+  "envelope": {
+    "response": "{\"name\":\"V03_V04_composition_spread_6m_mavg\",\"hypothesis\":\"Groups whose V03 flow rate, smoothed over 6 months, is high relative to V04 flow rate (cross-sectionally standardized) have higher next-month returns, because a composition tilt toward V03 signals improving conditions. Expect positive IC in both T regimes.\",\"falsified_if\":\"Mean rank IC is zero or negative, HAC t-statistic is below 1, or high_T and low_T IC have opposite signs in development statistics.\",\"expression\":\"spread(mavg(V03,6),mavg(V04,6))\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 939,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1276,
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.004213199999999999,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "ed19a48d8743b1078a0111fa3183a195241ffb60b2c3980412c99677f6fea5b5"
+  }
+}

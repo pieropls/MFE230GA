@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-28T15:32:36.596210+00:00",
+  "complete": false,
+  "reason": "No verified executable mapping or intended capital/liquidity/borrow evidence for the fixed French portfolio universe",
+  "issuer_existence_verified": true,
+  "source_document": "outputs/implementation_capacity.md",
+  "required_evidence": [
+    "capital and position sizes",
+    "historical holdings and classification mappings",
+    "spreads/depth/volume",
+    "borrow and financing terms",
+    "market-impact assumptions"
+  ],
+  "effect": "G5 remains unverified; no implementation recommendation can follow from research returns alone"
+}

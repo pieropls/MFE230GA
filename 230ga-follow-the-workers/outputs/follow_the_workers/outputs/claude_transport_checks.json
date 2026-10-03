@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "utc": "2026-09-29T10:15:57.355653+00:00",
+  "offline_only": false,
+  "tests_run": 9,
+  "parameter_change_scope": "AGENT only; all other parameter AST nodes identical",
+  "requested_model": "claude-sonnet-5-5",
+  "requested_model_live_verified": true,
+  "original_preregistration_sha256": "86b77557853db2ccbd184cfafbc3edede8d25766419200f391f0c9a2de2b2808",
+  "evidence_hashes": {
+    "params.py": "9fccbba2fef13ae05d0829f5d2d2ae25f1b486a5258fcbbf31a988227bb1ebac",
+    "data.py": "9011bfe46656f60bafe406764429a02cd5bc64126ffd06df822c21cbb1dc5652",
+    "stats.py": "a86d33260d71a4e460d26664f6a59d0a7b20482d45495bdae4802ee967fe6e19",
+    "agents.py": "ab96d834217d230ae5a5a896e8dffe0807baec6dc6d8d2315fdf30e767885820",
+    "plots.py": "c415413f4df157c5974adbc4de73b5c559160cd38eecb41401cc7e001bdb6600"
+  },
+  "test_source_sha256": "f9b21e61d0141afd587208e82d609e64dfc82c954419b74d9243b17efc4e162e",
+  "cli_version": "2.1.284",
+  "live_smoke_calls_this_upgrade": 3,
+  "live_research_calls": 0,
+  "transport_attestation_sha256": "08aa52aac6fb5785f50985f0d6cb6de10eba70da5a278c01aaa0a5e5af1f903f",
+  "successful_audit_calls": 1,
+  "parser_revision": "Completed SDK content blocks compose one verified turn; actual audit recovered without repeating inference."
+}

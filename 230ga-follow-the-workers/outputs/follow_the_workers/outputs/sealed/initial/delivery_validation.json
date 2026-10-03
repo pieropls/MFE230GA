@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-02T06:02:35.669182+00:00",
+  "passed": true,
+  "frozen_hashes_verified": true,
+  "sealed_evaluations": 1,
+  "reruns": 0,
+  "variants": 4,
+  "strategies_per_variant": 5,
+  "months_per_strategy": 142,
+  "checks": [
+    "unique complete 2014-11 through 2026-08 ledgers",
+    "saved performance reconciled to ledgers",
+    "net/cost/risk-free accounting",
+    "risk and leverage caps",
+    "weights/score shapes and finite values",
+    "horizon sample sizes",
+    "95 placebos/13 drop-group/36 candidate accounting",
+    "12 PNG/PDF figure pairs readable"
+  ],
+  "visual_review_pending": false,
+  "visual_review": "All12 plots visually inspected using contact sheet; labels/legends visible. Figure5 unavailable low/middle bins and Figure9 missing judge coverage explicitly captioned in report.",
+  "report_local_links_checked": 43,
+  "report_figures": 12,
+  "single_sealed_access_verified": true,
+  "frozen_hashes_verified_after_report": true
+}

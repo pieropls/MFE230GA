@@ -1,0 +1,13 @@
+{
+  "request_hash": "323e9e5927375612f00bcf25bc4df91fb027956366787c7942bb85a44d38da43",
+  "request": {
+    "call_id": "islands_2_Interactions_2_migration__islands_2_Temporal_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear.",
+    "prompt": "{\"report\": \"**Migration report**\\n\\n**Failed:** My first feature, an interaction of two standardized stress-type variables (one flow rate, one stock rate), showed essentially no predictive power. Mean IC was slightly negative, the HAC t-stat was weak, and coverage was only about half, likely because of the long history requirement. My second submission was invalid because the hypothesis exceeded the word limit by two words, which wasted a slot.\\n\\n**Learned:** The interaction's IC looked much stronger in the high-T regime than in the low-T regime, so the effect may be regime-dependent. Base correlation was low, so the feature is novel. Rank autocorrelation was moderate.\\n\\n**Next:** Try a regime-conditioned pay-and-hours interaction, and count words carefully before submitting.\", \"hypothesis\": \"Groups with unusually high pay growth relative to their own history, net of unusual hours growth, will have higher next-month returns, because pay strength not explained by hours reflects durable strength priced in slowly.\", \"expression\": \"spread(tsz(yoy(V05),\\\"exp\\\"),tsz(yoy(V01),\\\"exp\\\"))\"}"
+  }
+}

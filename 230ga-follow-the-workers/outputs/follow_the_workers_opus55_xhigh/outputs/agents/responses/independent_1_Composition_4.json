@@ -1,0 +1,42 @@
+{
+  "request_hash": "811b00735f818dba35985cc56ce7e50850f9271197dcdfd49607d67b72bbe6f5",
+  "envelope": {
+    "response": "{\"name\": \"persist_comp_V03_over_V04_6m\", \"hypothesis\": \"Consistency matters more than magnitude: groups whose V03-to-V04 ratio rose in more of the last six months have a durable composition shift and earn higher next-month relative returns.\", \"falsified_if\": \"Mean rank IC is nonpositive or HAC t below 1.5, or IC fails to exceed submission 1's 0.02 over the development sample.\", \"expression\": \"csrank(persist(ratio(V03,V04),6))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 956,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1307,
+      "output_tokens": 936,
+      "output_tokens_details": {
+        "thinking_tokens": 761
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0228054,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "811b00735f818dba35985cc56ce7e50850f9271197dcdfd49607d67b72bbe6f5"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "**Migration report**\n\nTwo features were tried, and neither found signal.\n\nThe first was a temporal standardization of the V03 flow rate against each group's own expanding history. It produced a mildly negative average rank correlation with next-month returns (t about -1.4). Coverage was only 71%. It had moderate overlap with base features and little regime difference by T. This suggests V03 momentum is not rewarded, and may weakly reverse.\n\nThe second was a relative three-month change comparison between V02 and V04. It scored essentially zero (t about 0.05) and showed no T-regime dependence, which failed my stated hypothesis.\n\nNext I would try level or persistence-based features on V01, V05 and V06, and would avoid long-history standardization because of its coverage cost."
+          }
+        ],
+        "usage": {
+          "input_tokens": 716,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1247,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 6,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "**Migration report**\n\nTwo features were tried, and neither found signal.\n\nThe first was a temporal standardization of the V03 flow rate against each group's own expanding history. It produced a mildly negative average rank correlation with next-month returns (t about -1.4). Coverage was only 71%. It had moderate overlap with base features and little regime difference by T. This suggests V03 momentum is not rewarded, and may weakly reverse.\n\nThe second was a relative three-month change comparison between V02 and V04. It scored essentially zero (t about 0.05) and showed no T-regime dependence, which failed my stated hypothesis.\n\nNext I would try level or persistence-based features on V01, V05 and V06, and would avoid long-history standardization because of its coverage cost.",
+      "usage": {
+        "input_tokens": 716,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1247,
+        "output_tokens": 245,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 716,
+          "outputTokens": 245,
+          "cacheReadInputTokens": 1247,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0041314,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0041314
+    }
+  ],
+  "stderr_present": false
+}

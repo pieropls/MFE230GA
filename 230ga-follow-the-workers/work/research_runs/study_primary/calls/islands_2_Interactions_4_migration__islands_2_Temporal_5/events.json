@@ -1,0 +1,85 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-sonnet-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "The hypothesis is about smoothing a year-over-year change in V05 and standardizing it. None of the numbered claims are tested or used by it.\n\nClaims 2, 3, and 5 describe results for other signals: a product of a flow rate and a stock rate, a rank product of pay growth and hours change, and a spread between two flow rates. The hypothesis is a single smoothed variable, not a product or a spread, so it doesn't replicate or test them.\n\nClaim 4 is about a word limit. Claim 1 is a header. Claims 6 and 7 are caveats attached to the spread finding. None of these is tested by the expression.\n\nThe hypothesis does involve standardizing against a signal's own history, which is a technique that claims 2 and 5 also mention. That overlap is only in method, and the expression doesn't depend on or test any claim's result.\n\n```json\n{\"uses_claim\": false, \"claim_ids\": []}\n```"
+          }
+        ],
+        "usage": {
+          "input_tokens": 483,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 1,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "The hypothesis is about smoothing a year-over-year change in V05 and standardizing it. None of the numbered claims are tested or used by it.\n\nClaims 2, 3, and 5 describe results for other signals: a product of a flow rate and a stock rate, a rank product of pay growth and hours change, and a spread between two flow rates. The hypothesis is a single smoothed variable, not a product or a spread, so it doesn't replicate or test them.\n\nClaim 4 is about a word limit. Claim 1 is a header. Claims 6 and 7 are caveats attached to the spread finding. None of these is tested by the expression.\n\nThe hypothesis does involve standardizing against a signal's own history, which is a technique that claims 2 and 5 also mention. That overlap is only in method, and the expression doesn't depend on or test any claim's result.\n\n```json\n{\"uses_claim\": false, \"claim_ids\": []}\n```",
+      "usage": {
+        "input_tokens": 483,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 299,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 483,
+          "outputTokens": 299,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.003956,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.003956
+    }
+  ],
+  "stderr_present": false
+}

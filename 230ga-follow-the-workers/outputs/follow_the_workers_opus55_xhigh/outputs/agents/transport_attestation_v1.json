@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-02T06:18:20.494152+00:00",
+  "approved_protocol": true,
+  "zero_tools_verified": true,
+  "no_project_context_verified": true,
+  "no_history_reuse_verified": true,
+  "exact_model_recorded": true,
+  "actual_model": "claude-opus-5-5",
+  "effort": "xhigh",
+  "live_subscription_verified": true,
+  "cli_path": "/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+  "cli_sha256": "50a14c2f50f56668380fdda490167f1d3630d5cc18fb8aed3073c2c7ea7314fe",
+  "run_id": "opus55_xhigh_followup",
+  "evidence_files": [
+    {
+      "file": "outputs/agents/transport_evidence/checks.json",
+      "sha256": "30735cf140e6e5f2bc9193ec3958ed3549a917cf42e07ac41385b995de748db6"
+    },
+    {
+      "file": "outputs/agents/transport_evidence/live_auth_status.json",
+      "sha256": "77f3897f1f5beece8656a4ebb55d0a80e47922ec14bbd71f21af4d1dfda96672"
+    },
+    {
+      "file": "outputs/agents/transport_evidence/live_controls.json",
+      "sha256": "89110e7b2c7691b3856e6a86e1ea6bef662bda466f1a8a429a1724b336c0b930"
+    },
+    {
+      "file": "outputs/agents/transport_evidence/live_events.json",
+      "sha256": "1d90ae0543612020fda1a5cbc61f6014ec322c9c2bab382fe72360478e51cebe"
+    },
+    {
+      "file": "outputs/agents/transport_evidence/live_request.json",
+      "sha256": "2eaac2e80bef4795d51c3b4fde9b66b51742c80f8872be0ec3551637ef28221b"
+    },
+    {
+      "file": "outputs/agents/transport_evidence/live_response.json",
+      "sha256": "d5f4287c46ebdd920538d5247093dbbe0298fad78b1152d28e18e487ec766139"
+    },
+    {
+      "file": "outputs/agents/transport_evidence/offline_payload.json",
+      "sha256": "981889e5b947166cd36e0b144b39ee67b684975fcea2d39ca9ab6f049d7c5e94"
+    },
+    {
+      "file": "outputs/agents/transport_evidence/offline_sandbox.sb",
+      "sha256": "96d380733e8e38d8551451a97e98c57ef86d15807e05f9fa99482e39f93e8d77"
+    }
+  ],
+  "binding_hashes": {
+    "params.py": "077baaa8b9339f7ea6166f2566c692a1bdde877d273b6b809d2a778c6fe50a92",
+    "agents.py": "11bcf15485cfe9bc1b08e5fe4d1ae787684358b951e79a82b33aee93dcc3cbbf",
+    "outputs/prereg_amendments/001_claude_subscription.json": "902affa55014f4a152bd052d2539d198df609f700e6131e5119a8a77caa473f2"
+  }
+}

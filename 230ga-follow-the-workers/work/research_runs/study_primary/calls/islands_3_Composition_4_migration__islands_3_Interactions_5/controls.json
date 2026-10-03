@@ -1,0 +1,43 @@
+{
+  "command": [
+    "/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+    "-p",
+    "--safe-mode",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--permission-prompts",
+    "none",
+    "--setting-sources",
+    "",
+    "--settings",
+    "{\"enabledPlugins\":{\"agents-md@builtin\":false}}",
+    "--system-prompt",
+    "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}.",
+    "--model",
+    "claude-sonnet-5-5",
+    "--effort",
+    "medium",
+    "--max-turns",
+    "1",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "sandbox": "(version 1)\n(allow default)\n(deny file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30\"))\n(allow file-read* (subpath \"/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_3_Composition_4_migration__islands_3_Interactions_5\"))\n(allow file-read* (literal \"/Users/alex/.npm-global/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe\"))\n(deny file-read* (subpath \"/Users/alex/Downloads\"))\n(deny file-read* (subpath \"/Users/alex/.codex\"))",
+  "cli_sha256": "50a14c2f50f56668380fdda490167f1d3630d5cc18fb8aed3073c2c7ea7314fe",
+  "environment": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "1",
+    "CLAUDE_CODE_DISABLE_ATTACHMENTS": "1",
+    "DISABLE_UPDATES": "1",
+    "CLAUDE_CODE_MAX_RETRIES": "0",
+    "CLAUDE_CODE_EXTRA_BODY": "{\"messages\": [{\"role\": \"user\", \"content\": \"{\\\"claims\\\": {\\\"1\\\": \\\"**Migration report**\\\", \\\"2\\\": \\\"Four composition-style features were tried, all valid.\\\", \\\"3\\\": \\\"None was statistically convincing.\\\", \\\"4\\\": \\\"The most promising was the smoothed cross-sectional contrast between average hours and hourly wage.\\\", \\\"5\\\": \\\"Its mean IC was 0.03 (HAC t of 1.0), somewhat stronger in the high-T regime.\\\", \\\"6\\\": \\\"That is suggestive but not significant.\\\", \\\"7\\\": \\\"The clearest failure was the high-T-only flow-rate contrast.\\\", \\\"8\\\": \\\"It had an IC of -0.07 (t of -1.25), the opposite sign to my hypothesis, and coverage fell to 0.82.\\\", \\\"9\\\": \\\"The stock-versus-flow contrast and the wage-versus-turnover contrast both had ICs near zero.\\\", \\\"10\\\": \\\"Smoothed features have rank autocorrelation of 0.97 to 1.0, so their effective sample is small.\\\", \\\"11\\\": \\\"Base correlations were low, at most 0.18.\\\"}, \\\"hypothesis\\\": \\\"Groups with a high V06 stock rate whose average hours V01 are rising over 6 months show early recovery from slack, so the interaction of their cross-sectional ranks predicts higher next-month returns; sign is positive.\\\", \\\"expression\\\": \\\"mult(csrank(V06),csrank(chg(V01,6)))\\\"}\"}]}",
+    "TMPDIR": "/Users/alex/Documents/Codex/2026-09-27/9-26-26-5-58-30/work/research_runs/study_primary/calls/islands_3_Composition_4_migration__islands_3_Interactions_5/tmp"
+  }
+}

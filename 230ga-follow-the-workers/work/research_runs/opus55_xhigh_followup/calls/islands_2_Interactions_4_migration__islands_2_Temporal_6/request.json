@@ -1,0 +1,13 @@
+{
+  "request_hash": "7918a62abc9dec04a937f6586b35ac7d9ab713b307bf27175ee25a35ffcdef72",
+  "request": {
+    "call_id": "islands_2_Interactions_4_migration__islands_2_Temporal_6",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 2,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Assess whether the hypothesis or expression uses or tests numbered claims. Return JSON only: {\"uses_claim\": true|false, \"claim_ids\": []}. Return one bare JSON object without Markdown fences or commentary. uses_claim must be a JSON boolean. claim_ids must be an array of integer claim numbers, never quoted strings; use an empty array when uses_claim is false.",
+    "prompt": "{\"claims\": {\"1\": \"**Findings so far**\", \"2\": \"The interaction features failed.\", \"3\": \"Combining three-month gains in hourly pay and average hours produced a slightly negative, insignificant IC.\", \"4\": \"Pairing a standardized stock rate with a rising flow rate covered only half the sample.\", \"5\": \"Its sign also flipped between low and high index regimes, which points to instability rather than a conditional effect.\", \"6\": \"The best lead is the six-month change in V03 relative to V02.\", \"7\": \"Its pooled IC was small and positive.\", \"8\": \"However, its HAC t-statistic of 1.99 missed my preregistered threshold of 2.0, so it is formally falsified.\", \"9\": \"Most of its strength sits in low-index periods.\", \"10\": \"After only four attempts, treat it as tentative.\"}, \"hypothesis\": \"Six-month log hourly-pay growth that is unusually high versus each group's trailing three-year history captures fresher demand tightening than twelve-month growth, predicting higher next-month relative returns.\", \"expression\": \"csrank(tsz(lchg(V05,6),36))\"}"
+  }
+}

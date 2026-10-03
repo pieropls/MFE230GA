@@ -1,0 +1,13 @@
+{
+  "request_hash": "274bb9937adb1243113b929428301ea91cf692e859c6e7e38f11aa23a51268db",
+  "request": {
+    "call_id": "islands_1_Composition_4_migration__islands_1_Interactions_5_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 5,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings so far**\\n\\n**Failure:** Static flow composition carried no signal. A smoothed level comparison of V02 against V03 gave a mean IC near 0.01 (t about 0.4). A three-month shift of V02 against V04 also failed, with IC essentially zero.\\n\\n**Partial success:** Groups whose V03 rate rose faster than their V02 rate over three months, relative to peers, outperformed modestly (IC 0.06, t about 2.1). The effect appears only in low common-index periods (IC 0.12) and disappears when the index is high. Restricting to low regimes gave t about 3.6 but only 58 percent coverage. That gain is largely mechanical rather than independent evidence.\", \"hypothesis\": \"Data-informed by submission 4, where relative V03 rises modestly predicted outperformance. Groups where V03 and hourly pay both rose over six months, via product of ranks, should outperform peers next month.\", \"expression\": \"mult(csrank(chg(V03,6)),csrank(lchg(V05,6)))\"}"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "request_hash": "68edcdca610bdf0fbcad251167ca8aa44076f4aa79b483d56ea4f2d866d511ab",
+  "request": {
+    "call_id": "islands_1_Temporal_4_migration__islands_1_Interactions_6_failure",
+    "kind": "judge",
+    "arm": "islands",
+    "seed": 1,
+    "agent": "judge",
+    "submission": 6,
+    "system": "Determine whether the proposed hypothesis or expression explicitly avoids a failure described in the report. Return JSON only: {\"avoids_failure\": true|false|null}. Use null when the evidence is unclear. Return one bare JSON object without Markdown fences or commentary; the value must be a JSON boolean or null, never a quoted string.",
+    "prompt": "{\"report\": \"**Findings after four submissions**\\n\\nThree ideas failed. Acceleration in average hours, persistence of rises in the stock rate, and a three-month shift between two flow rates each gave near-zero mean rank correlations. Their t-statistics were below one, so all three failed our falsification rule.\\n\\nOne idea worked modestly. Annual hourly-pay growth, standardized against each group's own three-year history, produced a positive rank correlation with a t-statistic just above two. It was stronger in low-T periods. Caveats: coverage dropped to about sixty percent because of the long history requirement, and the signal is highly persistent. Pay-based signals deserve further robustness testing.\", \"hypothesis\": \"Final robustness check, data-informed by submissions 2 and 4: if relative V03 rises over V02 genuinely predict outperformance, seasonally neutral year-over-year changes should also predict higher relative returns next month, in both T regimes.\", \"expression\": \"spread(yoy(V03),yoy(V02))\"}"
+  }
+}

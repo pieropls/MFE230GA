@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V04_V02_flow_spread_tsz_low_T\",\"hypothesis\":\"Groups whose V04 rate is unusually high versus their own history, relative to V02 (cross-sectionally standardized spread of time-series z-scores), earn lower next-month relative returns, especially when T is in its low regime, since stretched flows mean-revert.\",\"falsified_if\":\"Mean cross-sectional rank correlation with next-month returns is zero or positive, or HAC t-statistic is above -1, particularly in the low T regime.\",\"expression\":\"regime(spread(tsz(V04,60),tsz(V02,60)),\\\"low\\\")\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 985,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 214,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0043654,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "29668264d999dae250fe8a38faa8e128887d9b3cae8e07f2cd465e2008780a42"
+}

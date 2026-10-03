@@ -1,0 +1,14 @@
+group,name,JOLTS_code,French_members,CES_code,prescribed_match,verified_French_scope,outside_scope_rows,correspondence_rows
+1,Mining and logging,110099,Gold Mines Coal Oil,10000000,exact,Approximate SIC portfolio proxy,11,44
+2,Construction,2300,Cnstr,20000000,exact,Approximate SIC portfolio proxy,2,64
+3,Durable manufacturing,3200,Toys BldMt Steel FabPr Mach ElcEq Autos Aero Ships Guns Hardw Chips LabEq MedEq,31000000,exact,Approximate SIC portfolio proxy,36,390
+4,Nondurable manufacturing,3400,Food Soda Beer Smoke Hshld Clths Drugs Chems Rubbr Txtls Paper,32000000,Hshld approximate,Approximate SIC portfolio proxy,72,408
+5,Wholesale trade,4200,Whlsl,41420000,exact,Approximate SIC portfolio proxy,73,285
+6,Retail trade,4400,Rtail,42000000,exact,Approximate SIC portfolio proxy,17,110
+7,"Transportation, warehousing and utilities",480099,Trans Util,43000000,CES excludes utilities,Approximate SIC portfolio proxy,16,114
+8,Information,5100,Telcm,50000000,exact,Approximate SIC portfolio proxy,2,16
+9,Finance and insurance,5200,Banks Insur Fin,55000000,CES financial activities,Approximate SIC portfolio proxy,5,99
+10,Real estate and rental and leasing,5300,RlEst,55000000,shared CES with group 9,Approximate SIC portfolio proxy,6,18
+11,Professional and business services,540099,BusSv,60000000,exact,Approximate SIC portfolio proxy,77,162
+12,Health care and social assistance,6200,Hlth,65000000,CES includes private education,Approximate SIC portfolio proxy,3,41
+13,Accommodation and food services,7200,Meals,70000000,CES includes leisure,Approximate SIC portfolio proxy,2,15

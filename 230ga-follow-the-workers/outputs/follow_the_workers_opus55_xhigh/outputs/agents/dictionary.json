@@ -1,0 +1,65 @@
+[
+  {
+    "id": "T",
+    "type": "index",
+    "stock_or_flow": "stock ratio",
+    "frequency": "monthly",
+    "availability_lag_months": 2,
+    "coverage_share": 1.0,
+    "common": true
+  },
+  {
+    "id": "V01",
+    "type": "hours",
+    "stock_or_flow": "average",
+    "frequency": "monthly",
+    "availability_lag_months": 1,
+    "coverage_share": 1.0,
+    "common": false
+  },
+  {
+    "id": "V02",
+    "type": "rate in percent of employment",
+    "stock_or_flow": "flow",
+    "frequency": "monthly",
+    "availability_lag_months": 2,
+    "coverage_share": 1.0,
+    "common": false
+  },
+  {
+    "id": "V03",
+    "type": "rate in percent of employment",
+    "stock_or_flow": "flow",
+    "frequency": "monthly",
+    "availability_lag_months": 2,
+    "coverage_share": 1.0,
+    "common": false
+  },
+  {
+    "id": "V04",
+    "type": "rate in percent of employment",
+    "stock_or_flow": "flow",
+    "frequency": "monthly",
+    "availability_lag_months": 2,
+    "coverage_share": 1.0,
+    "common": false
+  },
+  {
+    "id": "V05",
+    "type": "dollars per hour",
+    "stock_or_flow": "average",
+    "frequency": "monthly",
+    "availability_lag_months": 1,
+    "coverage_share": 1.0,
+    "common": false
+  },
+  {
+    "id": "V06",
+    "type": "rate in percent of employment",
+    "stock_or_flow": "stock",
+    "frequency": "monthly",
+    "availability_lag_months": 2,
+    "coverage_share": 1.0,
+    "common": false
+  }
+]

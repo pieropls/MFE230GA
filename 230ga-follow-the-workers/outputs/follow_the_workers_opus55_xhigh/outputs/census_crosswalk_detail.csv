@@ -1,0 +1,1767 @@
+group,portfolio,sic,naics_2002,naics_title,within_prescribed_scope
+1,Gold,1041,212221,Gold Ore Mining,True
+1,Gold,1044,212222,Silver Ore Mining,True
+1,Mines,1011,212210,Iron Ore Mining,True
+1,Mines,1021,212234,Copper Ore and Nickel Ore Mining,True
+1,Mines,1031,212231,Lead Ore and Zinc Ore Mining,True
+1,Mines,1061,212234,Copper Ore and Nickel Ore Mining,True
+1,Mines,1061,212299,All Other Metal Ore Mining,True
+1,Mines,1081,213114,Support Activities for Metal Mining,True
+1,Mines,1081,238910,Site Preparation Contractors,False
+1,Mines,1081,541360,Geophysical Surveying and Mapping Services,False
+1,Mines,1094,212291,Uranium-Radium-Vanadium Ore Mining,True
+1,Mines,1099,212299,All Other Metal Ore Mining,True
+1,Mines,1411,212311,Dimension Stone Mining and Quarrying,True
+1,Mines,1422,212312,Crushed and Broken Limestone Mining and Quarrying,True
+1,Mines,1423,212313,Crushed and Broken Granite Mining and Quarrying,True
+1,Mines,1429,212319,Other Crushed and Broken Stone Mining and Quarrying,True
+1,Mines,1442,212321,Construction Sand and Gravel Mining,True
+1,Mines,1446,212322,Industrial Sand Mining,True
+1,Mines,1455,212324,Kaolin and Ball Clay Mining,True
+1,Mines,1459,212325,Clay and Ceramic and Refractory Minerals Mining,True
+1,Mines,1474,212391,"Potash, Soda, and Borate Mineral Mining",True
+1,Mines,1475,212392,Phosphate Rock Mining,True
+1,Mines,1479,212393,Other Chemical and Fertilizer Mineral Mining,True
+1,Mines,1481,213115,Support Activities for Nonmetallic Minerals (except Fuels),True
+1,Mines,1481,238910,Site Preparation Contractors,False
+1,Mines,1481,541360,Geophysical Surveying and Mapping Services,False
+1,Mines,1499,212319,Other Crushed and Broken Stone Mining and Quarrying,True
+1,Mines,1499,212399,All Other Nonmetallic Mineral Mining,True
+1,Coal,1221,212111,Bituminous Coal and Lignite Surface Mining,True
+1,Coal,1222,212112,Bituminous Coal Underground Mining,True
+1,Coal,1231,212113,Anthracite Mining,True
+1,Coal,1241,213113,Support Activities for Coal Mining,True
+1,Coal,1241,238910,Site Preparation Contractors,False
+1,Oil,1311,211111,Crude Petroleum and Natural Gas Extraction,True
+1,Oil,1321,211112,Natural Gas Liquid Extraction,True
+1,Oil,1381,213111,Drilling Oil and Gas Wells,True
+1,Oil,1382,213112,Support Activities for Oil and Gas Operations,True
+1,Oil,1382,541360,Geophysical Surveying and Mapping Services,False
+1,Oil,1389,213112,Support Activities for Oil and Gas Operations,True
+1,Oil,1389,237120,Oil and Gas Pipeline and Related Structures Construction,False
+1,Oil,1389,238910,Site Preparation Contractors,False
+1,Oil,2911,324110,Petroleum Refineries,False
+1,Oil,2992,324191,Petroleum Lubricating Oil and Grease Manufacturing,False
+1,Oil,2999,324199,All Other Petroleum and Coal Products Manufacturing,False
+2,Cnstr,1521,236115,New Single-Family Housing Construction (except Operative Builders),True
+2,Cnstr,1521,236118,Residential Remodelers,True
+2,Cnstr,1522,236116,New Multifamily Housing Construction (except Operative Builders),True
+2,Cnstr,1522,236118,Residential Remodelers,True
+2,Cnstr,1522,236220,Commercial and Institutional Building Construction,True
+2,Cnstr,1531,236117,New Housing Operative Builders,True
+2,Cnstr,1531,236118,Residential Remodelers,True
+2,Cnstr,1531,236210,Industrial Building Construction,True
+2,Cnstr,1531,236220,Commercial and Institutional Building Construction,True
+2,Cnstr,1541,236210,Industrial Building Construction,True
+2,Cnstr,1541,236220,Commercial and Institutional Building Construction,True
+2,Cnstr,1542,236220,Commercial and Institutional Building Construction,True
+2,Cnstr,1611,237310,"Highway, Street, and Bridge Construction",True
+2,Cnstr,1622,237310,"Highway, Street, and Bridge Construction",True
+2,Cnstr,1622,237990,Other Heavy and Civil Engineering Construction,True
+2,Cnstr,1623,237110,Water and Sewer Line and Related Structures Construction,True
+2,Cnstr,1623,237120,Oil and Gas Pipeline and Related Structures Construction,True
+2,Cnstr,1623,237130,Power and Communication Line and Related Structures Construction,True
+2,Cnstr,1629,236210,Industrial Building Construction,True
+2,Cnstr,1629,237110,Water and Sewer Line and Related Structures Construction,True
+2,Cnstr,1629,237120,Oil and Gas Pipeline and Related Structures Construction,True
+2,Cnstr,1629,237130,Power and Communication Line and Related Structures Construction,True
+2,Cnstr,1629,237990,Other Heavy and Civil Engineering Construction,True
+2,Cnstr,1629,238910,Site Preparation Contractors,True
+2,Cnstr,1711,238210,Electrical Contractors,True
+2,Cnstr,1711,238220,"Plumbing, Heating, and Air-Conditioning Contractors",True
+2,Cnstr,1711,238910,Site Preparation Contractors,True
+2,Cnstr,1721,237310,"Highway, Street, and Bridge Construction",True
+2,Cnstr,1721,238320,Paint and Wall Covering Contractors,True
+2,Cnstr,1731,238210,Electrical Contractors,True
+2,Cnstr,1741,238140,Masonry Contractors,True
+2,Cnstr,1742,238310,Drywall and Insulation Contractors,True
+2,Cnstr,1743,238310,Drywall and Insulation Contractors,True
+2,Cnstr,1743,238340,Tile and Terrazzo Contractors,True
+2,Cnstr,1751,238130,Framing Contractors,True
+2,Cnstr,1751,238350,Finish Carpentry Contractors,True
+2,Cnstr,1752,238330,Flooring Contractors,True
+2,Cnstr,1761,238160,Roofing Contractors,True
+2,Cnstr,1761,238170,Siding Contractors,True
+2,Cnstr,1761,238390,Other Building Finishing Contractors,True
+2,Cnstr,1771,238110,Poured Concrete Foundation and Structure Contractors,True
+2,Cnstr,1771,238140,Masonry Contractors,True
+2,Cnstr,1771,238990,All Other Specialty Trade Contractors,True
+2,Cnstr,1781,237110,Water and Sewer Line and Related Structures Construction,True
+2,Cnstr,1791,238120,Structural Steel and Precast Concrete Contractors,True
+2,Cnstr,1791,238190,"Other Foundation, Structure, and Building Exterior Contractors",True
+2,Cnstr,1791,238220,"Plumbing, Heating, and Air-Conditioning Contractors",True
+2,Cnstr,1793,238150,Glass and Glazing Contractors,True
+2,Cnstr,1794,238910,Site Preparation Contractors,True
+2,Cnstr,1795,238910,Site Preparation Contractors,True
+2,Cnstr,1796,238220,"Plumbing, Heating, and Air-Conditioning Contractors",True
+2,Cnstr,1796,238290,Other Building Equipment Contractors,True
+2,Cnstr,1799,236220,Commercial and Institutional Building Construction,True
+2,Cnstr,1799,237990,Other Heavy and Civil Engineering Construction,True
+2,Cnstr,1799,238150,Glass and Glazing Contractors,True
+2,Cnstr,1799,238190,"Other Foundation, Structure, and Building Exterior Contractors",True
+2,Cnstr,1799,238290,Other Building Equipment Contractors,True
+2,Cnstr,1799,238320,Paint and Wall Covering Contractors,True
+2,Cnstr,1799,238350,Finish Carpentry Contractors,True
+2,Cnstr,1799,238390,Other Building Finishing Contractors,True
+2,Cnstr,1799,238910,Site Preparation Contractors,True
+2,Cnstr,1799,238990,All Other Specialty Trade Contractors,True
+2,Cnstr,1799,561790,Other Services to Buildings and Dwellings,False
+2,Cnstr,1799,562910,Remediation Services,False
+3,Toys,0921,112511,Finfish Farming and Fish Hatcheries,False
+3,Toys,0921,112512,Shellfish Farming,False
+3,Toys,0971,114210,Hunting and Trapping,False
+3,Toys,3651,334310,Audio and Video Equipment Manufacturing,True
+3,Toys,3652,334612,"Prerecorded Compact Disc (except Software), Tape, and Record Reproducing",True
+3,Toys,3652,512220,Integrated Record Production/Distribution,False
+3,Toys,3732,336612,Boat Building ,True
+3,Toys,3732,811490,Other Personal and Household Goods Repair and Maintenance,False
+3,Toys,3931,339992,Musical Instrument Manufacturing,True
+3,Toys,3942,339931,Doll and Stuffed Toy Manufacturing,True
+3,Toys,3944,336991,"Motorcycle, Bicycle, and Parts Manufacturing",True
+3,Toys,3944,339932,"Game, Toy, and Children's Vehicle Manufacturing",True
+3,Toys,3949,339920,Sporting and Athletic Goods Manufacturing,True
+3,BldMt,0811,111421,Nursery and Tree Production,False
+3,BldMt,0811,113110,Timber Tract Operations,False
+3,BldMt,0831,111998,All Other Miscellaneous Crop Farming,False
+3,BldMt,0831,113210,Forest Nurseries and Gathering of Forest Products,False
+3,BldMt,0851,115310,Support Activities for Forestry,False
+3,BldMt,2411,113310,Logging,False
+3,BldMt,2421,321113,Sawmills,True
+3,BldMt,2421,321912,"Cut Stock, Resawing Lumber, and Planing",True
+3,BldMt,2421,321918,Other Millwork (including Flooring ) ,True
+3,BldMt,2421,321920,Wood Container and Pallet Manufacturing,True
+3,BldMt,2421,321999,All Other Miscellaneous Wood Product Manufacturing,True
+3,BldMt,2426,321113,Sawmills,True
+3,BldMt,2426,321912,"Cut Stock, Resawing Lumber, and Planing",True
+3,BldMt,2426,321918,Other Millwork (including Flooring ) ,True
+3,BldMt,2426,337215,"Showcase, Partition, Shelving, and Locker Manufacturing",True
+3,BldMt,2429,321113,Sawmills,True
+3,BldMt,2429,321920,Wood Container and Pallet Manufacturing,True
+3,BldMt,2429,321999,All Other Miscellaneous Wood Product Manufacturing,True
+3,BldMt,2431,321911,Wood Window and Door Manufacturing,True
+3,BldMt,2431,321918,Other Millwork (including Flooring ) ,True
+3,BldMt,2434,337110,Wood Kitchen Cabinet and Countertop Manufacturing,True
+3,BldMt,2435,321211,Hardwood Veneer and Plywood Manufacturing,True
+3,BldMt,2436,321212,Softwood Veneer and Plywood Manufacturing,True
+3,BldMt,2439,321213,Engineered Wood Member (except Truss) Manufacturing,True
+3,BldMt,2439,321214,Truss Manufacturing,True
+3,BldMt,2451,321991,Manufactured Home (Mobile Home) Manufacturing,True
+3,BldMt,2452,321992,Prefabricated Wood Building Manufacturing,True
+3,BldMt,2491,321114,Wood Preservation,True
+3,BldMt,2493,321219,Reconstituted Wood Product Manufacturing,True
+3,BldMt,2499,321920,Wood Container and Pallet Manufacturing,True
+3,BldMt,2499,321999,All Other Miscellaneous Wood Product Manufacturing,True
+3,BldMt,2499,333415,Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing,True
+3,BldMt,2499,337125,Household Furniture (except Wood and Metal) Manufacturing,True
+3,BldMt,2499,339113,Surgical Appliance and Supplies Manufacturing,True
+3,BldMt,2499,339999,All Other Miscellaneous Manufacturing,True
+3,BldMt,2951,324121,Asphalt Paving Mixture and Block Manufacturing,False
+3,BldMt,2952,324122,Asphalt Shingle and Coating Materials Manufacturing,False
+3,BldMt,3211,327211,Flat Glass Manufacturing,True
+3,BldMt,3241,327310,Cement Manufacturing,True
+3,BldMt,3251,327121,Brick and Structural Clay Tile Manufacturing,True
+3,BldMt,3251,327331,Concrete Block and Brick Manufacturing,True
+3,BldMt,3253,327122,Ceramic Wall and Floor Tile Manufacturing,True
+3,BldMt,3255,327124,Clay Refractory Manufacturing,True
+3,BldMt,3259,327123,Other Structural Clay Product Manufacturing,True
+3,BldMt,3261,327111,Vitreous China Plumbing Fixture and China and Earthenware Bathroom Accessories Manufacturing,True
+3,BldMt,3264,327113,Porcelain Electrical Supply Manufacturing,True
+3,BldMt,3271,327331,Concrete Block and Brick Manufacturing,True
+3,BldMt,3272,327332,Concrete Pipe Manufacturing,True
+3,BldMt,3272,327390,Other Concrete Product Manufacturing,True
+3,BldMt,3272,327999,All Other Miscellaneous Nonmetallic Mineral Product Manufacturing,True
+3,BldMt,3273,327320,Ready-Mix Concrete Manufacturing,True
+3,BldMt,3274,327410,Lime Manufacturing,True
+3,BldMt,3275,327420,Gypsum Product Manufacturing,True
+3,BldMt,3281,327991,Cut Stone and Stone Product Manufacturing,True
+3,BldMt,3291,327910,Abrasive Product Manufacturing,True
+3,BldMt,3291,332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,True
+3,BldMt,3292,327999,All Other Miscellaneous Nonmetallic Mineral Product Manufacturing,True
+3,BldMt,3292,336340,Motor Vehicle Brake System Manufacturing,True
+3,BldMt,3292,336350,Motor Vehicle Transmission and Power Train Parts Manufacturing,True
+3,BldMt,3295,212324,Kaolin and Ball Clay Mining,False
+3,BldMt,3295,212325,Clay and Ceramic and Refractory Minerals Mining,False
+3,BldMt,3295,212393,Other Chemical and Fertilizer Mineral Mining,False
+3,BldMt,3295,212399,All Other Nonmetallic Mineral Mining,False
+3,BldMt,3295,327992,Ground or Treated Mineral and Earth Manufacturing,True
+3,BldMt,3296,327993,Mineral Wool Manufacturing,True
+3,BldMt,3297,327125,Nonclay Refractory Manufacturing,True
+3,BldMt,3299,327112,"Vitreous China, Fine Earthenware, and Other Pottery Product Manufacturing",True
+3,BldMt,3299,327420,Gypsum Product Manufacturing,True
+3,BldMt,3299,327999,All Other Miscellaneous Nonmetallic Mineral Product Manufacturing,True
+3,BldMt,3421,332211,Cutlery and Flatware (except Precious) Manufacturing,True
+3,BldMt,3421,332212,Hand and Edge Tool Manufacturing,True
+3,BldMt,3423,332212,Hand and Edge Tool Manufacturing,True
+3,BldMt,3425,332213,Saw Blade and Handsaw Manufacturing,True
+3,BldMt,3429,332439,Other Metal Container Manufacturing,True
+3,BldMt,3429,332510,Hardware Manufacturing,True
+3,BldMt,3429,332722,"Bolt, Nut, Screw, Rivet, and Washer Manufacturing",True
+3,BldMt,3429,332919,Other Metal Valve and Pipe Fitting Manufacturing,True
+3,BldMt,3429,332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,True
+3,BldMt,3429,333923,"Overhead Traveling Crane, Hoist, and Monorail System Manufacturing",True
+3,BldMt,3429,334518,"Watch, Clock, and Part Manufacturing",True
+3,BldMt,3429,336399,All Other Motor Vehicle Parts Manufacturing,True
+3,BldMt,3429,337215,"Showcase, Partition, Shelving, and Locker Manufacturing",True
+3,BldMt,3431,332998,Enameled Iron and Metal Sanitary Ware Manufacturing,True
+3,BldMt,3432,332913,Plumbing Fixture Fitting and Trim  Manufacturing,True
+3,BldMt,3432,332919,Other Metal Valve and Pipe Fitting Manufacturing,True
+3,BldMt,3432,332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,True
+3,BldMt,3433,333414,Heating Equipment (except Warm Air Furnaces) Manufacturing,True
+3,BldMt,3441,332312,Fabricated Structural Metal Manufacturing,True
+3,BldMt,3442,332321,Metal Window and Door Manufacturing  ,True
+3,BldMt,3446,332323,Ornamental and Architectural Metal Work Manufacturing,True
+3,BldMt,3448,332311,Prefabricated Metal Building and Component  Manufacturing,True
+3,BldMt,3449,332114,Custom Roll Forming,True
+3,BldMt,3449,332312,Fabricated Structural Metal Manufacturing,True
+3,BldMt,3449,332323,Ornamental and Architectural Metal Work Manufacturing,True
+3,BldMt,3451,332721,Precision Turned Product Manufacturing,True
+3,BldMt,3452,332722,"Bolt, Nut, Screw, Rivet, and Washer Manufacturing",True
+3,BldMt,3491,332911,Industrial Valve Manufacturing,True
+3,BldMt,3492,332912,Fluid Power Valve and Hose Fitting Manufacturing,True
+3,BldMt,3493,332611,Spring (Heavy Gauge) Manufacturing,True
+3,BldMt,3494,332919,Other Metal Valve and Pipe Fitting Manufacturing,True
+3,BldMt,3494,332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,True
+3,BldMt,3495,332612,Spring (Light Gauge) Manufacturing,True
+3,BldMt,3495,334518,"Watch, Clock, and Part Manufacturing",True
+3,BldMt,3496,332214,"Kitchen Utensil, Pot, and Pan Manufacturing",True
+3,BldMt,3496,332618,Other Fabricated Wire Product Manufacturing,True
+3,BldMt,3496,333924,"Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing",True
+3,BldMt,3497,322225,Laminated Aluminum Foil Manufacturing for Flexible Packaging Uses,False
+3,BldMt,3497,332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,True
+3,BldMt,3498,332996,Fabricated Pipe and Pipe Fitting Manufacturing,True
+3,BldMt,3499,332117,Powder Metallurgy Part Manufacturing,True
+3,BldMt,3499,332439,Other Metal Container Manufacturing,True
+3,BldMt,3499,332510,Hardware Manufacturing,True
+3,BldMt,3499,332919,Other Metal Valve and Pipe Fitting Manufacturing,True
+3,BldMt,3499,332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,True
+3,BldMt,3499,336360,Motor Vehicle Seating and Interior Trim Manufacturing,True
+3,BldMt,3499,337215,"Showcase, Partition, Shelving, and Locker Manufacturing",True
+3,BldMt,3996,326192,Resilient Floor Covering Manufacturing,False
+3,Steel,3312,324199,All Other Petroleum and Coal Products Manufacturing,False
+3,Steel,3312,331111,Iron and Steel Mills,True
+3,Steel,3312,331221,Rolled Steel Shape Manufacturing,True
+3,Steel,3313,331112,Electrometallurgical Ferroalloy Product Manufacturing,True
+3,Steel,3315,331222,Steel Wire Drawing,True
+3,Steel,3315,332618,Other Fabricated Wire Product Manufacturing,True
+3,Steel,3316,331221,Rolled Steel Shape Manufacturing,True
+3,Steel,3317,331210,Iron and Steel Pipe and Tube Manufacturing from  Purchased Steel,True
+3,Steel,3321,331511,Iron Foundries,True
+3,Steel,3322,331511,Iron Foundries,True
+3,Steel,3324,331512,Steel Investment Foundries,True
+3,Steel,3325,331513,Steel Foundries (except Investment),True
+3,Steel,3331,331411,Primary Smelting and Refining of Copper,True
+3,Steel,3334,331312,Primary Aluminum Production,True
+3,Steel,3339,331419,Primary Smelting and Refining of Nonferrous Metal (except Copper and Aluminum),True
+3,Steel,3341,331314,Secondary Smelting and Alloying of Aluminum,True
+3,Steel,3341,331423,"Secondary Smelting, Refining, and Alloying of Copper",True
+3,Steel,3341,331492,"Secondary Smelting, Refining, and Alloying of Nonferrous Metal (except Copper and Aluminum)",True
+3,Steel,3351,331421,"Copper Rolling, Drawing, and Extruding",True
+3,Steel,3353,331315,"Aluminum Sheet, Plate, and Foil Manufacturing",True
+3,Steel,3354,331316,Aluminum Extruded Product Manufacturing,True
+3,Steel,3355,331319,Other Aluminum Rolling and Drawing,True
+3,Steel,3356,331491,"Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding",True
+3,Steel,3357,331319,Other Aluminum Rolling and Drawing,True
+3,Steel,3357,331422,Copper Wire (except Mechanical) Drawing,True
+3,Steel,3357,331491,"Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding",True
+3,Steel,3357,335921,Fiber Optic Cable Manufacturing,True
+3,Steel,3357,335929,Other Communication and Energy Wire Manufacturing,True
+3,Steel,3363,331521,Aluminum Die-Casting Foundries,True
+3,Steel,3364,331522,Nonferrous (except Aluminum) Die-Casting Foundries,True
+3,Steel,3365,331524,Aluminum Foundries (except Die-Casting),True
+3,Steel,3366,331525,Copper Foundries (except Die-Casting),True
+3,Steel,3369,331528,Other Nonferrous Foundries (except Die-Casting),True
+3,Steel,3398,332811,Metal Heat Treating,True
+3,Steel,3399,331111,Iron and Steel Mills,True
+3,Steel,3399,331221,Rolled Steel Shape Manufacturing,True
+3,Steel,3399,331314,Secondary Smelting and Alloying of Aluminum,True
+3,Steel,3399,331423,"Secondary Smelting, Refining, and Alloying of Copper",True
+3,Steel,3399,331492,"Secondary Smelting, Refining, and Alloying of Nonferrous Metal (except Copper and Aluminum)",True
+3,Steel,3399,332618,Other Fabricated Wire Product Manufacturing,True
+3,Steel,3399,332813,"Electroplating, Plating, Polishing, Anodizing and Coloring",True
+3,FabPr,3443,332313,Plate Work Manufacturing,True
+3,FabPr,3443,332410,Power Boiler and Heat Exchanger Manufacturing,True
+3,FabPr,3443,332420,Metal Tank (Heavy Gauge) Manufacturing ,True
+3,FabPr,3443,333415,Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing,True
+3,FabPr,3444,332321,Metal Window and Door Manufacturing  ,True
+3,FabPr,3444,332322,Sheet Metal Work Manufacturing,True
+3,FabPr,3444,332439,Other Metal Container Manufacturing,True
+3,FabPr,3444,333415,Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing,True
+3,FabPr,3462,332111,Iron and Steel Forging,True
+3,FabPr,3463,332112,Nonferrous Forging,True
+3,FabPr,3465,336370,Motor Vehicle Metal Stamping,True
+3,FabPr,3466,332115,Crown and Closure Manufacturing,True
+3,FabPr,3469,332116,Metal Stamping,True
+3,FabPr,3469,332214,"Kitchen Utensil, Pot, and Pan Manufacturing",True
+3,FabPr,3469,332439,Other Metal Container Manufacturing,True
+3,FabPr,3471,332813,"Electroplating, Plating, Polishing, Anodizing and Coloring",True
+3,FabPr,3479,332812,"Metal Coating, Engraving (except Jewelry and Silverware), and Allied Services to Manufacturers",True
+3,FabPr,3479,339911,Jewelry (except Costume) Manufacturing,True
+3,FabPr,3479,339912,Silverware and Holloware Manufacturing,True
+3,FabPr,3479,339914,Costume Jewelry and Novelty Manufacturing,True
+3,Mach,3511,333611,Turbine and Turbine Generator Set Units Manufacturing,True
+3,Mach,3519,333618,Other Engine Equipment Manufacturing,True
+3,Mach,3519,336399,All Other Motor Vehicle Parts Manufacturing,True
+3,Mach,3523,332212,Hand and Edge Tool Manufacturing,True
+3,Mach,3523,332323,Ornamental and Architectural Metal Work Manufacturing,True
+3,Mach,3523,333111,Farm Machinery and Equipment Manufacturing,True
+3,Mach,3523,333922,Conveyor and Conveying Equipment Manufacturing,True
+3,Mach,3524,332212,Hand and Edge Tool Manufacturing,True
+3,Mach,3524,333112,Lawn and Garden Tractor and Home Lawn and Garden Equipment Manufacturing,True
+3,Mach,3531,333120,Construction Machinery Manufacturing,True
+3,Mach,3531,333923,"Overhead Traveling Crane, Hoist, and Monorail System Manufacturing",True
+3,Mach,3531,336510,Railroad Rolling Stock Manufacturing,True
+3,Mach,3532,333131,Mining Machinery and Equipment Manufacturing,True
+3,Mach,3533,333132,Oil and Gas Field Machinery and Equipment Manufacturing,True
+3,Mach,3534,333921,Elevator and Moving Stairway Manufacturing,True
+3,Mach,3535,333922,Conveyor and Conveying Equipment Manufacturing,True
+3,Mach,3536,333923,"Overhead Traveling Crane, Hoist, and Monorail System Manufacturing",True
+3,Mach,3541,333512,Machine Tool (Metal Cutting Types) Manufacturing,True
+3,Mach,3542,333513,Machine Tool (Metal Forming Types) Manufacturing,True
+3,Mach,3543,332997,Industrial Pattern Manufacturing,True
+3,Mach,3544,333511,Industrial Mold Manufacturing,True
+3,Mach,3544,333514,"Special Die and Tool, Die Set, Jig, and Fixture Manufacturing",True
+3,Mach,3545,332212,Hand and Edge Tool Manufacturing,True
+3,Mach,3545,333515,Cutting Tool and Machine Tool Accessory Manufacturing,True
+3,Mach,3546,333991,Power-Driven Hand Tool Manufacturing,True
+3,Mach,3547,333516,Rolling Mill Machinery and Equipment Manufacturing,True
+3,Mach,3548,333992,Welding and Soldering Equipment Manufacturing,True
+3,Mach,3548,335311,"Power, Distribution, and Specialty Transformer Manufacturing",True
+3,Mach,3549,333518,Other Metalworking Machinery Manufacturing,True
+3,Mach,3552,333292,Textile Machinery Manufacturing,True
+3,Mach,3553,333210,Sawmill and Woodworking Machinery Manufacturing,True
+3,Mach,3554,333291,Paper Industry Machinery Manufacturing,True
+3,Mach,3555,333293,Printing Machinery and Equipment Manufacturing,True
+3,Mach,3556,333294,Food Product Machinery Manufacturing,True
+3,Mach,3559,332410,Power Boiler and Heat Exchanger Manufacturing,True
+3,Mach,3559,333111,Farm Machinery and Equipment Manufacturing,True
+3,Mach,3559,333220,Plastics and Rubber Industry Machinery Manufacturing,True
+3,Mach,3559,333295,Semiconductor Machinery Manufacturing,True
+3,Mach,3559,333298,All Other Industrial Machinery Manufacturing,True
+3,Mach,3559,333319,Other Commercial and Service Industry Machinery Manufacturing,True
+3,Mach,3561,333911,Pump and Pumping Equipment Manufacturing,True
+3,Mach,3562,332991,Ball and Roller Bearing Manufacturing,True
+3,Mach,3563,333912,Air and Gas Compressor Manufacturing ,True
+3,Mach,3564,333411,Air Purification Equipment Manufacturing,True
+3,Mach,3564,333412,Industrial and Commercial Fan and Blower Manufacturing,True
+3,Mach,3565,333993,Packaging Machinery Manufacturing,True
+3,Mach,3566,333612,"Speed Changer, Industrial High-Speed Drive, and Gear Manufacturing",True
+3,Mach,3567,333994,Industrial Process Furnace and Oven Manufacturing,True
+3,Mach,3568,333613,Mechanical Power Transmission Equipment Manufacturing,True
+3,Mach,3569,314999,All Other Miscellaneous Textile Product Mills,False
+3,Mach,3569,333414,Heating Equipment (except Warm Air Furnaces) Manufacturing,True
+3,Mach,3569,333999,All Other Miscellaneous General Purpose Machinery  Manufacturing,True
+3,Mach,3581,333311,Automatic Vending Machine Manufacturing,True
+3,Mach,3582,333312,"Commercial Laundry, Drycleaning, and Pressing Machine Manufacturing",True
+3,Mach,3585,333415,Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing,True
+3,Mach,3585,336391,Motor Vehicle Air-Conditioning Manufacturing,True
+3,Mach,3586,333913,Measuring and Dispensing Pump Manufacturing,True
+3,Mach,3589,333319,Other Commercial and Service Industry Machinery Manufacturing,True
+3,Mach,3592,336311,"Carburetor, Piston, Piston Ring, and Valve Manufacturing",True
+3,Mach,3593,333995,Fluid Power Cylinder and Actuator Manufacturing,True
+3,Mach,3594,333996,Fluid Power Pump and Motor Manufacturing,True
+3,Mach,3596,333997,Scale and Balance (except Laboratory) Manufacturing,True
+3,Mach,3599,332710,Machine Shops,True
+3,Mach,3599,332813,"Electroplating, Plating, Polishing, Anodizing and Coloring",True
+3,Mach,3599,332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,True
+3,Mach,3599,333319,Other Commercial and Service Industry Machinery Manufacturing,True
+3,Mach,3599,333999,All Other Miscellaneous General Purpose Machinery  Manufacturing,True
+3,Mach,3599,334519,Other Measuring and Controlling Device Manufacturing,True
+3,Mach,3599,336399,All Other Motor Vehicle Parts Manufacturing,True
+3,ElcEq,3612,335311,"Power, Distribution, and Specialty Transformer Manufacturing",True
+3,ElcEq,3613,335313,Switchgear and Switchboard Apparatus Manufacturing,True
+3,ElcEq,3621,335312,Motor and Generator Manufacturing,True
+3,ElcEq,3624,335991,Carbon and Graphite Product Manufacturing,True
+3,ElcEq,3625,335314,Relay and Industrial Control Manufacturing,True
+3,ElcEq,3629,335999,All Other Miscellaneous Electrical Equipment and Component Manufacturing,True
+3,ElcEq,3641,335110,Electric Lamp Bulb and Part Manufacturing,True
+3,ElcEq,3643,335931,Current-Carrying Wiring Device Manufacturing,True
+3,ElcEq,3644,332212,Hand and Edge Tool Manufacturing,True
+3,ElcEq,3644,335932,Noncurrent-Carrying Wiring Device Manufacturing,True
+3,ElcEq,3645,335121,Residential Electric Lighting Fixture Manufacturing ,True
+3,ElcEq,3646,335122,"Commercial, Industrial, and Institutional Electric Lighting Fixture Manufacturing",True
+3,ElcEq,3648,335129,Other Lighting Equipment Manufacturing,True
+3,ElcEq,3691,335911,Storage Battery Manufacturing,True
+3,ElcEq,3692,335912,Primary Battery Manufacturing,True
+3,ElcEq,3699,333319,Other Commercial and Service Industry Machinery Manufacturing,True
+3,ElcEq,3699,333618,Other Engine Equipment Manufacturing,True
+3,ElcEq,3699,333992,Welding and Soldering Equipment Manufacturing,True
+3,ElcEq,3699,335129,Other Lighting Equipment Manufacturing,True
+3,ElcEq,3699,335999,All Other Miscellaneous Electrical Equipment and Component Manufacturing,True
+3,Autos,2296,314992,Tire Cord and Tire Fabric Mills,False
+3,Autos,2396,314999,All Other Miscellaneous Textile Product Mills,False
+3,Autos,2396,315211,Men's and Boys' Cut and Sew Apparel Contractors,False
+3,Autos,2396,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",False
+3,Autos,2396,315999,Other Apparel Accessories and Other Apparel Manufacturing,False
+3,Autos,2396,323113,Commercial Screen Printing,False
+3,Autos,2396,336360,Motor Vehicle Seating and Interior Trim Manufacturing,True
+3,Autos,3011,326211,Tire Manufacturing (except Retreading),False
+3,Autos,3537,332439,Other Metal Container Manufacturing,True
+3,Autos,3537,332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,True
+3,Autos,3537,333924,"Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing",True
+3,Autos,3647,336321,Vehicular Lighting Equipment Manufacturing,True
+3,Autos,3694,336322,Other Motor Vehicle Electrical and Electronic Equipment Manufacturing,True
+3,Autos,3711,336111,Automobile Manufacturing,True
+3,Autos,3711,336112,Light Truck and Utility Vehicle Manufacturing ,True
+3,Autos,3711,336120,Heavy Duty Truck Manufacturing,True
+3,Autos,3711,336211,Motor Vehicle Body Manufacturing,True
+3,Autos,3711,336992,"Military Armored Vehicle, Tank, and Tank Component Manufacturing",True
+3,Autos,3713,336211,Motor Vehicle Body Manufacturing,True
+3,Autos,3714,336211,Motor Vehicle Body Manufacturing,True
+3,Autos,3714,336312,Gasoline Engine and Engine Parts Manufacturing,True
+3,Autos,3714,336322,Other Motor Vehicle Electrical and Electronic Equipment Manufacturing,True
+3,Autos,3714,336330,Motor Vehicle Steering and Suspension Components (except Spring) Manufacturing,True
+3,Autos,3714,336340,Motor Vehicle Brake System Manufacturing,True
+3,Autos,3714,336350,Motor Vehicle Transmission and Power Train Parts Manufacturing,True
+3,Autos,3714,336399,All Other Motor Vehicle Parts Manufacturing,True
+3,Autos,3715,336212,Truck Trailer Manufacturing,True
+3,Autos,3716,336213,Motor Home Manufacturing,True
+3,Autos,3792,336214,Travel Trailer and Camper Manufacturing,True
+3,Autos,3799,333924,"Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing",True
+3,Autos,3799,336214,Travel Trailer and Camper Manufacturing,True
+3,Autos,3799,336399,All Other Motor Vehicle Parts Manufacturing,True
+3,Autos,3799,336999,All Other Transportation Equipment Manufacturing,True
+3,Aero,3721,336411,Aircraft Manufacturing,True
+3,Aero,3721,541710,"Research and Development in the Physical, Engineering, and Life Sciences",False
+3,Aero,3724,336412,Aircraft Engine and Engine Parts Manufacturing,True
+3,Aero,3724,541710,"Research and Development in the Physical, Engineering, and Life Sciences",False
+3,Aero,3728,332912,Fluid Power Valve and Hose Fitting Manufacturing,True
+3,Aero,3728,336411,Aircraft Manufacturing,True
+3,Aero,3728,336413,Other Aircraft Part and Auxiliary Equipment Manufacturing,True
+3,Aero,3728,541710,"Research and Development in the Physical, Engineering, and Life Sciences",False
+3,Ships,3731,336611,Ship Building and Repairing,True
+3,Ships,3731,488390,Other Support Activities for Water Transportation,False
+3,Ships,3743,333911,Pump and Pumping Equipment Manufacturing,True
+3,Ships,3743,336510,Railroad Rolling Stock Manufacturing,True
+3,Guns,3482,332992,Small Arms Ammunition Manufacturing,True
+3,Guns,3483,332993,Ammunition (except Small Arms) Manufacturing,True
+3,Guns,3484,332994,Small Arms Manufacturing,True
+3,Guns,3489,332995,Other Ordnance and Accessories Manufacturing,True
+3,Guns,3761,336414,Guided Missile and Space Vehicle Manufacturing,True
+3,Guns,3761,541710,"Research and Development in the Physical, Engineering, and Life Sciences",False
+3,Guns,3764,336415,Guided Missile and Space Vehicle Propulsion Unit and Propulsion Unit Parts Manufacturing,True
+3,Guns,3764,541710,"Research and Development in the Physical, Engineering, and Life Sciences",False
+3,Guns,3769,336419,Other Guided Missile and Space Vehicle Parts and Auxiliary Equipment Manufacturing,True
+3,Guns,3769,541710,"Research and Development in the Physical, Engineering, and Life Sciences",False
+3,Guns,3795,336992,"Military Armored Vehicle, Tank, and Tank Component Manufacturing",True
+3,Hardw,3571,334111,Electronic Computer Manufacturing,True
+3,Hardw,3572,334112,Computer Storage Device Manufacturing,True
+3,Hardw,3575,334113,Computer Terminal Manufacturing,True
+3,Hardw,3577,334119,Other Computer Peripheral Equipment Manufacturing,True
+3,Hardw,3577,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing,True
+3,Hardw,3577,334613,Magnetic and Optical Recording Media Manufacturing,True
+3,Hardw,3578,333311,Automatic Vending Machine Manufacturing,True
+3,Hardw,3578,333313,Office Machinery Manufacturing,True
+3,Hardw,3578,334119,Other Computer Peripheral Equipment Manufacturing,True
+3,Hardw,3579,333313,Office Machinery Manufacturing,True
+3,Hardw,3579,334518,"Watch, Clock, and Part Manufacturing",True
+3,Hardw,3579,339942,Lead Pencil and Art Good Manufacturing,True
+3,Hardw,3695,334613,Magnetic and Optical Recording Media Manufacturing,True
+3,Chips,3661,334210,Telephone Apparatus Manufacturing,True
+3,Chips,3661,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing,True
+3,Chips,3663,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,True
+3,Chips,3669,334290,Other Communications Equipment Manufacturing,True
+3,Chips,3671,334411,Electron Tube Manufacturing,True
+3,Chips,3672,334412,Bare Printed Circuit Board Manufacturing,True
+3,Chips,3674,334413,Semiconductor and Related Device Manufacturing,True
+3,Chips,3675,334414,Electronic Capacitor Manufacturing,True
+3,Chips,3676,334415,Electronic Resistor Manufacturing,True
+3,Chips,3677,334416,"Electronic Coil, Transformer, and Other Inductor Manufacturing",True
+3,Chips,3678,334417,Electronic Connector Manufacturing,True
+3,Chips,3679,334220,Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing,True
+3,Chips,3679,334310,Audio and Video Equipment Manufacturing,True
+3,Chips,3679,334418,Printed Circuit Assembly (Electronic Assembly) Manufacturing,True
+3,Chips,3679,334419,Other Electronic Component Manufacturing,True
+3,Chips,3812,334511,"Search, Detection, Navigation, Guidance, Aeronautical, and  Nautical System and Instrument Manufacturing",True
+3,LabEq,3821,339111,Laboratory Apparatus and Furniture Manufacturing,True
+3,LabEq,3822,334512,"Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use",True
+3,LabEq,3823,334513,"Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables",True
+3,LabEq,3824,334514,Totalizing Fluid Meter and Counting Device Manufacturing,True
+3,LabEq,3825,334514,Totalizing Fluid Meter and Counting Device Manufacturing,True
+3,LabEq,3825,334515,Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals,True
+3,LabEq,3826,334516,Analytical Laboratory Instrument Manufacturing,True
+3,LabEq,3827,333314,Optical Instrument and Lens Manufacturing,True
+3,LabEq,3829,334514,Totalizing Fluid Meter and Counting Device Manufacturing,True
+3,LabEq,3829,334518,"Watch, Clock, and Part Manufacturing",True
+3,LabEq,3829,334519,Other Measuring and Controlling Device Manufacturing,True
+3,LabEq,3829,339112,Surgical and Medical Instrument Manufacturing,True
+3,MedEq,3841,332994,Small Arms Manufacturing,True
+3,MedEq,3841,339111,Laboratory Apparatus and Furniture Manufacturing,True
+3,MedEq,3841,339112,Surgical and Medical Instrument Manufacturing,True
+3,MedEq,3842,322291,Sanitary Paper Product Manufacturing,False
+3,MedEq,3842,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,True
+3,MedEq,3842,339113,Surgical Appliance and Supplies Manufacturing,True
+3,MedEq,3842,339999,All Other Miscellaneous Manufacturing,True
+3,MedEq,3843,339114,Dental Equipment and Supplies Manufacturing,True
+3,MedEq,3844,334517,Irradiation Apparatus Manufacturing,True
+3,MedEq,3845,334510,Electromedical and Electrotherapeutic Apparatus Manufacturing,True
+3,MedEq,3845,334517,Irradiation Apparatus Manufacturing,True
+3,MedEq,3851,339113,Surgical Appliance and Supplies Manufacturing,True
+3,MedEq,3851,339115,Ophthalmic Goods Manufacturing,True
+4,Food,2011,311611,Animal (except Poultry) Slaughtering,True
+4,Food,2013,311612,Meat Processed from Carcasses ,True
+4,Food,2013,311613,Rendering and Meat Byproduct Processing,True
+4,Food,2015,311615,Poultry Processing,True
+4,Food,2015,311999,All Other Miscellaneous Food Manufacturing,True
+4,Food,2021,311512,Creamery Butter Manufacturing,True
+4,Food,2022,311513,Cheese Manufacturing,True
+4,Food,2023,311511,Fluid Milk Manufacturing,True
+4,Food,2023,311514,"Dry, Condensed, and Evaporated Dairy Product Manufacturing",True
+4,Food,2024,311520,Ice Cream and Frozen Dessert Manufacturing,True
+4,Food,2026,311511,Fluid Milk Manufacturing,True
+4,Food,2026,311514,"Dry, Condensed, and Evaporated Dairy Product Manufacturing",True
+4,Food,2032,311422,Specialty Canning,True
+4,Food,2032,311999,All Other Miscellaneous Food Manufacturing,True
+4,Food,2033,311421,Fruit and Vegetable Canning,True
+4,Food,2034,311211,Flour Milling,True
+4,Food,2034,311423,Dried and Dehydrated Food Manufacturing,True
+4,Food,2034,311999,All Other Miscellaneous Food Manufacturing,True
+4,Food,2035,311421,Fruit and Vegetable Canning,True
+4,Food,2035,311941,"Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing",True
+4,Food,2037,311411,"Frozen Fruit, Juice, and Vegetable Manufacturing",True
+4,Food,2038,311412,Frozen Specialty Food Manufacturing,True
+4,Food,2041,311211,Flour Milling,True
+4,Food,2043,311230,Breakfast Cereal Manufacturing,True
+4,Food,2043,311920,Coffee and Tea Manufacturing,True
+4,Food,2044,311212,Rice Milling,True
+4,Food,2045,311822,Flour Mixes and Dough Manufacturing from Purchased Flour,True
+4,Food,2046,311221,Wet Corn Milling,True
+4,Food,2046,311225,Fats and Oils Refining and Blending,True
+4,Food,2051,311812,Commercial Bakeries,True
+4,Food,2052,311812,Commercial Bakeries,True
+4,Food,2052,311821,Cookie and Cracker Manufacturing,True
+4,Food,2052,311919,Other Snack Food Manufacturing,True
+4,Food,2053,311813,"Frozen Cakes, Pies, and Other Pastries Manufacturing",True
+4,Food,2061,311311,Sugarcane Mills,True
+4,Food,2062,311312,Cane Sugar Refining,True
+4,Food,2063,311313,Beet Sugar Manufacturing,True
+4,Food,2074,311223,Other Oilseed Processing,True
+4,Food,2074,311225,Fats and Oils Refining and Blending,True
+4,Food,2075,311222,Soybean Processing,True
+4,Food,2075,311225,Fats and Oils Refining and Blending,True
+4,Food,2076,311223,Other Oilseed Processing,True
+4,Food,2076,311225,Fats and Oils Refining and Blending,True
+4,Food,2077,311613,Rendering and Meat Byproduct Processing,True
+4,Food,2077,311711,Seafood Canning,True
+4,Food,2077,311712,Fresh and Frozen Seafood Processing,True
+4,Food,2079,311222,Soybean Processing,True
+4,Food,2079,311223,Other Oilseed Processing,True
+4,Food,2079,311225,Fats and Oils Refining and Blending,True
+4,Food,2091,311711,Seafood Canning,True
+4,Food,2092,311712,Fresh and Frozen Seafood Processing,True
+4,Food,2095,311920,Coffee and Tea Manufacturing,True
+4,Food,2098,311823,Dry Pasta Manufacturing ,True
+4,Food,2099,111998,All Other Miscellaneous Crop Farming,False
+4,Food,2099,311212,Rice Milling,True
+4,Food,2099,311340,Nonchocolate Confectionery Manufacturing,True
+4,Food,2099,311423,Dried and Dehydrated Food Manufacturing,True
+4,Food,2099,311823,Dry Pasta Manufacturing ,True
+4,Food,2099,311830,Tortilla Manufacturing ,True
+4,Food,2099,311911,Roasted Nuts and Peanut Butter Manufacturing,True
+4,Food,2099,311920,Coffee and Tea Manufacturing,True
+4,Food,2099,311941,"Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing",True
+4,Food,2099,311942,Spice and Extract Manufacturing,True
+4,Food,2099,311991,Perishable Prepared Food Manufacturing,True
+4,Food,2099,311999,All Other Miscellaneous Food Manufacturing,True
+4,Soda,2064,311330,Confectionery Manufacturing from Purchased  Chocolate ,True
+4,Soda,2064,311340,Nonchocolate Confectionery Manufacturing,True
+4,Soda,2066,311320,Chocolate and Confectionery Manufacturing from  Cacao Beans,True
+4,Soda,2066,311330,Confectionery Manufacturing from Purchased  Chocolate ,True
+4,Soda,2067,311340,Nonchocolate Confectionery Manufacturing,True
+4,Soda,2068,311911,Roasted Nuts and Peanut Butter Manufacturing,True
+4,Soda,2086,312111,Soft Drink Manufacturing,True
+4,Soda,2086,312112,Bottled Water Manufacturing,True
+4,Soda,2087,311920,Coffee and Tea Manufacturing,True
+4,Soda,2087,311930,Flavoring Syrup and Concentrate Manufacturing,True
+4,Soda,2087,311942,Spice and Extract Manufacturing,True
+4,Soda,2087,311999,All Other Miscellaneous Food Manufacturing,True
+4,Soda,2096,311919,Other Snack Food Manufacturing,True
+4,Soda,2097,312113,Ice Manufacturing,True
+4,Beer,2082,311942,Spice and Extract Manufacturing,True
+4,Beer,2082,312120,Breweries,True
+4,Beer,2083,311213,Malt Manufacturing,True
+4,Beer,2084,312130,Wineries,True
+4,Beer,2085,312130,Wineries,True
+4,Beer,2085,312140,Distilleries,True
+4,Smoke,2111,312221,Cigarette Manufacturing,True
+4,Smoke,2121,312229,Other Tobacco Product Manufacturing,True
+4,Smoke,2131,312229,Other Tobacco Product Manufacturing,True
+4,Smoke,2141,312210,Tobacco Stemming and Redrying,True
+4,Smoke,2141,312229,Other Tobacco Product Manufacturing,True
+4,Hshld,2047,311111,Dog and Cat Food Manufacturing,True
+4,Hshld,2391,314121,Curtain and Drapery Mills,True
+4,Hshld,2392,314129,Other Household Textile Product Mills,True
+4,Hshld,2392,314911,Textile Bag Mills,True
+4,Hshld,2392,314999,All Other Miscellaneous Textile Product Mills,True
+4,Hshld,2392,339994,"Broom, Brush, and Mop Manufacturing",False
+4,Hshld,2511,337122,Nonupholstered Wood Household Furniture Manufacturing,False
+4,Hshld,2511,337215,"Showcase, Partition, Shelving, and Locker Manufacturing",False
+4,Hshld,2512,337121,Upholstered Household Furniture Manufacturing,False
+4,Hshld,2514,337121,Upholstered Household Furniture Manufacturing,False
+4,Hshld,2514,337124,Metal Household Furniture Manufacturing,False
+4,Hshld,2514,337215,"Showcase, Partition, Shelving, and Locker Manufacturing",False
+4,Hshld,2515,337121,Upholstered Household Furniture Manufacturing,False
+4,Hshld,2515,337910,Mattress Manufacturing,False
+4,Hshld,2517,337129,"Wood Television, Radio, and Sewing Machine Cabinet Manufacturing",False
+4,Hshld,2519,337125,Household Furniture (except Wood and Metal) Manufacturing,False
+4,Hshld,2591,337920,Blind and Shade Manufacturing,False
+4,Hshld,2599,337127,Institutional Furniture Manufacturing,False
+4,Hshld,2599,339111,Laboratory Apparatus and Furniture Manufacturing,False
+4,Hshld,2841,325611,Soap and Other Detergent  Manufacturing,True
+4,Hshld,2842,325612,Polish and Other Sanitation Good Manufacturing,True
+4,Hshld,2843,325613,Surface Active Agent  Manufacturing,True
+4,Hshld,2844,325611,Soap and Other Detergent  Manufacturing,True
+4,Hshld,2844,325620,Toilet Preparation Manufacturing,True
+4,Hshld,3161,316991,Luggage Manufacturing,True
+4,Hshld,3171,316992,Women's Handbag and Purse Manufacturing,True
+4,Hshld,3172,316993,Personal Leather Good (except Women’s Handbag and Purse) Manufacturing,True
+4,Hshld,3172,339914,Costume Jewelry and Novelty Manufacturing,False
+4,Hshld,3199,316999,All Other Leather Good Manufacturing,True
+4,Hshld,3229,327212,Other Pressed and Blown Glass and Glassware Manufacturing,False
+4,Hshld,3231,327215,Glass Product Manufacturing Made of Purchased Glass,False
+4,Hshld,3262,327112,"Vitreous China, Fine Earthenware, and Other Pottery Product Manufacturing",False
+4,Hshld,3263,327112,"Vitreous China, Fine Earthenware, and Other Pottery Product Manufacturing",False
+4,Hshld,3269,327112,"Vitreous China, Fine Earthenware, and Other Pottery Product Manufacturing",False
+4,Hshld,3631,335221,Household Cooking Appliance Manufacturing,False
+4,Hshld,3632,335222,Household Refrigerator and Home Freezer Manufacturing,False
+4,Hshld,3633,335224,Household Laundry Equipment Manufacturing,False
+4,Hshld,3634,333414,Heating Equipment (except Warm Air Furnaces) Manufacturing,False
+4,Hshld,3634,335211,Electric Housewares and Household Fan Manufacturing,False
+4,Hshld,3634,339999,All Other Miscellaneous Manufacturing,False
+4,Hshld,3635,335212,Household Vacuum Cleaner Manufacturing,False
+4,Hshld,3639,333298,All Other Industrial Machinery Manufacturing,False
+4,Hshld,3639,335212,Household Vacuum Cleaner Manufacturing,False
+4,Hshld,3639,335228,Other Major Household Appliance Manufacturing,False
+4,Hshld,3751,336991,"Motorcycle, Bicycle, and Parts Manufacturing",False
+4,Hshld,3861,325992,"Photographic Film, Paper, Plate, and Chemical Manufacturing",True
+4,Hshld,3861,333315,Photographic and Photocopying Equipment Manufacturing,False
+4,Hshld,3873,334518,"Watch, Clock, and Part Manufacturing",False
+4,Hshld,3911,339911,Jewelry (except Costume) Manufacturing,False
+4,Hshld,3914,332211,Cutlery and Flatware (except Precious) Manufacturing,False
+4,Hshld,3914,332999,All Other Miscellaneous Fabricated Metal Product Manufacturing,False
+4,Hshld,3914,339912,Silverware and Holloware Manufacturing,False
+4,Hshld,3915,334518,"Watch, Clock, and Part Manufacturing",False
+4,Hshld,3915,339913,Jewelers' Material and Lapidary Work Manufacturing,False
+4,Hshld,3961,339914,Costume Jewelry and Novelty Manufacturing,False
+4,Hshld,3961,339993,"Fastener, Button, Needle, and Pin Manufacturing",False
+4,Hshld,3991,339994,"Broom, Brush, and Mop Manufacturing",False
+4,Hshld,3995,339995,Burial Casket Manufacturing,False
+4,Clths,2311,315211,Men’s and Boys’ Cut and Sew Apparel Contractors,True
+4,Clths,2311,315222,"Men’s and Boys’ Cut and Sew Suit, Coat and Overcoat Manufacturing ",True
+4,Clths,2321,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2321,315223,Men’s and Boys’ Cut and Sew Shirt (except Work Shirt) Manufacturing,True
+4,Clths,2322,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2322,315221,Men’s and Boys’ Cut and Sew Underwear and Nightwear Manufacturing,True
+4,Clths,2323,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2323,315993,Men’s and Boys’ Neckwear Manufacturing,True
+4,Clths,2325,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2325,315224,"Men’s and Boys’ Cut and Sew Trouser, Slack and Jean Manufacturing ",True
+4,Clths,2326,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2326,315225,Men’s and Boys’ Cut and Sew Work Clothing Manufacturing,True
+4,Clths,2329,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2329,315228,Men’s and Boys’ Cut and Sew Other Outerwear Manufacturing,True
+4,Clths,2329,315299,All Other Cut and Sew Apparel Manufacturing,True
+4,Clths,2331,315212,"Women’s, Girls’, and Infants’ Cut and Sew Apparel Contractors",True
+4,Clths,2331,315232,Women’s and Girls’ Cut and Sew Blouse and Shirt Manufacturing,True
+4,Clths,2335,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2335,315233,Women’s and Girls’ Cut and Sew Dress Manufacturing,True
+4,Clths,2337,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2337,315234,"Women’s and Girls’ Cut and Sew Suit, Coat, Tailored Jacket, and Skirt Manufacturing",True
+4,Clths,2339,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2339,315239,Women’s and Girls’ Cut and Sew Other Outerwear Manufacturing ,True
+4,Clths,2339,315299,All Other Cut and Sew Apparel Manufacturing,True
+4,Clths,2339,315999,Other Apparel Accessories and Other Apparel Manufacturing,True
+4,Clths,2341,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2341,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2341,315221,Men's and Boys' Cut and Sew Underwear and Nightwear Manufacturing,True
+4,Clths,2341,315231,"Women’s and Girls’ Cut and Sew Lingerie, Loungewear, and Nightwear Manufacturing",True
+4,Clths,2341,315291,Infants’ Cut and Sew Apparel Manufacturing,True
+4,Clths,2342,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2342,315231,"Women’s and Girls’ Cut and Sew Lingerie, Loungewear, and Nightwear Manufacturing",True
+4,Clths,2353,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2353,315212,"Women’s, Girls’, and Infants’ Cut and Sew Apparel Contractors",True
+4,Clths,2353,315991,"Hat, Cap, and Millinery Manufacturing",True
+4,Clths,2361,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2361,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2361,315223,Men’s and Boys’ Cut and Sew Shirt (except Work Shirt) Manufacturing,True
+4,Clths,2361,315232,Women’s and Girls’ Cut and Sew Blouse and Shirt Manufacturing,True
+4,Clths,2361,315233,Women’s and Girls’ Cut and Sew Dress Manufacturing,True
+4,Clths,2361,315291,Infants’ Cut and Sew Apparel Manufacturing,True
+4,Clths,2369,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2369,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2369,315221,Men's and Boys' Cut and Sew Underwear and Nightwear Manufacturing,True
+4,Clths,2369,315222,"Men's and Boys' Cut and Sew Suit, Coat, and Overcoat Manufacturing",True
+4,Clths,2369,315224,"Men’s and Boys’ Cut and Sew Trouser, Slack and Jean Manufacturing ",True
+4,Clths,2369,315228,Men’s and Boys’ Cut and Sew Other Outerwear Manufacturing,True
+4,Clths,2369,315231,"Women’s and Girls’ Cut and Sew Lingerie, Loungewear, and Nightwear Manufacturing",True
+4,Clths,2369,315234,"Women’s and Girls’ Cut and Sew Suit, Coat, Tailored Jacket, and Skirt Manufacturing",True
+4,Clths,2369,315239,Women’s and Girls’ Cut and Sew Other Outerwear Manufacturing ,True
+4,Clths,2369,315291,Infants’ Cut and Sew Apparel Manufacturing,True
+4,Clths,2371,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2371,315212,"Women’s, Girls’, and Infants’ Cut and Sew Apparel Contractors",True
+4,Clths,2371,315292,Fur and Leather Apparel Manufacturing,True
+4,Clths,2381,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2381,315212,"Women’s, Girls’, and Infants’ Cut and Sew Apparel Contractors",True
+4,Clths,2381,315992,Glove and Mitten Manufacturing,True
+4,Clths,2384,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2384,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2384,315221,Men's and Boys' Cut and Sew Underwear and Nightwear Manufacturing,True
+4,Clths,2384,315231,"Women’s and Girls’ Cut and Sew Lingerie, Loungewear, and Nightwear Manufacturing",True
+4,Clths,2385,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2385,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2385,315222,"Men's and Boys' Cut and Sew Suit, Coat, and Overcoat Manufacturing",True
+4,Clths,2385,315228,Men’s and Boys’ Cut and Sew Other Outerwear Manufacturing,True
+4,Clths,2385,315234,"Women’s and Girls’ Cut and Sew Suit, Coat, Tailored Jacket, and Skirt Manufacturing",True
+4,Clths,2385,315239,Women’s and Girls’ Cut and Sew Other Outerwear Manufacturing ,True
+4,Clths,2385,315291,Infants’ Cut and Sew Apparel Manufacturing,True
+4,Clths,2385,315299,All Other Cut and Sew Apparel Manufacturing,True
+4,Clths,2385,315999,Other Apparel Accessories and Other Apparel Manufacturing,True
+4,Clths,2386,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2386,315212,"Women’s, Girls’, and Infants’ Cut and Sew Apparel Contractors",True
+4,Clths,2386,315292,Fur and Leather Apparel Manufacturing,True
+4,Clths,2387,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2387,315212,"Women’s, Girls’, and Infants’ Cut and Sew Apparel Contractors",True
+4,Clths,2387,315999,Other Apparel Accessories and Other Apparel Manufacturing,True
+4,Clths,2389,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,2389,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Clths,2389,315231,"Women’s and Girls’ Cut and Sew Lingerie, Loungewear, and Nightwear Manufacturing",True
+4,Clths,2389,315299,All Other Cut and Sew Apparel Manufacturing,True
+4,Clths,2389,315999,Other Apparel Accessories and Other Apparel Manufacturing,True
+4,Clths,3021,316211,Rubber and Plastics Footwear Manufacturing,True
+4,Clths,3111,316110,Leather and Hide Tanning and Finishing,True
+4,Clths,3131,316999,All Other Leather Good Manufacturing,True
+4,Clths,3131,321999,All Other Miscellaneous Wood Product Manufacturing,False
+4,Clths,3131,339993,"Fastener, Button, Needle, and Pin Manufacturing",False
+4,Clths,3142,316212,House Slipper Manufacturing,True
+4,Clths,3143,316213,Men’s Footwear (except Athletic) Manufacturing,True
+4,Clths,3144,316214,Women’s Footwear (except Athletic) Manufacturing ,True
+4,Clths,3149,316219,Other Footwear Manufacturing,True
+4,Clths,3151,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Clths,3151,315212,"Women’s, Girls’, and Infants’ Cut and Sew Apparel Contractors",True
+4,Clths,3151,315992,Glove and Mitten Manufacturing,True
+4,Clths,3965,339993,"Fastener, Button, Needle, and Pin Manufacturing",False
+4,Drugs,2833,325411,Medicinal and Botanical Manufacturing,True
+4,Drugs,2834,325412,Pharmaceutical Preparation  Manufacturing,True
+4,Drugs,2835,325412,Pharmaceutical Preparation  Manufacturing,True
+4,Drugs,2835,325413,In-Vitro Diagnostic Substance Manufacturing,True
+4,Drugs,2836,325414,Biological Product (except Diagnostic) Manufacturing,True
+4,Chems,2812,325181,Alkalies and Chlorine Manufacturing,True
+4,Chems,2813,325120,Industrial Gas Manufacturing,True
+4,Chems,2816,325131,Inorganic Dye and Pigment Manufacturing,True
+4,Chems,2816,325182,Carbon Black Manufacturing,True
+4,Chems,2819,211112,Natural Gas Liquid Extraction,False
+4,Chems,2819,325131,Inorganic Dye and Pigment Manufacturing,True
+4,Chems,2819,325188,All Other Basic Inorganic Chemical Manufacturing,True
+4,Chems,2819,325998,All Other Miscellaneous Chemical Product and Preparation Manufacturing,True
+4,Chems,2819,331311,Alumina Refining,False
+4,Chems,2821,325211,Plastics Material and Resin Manufacturing,True
+4,Chems,2822,325212,Synthetic Rubber Manufacturing,True
+4,Chems,2823,325221,Cellulosic Organic Fiber Manufacturing,True
+4,Chems,2824,325222,Noncellulosic Organic Fiber Manufacturing,True
+4,Chems,2851,325510,Paint and Coating Manufacturing,True
+4,Chems,2861,325191,Gum and Wood Chemical Manufacturing,True
+4,Chems,2865,325110,Petrochemical Manufacturing,True
+4,Chems,2865,325132,Synthetic Organic Dye and Pigment  Manufacturing,True
+4,Chems,2865,325192,Cyclic Crude and Intermediate Manufacturing,True
+4,Chems,2869,325110,Petrochemical Manufacturing,True
+4,Chems,2869,325120,Industrial Gas Manufacturing,True
+4,Chems,2869,325188,All Other Basic Inorganic Chemical Manufacturing,True
+4,Chems,2869,325192,Cyclic Crude and Intermediate Manufacturing,True
+4,Chems,2869,325193,Ethyl Alcohol Manufacturing,True
+4,Chems,2869,325199,All Other Basic Organic Chemical Manufacturing,True
+4,Chems,2869,325998,All Other Miscellaneous Chemical Product and Preparation Manufacturing,True
+4,Chems,2873,325311,Nitrogenous Fertilizer Manufacturing,True
+4,Chems,2874,325312,Phosphatic Fertilizer Manufacturing,True
+4,Chems,2875,325314,Fertilizer (Mixing Only) Manufacturing,True
+4,Chems,2879,325320,Pesticide and Other Agricultural Chemical Manufacturing,True
+4,Chems,2891,325520,Adhesive Manufacturing,True
+4,Chems,2892,325920,Explosives Manufacturing,True
+4,Chems,2893,325910,Printing Ink Manufacturing,True
+4,Chems,2895,325182,Carbon Black Manufacturing,True
+4,Chems,2899,311942,Spice and Extract Manufacturing,True
+4,Chems,2899,325199,All Other Basic Organic Chemical Manufacturing,True
+4,Chems,2899,325510,Paint and Coating Manufacturing,True
+4,Chems,2899,325998,All Other Miscellaneous Chemical Product and Preparation Manufacturing,True
+4,Rubbr,3052,326220,Rubber and Plastics Hoses and Belting Manufacturing,True
+4,Rubbr,3053,339991,"Gasket, Packing, and Sealing Device Manufacturing",False
+4,Rubbr,3061,326291,Rubber Product Manufacturing for Mechanical Use,True
+4,Rubbr,3069,313320,Fabric Coating Mills,True
+4,Rubbr,3069,314911,Textile Bag Mills,True
+4,Rubbr,3069,315299,All Other Cut and Sew Apparel Manufacturing,True
+4,Rubbr,3069,315999,Other Apparel Accessories and Other Apparel Manufacturing,True
+4,Rubbr,3069,326192,Resilient Floor Covering Manufacturing,True
+4,Rubbr,3069,326299,All Other Rubber Product Manufacturing,True
+4,Rubbr,3069,339113,Surgical and Appliance and Supplies Manufacturing,False
+4,Rubbr,3069,339920,Sporting and Athletic Goods Manufacturing,False
+4,Rubbr,3069,339932,"Game, Toy, and Children's Vehicle Manufacturing",False
+4,Rubbr,3081,326113,Unlaminated Plastics Film and Sheet (except Packaging) Manufacturing,True
+4,Rubbr,3082,326121,Unlaminated Plastics Profile Shape Manufacturing,True
+4,Rubbr,3083,326130,"Laminated Plastics Plate, Sheet (except Packaging), and Shape Manufacturing",True
+4,Rubbr,3084,326122,Plastics Pipe and Pipe Fitting Manufacturing,True
+4,Rubbr,3085,326160,Plastics Bottle Manufacturing,True
+4,Rubbr,3086,326140,Polystyrene Foam Product Manufacturing,True
+4,Rubbr,3086,326150,Urethane and Other Foam Product (except Polystyrene) Manufacturing,True
+4,Rubbr,3087,325991,Custom Compounding of Purchased Resins ,True
+4,Rubbr,3088,326191,Plastics Plumbing Fixture Manufacturing,True
+4,Rubbr,3089,326121,Unlaminated Plastics Profile Shape Manufacturing,True
+4,Rubbr,3089,326122,Plastics Pipe and Pipe Fitting Manufacturing,True
+4,Rubbr,3089,326199,All Other Plastics Product Manufacturing,True
+4,Rubbr,3089,337215,"Showcase, Partition, Shelving, and Locker Manufacturing",False
+4,Rubbr,3089,339113,Surgical Appliance and Supplies Manufacturing,False
+4,Txtls,2211,313210,Broadwoven Fabric Mills,True
+4,Txtls,2221,313210,Broadwoven Fabric Mills,True
+4,Txtls,2231,313210,Broadwoven Fabric Mills,True
+4,Txtls,2231,313311,Broadwoven Fabric Finishing Mills,True
+4,Txtls,2231,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2241,313221,Narrow Fabric Mills,True
+4,Txtls,2251,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2251,315111,Sheer Hosiery Mills,True
+4,Txtls,2252,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2252,315111,Sheer Hosiery Mills,True
+4,Txtls,2252,315119,Other Hosiery and Sock Mills,True
+4,Txtls,2253,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2253,315191,Outerwear Knitting Mills,True
+4,Txtls,2253,315192,Underwear and Nightwear Knitting Mills,True
+4,Txtls,2254,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2254,315192,Underwear and Nightwear Knitting Mills,True
+4,Txtls,2257,313241,Weft Knit Fabric Mills,True
+4,Txtls,2257,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2258,313249,Other Knit Fabric and Lace Mills,True
+4,Txtls,2258,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2259,313241,Weft Knit Fabric Mills,True
+4,Txtls,2259,313249,Other Knit Fabric and Lace Mills,True
+4,Txtls,2259,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2259,315191,Outerwear Knitting Mills,True
+4,Txtls,2259,315192,Underwear and Nightwear Knitting Mills,True
+4,Txtls,2261,313311,Broadwoven Fabric Finishing Mills,True
+4,Txtls,2262,313311,Broadwoven Fabric Finishing Mills,True
+4,Txtls,2269,313311,Broadwoven Fabric Finishing Mills,True
+4,Txtls,2269,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2273,314110,Carpet and Rug Mills,True
+4,Txtls,2281,313111,Yarn Spinning Mills,True
+4,Txtls,2282,313112,"Yarn Texturing, Throwing, and Twisting Mills",True
+4,Txtls,2284,313113,Thread Mills,True
+4,Txtls,2284,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2295,313320,Fabric Coating Mills,True
+4,Txtls,2297,313230,Nonwoven Fabric Mills,True
+4,Txtls,2298,313111,Yarn Spinning Mills,True
+4,Txtls,2298,314991,"Rope, Cordage, and Twine Mills",True
+4,Txtls,2299,313111,Yarn Spinning Mills,True
+4,Txtls,2299,313111,Yarn Spinning Mills,True
+4,Txtls,2299,313113,Thread Mills,True
+4,Txtls,2299,313210,Broadwoven Fabric Mills,True
+4,Txtls,2299,313221,Narrow Fabric Mills,True
+4,Txtls,2299,313230,Nonwoven Fabric Mills,True
+4,Txtls,2299,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,True
+4,Txtls,2299,314999,All Other Miscellaneous Textile Product Mills,True
+4,Txtls,2393,314911,Textile Bag Mills,True
+4,Txtls,2394,314912,Canvas and Related Product Mills,True
+4,Txtls,2395,314999,All Other Miscellaneous Textile Product Mills,True
+4,Txtls,2395,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Txtls,2395,315212,"Women's, Girls', and Infants' Cut and Sew Apparel Contractors",True
+4,Txtls,2397,313222,Schiffli Machine Embroidery,True
+4,Txtls,2399,314999,All Other Miscellaneous Textile Product Mills,True
+4,Txtls,2399,315211,Men's and Boys' Cut and Sew Apparel Contractors,True
+4,Txtls,2399,315212,"Women’s, Girls’, and Infants’ Cut and Sew Apparel Contractors",True
+4,Txtls,2399,315999,Other Apparel Accessories and Other Apparel Manufacturing,True
+4,Txtls,2399,336360,Motor Vehicle Seating and Interior Trim Manufacturing,False
+4,Paper,2521,337211,Wood Office Furniture Manufacturing ,False
+4,Paper,2522,337214,Office Furniture (except Wood) Manufacturing,False
+4,Paper,2531,336360,Motor Vehicle Seating and Interior Trim Manufacturing,False
+4,Paper,2531,337127,Institutional Furniture Manufacturing,False
+4,Paper,2531,339942,Lead Pencil and Art Good Manufacturing,False
+4,Paper,2541,337110,Wood Kitchen Cabinet and Countertop Manufacturing,False
+4,Paper,2541,337127,Institutional Furniture Manufacturing,False
+4,Paper,2541,337212,Custom Architectural Woodwork and Millwork Manufacturing,False
+4,Paper,2541,337215,"Showcase, Partition, Shelving, and Locker Manufacturing",False
+4,Paper,2542,337127,Institutional Furniture Manufacturing,False
+4,Paper,2542,337215,"Showcase, Partition, Shelving, and Locker Manufacturing",False
+4,Paper,2611,322110,Pulp Mills,True
+4,Paper,2611,322121,Paper (except Newsprint) Mills,True
+4,Paper,2611,322122,Newsprint Mills,True
+4,Paper,2611,322130,Paperboard Mills,True
+4,Paper,2621,322121,Paper (except Newsprint) Mills,True
+4,Paper,2621,322122,Newsprint Mills,True
+4,Paper,2631,322130,Paperboard Mills,True
+4,Paper,2671,322221,Coated and Laminated Packaging Paper and Plastics Film Manufacturing,True
+4,Paper,2671,326112,Plastics Packaging Film and Sheet (including Laminated) Manufacturing,True
+4,Paper,2672,322222,Coated and Laminated Paper Manufacturing,True
+4,Paper,2673,322223,"Plastics, Foil, and Coated Paper Bag Manufacturing",True
+4,Paper,2673,326111,Plastics Bag Manufacturing,True
+4,Paper,2674,322224,Uncoated Paper and Multiwall Bag Manufacturing,True
+4,Paper,2675,322226,Surface-Coated Paperboard Manufacturing,True
+4,Paper,2675,322231,Die-Cut Paper and Paperboard Office Supplies Manufacturing,True
+4,Paper,2675,322299,All Other Converted Paper Product Manufacturing,True
+4,Paper,2676,322291,Sanitary Paper Product Manufacturing,True
+4,Paper,2677,322232,Envelope Manufacturing,True
+4,Paper,2678,322233,"Stationery, Tablet, and Related Product Manufacturing",True
+4,Paper,2679,322211,Corrugated and Solid Fiber Box Manufacturing,True
+4,Paper,2679,322222,Coated and Laminated Paper Manufacturing,True
+4,Paper,2679,322231,Die-Cut Paper and Paperboard Office Supplies Manufacturing,True
+4,Paper,2679,322299,All Other Converted Paper Product Manufacturing,True
+4,Paper,2761,323116,Manifold Business Form Printing,True
+4,Paper,3951,339941,Pen and Mechanical Pencil Manufacturing,False
+4,Paper,3952,325998,All Other Miscellaneous Chemical Product and Preparation Manufacturing,True
+4,Paper,3952,337127,Institutional Furniture Manufacturing,False
+4,Paper,3952,339942,Lead Pencil and Art Good Manufacturing,False
+4,Paper,3953,339943,Marking Device Manufacturing,False
+4,Paper,3955,339944,Carbon Paper and Inked Ribbon Manufacturing,False
+5,Whlsl,5012,423110,Automobile and Other Motor Vehicle Merchant Wholesalers,True
+5,Whlsl,5012,425110,Business to Business Electronic Markets,True
+5,Whlsl,5012,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5013,423120,Motor Vehicle Supplies and New Parts Merchant Wholesalers,True
+5,Whlsl,5013,425110,Business to Business Electronic Markets,True
+5,Whlsl,5013,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5013,441310,Automotive Parts and Accessories Stores,False
+5,Whlsl,5014,423130,Tire and Tube Merchant Wholesalers,True
+5,Whlsl,5014,425110,Business to Business Electronic Markets,True
+5,Whlsl,5014,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5014,441320,Tire Dealers,False
+5,Whlsl,5015,423140,Motor Vehicle Parts (Used) Merchant Wholesalers,True
+5,Whlsl,5015,425110,Business to Business Electronic Markets,True
+5,Whlsl,5015,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5015,441310,Automotive Parts and Accessories Stores,False
+5,Whlsl,5021,423210,Furniture Merchant Wholesalers,True
+5,Whlsl,5021,425110,Business to Business Electronic Markets,True
+5,Whlsl,5021,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5021,442110,Furniture Stores,False
+5,Whlsl,5023,423220,Home Furnishing Merchant Wholesalers,True
+5,Whlsl,5023,425110,Business to Business Electronic Markets,True
+5,Whlsl,5023,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5023,442210,Floor Covering Stores,False
+5,Whlsl,5031,423310,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",True
+5,Whlsl,5031,425110,Business to Business Electronic Markets,True
+5,Whlsl,5031,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5031,444110,Home Centers,False
+5,Whlsl,5032,423320,"Brick, Stone, and Related Construction Material Merchant Wholesalers",True
+5,Whlsl,5032,425110,Business to Business Electronic Markets,True
+5,Whlsl,5032,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5032,444190,Other Building Material Dealers,False
+5,Whlsl,5033,423330,"Roofing, Siding, and Insulation Material Merchant Wholesalers",True
+5,Whlsl,5033,425110,Business to Business Electronic Markets,True
+5,Whlsl,5033,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5033,444190,Other Building Material Dealers,False
+5,Whlsl,5039,423310,"Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers",True
+5,Whlsl,5039,423390,Other Construction Material Merchant Wholesalers,True
+5,Whlsl,5039,425110,Business to Business Electronic Markets,True
+5,Whlsl,5039,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5039,444190,Other Building Material Dealers,False
+5,Whlsl,5043,423410,Photographic Equipment and Supplies Merchant Wholesalers,True
+5,Whlsl,5043,425110,Business to Business Electronic Markets,True
+5,Whlsl,5043,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5044,423420,Office Equipment Merchant Wholesalers,True
+5,Whlsl,5044,425110,Business to Business Electronic Markets,True
+5,Whlsl,5044,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5044,453210,Office Supplies and Stationary Stores,False
+5,Whlsl,5045,423430,Computer and Computer Peripheral Equipment and Software Merchant Wholesalers,True
+5,Whlsl,5045,425110,Business to Business Electronic Markets,True
+5,Whlsl,5045,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5045,443120,Computer and Software Stores,False
+5,Whlsl,5046,423440,Other Commercial Equipment Merchant Wholesalers,True
+5,Whlsl,5046,425110,Business to Business Electronic Markets,True
+5,Whlsl,5046,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5047,423450,"Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers",True
+5,Whlsl,5047,425110,Business to Business Electronic Markets,True
+5,Whlsl,5047,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5047,446199,All Other Health and Personal Care Stores ,False
+5,Whlsl,5048,423460,Ophthalmic Goods Merchant Wholesalers,True
+5,Whlsl,5048,425110,Business to Business Electronic Markets,True
+5,Whlsl,5048,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5049,423490,Other Professional Equipment and Supplies Merchant Wholesalers,True
+5,Whlsl,5049,425110,Business to Business Electronic Markets,True
+5,Whlsl,5049,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5049,453210,Office Supplies and Stationery Stores,False
+5,Whlsl,5051,423510,Metal Service Centers and Other Metal Merchant Wholesalers,True
+5,Whlsl,5051,425110,Business to Business Electronic Markets,True
+5,Whlsl,5051,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5052,423520,Coal and Other Mineral and Ore Merchant Wholesalers,True
+5,Whlsl,5052,425110,Business to Business Electronic Markets,True
+5,Whlsl,5052,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5063,423610,"Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers",True
+5,Whlsl,5063,425110,Business to Business Electronic Markets,True
+5,Whlsl,5063,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5063,444190,Other Building Material Dealers,False
+5,Whlsl,5064,423620,"Electrical and Electronic Appliance, Television, and Radio Set Merchant Wholesalers",True
+5,Whlsl,5064,425110,Business to Business Electronic Markets,True
+5,Whlsl,5064,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5064,443111,Household Appliance Stores,False
+5,Whlsl,5064,443112,"Radio, Television, and Other Electronics Stores",False
+5,Whlsl,5064,444190,Other Building Material Dealers,False
+5,Whlsl,5065,423690,Other Electronic Parts and Equipment Merchant Wholesalers,True
+5,Whlsl,5065,425110,Business to Business Electronic Markets,True
+5,Whlsl,5065,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5065,443112,"Radio, Television, and Other Electronics Stores",False
+5,Whlsl,5065,443120,Computer and Software Stores,False
+5,Whlsl,5072,423710,Hardware Merchant Wholesalers,True
+5,Whlsl,5072,425110,Business to Business Electronic Markets,True
+5,Whlsl,5072,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5072,444130,Hardware Stores,False
+5,Whlsl,5074,423720,Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers ,True
+5,Whlsl,5074,425110,Business to Business Electronic Markets,True
+5,Whlsl,5074,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5074,444190,Other Building Material Dealers,False
+5,Whlsl,5075,423730,Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers,True
+5,Whlsl,5075,425110,Business to Business Electronic Markets,True
+5,Whlsl,5075,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5078,423740,Refrigeration Equipment and Supplies Merchant Wholesalers,True
+5,Whlsl,5078,425110,Business to Business Electronic Markets,True
+5,Whlsl,5078,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5082,423810,Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers,True
+5,Whlsl,5082,425110,Business to Business Electronic Markets,True
+5,Whlsl,5082,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5083,423820,Farm and Garden Machinery and Equipment Merchant Wholesalers,True
+5,Whlsl,5083,425110,Business to Business Electronic Markets,True
+5,Whlsl,5083,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5083,444210,Outdoor Power Equipment Stores,False
+5,Whlsl,5084,423830,Industrial Machinery and Equipment Merchant Wholesalers,True
+5,Whlsl,5084,425110,Business to Business Electronic Markets,True
+5,Whlsl,5084,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5085,423830,Industrial Machinery and Equipment Merchant Wholesalers,True
+5,Whlsl,5085,423840,Industrial Supplies Merchant Wholesalers,True
+5,Whlsl,5085,425110,Business to Business Electronic Markets,True
+5,Whlsl,5085,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5085,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),False
+5,Whlsl,5087,423850,Service Establishment Equipment and Supplies Merchant Wholesalers,True
+5,Whlsl,5087,425110,Business to Business Electronic Markets,True
+5,Whlsl,5087,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5087,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",False
+5,Whlsl,5088,423860,Transportation Equipment and Supplies (except Motor Vehicle) Merchant Wholesalers,True
+5,Whlsl,5088,425110,Business to Business Electronic Markets,True
+5,Whlsl,5088,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5091,423910,Sporting and Recreational Goods and Supplies Merchant Wholesalers,True
+5,Whlsl,5091,425110,Business to Business Electronic Markets,True
+5,Whlsl,5091,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5091,451110,Sporting Goods Stores,False
+5,Whlsl,5092,423920,Toy and Hobby Goods and Supplies Merchant Wholesalers,True
+5,Whlsl,5092,425110,Business to Business Electronic Markets,True
+5,Whlsl,5092,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5092,451120,"Hobby, Toy, and Game Stores",False
+5,Whlsl,5093,423930,Recyclable Material Merchant Wholesalers,True
+5,Whlsl,5093,425110,Business to Business Electronic Markets,True
+5,Whlsl,5093,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5094,423940,"Jewelry, Watch, Precious Stone, and Precious Metal Merchant Wholesalers",True
+5,Whlsl,5094,425110,Business to Business Electronic Markets,True
+5,Whlsl,5094,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5094,448310,Jewelry Stores,False
+5,Whlsl,5099,423990,Other Miscellaneous Durable Goods Merchant Wholesalers,True
+5,Whlsl,5099,425110,Business to Business Electronic Markets,True
+5,Whlsl,5099,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5099,444190,Other Building Material Dealers,False
+5,Whlsl,5099,451110,Sporting Goods Stores,False
+5,Whlsl,5099,451120,"Hobby, Toy, and Game Stores",False
+5,Whlsl,5099,451220,"Prerecorded Tape, Compact Disc, and Record Stores",False
+5,Whlsl,5111,424110,Printing and Writing Paper Merchant Wholesalers,True
+5,Whlsl,5111,425110,Business to Business Electronic Markets,True
+5,Whlsl,5111,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5111,453210,Office Supplies and Stationary Stores,False
+5,Whlsl,5112,424120,Stationery and Office Supplies Merchant Wholesalers,True
+5,Whlsl,5112,425110,Business to Business Electronic Markets,True
+5,Whlsl,5112,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5112,453210,Office Supplies and Stationery Stores,False
+5,Whlsl,5113,424130,Industrial and Personal Service Paper Merchant Wholesalers,True
+5,Whlsl,5113,425110,Business to Business Electronic Markets,True
+5,Whlsl,5113,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5113,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),False
+5,Whlsl,5122,424210,Drugs and Druggists’ Sundries Merchant Wholesalers,True
+5,Whlsl,5122,425110,Business to Business Electronic Markets,True
+5,Whlsl,5122,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5122,446110,Pharmacies and Drug Stores,False
+5,Whlsl,5122,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",False
+5,Whlsl,5122,446191,Food (Health) Supplement Stores,False
+5,Whlsl,5131,313311,Broadwoven Fabric Finishing Mills,False
+5,Whlsl,5131,313312,Textile and Fabric Finishing (except Broadwoven Fabric) Mills,False
+5,Whlsl,5131,424310,"Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers",True
+5,Whlsl,5131,425110,Business to Business Electronic Markets,True
+5,Whlsl,5131,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5131,451130,"Sewing, Needlework, and Piece Goods Stores",False
+5,Whlsl,5136,423910,Sporting and Recreational Goods and Supplies Merchant Wholesalers,True
+5,Whlsl,5136,424320,Men’s and Boys’ Clothing and Furnishings Merchant Wholesalers,True
+5,Whlsl,5136,425110,Business to Business Electronic Markets,True
+5,Whlsl,5136,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5136,448110,Men's Clothing Stores,False
+5,Whlsl,5136,448190,Other Clothing Stores,False
+5,Whlsl,5137,423910,Sporting and Recreational Goods and Supplies Merchant Wholesalers,True
+5,Whlsl,5137,424330,"Women’s, Children’s, and Infants’ Clothing and Accessories Merchant Wholesalers",True
+5,Whlsl,5137,425110,Business to Business Electronic Markets,True
+5,Whlsl,5137,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5137,448120,Women's Clothing Stores,False
+5,Whlsl,5137,448130,Children's and Infants' Clothing Stores,False
+5,Whlsl,5137,448190,Other Clothing Stores,False
+5,Whlsl,5139,424340,Footwear Merchant Wholesalers,True
+5,Whlsl,5139,425110,Business to Business Electronic Markets,True
+5,Whlsl,5139,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5139,448210,Shoe Stores,False
+5,Whlsl,5141,424410,General Line Grocery Merchant Wholesalers,True
+5,Whlsl,5141,425110,Business to Business Electronic Markets,True
+5,Whlsl,5141,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5141,445110,Supermarkets and Other Grocery (except Convenience) Stores,False
+5,Whlsl,5142,424420,Packaged Frozen Food Merchant Wholesalers,True
+5,Whlsl,5142,425110,Business to Business Electronic Markets,True
+5,Whlsl,5142,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5142,454390,Other Direct Selling Establishments,False
+5,Whlsl,5143,424430,Dairy Product (except Dried or Canned) Merchant Wholesalers,True
+5,Whlsl,5143,425110,Business to Business Electronic Markets,True
+5,Whlsl,5143,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5143,445299,All Other Specialty Food Stores,False
+5,Whlsl,5144,424440,Poultry and Poultry Product Merchant Wholesalers,True
+5,Whlsl,5144,425110,Business to Business Electronic Markets,True
+5,Whlsl,5144,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5144,445210,Meat Markets,False
+5,Whlsl,5145,424450,Confectionery Merchant Wholesalers,True
+5,Whlsl,5145,425110,Business to Business Electronic Markets,True
+5,Whlsl,5145,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5145,445292,Confectionery and Nut Stores,False
+5,Whlsl,5146,424460,Fish and Seafood Merchant Wholesalers,True
+5,Whlsl,5146,425110,Business to Business Electronic Markets,True
+5,Whlsl,5146,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5146,445220,Fish and Seafood Markets,False
+5,Whlsl,5147,311612,Meat Processed from Carcasses ,False
+5,Whlsl,5147,424470,Meat and Meat Product Merchant Wholesalers,True
+5,Whlsl,5147,425110,Business to Business Electronic Markets,True
+5,Whlsl,5147,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5147,445210,Meat Markets,False
+5,Whlsl,5148,424480,Fresh Fruit and Vegetable Merchant Wholesalers,True
+5,Whlsl,5148,425110,Business to Business Electronic Markets,True
+5,Whlsl,5148,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5148,445230,Fruit and Vegetable Markets,False
+5,Whlsl,5149,312112,Bottled Water Manufacturing,False
+5,Whlsl,5149,424490,Other Grocery and Related Products Merchant Wholesalers,True
+5,Whlsl,5149,425110,Business to Business Electronic Markets,True
+5,Whlsl,5149,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5149,445299,All Other Specialty Food Stores,False
+5,Whlsl,5149,453910,Pet and Pet Supplies Stores,False
+5,Whlsl,5153,424510,Grain and Field Bean Merchant Wholesalers,True
+5,Whlsl,5153,425110,Business to Business Electronic Markets,True
+5,Whlsl,5153,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5153,444220,"Nurseries, Garden Centers, and Farm Supply Stores",False
+5,Whlsl,5154,424520,Livestock Merchant Wholesalers,True
+5,Whlsl,5154,425110,Business to Business Electronic Markets,True
+5,Whlsl,5154,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5159,424590,Other Farm Product Raw Material Merchant Wholesalers,True
+5,Whlsl,5159,425110,Business to Business Electronic Markets,True
+5,Whlsl,5159,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5159,444220,"Nurseries, Garden Centers, and Farm Supply Stores",False
+5,Whlsl,5162,424610,Plastics Materials and Basic Forms and Shapes Merchant Wholesalers,True
+5,Whlsl,5162,425110,Business to Business Electronic Markets,True
+5,Whlsl,5162,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5162,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),False
+5,Whlsl,5169,424690,Other Chemical and Allied Products Merchant Wholesalers,True
+5,Whlsl,5169,425110,Business to Business Electronic Markets,True
+5,Whlsl,5169,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5171,424710,Petroleum Bulk Stations and Terminals,True
+5,Whlsl,5171,454311,Heating Oil Dealers,False
+5,Whlsl,5171,454312,Liquefied Petroleum Gas (Bottled Gas) Dealers,False
+5,Whlsl,5172,424720,Petroleum and Petroleum Products Merchant Wholesalers (except Bulk Stations and Terminals),True
+5,Whlsl,5172,425110,Business to Business Electronic Markets,True
+5,Whlsl,5172,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5181,424810,Beer and Ale Merchant Wholesalers,True
+5,Whlsl,5181,425110,Business to Business Electronic Markets,True
+5,Whlsl,5181,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5181,445310,"Beer, Wine, and Liquor Stores",False
+5,Whlsl,5182,424820,Wine and Distilled Alcoholic Beverage Merchant Wholesalers,True
+5,Whlsl,5182,425110,Business to Business Electronic Markets,True
+5,Whlsl,5182,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5182,445310,"Beer, Wine, and Liquor Stores",False
+5,Whlsl,5191,424910,Farm Supplies Merchant Wholesalers,True
+5,Whlsl,5191,425110,Business to Business Electronic Markets,True
+5,Whlsl,5191,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5191,444220,"Nurseries, Garden Centers, and Farm Supply Stores",False
+5,Whlsl,5192,424920,"Book, Periodical, and Newspaper Merchant Wholesalers",True
+5,Whlsl,5192,425110,Business to Business Electronic Markets,True
+5,Whlsl,5192,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5192,451211,Book Stores,False
+5,Whlsl,5193,424930,"Flower, Nursery Stock, and Florists’ Supplies Merchant Wholesalers",True
+5,Whlsl,5193,425110,Business to Business Electronic Markets,True
+5,Whlsl,5193,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5193,444220,"Nurseries, Garden Centers, and Farm Supply Stores",False
+5,Whlsl,5194,424940,Tobacco and Tobacco Product Merchant Wholesalers,True
+5,Whlsl,5194,425110,Business to Business Electronic Markets,True
+5,Whlsl,5194,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5194,453991,Tobacco Stores,False
+5,Whlsl,5198,424950,"Paint, Varnish, and Supplies Merchant Wholesalers",True
+5,Whlsl,5198,425110,Business to Business Electronic Markets,True
+5,Whlsl,5198,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5199,424310,"Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers",True
+5,Whlsl,5199,424340,Footwear Merchant Wholesalers,True
+5,Whlsl,5199,424610,Plastics Materials and Basic Forms and Shapes Merchant Wholesalers,True
+5,Whlsl,5199,424990,Other Miscellaneous Nondurable Goods Merchant Wholesalers,True
+5,Whlsl,5199,425110,Business to Business Electronic Markets,True
+5,Whlsl,5199,425120,Wholesale Trade Agents and Brokers,True
+5,Whlsl,5199,453220,"Gift, Novelty, and Souvenir Stores",False
+5,Whlsl,5199,453910,Pet and Pet Supplies Stores,False
+5,Whlsl,5199,453991,Tobacco Stores,False
+5,Whlsl,5199,541890,Other Services Related to Advertising,False
+6,Rtail,5211,444110,Home Centers,True
+6,Rtail,5211,444190,Other Building Material Dealers,True
+6,Rtail,5231,444120,Paint and Wallpaper Stores,True
+6,Rtail,5231,444190,Other Building Material Dealers,True
+6,Rtail,5251,444130,Hardware Stores,True
+6,Rtail,5261,444210,Outdoor Power Equipment Stores,True
+6,Rtail,5261,444220,"Nurseries, Garden Centers, and Farm Supply Stores",True
+6,Rtail,5271,453930,Manufactured (Mobile) Home Dealers,True
+6,Rtail,5311,452111,Department Stores (except Discount Department Stores),True
+6,Rtail,5311,452112,Discount Department Stores,True
+6,Rtail,5331,452990,All Other General Merchandise Stores,True
+6,Rtail,5399,452910,Warehouse Clubs and Supercenters,True
+6,Rtail,5399,452990,All Other General Merchandise Stores,True
+6,Rtail,5411,445110,Supermarkets and Other Grocery (except Convenience) Stores,True
+6,Rtail,5411,445120,Convenience Stores,True
+6,Rtail,5411,447110,Gasoline Stations with Convenience Stores,True
+6,Rtail,5411,452910,Warehouse Clubs and Supercenters,True
+6,Rtail,5411,454390,Other Direct Selling Establishments,True
+6,Rtail,5421,445210,Meat Markets,True
+6,Rtail,5421,445220,Fish and Seafood Markets,True
+6,Rtail,5421,454390,Other Direct Selling Establishments,True
+6,Rtail,5431,445230,Fruit and Vegetable Markets,True
+6,Rtail,5431,454390,Other Direct Selling Establishments,True
+6,Rtail,5441,311330,Confectionery Manufacturing from Purchased  Chocolate ,False
+6,Rtail,5441,311340,Nonchocolate Confectionery Manufacturing,False
+6,Rtail,5441,445292,Confectionery and Nut Stores ,True
+6,Rtail,5451,445299,All Other Specialty Food Stores,True
+6,Rtail,5461,311811,Retail Bakeries,False
+6,Rtail,5461,445291,Baked Goods Stores,True
+6,Rtail,5461,722213,Snack and Nonalcoholic Beverage Bars,False
+6,Rtail,5499,445210,Meat Markets,True
+6,Rtail,5499,445299,All Other Specialty Food Stores,True
+6,Rtail,5499,446191,Food (Health) Supplement Stores,True
+6,Rtail,5511,441110,New Car Dealers,True
+6,Rtail,5521,441120,Used Car Dealers,True
+6,Rtail,5531,441310,Automotive Parts and Accessories Stores,True
+6,Rtail,5531,441320,Tire Dealers,True
+6,Rtail,5531,452990,All Other General Merchandise Stores,True
+6,Rtail,5541,447110,Gasoline Stations with Convenience Stores,True
+6,Rtail,5541,447190,Other Gasoline Stations,True
+6,Rtail,5551,441222,Boat Dealers,True
+6,Rtail,5561,441210,Recreational Vehicle Dealers,True
+6,Rtail,5571,441221,Motorcycle Dealers,True
+6,Rtail,5599,441229,All Other Motor Vehicle Dealers,True
+6,Rtail,5611,448110,Men's Clothing Stores,True
+6,Rtail,5611,448150,Clothing Accessories Stores,True
+6,Rtail,5621,448120,Women's Clothing Stores,True
+6,Rtail,5621,448190,Other Clothing Stores ,True
+6,Rtail,5632,448150,Clothing Accessories Stores,True
+6,Rtail,5632,448190,Other Clothing Stores ,True
+6,Rtail,5641,448130,Children's and Infants' Clothing Stores,True
+6,Rtail,5651,448140,Family Clothing Stores,True
+6,Rtail,5661,448210,Shoe Stores,True
+6,Rtail,5699,315222,"Men's and Boys' Cut and Sew Suit, Coat, and Overcoat Manufacturing",False
+6,Rtail,5699,315223,Men’s and Boys’ Cut and Sew Shirt (except Work Shirt) Manufacturing,False
+6,Rtail,5699,315233,Women’s and Girls’ Cut and Sew Dress Manufacturing,False
+6,Rtail,5699,448150,Clothing Accessories Stores,True
+6,Rtail,5699,448190,Other Clothing Stores ,True
+6,Rtail,5712,337110,Wood Kitchen Cabinet and Countertop Manufacturing,False
+6,Rtail,5712,337121,Upholstered Household Furniture Manufacturing,False
+6,Rtail,5712,337122,Nonupholstered Wood Household Furniture Manufacturing,False
+6,Rtail,5712,442110,Furniture Stores,True
+6,Rtail,5713,442210,Floor Covering Stores,True
+6,Rtail,5714,314121,Curtain and Drapery Mills,False
+6,Rtail,5714,314129,Other Household Textile Product Mills,False
+6,Rtail,5714,442291,Window Treatment Stores,True
+6,Rtail,5714,451130,"Sewing, Needlework, and Piece Goods Stores",True
+6,Rtail,5719,327112,"Vitreous China, Fine Earthenware, and Other Pottery Product Manufacturing",False
+6,Rtail,5719,442291,Window Treatment Stores,True
+6,Rtail,5719,442299,All Other Home Furnishings Stores,True
+6,Rtail,5722,443111,Household Appliance Stores,True
+6,Rtail,5731,441310,Automotive Parts and Accessories Stores,True
+6,Rtail,5731,443112,"Radio, Television, and Other Electronics Stores",True
+6,Rtail,5734,443120,Computer and Software Stores,True
+6,Rtail,5735,451220,"Prerecorded Tape, Compact Disc, and Record Stores",True
+6,Rtail,5736,451140,Musical Instrument and Supplies Stores,True
+6,Rtail,5912,446110,Pharmacies and Drug Stores,True
+6,Rtail,5921,445310,"Beer, Wine, and Liquor Stores",True
+6,Rtail,5932,453310,Used Merchandise Stores,True
+6,Rtail,5932,522298,All Other Nondepository Credit Intermediation,False
+6,Rtail,5941,451110,Sporting Goods Stores,True
+6,Rtail,5942,451211,Book Stores,True
+6,Rtail,5943,453210,Office Supplies and Stationery Stores,True
+6,Rtail,5944,448310,Jewelry Stores,True
+6,Rtail,5945,451120,"Hobby, Toy, and Game Stores",True
+6,Rtail,5946,443130,Camera and Photographic Supplies Stores,True
+6,Rtail,5947,453220,"Gift, Novelty, and Souvenir Stores",True
+6,Rtail,5948,448320,Luggage and Leather Goods Stores,True
+6,Rtail,5949,451130,"Sewing, Needlework, and Piece Goods Stores",True
+6,Rtail,5961,454111,Electronic Shopping,True
+6,Rtail,5961,454112,Electronic Auctions,True
+6,Rtail,5961,454113,Mail-Order Houses,True
+6,Rtail,5962,454210,Vending Machine Operators,True
+6,Rtail,5963,454390,Other Direct Selling Establishments,True
+6,Rtail,5963,722330,Mobile Food Services,False
+6,Rtail,5983,454311,Heating Oil Dealers,True
+6,Rtail,5984,454312,Liquefied Petroleum Gas (Bottled Gas) Dealers,True
+6,Rtail,5989,454319,Other Fuel Dealers,True
+6,Rtail,5992,453110,Florists,True
+6,Rtail,5993,453991,Tobacco Stores,True
+6,Rtail,5994,451212,News Dealers and Newsstands,True
+6,Rtail,5995,339115,Ophthalmic Goods Manufacturing,False
+6,Rtail,5995,446130,Optical Goods Stores,True
+6,Rtail,5999,339113,Surgical Appliance and Supplies Manufacturing,False
+6,Rtail,5999,443112,"Radio, Television, and Other Electronics Stores",True
+6,Rtail,5999,446120,"Cosmetics, Beauty Supplies, and Perfume Stores",True
+6,Rtail,5999,446199,All Other Health and Personal Care Stores ,True
+6,Rtail,5999,453910,Pet and Pet Supplies Stores,True
+6,Rtail,5999,453920,Art Dealers,True
+6,Rtail,5999,453998,All Other Miscellaneous Store Retailers (except Tobacco Stores),True
+7,Trans,4011,482111,Line-Haul Railroads,True
+7,Trans,4013,482112,Short Line Railroads,True
+7,Trans,4013,488210,Support Activities for Rail Transportation,True
+7,Trans,4111,485111,Mixed Mode Transit Systems,True
+7,Trans,4111,485112,Commuter Rail Systems,True
+7,Trans,4111,485113,Bus and Other Motor Vehicle Transit Systems,True
+7,Trans,4111,485119,Other Urban Transit Systems,True
+7,Trans,4111,485999,All Other Transit and Ground Passenger Transportation,True
+7,Trans,4119,485320,Limousine Service,True
+7,Trans,4119,485410,School and Employee Bus Transportation,True
+7,Trans,4119,485991,Special Needs Transportation,True
+7,Trans,4119,485999,All Other Transit and Ground Passenger Transportation,True
+7,Trans,4119,487110,"Scenic and Sightseeing Transportation, Land",True
+7,Trans,4119,621910,Ambulance Services,False
+7,Trans,4121,485310,Taxi Service,True
+7,Trans,4131,485210,Interurban and Rural Bus Transportation,True
+7,Trans,4141,485510,Charter Bus Industry,True
+7,Trans,4142,485510,Charter Bus Industry,True
+7,Trans,4151,485410,School and Employee Bus Transportation,True
+7,Trans,4173,488490,Other Support Activities for Road Transportation,True
+7,Trans,4212,484110,"General Freight Trucking, Local",True
+7,Trans,4212,484210,Used Household and Office Goods Moving,True
+7,Trans,4212,484220,"Specialized Freight (except Used Goods) Trucking, Local",True
+7,Trans,4212,562111,Solid Waste Collection,False
+7,Trans,4212,562112,Hazardous Waste Collection,False
+7,Trans,4212,562119,Other Waste Collection,False
+7,Trans,4213,484121,"General Freight Trucking, Long-Distance, Truckload",True
+7,Trans,4213,484122,"General Freight Trucking, Long-Distance, Less Than Truckload",True
+7,Trans,4213,484210,Used Household and Office Goods Moving,True
+7,Trans,4213,484230,"Specialized Freight (except Used Goods) Trucking, Long-Distance",True
+7,Trans,4214,484110,"General Freight Trucking, Local",True
+7,Trans,4214,484210,Used Household and Office Goods Moving,True
+7,Trans,4214,484220,"Specialized Freight (except Used Goods) Trucking, Local",True
+7,Trans,4215,492110,Couriers,True
+7,Trans,4215,492210,Local Messengers and Local Delivery,True
+7,Trans,4231,488490,Other Support Activities for Road Transportation,True
+7,Trans,4412,483111,Deep Sea Freight Transportation,True
+7,Trans,4424,483113,Coastal and Great Lakes Freight Transportation,True
+7,Trans,4432,483113,Coastal and Great Lakes Freight Transportation,True
+7,Trans,4449,483211,Inland Water Freight Transportation,True
+7,Trans,4481,483112,Deep Sea Passenger Transportation,True
+7,Trans,4481,483114,Coastal and Great Lakes Passenger Transportation,True
+7,Trans,4482,483114,Coastal and Great Lakes Passenger Transportation,True
+7,Trans,4482,483212,Inland Water Passenger Transportation,True
+7,Trans,4489,483212,Inland Water Passenger Transportation,True
+7,Trans,4489,487210,"Scenic and Sightseeing Transportation, Water",True
+7,Trans,4491,488310,Port and Harbor Operations,True
+7,Trans,4491,488320,Marine Cargo Handling,True
+7,Trans,4492,488330,Navigational Services to Shipping,True
+7,Trans,4493,713930,Marinas,False
+7,Trans,4499,483211,Inland Water Freight Transportation,True
+7,Trans,4499,488310,Port and Harbor Operations,True
+7,Trans,4499,488330,Navigational Services to Shipping,True
+7,Trans,4499,488390,Other Support Activities for Water Transportation,True
+7,Trans,4499,532411,"Commercial Air, Rail, and Water Transportation Equipment Rental and Leasing",False
+7,Trans,4499,541990,"All Other Professional, Scientific, and Technical Services",False
+7,Trans,4512,481111,Scheduled Passenger Air Transportation,True
+7,Trans,4512,481112,Scheduled Freight Air Transportation,True
+7,Trans,4513,492110,Couriers,True
+7,Trans,4522,481211,Nonscheduled Chartered Passenger Air Transportation,True
+7,Trans,4522,481212,Nonscheduled Chartered Freight Air Transportation,True
+7,Trans,4522,481219,Other Nonscheduled Air Transportation,True
+7,Trans,4522,487990,"Scenic and Sightseeing Transportation, Other",True
+7,Trans,4522,621910,Ambulance Services,False
+7,Trans,4581,488111,Air Traffic Control,True
+7,Trans,4581,488119,Other Airport Operations,True
+7,Trans,4581,488190,Other Support Activities for Air Transportation,True
+7,Trans,4581,561720,Janitorial Services,False
+7,Trans,4581,811420,Reupholstery and Furniture Repair,False
+7,Trans,4612,486110,Pipeline Transportation of Crude Oil,True
+7,Trans,4613,486910,Pipeline Transportation of Refined Petroleum Products,True
+7,Trans,4619,486990,All Other Pipeline Transportation,True
+7,Trans,4724,561510,Travel Agencies,False
+7,Trans,4725,561520,Tour Operators,False
+7,Trans,4729,488999,All Other Support Activities for Transportation,True
+7,Trans,4729,561599,All Other Travel Arrangement and Reservation Services,False
+7,Trans,4731,488510,Freight Transportation Arrangement,True
+7,Trans,4731,541614,"Process, Physical Distribution, and Logistics Consulting Services",False
+7,Trans,4741,488210,Support Activities for Rail Transportation,True
+7,Trans,4741,532411,"Commercial Air, Rail, and Water Transportation Equipment Rental and Leasing",False
+7,Trans,4783,488991,Packing and Crating,True
+7,Trans,4785,488390,Other Support Activities for Water Transportation,True
+7,Trans,4785,488490,Other Support Activities for Road Transportation,True
+7,Trans,4789,487110,"Scenic and Sightseeing Transportation, Land",True
+7,Trans,4789,488210,Support Activities for Rail Transportation,True
+7,Trans,4789,488999,All Other Support Activities for Transportation,True
+7,Trans,4789,722310,Food Service Contractors,False
+7,Util,4911,221111,Hydroelectric Power Generation,True
+7,Util,4911,221112,Fossil Fuel Electric Power Generation,True
+7,Util,4911,221113,Nuclear Electric Power Generation,True
+7,Util,4911,221119,Other Electric Power Generation,True
+7,Util,4911,221121,Electric Bulk Power Transmission and Control,True
+7,Util,4911,221122,Electric Power Distribution,True
+7,Util,4922,486210,Pipeline Transportation of Natural Gas,True
+7,Util,4923,221210,Natural Gas Distribution,True
+7,Util,4923,486210,Pipeline Transportation of Natural Gas,True
+7,Util,4924,221210,Natural Gas Distribution,True
+7,Util,4925,221210,Natural Gas Distribution,True
+7,Util,4931,221111,Hydroelectric Power Generation,True
+7,Util,4931,221112,Fossil Fuel Electric Power Generation,True
+7,Util,4931,221113,Nuclear Electric Power Generation,True
+7,Util,4931,221119,Other Electric Power Generation,True
+7,Util,4931,221121,Electric Bulk Power Transmission and Control,True
+7,Util,4931,221122,Electric Power Distribution,True
+7,Util,4931,221210,Natural Gas Distribution,True
+7,Util,4932,221210,Natural Gas Distribution,True
+7,Util,4939,221111,Hydroelectric Power Generation,True
+7,Util,4939,221112,Fossil Fuel Electric Power Generation,True
+7,Util,4939,221113,Nuclear Electric Power Generation,True
+7,Util,4939,221119,Other Electric Power Generation,True
+7,Util,4939,221121,Electric Bulk Power Transmission and Control,True
+7,Util,4939,221122,Electric Power Distribution,True
+7,Util,4939,221210,Natural Gas Distribution,True
+7,Util,4941,221310,Water Supply and Irrigation Systems,True
+8,Telcm,4812,517211,Paging,True
+8,Telcm,4812,517212,Cellular and Other Wireless Telecommunications,True
+8,Telcm,4812,517310,Telecommunications Resellers,True
+8,Telcm,4813,517110,Wired Telecommunications Carriers,True
+8,Telcm,4813,517310,Telecommunications Resellers,True
+8,Telcm,4822,517110,Wired Telecommunications Carriers,True
+8,Telcm,4832,515111,Radio Networks,True
+8,Telcm,4832,515112,Radio Stations,True
+8,Telcm,4833,515120,Television Broadcasting ,True
+8,Telcm,4841,515210,Cable and Other Subscription Programming,True
+8,Telcm,4841,517510,Cable and Other Program Distribution,True
+8,Telcm,4899,485310,Taxi Service,False
+8,Telcm,4899,517212,Cellular and Other Wireless Telecommunications,True
+8,Telcm,4899,517410,Satellite Telecommunications,True
+8,Telcm,4899,517910,Other Telecommunications,True
+8,Telcm,4899,812990,All Other Personal Services,False
+9,Banks,6011,521110,Monetary Authorities - Central Bank,True
+9,Banks,6019,522298,All Other Nondepository Credit Intermediation,True
+9,Banks,6021,522110,Commercial Banking,True
+9,Banks,6021,522210,Credit Card Issuing,True
+9,Banks,6022,522110,Commercial Banking,True
+9,Banks,6022,522190,Other Depository Credit Intermediation,True
+9,Banks,6022,522210,Credit Card Issuing,True
+9,Banks,6029,522110,Commercial Banking,True
+9,Banks,6035,522120,Savings Institutions,True
+9,Banks,6036,522120,Savings Institutions,True
+9,Banks,6061,522130,Credit Unions,True
+9,Banks,6062,522130,Credit Unions,True
+9,Banks,6081,522110,Commercial Banking,True
+9,Banks,6081,522293,International Trade Financing,True
+9,Banks,6081,522298,All Other Nondepository Credit Intermediation,True
+9,Banks,6082,522293,International Trade Financing,True
+9,Banks,6082,522298,All Other Nondepository Credit Intermediation,True
+9,Banks,6091,523991,"Trust, Fiduciary, and Custody Activities",True
+9,Banks,6099,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",True
+9,Banks,6099,522390,Other Activities Related to Credit Intermediation,True
+9,Banks,6099,523130,Commodity Contracts Dealing,True
+9,Banks,6099,523991,"Trust, Fiduciary, and Custody Activities",True
+9,Banks,6111,522292,Real Estate Credit,True
+9,Banks,6111,522293,International Trade Financing,True
+9,Banks,6111,522294,Secondary Market Financing,True
+9,Banks,6111,522298,All Other Nondepository Credit Intermediation,True
+9,Banks,6141,522210,Credit Card Issuing,True
+9,Banks,6141,522220,Sales Financing,True
+9,Banks,6141,522291,Consumer Lending,True
+9,Banks,6141,522298,All Other Nondepository Credit Intermediation,True
+9,Banks,6153,522210,Credit Card Issuing,True
+9,Banks,6153,522220,Sales Financing,True
+9,Banks,6153,522298,All Other Nondepository Credit Intermediation,True
+9,Banks,6153,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",True
+9,Banks,6153,523910,Miscellaneous Intermediation,True
+9,Banks,6159,522220,Sales Financing,True
+9,Banks,6159,522292,Real Estate Credit,True
+9,Banks,6159,522293,International Trade Financing,True
+9,Banks,6159,522294,Secondary Market Financing,True
+9,Banks,6159,522298,All Other Nondepository Credit Intermediation,True
+9,Banks,6162,522292,Real Estate Credit,True
+9,Banks,6162,522390,Other Activities Related to Credit Intermediation,True
+9,Banks,6163,522310,Mortgage and Nonmortgage Loan Brokers,True
+9,Insur,6311,524113,Direct Life Insurance Carriers,True
+9,Insur,6311,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",True
+9,Insur,6311,524130,Reinsurance Carriers,True
+9,Insur,6321,524113,Direct Life Insurance Carriers,True
+9,Insur,6321,524114,Direct Health and Medical Insurance Carriers,True
+9,Insur,6321,524130,Reinsurance Carriers,True
+9,Insur,6321,525190,Other Insurance Funds,True
+9,Insur,6324,524114,Direct Health and Medical Insurance Carriers,True
+9,Insur,6324,524130,Reinsurance Carriers,True
+9,Insur,6324,525190,Other Insurance Funds,True
+9,Insur,6331,524126,Direct Property and Casualty Insurance Carriers,True
+9,Insur,6331,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",True
+9,Insur,6331,524130,Reinsurance Carriers,True
+9,Insur,6331,525190,Other Insurance Funds,True
+9,Insur,6351,524126,Direct Property and Casualty Insurance Carriers,True
+9,Insur,6351,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",True
+9,Insur,6351,524130,Reinsurance Carriers,True
+9,Insur,6361,524127,Direct Title Insurance Carriers,True
+9,Insur,6361,524130,Reinsurance Carriers,True
+9,Insur,6371,523920,Portfolio Management,True
+9,Insur,6371,524292,Third Party Administration of Insurance and Pension Funds,True
+9,Insur,6371,525110,Pension Funds,True
+9,Insur,6371,525120,Health and Welfare Funds,True
+9,Insur,6371,525990,Other Financial Vehicles,True
+9,Insur,6399,524128,"Other Direct Insurance (except Life, Health, and Medical) Carriers",True
+9,Insur,6411,524210,Insurance Agencies and Brokerages,True
+9,Insur,6411,524291,Claims Adjusting,True
+9,Insur,6411,524292,Third Party Administration of Insurance and Pension Funds,True
+9,Insur,6411,524298,All Other Insurance Related Activities,True
+9,Fin,6211,523110,Investment Banking and Securities Dealing,True
+9,Fin,6211,523120,Securities Brokerage,True
+9,Fin,6211,523910,Miscellaneous Intermediation,True
+9,Fin,6211,523999,Miscellaneous Financial Investment Activities,True
+9,Fin,6221,523130,Commodity Contracts Dealing,True
+9,Fin,6221,523140,Commodity Contracts Brokerage,True
+9,Fin,6231,523210,Securities and Commodity Exchanges,True
+9,Fin,6282,523920,Portfolio Management,True
+9,Fin,6282,523930,Investment Advice,True
+9,Fin,6289,523991,"Trust, Fiduciary, and Custody Activities",True
+9,Fin,6289,523999,Miscellaneous Financial Investment Activities,True
+9,Fin,6712,551111,Offices of  Bank Holding Companies,False
+9,Fin,6719,551112,Offices of  Other Holding Companies,False
+9,Fin,6722,525910,Open-End Investment Funds,True
+9,Fin,6726,525990,Other Financial Vehicles,True
+9,Fin,6732,813211,Grantmaking Foundations,False
+9,Fin,6733,523920,Portfolio Management,True
+9,Fin,6733,523991,"Trust, Fiduciary, and Custody Activities",True
+9,Fin,6733,525190,Other Insurance Funds,True
+9,Fin,6733,525920,"Trusts, Estates, and Agency Accounts",True
+9,Fin,6792,523910,Miscellaneous Intermediation,True
+9,Fin,6792,533110,Lessors of Nonfinancial Intangible Assets (except Copyrighted Works) ,False
+9,Fin,6794,533110,Lessors of Nonfinancial Intangible Assets (except Copyrighted Works),False
+9,Fin,6798,525930,Real Estate Investment Trusts,True
+9,Fin,6799,523130,Commodity Contracts Dealing,True
+9,Fin,6799,523910,Miscellaneous Intermediation,True
+9,Fin,6799,523920,Portfolio Management,True
+10,RlEst,6512,531120,Lessors of Nonresidential Buildings (except Miniwarehouses),True
+10,RlEst,6512,711310,"Promoters of Performing Arts, Sports, and Similar Events with Facilities",False
+10,RlEst,6513,531110,Lessors of Residential Buildings and Dwellings,True
+10,RlEst,6514,531110,Lessors of Residential Buildings and Dwellings,True
+10,RlEst,6515,531190,Lessors of Other Real Estate Property,True
+10,RlEst,6517,531190,Lessors of Other Real Estate Property,True
+10,RlEst,6519,531190,Lessors of Other Real Estate Property,True
+10,RlEst,6531,531110,Lessors of Residential Buildings and Dwellings,True
+10,RlEst,6531,531210,Offices of Real Estate Agents and Brokers,True
+10,RlEst,6531,531311,Residential Property Managers,True
+10,RlEst,6531,531312,Nonresidential Property Managers,True
+10,RlEst,6531,531320,Offices of Real Estate Appraisers,True
+10,RlEst,6531,531390,Other Activities Related to Real Estate,True
+10,RlEst,6531,812220,Cemeteries and Crematories,False
+10,RlEst,6531,813990,"Other Similar Organizations (except Business, Professional, Labor, and Political Organizations)",False
+10,RlEst,6541,541191,Title Abstract and Settlement Offices,False
+10,RlEst,6552,237210,Land Subdivision,False
+10,RlEst,6553,812220,Cemeteries and Crematories,False
+11,BusSv,2752,323110,Commercial Lithographic Printing,False
+11,BusSv,2752,323114,Quick Printing,False
+11,BusSv,2754,323111,Commercial Gravure Printing,False
+11,BusSv,2759,323112,Commercial Flexographic Printing,False
+11,BusSv,2759,323113,Commercial Screen Printing,False
+11,BusSv,2759,323114,Quick Printing,False
+11,BusSv,2759,323115,Digital Printing,False
+11,BusSv,2759,323119,Other Commercial Printing ,False
+11,BusSv,3993,323113,Commercial Screen Printing,False
+11,BusSv,3993,339950,Sign Manufacturing,False
+11,BusSv,4221,493130,Farm Product Warehousing and Storage,False
+11,BusSv,4222,493120,Refrigerated Warehousing and Storage,False
+11,BusSv,4225,493110,General  Warehousing and Storage,False
+11,BusSv,4225,531130,Lessors of Miniwarehouses and Self-Storage Units,False
+11,BusSv,4226,493110,General  Warehousing and Storage,False
+11,BusSv,4226,493120,Refrigerated Warehousing and Storage,False
+11,BusSv,4226,493190,Other Warehousing and Storage,False
+11,BusSv,7218,812332,Industrial Launderers,False
+11,BusSv,7311,541810,Advertising Agencies,True
+11,BusSv,7312,541850,Display Advertising,True
+11,BusSv,7313,541840,Media Representatives,True
+11,BusSv,7319,481219,Other Nonscheduled Air Transportation,False
+11,BusSv,7319,541830,Media Buying Agencies,True
+11,BusSv,7319,541850,Display Advertising,True
+11,BusSv,7319,541870,Advertising Material Distribution Services,True
+11,BusSv,7319,541890,Other Services Related to Advertising,True
+11,BusSv,7322,561440,Collection Agencies,True
+11,BusSv,7323,561450, Credit Bureaus,True
+11,BusSv,7331,511140,Directory and Mailing List Publishers,False
+11,BusSv,7331,541860,Direct Mail Advertising,True
+11,BusSv,7334,323114,Quick Printing,False
+11,BusSv,7334,561439,Other Business Service Centers (including Copy Shops),True
+11,BusSv,7335,481219,Other Nonscheduled Air Transportation,False
+11,BusSv,7335,541922,Commercial Photography,True
+11,BusSv,7336,541430,Graphic Design Services,True
+11,BusSv,7338,561410,Document Preparation Services,True
+11,BusSv,7338,561492,Court Reporting and Stenotype Services,True
+11,BusSv,7342,561710,Exterminating and Pest Control Services,True
+11,BusSv,7342,561720,Janitorial Services,True
+11,BusSv,7349,561720,Janitorial Services,True
+11,BusSv,7349,561790,Other Services to Buildings and Dwellings,True
+11,BusSv,7352,532291,Home Health Equipment Rental,False
+11,BusSv,7352,532490,Other Commercial and Industrial Machinery and Equipment Rental and Leasing,False
+11,BusSv,7353,238910,Site Preparation Contractors,False
+11,BusSv,7353,238990,All Other Specialty Trade Contractors,False
+11,BusSv,7353,532412,"Construction, Mining, and Forestry Machinery and Equipment Rental and Leasing",False
+11,BusSv,7359,532210,Consumer Electronics and Appliances Rental,False
+11,BusSv,7359,532299,All Other Consumer Goods Rental,False
+11,BusSv,7359,532310,General Rental Centers,False
+11,BusSv,7359,532411,"Commercial Air, Rail, and Water Transportation Equipment Rental and Leasing",False
+11,BusSv,7359,532412,"Construction, Mining, and Forestry Machinery and Equipment Rental and Leasing",False
+11,BusSv,7359,532420,Office Machinery and Equipment Rental and Leasing,False
+11,BusSv,7359,532490,Other Commercial and Industrial Machinery and Equipment Rental and Leasing,False
+11,BusSv,7359,562991,Septic Tank and Related Services,True
+11,BusSv,7361,541612,Human Resources and Executive Search Consulting Services,True
+11,BusSv,7361,561310,Employment Placement Agencies,True
+11,BusSv,7363,561320,Temporary Help Services,True
+11,BusSv,7363,561330,Professional Employer Organizations,True
+11,BusSv,7374,518210,"Data Processing, Hosting, and Related Services ",False
+11,BusSv,7376,541513,Computer Facilities Management Services,True
+11,BusSv,7377,532420,Office Machinery and Equipment Rental and Leasing,False
+11,BusSv,7378,443120,Computer and Software Stores,False
+11,BusSv,7378,811212,Computer and Office Machine Repair and Maintenance,False
+11,BusSv,7379,518210,"Data Processing, Hosting, and Related Services",False
+11,BusSv,7379,541512,Computer Systems Design Services,True
+11,BusSv,7379,541519,Other Computer Related Services,True
+11,BusSv,7381,561611,Investigation Services,True
+11,BusSv,7381,561612,Security Guards and Patrol Services,True
+11,BusSv,7381,561613,Armored Car Services,True
+11,BusSv,7382,561621,Security Systems Services (except Locksmiths),True
+11,BusSv,7383,519110,News Syndicates,False
+11,BusSv,7383,711510,"Independent Artists, Writers, and Performers",False
+11,BusSv,7384,812921,Photofinishing Laboratories (except One-Hour),False
+11,BusSv,7384,812922,One-Hour Photofinishing,False
+11,BusSv,7389,312229,Other Tobacco Product Manufacturing,False
+11,BusSv,7389,313311,Broadwoven Fabric Finishing Mills,False
+11,BusSv,7389,314999,All Other Miscellaneous Textile Product Mills,False
+11,BusSv,7389,325998,All Other Miscellaneous Chemical Product and Preparation Manufacturing,False
+11,BusSv,7389,425120,Wholesale Trade Agents and Brokers,False
+11,BusSv,7389,488490,Other Support Activities for Road Transportation,False
+11,BusSv,7389,491110,Postal Service,False
+11,BusSv,7389,512240,Sound Recording Studios,False
+11,BusSv,7389,512290,Other Sound Recording Industries,False
+11,BusSv,7389,518210,"Data Processing, Hosting, and Related Services",False
+11,BusSv,7389,519190,All Other Information Services,False
+11,BusSv,7389,522320,"Financial Transactions Processing, Reserve, and Clearinghouse Activities",False
+11,BusSv,7389,541199,All Other Legal Services,True
+11,BusSv,7389,541340,Drafting Services,True
+11,BusSv,7389,541350,Building Inspection Services  ,True
+11,BusSv,7389,541370,Surveying and Mapping (except Geophysical) Services,True
+11,BusSv,7389,541410,Interior Design Services,True
+11,BusSv,7389,541420,Industrial Design Services,True
+11,BusSv,7389,541490,Other Specialized Design Services,True
+11,BusSv,7389,541870,Advertising Material Distribution Services,True
+11,BusSv,7389,541890,Other Services Related to Advertising,True
+11,BusSv,7389,541930,Translation and Interpretation Services,True
+11,BusSv,7389,541990,"All Other Professional, Scientific, and Technical Services",True
+11,BusSv,7389,561410,Document Preparation Services,True
+11,BusSv,7389,561421,Telephone Answering Services,True
+11,BusSv,7389,561422,Telemarketing Bureaus,True
+11,BusSv,7389,561431,Private Mail Centers,True
+11,BusSv,7389,561439,Other Business Service Centers (including Copy Shops),True
+11,BusSv,7389,561440,Collection Agencies,True
+11,BusSv,7389,561491,Repossession Services,True
+11,BusSv,7389,561499,All Other Business Support Services,True
+11,BusSv,7389,561591,Convention and Visitors Bureaus,True
+11,BusSv,7389,561599,All Other Travel Arrangement and Reservation Services,True
+11,BusSv,7389,561790,Other Services to Buildings and Dwellings,True
+11,BusSv,7389,561910,Packaging and Labeling Services,True
+11,BusSv,7389,561920,Convention and Trade Show Organizers,True
+11,BusSv,7389,561990,All Other Support Services,True
+11,BusSv,7389,711310,"Promoters of Performing Arts, Sports, and Similar Events with Facilities",False
+11,BusSv,7389,711320,"Promoters of Performing Arts, Sports, and Similar Events without Facilities",False
+11,BusSv,7389,711410,"Agents and Managers for Artists, Athletes, Entertainers,  and Other Public Figures",False
+11,BusSv,7389,812320,Drycleaning and Laundry Services (except Coin-Operated),False
+11,BusSv,7389,812990,All Other Personal Services,False
+11,BusSv,7519,532120,"Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing",False
+11,BusSv,8711,541330,Engineering Services,True
+11,BusSv,8712,541310,Architectural  Services,True
+11,BusSv,8713,541360,Geophysical Surveying and Mapping Services,True
+11,BusSv,8713,541370,Surveying and Mapping (except Geophysical) Services,True
+11,BusSv,8721,541211,Offices of Certified Public Accountants,True
+11,BusSv,8721,541214,Payroll Services,True
+11,BusSv,8721,541219,Other Accounting Services,True
+11,BusSv,8731,541710,"Research and Development in the Physical, Engineering, and Life Sciences",True
+11,BusSv,8732,541720,Research and Development in the Social Sciences and Humanities,True
+11,BusSv,8732,541910,Marketing Research and Public Opinion Polling,True
+11,BusSv,8733,541710,"Research and Development in the Physical, Engineering, and Life Sciences",True
+11,BusSv,8733,541720,Research and Development in the Social Sciences and Humanities,True
+11,BusSv,8734,541380,Testing Laboratories,True
+11,BusSv,8734,541940,Veterinary Services,True
+11,BusSv,8741,236115,New Single-Family Housing Construction (except Operative Builders),False
+11,BusSv,8741,236116,New Multifamily Housing Construction (except Operative Builders),False
+11,BusSv,8741,236118,Residential Remodelers,False
+11,BusSv,8741,236210,Industrial Building Construction,False
+11,BusSv,8741,236220,Commercial and Institutional Building Construction,False
+11,BusSv,8741,237110,Water and Sewer Line and Related Structures Construction,False
+11,BusSv,8741,237120,Oil and Gas Pipeline and Related Structures Construction,False
+11,BusSv,8741,237130,Power and Communication Line and Related Structures Construction,False
+11,BusSv,8741,237310,"Highway, Street, and Bridge Construction",False
+11,BusSv,8741,237990,Other Heavy and Civil Engineering Construction,False
+11,BusSv,8741,561110,Office Administrative Services,True
+11,BusSv,8742,541611,Administrative Management and General Management Consulting Services ,True
+11,BusSv,8742,541612,Human Resources and Executive Search Consulting Services,True
+11,BusSv,8742,541613,Marketing Consulting Services,True
+11,BusSv,8742,541614,"Process, Physical Distribution, and Logistics Consulting Services",True
+11,BusSv,8743,541820,Public Relations Agencies,True
+11,BusSv,8744,561210,Facilities Support Services,True
+11,BusSv,8748,541320,Landscape Architectural Services,True
+11,BusSv,8748,541330,Engineering Services,True
+11,BusSv,8748,541618,Other Management Consulting Services,True
+11,BusSv,8748,541690,Other Scientific and Technical Consulting Services,True
+11,BusSv,8748,611710,Educational Support Services,False
+11,BusSv,8999,512210,Record Production ,False
+11,BusSv,8999,512230,Music Publishers,False
+11,BusSv,8999,516110,Internet Publishing and Broadcasting,False
+11,BusSv,8999,518112,Web Search Portals,False
+11,BusSv,8999,541612,Human Resources and Executive Search Consulting Services,True
+11,BusSv,8999,541620,Environmental Consulting Services,True
+11,BusSv,8999,541690,Other Scientific and Technical Consulting Services,True
+11,BusSv,8999,541990,"All Other Professional, Scientific, and Technical Services",True
+11,BusSv,8999,711510,"Independent Artists, Writers, and Performers",False
+12,Hlth,8011,621111,Offices of Physicians (except Mental Health Specialists),True
+12,Hlth,8011,621112,"Offices of Physicians, Mental Health Specialists",True
+12,Hlth,8011,621491,HMO Medical Centers,True
+12,Hlth,8011,621493,Freestanding Ambulatory Surgical and Emergency Centers,True
+12,Hlth,8021,621210,Offices of Dentists,True
+12,Hlth,8031,621111,Offices of Physicians (except Mental Health Specialists),True
+12,Hlth,8031,621112,"Offices of Physicians, Mental Health Specialists",True
+12,Hlth,8041,621310,Offices of Chiropractors,True
+12,Hlth,8042,621320,Offices of Optometrists,True
+12,Hlth,8043,621391,Offices of Podiatrists,True
+12,Hlth,8049,621330,Offices of Mental Health Practitioners (except Physicians),True
+12,Hlth,8049,621340,"Offices of Physical, Occupational Speech Therapists, and Audiologists",True
+12,Hlth,8049,621399,Offices of All Other Miscellaneous Health Practitioners,True
+12,Hlth,8051,623110,Nursing Care Facilities,True
+12,Hlth,8051,623210,Residential Mental Retardation Facilities,True
+12,Hlth,8051,623311,Continuing Care Retirement Communities ,True
+12,Hlth,8052,623110,Nursing Care Facilities,True
+12,Hlth,8052,623210,Residential Mental Retardation Facilities,True
+12,Hlth,8052,623311,Continuing Care Retirement Communities ,True
+12,Hlth,8059,623110,Nursing Care Facilities,True
+12,Hlth,8059,623210,Residential Mental Retardation Facilities,True
+12,Hlth,8059,623311,Continuing Care Retirement Communities ,True
+12,Hlth,8062,622110,General Medical and Surgical Hospitals,True
+12,Hlth,8063,622210,Psychiatric and Substance Abuse Hospitals,True
+12,Hlth,8069,622110,General Medical and Surgical Hospitals,True
+12,Hlth,8069,622210,Psychiatric and Substance Abuse Hospitals,True
+12,Hlth,8069,622310,Specialty (except Psychiatric and Substance Abuse) Hospitals,True
+12,Hlth,8071,621511,Medical Laboratories,True
+12,Hlth,8071,621512,Diagnostic Imaging Centers,True
+12,Hlth,8072,339116,Dental Laboratories,False
+12,Hlth,8082,621610,Home Health Care Services,True
+12,Hlth,8092,621492,Kidney Dialysis Centers,True
+12,Hlth,8093,621399,Offices of All Other Miscellaneous Health Practitioners,True
+12,Hlth,8093,621410,Family Planning Centers,True
+12,Hlth,8093,621420,Outpatient Mental Health and Substance Abuse Centers,True
+12,Hlth,8093,621498,All Other Outpatient Care Centers,True
+12,Hlth,8099,541430,Graphic Design Services,False
+12,Hlth,8099,541922,Commercial Photography,False
+12,Hlth,8099,621410,Family Planning Centers,True
+12,Hlth,8099,621991,Blood and Organ Banks,True
+12,Hlth,8099,621999,All Other Miscellaneous Ambulatory Health Care Services,True
+13,Meals,5812,711110,Theater Companies and Dinner Theaters,False
+13,Meals,5812,722110,Full-Service Restaurants,True
+13,Meals,5812,722211,Limited-Service Restaurants,True
+13,Meals,5812,722212,Cafeterias,True
+13,Meals,5812,722213,Snack and Nonalcoholic Beverage Bars,True
+13,Meals,5812,722310,Food Service Contractors,True
+13,Meals,5812,722320,Caterers,True
+13,Meals,5813,722410,Drinking Places (Alcoholic Beverages),True
+13,Meals,7011,721110,Hotels (except Casino Hotels) and Motels,True
+13,Meals,7011,721120,Casino Hotels,True
+13,Meals,7011,721191,Bed-and-Breakfast Inns,True
+13,Meals,7011,721199,All Other Traveler Accommodation,True
+13,Meals,7041,721110,Hotels (except Casino Hotels) and Motels,True
+13,Meals,7041,721310,Rooming and Boarding Houses,True
+13,Meals,7213,812331,Linen Supply,False

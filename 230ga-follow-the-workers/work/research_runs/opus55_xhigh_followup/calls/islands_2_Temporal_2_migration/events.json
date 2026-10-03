@@ -1,0 +1,108 @@
+{
+  "exit_code": 0,
+  "events": [
+    {
+      "type": "system",
+      "subtype": "init",
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-opus-5-5",
+        "content": [
+          {
+            "type": "thinking"
+          }
+        ],
+        "usage": {
+          "input_tokens": 651,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1278,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "model": "claude-opus-5-5",
+        "content": [
+          {
+            "type": "text",
+            "text": "**Progress Report**\n\nWe have tested two temporal features so far.\n\n**What failed.** Ranking groups by their three-month change in average hours gave no signal. Mean rank IC was about minus 0.01 and the HAC t was near minus 0.7. It was weak in both T regimes, so short-run hours momentum looks uninformative.\n\n**What looks promising.** Annual hourly-wage growth, compared with each group's own five-year history, did better. Mean IC was about 0.08 and the HAC t about 1.8. It was positive in both T regimes and stronger when T was high. It overlapped little with base factors, and its ranks were persistent.\n\n**Caveat.** Coverage was only 44 percent because the long rolling window needs complete history.\n\n**Next step.** We will try expanding-window normalization to recover coverage."
+          }
+        ],
+        "usage": {
+          "input_tokens": 651,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 1278,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 8,
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    },
+    {
+      "type": "result",
+      "subtype": "success",
+      "is_error": false,
+      "num_turns": 1,
+      "result": "**Progress Report**\n\nWe have tested two temporal features so far.\n\n**What failed.** Ranking groups by their three-month change in average hours gave no signal. Mean rank IC was about minus 0.01 and the HAC t was near minus 0.7. It was weak in both T regimes, so short-run hours momentum looks uninformative.\n\n**What looks promising.** Annual hourly-wage growth, compared with each group's own five-year history, did better. Mean IC was about 0.08 and the HAC t about 1.8. It was positive in both T regimes and stronger when T was high. It overlapped little with base factors, and its ranks were persistent.\n\n**Caveat.** Coverage was only 44 percent because the long rolling window needs complete history.\n\n**Next step.** We will try expanding-window normalization to recover coverage.",
+      "usage": {
+        "input_tokens": 651,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1278,
+        "output_tokens": 1910,
+        "output_tokens_details": {
+          "thinking_tokens": 1644
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "not_available",
+        "iterations": [],
+        "speed": "standard"
+      },
+      "modelUsage": {
+        "claude-opus-5-5": {
+          "inputTokens": 651,
+          "outputTokens": 1910,
+          "cacheReadInputTokens": 1278,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0410596,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 1644,
+          "canonicalModel": "claude-opus-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "total_cost_usd": 0.0410596
+    }
+  ],
+  "stderr_present": false
+}

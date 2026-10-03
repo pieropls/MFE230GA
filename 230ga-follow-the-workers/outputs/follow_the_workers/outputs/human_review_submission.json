@@ -1,0 +1,50 @@
+{
+  "source": "User-supplied assessment in this conversation",
+  "run_id": "study_primary",
+  "submitted_labels": "1 no, 2 no, 3 no, 4 no, 5 no, 6 no, 7 yes, 8 no",
+  "criterion": "The test is whether the proposal relies on, or tests, a specific finding in that report. Sharing variables, regimes, or operators isn't enough.",
+  "items": [
+    {
+      "item": 1,
+      "human_uses_claim": false,
+      "rationale": "The report is about V02 and V05, but the proposal is V03 vs V04. Its 6-month smoothing also goes against the report's advice to try faster features. Only the vocabulary overlaps."
+    },
+    {
+      "item": 2,
+      "human_uses_claim": false,
+      "rationale": "No, but this is the closest call. It shares V05 and the high-T restriction with the report's second submission. A 3-month change is arguably the \"faster\" feature the report asked for. But it doesn't test or cite that result, since it's a different construction paired with hours. A regime-gated pay-vs-hours feature is also generic in this setup; it's nearly what the report for items 4–5 suggested as its next step. Mark it unclear if you want to discuss whether loose inspiration counts.",
+      "interpretation": "Recorded as the user's explicit submitted no; ambiguity retained without changing the label."
+    },
+    {
+      "item": 3,
+      "human_uses_claim": false,
+      "rationale": "It says it extends \"the 3-month version that showed positive IC.\" This report has no V04/V06 feature at all, and both of its submissions failed. The finding it cites came from somewhere else."
+    },
+    {
+      "item": 4,
+      "human_uses_claim": false,
+      "rationale": "The report covers a flow×stock interaction, a coverage problem, a word-limit error, and a suggested regime-conditioned pay-and-hours interaction. The proposal is V05 alone with no regime condition, and it relies on a \"positive signal\" the report never mentions. \"Rank stability\" echoing \"rank autocorrelation\" is just shared wording."
+    },
+    {
+      "item": 5,
+      "human_uses_claim": false,
+      "rationale": "It's a spread of two flow rates, while the report's feature was a flow×stock interaction. There's no regime conditioning and no pay/hours component, so nothing from the report is being tested."
+    },
+    {
+      "item": 6,
+      "human_uses_claim": false,
+      "rationale": "It claims to extend \"the only significant positive result (submission 4).\" The report has no significant result; its best was t = 1.42, which it explicitly calls not significant. The fourth item it lists, pay-per-hours, was flat. The match with the report's \"Next\" step is also loose. That step asked for changes in flow-rate ratios with longer smoothing, and this is a level spread with light smoothing."
+    },
+    {
+      "item": 7,
+      "human_uses_claim": true,
+      "rationale": "The report's tentative finding is a spread of two flow rates, each standardized on its own history. The proposal uses that exact construction and sets its sign based on \"the prior V03-minus-V04 spread.\" One thing to raise in discussion: the report says that spread's IC was positive, opposite to the predicted sign. The proposal treats it as negative, so it may have flipped the sign based on a misreading. It's still using the claim."
+    },
+    {
+      "item": 8,
+      "human_uses_claim": false,
+      "rationale": "The report's best feature was a smoothed hours-vs-wage contrast. The proposal keeps hours and smoothing but replaces wage with V03, so it doesn't test that claim. It also ignores the report's warning that smoothed features have 0.97–1.0 rank autocorrelation."
+    }
+  ],
+  "recording_policy": "Only the sampled human_uses_claim labels are supplied. Automated uses_claim, claim_ids, avoids_failure, sample membership and unsupplied human_avoids_failure are preserved. Human agreement is a descriptive audit, not a feature-selection rule."
+}

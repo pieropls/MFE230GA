@@ -1,0 +1,39 @@
+{
+  "response": "The hypothesis is about smoothing a year-over-year change in V05 and standardizing it. None of the numbered claims are tested or used by it.\n\nClaims 2, 3, and 5 describe results for other signals: a product of a flow rate and a stock rate, a rank product of pay growth and hours change, and a spread between two flow rates. The hypothesis is a single smoothed variable, not a product or a spread, so it doesn't replicate or test them.\n\nClaim 4 is about a word limit. Claim 1 is a header. Claims 6 and 7 are caveats attached to the spread finding. None of these is tested by the expression.\n\nThe hypothesis does involve standardizing against a signal's own history, which is a technique that claims 2 and 5 also mention. That overlap is only in method, and the expression doesn't depend on or test any claim's result.\n\n```json\n{\"uses_claim\": false, \"claim_ids\": []}\n```",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 483,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 299,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.003956,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "29ea369fb89f5a80156572d85e94a9018238d99cb1fd2ef09556fe8d121b58fe"
+}

@@ -1,0 +1,9 @@
+{
+  "interpretation": "Manifest mapping_quality and crosswalk prescribed_match preserve source-specification labels and annotations; they are not an independent certification of exact JOLTS/CES/French correspondence. verified_French_scope and the Census audit govern the French scope assessment; all13 baskets are approximate.",
+  "limitations": [
+    "CES broad/shared series remain intentional",
+    "Census row counts are not return or employment weights",
+    "In-scope omissions and NAICS version changes are not fully quantified"
+  ],
+  "numeric_mapping_changed": false
+}

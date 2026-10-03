@@ -1,0 +1,42 @@
+{
+  "request_hash": "678dd5a64575bae8102ecd82649594f65f7706e2eca43cbae366c04030539d38",
+  "envelope": {
+    "response": "{\"name\":\"composition_stock_vs_flow_spread\",\"hypothesis\":\"Groups whose stock rate V06 is high relative to flow rate V04, cross-sectionally standardized and smoothed over 6 months, have lower next-month returns, because a stock-heavy composition signals slack. Expect negative rank IC.\",\"falsified_if\":\"Mean rank IC against next-month group returns is zero or positive, or the top-minus-bottom tercile return spread is not negative in development data.\",\"expression\":\"mavg(spread(V06,V04),6)\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 649,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1276,
+      "output_tokens": 183,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0033832,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "678dd5a64575bae8102ecd82649594f65f7706e2eca43cbae366c04030539d38"
+  }
+}

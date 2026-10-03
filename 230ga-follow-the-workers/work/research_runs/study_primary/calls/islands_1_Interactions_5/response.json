@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"flow_V04_minus_V06_stock_spread\",\"hypothesis\":\"Groups whose flow rate V04 has risen over 3 months relative to their own 60-month history, while the stock rate V06 is comparatively low cross-sectionally, earn lower next-month returns. The spread of V06 and V04 should rank-correlate positively with future returns.\",\"falsified_if\":\"Mean rank IC is nonpositive, HAC t-statistic is below 1.5, or the top-minus-bottom tercile spread is not positive.\",\"expression\":\"spread(tsz(chg(V06,3),60),tsz(chg(V04,3),60))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1517,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 216,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0054494,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "1cbcf4be1b2271219be10c3264f252021f525dfb454737c4f8e9bfcbb88c0bd1"
+}

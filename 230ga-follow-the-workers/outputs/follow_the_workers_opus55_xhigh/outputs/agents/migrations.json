@@ -1,0 +1,188 @@
+[
+  {
+    "report_id": "islands_1_Temporal_2_migration",
+    "seed": 1,
+    "agent": "Temporal",
+    "after_submission": 2,
+    "text": "**Findings so far**\n\nTwo temporal signals failed. Ranking groups by acceleration in average hours, lagged one month, gave a mean information coefficient near 0.02 and a HAC t-statistic near 0.7, well below two. Its ranks also turned over quickly. Ranking groups by how persistently the stock rate variable rose over six lagged months did worse, with coefficient near 0.01 and t-statistic near 0.5, despite stable ranks. Both looked somewhat stronger when the common index was high. Conditioning on high-index regimes merits testing, though that split may be noise. Coverage was about 95 percent, and overlap with base factors stayed low.",
+    "valid": true,
+    "word_count": 100,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_1_Composition_2_migration",
+    "seed": 1,
+    "agent": "Composition",
+    "after_submission": 2,
+    "text": "Findings so far\n\nBoth composition attempts among the flow-rate variables failed. A cross-sectional rank of the smoothed V02-to-V03 ratio showed essentially zero predictive power (mean IC 0.01, HAC t 0.38) in both low and high T regimes. It was highly persistent and distinct from base features, so novelty alone did not help. A peer-relative three-month shift in V02 versus V04 was weaker still (IC zero, t 0.05) and noisier month to month. Lesson: flow-mix levels and short-term mix shifts appear uninformative. Next, we suggest testing hours, wages or the stock rate, or conditioning composition on T.",
+    "valid": true,
+    "word_count": 96,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_1_Interactions_2_migration",
+    "seed": 1,
+    "agent": "Interactions",
+    "after_submission": 2,
+    "text": "**Findings so far**\n\nOur first attempt combined three-month momentum in average hours and in hourly pay as a rank product. It failed. Its next-month predictive correlation was slightly negative, insignificant and unchanged across common-index regimes.\n\nThe second attempt favored groups whose V02 flow rate rose faster than V03 over three months. It produced a meaningfully negative correlation, with a t-statistic near minus two, concentrated when the common index was low. Reversing its direction, perhaps conditioned on the low regime, looks promising.\n\nBoth features showed low overlap with base signals and moderate rank persistence.",
+    "valid": true,
+    "word_count": 93,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_1_Temporal_4_migration",
+    "seed": 1,
+    "agent": "Temporal",
+    "after_submission": 4,
+    "text": "**Findings after four submissions**\n\nThree ideas failed. Acceleration in average hours, persistence of rises in the stock rate, and a three-month shift between two flow rates each gave near-zero mean rank correlations. Their t-statistics were below one, so all three failed our falsification rule.\n\nOne idea worked modestly. Annual hourly-pay growth, standardized against each group's own three-year history, produced a positive rank correlation with a t-statistic just above two. It was stronger in low-T periods. Caveats: coverage dropped to about sixty percent because of the long history requirement, and the signal is highly persistent. Pay-based signals deserve further robustness testing.",
+    "valid": true,
+    "word_count": 100,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_1_Composition_4_migration",
+    "seed": 1,
+    "agent": "Composition",
+    "after_submission": 4,
+    "text": "**Findings so far**\n\n**Failure:** Static flow composition carried no signal. A smoothed level comparison of V02 against V03 gave a mean IC near 0.01 (t about 0.4). A three-month shift of V02 against V04 also failed, with IC essentially zero.\n\n**Partial success:** Groups whose V03 rate rose faster than their V02 rate over three months, relative to peers, outperformed modestly (IC 0.06, t about 2.1). The effect appears only in low common-index periods (IC 0.12) and disappears when the index is high. Restricting to low regimes gave t about 3.6 but only 58 percent coverage. That gain is largely mechanical rather than independent evidence.",
+    "valid": true,
+    "word_count": 104,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_1_Interactions_4_migration",
+    "seed": 1,
+    "agent": "Interactions",
+    "after_submission": 4,
+    "text": "**Findings so far**\n\nThe interaction of hours momentum and pay momentum failed. Their joint signal showed slightly negative, insignificant predictive power.\n\nThe flow rates V02 and V03 were the most informative. When V02 rose faster than V03 over three months, groups significantly underperformed, mostly in low-T periods. Reversing the direction at six months gave a modest positive signal, with t near two. It was consistent across T regimes and overlapped little with base factors. This reversal was chosen after seeing the earlier result, so treat it cautiously.\n\nContrasting pay growth with the stock rate's deviation from its long norm was weak. It covered only half the sample and flipped sign when T was high.",
+    "valid": true,
+    "word_count": 114,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_2_Temporal_2_migration",
+    "seed": 2,
+    "agent": "Temporal",
+    "after_submission": 2,
+    "text": "**Progress Report**\n\nWe have tested two temporal features so far.\n\n**What failed.** Ranking groups by their three-month change in average hours gave no signal. Mean rank IC was about minus 0.01 and the HAC t was near minus 0.7. It was weak in both T regimes, so short-run hours momentum looks uninformative.\n\n**What looks promising.** Annual hourly-wage growth, compared with each group's own five-year history, did better. Mean IC was about 0.08 and the HAC t about 1.8. It was positive in both T regimes and stronger when T was high. It overlapped little with base factors, and its ranks were persistent.\n\n**Caveat.** Coverage was only 44 percent because the long rolling window needs complete history.\n\n**Next step.** We will try expanding-window normalization to recover coverage.",
+    "valid": false,
+    "word_count": 126,
+    "rejection_reasons": [
+      "Migration report has 126 words; maximum is 120"
+    ]
+  },
+  {
+    "report_id": "islands_2_Composition_2_migration",
+    "seed": 2,
+    "agent": "Composition",
+    "after_submission": 2,
+    "text": "**Findings so far**\n\nOur composition theme compares two employment-rate flow variables, V02 and V03. Failure: ranking groups by the three-month rise in V02's share relative to V03 gave a negative information coefficient near minus 0.04, with a t-statistic of about minus 1.4. It was weakest when the common index was low. Reversing the mix to favor V03, lengthening to six months and restricting to low-index periods gave a positive coefficient near 0.05, with a t-statistic of about 1.9. Caveats: coverage is only 58 percent, and there is no high-index evidence. Rank persistence is low, near 0.22, and overlap with base factors is small. Next, test robustness outside the low regime.",
+    "valid": true,
+    "word_count": 110,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_2_Interactions_2_migration",
+    "seed": 2,
+    "agent": "Interactions",
+    "after_submission": 2,
+    "text": "**Summary of findings**\n\nBoth interaction features failed. Combining three-month hourly pay growth with the three-month change in average hours gave a slightly negative, insignificant information coefficient (about minus 0.02, t near minus 1.1). It was identical in low and high T regimes, so this pairing looks uninformative.\n\nPairing V06's standardized stock level with rising V02 flows was also negative overall (about minus 0.05, t near minus 1.4). Its sixty-month window cut coverage to roughly half. However, its sign flipped by regime: negative when T was low and clearly positive when T was high.\n\nNext steps: condition on T, use expanding windows to restore coverage, and test sign reversal.",
+    "valid": true,
+    "word_count": 108,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_2_Temporal_4_migration",
+    "seed": 2,
+    "agent": "Temporal",
+    "after_submission": 4,
+    "text": "**Findings so far**\n\n**Failure:** Ranking groups by three-month change in average hours had no predictive power. Mean rank IC was slightly negative, with t near minus 0.7.\n\n**Promising:** Annual hourly-pay growth, standardized against each group's own five-year history, gave IC about 0.08 with HAC t near 1.8. Coverage was only 44 percent. An expanding-window log-growth version raised coverage to 63 percent. However, it weakened IC to 0.05, with t 1.4.\n\nThe pay signal is stronger when the common index is high (IC near 0.2) than when low (about 0.1). A high-regime-only version showed IC 0.19 but no t-statistic, so it is unconfirmed. Signals are persistent and have low correlation with base factors.",
+    "valid": true,
+    "word_count": 112,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_2_Composition_4_migration",
+    "seed": 2,
+    "agent": "Composition",
+    "after_submission": 4,
+    "text": "**Findings so far**\n\nThe composition of the flow rates carries signal, but only conditionally. Our first attempt failed. An unconditional three-month change in V02's share relative to V03 showed a negative, insignificant link with next-month relative returns. The link was most negative in low-T months. Reversing the mix toward V03 and restricting to low-T months worked. Six-month shifts were modestly significant, and three-month shifts were clearly stronger. Replacing V02 with V04 as the comparison leg gave a similar positive effect. This suggests V03 is the informative component. These signals have low rank persistence and little overlap with base factors. However, the regime filter covers only about 58 percent of observations, and behavior in high-T months remains untested.",
+    "valid": true,
+    "word_count": 117,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_2_Interactions_4_migration",
+    "seed": 2,
+    "agent": "Interactions",
+    "after_submission": 4,
+    "text": "**Findings so far**\n\nThe interaction features failed. Combining three-month gains in hourly pay and average hours produced a slightly negative, insignificant IC. Pairing a standardized stock rate with a rising flow rate covered only half the sample. Its sign also flipped between low and high index regimes, which points to instability rather than a conditional effect.\n\nThe best lead is the six-month change in V03 relative to V02. Its pooled IC was small and positive. However, its HAC t-statistic of 1.99 missed my preregistered threshold of 2.0, so it is formally falsified. Most of its strength sits in low-index periods. After only four attempts, treat it as tentative.",
+    "valid": true,
+    "word_count": 108,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_3_Temporal_2_migration",
+    "seed": 3,
+    "agent": "Temporal",
+    "after_submission": 2,
+    "text": "**Findings**\nOur first feature ranked groups by how persistently average hours rose over the prior six available months. It was valid, with 95% coverage, but weak: mean information coefficient about 0.05, HAC t-statistic near 1.35, not significant. It predicted only when the common index was high and turned slightly negative when the index was low. Overlap with base factors was low, and ranks were stable.\n\n**Failure**\nOur second submission was rejected as invalid because the blinded payload contained a forbidden name or identifier. It used up a slot. The exact trigger is unclear, so use neutral naming.\n\n**Next**\nCondition the hours signal on the high-index regime, respecting the index's two-month lag.",
+    "valid": true,
+    "word_count": 111,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_3_Composition_2_migration",
+    "seed": 3,
+    "agent": "Composition",
+    "after_submission": 2,
+    "text": "**Composition findings**\n\nBoth attempts failed. Comparing each group's smoothed V02 flow rate with its smoothed V03 flow rate across groups showed essentially zero predictive power in both low and high T regimes. The signal was highly persistent, which suggests it reflects slow structural differences rather than timely information.\n\nScaling smoothed V04 flow by the V06 stock and standardizing against each group's own history also failed overall. It lost about thirty percent of coverage. However, it was clearly negative when T was high and mildly positive when T was low. The next lead is to test the reversed sign only when T is high, though that subsample may be small.",
+    "valid": false,
+    "word_count": 109,
+    "rejection_reasons": [
+      "Blinded payload contains a forbidden name or identifier"
+    ]
+  },
+  {
+    "report_id": "islands_3_Interactions_2_migration",
+    "seed": 3,
+    "agent": "Interactions",
+    "after_submission": 2,
+    "text": "**Progress report**\n\nTwo valid interaction features, each with about 98% coverage, found no signal.\n\nThe first failed attempt multiplied the cross-sectional ranks of three-month hourly-pay growth and three-month hours change. I expected joint strength to predict outperformance. Instead, mean rank correlation was slightly negative, about minus 0.02 with t near minus 1.1. It was identical in low and high common-index regimes.\n\nThe second attempt also failed. A standardized spread between three-month changes in two flow rates showed essentially zero predictive power (t near 0.05). Its sign flipped weakly across regimes.\n\nBoth features had low overlap with base signals (about 0.1) and moderate rank persistence (about 0.35).\n\nNext I will try stock-rate levels, longer horizons, time-series standardization and explicit regime conditioning.",
+    "valid": true,
+    "word_count": 120,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_3_Temporal_4_migration",
+    "seed": 3,
+    "agent": "Temporal",
+    "after_submission": 4,
+    "text": "**Findings**\n\nSix-month persistence of rising average hours showed weak positive predictive power: mean rank correlation about 0.05, HAC t near 1.35, stable rankings. The signal was concentrated in high common-index periods. Restricting to that regime lifted t only to about 1.5 and cut coverage to 82 percent.\n\n**Failures**\n\nOne submission was rejected for containing a forbidden identifier, wasting a slot. Standardizing year-over-year hours change against a sixty-month own history disappointed. Coverage fell to 43 percent, t was near 1.1, high-regime correlation turned sharply negative, and overlap with base signals was high.\n\n**Next**\n\nExplore flow-rate variables with shorter histories.",
+    "valid": false,
+    "word_count": 98,
+    "rejection_reasons": [
+      "Migration report needs an explicit unsuccessful attempt or finding"
+    ]
+  },
+  {
+    "report_id": "islands_3_Composition_4_migration",
+    "seed": 3,
+    "agent": "Composition",
+    "after_submission": 4,
+    "text": "**Composition findings, four submissions**\n\nContrasting two smoothed flow rates across groups (V02 versus V03) failed: information coefficient near zero, t-statistic about minus 0.2.\n\nScaling smoothed V04 flow by V06 stock, standardized against own history, was weak overall but strongly negative in high common-index periods.\n\nA cross-sectional stock-minus-flow contrast limited to high-index periods barely helped.\n\nInverting the ratio, V06 stock over unsmoothed V04 flow, standardized against own history and limited to high-index periods, worked best: information coefficient 0.09, t-statistic 1.56, low overlap with base signals.\n\nCaveats: low rank persistence means high turnover, coverage is 73 percent, and significance is marginal.",
+    "valid": true,
+    "word_count": 99,
+    "rejection_reasons": []
+  },
+  {
+    "report_id": "islands_3_Interactions_4_migration",
+    "seed": 3,
+    "agent": "Interactions",
+    "after_submission": 4,
+    "text": "**Summary**\n\nWe tested four interaction-themed features, and none is convincing. One failure: multiplying cross-sectional ranks of three-month hourly-pay momentum and hours momentum gave a slightly negative, insignificant information coefficient. Contrasting three-month changes in two flow rates produced essentially zero signal. Persistence of rising hours, restricted to high common-index regimes, was slightly negative and had reduced coverage. The most informative feature was the stock rate standardized against its own expanding history, interacted with the common index. It was weakly positive overall but sharply regime-dependent: positive when the index was low and strongly negative when it was high. It also overlapped moderately with an existing base signal. A suggested next step is to isolate that stock-rate signal within low-index regimes.",
+    "valid": true,
+    "word_count": 118,
+    "rejection_reasons": []
+  }
+]

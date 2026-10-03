@@ -1,0 +1,183 @@
+{
+  "utc": "2026-10-02T07:53:57.570642+00:00",
+  "source": "User message in this conversation",
+  "run_id": "opus55_xhigh_followup",
+  "submitted_labels": "1 no, 2 no, 3 no, 4 no, 5 yes, 6 no, 7 no, 8 no, 9 no, 10 no, 11 yes, 12 no, 13 no, 14 no, 15 yes, 16 no, 17 no",
+  "user_standard": "yes only if the proposal builds on, or deliberately tests, a specific result in that report",
+  "items": [
+    {
+      "item": 1,
+      "report_id": "islands_1_Temporal_2_migration",
+      "candidate_id": "islands_1_Composition_3",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "The report covers hours acceleration and stock-rate persistence, both slightly stronger at high index. The proposal is a V03-vs-V02 flow change that it expects to be strongest at low index.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 2,
+      "report_id": "islands_1_Composition_2_migration",
+      "candidate_id": "islands_1_Temporal_3",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "It says it reverses \"an observed negative signal,\" but this report has no negative signal: the V02/V03 ratio had IC 0.01 and the V02-vs-V04 shift had IC 0. That premise matches the report for items 4\u20135. Its feature falls under this report's lesson that short-term mix shifts look uninformative, but it doesn't engage with that lesson.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 3,
+      "report_id": "islands_1_Composition_2_migration",
+      "candidate_id": "islands_1_Interactions_4",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "\"Submission 2's significant negative IC\" isn't in this report. Its second attempt (V02 vs V04) had IC \u2248 0. The significant 3-month result and the snooping caveat come from the report for items 4\u20135.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 4,
+      "report_id": "islands_1_Interactions_4_migration",
+      "candidate_id": "islands_1_Temporal_6",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "Nothing here matches \"submission four's own-history effect.\" The report's only own-history feature (pay growth vs the stock rate's deviation from its norm) was weak and flipped sign. Its only hours result was the failed hours\u00d7pay interaction.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 5,
+      "report_id": "islands_1_Interactions_4_migration",
+      "candidate_id": "islands_1_Composition_6",
+      "human_uses_claim": true,
+      "label": "yes",
+      "rationale": "The report found that V02 outpacing V03 led to significant underperformance, and that the V03-favoring reversal was positive across T regimes. The proposal uses that V03/V02 composition signal without conditioning on T.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 6,
+      "report_id": "islands_2_Composition_2_migration",
+      "candidate_id": "islands_2_Temporal_4",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "The report is about V02/V03 composition, while the proposal is pay growth vs its own history. Its high-T filter isn't the report's \"test outside the low regime,\" which referred to the composition signal.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 7,
+      "report_id": "islands_2_Composition_2_migration",
+      "candidate_id": "islands_2_Temporal_5",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "This is another pay-growth feature against the same report, and it uses nothing from it.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 8,
+      "report_id": "islands_2_Interactions_2_migration",
+      "candidate_id": "islands_2_Temporal_3",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "No, but a judgment call. It doesn't test the report's findings (the failed pay\u00d7hours interaction and the regime-flipping V06\u00d7V02). Its \"expanding windows\u2026 raising coverage\" echoes the report's next step. But that's a generic operator choice applied to an unrelated feature. Mark it unclear if you think adopting a methodological tip counts.",
+      "ambiguity_note_supplied": true
+    },
+    {
+      "item": 9,
+      "report_id": "islands_2_Interactions_2_migration",
+      "candidate_id": "islands_2_Composition_4",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "This report has no V03/V02 composition result for it to generalize.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 10,
+      "report_id": "islands_2_Interactions_2_migration",
+      "candidate_id": "islands_2_Composition_5",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "Neither the V03/V02 nor the V03/V04 low-T result it cites appears in this report.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 11,
+      "report_id": "islands_3_Temporal_2_migration",
+      "candidate_id": "islands_3_Interactions_3",
+      "human_uses_claim": true,
+      "label": "yes",
+      "rationale": "The report found six-month hours-rise persistence predictive only at high index and said to condition on that regime. The proposal does exactly that.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 12,
+      "report_id": "islands_3_Temporal_2_migration",
+      "candidate_id": "islands_3_Composition_6",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "The report only has two submissions, so \"submission 4\" can't come from it. Applying a high-index filter to a V06/V04 ratio is overlap at the operator level only.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 13,
+      "report_id": "islands_3_Interactions_2_migration",
+      "candidate_id": "islands_3_Composition_5",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "\"Submission 2's strongly negative high-index IC\" isn't here. This report's second feature had t \u2248 0.05 and only a weak sign flip. The proposal does borrow from the report's \"Next\" list (stock-rate levels, time-series standardization), but that's a plan, not a finding.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 14,
+      "report_id": "islands_3_Interactions_2_migration",
+      "candidate_id": "islands_3_Temporal_6",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "This report never tested hours persistence, so the numbers the proposal builds on (0.09 / \u22120.04, regime-filtered t of 1.51) come from somewhere else.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 15,
+      "report_id": "islands_3_Interactions_4_migration",
+      "candidate_id": "islands_3_Temporal_5",
+      "human_uses_claim": true,
+      "label": "yes",
+      "rationale": "It directly tests the report's best result (stock rate vs its own expanding history, positive only at low index), following the report's suggested next step.",
+      "ambiguity_note_supplied": false
+    },
+    {
+      "item": 16,
+      "report_id": "islands_3_Interactions_4_migration",
+      "candidate_id": "islands_3_Temporal_6",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "No, but a judgment call. This is the same proposal as item 14. This report does cover hours persistence, but it found the high-index version slightly negative. The proposal's premise (positive, with a regime-filtered t of 1.51) contradicts that and matches the report for items 11\u201312 instead. It shares a topic with this report but doesn't use its finding.",
+      "ambiguity_note_supplied": true
+    },
+    {
+      "item": 17,
+      "report_id": "islands_3_Interactions_4_migration",
+      "candidate_id": "islands_3_Composition_6",
+      "human_uses_claim": false,
+      "label": "no",
+      "rationale": "No, but a judgment call. This is the same proposal as item 12. \"Submission 4's expanding one\" could refer to this report's expanding-history stock-rate feature. But the proposal goes against that finding: the report found the signal strongly negative at high index and pointed to low index, while the proposal filters to high index and predicts a positive effect. It reads more like a follow-up to item 13's expanding V06/V04 proposal. If you think it's referencing this report, it uses the finding but misreads the regime, so mark it unclear and note that.",
+      "ambiguity_note_supplied": true
+    }
+  ],
+  "user_summary": "This batch has the same trap as last time, but more often. Items 2, 3, 4, 9, 10, 13 and 14 all cite a prior result that exists somewhere in the study, just not in the report they're paired with. The repeated proposals (12/17 and 14/16) are useful checks on the automated judge. In each pair, one report shares the proposal's topic but contradicts its premise. That's exactly where a judge that matches on vocabulary would wrongly answer yes.",
+  "ambiguity_handling": "Keep the explicit submitted no labels for items8/16/17 and retain their caveats; no reclassification or agent-generated human answers.",
+  "reviewed": 17,
+  "human_yes": 3,
+  "human_no": 14,
+  "machine_yes_in_sample": 10,
+  "agreement_count": 10,
+  "agreement_fraction": 0.5882352941176471,
+  "machine_yes_human_no_items": [
+    2,
+    3,
+    8,
+    12,
+    13,
+    16,
+    17
+  ],
+  "machine_no_human_yes_items": [],
+  "interpretation": "Seven over-attributions relative to the submitted result-based standard. Some disagreements concern methodological suggestions or misread premises, so report definition/interpretation differences rather than treating all disagreements as established hallucinations. This is a small sample of dependent report\u2013proposal pairs.",
+  "machine_judgments_changed": false,
+  "machine_snapshot_sha256": "6d0db8fbb03e691aaed2acee0d2b5c566ccd24c1ee19ea556dfa5675e5bca0bc"
+}

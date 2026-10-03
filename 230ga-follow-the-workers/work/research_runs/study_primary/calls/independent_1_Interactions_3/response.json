@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V01_V05_hours_wage_interaction_T\",\"hypothesis\":\"Groups with high V01 hours combined with rising V05 dollars-per-hour (both cross-sectionally ranked) earn higher next-month relative returns, since tight utilization plus price pressure signals strength. Effect is expected to be positive across T regimes.\",\"falsified_if\":\"Cross-sectional rank correlation between the feature and next-month returns is zero or negative, or HAC t-statistic is below 1.\",\"expression\":\"mult(csrank(V01),csrank(chg(V05,3)))\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 668,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 197,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0035613999999999997,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "008d6b915a9ce86f879e3e2372f334d7fc35a31bdf69e624582d45535d0f2da9"
+}

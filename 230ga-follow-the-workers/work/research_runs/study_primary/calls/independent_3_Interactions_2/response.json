@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\": \"Hours-to-flow spread conditioned on high T regime\", \"hypothesis\": \"In high-T regimes, groups whose average hours (V01 6-month change) rise relative to the stock rate V06 (standardized) earn higher next-month relative returns, since hours expansion without rising slack signals strengthening demand.\", \"falsified_if\": \"In development data, high-T-regime mean IC of this feature is zero or negative, or its HAC t-stat is below 1.\", \"expression\": \"regime(spread(chg(V01,6),tsz(V06,60)),\\\"high\\\")\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 367,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 194,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0029293999999999995,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "b34012321583615218e056da130cbd789528ff93db639f55603134dd5b89fee2"
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "1a15e431bb6ace7f5d03785aba41bb4cedf6e80865422282b489129cc05399dd",
+  "envelope": {
+    "response": "{\"name\": \"V01_3m_change_expanding_z_rank\", \"hypothesis\": \"Submission 1's negative relation is real: groups with unusually high 3-month V01 change versus their own expanding history earn lower next-month relative returns; expanding window raises coverage beyond 0.51 and tests the post-hoc sign.\", \"falsified_if\": \"Mean rank IC is non-negative, or HAC t-statistic exceeds -1.5, or IC sign differs between low-T and high-T regimes.\", \"expression\": \"csrank(tsz(chg(V01,3),\\\"exp\\\"))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 905,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1308,
+      "output_tokens": 1934,
+      "output_tokens_details": {
+        "thinking_tokens": 1735
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0425616,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "1a15e431bb6ace7f5d03785aba41bb4cedf6e80865422282b489129cc05399dd"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "323e9e5927375612f00bcf25bc4df91fb027956366787c7942bb85a44d38da43",
+  "envelope": {
+    "response": "The report lists failures: (1) an interaction feature with no predictive power, low coverage due to long history requirement; (2) invalid submission due to exceeding the word limit by two words.\n\nThe proposed hypothesis is a spread, not an interaction, and it is not regime-conditioned. The hypothesis is about 35 words. The word limit is unknown, and the report doesn't say how many words are allowed, so whether it avoids the word limit failure can't be determined. It doesn't explicitly avoid the interaction failure either: it changes the form to a spread, but it doesn't address the regime dependence or the coverage issue explicitly. The \"exp\" expanding window in tsz suggests a long history requirement, which could repeat the coverage problem.\n\nOverall the evidence is unclear.\n\n{\"avoids_failure\": null}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 491,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 264,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0036220000000000002,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "323e9e5927375612f00bcf25bc4df91fb027956366787c7942bb85a44d38da43"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "request_hash": "7f531b83b69f53b6b160e790953ba333f6590de396cf0b3a0c63376fc973aea0",
+  "envelope": {
+    "response": "{\"name\":\"V02_tsz_expanding_lag1\",\"hypothesis\":\"Groups whose V02 flow rate is unusually high relative to its own expanding history tend to have lower next-month returns than groups with unusually low V02, so the feature's cross-sectional relation to future returns is negative.\",\"falsified_if\":\"Cross-sectional rank correlation between this feature and next-month group returns is non-negative or statistically indistinguishable from zero in development statistics.\",\"expression\":\"tsz(V02,\\\"exp\\\")\"}",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 41,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1277,
+      "output_tokens": 173,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0020674,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "7f531b83b69f53b6b160e790953ba333f6590de396cf0b3a0c63376fc973aea0"
+  }
+}

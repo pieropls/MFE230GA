@@ -1,0 +1,42 @@
+{
+  "request_hash": "91bff82ace94e79b7f421f170bf9f1833d9785b5bd4c457fbe13ed84b5a9f4f9",
+  "envelope": {
+    "response": "{\"name\": \"hours_3m_change_exptsz_rank_reversal\", \"hypothesis\": \"Unusually large three-month hours increases relative to each group's own expanding history signal transient capacity strain that reverts, so such groups should earn lower relative returns next month; expanding window raises coverage versus submission one.\", \"falsified_if\": \"Mean cross-sectional rank correlation with next-month relative returns is zero or positive, or its HAC t-statistic exceeds -1.0, in development data.\", \"expression\": \"csrank(tsz(chg(V01,3),\\\"exp\\\"))\"}",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 1170,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1308,
+      "output_tokens": 1436,
+      "output_tokens_details": {
+        "thinking_tokens": 1241
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.0336616,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "91bff82ace94e79b7f421f170bf9f1833d9785b5bd4c457fbe13ed84b5a9f4f9"
+  }
+}

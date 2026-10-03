@@ -1,0 +1,42 @@
+{
+  "request_hash": "fcfb9478ecd1d9d76fa7c58f7eee6e20b98de0a1108c366c1ccbeda90f72dc8d",
+  "envelope": {
+    "response": "**Progress report**\n\nTwo valid interaction features, each with about 98% coverage, found no signal.\n\nThe first failed attempt multiplied the cross-sectional ranks of three-month hourly-pay growth and three-month hours change. I expected joint strength to predict outperformance. Instead, mean rank correlation was slightly negative, about minus 0.02 with t near minus 1.1. It was identical in low and high common-index regimes.\n\nThe second attempt also failed. A standardized spread between three-month changes in two flow rates showed essentially zero predictive power (t near 0.05). Its sign flipped weakly across regimes.\n\nBoth features had low overlap with base signals (about 0.1) and moderate rank persistence (about 0.35).\n\nNext I will try stock-rate levels, longer horizons, time-series standardization and explicit regime conditioning.",
+    "model": "claude-opus-5-5",
+    "tokens": {
+      "input_tokens": 681,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 1278,
+      "output_tokens": 2178,
+      "output_tokens_details": {
+        "thinking_tokens": 1902
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.046539599999999993,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-opus-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "fcfb9478ecd1d9d76fa7c58f7eee6e20b98de0a1108c366c1ccbeda90f72dc8d"
+  }
+}

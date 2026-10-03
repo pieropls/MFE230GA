@@ -1,0 +1,39 @@
+{
+  "response": "{\"uses_claim\": true, \"claim_ids\": [5, 6, 9]}",
+  "model": "claude-opus-5-5",
+  "tokens": {
+    "input_tokens": 543,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 331,
+    "output_tokens_details": {
+      "thinking_tokens": 302
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.008792000000000001,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-opus-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "2c2f6212defa1f811e91ecc1aaf74e7ea1a97b0e7c7179edbec470153e6fff0e"
+}

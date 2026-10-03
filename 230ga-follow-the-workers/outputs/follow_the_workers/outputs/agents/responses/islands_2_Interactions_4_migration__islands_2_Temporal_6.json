@@ -1,0 +1,42 @@
+{
+  "request_hash": "3ce4996e460060f54921084f87135862c619194e2b61c4af089d407108a33280",
+  "envelope": {
+    "response": "The hypothesis is a spread of two history-standardized growth rates: pay growth minus hours growth, with a positive predicted sign. That matches claim 5, which describes a spread between two flow rates, each standardized against its own history. Claim 5 gave a positive IC with a t-stat of about 1.9, so this hypothesis appears to test or build on it.\n\nClaim 3 concerns a cross-sectional rank product of pay growth and hours change, which is a different construction (a product, not a spread), though it uses similar variables. The hypothesis is not a product, so claim 3 is not clearly used. Claim 2 covers a product of standardized measures, so it does not match either. Claims 6 and 7 are caveats attached to the claim 5 finding (stronger in high-T periods, coverage around 54%). The hypothesis does not test them.\n\n```json\n{\"uses_claim\": true, \"claim_ids\": [5]}\n```",
+    "model": "claude-sonnet-5-5",
+    "tokens": {
+      "input_tokens": 492,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 301,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [],
+      "speed": "standard"
+    },
+    "seed_honoured": false,
+    "temperature_honoured": false,
+    "transport": "claude_subscription",
+    "estimated_list_cost_usd": 0.003994,
+    "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+    "runtime": {
+      "model": "claude-sonnet-5-5",
+      "tools": [],
+      "mcp_servers": [],
+      "skills": [],
+      "plugins": [],
+      "apiKeySource": "none"
+    },
+    "request_hash": "3ce4996e460060f54921084f87135862c619194e2b61c4af089d407108a33280"
+  }
+}

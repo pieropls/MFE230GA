@@ -1,0 +1,66 @@
+{
+  "utc": "2026-09-29T19:40:42.328516+00:00",
+  "run_id": "study_primary",
+  "judgments_sha256": "a332324b4d04b889e17faa12795501f7e958132e111f08dc31b75338e4273b23",
+  "items": [
+    {
+      "item": 1,
+      "report_id": "islands_1_Temporal_2_migration",
+      "candidate_id": "islands_1_Composition_3",
+      "human_uses_claim": false,
+      "rationale_source": "human_review_submission.json"
+    },
+    {
+      "item": 2,
+      "report_id": "islands_1_Temporal_2_migration",
+      "candidate_id": "islands_1_Interactions_4",
+      "human_uses_claim": false,
+      "rationale_source": "human_review_submission.json"
+    },
+    {
+      "item": 3,
+      "report_id": "islands_1_Temporal_2_migration",
+      "candidate_id": "islands_1_Composition_5",
+      "human_uses_claim": false,
+      "rationale_source": "human_review_submission.json"
+    },
+    {
+      "item": 4,
+      "report_id": "islands_2_Interactions_2_migration",
+      "candidate_id": "islands_2_Temporal_5",
+      "human_uses_claim": false,
+      "rationale_source": "human_review_submission.json"
+    },
+    {
+      "item": 5,
+      "report_id": "islands_2_Interactions_2_migration",
+      "candidate_id": "islands_2_Composition_5",
+      "human_uses_claim": false,
+      "rationale_source": "human_review_submission.json"
+    },
+    {
+      "item": 6,
+      "report_id": "islands_2_Composition_4_migration",
+      "candidate_id": "islands_2_Interactions_6",
+      "human_uses_claim": false,
+      "rationale_source": "human_review_submission.json"
+    },
+    {
+      "item": 7,
+      "report_id": "islands_2_Interactions_4_migration",
+      "candidate_id": "islands_2_Composition_6",
+      "human_uses_claim": true,
+      "rationale_source": "human_review_submission.json"
+    },
+    {
+      "item": 8,
+      "report_id": "islands_3_Composition_4_migration",
+      "candidate_id": "islands_3_Interactions_6",
+      "human_uses_claim": false,
+      "rationale_source": "human_review_submission.json"
+    }
+  ],
+  "reviewed_judgments_sha256": "d129ed0404cdd1947cc87ab6cc49a2367e10523633274c0418814cc627340f4a",
+  "review_recorded_utc": "2026-10-02T05:57:27.295093+00:00",
+  "submission_sha256": "64efc08c812af5b58f89503cccae9318242dce3665b1ad3d168bdb2870121fd4"
+}

@@ -1,0 +1,39 @@
+{
+  "response": "{\"name\":\"V05_yoy_wage_growth_low_T_smoothed\",\"hypothesis\":\"Groups with higher 3-month smoothed year-over-year change in V05 will have higher next-month returns, with a stronger effect when T is low. Smoothing reduces noise while keeping the regime-conditional signal seen earlier.\",\"falsified_if\":\"Mean IC is non-positive, HAC t-statistic is below 1, or low-T IC is not above high-T IC in development.\",\"expression\":\"regime(mavg(yoy(V05),3),\\\"low\\\")\"}",
+  "model": "claude-sonnet-5-5",
+  "tokens": {
+    "input_tokens": 1509,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1277,
+    "output_tokens": 188,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "seed_honoured": false,
+  "temperature_honoured": false,
+  "transport": "claude_subscription",
+  "estimated_list_cost_usd": 0.0051534,
+  "cost_note": "CLI list-price estimate, not evidence of a separate API charge",
+  "runtime": {
+    "model": "claude-sonnet-5-5",
+    "tools": [],
+    "mcp_servers": [],
+    "skills": [],
+    "plugins": [],
+    "apiKeySource": "none"
+  },
+  "request_hash": "e7cb0ffcfdfaef4ad61b9953f1f9815db5a8d2ad965081678388cbb65f012195"
+}
