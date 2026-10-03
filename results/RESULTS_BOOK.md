@@ -161,7 +161,7 @@ Selected features and their research -> test fate (`d7_selected_features.csv`):
 | Opus | islands | regime(spread(chg(Quits,3),chg(Hires,3)),"low") | +0.125 (48) | n/a (3) | yes |
 | Opus | islands | tsz(lchg(lag(Hours,1),12),36) | +0.057 (78) | +0.011 (142) | no |
 
-Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagreements judge-yes/human-no (`human_review_submission.json`). Models from the logs (CLAUDE.md): Sonnet 5.5 at medium effort for the confirmatory study (607 calls), Opus 5.5 at xhigh for the follow-up (905 calls).
+Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagreements judge-yes/human-no (`human_review_submission.json`). Models from the logs: Sonnet 5.5 at medium effort for the confirmatory study (199 logged calls), Opus 5.5 at xhigh for the follow-up (294 calls); claim A06.
 
 ## 6. AI-interaction inventory
 

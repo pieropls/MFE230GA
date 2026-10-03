@@ -1,11 +1,13 @@
-# Loose pins: the recorded environment was Python 3.12 with pandas 2.2, numpy 2.0, scipy 1.17, scikit-learn 1.5,
-# statsmodels 0.14, matplotlib 3.10, nbformat 5.10, nbclient 0.10, ipykernel 6.29.
+# Loose pins. The recorded environment (analysis/output/environment.txt) was Python 3.12.5 with pandas 2.2.2, numpy 2.0.2,
+# scipy 1.14.1, scikit-learn 1.5.2, statsmodels 0.14.4, matplotlib 3.10.0, requests 2.32.3, nbformat 5.10.4, nbclient 0.10.1,
+# ipykernel 6.29.5. Byte-identity of the run logs is expected in that environment; other BLAS builds may differ in the last bit.
 pandas>=2.0
 numpy>=1.26
 scipy>=1.11
 scikit-learn>=1.3
 statsmodels>=0.14
 matplotlib>=3.8
+requests>=2.31
 jupyter
 nbformat>=5.9
 nbclient>=0.9

@@ -109,11 +109,6 @@ def deflated_sharpe(net, n_trials=P.N_TRIALS, trial_var=None):
             'benchmark_annual_sharpe': float(sr0 * np.sqrt(12)), 'T': T, 'n_trials': n_trials}
 
 
-def window(frame, name):
-    a, b = P.WINDOWS[name]
-    return frame.loc[a:b]
-
-
 def block_bootstrap_sharpe(net, block=12, draws=5000, seed=P.SEED, level=0.90):
     """Circular moving-block bootstrap of monthly returns; percentile interval for the annualised Sharpe."""
     r = np.asarray(pd.Series(net).dropna(), dtype=float)

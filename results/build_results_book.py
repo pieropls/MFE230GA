@@ -21,6 +21,7 @@ import params as P  # noqa: E402
 
 FROZ = 'frozen'          # label shorthand used in the register
 CONF, POST, FWD = 'CONF', 'POST-HOC', 'FWD'
+CALL_COUNTS = [None, None]   # logged model calls (Sonnet, Opus), filled by register_claims from log.jsonl
 SON = P.SONNET / 'outputs'
 OPU = P.OPUS / 'outputs'
 TAB = P.TABLES
@@ -180,7 +181,8 @@ def register_claims():
     CLAIMS.append({'claim_id': 'A06', 'sentence': 'Logged model calls: 199 in the confirmatory (Sonnet) study and 294 in the Opus follow-up (candidate, migration and judge calls; the evaluation entries in the log are not calls).',
                    'numbers': '199; 294', 'source': f'{rel(SON / "agents/log.jsonl")} | {rel(OPU / "agents/log.jsonl")} :: entries with kind != evaluation; equals the file count in agents/responses/',
                    'label': CONF, 'verified': 'y' if counts == [199, 199, 294, 294] else 'n', 'file_value': '; '.join(map(str, counts)),
-                   'note': 'CLAUDE.md states 607 and 905; those figures do not match any file and are flagged in docs/process/MORNING_BRIEF.md'})
+                   'note': 'an earlier draft of CLAUDE.md stated 607 and 905; corrected to the logged counts on 3 Oct 2026'})
+    CALL_COUNTS[:] = [counts[0], counts[2]]
     claim('F09', 'The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 9f4a50f, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it.', '2026-10-03T09:17:55+00:00',
           'analysis/forward/book_first_build.sha256::line=2', FWD, note='book_first_build.sha256 was written on 3 Oct from the gate3.md of commit 9f4a50f; verify with: git show 9f4a50f:analysis/forward/book_2026Q4.csv | shasum -a 256')
     # --- exploratory Opus follow-up
@@ -491,7 +493,7 @@ def write_markdown(board, verdict_text, v3_text):
     L += [f'- `{n}`: {title} [{lab}]' for n, title, lab in TABLES]
     if v3_text:
         L += ['', v3_text]
-    L += ['', '## 5. The agent experiment', '', open(TAB / 'd10_agent_design.csv').read().replace(',', ' | ')[:0]]
+    L += ['', '## 5. The agent experiment', '', '']
     d10 = pd.read_csv(TAB / 'd10_agent_design.csv')
     L += [md_table(d10[['study', 'item', 'value', 'source']].values.tolist(), ['Study', 'Item', 'Value', 'Source']), '']
     d7 = pd.read_csv(TAB / 'd7_selected_features.csv')
@@ -499,7 +501,7 @@ def write_markdown(board, verdict_text, v3_text):
           md_table([[r.study, r.arm, r.decoded, f'{r.research_ic:+.3f} ({int(r.research_n)})', ('n/a' if pd.isna(r.test_ic) else f'{r.test_ic:+.3f}') + f' ({int(r.test_n)})', 'yes' if r.gated else 'no'] for r in d7.itertuples()],
                    ['Study', 'Arm', 'Feature (decoded)', 'Research IC (n)', 'Test IC (n)', 'Regime-gated']), '',
           'Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagreements judge-yes/human-no (`human_review_submission.json`). '
-          'Models from the logs (CLAUDE.md): Sonnet 5.5 at medium effort for the confirmatory study (607 calls), Opus 5.5 at xhigh for the follow-up (905 calls).', '']
+          f'Models from the logs: Sonnet 5.5 at medium effort for the confirmatory study ({CALL_COUNTS[0]} logged calls), Opus 5.5 at xhigh for the follow-up ({CALL_COUNTS[1]} calls); claim A06.', '']
     L += ['## 6. AI-interaction inventory', '', md_table([list(r) + [''] for r in AI_ROWS], ['ID', 'Purpose', 'Model', 'Prompt file', 'Output file', 'What was right', 'What was wrong', 'What changed', 'Team critique']), '']
     L += ['## 7. Claims register', '', f'`results/claims.csv`: {len(CLAIMS)} claims, {sum(c["verified"] == "y" for c in CLAIMS)} verified against their source files.', '',
           md_table([[c['claim_id'], c['label'], c['sentence'], c['numbers'], c['verified']] for c in CLAIMS], ['ID', 'Label', 'Claim', 'Numbers', 'Verified']), '']
@@ -517,7 +519,7 @@ def write_tex(board, v3_tex):
          r'\renewcommand{\ReportSubtitle}{Every result, figure, table and claim behind the report, with its source file}',
          r'\usepackage{longtable}', r'\begin{document}', r'\MakeCover', r'\tableofcontents', r'\clearpage']
     L += [r'\section{Verdict}', r'\IfFileExists{verdict.tex}{\input{verdict}}{\emph{VERDICT.md is written at Stage 3.}}']
-    L += [r'\section{Scoreboard}', 'IC is one-month except V2d (12-month, its holding horizon). DSR is the research-period value with 41 nominal trials for the frozen studies and the test-window value with 112 trials for v2. Labels: conf.\\ = confirmatory, expl.\\ = exploratory follow-up. Source: \\path{results/scoreboard.csv}.',
+    L += [r'\section{Scoreboard}', 'The A3 sealed ledger starts from an empty book in November 2014; the v2 test figures are the test slice of a continuous run that starts in May 2004 (pre-declared in v2\\_spec.md section 4). IC is one-month except V2d (12-month, its holding horizon). DSR is the research-period value with 41 nominal trials for the frozen studies and the test-window value with 112 trials for v2. Labels: conf.\\ = confirmatory, expl.\\ = exploratory follow-up. Source: \\path{results/scoreboard.csv}.',
           r'{\scriptsize\input{tables/scoreboard}}']
     L += [r'\section{Figures}']
     L += [tfig(f, pill(lab), take, src) for f, lab, take, src in FIGURES]
@@ -528,7 +530,7 @@ def write_tex(board, v3_tex):
         L += [v3_tex]
     L += [r'\clearpage\section{The agent experiment}', r'\noindent{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/d10_agent_design}}\par', r'\medskip',
           r'Selected features and their research$\to$test fate:\par\noindent{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/d7_selected_features}}\par', r'\medskip',
-          'Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagreements judge-yes/human-no. Models from the logs: Sonnet 5.5 at medium effort for the confirmatory study (607 calls), Opus 5.5 at xhigh for the follow-up (905 calls).']
+          'Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagreements judge-yes/human-no. Models from the logs: Sonnet 5.5 at medium effort for the confirmatory study (' + str(CALL_COUNTS[0]) + ' logged calls), Opus 5.5 at xhigh for the follow-up (' + str(CALL_COUNTS[1]) + ' calls); claim A06.']
     L += [r'\clearpage\section{AI-interaction inventory}', r'{\scriptsize\setlength{\tabcolsep}{3pt}\begin{longtable}{@{}p{0.5cm}p{2.0cm}p{1.8cm}p{2.1cm}p{2.2cm}p{2.2cm}p{2.2cm}p{1.4cm}@{}}',
           r'\toprule ID & Purpose & Model & Prompt file & What was right & What was wrong & What changed & Team critique \\ \midrule \endhead']
     for r in AI_ROWS:

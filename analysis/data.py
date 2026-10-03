@@ -4,7 +4,6 @@ Everything is indexed by EARNING month m: a decision at the end of month m-1 ear
 The portfolio construction is the frozen study's own `data.backtest`, imported read-only.
 """
 import importlib.util
-import json
 import re
 import sys
 import time
@@ -46,10 +45,6 @@ def saved_csv(name, study=P.SONNET, folder='outputs/sealed/initial'):
     frame.index = pd.PeriodIndex(frame.index, freq='M')
     frame.columns = [int(c) if str(c).isdigit() else c for c in frame.columns]
     return frame
-
-
-def saved_json(name, study=P.SONNET):
-    return json.loads((study / 'outputs' / name).read_text())
 
 
 # ---------------------------------------------------------------- Ken French returns
@@ -203,7 +198,7 @@ def signals(folder=P.FRED, last_decision=None, groups=None):
         z = standardize(value.reindex(decisions))
         z.index = z.index + 1                                         # earning month
         features[name] = z
-    # T at decision d uses the latest month <= d-2 with both V and U observed (frozen rule); this
+    # T at decision d uses the latest month <= d-2 with both V and U observed (fixed-lag analogue of the frozen as-known rule); this
     # matters once: the Oct 2025 household survey (UNEMPLOY) was never collected.
     ratio = np.log(panel['V'] / panel['U']).ffill()
     t = to_decision(ratio, P.JOLTS_LAG).reindex(decisions)
@@ -213,10 +208,6 @@ def signals(folder=P.FRED, last_decision=None, groups=None):
 
 def csrank(frame):
     return frame.rank(axis=1, pct=True, method='average')
-
-
-def cszscore(frame):
-    return frame.sub(frame.mean(axis=1), axis=0).div(frame.std(axis=1, ddof=1), axis=0)
 
 
 # ---------------------------------------------------------------- portfolio

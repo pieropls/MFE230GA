@@ -9,7 +9,7 @@
 \section{Verdict}
 \IfFileExists{verdict.tex}{\input{verdict}}{\emph{VERDICT.md is written at Stage 3.}}
 \section{Scoreboard}
-IC is one-month except V2d (12-month, its holding horizon). DSR is the research-period value with 41 nominal trials for the frozen studies and the test-window value with 112 trials for v2. Labels: conf.\ = confirmatory, expl.\ = exploratory follow-up. Source: \path{results/scoreboard.csv}.
+The A3 sealed ledger starts from an empty book in November 2014; the v2 test figures are the test slice of a continuous run that starts in May 2004 (pre-declared in v2\_spec.md section 4). IC is one-month except V2d (12-month, its holding horizon). DSR is the research-period value with 41 nominal trials for the frozen studies and the test-window value with 112 trials for v2. Labels: conf.\ = confirmatory, expl.\ = exploratory follow-up. Source: \path{results/scoreboard.csv}.
 {\scriptsize\input{tables/scoreboard}}
 \section{Figures}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_timeline.pdf}\caption{Tightness never exceeded V/\allowbreak{}U = 1 in the research period, so the tightness moderator could not be learned there. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}data/\allowbreak{}fred (JTSJOL, UNEMPLOY).} \hfill \tagp}\end{figure}
@@ -108,7 +108,7 @@ Spec \path{analysis/v3_spec.md} frozen 2026-10-03T09:52:27Z, first run 09:53:32Z
 \medskip
 Selected features and their research$\to$test fate:\par\noindent{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/d7_selected_features}}\par
 \medskip
-Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagreements judge-yes/human-no. Models from the logs: Sonnet 5.5 at medium effort for the confirmatory study (607 calls), Opus 5.5 at xhigh for the follow-up (905 calls).
+Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagreements judge-yes/human-no. Models from the logs: Sonnet 5.5 at medium effort for the confirmatory study (199 logged calls), Opus 5.5 at xhigh for the follow-up (294 calls); claim A06.
 \clearpage\section{AI-interaction inventory}
 {\scriptsize\setlength{\tabcolsep}{3pt}\begin{longtable}{@{}p{0.5cm}p{2.0cm}p{1.8cm}p{2.1cm}p{2.2cm}p{2.2cm}p{2.2cm}p{1.4cm}@{}}
 \toprule ID & Purpose & Model & Prompt file & What was right & What was wrong & What changed & Team critique \\ \midrule \endhead
