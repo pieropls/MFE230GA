@@ -1,6 +1,6 @@
 # v2 results (POST-HOC)
 
-First run at **2026-10-03T09:01:55+00:00** (this file regenerated at 2026-10-03T09:05:55+00:00; outputs verified identical to the first run, see v2_run_log.md). Specification `analysis/v2_spec.md` was frozen at **2026-10-03T09:00:13+00:00** (sha256 `ca6582347904489bdb6fac1496f895fd18c91eba47ca2bc8566e35cdf44a5832`, commit d76fbb3) before this run. All four variants are reported. Labor data are revised FRED values with fixed lags (`data_vintage.md`); returns and portfolio construction are the frozen study's (Gate 1).
+First run at **2026-10-03T09:01:55+00:00** (this file regenerated at 2026-10-03T09:17:54+00:00; outputs verified identical to the first run, see v2_run_log.md). Specification `analysis/v2_spec.md` was frozen at **2026-10-03T09:00:13+00:00** (sha256 `ca6582347904489bdb6fac1496f895fd18c91eba47ca2bc8566e35cdf44a5832`, commit d76fbb3) before this run. All four variants are reported. Labor data are revised FRED values with fixed lags (`data_vintage.md`); returns and portfolio construction are the frozen study's (Gate 1).
 
 The confirmatory verdict is unchanged: primary A3, test Sharpe -0.58, **Do not implement**.
 
@@ -174,3 +174,18 @@ Source: `analysis/output/tables/v2_pnl_by_industry.csv`.
 - `analysis/output/tables/v2_window_stats.csv`, `v2_reading_rule.csv`, `v2b_signs.csv`, `v2_monthly_net.csv`, `v2_pnl_by_industry.csv`, `v2a_factor_loadings_test.csv`
 - `report/tables/v2_results.tex`
 - `report/figures/fig_v2_windows.pdf`; V2a added to `fig_cumulative.pdf` and `fig_loadings.pdf`
+
+## Additional check added after the run (POST-HOC, not part of the reading rule)
+
+Added on 3 Oct 2026 after the v2 results above had been seen, at the team's request. It does **not** replace the pre-declared placebo: V2d's pre-declared test-window placebo p (1-month IC) stays 0.85, as reported in the tables above and in the reading rule.
+
+V2d is held 12 months, so this check uses its 12-month IC: the rank IC between the score and the 12-month compounded relative return (months m to m+11). The score panel is rolled circularly against that target within each window by every shift from 24 to n-24 months; p is the share of shifted mean ICs at or above the actual one. Months at the end of the sample without a complete 12-month return drop out. The 12-month returns overlap, which the circular shift preserves but does not correct.
+
+Source: `analysis/output/tables/v2d_placebo_12m.csv`.
+
+| window | ic_12m | placebo_p_12m | shifts | placebo_p_1m_predeclared |
+|---|---|---|---|---|
+| research | 0.0471 | 0.2564 | 78 | 0.6026 |
+| test | 0.0962 | 0.0632 | 95 | 0.8526 |
+| full | 0.0711 | 0.0362 | 221 | 0.8552 |
+| post-2010 | 0.0807 | 0 | 153 | 0.7974 |

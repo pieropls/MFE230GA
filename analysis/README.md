@@ -10,8 +10,8 @@ Layout follows `../CLAUDE.md`: small and flat. `run.ipynb` regenerates every num
 | `plots.py` | Every figure (vector PDF to `../report/figures/`), plus booktabs and markdown table writers |
 | `run.ipynb` | Orchestration: data → Gate 1 → diagnostics D1–D10 → v2 variants → forward test |
 | `v2_spec.md`, `v2_spec.sha256` | Post-hoc variants, frozen (hashed, timestamped, committed) before they were run |
-| `forward/` | Forward-test spec, Q4 2026 book, ETF proxies, tracker |
-| `output/` | `validation.md` (Gate 1), `data_vintage.md`, `diagnostics_v2.md`, `v2_results.md`, `tables/*.csv` |
+| `forward/` | Forward-test spec and amendment 001 (both hashed), Q4 2026 book for V2a–V2d (`book_2026Q4.csv`, plus scores, hedge and netted-ETF versions), `etf_proxies.csv`. The weekly tracker is deferred. |
+| `output/` | `validation.md` (Gate 1), `data_vintage.md`, `diagnostics_v2.md`, `v2_results.md`, `v2_run_log.md`, `gate3.md` (Gate 3), `tables/*.csv` |
 | `data/` | Ken French files (CRSP 202608 build), FRED current values and ALFRED vintage, downloaded Oct 2026 |
 
 How to run: `cd analysis` and open `run.ipynb` (pandas, numpy, scipy, scikit-learn, matplotlib). The frozen study in `../230ga-follow-the-workers/` is only read.

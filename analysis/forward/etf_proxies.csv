@@ -1,0 +1,15 @@
+group,name,etf,alternative,group_composition_aug2026,caveat
+1,Mining & logging,XOP,XME,"Oil 79%, Mines 14%, Gold 6%","Group is mostly the French Oil portfolio, incl. integrated majors and refiners; XOP is equal-weight E&P. Metals and gold not covered; no logging exposure."
+2,Construction,ITB,XHB,Cnstr 100%,Residential builders and suppliers; French Cnstr also holds contractors.
+3,Durable mfg,XLI,,"Chips 60%, Mach 9%, Autos 7%",Poor match: the group is about 60% semiconductors by market cap (Chips); XLI holds industrials. Shares XLI with groups 5 and 11.
+4,Nondurable mfg,XLP,,"Drugs 60%, Hshld 9%, Soda 7%","Poor match: the group is about 60% pharmaceuticals (Drugs), which XLP excludes."
+5,Wholesale,XLI,,Whlsl 100%,No wholesale ETF verified; XLI holds some distributors only. Shares XLI with groups 3 and 11.
+6,Retail,XRT,,Rtail 100%,Equal-weight retail index; French Rtail is value-weighted.
+7,Transport & utilities,XLU,IYT,"Util 61%, Trans 39%",Group is about 61% utilities and 39% transport by cap; XLU covers utilities only.
+8,Information,VOX,,Telcm 100%,GICS communication services includes internet and media; French Telcm is telecom and cable.
+9,Finance & insurance,XLF,KBE; KIE,"Banks 51%, Fin 26%, Insur 23%","Sector index; does not replicate Banks, Insur and Fin weights."
+10,Real estate,IYR,,RlEst 100%,"Mostly REITs, which French classifies outside RlEst (real estate operators)."
+11,Prof. & business svcs,XLI,,BusSv 100%,No professional-services ETF verified; XLI holds a small services slice. Shares XLI with groups 3 and 5.
+12,Health care,IHF,,Hlth 100%,Includes health insurers; social-assistance coverage incomplete.
+13,Accommodation & food,PEJ,,Meals 100%,Broader leisure and entertainment exposure.
+hedge,Market hedge,SPY,,,Not in the frozen issuer-verified list; hedges Mkt-RF beta.
