@@ -7,9 +7,9 @@ Romain Almeida · Elouan Bahri · Al Yazid Bensaid · Piero Pelosi · Alex Roesl
 - `230ga-follow-the-workers/` is Alex's frozen, preregistered study. **Read-only.** Never edit it, rerun its sealed evaluation, or retune it. Import its code read-only (via `sys.path`) when you need its exact functions.
 - `analysis/` holds our iteration code. Public French and FRED data are already in `analysis/data/`.
 - `report/` holds the LaTeX report (`main.tex`, `refs.bib`, `figures/`, `tables/`). Build it with `latexmk -pdf main.tex`.
-- `FINDINGS_AND_PROPOSAL.md` is the diagnosis of the frozen study. `analysis/output/diagnostics.md` holds the numbers behind it.
-- `FinalProject.pdf` is last year's brief. Keep its template and rubric: Thesis 40%, Execution 40%, Originality 20%. This year the AI research assistant is **Claude**, not ChatGPT. Document at least 3 Claude interactions as prompt, summarised output and our critical evaluation.
-- `ITERATION_PROMPT.md` is the task.
+- `docs/FINDINGS_AND_PROPOSAL.md` is the diagnosis of the frozen study. `analysis/output/diagnostics.md` holds the numbers behind it.
+- `docs/course/FinalProject.pdf` is last year's brief. Keep its template and rubric: Thesis 40%, Execution 40%, Originality 20%. This year the AI research assistant is **Claude**, not ChatGPT. Document at least 3 Claude interactions as prompt, summarised output and our critical evaluation.
+- `docs/process/ITERATION_PROMPT.md` is the task.
 
 ## Non-negotiables
 1. **The sealed result stands as reported.**

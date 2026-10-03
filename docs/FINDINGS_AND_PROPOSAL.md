@@ -1,6 +1,6 @@
 # Follow the Workers: where the project stands, what is wrong with it, and how to fix it
 
-*Prepared 3 Oct 2026 for Piero, the team, and the Claude chat where the blueprint was written. Based on a full read of Alex's repository ([230ga-follow-the-workers/](230ga-follow-the-workers/), commit `c67c486`, 2 Oct), the blueprint artifact ([230GA - Project.html](230GA%20-%20Project.html), v4, 24 Sep), the build-and-run prompt, the catch-up briefing and the assignment sheet ([FinalProject.pdf](FinalProject.pdf)).*
+*Prepared 3 Oct 2026 for Piero, the team, and the Claude chat where the blueprint was written. Based on a full read of Alex's repository ([230ga-follow-the-workers/](230ga-follow-the-workers/), commit `c67c486`, 2 Oct), the blueprint artifact ([docs/blueprint.html](230GA%20-%20Project.html), v4, 24 Sep), the build-and-run prompt, the catch-up briefing and the assignment sheet ([docs/course/FinalProject.pdf](docs/course/FinalProject.pdf)).*
 
 *Source of the numbers. Unmarked numbers come from the saved outputs of the two completed studies. Numbers marked **[exploratory]** come from my own diagnostics, which are post-hoc and use revised public data. Those diagnostics are in [analysis/diagnostics.py](analysis/diagnostics.py), with output in [analysis/output/diagnostics.md](analysis/output/diagnostics.md). They change nothing in either study.*
 
@@ -54,9 +54,9 @@ Both studies conclude **"Do not implement"**. The engineering discipline is exce
 
 | Path | What it is | Owner |
 |---|---|---|
-| [FINDINGS_AND_PROPOSAL.md](FINDINGS_AND_PROPOSAL.md) | This document | Claude |
-| [230GA - Project.html](230GA%20-%20Project.html) | Blueprint v4 artifact (design, data links, pipeline, rubric map) | Piero |
-| [FinalProject.pdf](FinalProject.pdf) | Course assignment sheet | Professor |
+| [docs/FINDINGS_AND_PROPOSAL.md](docs/FINDINGS_AND_PROPOSAL.md) | This document | Claude |
+| [docs/blueprint.html](230GA%20-%20Project.html) | Blueprint v4 artifact (design, data links, pipeline, rubric map) | Piero |
+| [docs/course/FinalProject.pdf](docs/course/FinalProject.pdf) | Course assignment sheet | Professor |
 | [230ga-follow-the-workers/](230ga-follow-the-workers/) | Clone of Alex's private repo, left untouched (`git pull` updates it) | Alex |
 | [analysis/](analysis/) | My exploratory rebuild from public data, plus `diagnostics.py`. Independent of the frozen pipeline. | Claude |
 

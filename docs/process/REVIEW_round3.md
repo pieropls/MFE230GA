@@ -1,6 +1,6 @@
 # Independent review, round 3 (grader's read of report/main.pdf built 3 Oct 2026 11:30)
 
-Reviewer: fresh Claude subagent, no prior exposure to the project. Inputs read in order: `FinalProject.pdf`, `report/main.pdf` (19 pages, A4; cover + printed pages 1–18), `report/main.tex`, `results/claims.csv` (100 rows, all `verified=y`), then the source files named in the register. Nothing was modified. "The AI assistant" below means Claude, per the term's substitution for "ChatGPT" in the brief.
+Reviewer: fresh Claude subagent, no prior exposure to the project. Inputs read in order: `docs/course/FinalProject.pdf`, `report/main.pdf` (19 pages, A4; cover + printed pages 1–18), `report/main.tex`, `results/claims.csv` (100 rows, all `verified=y`), then the source files named in the register. Nothing was modified. "The AI assistant" below means Claude, per the term's substitution for "ChatGPT" in the brief.
 
 ## A. Grade against the rubric
 

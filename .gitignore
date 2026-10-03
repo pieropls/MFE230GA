@@ -1,5 +1,4 @@
-# Alex's frozen study is its own git repository (read-only here; update with git pull inside it)
-230ga-follow-the-workers/
+# Alex's frozen study is a git submodule pinned to c67c486 (read-only here)
 # secrets
 .env
 analysis/.env
@@ -7,16 +6,16 @@ analysis/.env
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
-# latex build
-report/*.aux
-report/*.log
-report/*.out
-report/*.fls
-report/*.fdb_latexmk
-report/*.bbl
-report/*.blg
-report/*.synctex.gz
-report/*.toc
+# latex build (report/ and results/)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.synctex.gz
+*.toc
+build.log
 # os
 .DS_Store
-report/build.log

@@ -1,8 +1,8 @@
 # Data vintage used in this iteration
 
-Written by analysis/run.ipynb on 2026-10-03T10:33:38+00:00.
+Written by analysis/run.ipynb on 2026-10-03T21:32:21+00:00.
 
-**Choice: option (c)** of ITERATION_PROMPT Part 1 step 2.
+**Choice: option (c)** of docs/process/ITERATION_PROMPT.md Part 1 step 2.
 
 - (a) As-known (ASOF) panels saved in the frozen repo: **not available**. The repo contains 0 parquet files; its package_manifest.json lists the panels as omitted.
 - (b) ALFRED vintages with `analysis/.env` FRED_API_KEY: **not available** (no key file).

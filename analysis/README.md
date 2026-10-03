@@ -16,4 +16,4 @@ Layout follows `../CLAUDE.md`: small and flat. `run.ipynb` regenerates every num
 
 How to run: `cd analysis` and open `run.ipynb` (pandas, numpy, scipy, scikit-learn, matplotlib). The frozen study in `../230ga-follow-the-workers/` is only read.
 
-`output/diagnostics.md` is the 3 Oct baseline behind `FINDINGS_AND_PROPOSAL.md`. It was produced by the earlier `diagnostics.py`, which you can recover with `git show 771e482:analysis/diagnostics.py` (it has since been folded into the notebook).
+`output/diagnostics.md` is the 3 Oct baseline behind `docs/FINDINGS_AND_PROPOSAL.md`. It was produced by the earlier `diagnostics.py`, which you can recover with `git show 771e482:analysis/diagnostics.py` (it has since been folded into the notebook).

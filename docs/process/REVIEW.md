@@ -1,6 +1,6 @@
 # Independent review of report v1: two rounds (3–4 Oct 2026)
 
-Reviewer: a fresh Claude subagent that had not seen the project, given `FinalProject.pdf`, `report/main.pdf`, `report/main.tex` and `results/claims.csv`, with read-only access to the rest. Full write-ups: `report/REVIEW_round1.md`, `report/REVIEW_round2.md`. Rubric: Thesis 40, Execution 40, Originality 20.
+Reviewer: a fresh Claude subagent that had not seen the project, given `docs/course/FinalProject.pdf`, `report/main.pdf`, `report/main.tex` and `results/claims.csv`, with read-only access to the rest. Full write-ups: `docs/process/REVIEW_round1.md`, `docs/process/REVIEW_round2.md`. Rubric: Thesis 40, Execution 40, Originality 20.
 
 ## Scores
 
@@ -11,7 +11,7 @@ Reviewer: a fresh Claude subagent that had not seen the project, given `FinalPro
 | Round 3, fresh reviewer, after the presentation iteration (commit `64a3ba8`) | 32 | 30 | 18 | 80 |
 | Reviewers' estimate once the human items are written | | | | 87–89 |
 
-Round 3 (`report/REVIEW_round3.md`) graded the restructured report (H1/H2/H3 framing, answer box, figures in the body). Its deductions: the thesis frame reads as retrofitted because H2 was formulated after the test was opened (now stated explicitly in 2.1); the critique cells, Reflection and executive-summary sentence are still TODO; Appendix A gave paths rather than transcripts (verbatim excerpts added); the headline box called H2 "supported" (changed to "consistent with the data, not established"); Section 3 runs about 4.5 pages against the 4-page budget after the added figures and table, while the main body stays at 10 pages.
+Round 3 (`docs/process/REVIEW_round3.md`) graded the restructured report (H1/H2/H3 framing, answer box, figures in the body). Its deductions: the thesis frame reads as retrofitted because H2 was formulated after the test was opened (now stated explicitly in 2.1); the critique cells, Reflection and executive-summary sentence are still TODO; Appendix A gave paths rather than transcripts (verbatim excerpts added); the headline box called H2 "supported" (changed to "consistent with the data, not established"); Section 3 runs about 4.5 pages against the 4-page budget after the added figures and table, while the main body stays at 10 pages.
 
 The reviewer's reading of the deductions: the thesis as traded (demand news at one month) is not the thesis the report ends up believing (cost news at a year), and the 13-group universe is introduced as a limit rather than a design constraint; under Execution, the rubric's explicit "critically evaluate the AI" item is still TODO in six places (critique cells and the Reflection).
 
@@ -19,7 +19,7 @@ The reviewer's reading of the deductions: the thesis as traded (demand news at o
 Round 1: 32 numbers; 30 matched their source file at the printed precision; 2 did not (607/905 calls not in any file; the book build time 09:17:55Z not in any file at the time). Round 2: 13 further numbers; all matched.
 
 ## Fixes applied by the editor (Claude) between and after the rounds
-- Call counts replaced by the log counts (199 Sonnet, 294 Opus; claim A06); CLAUDE.md's 607/905 flagged in `MORNING_BRIEF.md`.
+- Call counts replaced by the log counts (199 Sonnet, 294 Opus; claim A06); CLAUDE.md's 607/905 flagged in `docs/process/MORNING_BRIEF.md`.
 - "6 of 6" Opus features corrected to "6 of 7"; "failed the test" defined as the frozen sealed criterion (t ≥ 1.5 and positive IC in both halves); claim C19 rewritten.
 - The Q4 book's first build (09:17:55Z) recorded in `analysis/forward/book_first_build.sha256` and enforced by the notebook; commit `9f4a50f` cited as the independent evidence; `gate3.md` shows the first-build time again.
 - Horizon-matched placebo for V2d (claim V09) added next to the pre-declared one-month placebo; Table 6 caption states the one-month statistics and 6 Newey–West lags; the 12-lag alpha is labelled.

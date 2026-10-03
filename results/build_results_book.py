@@ -140,8 +140,6 @@ def register_claims():
           [f'{R}::variants.ASOF.A3.mean_net_annual', f'{R}::variants.ASOF.A3.volatility', f'{R}::variants.ASOF.A3.max_drawdown'], CONF, scale=100)
     claim('C03', 'A3 one-month rank IC in the test was -0.021 (Newey-West t = -1.08).', [-0.021, -1.08],
           [f'{R}::variants.ASOF.A3.IC.1.mean', f'{R}::variants.ASOF.A3.IC.1.t'], CONF)
-    claim('C04', 'A3 factor alpha was -0.38% a month (t = -1.86) after FF5, momentum and industry momentum.', [-0.38, -1.86],
-          [f'{R}::attribution.A3.coefficients.intercept', f'{R}::attribution.A3.t_statistics.intercept'], CONF, scale=[100, 1][0]) if False else None
     claim('C04', 'A3 factor alpha was -0.38% a month after FF5, momentum and industry momentum.', -0.38, f'{R}::attribution.A3.coefficients.intercept', CONF, scale=100)
     claim('C04b', 'The t-statistic of the A3 alpha was -1.86.', -1.86, f'{R}::attribution.A3.t_statistics.intercept', CONF)
     claim('C05', 'The circular-shift placebo p-value for A3 was 0.72.', 0.72, f'{R}::placebo.p', CONF)
@@ -172,8 +170,6 @@ def register_claims():
           [f'{R}::research_pass_sealed_failure_count', f'{t("d7_agent_summary.csv")}::col=Sonnet;item=passed research filter', f'{RO}::research_pass_sealed_failure_count', f'{t("d7_agent_summary.csv")}::col=Opus;item=passed research filter'], CONF)
     claim('C23', 'A1-T test: net return -4.9% a year, volatility 8.2%, maximum drawdown -36.3%.', [-4.9, 8.2, -36.3],
           [f'{R}::variants.ASOF.A1-T.mean_net_annual', f'{R}::variants.ASOF.A1-T.volatility', f'{R}::variants.ASOF.A1-T.max_drawdown'], CONF, scale=100)
-    claim('C24', 'Every selected agent feature (4 Sonnet, 4 Opus) failed the frozen sealed criterion.', [0, 0],
-          [f'{t("d7_selected_features.csv")}::col=sealed_pass_count;study=ALL', f'{t("d7_selected_features.csv")}::col=sealed_pass_count;study=ALL'], CONF) if False else None
     # A06: logged model calls per study, counted directly from log.jsonl (non-evaluation entries) and the responses folder
     counts = []
     for study in [SON, OPU]:
@@ -184,7 +180,7 @@ def register_claims():
     CLAIMS.append({'claim_id': 'A06', 'sentence': 'Logged model calls: 199 in the confirmatory (Sonnet) study and 294 in the Opus follow-up (candidate, migration and judge calls; the evaluation entries in the log are not calls).',
                    'numbers': '199; 294', 'source': f'{rel(SON / "agents/log.jsonl")} | {rel(OPU / "agents/log.jsonl")} :: entries with kind != evaluation; equals the file count in agents/responses/',
                    'label': CONF, 'verified': 'y' if counts == [199, 199, 294, 294] else 'n', 'file_value': '; '.join(map(str, counts)),
-                   'note': 'CLAUDE.md states 607 and 905; those figures do not match any file and are flagged in MORNING_BRIEF.md'})
+                   'note': 'CLAUDE.md states 607 and 905; those figures do not match any file and are flagged in docs/process/MORNING_BRIEF.md'})
     claim('F09', 'The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 9f4a50f, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it.', '2026-10-03T09:17:55+00:00',
           'analysis/forward/book_first_build.sha256::line=2', FWD, note='book_first_build.sha256 was written on 3 Oct from the gate3.md of commit 9f4a50f; verify with: git show 9f4a50f:analysis/forward/book_2026Q4.csv | shasum -a 256')
     # --- exploratory Opus follow-up
@@ -292,8 +288,6 @@ def register_claims():
           ['True', 'True'], [f'{rel(P.OUT / "gate3.md")}::table=0||row=Forward spec frozen before the book was built||col=pass',
                              f'{rel(P.OUT / "gate3.md")}::table=0||row=Amendment 001 frozen after the v2 results and before the book||col=pass'], FWD)
     # --- data and design facts
-    claim('S01', 'Our rebuilt A0 signal matches the frozen FIXEDLAG scores with pooled correlation 0.998 but the as-known ASOF scores pick the same top three groups in only 42% of months.', [0.998, 42],
-          [f'{rel(P.OUT / "data_vintage.md")}::table=0||row=FIXEDLAG||col=pooled_corr', f'{rel(P.OUT / "data_vintage.md")}::table=0||row=ASOF||col=same_top3_share'], POST, scale=[1, 100][0]) if False else None
     claim('S01', 'Our rebuilt A0 signal matches the frozen fixed-lag scores with pooled correlation 0.998.', 0.998, f'{rel(P.OUT / "data_vintage.md")}::table=0||row=FIXEDLAG||col=pooled_corr', POST)
     claim('S02', 'As-known (ASOF) scores pick the same top three groups as our revised-data signal in only 42% of test months.', 42, f'{rel(P.OUT / "data_vintage.md")}::table=0||row=ASOF||col=same_top3_share', POST, scale=100)
     claim('S03', 'Durable manufacturing is 60% semiconductors (Chips) by market cap in August 2026; nondurable manufacturing is 60% pharmaceuticals.', ['Chips 60%, Mach 9%, Autos 7%', 'Drugs 60%, Hshld 9%, Soda 7%'],
@@ -311,7 +305,6 @@ def register_claims():
     claim('C20', 'A3 under the four data variants: Sharpe -0.58 (as-known), -0.52 (first release), -0.56 (revised), -0.53 (fixed lag); IC -0.021, -0.040, -0.026, -0.021.',
           [-0.58, -0.52, -0.56, -0.53, -0.021, -0.040, -0.026, -0.021],
           [f'{R}::variants.{v}.A3.sharpe' for v in ['ASOF', 'FIRST', 'REVISED', 'FIXEDLAG']] + [f'{R}::variants.{v}.A3.IC.1.mean' for v in ['ASOF', 'FIRST', 'REVISED', 'FIXEDLAG']], CONF)
-    claim('C21', 'A3 turned over 0.91 of its industry book a month in the test; hit rate 44%.', [0.91, 44], [f'{R}::variants.ASOF.A3.turnover', f'{R}::variants.ASOF.A3.hit_rate'], CONF, scale=[1, 100][0]) if False else None
     claim('C21', 'A3 turned over 0.91 of its industry book a month in the test.', 0.91, f'{R}::variants.ASOF.A3.turnover', CONF)
     claim('C22', 'The frozen power statement: 142 sealed months require roughly 0.6 annualised Sharpe for IID t of about 2.',
           '142 sealed months require roughly 0.6 annualized Sharpe for IID t≈2; a null does not rule out a smaller effect.', f'{R}::gate.power', CONF)
@@ -451,12 +444,12 @@ AI_ROWS = [
      'Asserted uncomputed p-values and proposed unregistered thresholds; every suggestion was already covered by a registered diagnostic.',
      'No new test adopted (all dispositions "covered by" or "not adopted"); registered diagnostics retained.'),
     ('P5', 'Post-mortem review of the frozen study', 'claude-opus-5-5 (Claude Code, 3 Oct 2026)',
-     'conversation request (Piero, 3 Oct 2026); FINDINGS_AND_PROPOSAL.md', 'FINDINGS_AND_PROPOSAL.md, analysis/output/diagnostics.md',
+     'conversation request (Piero, 3 Oct 2026); docs/FINDINGS_AND_PROPOSAL.md', 'docs/FINDINGS_AND_PROPOSAL.md, analysis/output/diagnostics.md',
      'Found the wrong A0 signs, the dropped wage signal, the 12-month hiring sign, the 3-of-142-month agent features, the one-bin tightness split.',
      'Guessed the engineering assistant was OpenAI Codex (unverified); used a momentum definition that included month m-1; quoted W ICs with a non-frozen start date.',
      'Momentum redefined on m-12..m-2; W ICs recomputed with the frozen feature start; Codex guess withdrawn (to be confirmed by Alex).'),
     ('P6', 'This iteration: rebuild, diagnostics, frozen v2/v3 specs, forward test, report', 'claude-opus-5-5 (Parts 1-3); claude-fable-5-1 (overnight)',
-     'ITERATION_PROMPT.md, OVERNIGHT_PROMPT.md, CLAUDE.md', 'analysis/run.ipynb, analysis/output/*.md, results/, report/main.tex',
+     'docs/process/ITERATION_PROMPT.md, docs/process/OVERNIGHT_PROMPT.md, CLAUDE.md', 'analysis/run.ipynb, analysis/output/*.md, results/, report/main.tex',
      'Reproduced the sealed A0 returns to 1e-16; froze specs before running; reported all variants; stopped at a failed gate instead of working around it.',
      'The forward spec assumed August JOLTS would not be out by 29 Sep; it was released that day, so the pre-committed check stopped the run.',
      'Amendment 001 (fixed-lag rule, V2c/V2d added, disclosed); run log guarantees v2 outputs never changed.'),

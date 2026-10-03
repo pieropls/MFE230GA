@@ -1,6 +1,6 @@
 # Independent review, round 1: "Follow the Workers" (MFE 230GA final project)
 
-Reviewer: independent grader, no prior exposure to the project. Files read, in order: `FinalProject.pdf`, `report/main.pdf` (19 PDF pages; printed page numbers run 1 behind the PDF index because the cover is unnumbered; I quote printed page numbers below), `report/main.tex`, `results/claims.csv`, and the source files the claims point to. Nothing was modified; `230ga-follow-the-workers/` was only read.
+Reviewer: independent grader, no prior exposure to the project. Files read, in order: `docs/course/FinalProject.pdf`, `report/main.pdf` (19 PDF pages; printed page numbers run 1 behind the PDF index because the cover is unnumbered; I quote printed page numbers below), `report/main.tex`, `results/claims.csv`, and the source files the claims point to. Nothing was modified; `230ga-follow-the-workers/` was only read.
 
 ---
 
@@ -72,7 +72,7 @@ Numbers in the report with no `% src` comment at all (main.tex line numbers):
 - l. 104: "78 series" (the `% src` on that line covers C20 only). `manifest.csv` has 80 admitted FRED/ALFRED rows (78 industry series plus JTSJOL and UNEMPLOY); `deviations.md` says 78. Pick one and say which.
 - l. 318: "25 numbered findings" (I count 25 numbered items in `p1_response.md`, so it is right, but unsourced).
 - l. 323: "28 of 36 judge outputs were not valid JSON": `migration_judgments.json` records 28 null `uses_claim` labels but no reason; no file says "invalid JSON".
-- l. 326: "Guessed the engineering assistant was OpenAI Codex": not in `FINDINGS_AND_PROPOSAL.md`.
+- l. 326: "Guessed the engineering assistant was OpenAI Codex": not in `docs/FINDINGS_AND_PROPOSAL.md`.
 - l. 327: "Reproduced the sealed returns to 10^-16": claim S04 exists (1.51e-16) but the line has no `% src`.
 - l. 249: BR 156 / 13 and the IR ceilings 0.6 / 0.35 (arithmetic, fine, but say so).
 - l. 299: "a Q4 return anywhere between -10% and +10% is consistent with no skill (Appendix G)": the computation is in `analysis/forward/spec_frozen.md` l. 50, not in Appendix G, which contains no such statement.
