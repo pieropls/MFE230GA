@@ -1,4 +1,4 @@
-# MFE 230G "Follow the Workers": rules for Claude Code in this folder
+# MFE 230GA (Active Equity Management, Fall 2026) "Follow the Workers": rules for Claude Code in this folder
 
 ## Team (title page, alphabetical)
 Romain Almeida · Elouan Bahri · Al Yazid Bensaid · Piero Pelosi · Alex Roesler
