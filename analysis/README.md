@@ -1,14 +1,19 @@
-# Exploratory analysis (post-hoc)
+# analysis/: v2 iteration code (post-hoc and forward test)
 
-These scripts rebuild the study's inputs from public sources so the team can extend the analysis without Alex's data zip. They read the frozen study outputs in `../230ga-follow-the-workers/` read-only.
+Layout follows `../CLAUDE.md`: small and flat. `run.ipynb` regenerates every number, table and figure top to bottom.
 
-| File | Purpose |
+| File | Contents |
 |---|---|
-| `french.py` | Parses Ken French 49-industry, FF5 and momentum CSVs, and builds the 13 group returns exactly as the study did. The study's saved test ledgers are reproduced to 1e-16. |
-| `signals.py` | Builds F1–F5 and wage growth W from **current (revised)** FRED data with fixed lags: JOLTS at d−2, CES at d−1. This approximates the study's FIXEDLAG variant, not ASOF. |
-| `diagnostics.py` | Produces every **[exploratory]** number in `../FINDINGS_AND_PROPOSAL.md`, written to `output/diagnostics.md`. |
-| `data/` | Downloads from 3 Oct 2026: French files (CRSP 202608 build) and FRED CSVs from `fredgraph.csv`. |
+| `params.py` | Paths, windows, lags, portfolio settings (checked equal to the frozen study), variant registry |
+| `data.py` | French group returns, FRED/ALFRED labor signals, read-only import of the frozen backtest |
+| `stats.py` | Rank IC, Newey–West regression, performance, factor attribution, placebo, deflated Sharpe |
+| `plots.py` | Every figure (vector PDF to `../report/figures/`), plus booktabs and markdown table writers |
+| `run.ipynb` | Orchestration: data → Gate 1 → diagnostics D1–D10 → v2 variants → forward test |
+| `v2_spec.md`, `v2_spec.sha256` | Post-hoc variants, frozen (hashed, timestamped, committed) before they were run |
+| `forward/` | Forward-test spec, Q4 2026 book, ETF proxies, tracker |
+| `output/` | `validation.md` (Gate 1), `data_vintage.md`, `diagnostics_v2.md`, `v2_results.md`, `tables/*.csv` |
+| `data/` | Ken French files (CRSP 202608 build), FRED current values and ALFRED vintage, downloaded Oct 2026 |
 
-To run: `python3 diagnostics.py` (pandas, numpy).
+How to run: `cd analysis` and open `run.ipynb` (pandas, numpy, scipy, scikit-learn, matplotlib). The frozen study in `../230ga-follow-the-workers/` is only read.
 
-Everything here uses a sample that has already been seen. It is for interpretation and forward-test hypotheses only, never confirmatory evidence.
+`output/diagnostics.md` is the 3 Oct baseline behind `FINDINGS_AND_PROPOSAL.md`. It was produced by the earlier `diagnostics.py`, which you can recover with `git show 771e482:analysis/diagnostics.py` (it has since been folded into the notebook).

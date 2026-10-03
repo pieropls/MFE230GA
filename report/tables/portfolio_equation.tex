@@ -1,0 +1,13 @@
+% Score-to-weight mapping of the frozen study's backtest (230ga-follow-the-workers/outputs/follow_the_workers/data.py::backtest).
+% Written by analysis/run.ipynb. Parameters: analysis/params.py PORTFOLIO (checked equal to the frozen params in Gate 1).
+\begin{align}
+\tau_{m,g} &= \begin{cases} +\tfrac13 & g \in \text{top 3 of } s_{m,\cdot}\\ -\tfrac13 & g \in \text{bottom 3 of } s_{m,\cdot}\\ 0 & \text{otherwise}\end{cases}
+  \qquad b_{m} = \frac{1}{H}\sum_{j=0}^{H-1} \tau_{m-j}, \quad H=3, \label{eq:tranche}\\
+h_{m} &= -\sum_{g} b_{m,g}\,\hat\beta_{m,g}, \qquad x_m = (b_{m,1},\dots,b_{m,13},\,h_m), \label{eq:hedge}\\
+k_m &= \min\!\left(\frac{0.10}{\sqrt{12\,x_m^{\top}\hat\Sigma_m x_m}},\ \frac{2}{\lVert x_m\rVert_1}\right), \qquad w_m = k_m\,x_m, \label{eq:scale}\\
+r^{\mathrm{net}}_{m} &= \sum_{g} w_{m,g}\, r^{e}_{m,g} + w_{m,M}\,\mathrm{MKT}_m
+  - c\sum_{g}\lvert w_{m,g}-\tilde w_{m,g}\rvert - c_h\,\lvert w_{m,M}-\tilde w_{m,M}\rvert. \label{eq:net}
+\end{align}
+where $s_{m,g}$ is the score of group $g$ known at the end of month $m-1$, $\hat\beta_{m,g}$ and the Ledoit--Wolf covariance
+$\hat\Sigma_m$ (13 groups plus the market) use the 60 months ending in $m-2$ (at least 36), $r^{e}_{m,g}$ is the group's excess
+return, $\tilde w$ are the previous weights after drift, $c=10$\,bp and $c_h=2$\,bp.
