@@ -150,7 +150,7 @@ P6 & This iteration: rebuild, diagnostics, frozen v2/\allowbreak{}v3 specs, forw
 \bottomrule\end{longtable}}
 Output files: P1: p1\_\allowbreak{}response.md, p1\_\allowbreak{}review.md; P2: candidates.csv, agents/\allowbreak{}candidate\_\allowbreak{}records.json; P3: agents/\allowbreak{}migration\_\allowbreak{}judgments.json, human\_\allowbreak{}review\_\allowbreak{}submission.md; P4: p4\_\allowbreak{}response.md, p4\_\allowbreak{}review.md; P5: docs/\allowbreak{}FINDINGS\_\allowbreak{}AND\_\allowbreak{}PROPOSAL.md, analysis/\allowbreak{}output/\allowbreak{}study1/\allowbreak{}diagnostics.md; P6: analysis/\allowbreak{}run.ipynb, analysis/\allowbreak{}output/\allowbreak{}*.md, results/\allowbreak{}, report/\allowbreak{}main.tex.
 \clearpage\section{Claims register}
-144 claims, 144 verified. Source: \texttt{results/claims.csv}.
+146 claims, 146 verified. Source: \texttt{results/claims.csv}.
 {\scriptsize\setlength{\tabcolsep}{3pt}\begin{longtable}{@{}p{1.0cm}p{1.3cm}p{8.2cm}p{3.5cm}p{0.7cm}@{}}
 \toprule ID & Label & Claim & Numbers & Ver. \\ \midrule \endhead
 C01 & CONF & The preregistered primary A3 earned a test Sharpe of -0.58 over 142 months (Nov 2014-Aug 2026). & -0.58; 142 & y \\
@@ -270,6 +270,7 @@ B07 & CONF & A0 (fixed rule) test Sharpe by data version: -0.36 as known, -0.16 
 B08 & CONF & A0 by window: first test half -0.55, second half -0.20, last 18 months -1.56; factor alpha -0.25\% a month (t -0.92). & -0.55; -0.20; -1.56; -0.25\% (-0.92) & y \\
 B09 & CONF & Dropping one group at a time, A3 test Sharpe ranges from -0.70 (without wholesale) to -0.24 (without durable manufacturing). & -0.70 (Wholesale) to -0.24 (Durable mfg) & y \\
 B10 & CONF & Study 1 research-period deflated Sharpe (41 nominal trials): A3 0.003, A0 0.000. & 0.003; 0.000 & y \\
+B11 & CONF & A0 (fixed rule) one-month test IC -0.020 (t -0.71); Sharpe excluding March to December 2020 -0.18. & -0.02; -0.71; -0.18 & y \\
 T01 & \tagp & R1 validation: raw features rebuilt from the as-known panel equal Study 1 saved features exactly (maximum difference 0), and the as-known A0 score equals the saved one to 4e-16. & 0; 0; 0 & y \\
 T02 & \tagp & As-known test Sharpe: W +0.13, SC +0.24, W+MOM +0.46, HQ12 +0.20 (fixed lag: +0.16, -0.15, +0.35, +0.29). & 0.13; 0.24; 0.46; 0.2; 0.16; -0.15; 0.35; 0.29 & y \\
 T03 & \tagp & HQ12 as known: 12-month test IC +0.085 (t 2.26) against +0.096 (t 2.43) with fixed lags; W one-month IC +0.041 (t 1.73) against +0.049 (t 2.04). & 0.085; 2.26; 0.096; 2.43; 0.041; 1.73 & y \\
@@ -297,6 +298,7 @@ T22 & CONF / \tagp & Net Sharpe, full sample /\allowbreak{} post-2010 /\allowbre
 T23 & CONF / \tagp & Annual turnover, cost drag and break-even cost in the test: A3 11.0x, 1.11\%, -32 bp; W 4.7x, 0.47\%, +46 bp; SC 8.7x, 0.88\%, -5 bp; W+MOM 5.8x, 0.59\%, +62 bp; HQ12 4.4x, 0.44\%, +68 bp. & 11.0; 1.11; -32; 4.7; 0.47; 46; 8.7; 0.88; -5; 5.8; 0.59; 62; 4.4; 0.44; 68 & y \\
 T24 & \tagp & Rank-weighted books: A3 turnover 10.3x a year, break-even -24 bp; HQ12 4.4x, +69 bp. & 10.3; -24; 4.4; 69 & y \\
 T25 & \tagp & The Study 2.3 specification was hashed (068a3e03...) at 2026-10-04T09:18:39Z, before its first output; deflated Sharpe ratios in Study 2.3 use 162 looks. & 068a3e0396332514\allowbreak{}ee3b76677f31b9c1\allowbreak{}ff6bfea7362d9e91\allowbreak{}d69ecc013e791528 & y \\
+T26 & \tagp & Net return a year in the test window: W +1.7\%, SC -1.3\%, W+MOM +3.1\%, HQ12 +2.6\% (A3 -4.6\%). & 1.7; -1.3; 3.1; 2.6; -4.6 & y \\
 \bottomrule\end{longtable}}
 \section{Known issues}
 \begin{itemize}

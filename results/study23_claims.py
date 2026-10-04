@@ -36,6 +36,10 @@ claim('B09', 'Dropping one group at a time, A3 test Sharpe ranges from -0.70 (wi
 claim('B10', 'Study 1 research-period deflated Sharpe (41 nominal trials): A3 0.003, A0 0.000.', ['0.003', '0.000'],
       [f'{d11}::col=A3;item=Deflated Sharpe, research (41 trials)', f'{d11}::col=A0;item=Deflated Sharpe, research (41 trials)'], CONF)
 
+R_S1 = rel(P.SONNET / 'outputs/sealed/initial/results.json')
+claim('B11', 'A0 (fixed rule) one-month test IC -0.020 (t -0.71); Sharpe excluding March to December 2020 -0.18.', [-0.020, -0.71, -0.18],
+      [f'{R_S1}::variants.ASOF.A0.IC.1.mean', f'{R_S1}::variants.ASOF.A0.IC.1.t', f'{R_S1}::windows.A0.ex_pandemic.sharpe'], CONF)
+
 # --- R1 as-known rerun
 claim('T01', 'R1 validation: raw features rebuilt from the as-known panel equal Study 1 saved features exactly (maximum difference 0), and the as-known A0 score equals the saved one to 4e-16.', [0, 0, 0],
       [f'{r1c}::col=value;check=raw F1-F5 rebuilt from panel_asof vs features_asof.raw_value: max abs difference',
@@ -127,3 +131,5 @@ claim('T24', 'Rank-weighted books: A3 turnover 10.3x a year, break-even -24 bp; 
       [f'{ct}::col=annual_turnover;book=A3 rank-weighted', f'{ct}::col=breakeven_bp;book=A3 rank-weighted', f'{ct}::col=annual_turnover;book=HQ12 rank-weighted', f'{ct}::col=breakeven_bp;book=HQ12 rank-weighted'], POST)
 claim('T25', 'The Study 2.3 specification was hashed (068a3e03...) at 2026-10-04T09:18:39Z, before its first output; deflated Sharpe ratios in Study 2.3 use 162 looks.', '068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528',
       'analysis/specs/study2_3_robustness.sha256::line=1', POST)
+claim('T26', 'Net return a year in the test window: W +1.7%, SC -1.3%, W+MOM +3.1%, HQ12 +2.6% (A3 -4.6%).', [1.7, -1.3, 3.1, 2.6, -4.6],
+      [f'{ct}::col=net_pa;book={P.STRATEGY_NAMES[s]}' for s in ['W', 'SC', 'W+MOM', 'HQ12', 'A3']], POST, scale=100)

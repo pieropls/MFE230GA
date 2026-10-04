@@ -151,7 +151,7 @@ Spec `analysis/specs/study2_2_hq12_robustness.md` frozen 2026-10-03T09:52:27Z (s
 ### Study 1 robustness (A3 and A0)
 
 
-Regenerated 2026-10-04T09:34:41+00:00 by analysis/run.ipynb. Rows labelled CONFIRMATORY are read from Study 1's saved `results.json` and `research_summary.json` and are unchanged; rows labelled POST-HOC are diagnostics added in Study 2.3 (spec `analysis/specs/study2_3_robustness.md`, section 1) and cannot change the verdict: **Do not implement**.
+Regenerated 2026-10-04T09:55:48+00:00 by analysis/run.ipynb. Rows labelled CONFIRMATORY are read from Study 1's saved `results.json` and `research_summary.json` and are unchanged; rows labelled POST-HOC are diagnostics added in Study 2.3 (spec `analysis/specs/study2_3_robustness.md`, section 1) and cannot change the verdict: **Do not implement**.
 
 #### Consolidated table
 
@@ -223,7 +223,7 @@ Source: `d11_freeze_check.csv`, computed from `FREEZE.json`, `evaluation_started
 ### Study 2.3: additional robustness
 
 
-First run **2026-10-04T09:26:27+00:00** (regenerated 2026-10-04T09:34:41+00:00); spec `analysis/specs/study2_3_robustness.md` frozen **2026-10-04T09:18:39+00:00** (sha256 `068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528`). Deflated Sharpe ratios here use N = 162 looks. Names: W, SC, W+MOM, HQ12 are the variants stored as W, SC, W+MOM, HQ12 in the Study 2.1 and 2.2 result files. Nothing here changes the confirmatory verdict (A3, Do not implement).
+First run **2026-10-04T09:26:27+00:00** (regenerated 2026-10-04T09:55:48+00:00); spec `analysis/specs/study2_3_robustness.md` frozen **2026-10-04T09:18:39+00:00** (sha256 `068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528`). Deflated Sharpe ratios here use N = 162 looks. Names: W, SC, W+MOM, HQ12 are the variants stored as W, SC, W+MOM, HQ12 in the Study 2.1 and 2.2 result files. Nothing here changes the confirmatory verdict (A3, Do not implement).
 
 #### R1 As-known rerun
 
@@ -464,7 +464,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 
 ## 7. Claims register
 
-`results/claims.csv`: 144 claims, 144 verified against their source files.
+`results/claims.csv`: 146 claims, 146 verified against their source files.
 
 | ID | Label | Claim | Numbers | Verified |
 |---|---|---|---|---|
@@ -585,6 +585,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | B08 | CONF | A0 by window: first test half -0.55, second half -0.20, last 18 months -1.56; factor alpha -0.25% a month (t -0.92). | -0.55; -0.20; -1.56; -0.25% (-0.92) | y |
 | B09 | CONF | Dropping one group at a time, A3 test Sharpe ranges from -0.70 (without wholesale) to -0.24 (without durable manufacturing). | -0.70 (Wholesale) to -0.24 (Durable mfg) | y |
 | B10 | CONF | Study 1 research-period deflated Sharpe (41 nominal trials): A3 0.003, A0 0.000. | 0.003; 0.000 | y |
+| B11 | CONF | A0 (fixed rule) one-month test IC -0.020 (t -0.71); Sharpe excluding March to December 2020 -0.18. | -0.02; -0.71; -0.18 | y |
 | T01 | POST-HOC | R1 validation: raw features rebuilt from the as-known panel equal Study 1 saved features exactly (maximum difference 0), and the as-known A0 score equals the saved one to 4e-16. | 0; 0; 0 | y |
 | T02 | POST-HOC | As-known test Sharpe: W +0.13, SC +0.24, W+MOM +0.46, HQ12 +0.20 (fixed lag: +0.16, -0.15, +0.35, +0.29). | 0.13; 0.24; 0.46; 0.2; 0.16; -0.15; 0.35; 0.29 | y |
 | T03 | POST-HOC | HQ12 as known: 12-month test IC +0.085 (t 2.26) against +0.096 (t 2.43) with fixed lags; W one-month IC +0.041 (t 1.73) against +0.049 (t 2.04). | 0.085; 2.26; 0.096; 2.43; 0.041; 1.73 | y |
@@ -612,6 +613,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | T23 | CONF / POST-HOC | Annual turnover, cost drag and break-even cost in the test: A3 11.0x, 1.11%, -32 bp; W 4.7x, 0.47%, +46 bp; SC 8.7x, 0.88%, -5 bp; W+MOM 5.8x, 0.59%, +62 bp; HQ12 4.4x, 0.44%, +68 bp. | 11.0; 1.11; -32; 4.7; 0.47; 46; 8.7; 0.88; -5; 5.8; 0.59; 62; 4.4; 0.44; 68 | y |
 | T24 | POST-HOC | Rank-weighted books: A3 turnover 10.3x a year, break-even -24 bp; HQ12 4.4x, +69 bp. | 10.3; -24; 4.4; 69 | y |
 | T25 | POST-HOC | The Study 2.3 specification was hashed (068a3e03...) at 2026-10-04T09:18:39Z, before its first output; deflated Sharpe ratios in Study 2.3 use 162 looks. | 068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528 | y |
+| T26 | POST-HOC | Net return a year in the test window: W +1.7%, SC -1.3%, W+MOM +3.1%, HQ12 +2.6% (A3 -4.6%). | 1.7; -1.3; 3.1; 2.6; -4.6 | y |
 
 ## 8. Known issues
 

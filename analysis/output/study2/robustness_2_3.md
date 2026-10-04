@@ -1,6 +1,6 @@
 # Study 2.3: additional robustness (POST-HOC)
 
-First run **2026-10-04T09:26:27+00:00** (regenerated 2026-10-04T09:34:41+00:00); spec `analysis/specs/study2_3_robustness.md` frozen **2026-10-04T09:18:39+00:00** (sha256 `068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528`). Deflated Sharpe ratios here use N = 162 looks. Names: W, SC, W+MOM, HQ12 are the variants stored as V2a, V2b, V2c, V2d in the Study 2.1 and 2.2 result files. Nothing here changes the confirmatory verdict (A3, Do not implement).
+First run **2026-10-04T09:26:27+00:00** (regenerated 2026-10-04T09:55:48+00:00); spec `analysis/specs/study2_3_robustness.md` frozen **2026-10-04T09:18:39+00:00** (sha256 `068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528`). Deflated Sharpe ratios here use N = 162 looks. Names: W, SC, W+MOM, HQ12 are the variants stored as V2a, V2b, V2c, V2d in the Study 2.1 and 2.2 result files. Nothing here changes the confirmatory verdict (A3, Do not implement).
 
 ## R1 As-known rerun
 

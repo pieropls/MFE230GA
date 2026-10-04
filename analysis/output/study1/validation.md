@@ -1,6 +1,6 @@
 # Gate 1 validation
 
-Run 2026-10-04T09:33:51+00:00 by analysis/run.ipynb. **Result: PASS**
+Run 2026-10-04T09:54:42+00:00 by analysis/run.ipynb. **Result: PASS**
 
 Every check uses the frozen study's saved files in `study1_preregistered/` (read-only) and public Ken French data (CRSP 202608 build) in `analysis/data/french/`. The backtest is the frozen `data.backtest`, imported read-only.
 
