@@ -61,7 +61,7 @@ Public labor flows do carry information about industry returns, but as slow cost
 
 ## 2. Scoreboard
 
-Source: `results/scoreboard.csv` (built from results.json, research_summary.json of both studies and analysis/output/tables/v2_*.csv). IC is one-month except V2d (12-month, its holding horizon). DSR: research-period value with 41 nominal trials for the frozen studies; test-window value with 112 trials for v2.
+Source: `results/scoreboard.csv` (built from results.json, research_summary.json of both studies and analysis/output/study2/tables/v2_*.csv). IC is one-month except V2d (12-month, its holding horizon). DSR: research-period value with 41 nominal trials for the frozen studies; test-window value with 112 trials for v2.
 
 | Strategy | Label | Research | Test | Full | Last 18m | IC (t) | alpha/m (t) | Placebo p | DSR | Verdict |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -80,19 +80,19 @@ Source: `results/scoreboard.csv` (built from results.json, research_summary.json
 ## 3. Figures
 
 - **`report/figures/fig_timeline.pdf`** [POST-HOC]: Tightness never exceeded V/U = 1 in the research period, so the tightness moderator could not be learned there. Source: analysis/data/fred (JTSJOL, UNEMPLOY).
-- **`report/figures/fig_ic_signals.pdf`** [POST-HOC]: Only wage growth has an IC above 1.5 standard errors in both periods; layoffs and hours carry the opposite sign to the one A0 imposed. Source: analysis/output/tables/d1_signal_ic.csv.
-- **`report/figures/fig_horizon.pdf`** [POST-HOC]: Hires and quits turn negative at 12 months (t -2.1, -1.7): the investment/cost channel shows up slowly, not at one month. Source: analysis/output/tables/d2_horizon_ic.csv.
-- **`report/figures/fig_tightness.pdf`** [POST-HOC]: Split by whether T rose or fell over 12 months, hires and quits predict returns only while the market tightens; the split is balanced in both periods. Source: analysis/output/tables/d3_tightness_ic.csv.
-- **`report/figures/fig_cumulative.pdf`** [CONFIRMATORY (A0-A4) / POST-HOC (momentum, V2a)]: Every preregistered strategy lost money in the test; the post-hoc wage-growth book gained until 2024 and gave much of it back. Source: sealed/initial/ASOF_*_ledger.csv; analysis/output/tables/v2_monthly_net.csv.
-- **`report/figures/fig_industry_pnl.pdf`** [POST-HOC]: A3 lost most in health care, construction and finance; trading costs were a secondary drag. Source: analysis/output/tables/d5_industry_pnl.csv.
-- **`report/figures/fig_loadings.pdf`** [CONFIRMATORY (A0, A1, A3) / POST-HOC (V2a)]: The labor books are quality/growth tilts: A3 loads on RMW and against HML; V2a loads against HML and on momentum. Source: results.json attribution; analysis/output/tables/v2a_factor_loadings_test.csv.
-- **`report/figures/fig_agents_scatter.pdf`** [POST-HOC]: Research IC of agent features barely predicts their test IC; the selected regime-gated features were active in 3 test months. Source: analysis/output/tables/d7_agent_candidates.csv.
+- **`report/figures/fig_ic_signals.pdf`** [POST-HOC]: Only wage growth has an IC above 1.5 standard errors in both periods; layoffs and hours carry the opposite sign to the one A0 imposed. Source: analysis/output/study1/tables/d1_signal_ic.csv.
+- **`report/figures/fig_horizon.pdf`** [POST-HOC]: Hires and quits turn negative at 12 months (t -2.1, -1.7): the investment/cost channel shows up slowly, not at one month. Source: analysis/output/study1/tables/d2_horizon_ic.csv.
+- **`report/figures/fig_tightness.pdf`** [POST-HOC]: Split by whether T rose or fell over 12 months, hires and quits predict returns only while the market tightens; the split is balanced in both periods. Source: analysis/output/study1/tables/d3_tightness_ic.csv.
+- **`report/figures/fig_cumulative.pdf`** [CONFIRMATORY (A0-A4) / POST-HOC (momentum, V2a)]: Every preregistered strategy lost money in the test; the post-hoc wage-growth book gained until 2024 and gave much of it back. Source: sealed/initial/ASOF_*_ledger.csv; analysis/output/study2/tables/v2_monthly_net.csv.
+- **`report/figures/fig_industry_pnl.pdf`** [POST-HOC]: A3 lost most in health care, construction and finance; trading costs were a secondary drag. Source: analysis/output/study1/tables/d5_industry_pnl.csv.
+- **`report/figures/fig_loadings.pdf`** [CONFIRMATORY (A0, A1, A3) / POST-HOC (V2a)]: The labor books are quality/growth tilts: A3 loads on RMW and against HML; V2a loads against HML and on momentum. Source: results.json attribution; analysis/output/study2/tables/v2a_factor_loadings_test.csv.
+- **`report/figures/fig_agents_scatter.pdf`** [POST-HOC]: Research IC of agent features barely predicts their test IC; the selected regime-gated features were active in 3 test months. Source: analysis/output/study1/tables/d7_agent_candidates.csv.
 - **`report/figures/fig_agents.pdf`** [CONFIRMATORY]: Two arms with equal budgets, a blinded evaluator, mechanical selection and a human-audited LLM judge. Source: frozen params.py AGENT.
-- **`report/figures/fig_v2_windows.pdf`** [POST-HOC / CONFIRMATORY (A3 bars)]: V2d is the only variant positive in every window; V2a and V2c lost heavily in the last 18 months. Source: analysis/output/tables/v2_window_stats.csv.
+- **`report/figures/fig_v2_windows.pdf`** [POST-HOC / CONFIRMATORY (A3 bars)]: V2d is the only variant positive in every window; V2a and V2c lost heavily in the last 18 months. Source: analysis/output/study2/tables/v2_window_stats.csv.
 
 ## 4. Statistics
 
-Each table is in `analysis/output/tables/<name>.csv` with a LaTeX fragment in `report/tables/<name>.tex`; the numbers are listed in `analysis/output/diagnostics_v2.md` and `analysis/output/v2_results.md`.
+Each table is in `analysis/output/study2/tables/<name>.csv` with a LaTeX fragment in `report/tables/<name>.tex`; the numbers are listed in `analysis/output/study1/diagnostics_v2.md` and `analysis/output/study2/v2_results.md`.
 
 - `d1_signal_ic`: D1 single-signal rank IC [POST-HOC]
 - `d2_horizon_ic`: D2 IC by horizon [POST-HOC]
@@ -110,7 +110,7 @@ Each table is in `analysis/output/tables/<name>.csv` with a LaTeX fragment in `r
 
 ### 4b. V2d robustness battery (v3, POST-HOC)
 
-Spec `analysis/v3_spec.md` frozen 2026-10-03T09:52:27Z (sha256 `312aef1d…`), first run 09:53:32Z; results in `analysis/output/v3_results.md`; N_trials raised to 132. **Reading against the pre-declared rule: fragile in one dimension (R4): V2d lost money in the first half of the test (Sharpe −0.21) and made it in the second (+0.64). The other six conditions hold.**
+Spec `analysis/specs/study2_2_hq12_robustness.md` frozen 2026-10-03T09:52:27Z (sha256 `312aef1d…`), first run 09:53:32Z; results in `analysis/output/study2/v3_results.md`; N_trials raised to 132. **Reading against the pre-declared rule: fragile in one dimension (R4): V2d lost money in the first half of the test (Sharpe −0.21) and made it in the second (+0.64). The other six conditions hold.**
 
 | ID | Table | Figure | One-line result |
 |---|---|---|---|
@@ -171,7 +171,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | P2 | Blinded signal-search agents (two arms, 3 repetitions) | claude-sonnet-5-5 (medium); Opus study: claude-opus-5-5 (xhigh) | params.py SYSTEM_PROMPT / TURN_PROMPT; outputs/agents/log.jsonl | candidates.csv, agents/candidate_records.json | Rediscovered wage growth (V05) blind in both studies; produced valid grammar expressions (98/108 Sonnet, 106/108 Opus). | Highest research t-statistics came from regime gates that were active in 3 test months; every selected feature failed the test. | Mechanical selection only; no engineer edits. v2 restores wage growth as a public, ungated signal. |  |
 | P3 | Migration reports and LLM judge of idea uptake | claude-sonnet-5-5 (medium); Opus study: claude-opus-5-5 (xhigh) | outputs/agents/migrations.json; judge prompt in agents.py trace_migrations | agents/migration_judgments.json, human_review_submission.md | Opus: 15/18 reports admitted and 84/88 usable labels; a human audit of 17 pairs was possible. | Sonnet: 28/36 judge outputs were not bare JSON; judge over-attributes uptake (10 yes vs human 3; all 7 disagreements judge-yes). | Judge output treated as an association, not evidence; human labels reported alongside. |  |
 | P4 | Robustness red team on research tables | claude-sonnet-5-5 (medium); Opus study: claude-opus-5-5 (xhigh) | outputs/follow_the_workers/outputs/p4_request.json | p4_response.md, p4_review.md | Ten ranked concerns; called "do not implement" from research tables before the seal opened. | Asserted uncomputed p-values and proposed unregistered thresholds; every suggestion was already covered by a registered diagnostic. | No new test adopted (all dispositions "covered by" or "not adopted"); registered diagnostics retained. |  |
-| P5 | Post-mortem review of the frozen study | claude-opus-5-5 (Claude Code, 3 Oct 2026) | conversation request (Piero, 3 Oct 2026); docs/FINDINGS_AND_PROPOSAL.md | docs/FINDINGS_AND_PROPOSAL.md, analysis/output/diagnostics.md | Found the wrong A0 signs, the dropped wage signal, the 12-month hiring sign, the 3-of-142-month agent features, the one-bin tightness split. | Guessed the engineering assistant was OpenAI Codex (unverified); used a momentum definition that included month m-1; quoted W ICs with a non-frozen start date. | Momentum redefined on m-12..m-2; W ICs recomputed with the frozen feature start; Codex guess withdrawn (to be confirmed by Alex). |  |
+| P5 | Post-mortem review of the frozen study | claude-opus-5-5 (Claude Code, 3 Oct 2026) | conversation request (Piero, 3 Oct 2026); docs/FINDINGS_AND_PROPOSAL.md | docs/FINDINGS_AND_PROPOSAL.md, analysis/output/study1/diagnostics.md | Found the wrong A0 signs, the dropped wage signal, the 12-month hiring sign, the 3-of-142-month agent features, the one-bin tightness split. | Guessed the engineering assistant was OpenAI Codex (unverified); used a momentum definition that included month m-1; quoted W ICs with a non-frozen start date. | Momentum redefined on m-12..m-2; W ICs recomputed with the frozen feature start; Codex guess withdrawn (to be confirmed by Alex). |  |
 | P6 | This iteration: rebuild, diagnostics, frozen v2/v3 specs, forward test, report | claude-opus-5-5 (Parts 1-3); claude-fable-5-1 (overnight) | three task prompts (rebuild and diagnostics; v2/v3 freeze, forward test and report; final repository pass) and a one-page rules file, kept outside the repository | analysis/run.ipynb, analysis/output/*.md, results/, report/main.tex | Reproduced the sealed A0 returns to 1e-16; froze specs before running; reported all variants; stopped at a failed gate instead of working around it. | The forward spec assumed August JOLTS would not be out by 29 Sep; it was released that day, so the pre-committed check stopped the run. | Amendment 001 (fixed-lag rule, V2c/V2d added, disclosed); run log guarantees v2 outputs never changed. |  |
 
 ## 7. Claims register

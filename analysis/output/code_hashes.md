@@ -1,6 +1,6 @@
 # Code hashes of the analysis modules at each freeze and run
 
-Written 3 Oct 2026 during the final pass (code review finding 3). `analysis/v2_spec.md` points to the module code "at the commit above" (44ae263); the modules were extended for the v3 battery (`signals(groups=)`, `factor_attribution(lags=)`, `block_bootstrap_sharpe`, `P.SEED`) after the v2 run, and two unused helpers were removed in the final pass. The v2 outputs are byte-identical across all of these versions (`v2_run_log.md`, checked on every notebook run), so no result changed; this file makes the code pointer verifiable again.
+Written 3 Oct 2026 during the final pass (code review finding 3). `analysis/specs/study2_1_variants.md` points to the module code "at the commit above" (44ae263); the modules were extended for the v3 battery (`signals(groups=)`, `factor_attribution(lags=)`, `block_bootstrap_sharpe`, `P.SEED`) after the v2 run, and two unused helpers were removed in the final pass. The v2 outputs are byte-identical across all of these versions (`v2_run_log.md`, checked on every notebook run), so no result changed; this file makes the code pointer verifiable again.
 
 | commit | event | params.py | data.py | stats.py | plots.py |
 |---|---|---|---|---|---|

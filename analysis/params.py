@@ -1,14 +1,15 @@
-"""Constants for the v2 iteration: paths, dates, lags, portfolio settings and variant definitions.
+"""Constants for Study 2 (the post-hoc iteration): paths, dates, lags, portfolio settings and variant definitions.
 
 Nothing here reads data. The portfolio settings mirror the frozen study's params.py and are
 checked against it in run.ipynb (Gate 1).
 """
+import re
 from pathlib import Path
 
 # ---------- paths ----------
 ROOT = Path(__file__).resolve().parent              # analysis/
 PROJECT = ROOT.parent
-FROZEN_REPO = PROJECT / '230ga-follow-the-workers'  # read-only, never written
+FROZEN_REPO = PROJECT / 'study1_preregistered'     # Study 1 (Alex's preregistered study): read-only, never written
 SONNET = FROZEN_REPO / 'outputs' / 'follow_the_workers'            # confirmatory study
 OPUS = FROZEN_REPO / 'outputs' / 'follow_the_workers_opus55_xhigh'  # exploratory follow-up
 SEALED = SONNET / 'outputs' / 'sealed' / 'initial'
@@ -20,9 +21,11 @@ FRENCH = DATA / 'french'
 FRED = DATA / 'fred'                                 # current (revised) FRED, downloaded 3 Oct 2026
 VINTAGE_DATE = '2026-09-29'                          # day before the 30 Sep 2026 decision
 FRED_VINTAGE = DATA / f'alfred_{VINTAGE_DATE}'       # ALFRED as known on VINTAGE_DATE (forward book)
+PACKAGE = DATA / 'alex_package'                      # Alex's data package (as-known panels, vintages); may be absent
+SPECS = ROOT / 'specs'                               # every frozen (hashed) specification
 OUT = ROOT / 'output'
-TABLES = OUT / 'tables'
-FORWARD = ROOT / 'forward'
+OUT1, OUT2, FORWARD = OUT / 'study1', OUT / 'study2', OUT / 'forward'
+TABLES1, TABLES2 = OUT1 / 'tables', OUT2 / 'tables'
 REPORT = PROJECT / 'report'
 FIGS = REPORT / 'figures'
 TEX = REPORT / 'tables'
@@ -90,3 +93,24 @@ VARIANTS = {
     'V2c': 'Equal-rank composite of W and industry momentum 12-1',
     'V2d': '-(z(F2)+z(F3))/2, held 12 months (12 tranches)',
 }
+
+
+# ---------- names (presentation layer; frozen result files keep the original codes inside) ----------
+DISPLAY = {'V2a': 'W', 'V2b': 'SC', 'V2c': 'W+MOM', 'V2d': 'HQ12'}
+STRATEGY_NAMES = {'A0': 'A0 fixed rule', 'A1': 'A1 ridge', 'A1-T': 'A1-T ridge x tightness',
+                  'A3': 'A3 agent features, independent (primary)', 'A4': 'A4 agent features, communicating',
+                  'W': 'W wage growth (declared headline)', 'SC': 'SC signed composite',
+                  'W+MOM': 'W+MOM wage growth + momentum', 'HQ12': 'HQ12 hires + quits reversal, 12-month hold'}
+
+
+def display(text):
+    """Old variant codes -> new names, for figures, LaTeX fragments and new outputs."""
+    for old, new in DISPLAY.items():
+        text = text.replace(old, new)
+    return text
+
+
+def table_path(name):
+    """CSV path of a result table: d1..d10 are Study 1 diagnostics, everything else is Study 2."""
+    name = name[:-4] if name.endswith('.csv') else name
+    return (TABLES1 if re.match(r'd\d', name) else TABLES2) / f'{name}.csv'

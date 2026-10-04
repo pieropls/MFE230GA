@@ -24,7 +24,7 @@ CONF, POST, FWD = 'CONF', 'POST-HOC', 'FWD'
 CALL_COUNTS = [None, None]   # logged model calls (Sonnet, Opus), filled by register_claims from log.jsonl
 SON = P.SONNET / 'outputs'
 OPU = P.OPUS / 'outputs'
-TAB = P.TABLES
+TAB = P.table_path                      # table name -> CSV path (Study 1 diagnostics or Study 2)
 
 
 def rel(path):
@@ -133,7 +133,7 @@ def register_claims():
     RS = rel(SON / 'research_summary.json')
     RO = rel(OPU / 'sealed/initial/results.json')
     RSO = rel(OPU / 'research_summary.json')
-    t = lambda name: rel(TAB / name)
+    t = lambda name: rel(TAB(name))
     # --- confirmatory: sealed test of the preregistered strategies
     claim('C01', 'The preregistered primary A3 earned a test Sharpe of -0.58 over 142 months (Nov 2014-Aug 2026).', [-0.58, 142],
           [f'{R}::variants.ASOF.A3.sharpe', f'{R}::variants.ASOF.A3.n'], CONF)
@@ -213,7 +213,7 @@ def register_claims():
     claim('V14', 'The best post-hoc test Sharpe (V2c, +0.35) corresponds to t of about 1.2 over 142 months (Sharpe times sqrt(142/12)).', 1.2,
           f'{t("v2_window_stats.csv")}::col=sharpe;variant=V2c;window=test', POST, scale=(142 / 12) ** 0.5, decimals=1, note='IID approximation; the Sharpe is read from the file and scaled by sqrt(142/12) = 3.44')
     claim('F09', 'The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 3e8ecd7, 09:18:29Z, holds a byte-identical book_2026Q4.csv, SHA-256 857275...); book_first_build.sha256 records that first build and later notebook runs must reproduce it.', '2026-10-03T09:17:55+00:00',
-          'analysis/forward/book_first_build.sha256::line=2', FWD, note='book_first_build.sha256 was written on 3 Oct from the gate3.md of commit 3e8ecd7; verify with: git show 3e8ecd7:analysis/forward/book_2026Q4.csv | shasum -a 256')
+          'analysis/output/forward/book_first_build.sha256::line=2', FWD, note='book_first_build.sha256 was written on 3 Oct from the gate3.md of commit 3e8ecd7; verify with: git show 3e8ecd7:analysis/output/forward/book_2026Q4.csv | shasum -a 256')
     # --- exploratory Opus follow-up
     claim('X01', 'Opus follow-up: primary A4 test Sharpe +0.01, research Sharpe -0.40, placebo p 0.56, Sharpe at 25 bp -0.19.', [0.01, -0.40, 0.56, -0.19],
           [f'{RO}::variants.ASOF.A4.sharpe', f'{RSO}::strategies.A4.sharpe', f'{RO}::placebo.p', f'{RO}::sensitivities.cost_25.sharpe'], CONF, note='exploratory; after the test was seen')
@@ -221,7 +221,7 @@ def register_claims():
           [f'{RO}::variants.ASOF.A4.IC.1.mean', f'{RO}::variants.ASOF.A4.IC.1.t', f'{RO}::attribution.A4.t_statistics.intercept', f'{RO}::windows.A4.last_18.sharpe'], CONF)
     claim('X03', 'Opus A3 test Sharpe -0.46.', -0.46, f'{RO}::variants.ASOF.A3.sharpe', CONF)
     claim('X04', 'In the Opus A4 book, durable manufacturing alone contributed +0.27 of cumulative gross return in the test.', 0.273,
-          f'{rel(P.OUT / "diagnostics.md")}::table=1||row=Durable mfg||col=A4 (Opus)', POST)
+          f'{rel(P.OUT1 / "diagnostics.md")}::table=1||row=Durable mfg||col=A4 (Opus)', POST)
     # --- diagnostics D1-D9 (post-hoc) and D10 (confirmatory counts)
     d1 = t('d1_signal_ic.csv')
     claim('D01', 'Wage growth W: rank IC +0.029 in research (t 1.54), +0.049 in test (t 2.04), +0.039 full sample (t 2.50).', [0.029, 1.54, 0.049, 2.04, 0.039, 2.50],
@@ -316,16 +316,16 @@ def register_claims():
     eb = rel(P.FORWARD / 'book_2026Q4_etf.csv')
     claim('F04', "V2c's long durable manufacturing and short professional services both map to XLI and cancel, so its tradable book has four legs.", 0.0, f'{eb}::col=v2c_weight;etf=XLI', FWD, decimals=6)
     claim('F05', 'The forward spec was frozen at 2026-10-03T09:03:56Z and amendment 001 at 2026-10-03T09:16:11Z, before the book was built (gate3.md records the order).',
-          ['True', 'True'], [f'{rel(P.OUT / "gate3.md")}::table=0||row=Forward spec frozen before the book was built||col=pass',
-                             f'{rel(P.OUT / "gate3.md")}::table=0||row=Amendment 001 frozen after the v2 results and before the book||col=pass'], FWD)
+          ['True', 'True'], [f'{rel(P.FORWARD / "gate3.md")}::table=0||row=Forward spec frozen before the book was built||col=pass',
+                             f'{rel(P.FORWARD / "gate3.md")}::table=0||row=Amendment 001 frozen after the v2 results and before the book||col=pass'], FWD)
     # --- data and design facts
-    claim('S01', 'Our rebuilt A0 signal matches the frozen fixed-lag scores with pooled correlation 0.998.', 0.998, f'{rel(P.OUT / "data_vintage.md")}::table=0||row=FIXEDLAG||col=pooled_corr', POST)
-    claim('S02', 'As-known (ASOF) scores pick the same top three groups as our revised-data signal in only 42% of test months.', 42, f'{rel(P.OUT / "data_vintage.md")}::table=0||row=ASOF||col=same_top3_share', POST, scale=100)
+    claim('S01', 'Our rebuilt A0 signal matches the frozen fixed-lag scores with pooled correlation 0.998.', 0.998, f'{rel(P.OUT1 / "data_vintage.md")}::table=0||row=FIXEDLAG||col=pooled_corr', POST)
+    claim('S02', 'As-known (ASOF) scores pick the same top three groups as our revised-data signal in only 42% of test months.', 42, f'{rel(P.OUT1 / "data_vintage.md")}::table=0||row=ASOF||col=same_top3_share', POST, scale=100)
     claim('S03', 'Durable manufacturing is 60% semiconductors (Chips) by market cap in August 2026; nondurable manufacturing is 60% pharmaceuticals.', ['Chips 60%, Mach 9%, Autos 7%', 'Drugs 60%, Hshld 9%, Soda 7%'],
           [f'{rel(P.FORWARD / "etf_proxies.csv")}::col=group_composition_aug2026;group=3', f'{rel(P.FORWARD / "etf_proxies.csv")}::col=group_composition_aug2026;group=4'], POST)
     claim('S04', 'Gate 1: the 13 group returns match all 50 saved ledgers to 1.5e-16 and our estimators match results.json to 3.6e-15.', ['1.51e-16', '3.55e-15'],
-          [f'{rel(P.OUT / "validation.md")}::table=0||row=13 group returns vs 50 saved ledgers (both studies, sealed + research)||col=value',
-           f'{rel(P.OUT / "validation.md")}::table=0||row=Estimators vs results.json (IC, IC t, Sharpe, factor coefs and t; A0-A4)||col=value'], CONF)
+          [f'{rel(P.OUT1 / "validation.md")}::table=0||row=13 group returns vs 50 saved ledgers (both studies, sealed + research)||col=value',
+           f'{rel(P.OUT1 / "validation.md")}::table=0||row=Estimators vs results.json (IC, IC t, Sharpe, factor coefs and t; A0-A4)||col=value'], CONF)
     # fix A03 (list lengths) and A05 (means over seeds) with direct computation, keeping the locator text
     h = json.loads((PROJECT / hr).read_text())
     for c in CLAIMS:
@@ -348,13 +348,13 @@ def register_claims():
     claim('F08', 'Hashes: v2 spec ca658234..., forward spec 735a8ffa..., amendment 001 c76cde86..., v3 spec 312aef1d... (first 8 hex digits).',
           ['ca6582347904489bdb6fac1496f895fd18c91eba47ca2bc8566e35cdf44a5832', '735a8ffa9c9c23fd710dfae778a535cad649685aa157dcded3ae0e9996dfb21f',
            'c76cde86a85ff703d317cfeb15dc02a42e342d81a299da2aab959adeb372b12b', '312aef1dd9551aa7044d37ccf8562a8e66cddfe741e0e1097c15cff18ed8bfde'],
-          ['analysis/v2_spec.sha256::line=1', 'analysis/forward/spec_frozen.sha256::line=1', 'analysis/forward/spec_amendment_001.sha256::line=1', 'analysis/v3_spec.sha256::line=1'], FWD)
+          ['analysis/specs/study2_1_variants.sha256::line=1', 'analysis/specs/forward_spec.sha256::line=1', 'analysis/specs/forward_amendment_001.sha256::line=1', 'analysis/specs/study2_2_hq12_robustness.sha256::line=1'], FWD)
     claim('V12', 'V2a turnover 0.39 and V2d turnover 0.37 of the industry book per month in the test; A3 0.91.', [0.39, 0.37],
           [f'{v2}::col=turnover;variant=V2a;window=test', f'{v2}::col=turnover;variant=V2d;window=test'], POST)
     claim('X05', 'Opus study: 7 island-arm candidates passed the research filter against 4 in the Sonnet study.', [7, 4],
           [f'{d7}::col=Opus;item=passed research filter', f'{d7}::col=Sonnet;item=passed research filter'], POST)
     # v3 claims are appended by register_v3_claims() when Stage 2 outputs exist
-    if (P.OUT / 'v3_results.md').exists():
+    if (P.OUT2 / 'v3_results.md').exists():
         register_v3_claims()
 
 
@@ -362,7 +362,7 @@ def register_v3_claims():
     """Filled in at Stage 2 (robustness battery). Kept separate so Stage 1 runs without it."""
     v3 = HERE / 'v3_claims.py'
     if v3.exists():
-        namespace = {'claim': claim, 't': lambda name: rel(TAB / name), 'rel': rel, 'P': P, 'POST': POST, 'CONF': CONF, 'FWD': FWD}
+        namespace = {'claim': claim, 't': lambda name: rel(TAB(name)), 'rel': rel, 'P': P, 'POST': POST, 'CONF': CONF, 'FWD': FWD}
         exec(v3.read_text(), namespace)
 
 
@@ -387,8 +387,8 @@ def scoreboard():
         frozen_row(n + ' (Sonnet)', k, r, rs, 'CONFIRMATORY', 'Do not implement' if k == 'A3' else 'not primary; negative', k == 'A3')
     frozen_row('A3 (Opus follow-up)', 'A3', ro, rso, 'EXPLORATORY', 'exploratory; negative', False)
     frozen_row('A4 primary (Opus follow-up)', 'A4', ro, rso, 'EXPLORATORY', 'exploratory; fails G2-G5', True)
-    v2 = pd.read_csv(TAB / 'v2_window_stats.csv').set_index(['variant', 'window'])
-    rr = pd.read_csv(TAB / 'v2_reading_rule.csv').set_index('variant')
+    v2 = pd.read_csv(TAB('v2_window_stats')).set_index(['variant', 'window'])
+    rr = pd.read_csv(TAB('v2_reading_rule')).set_index('variant')
     desc = {'V2a': 'V2a wage growth (headline)', 'V2b': 'V2b signed composite', 'V2c': 'V2c wage + momentum', 'V2d': 'V2d -(hires+quits), 12m'}
     for v in ['V2a', 'V2b', 'V2c', 'V2d']:
         te = v2.loc[(v, 'test')]
@@ -432,15 +432,15 @@ def scoreboard_tex(frame):
 # ---------------------------------------------------------------- content
 FIGURES = [
     ('fig_timeline.pdf', 'POST-HOC', 'Tightness never exceeded V/U = 1 in the research period, so the tightness moderator could not be learned there.', 'analysis/data/fred (JTSJOL, UNEMPLOY)'),
-    ('fig_ic_signals.pdf', 'POST-HOC', 'Only wage growth has an IC above 1.5 standard errors in both periods; layoffs and hours carry the opposite sign to the one A0 imposed.', 'analysis/output/tables/d1_signal_ic.csv'),
-    ('fig_horizon.pdf', 'POST-HOC', 'Hires and quits turn negative at 12 months (t -2.1, -1.7): the investment/cost channel shows up slowly, not at one month.', 'analysis/output/tables/d2_horizon_ic.csv'),
-    ('fig_tightness.pdf', 'POST-HOC', 'Split by whether T rose or fell over 12 months, hires and quits predict returns only while the market tightens; the split is balanced in both periods.', 'analysis/output/tables/d3_tightness_ic.csv'),
-    ('fig_cumulative.pdf', 'CONFIRMATORY (A0-A4) / POST-HOC (momentum, V2a)', 'Every preregistered strategy lost money in the test; the post-hoc wage-growth book gained until 2024 and gave much of it back.', 'sealed/initial/ASOF_*_ledger.csv; analysis/output/tables/v2_monthly_net.csv'),
-    ('fig_industry_pnl.pdf', 'POST-HOC', 'A3 lost most in health care, construction and finance; trading costs were a secondary drag.', 'analysis/output/tables/d5_industry_pnl.csv'),
-    ('fig_loadings.pdf', 'CONFIRMATORY (A0, A1, A3) / POST-HOC (V2a)', 'The labor books are quality/growth tilts: A3 loads on RMW and against HML; V2a loads against HML and on momentum.', 'results.json attribution; analysis/output/tables/v2a_factor_loadings_test.csv'),
-    ('fig_agents_scatter.pdf', 'POST-HOC', 'Research IC of agent features barely predicts their test IC; the selected regime-gated features were active in 3 test months.', 'analysis/output/tables/d7_agent_candidates.csv'),
+    ('fig_ic_signals.pdf', 'POST-HOC', 'Only wage growth has an IC above 1.5 standard errors in both periods; layoffs and hours carry the opposite sign to the one A0 imposed.', 'analysis/output/study1/tables/d1_signal_ic.csv'),
+    ('fig_horizon.pdf', 'POST-HOC', 'Hires and quits turn negative at 12 months (t -2.1, -1.7): the investment/cost channel shows up slowly, not at one month.', 'analysis/output/study1/tables/d2_horizon_ic.csv'),
+    ('fig_tightness.pdf', 'POST-HOC', 'Split by whether T rose or fell over 12 months, hires and quits predict returns only while the market tightens; the split is balanced in both periods.', 'analysis/output/study1/tables/d3_tightness_ic.csv'),
+    ('fig_cumulative.pdf', 'CONFIRMATORY (A0-A4) / POST-HOC (momentum, V2a)', 'Every preregistered strategy lost money in the test; the post-hoc wage-growth book gained until 2024 and gave much of it back.', 'sealed/initial/ASOF_*_ledger.csv; analysis/output/study2/tables/v2_monthly_net.csv'),
+    ('fig_industry_pnl.pdf', 'POST-HOC', 'A3 lost most in health care, construction and finance; trading costs were a secondary drag.', 'analysis/output/study1/tables/d5_industry_pnl.csv'),
+    ('fig_loadings.pdf', 'CONFIRMATORY (A0, A1, A3) / POST-HOC (V2a)', 'The labor books are quality/growth tilts: A3 loads on RMW and against HML; V2a loads against HML and on momentum.', 'results.json attribution; analysis/output/study2/tables/v2a_factor_loadings_test.csv'),
+    ('fig_agents_scatter.pdf', 'POST-HOC', 'Research IC of agent features barely predicts their test IC; the selected regime-gated features were active in 3 test months.', 'analysis/output/study1/tables/d7_agent_candidates.csv'),
     ('fig_agents.pdf', 'CONFIRMATORY', 'Two arms with equal budgets, a blinded evaluator, mechanical selection and a human-audited LLM judge.', 'frozen params.py AGENT'),
-    ('fig_v2_windows.pdf', 'POST-HOC / CONFIRMATORY (A3 bars)', 'V2d is the only variant positive in every window; V2a and V2c lost heavily in the last 18 months.', 'analysis/output/tables/v2_window_stats.csv'),
+    ('fig_v2_windows.pdf', 'POST-HOC / CONFIRMATORY (A3 bars)', 'V2d is the only variant positive in every window; V2a and V2c lost heavily in the last 18 months.', 'analysis/output/study2/tables/v2_window_stats.csv'),
 ]
 
 TABLES = [
@@ -475,7 +475,7 @@ AI_ROWS = [
      'Asserted uncomputed p-values and proposed unregistered thresholds; every suggestion was already covered by a registered diagnostic.',
      'No new test adopted (all dispositions "covered by" or "not adopted"); registered diagnostics retained.'),
     ('P5', 'Post-mortem review of the frozen study', 'claude-opus-5-5 (Claude Code, 3 Oct 2026)',
-     'conversation request (Piero, 3 Oct 2026); docs/FINDINGS_AND_PROPOSAL.md', 'docs/FINDINGS_AND_PROPOSAL.md, analysis/output/diagnostics.md',
+     'conversation request (Piero, 3 Oct 2026); docs/FINDINGS_AND_PROPOSAL.md', 'docs/FINDINGS_AND_PROPOSAL.md, analysis/output/study1/diagnostics.md',
      'Found the wrong A0 signs, the dropped wage signal, the 12-month hiring sign, the 3-of-142-month agent features, the one-bin tightness split.',
      'Guessed the engineering assistant was OpenAI Codex (unverified); used a momentum definition that included month m-1; quoted W ICs with a non-frozen start date.',
      'Momentum redefined on m-12..m-2; W ICs recomputed with the frozen feature start; Codex guess withdrawn (to be confirmed by Alex).'),
@@ -510,7 +510,7 @@ def write_markdown(board, verdict_text, v3_text):
     L = ['# Follow the Workers: Results Book', '', 'Generated by `results/build_results_book.py`. Every number traces to the file named next to it; '
          'the claims register (`claims.csv`) is the only source the report may quote.', '']
     L += ['## 1. Verdict', '', verdict_text or '*VERDICT.md is written at Stage 3.*', '']
-    L += ['## 2. Scoreboard', '', 'Source: `results/scoreboard.csv` (built from results.json, research_summary.json of both studies and analysis/output/tables/v2_*.csv). '
+    L += ['## 2. Scoreboard', '', 'Source: `results/scoreboard.csv` (built from results.json, research_summary.json of both studies and analysis/output/study2/tables/v2_*.csv). '
           'IC is one-month except V2d (12-month, its holding horizon). DSR: research-period value with 41 nominal trials for the frozen studies; test-window value with 112 trials for v2.', '']
     rows = [[x.strategy, x.label, f'{x.research_sharpe:+.2f}', f'{x.test_sharpe:+.2f}', f'{x.full_sharpe:+.2f}', f'{x.last18_sharpe:+.2f}', f'{x.ic:+.3f} ({x.ic_t:+.2f})',
              f'{100 * x.alpha_month:+.2f}% ({x.alpha_t:+.2f})', '' if pd.isna(x.placebo_p) else f'{x.placebo_p:.2f}', f'{x.dsr:.2f}', x.verdict] for _, x in board.iterrows()]
@@ -518,14 +518,14 @@ def write_markdown(board, verdict_text, v3_text):
     L += ['## 3. Figures', '']
     for f, lab, take, src in FIGURES:
         L += [f'- **`report/figures/{f}`** [{lab}]: {take} Source: {src}.']
-    L += ['', '## 4. Statistics', '', 'Each table is in `analysis/output/tables/<name>.csv` with a LaTeX fragment in `report/tables/<name>.tex`; the numbers are listed in `analysis/output/diagnostics_v2.md` and `analysis/output/v2_results.md`.', '']
+    L += ['', '## 4. Statistics', '', 'Each table is in `analysis/output/study2/tables/<name>.csv` with a LaTeX fragment in `report/tables/<name>.tex`; the numbers are listed in `analysis/output/study1/diagnostics_v2.md` and `analysis/output/study2/v2_results.md`.', '']
     L += [f'- `{n}`: {title} [{lab}]' for n, title, lab in TABLES]
     if v3_text:
         L += ['', v3_text]
     L += ['', '## 5. The agent experiment', '', '']
-    d10 = pd.read_csv(TAB / 'd10_agent_design.csv')
+    d10 = pd.read_csv(TAB('d10_agent_design'))
     L += [md_table(d10[['study', 'item', 'value', 'source']].values.tolist(), ['Study', 'Item', 'Value', 'Source']), '']
-    d7 = pd.read_csv(TAB / 'd7_selected_features.csv')
+    d7 = pd.read_csv(TAB('d7_selected_features'))
     L += ['Selected features and their research -> test fate (`d7_selected_features.csv`):', '',
           md_table([[r.study, r.arm, r.decoded, f'{r.research_ic:+.3f} ({int(r.research_n)})', ('n/a' if pd.isna(r.test_ic) else f'{r.test_ic:+.3f}') + f' ({int(r.test_n)})', 'yes' if r.gated else 'no'] for r in d7.itertuples()],
                    ['Study', 'Arm', 'Feature (decoded)', 'Research IC (n)', 'Test IC (n)', 'Regime-gated']), '',
@@ -552,7 +552,7 @@ def write_tex(board, v3_tex):
           r'{\scriptsize\input{tables/scoreboard}}']
     L += [r'\section{Figures}']
     L += [tfig(f, pill(lab), take, src) for f, lab, take, src in FIGURES]
-    L += [r'\clearpage\section{Statistics}', 'Each table lives in \\path{analysis/output/tables/<name>.csv}; the LaTeX fragment in \\path{report/tables/<name>.tex}.']
+    L += [r'\clearpage\section{Statistics}', 'Each table lives in \\path{analysis/output/study2/tables/<name>.csv}; the LaTeX fragment in \\path{report/tables/<name>.tex}.']
     for n, title, lab in TABLES:
         L += [f'\\subsection*{{{tex_escape(title)} \\hfill {pill(lab)}}}', f'{{\\footnotesize\\setlength{{\\tabcolsep}}{{4pt}}\\input{{../report/tables/{n}}}}}\\par', r'\medskip']
     if v3_tex:

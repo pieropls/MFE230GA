@@ -1,6 +1,6 @@
 ### 4b. V2d robustness battery (v3, POST-HOC)
 
-Spec `analysis/v3_spec.md` frozen 2026-10-03T09:52:27Z (sha256 `312aef1d…`), first run 09:53:32Z; results in `analysis/output/v3_results.md`; N_trials raised to 132. **Reading against the pre-declared rule: fragile in one dimension (R4): V2d lost money in the first half of the test (Sharpe −0.21) and made it in the second (+0.64). The other six conditions hold.**
+Spec `analysis/specs/study2_2_hq12_robustness.md` frozen 2026-10-03T09:52:27Z (sha256 `312aef1d…`), first run 09:53:32Z; results in `analysis/output/study2/v3_results.md`; N_trials raised to 132. **Reading against the pre-declared rule: fragile in one dimension (R4): V2d lost money in the first half of the test (Sharpe −0.21) and made it in the second (+0.64). The other six conditions hold.**
 
 | ID | Table | Figure | One-line result |
 |---|---|---|---|

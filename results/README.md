@@ -1,6 +1,6 @@
 # results/: claims register, scoreboard, Results Book, verdict
 
-Everything the report quotes comes from here. `build_results_book.py` reads the frozen study's `results.json` and the CSV tables in `../analysis/output/tables/`, registers every claim with a locator, re-verifies each one and writes the files below.
+Everything the report quotes comes from here. `build_results_book.py` reads the frozen study's `results.json` and the CSV tables in `../analysis/output/study2/tables/`, registers every claim with a locator, re-verifies each one and writes the files below.
 
 | File | Contents |
 |---|---|

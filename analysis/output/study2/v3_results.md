@@ -1,6 +1,6 @@
 # v3 results: robustness battery for V2d (POST-HOC)
 
-First run **2026-10-03T09:53:32+00:00** (regenerated 2026-10-03T22:21:35+00:00, outputs verified identical to the first run via v3_run_log.md). Spec `analysis/v3_spec.md` frozen at **2026-10-03T09:52:27+00:00** (sha256 `312aef1dd9551aa7044d37ccf8562a8e66cddfe741e0e1097c15cff18ed8bfde`). Deflated Sharpe ratios use N_trials = 132. Data: revised FRED values with fixed lags (`data_vintage.md`). Nothing here changes the confirmatory verdict (A3, Do not implement).
+First run **2026-10-03T09:53:32+00:00** (regenerated 2026-10-04T09:15:03+00:00, outputs verified identical to the first run via v3_run_log.md). Spec `analysis/specs/study2_2_hq12_robustness.md` frozen at **2026-10-03T09:52:27+00:00** (sha256 `312aef1dd9551aa7044d37ccf8562a8e66cddfe741e0e1097c15cff18ed8bfde`). Deflated Sharpe ratios use N_trials = 132. Data: revised FRED values with fixed lags (`data_vintage.md`). Nothing here changes the confirmatory verdict (A3, Do not implement).
 
 ## Reading against the pre-declared rule (v3_spec.md section 3)
 
@@ -18,7 +18,7 @@ First run **2026-10-03T09:53:32+00:00** (regenerated 2026-10-03T22:21:35+00:00, 
 
 ## R1 Components (held 12 months)
 
-Source: `analysis/output/tables/v3_r1_components.csv` (LaTeX `report/tables/v3_r1_components.tex`).
+Source: `analysis/output/study2/tables/v3_r1_components.csv` (LaTeX `report/tables/v3_r1_components.tex`).
 
 | Book (held 12 months) | Sharpe research | Sharpe test | Sharpe full | Test IC 12m (t) | Test alpha t |
 |---|---|---|---|---|---|
@@ -30,7 +30,7 @@ Source: `analysis/output/tables/v3_r1_components.csv` (LaTeX `report/tables/v3_r
 
 ## R2 Horizon profile: IC (t) of the V2d score
 
-Source: `analysis/output/tables/v3_r2_horizon_profile.csv` (LaTeX `report/tables/v3_r2_horizon_profile.tex`).
+Source: `analysis/output/study2/tables/v3_r2_horizon_profile.csv` (LaTeX `report/tables/v3_r2_horizon_profile.tex`).
 
 | Horizon | research | test | full |
 |---|---|---|---|
@@ -44,7 +44,7 @@ Source: `analysis/output/tables/v3_r2_horizon_profile.csv` (LaTeX `report/tables
 
 ## R3 Holding period: Sharpe by window
 
-Source: `analysis/output/tables/v3_r3_holding.csv` (LaTeX `report/tables/v3_r3_holding.tex`).
+Source: `analysis/output/study2/tables/v3_r3_holding.csv` (LaTeX `report/tables/v3_r3_holding.tex`).
 
 | Holding | research | test | full | post-2010 | last 18m | Test turnover |
 |---|---|---|---|---|---|---|
@@ -55,7 +55,7 @@ Source: `analysis/output/tables/v3_r3_holding.csv` (LaTeX `report/tables/v3_r3_h
 
 ## R4 Sub-periods
 
-Source: `analysis/output/tables/v3_r4_subperiods.csv` (LaTeX `report/tables/v3_r4_subperiods.tex`).
+Source: `analysis/output/study2/tables/v3_r4_subperiods.csv` (LaTeX `report/tables/v3_r4_subperiods.tex`).
 
 | Window | Months | Sharpe | Net p.a. | IC 12m (t) |
 |---|---|---|---|---|
@@ -71,7 +71,7 @@ Source: `analysis/output/tables/v3_r4_subperiods.csv` (LaTeX `report/tables/v3_r
 
 ## R5 Costs
 
-Source: `analysis/output/tables/v3_r5_costs.csv` (LaTeX `report/tables/v3_r5_costs.tex`).
+Source: `analysis/output/study2/tables/v3_r5_costs.csv` (LaTeX `report/tables/v3_r5_costs.tex`).
 
 | Window | 0 bp | 10 bp | 25 bp | 50 bp | Break-even (bp) |
 |---|---|---|---|---|---|
@@ -83,7 +83,7 @@ Source: `analysis/output/tables/v3_r5_costs.csv` (LaTeX `report/tables/v3_r5_cos
 
 ## R6 Factor regression, HAC 12 lags
 
-Source: `analysis/output/tables/v3_r6_alpha.csv` (LaTeX `report/tables/v3_r6_alpha.tex`).
+Source: `analysis/output/study2/tables/v3_r6_alpha.csv` (LaTeX `report/tables/v3_r6_alpha.tex`).
 
 | Factor | Test (HAC 12) | Full (HAC 12) |
 |---|---|---|
@@ -98,7 +98,7 @@ Source: `analysis/output/tables/v3_r6_alpha.csv` (LaTeX `report/tables/v3_r6_alp
 
 ## R7 Drop one industry (summary)
 
-Source: `analysis/output/tables/v3_r7_dropone_summary.csv` (LaTeX `report/tables/v3_r7_dropone_summary.tex`).
+Source: `analysis/output/study2/tables/v3_r7_dropone_summary.csv` (LaTeX `report/tables/v3_r7_dropone_summary.tex`).
 
 | statistic | Test Sharpe | Full Sharpe |
 |---|---|---|
@@ -111,7 +111,7 @@ Source: `analysis/output/tables/v3_r7_dropone_summary.csv` (LaTeX `report/tables
 
 ## R8 Tightness moderator
 
-Source: `analysis/output/tables/v3_r8_tightness.csv` (LaTeX `report/tables/v3_r8_tightness.tex`).
+Source: `analysis/output/study2/tables/v3_r8_tightness.csv` (LaTeX `report/tables/v3_r8_tightness.tex`).
 
 | Window: regime | Months | Sharpe | Net p.a. | IC 12m (t) |
 |---|---|---|---|---|
@@ -126,7 +126,7 @@ Source: `analysis/output/tables/v3_r8_tightness.csv` (LaTeX `report/tables/v3_r8
 
 ## R9 Block-bootstrap 90% interval
 
-Source: `analysis/output/tables/v3_r9_bootstrap.csv` (LaTeX `report/tables/v3_r9_bootstrap.tex`).
+Source: `analysis/output/study2/tables/v3_r9_bootstrap.csv` (LaTeX `report/tables/v3_r9_bootstrap.tex`).
 
 | Window | Sharpe | 90% interval | Months | Excludes 0 |
 |---|---|---|---|---|
@@ -135,7 +135,7 @@ Source: `analysis/output/tables/v3_r9_bootstrap.csv` (LaTeX `report/tables/v3_r9
 
 ## R10 As-known data
 
-Source: `analysis/output/tables/v3_r10_asknown.csv` (LaTeX `report/tables/v3_r10_asknown.tex`).
+Source: `analysis/output/study2/tables/v3_r10_asknown.csv` (LaTeX `report/tables/v3_r10_asknown.tex`).
 
 | check | status | note |
 |---|---|---|
@@ -143,7 +143,7 @@ Source: `analysis/output/tables/v3_r10_asknown.csv` (LaTeX `report/tables/v3_r10
 
 ## R11 Fundamental law (test window)
 
-Source: `analysis/output/tables/v3_r11_fundamental_law.csv` (LaTeX `report/tables/v3_r11_fundamental_law.tex`).
+Source: `analysis/output/study2/tables/v3_r11_fundamental_law.csv` (LaTeX `report/tables/v3_r11_fundamental_law.tex`).
 
 | Book (test window) | IC | Horizon | BR/yr | TC | Implied IR | Ceiling (TC=1) | Realised Sharpe |
 |---|---|---|---|---|---|---|---|
@@ -153,7 +153,7 @@ Source: `analysis/output/tables/v3_r11_fundamental_law.csv` (LaTeX `report/table
 
 ## Deflated Sharpe at 112 vs 132 trials
 
-Source: `analysis/output/tables/v3_dsr132.csv` (LaTeX `report/tables/v3_dsr132.tex`).
+Source: `analysis/output/study2/tables/v3_dsr132.csv` (LaTeX `report/tables/v3_dsr132.tex`).
 
 | Variant | Window | DSR (112 trials) | DSR (132 trials) | Benchmark Sharpe (132) |
 |---|---|---|---|---|

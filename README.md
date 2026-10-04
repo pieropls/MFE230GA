@@ -19,14 +19,14 @@ MFE 230GA – Equity Markets · UC Berkeley Haas · Fall 2026 · Final project
 1. **H1, demand channel (preregistered, tested once): rejected.** Ranking 13 industry groups on the year-over-year change in openings, hires, layoffs and hours, as known at the time, lost 4.6% a year after costs over 142 untouched months (Sharpe −0.58, IC −0.021, placebo p 0.72). *Do not implement.*
 2. **Why it failed:** two of the four preregistered signs (layoffs, hours) have the opposite sign in the data; the one stable one-month signal, wage growth, was dropped during the build; and the labor market never tightened in the research years, so the tightness moderator (H3) could not be tested.
 3. **H2, cost and investment channel (post hoc): consistent with the data, not established.** Industries that hire and lose workers fastest earn lower returns over the following 9 to 24 months. A 12-month book on that sign (V2d) is positive in every window (test Sharpe +0.29, 12-month IC +0.096, t 2.43) but was designed after the test was opened, lost money in the first test half and has a deflated Sharpe of 0.05 after 132 looks.
-4. **Forward test:** four paper books, frozen on 3 October 2026 for the 30 September decision and held to 31 December, with no capital behind them ([analysis/forward/](analysis/forward/)).
+4. **Forward test:** four paper books, frozen on 3 October 2026 for the 30 September decision and held to 31 December, with no capital behind them ([analysis/output/forward/](analysis/output/forward/)).
 5. **Claude as research assistant:** a useful auditor and idea generator when a human checked every claim against the code and data and it could not change the rules after seeing results; all 25 P1 findings, 10 P4 concerns and 25 judge labels needed that check.
 
 ---
 
 ## Every strategy we ran
 
-Net Sharpe ratios after 10 bp industry costs and 2 bp hedge costs, annualised. Source: [results/scoreboard.csv](results/scoreboard.csv), built by [results/build_results_book.py](results/build_results_book.py) from the frozen `results.json` and [analysis/output/tables/](analysis/output/tables/).
+Net Sharpe ratios after 10 bp industry costs and 2 bp hedge costs, annualised. Source: [results/scoreboard.csv](results/scoreboard.csv), built by [results/build_results_book.py](results/build_results_book.py) from the frozen `results.json` and [analysis/output/study2/tables/](analysis/output/study2/tables/).
 
 | Strategy | Label | Research | Test | Full | Last 18 m | IC (t) | DSR | Reading |
 |---|---|---:|---:|---:|---:|---:|---:|---|
@@ -58,7 +58,7 @@ Net Sharpe ratios after 10 bp industry costs and 2 bp hedge costs, annualised. S
 
 ```mermaid
 flowchart LR
-  A[Frozen study<br/>230ga-follow-the-workers<br/>sealed results.json] -->|read-only import| B[analysis/run.ipynb]
+  A[Frozen study<br/>study1_preregistered<br/>sealed results.json] -->|read-only import| B[analysis/run.ipynb]
   D[Ken French 49 industries<br/>FRED + ALFRED labor series] --> B
   B --> G1{Gate 1<br/>reproduce sealed A0<br/>to 1e-16}
   G1 -->|pass| C[Diagnostics D1–D10]
@@ -105,7 +105,7 @@ Gates, in the order the notebook runs them: **Gate 1** rebuilds the 13 group ret
 |---|---|
 | [README.md](README.md) | this page |
 | [requirements.txt](requirements.txt) | Python packages (loose pins; recorded versions in the comment) |
-| [230ga-follow-the-workers/](230ga-follow-the-workers/) | Alex's frozen preregistered study, imported with his git history at `c67c486`. Read-only ([provenance](docs/frozen_provenance.md)) |
+| [study1_preregistered/](study1_preregistered/) | Alex's frozen preregistered study, imported with his git history at `c67c486`. Read-only ([provenance](docs/frozen_provenance.md)) |
 | [analysis/](analysis/) | our iteration: `params.py`, `data.py`, `stats.py`, `plots.py`, `run.ipynb`; frozen specs; forward test; outputs ([README](analysis/README.md)) |
 | [results/](results/) | claims register, scoreboard, Results Book (PDF + markdown), verdict ([README](results/README.md)) |
 | [report/](report/) | LaTeX report on the house template: `main.tex`, `preamble.tex`, `refs.bib`, `figures/`, `tables/`, `code/` |
@@ -118,14 +118,14 @@ Gates, in the order the notebook runs them: **Gate 1** rebuilds the 13 group ret
 
 | Artefact | SHA-256 (first 8) | Frozen (UTC, 3 Oct 2026) | First run | Commit |
 |---|---|---|---|---|
-| [analysis/v2_spec.md](analysis/v2_spec.md) (V2a–V2d, reading rule, 112 looks) | `ca658234` | 09:00:13 | 09:01:55 | `44ae263` |
-| [analysis/forward/spec_frozen.md](analysis/forward/spec_frozen.md) | `735a8ffa` | 09:03:56 | book 09:17:55 | `f90b66c` |
-| [analysis/forward/spec_amendment_001.md](analysis/forward/spec_amendment_001.md) | `c76cde86` | 09:16:11 | book 09:17:55 | `22c67db` |
-| [analysis/forward/book_2026Q4.csv](analysis/forward/book_2026Q4.csv) (first build) | `85727526` | 09:17:55 | | `3e8ecd7` |
-| [analysis/v3_spec.md](analysis/v3_spec.md) (R1–R11, 132 looks) | `312aef1d` | 09:52:27 | 09:53:32 | `c7014d9` |
+| [analysis/specs/study2_1_variants.md](analysis/specs/study2_1_variants.md) (V2a–V2d, reading rule, 112 looks) | `ca658234` | 09:00:13 | 09:01:55 | `44ae263` |
+| [analysis/specs/forward_spec.md](analysis/specs/forward_spec.md) | `735a8ffa` | 09:03:56 | book 09:17:55 | `f90b66c` |
+| [analysis/specs/forward_amendment_001.md](analysis/specs/forward_amendment_001.md) | `c76cde86` | 09:16:11 | book 09:17:55 | `22c67db` |
+| [analysis/output/forward/book_2026Q4.csv](analysis/output/forward/book_2026Q4.csv) (first build) | `85727526` | 09:17:55 | | `3e8ecd7` |
+| [analysis/specs/study2_2_hq12_robustness.md](analysis/specs/study2_2_hq12_robustness.md) (R1–R11, 132 looks) | `312aef1d` | 09:52:27 | 09:53:32 | `c7014d9` |
 | Frozen study folder (3,067 files) | `eb109be9` | imported at `c67c486` with Alex's history | checked every run | [provenance](docs/frozen_provenance.md) |
 
-- [analysis/output/v2_run_log.md](analysis/output/v2_run_log.md) and [v3_run_log.md](analysis/output/v3_run_log.md) hold the hashes of the first run; later runs must reproduce them or the notebook stops.
+- [analysis/output/study2/v2_run_log.md](analysis/output/study2/v2_run_log.md) and [v3_run_log.md](analysis/output/study2/v3_run_log.md) hold the hashes of the first run; later runs must reproduce them or the notebook stops.
 - [report/check_sources.py](report/check_sources.py) fails the build if a `% src:` comment swallows text.
 - The forward test is evaluated once, on 31 December 2026, whatever it shows.
 - Issues found and deliberately not fixed, because fixing them would change a frozen file or a recorded result: [docs/OPEN_ISSUES.md](docs/OPEN_ISSUES.md).
@@ -144,7 +144,7 @@ Claude did every AI job, which this term's course allows; the switch from the Ch
 
 - **Ken French Data Library**: 49 value-weighted industry portfolios, five factors and momentum (CRSP build 202608). Free for academic and non-commercial use with attribution. [analysis/data/french/](analysis/data/french/).
 - **BLS JOLTS and CES via FRED**: industry openings, hires, quits and layoffs rates (not seasonally adjusted), average weekly hours and hourly earnings; `JTSJOL` and `UNEMPLOY` for tightness. BLS data are U.S. government works in the public domain; FRED and ALFRED redistribute them under the St. Louis Fed terms of use. Current values in [analysis/data/fred/](analysis/data/fred/), the 29 September 2026 vintage in [analysis/data/alfred_2026-09-29/](analysis/data/alfred_2026-09-29/).
-- The frozen study's own ALFRED vintage files sit inside [230ga-follow-the-workers/](230ga-follow-the-workers/) and are not duplicated here.
+- The frozen study's own ALFRED vintage files sit inside [study1_preregistered/](study1_preregistered/) and are not duplicated here.
 
 ---
 

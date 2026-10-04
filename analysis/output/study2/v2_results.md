@@ -1,12 +1,12 @@
 # v2 results (POST-HOC)
 
-First run at **2026-10-03T09:01:55+00:00** (this file regenerated at 2026-10-03T22:21:18+00:00; outputs verified identical to the first run, see v2_run_log.md). Specification `analysis/v2_spec.md` was frozen at **2026-10-03T09:00:13+00:00** (sha256 `ca6582347904489bdb6fac1496f895fd18c91eba47ca2bc8566e35cdf44a5832`, commit 44ae263) before this run. All four variants are reported. Labor data are revised FRED values with fixed lags (`data_vintage.md`); returns and portfolio construction are the frozen study's (Gate 1).
+First run at **2026-10-03T09:01:55+00:00** (this file regenerated at 2026-10-04T09:14:47+00:00; outputs verified identical to the first run, see v2_run_log.md). Specification `analysis/specs/study2_1_variants.md` was frozen at **2026-10-03T09:00:13+00:00** (sha256 `ca6582347904489bdb6fac1496f895fd18c91eba47ca2bc8566e35cdf44a5832`, commit 44ae263) before this run. All four variants are reported. Labor data are revised FRED values with fixed lags (`data_vintage.md`); returns and portfolio construction are the frozen study's (Gate 1).
 
 The confirmatory verdict is unchanged: primary A3, test Sharpe -0.58, **Do not implement**.
 
 ## Reading rule (v2_spec.md section 6), test window
 
-Source: `analysis/output/tables/v2_reading_rule.csv`.
+Source: `analysis/output/study2/tables/v2_reading_rule.csv`.
 
 | variant | sharpe_25bp_positive | ic_t_ge_2 | alpha_t_ge_2 | ic_positive_both_halves | placebo_p_lt_0.05 | dsr_gt_0.95 | reading |
 |---|---|---|---|---|---|---|---|
@@ -17,7 +17,7 @@ Source: `analysis/output/tables/v2_reading_rule.csv`.
 
 ## Sharpe ratio by window (10 bp)
 
-Source: `analysis/output/tables/v2_window_stats.csv` (column `sharpe`).
+Source: `analysis/output/study2/tables/v2_window_stats.csv` (column `sharpe`).
 
 | variant | research | test | full | post-2010 | last 18m |
 |---|---|---|---|---|---|
@@ -40,7 +40,7 @@ Sources: research_summary.json (research, 88 months Jun 2007-Sep 2014); results.
 
 ## All statistics, every variant and window
 
-Source: `analysis/output/tables/v2_window_stats.csv`. Net return, volatility, drawdown and hit rate in decimals; alpha per month; DSR uses N_trials = 112 and trial variance 1/T.
+Source: `analysis/output/study2/tables/v2_window_stats.csv`. Net return, volatility, drawdown and hit rate in decimals; alpha per month; DSR uses N_trials = 112 and trial variance 1/T.
 
 ### V2a: Cross-sectional rank of W (headline)
 
@@ -136,7 +136,7 @@ Source: `analysis/output/tables/v2_window_stats.csv`. Net return, volatility, dr
 
 ## V2b signs, learned on research months only (May 2004-Sep 2014)
 
-Source: `analysis/output/tables/v2b_signs.csv`.
+Source: `analysis/output/study2/tables/v2b_signs.csv`.
 
 | index | research_ic | sign |
 |---|---|---|
@@ -149,7 +149,7 @@ Source: `analysis/output/tables/v2b_signs.csv`.
 
 ## P&L by industry (sum of monthly contributions, 10 bp)
 
-Source: `analysis/output/tables/v2_pnl_by_industry.csv`.
+Source: `analysis/output/study2/tables/v2_pnl_by_industry.csv`.
 
 | component | V2a test | V2a full | V2b test | V2b full | V2c test | V2c full | V2d test | V2d full |
 |---|---|---|---|---|---|---|---|---|
@@ -171,7 +171,7 @@ Source: `analysis/output/tables/v2_pnl_by_industry.csv`.
 
 ## Files
 
-- `analysis/output/tables/v2_window_stats.csv`, `v2_reading_rule.csv`, `v2b_signs.csv`, `v2_monthly_net.csv`, `v2_pnl_by_industry.csv`, `v2a_factor_loadings_test.csv`
+- `analysis/output/study2/tables/v2_window_stats.csv`, `v2_reading_rule.csv`, `v2b_signs.csv`, `v2_monthly_net.csv`, `v2_pnl_by_industry.csv`, `v2a_factor_loadings_test.csv`
 - `report/tables/v2_results.tex`
 - `report/figures/fig_v2_windows.pdf`; V2a added to `fig_cumulative.pdf` and `fig_loadings.pdf`
 
@@ -181,7 +181,7 @@ Added on 3 Oct 2026 after the v2 results above had been seen, at the team's requ
 
 V2d is held 12 months, so this check uses its 12-month IC: the rank IC between the score and the 12-month compounded relative return (months m to m+11). The score panel is rolled circularly against that target within each window by every shift from 24 to n-24 months; p is the share of shifted mean ICs at or above the actual one. Months at the end of the sample without a complete 12-month return drop out. The 12-month returns overlap, which the circular shift preserves but does not correct.
 
-Source: `analysis/output/tables/v2d_placebo_12m.csv`.
+Source: `analysis/output/study2/tables/v2d_placebo_12m.csv`.
 
 | window | ic_12m | placebo_p_12m | shifts | placebo_p_1m_predeclared |
 |---|---|---|---|---|

@@ -1,8 +1,8 @@
 # Follow the Workers: where the project stands, what is wrong with it, and how to fix it
 
-*Prepared 3 Oct 2026 for Piero, the team, and the Claude chat where the blueprint was written. Based on a full read of Alex's repository ([230ga-follow-the-workers/](230ga-follow-the-workers/), commit `c67c486`, 2 Oct), the blueprint artifact ([docs/blueprint.html](230GA%20-%20Project.html), v4, 24 Sep), the build-and-run prompt, the catch-up briefing and the assignment sheet ([docs/course/FinalProject.pdf](docs/course/FinalProject.pdf)).*
+*Prepared 3 Oct 2026 for Piero, the team, and the Claude chat where the blueprint was written. Based on a full read of Alex's repository ([study1_preregistered/](study1_preregistered/), commit `c67c486`, 2 Oct), the blueprint artifact ([docs/blueprint.html](230GA%20-%20Project.html), v4, 24 Sep), the build-and-run prompt, the catch-up briefing and the assignment sheet ([docs/course/FinalProject.pdf](docs/course/FinalProject.pdf)).*
 
-*Source of the numbers. Unmarked numbers come from the saved outputs of the two completed studies. Numbers marked **[exploratory]** come from my own diagnostics, which are post-hoc and use revised public data. Those diagnostics are in [analysis/diagnostics.py](analysis/diagnostics.py), with output in [analysis/output/diagnostics.md](analysis/output/diagnostics.md). They change nothing in either study.*
+*Source of the numbers. Unmarked numbers come from the saved outputs of the two completed studies. Numbers marked **[exploratory]** come from my own diagnostics, which are post-hoc and use revised public data. Those diagnostics are in [analysis/diagnostics.py](analysis/diagnostics.py), with output in [analysis/output/study1/diagnostics.md](analysis/output/study1/diagnostics.md). They change nothing in either study.*
 
 ---
 
@@ -57,14 +57,14 @@ Both studies conclude **"Do not implement"**. The engineering discipline is exce
 | [docs/FINDINGS_AND_PROPOSAL.md](docs/FINDINGS_AND_PROPOSAL.md) | This document | Claude |
 | Blueprint v4 (HTML artifact, kept outside the repository) | Design, data links, pipeline, rubric map | Piero |
 | [docs/course/FinalProject.pdf](docs/course/FinalProject.pdf) | Course assignment sheet | Professor |
-| [230ga-follow-the-workers/](230ga-follow-the-workers/) | Clone of Alex's private repo, left untouched (`git pull` updates it) | Alex |
+| [study1_preregistered/](study1_preregistered/) | Clone of Alex's private repo, left untouched (`git pull` updates it) | Alex |
 | [analysis/](analysis/) | My exploratory rebuild from public data, plus `diagnostics.py`. Independent of the frozen pipeline. | Claude |
 
 Inside the team repo, read these first:
-- [README.md](230ga-follow-the-workers/README.md), [handoff.md](230ga-follow-the-workers/handoff.md) and [TEAM_REVIEW.md](230ga-follow-the-workers/TEAM_REVIEW.md): Alex's summary and the remaining team tasks.
-- [original_documents/](230ga-follow-the-workers/original_documents/): the briefing and build prompt, unchanged.
-- [outputs/follow_the_workers/](230ga-follow-the-workers/outputs/follow_the_workers/): the original Sonnet study (source code, `report/`, `outputs/`).
-- [outputs/follow_the_workers_opus55_xhigh/](230ga-follow-the-workers/outputs/follow_the_workers_opus55_xhigh/): the Opus follow-up, with the same layout.
+- [README.md](study1_preregistered/README.md), [handoff.md](study1_preregistered/handoff.md) and [TEAM_REVIEW.md](study1_preregistered/TEAM_REVIEW.md): Alex's summary and the remaining team tasks.
+- [original_documents/](study1_preregistered/original_documents/): the briefing and build prompt, unchanged.
+- [outputs/follow_the_workers/](study1_preregistered/outputs/follow_the_workers/): the original Sonnet study (source code, `report/`, `outputs/`).
+- [outputs/follow_the_workers_opus55_xhigh/](study1_preregistered/outputs/follow_the_workers_opus55_xhigh/): the Opus follow-up, with the same layout.
 
 Within each study, the important files are:
 - `report/report.md` and `report/chatgpt_log.md`;
@@ -73,7 +73,7 @@ Within each study, the important files are:
 - `outputs/sealed/initial/results.json`, with the monthly ledgers, weights, scores and ICs beside it;
 - `outputs/prereg_amendments/` and `outputs/agents/`.
 
-Raw data and intermediate panels are **not** in the repo. I verified that the public Ken French files reproduce the study's industry-group returns exactly: the saved sealed ledgers match to a maximum absolute error of 1e-16 ([diagnostics §1](analysis/output/diagnostics.md)). So the return side can be rebuilt without Alex's data zip. Rebuilding the labor side exactly needs ALFRED vintages (see §8, decision 6).
+Raw data and intermediate panels are **not** in the repo. I verified that the public Ken French files reproduce the study's industry-group returns exactly: the saved sealed ledgers match to a maximum absolute error of 1e-16 ([diagnostics §1](analysis/output/study1/diagnostics.md)). So the return side can be rebuilt without Alex's data zip. Rebuilding the labor side exactly needs ALFRED vintages (see §8, decision 6).
 
 ---
 
@@ -141,7 +141,7 @@ All four Holm-family comparisons have adjusted p = 1.0 in Sonnet, and the smalle
 | Human spot check of uptake labels | 8 pairs, 2 comparable | 17 pairs: human yes 3, machine yes 10, agreement 10/17. All 7 disagreements are machine-yes / human-no. |
 | Features passing research selection that failed in the test | 4 / 4 | 6 / 6 |
 
-The P4 red team, run on research tables only before the seal was opened, already concluded: *"Overall verdict: do not implement. Every variant has a negative net Sharpe, an insignificant IC, and a DSR near zero."* ([p4_response.md](230ga-follow-the-workers/outputs/follow_the_workers/outputs/p4_response.md))
+The P4 red team, run on research tables only before the seal was opened, already concluded: *"Overall verdict: do not implement. Every variant has a negative net Sharpe, an insignificant IC, and a DSR near zero."* ([p4_response.md](study1_preregistered/outputs/follow_the_workers/outputs/p4_response.md))
 
 ---
 
@@ -155,7 +155,7 @@ Organised by the grading rubric: Thesis 40%, Execution 40%, Originality 20%. Cou
 |---|---|---|
 | "Integrate ChatGPT as your AI research assistant" | ✗ | No ChatGPT at all. The report says the acceptability of Claude "remains a team submission consideration". Nobody has asked the professor. |
 | At least 3 substantial **ChatGPT** interactions (ideas, coding, robustness) | ✗ | P1, P2 and P4 exist, but on Claude. None of P4's ten suggestions led to a new test (each was marked "covered by" an existing diagnostic or "no additional test adopted"), so "how we adapted" reads as "we didn't". |
-| Document each one: prompt, summarised output, critical evaluation | Partial | [chatgpt_log.md](230ga-follow-the-workers/outputs/follow_the_workers/report/chatgpt_log.md) has four rows that link to JSON files. **The Team critique column is empty.** |
+| Document each one: prompt, summarised output, critical evaluation | Partial | [chatgpt_log.md](study1_preregistered/outputs/follow_the_workers/report/chatgpt_log.md) has four rows that link to JSON files. **The Team critique column is empty.** |
 | Reflect on ChatGPT's strengths and limits | ✗ | Section 3d describes the Claude transport and process, with no reflection in our own words. |
 | Template: Section 2 is 2–5 pages, Section 3 is 1–4 pages | ✗ | Section 2c is about 1,000 words of unbroken prose with no equations or tables. Section 3a has one sentence about factors. |
 | Time windows: full, post-2010, last 12–18 months | ✓ | Present, but mixes research and test segments without saying so clearly. |
@@ -187,14 +187,14 @@ What this suggests:
    - Layoffs: more layoffs predicted *higher* next-month relative returns, in both the research and the test period.
    - Hours: the sign is also reversed.
    - A0 therefore combined two near-zero signals with two signals of the wrong sign. That is enough to explain why the "economics-signed" benchmark had a negative IC.
-2. **Horizon matters, and it speaks directly to "demand news vs cost news".** At a 12-month horizon, all four JOLTS flow signals turn negative. Hires go to −0.062 (t −2.1) and quits to −0.065 (t −1.7) ([diagnostics §4](analysis/output/diagnostics.md)).
+2. **Horizon matters, and it speaks directly to "demand news vs cost news".** At a 12-month horizon, all four JOLTS flow signals turn negative. Hires go to −0.062 (t −2.1) and quits to −0.065 (t −1.7) ([diagnostics §4](analysis/output/study1/diagnostics.md)).
    - This is the investment (q-theory) channel of **Belo, Lin and Bazdresch (2014, JPE)**: firms that hire a lot earn *lower* subsequent returns, and in our data the same pattern shows up across industries.
    - That is the paper the blueprint cites as background. Its prediction is the opposite of A0's sign, and the report never mentions it.
 3. **Wage growth is the most consistent single signal**, with the same sign and size in research and test.
    - It was never a public feature, because F6 (wage growth minus price growth) failed on the price side and the wage half was thrown out with it.
    - **Both agent runs rediscovered it blind.** Sonnet proposed `regime(yoy(V05),"low")` and Opus proposed `tsz(lchg(lag(V05,1),12),36)`, where V05 is hourly earnings.
    - It is *not* significant once you count how many signals and windows I looked at. It is a hypothesis, not a result.
-4. **The tightness half of the thesis cannot be tested with the design as it stands** ([diagnostics §5](analysis/output/diagnostics.md)).
+4. **The tightness half of the thesis cannot be tested with the design as it stands** ([diagnostics §5](analysis/output/study1/diagnostics.md)).
 
    | Tightness split | Research months | Test months |
    |---|---|---|
@@ -223,10 +223,10 @@ Each finding below is verifiable from saved outputs. Items marked † come from 
 | E2 | **No minimum coverage rule in feature selection.** | Opus `independent_1_Interactions_6` was selected on **15** research months. | Selection on noise. | High |
 | E3 | **The ridge penalty sits on the upper edge of its grid (α = 1000) in every model.** | `selected_features.json`, both studies. | Cross-validation is saying "shrink toward predicting nothing", and the grid stopped before it could. That signals no predictive content, and nobody acted on it. | Medium |
 | E4 | **There is no stop rule at the research stage.** All strategies lost money in research (Sharpe −0.13 to −0.55, IC t ≤ 1.23), and the primary was simply the least bad. | `research_summary.json`. P4's verdict before the seal. | The single look at the test period was spent confirming a null the research data had already shown. A pre-test gate ("no primary with research Sharpe above 0 means stop") would have been better design and a better story. | Medium |
-| E5 | **The volatility target is almost never reached.** The 2× gross cap binds in 80–93% of months. Ex-ante volatility averages 7.3–8.0% against a 10% target. A0's realised volatility (9.7%) exceeds its ex-ante estimate (8.0%). | † [diagnostics §1](analysis/output/diagnostics.md) | The risk overlay is mis-calibrated and the report does not mention it. | Low–medium |
+| E5 | **The volatility target is almost never reached.** The 2× gross cap binds in 80–93% of months. Ex-ante volatility averages 7.3–8.0% against a 10% target. A0's realised volatility (9.7%) exceeds its ex-ante estimate (8.0%). | † [diagnostics §1](analysis/output/study1/diagnostics.md) | The risk overlay is mis-calibrated and the report does not mention it. | Low–medium |
 | E6 | **The research window is short and dominated by the financial crisis.** 125 selection months shrink to 88 prediction months (Jun 2007 to Sep 2014). Warm-up eats the rest: 12 months for year-on-year changes, 24 for standardisation and 36 for the ridge burn-in. | `research_A0_ledger.csv` | Strategy selection rests on about 7 years that contain one recession. | Structural |
 | E7 | **The industry mapping dilutes the labor signal.** "Durable manufacturing" is a value-weighted blend of 14 portfolios dominated by Chips (55% of the group's market cap in mid-2024). "Information" is Telcm only, because Software is excluded. Health-care labor data includes social assistance. | † Opus A4's industry positions net to only +0.04 in total, while Durable mfg alone contributed +0.27 (held long in 64% of months). Without it, the industry book loses about 0.23. The rest of its +0.14 gross came from the market hedge (+0.11). | Labor data and stock returns describe different firms. The one "near-positive" result is exposure to the semiconductor boom. | High (for interpretation) |
-| E8 | **Losses are concentrated in a few industries.** Health care is the largest loser for A1 and A3 (−0.26 cumulative) and the second largest for A0 (−0.13, after Durable mfg at −0.14). Construction and Finance follow for A1 and A3. | † [diagnostics §2](analysis/output/diagnostics.md) | Not discussed. This is the material for the "why it failed" section. | Medium |
+| E8 | **Losses are concentrated in a few industries.** Health care is the largest loser for A1 and A3 (−0.26 cumulative) and the second largest for A0 (−0.13, after Durable mfg at −0.14). Construction and Finance follow for A1 and A3. | † [diagnostics §2](analysis/output/study1/diagnostics.md) | Not discussed. This is the material for the "why it failed" section. | Medium |
 | E9 | **Factor exposures are reported but not interpreted.** A1 and A3 load on RMW (+0.19 to +0.21, t ≈ 2.2) and HML (−0.15, t ≈ −2.0), with intercepts of −0.35 to −0.38% a month (t ≈ −1.8). A0 loads +0.22 on industry momentum (t 1.9). | `results.json` → `attribution` | The "labor" tilts are partly quality and growth tilts. That is an interpretable finding that goes unused. | Medium |
 | E10 | **Costs are not the problem.** Costs run 1.0–1.35% a year against gross returns of −2.5% to −4.8% a year. | Ledgers | The signal is the problem. The report should say so plainly. | Low |
 | E11 | **The second study was chosen after the first study's results were seen.** | Amendment 005 | The Opus primary's +0.01 Sharpe is not evidence. The repo labels this correctly, but the two studies are interleaved in the narrative. | Medium |
@@ -273,7 +273,7 @@ The project already contains insights a grader would call original. None of them
 
 ## 5. What I ran to check all this
 
-1. **Reproduced the return side** from public Ken French data (CRSP 202608 build). My group returns reproduce every saved sealed ledger to 1e-16 ([diagnostics §1](analysis/output/diagnostics.md)). The team can therefore extend the analysis without Alex's data zip.
+1. **Reproduced the return side** from public Ken French data (CRSP 202608 build). My group returns reproduce every saved sealed ledger to 1e-16 ([diagnostics §1](analysis/output/study1/diagnostics.md)). The team can therefore extend the analysis without Alex's data zip.
 2. **Rebuilt the labor signals** F1–F5 and W from current FRED data, with the study's fixed lags (JOLTS at d−2, CES at d−1) and the study's standardisation. These are *revised* values, so they approximate the FIXEDLAG variant, not ASOF. In the frozen study, FIXEDLAG and ASOF results were close: the A3 test IC was −0.021 under both.
 3. **Computed** single-signal ICs by window and horizon, tightness-regime balance, P&L by industry, use of the risk overlay, test-period coverage of the selected agent features, and the ridge penalties chosen.
 
