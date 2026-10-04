@@ -151,7 +151,7 @@ Spec `analysis/specs/study2_2_hq12_robustness.md` frozen 2026-10-03T09:52:27Z (s
 ### Study 1 robustness (A3 and A0)
 
 
-Regenerated 2026-10-04T09:55:48+00:00 by analysis/run.ipynb. Rows labelled CONFIRMATORY are read from Study 1's saved `results.json` and `research_summary.json` and are unchanged; rows labelled POST-HOC are diagnostics added in Study 2.3 (spec `analysis/specs/study2_3_robustness.md`, section 1) and cannot change the verdict: **Do not implement**.
+Regenerated 2026-10-04T10:12:47+00:00 by analysis/run.ipynb. Rows labelled CONFIRMATORY are read from Study 1's saved `results.json` and `research_summary.json` and are unchanged; rows labelled POST-HOC are diagnostics added in Study 2.3 (spec `analysis/specs/study2_3_robustness.md`, section 1) and cannot change the verdict: **Do not implement**.
 
 #### Consolidated table
 
@@ -223,7 +223,7 @@ Source: `d11_freeze_check.csv`, computed from `FREEZE.json`, `evaluation_started
 ### Study 2.3: additional robustness
 
 
-First run **2026-10-04T09:26:27+00:00** (regenerated 2026-10-04T09:55:48+00:00); spec `analysis/specs/study2_3_robustness.md` frozen **2026-10-04T09:18:39+00:00** (sha256 `068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528`). Deflated Sharpe ratios here use N = 162 looks. Names: W, SC, W+MOM, HQ12 are the variants stored as W, SC, W+MOM, HQ12 in the Study 2.1 and 2.2 result files. Nothing here changes the confirmatory verdict (A3, Do not implement).
+First run **2026-10-04T09:26:27+00:00** (regenerated 2026-10-04T10:12:47+00:00); spec `analysis/specs/study2_3_robustness.md` frozen **2026-10-04T09:18:39+00:00** (sha256 `068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528`). Deflated Sharpe ratios here use N = 162 looks. Names: W, SC, W+MOM, HQ12 are the variants stored as W, SC, W+MOM, HQ12 in the Study 2.1 and 2.2 result files. Nothing here changes the confirmatory verdict (A3, Do not implement).
 
 #### R1 As-known rerun
 
@@ -464,7 +464,7 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 
 ## 7. Claims register
 
-`results/claims.csv`: 146 claims, 146 verified against their source files.
+`results/claims.csv`: 148 claims, 148 verified against their source files.
 
 | ID | Label | Claim | Numbers | Verified |
 |---|---|---|---|---|
@@ -614,6 +614,8 @@ Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagre
 | T24 | POST-HOC | Rank-weighted books: A3 turnover 10.3x a year, break-even -24 bp; HQ12 4.4x, +69 bp. | 10.3; -24; 4.4; 69 | y |
 | T25 | POST-HOC | The Study 2.3 specification was hashed (068a3e03...) at 2026-10-04T09:18:39Z, before its first output; deflated Sharpe ratios in Study 2.3 use 162 looks. | 068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528 | y |
 | T26 | POST-HOC | Net return a year in the test window: W +1.7%, SC -1.3%, W+MOM +3.1%, HQ12 +2.6% (A3 -4.6%). | 1.7; -1.3; 3.1; 2.6; -4.6 | y |
+| T27 | POST-HOC | The best post-hoc test Sharpe among all looks is W+MOM on as-known data, +0.46, which corresponds to t of about 1.6 over 142 months. | 0.46; 1.6 | y |
+| B12 | CONF | A3 in the last 18 months of the test: one-month IC t of 0.44. | 0.44 | y |
 
 ## 8. Known issues
 

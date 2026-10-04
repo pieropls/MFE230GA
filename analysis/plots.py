@@ -404,7 +404,7 @@ def v2d_dropone(frame, baseline):
     ax.axvline(0, color=DGREY, lw=0.8)
     ax.set_yticks(y, frame.index, fontsize=7.5)
     ax.set_xlabel('Net Sharpe, industry removed')
-    ax.set_title('No single industry drives HQ12')
+    ax.set_title('No single industry drives HQ12', fontsize=8.5)
     ax.set_xlim(0, max(frame.full_sharpe.max(), frame.test_sharpe.max()) * 1.35)
     ax.legend(loc='lower right', fontsize=7, title='dashed: all 13', title_fontsize=6.5)
     ax.grid(axis='y', visible=False)

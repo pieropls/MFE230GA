@@ -1,6 +1,6 @@
 # v3 results: robustness battery for V2d (POST-HOC)
 
-First run **2026-10-03T09:53:32+00:00** (regenerated 2026-10-04T09:55:17+00:00, outputs verified identical to the first run via v3_run_log.md). Spec `analysis/specs/study2_2_hq12_robustness.md` frozen at **2026-10-03T09:52:27+00:00** (sha256 `312aef1dd9551aa7044d37ccf8562a8e66cddfe741e0e1097c15cff18ed8bfde`). Deflated Sharpe ratios use N_trials = 132. Data: revised FRED values with fixed lags (`data_vintage.md`). Nothing here changes the confirmatory verdict (A3, Do not implement).
+First run **2026-10-03T09:53:32+00:00** (regenerated 2026-10-04T10:12:24+00:00, outputs verified identical to the first run via v3_run_log.md). Spec `analysis/specs/study2_2_hq12_robustness.md` frozen at **2026-10-03T09:52:27+00:00** (sha256 `312aef1dd9551aa7044d37ccf8562a8e66cddfe741e0e1097c15cff18ed8bfde`). Deflated Sharpe ratios use N_trials = 132. Data: revised FRED values with fixed lags (`data_vintage.md`). Nothing here changes the confirmatory verdict (A3, Do not implement).
 
 ## Reading against the pre-declared rule (v3_spec.md section 3)
 

@@ -133,3 +133,6 @@ claim('T25', 'The Study 2.3 specification was hashed (068a3e03...) at 2026-10-04
       'analysis/specs/study2_3_robustness.sha256::line=1', POST)
 claim('T26', 'Net return a year in the test window: W +1.7%, SC -1.3%, W+MOM +3.1%, HQ12 +2.6% (A3 -4.6%).', [1.7, -1.3, 3.1, 2.6, -4.6],
       [f'{ct}::col=net_pa;book={P.STRATEGY_NAMES[s]}' for s in ['W', 'SC', 'W+MOM', 'HQ12', 'A3']], POST, scale=100)
+claim('T27', 'The best post-hoc test Sharpe among all looks is W+MOM on as-known data, +0.46, which corresponds to t of about 1.6 over 142 months.', [0.46, 1.6],
+      [f'{r1v}::col=sharpe_asknown;variant=W+MOM;window=test', f'{r1v}::col=sharpe_asknown;variant=W+MOM;window=test'], POST, scale=[1, (142 / 12) ** 0.5], decimals=None)
+claim('B12', 'A3 in the last 18 months of the test: one-month IC t of 0.44.', 0.44, f'{R_S1}::windows.A3.last_18.IC.t', CONF)
