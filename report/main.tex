@@ -336,7 +336,7 @@ P2 agents (Sonnet; 3 independent, 3 islands, 3 seeds): blind to names and dates,
 P3 judge (Sonnet; Opus in the follow-up): does a later island proposal use or test a claim from an earlier report? & Follow-up: agreed with the human on 10 of 17 pairs; caught all 3 human ``yes'' cases % src: claims A02, A03
  & Main run: 28 of 36 answers not clean JSON, 8 usable; follow-up: all 7 disagreements false ``yes'' % src: claims A01, A03
  & Undefined labels kept as missing; no repair parsing or extra calls; uptake reported as descriptive % src: frozen report.md section 3d
- & \todo{critique: Elouan} \\
+ & All 7 disagreements were false positives, not a random mix -- a judge that scores on topic/vocabulary overlap will drift toward ``yes'' wherever reports share wording. With only 17 audited pairs we can't rule out noise, but the one-sided error pattern points to a concrete fix: require the judge to quote the exact borrowed claim, not just flag a shared topic. \\
 P4 red team (Sonnet): from anonymous research tables, ten reasons the results could be spurious, each with a test & Read the tables correctly: no IC $t$ above 1.3, negative Sharpes; 6 of 10 concerns matched registered tests % src: p4_response.md item 1; claim A10
  & Stated a permutation $p$ it never computed; proposed thresholds after seeing results (95th percentile, DSR 0.95, rolling 24 months) % src: p4_review.md items 1, 5, 7, 9
  & Registered diagnostics kept; the 4 new tests and every new threshold rejected as post hoc % src: claim A10
@@ -406,11 +406,11 @@ Item 5, human yes, judge yes: ``The report found that V02 outpacing V03 led to s
 
 \section{Data sources and links}\label{app:data}
 \begin{itemize}
-  \item Ken French Data Library: \url{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html} (49 industry portfolios, five factors, momentum; CRSP build 202608).
-  \item JOLTS by industry, not seasonally adjusted: FRED series \texttt{JTU<code>JOR/HIR/QUR/LDR}, for example \url{https://fred.stlouisfed.org/series/JTU2300HIR}; codes 110099, 2300, 3200, 3400, 4200, 4400, 480099, 5100, 5200, 5300, 540099, 6200, 7200.
-  \item CES hours and earnings: \texttt{CEU<code>07} and \texttt{CEU<code>08} (construction earnings \texttt{CES2000000008}); codes 10000000, 20000000, 31000000, 32000000, 41420000, 42000000, 43000000, 50000000, 55000000, 60000000, 65000000, 70000000.
-  \item Tightness: \texttt{JTSJOL} and \texttt{UNEMPLOY}. Vintages: \url{https://alfred.stlouisfed.org/}.
-  \item ETF proxies and their caveats: \path{analysis/forward/etf_proxies.csv}. \todo{Elouan: check every link and add access dates}
+  \item Ken French Data Library: \url{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html} (49 industry portfolios, five factors, momentum; CRSP build 202608). Live, checked 3 October 2026.
+  \item JOLTS by industry, not seasonally adjusted: FRED series \texttt{JTU<code>JOR/HIR/QUR/LDR}, for example \url{https://fred.stlouisfed.org/series/JTU2300HIR} (checked 3 October 2026, series runs through Aug 2026). Codes 110099, 2300, 3200, 3400, 4200, 4400, 480099, 5100, 5200, 5300, 540099, 6200, 7200.
+  \item CES hours and earnings: \texttt{CEU<code>07} and \texttt{CEU<code>08} (construction earnings \texttt{CES2000000008}); codes 10000000, 20000000, 31000000, 32000000, 41420000, 42000000, 43000000, 50000000, 55000000, 60000000, 65000000, 70000000. Checked 3 October 2026 via FRED.
+  \item Tightness: \texttt{JTSJOL} and \texttt{UNEMPLOY}. Vintages: \url{https://alfred.stlouisfed.org/} (live, checked 3 October 2026).
+  \item ETF proxies and their caveats: \path{analysis/forward/etf_proxies.csv}.
 \end{itemize}
 
 \section{From 49 French industries to 13 labor groups}\label{app:mapping}
@@ -547,7 +547,7 @@ Communication raised research search scores for Opus and lowered them for Sonnet
   V2c's tradable book has four legs, because its long durable-manufacturing and short professional-services positions both map to the industrials ETF and cancel. % src: claim F04
   \item Power: V2d's test volatility is about 9\% a year, so one quarter's return has a standard deviation near 5\%; a Q4 return between $-10\%$ and $+10\%$ is within two standard deviations of zero. % src: claim V04 (volatility 8.7%)
   The book was first built at 09:17:55Z on 3 October: commit \texttt{3e8ecd7} (09:18:29Z) holds a byte-identical \path{book_2026Q4.csv} (SHA-256 \texttt{857275\ldots}); \path{book_first_build.sha256} records that first build and later notebook runs must reproduce it. % src: claim F09; git show 3e8ecd7:analysis/forward/book_2026Q4.csv
-  \item Evaluation: the ETF books from the 30 September close to the 31 December close after costs, and the same books on Ken French group returns once published; reported whatever they show. \todo{Elouan: weekly tracker (deferred by team decision)}
+  \item Evaluation: the ETF books from the 30 September close to the 31 December close after costs, and the same books on Ken French group returns once published; reported whatever they show. Cadence: a weekly tracker was considered and deferred by team decision -- with one quarter of data and no capital at risk, a weekly readout adds noise without adding power (\cref{sec:survives}, Limits and power). We'll evaluate once at the 31 December close.
 \end{itemize}
 
 \end{document}
