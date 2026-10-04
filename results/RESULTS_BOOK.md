@@ -151,7 +151,7 @@ Spec `analysis/specs/study2_2_hq12_robustness.md` frozen 2026-10-03T09:52:27Z (s
 ### Study 1 robustness (A3 and A0)
 
 
-Regenerated 2026-10-04T10:12:47+00:00 by analysis/run.ipynb. Rows labelled CONFIRMATORY are read from Study 1's saved `results.json` and `research_summary.json` and are unchanged; rows labelled POST-HOC are diagnostics added in Study 2.3 (spec `analysis/specs/study2_3_robustness.md`, section 1) and cannot change the verdict: **Do not implement**.
+Regenerated 2026-10-04T10:22:57+00:00 by analysis/run.ipynb. Rows labelled CONFIRMATORY are read from Study 1's saved `results.json` and `research_summary.json` and are unchanged; rows labelled POST-HOC are diagnostics added in Study 2.3 (spec `analysis/specs/study2_3_robustness.md`, section 1) and cannot change the verdict: **Do not implement**.
 
 #### Consolidated table
 
@@ -223,7 +223,7 @@ Source: `d11_freeze_check.csv`, computed from `FREEZE.json`, `evaluation_started
 ### Study 2.3: additional robustness
 
 
-First run **2026-10-04T09:26:27+00:00** (regenerated 2026-10-04T10:12:47+00:00); spec `analysis/specs/study2_3_robustness.md` frozen **2026-10-04T09:18:39+00:00** (sha256 `068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528`). Deflated Sharpe ratios here use N = 162 looks. Names: W, SC, W+MOM, HQ12 are the variants stored as W, SC, W+MOM, HQ12 in the Study 2.1 and 2.2 result files. Nothing here changes the confirmatory verdict (A3, Do not implement).
+First run **2026-10-04T09:26:27+00:00** (regenerated 2026-10-04T10:22:57+00:00); spec `analysis/specs/study2_3_robustness.md` frozen **2026-10-04T09:18:39+00:00** (sha256 `068a3e0396332514ee3b76677f31b9c1ff6bfea7362d9e91d69ecc013e791528`). Deflated Sharpe ratios here use N = 162 looks. Names: W, SC, W+MOM, HQ12 are the variants stored as W, SC, W+MOM, HQ12 in the Study 2.1 and 2.2 result files. Nothing here changes the confirmatory verdict (A3, Do not implement).
 
 #### R1 As-known rerun
 

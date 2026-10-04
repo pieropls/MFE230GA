@@ -96,7 +96,7 @@ VARIANTS = {
 
 
 # ---------- names (presentation layer; frozen result files keep the original codes inside) ----------
-DISPLAY = {'V2a': 'W', 'V2b': 'SC', 'V2c': 'W+MOM', 'V2d': 'HQ12', 'Islands': 'Communicating', 'islands': 'communicating',
+DISPLAY = {'V2a': 'W', 'V2b': 'SC', 'V2c': 'W+MOM', 'V2d': 'HQ12', 'islands (communicating)': 'communicating (treatment)', 'Islands': 'Communicating', 'islands': 'communicating',
            'island-arm': 'communicating-arm', 'island agents': 'communicating agents', 'Study 1 (Sonnet)': 'Study 1', 'Study 1b (Opus)': 'Study 1b', 'Sonnet': 'Study 1', 'Opus': 'Study 1b'}
 STRATEGY_NAMES = {'A0': 'A0 fixed rule', 'A1': 'A1 ridge', 'A1-T': 'A1-T ridge x tightness',
                   'A3': 'A3 agent features, independent (primary)', 'A4': 'A4 agent features, communicating',

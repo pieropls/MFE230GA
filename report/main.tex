@@ -143,7 +143,7 @@ re-estimated each month on an expanding window, with $\alpha$ chosen once by cro
 \label{tab:models}
 \begin{tabularx}{\textwidth}{@{}l l X@{}}
 \toprule
-\multicolumn{3}{@{}l}{\emph{Study 1, preregistered (Alex): H1 books, one-month horizon, three-month holding}} \\
+\multicolumn{3}{@{}l}{\emph{Study 1, preregistered: H1 books, one-month horizon, three-month holding}} \\
 A0 & fixed rule & $S_{g,t}=\tfrac14\big(z^{(1)}+z^{(2)}-z^{(4)}+z^{(5)}\big)$, no estimation \\
 A1 & ridge & ridge on F1--F5 \\
 A1-T & ridge $\times$ tightness & A1 plus each signal interacted with $T$ (H3) \\
@@ -161,7 +161,7 @@ HQ12 & hires + quits reversal & $-\tfrac12\big(z(\text{F2})+z(\text{F3})\big)$, 
 \paragraph{How Study 2 was run} Each stage was written to a specification file, hashed (a fingerprint that changes if the file does) and committed before it ran, then run once; a run log stores the hash of every output, and the notebook stops if a later run differs (\cref{tab:specs}, appendix). Study~2.1 fixed the four variants and a reading rule, Study~2.2 a battery of seven pre-declared conditions for HQ12, and Study~2.3 the as-known rerun, the cap and rank-weight variants and the tests of the agent experiment. Every new backtest counts as one more look in the deflated Sharpe ratio.\footnote{Each table's deflated Sharpe ratio uses the looks taken when that table was run: 112 for Study 2.1 (the four variants), 132 for Study 2.2 (the HQ12 battery) and 162 for Study 2.3 (the as-known, cap and rank-weighted runs). Later counts are larger by design.} All of them use Study~1's own backtest code, which our notebook reproduces to $10^{-16}$ before anything else runs. % src: claims S04, R13
 
 \paragraph{Risk modeling}\label{par:risk} Each month the score $s_{m,g}$ known at the end of month $m-1$ becomes a dollar-neutral tranche, long the three highest-ranked groups and short the three lowest; the book averages the last three tranches (twelve for HQ12). The risk model is a Ledoit--Wolf shrinkage covariance of the 13 groups and the market over 60 months \citep{LedoitWolf2004}. The book is hedged to zero market beta with 60-month betas, scaled to a 10\% ex-ante volatility and capped at a gross exposure of 2 (the equations are in \cref{app:study1}). The cap, not the volatility target, was the binding constraint: thirteen correlated, hedged groups carry so little risk per unit of gross that reaching 10\% would need a median gross exposure of 2.6 for A3 and 2.4 for HQ12. % src: claim T10
-\Cref{tab:overlay} shows that lifting the cap restores the volatility and leaves the Sharpe ratio where it was, so the cap explains the volatility shortfall and not the losses.
+\Cref{tab:overlay} shows that lifting the cap restores the volatility and moves the Sharpe ratio by at most 0.05, so the cap explains the volatility shortfall and not the losses.
 
 \begin{table}[!htbp]
 \centering\footnotesize
@@ -300,9 +300,9 @@ Sharpe with the cap at 2 / 3 / none; rank-weighted book & $-0.58$ / $-0.61$ / $-
 
 \paragraph{What survives: the 12-month cost channel}\label{sec:survives} We froze four post-hoc variants in a hashed file, ran each once and report all four (\cref{tab:results}; statistics in \cref{tab:v2}, \cref{app:study2}). None meets the reading rule declared with them, which asks among other things for IC $t\ge2$, alpha $t\ge2$ and a DSR above 0.95. % src: claim V07
 The declared headline W has the right IC ($+0.049$, $t=2.04$) but no alpha ($t=0.29$); W+MOM reaches $+0.35$ because momentum supplies the return; SC is negative, and its sign flips on as-known data because three of its learned signs change with the data version. On as-known data W+MOM ranks first and HQ12 third (\cref{tab:results}); we follow HQ12 because it is the H2 book, chosen on the hypothesis and not on its Sharpe ratio. % src: claims V01, V_V2c_SR, V_V2b_SR, T02, T09
-HQ12 is the H2 book. Its sign is the one the investment channel predicts, but its 12-month horizon was chosen from a profile that included the test period: on the research years alone its 12-month IC is $+0.047$ ($t=0.90$), so the research sample would not have selected it. % src: claim V13
+Its sign is the one the investment channel predicts, but its 12-month horizon was chosen from a profile that included the test period: on the research years alone its 12-month IC is $+0.047$ ($t=0.90$), so the research sample would not have selected it. % src: claim V13
 The as-known and fixed-lag scores pick the same top three groups in only 39\% of months, so real-time holdings would have differed. % src: claim T04
-\Cref{tab:hq12} runs it through the pre-declared battery on both data versions: it keeps its sign and most of its size as known, and fails the same check in both, the first test half.
+\Cref{tab:hq12} runs it through the pre-declared battery on both data versions: it keeps its sign and most of its size as known. Of the seven battery conditions it fails the same one in both, the first test half; alpha and the deflated Sharpe, from the Study 2.1 reading rule, fail too.
 
 \begin{table}[!htbp]
 \centering\footnotesize
@@ -355,7 +355,7 @@ P1 data and code audit (Sonnet): find mapping, look-ahead and code bugs in the m
  & All 25 tested; one metadata fix to the crosswalk; no number or timing rule changed % src: claim A07
  & \todo{critique: Alex} \\
 P2 signal agents (Sonnet; 3 independent, 3 communicating, 3 seeds): blind to names and dates, propose six features each in a 14-operation grammar % src: Study 1 params.py (AGENT, GRAMMAR)
- & 98 of 108 proposals valid; blinding audit of all 199 calls passed; best research IC 0.08 independent, 0.05 communicating % src: claims A01, A08, A05
+ & 98 of 108 proposals valid; blinding audit of all 199 calls passed; best research IC, mean of 3 seeds: 0.08 independent, 0.05 communicating % src: claims A01, A08, A05
  & Both independent-arm picks switch on only in the low-tightness tercile; 11 of 18 migration reports broke the rules, 10 over 120 words % src: claims D12, A09
  & Invalid proposals used their slot; selection mechanical, two per arm, seed 1 only; no engineer edits % src: outputs/selected_features.json; deviations.md (run-1-only eligibility)
  & IC shown by tightness tercile pushed agents to regime gates; both A3 picks were off for most of the test \\
@@ -381,7 +381,7 @@ P6 iteration (Opus, Fable): rebuild the analysis, run Study 2, draft this report
 \end{table}
 
 \paragraph{The agent experiment, tested further} \tagp\ Sharing did not help: in both agent studies the gap in best research IC between the communicating and the independent arm is within the spread across seeds (permutation $p=0.30$ and $0.10$, the smallest value 20 relabelings allow), and tokens per call are similar across arms. % src: claims T13, T15
-We then tested the two fixes our critiques propose. Requiring the judge to quote the claim it relies on made the Sonnet judge's answers usable (8 of 8, 7 in agreement with the human, against 2 usable before) but did not cure the Opus judge: only 7 of its 17 answers were in the required format, and counting the rest it still said yes too often (8 false yes in 17, against 7). % src: claims T18, T19
+We then tested the two fixes our critiques propose. Requiring the judge to quote the claim it relies on made the Sonnet judge's answers usable (8 of 8, 7 in agreement with the human, against 2 of these 8 audited pairs before) but did not cure the Opus judge: only 7 of its 17 answers were in the required format, and counting the rest it still said yes too often (8 false yes in 17, against 7). % src: claims T18, T19
 Removing the tightness-tercile split from the agents' feedback did not remove regime gates: 4 of 48 valid proposals used one with the split and 3 of 50 without, on research data only. % src: claim T20
 So the feedback explanation in \cref{tab:claude} is not confirmed, although the rerun also produced fewer gates than the original run (15\% to 29\% per seed). % src: claim T14
 
@@ -436,7 +436,7 @@ The score-to-weight mapping, with $s_{m,g}$ the score of group $g$ known at the 
 
 \begin{figure}[H]
 \centering\includegraphics[width=0.9\linewidth]{figures/fig_cumulative.pdf}
-\caption{Cumulative net returns in the test: every Study 1 strategy lost money; the post-hoc wage-growth book gained until 2024 and gave much of it back. \hfill\tagc\ (A0--A4) / \tagp\ (momentum, W)} % src: claim C08
+\caption{Cumulative net returns in the test: every Study 1 strategy lost money; the post-hoc wage-growth book gained until 2024 and gave much of it back. \hfill\tagc\ (A0--A4) / \tagp\ (momentum, W)} % src: claim C08 (A0-A4); analysis/output/study2/tables/v2_monthly_net.csv (W)
 \label{fig:cumulative}
 \end{figure}
 
@@ -576,7 +576,7 @@ The as-known inputs come from Alex's data package. Before any variant was rerun 
 \begin{table}[H]\centering\footnotesize\caption{R5: Spearman correlation between a proposal\textquotesingle s output tokens and its research IC. \hfill\tagp}\setlength{\tabcolsep}{4pt}\fit{\input{tables/s23_r5_tokens_ic}}\end{table}
 \begin{table}[H]\centering\footnotesize\caption{R6: participation ratio of the 13-group correlation matrices. \hfill\tagp}\setlength{\tabcolsep}{4pt}\fit{\input{tables/s23_r6_breadth}}\end{table}
 \begin{table}[H]\centering\scriptsize\caption{R7: capacity with the proxy ETFs: the binding ETF, its average daily dollar volume, and the assets at which monthly trading reaches 1\% and 5\% of it. \hfill\tagp}\setlength{\tabcolsep}{4pt}\fit{\input{tables/s23_r7_capacity}}\end{table}
-\begin{table}[H]\centering\scriptsize\caption{R8: judge with a verbatim quote on the 25 hand-labelled pairs. ``Defined\textquotesingle\textquotesingle{} counts JSON-only answers; the third row of each study accepts JSON wrapped in a code fence and is outside the pre-declared rule. \hfill\tagp}\setlength{\tabcolsep}{4pt}\fit{\input{tables/s23_r8_judge_summary}}\end{table}
+\begin{table}[H]\centering\scriptsize\caption{R8: judge with a verbatim quote on the 25 hand-labelled pairs. ``Usable\textquotesingle\textquotesingle{} counts JSON-only answers; the third row of each study accepts JSON wrapped in a code fence and is outside the pre-declared rule. \hfill\tagp}\setlength{\tabcolsep}{4pt}\fit{\input{tables/s23_r8_judge_summary}}\end{table}
 \begin{table}[H]\centering\scriptsize\caption{R9: feedback ablation, independent arm, research data only, with and without the tightness-tercile split in the feedback. ``Informative\textquotesingle\textquotesingle{} counts months in which a proposal\textquotesingle s cross-section is not constant. \hfill\tagp}\label{tab:r9}\setlength{\tabcolsep}{4pt}\fit{\input{tables/s23_r9_ablation_summary}}\end{table}
 The ablation rebuilt the agents' research inputs from Alex's package; they reproduce 94 of the 98 saved feedbacks exactly, and the largest difference is 0.11 in a $t$-statistic. % src: claim T21
 The judge calls for Study~1b pairs used a newer command-line client than the Study~1 pairs because the older one does not serve that model; calls that failed in transport were repeated once, and every call is in the log (\path{analysis/output/study2/llm/}).
@@ -698,6 +698,7 @@ Accommodation and food & 7200 & Meals & 100\% \\
 \end{table}
 Groups 9 and 10 share one CES series, and groups 7, 12 and 13 use broader CES supersectors. The participation ratios of the 13-group correlation matrices put a number on the effective width: 2.0 for excess returns (the market dominates), 9.1 for relative returns, 7.4 for $z(\text{W})$ and 10.1 for the HQ12 score. % src: claim T16
 
+\clearpage
 \section{Where each requirement is answered}\label{app:rubric}
 \begin{table}[H]
 \centering\footnotesize

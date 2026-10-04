@@ -386,7 +386,7 @@ def v2d_holding(frame):
     short = {'research': 'research', 'test': 'test', 'full': 'full', 'post-2010': 'post-2010', 'last 18m': 'last 18m'}
     ax.set_xticks(range(len(windows)), [short.get(w, w) for w in windows], fontsize=7, rotation=20)
     ax.set_ylabel('Net Sharpe (10 bp)')
-    ax.set_title('Positive at every holding period, 6 to 18 months')
+    ax.set_title('Positive at every holding period, 6 to 18 months', fontsize=7.5)
     ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.22), ncol=2, fontsize=6.8, title='Holding period', title_fontsize=6.8)
     ax.grid(axis='x', visible=False)
     return save(fig, 'fig_v2d_holding.pdf')
@@ -404,7 +404,7 @@ def v2d_dropone(frame, baseline):
     ax.axvline(0, color=DGREY, lw=0.8)
     ax.set_yticks(y, frame.index, fontsize=7.5)
     ax.set_xlabel('Net Sharpe, industry removed')
-    ax.set_title('No single industry drives HQ12', fontsize=8.5)
+    ax.set_title('No single industry drives HQ12', fontsize=7.5)
     ax.set_xlim(0, max(frame.full_sharpe.max(), frame.test_sharpe.max()) * 1.35)
     ax.legend(loc='lower right', fontsize=7, title='dashed: all 13', title_fontsize=6.5)
     ax.grid(axis='y', visible=False)
@@ -477,7 +477,7 @@ def agents_seeds(frame, title):
             sub = frame[(frame.study == study) & (frame.arm == arm)]
             ax.scatter([x] * len(sub), sub.best_ic, color=colour, s=22, zorder=3)
             ax.hlines(sub.best_ic.mean(), x - 0.25, x + 0.25, color=colour, lw=2)
-            labels.append(f'{study}\n{arm}')
+            labels.append(P.display(f'{study}\n{arm}'))
             x += 1
         x += 0.5
     ax.set_xticks([0, 1, 2.5, 3.5])

@@ -1,6 +1,6 @@
 # Data vintage used in this iteration
 
-Written by analysis/run.ipynb on 2026-10-04T10:11:49+00:00.
+Written by analysis/run.ipynb on 2026-10-04T10:22:02+00:00.
 
 **Choice: option (c)** of the iteration task, Part 1 step 2.
 

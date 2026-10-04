@@ -1,6 +1,6 @@
 # Study 1 robustness: A3 (agent features, independent; primary) and A0 (fixed rule)
 
-Regenerated 2026-10-04T10:12:47+00:00 by analysis/run.ipynb. Rows labelled CONFIRMATORY are read from Study 1's saved `results.json` and `research_summary.json` and are unchanged; rows labelled POST-HOC are diagnostics added in Study 2.3 (spec `analysis/specs/study2_3_robustness.md`, section 1) and cannot change the verdict: **Do not implement**.
+Regenerated 2026-10-04T10:22:57+00:00 by analysis/run.ipynb. Rows labelled CONFIRMATORY are read from Study 1's saved `results.json` and `research_summary.json` and are unchanged; rows labelled POST-HOC are diagnostics added in Study 2.3 (spec `analysis/specs/study2_3_robustness.md`, section 1) and cannot change the verdict: **Do not implement**.
 
 ## Consolidated table
 
