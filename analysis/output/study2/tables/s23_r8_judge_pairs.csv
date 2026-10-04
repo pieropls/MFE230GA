@@ -1,0 +1,26 @@
+study,item,report_id,candidate_id,human,machine_before,machine_after,said_yes,quote_found,model,transport_ok
+Study 1 (Sonnet),1,islands_1_Temporal_2_migration,islands_1_Composition_3,False,False,False,False,False,claude-sonnet-5-5,True
+Study 1 (Sonnet),2,islands_1_Temporal_2_migration,islands_1_Interactions_4,False,,False,False,False,claude-sonnet-5-5,True
+Study 1 (Sonnet),3,islands_1_Temporal_2_migration,islands_1_Composition_5,False,,False,False,False,claude-sonnet-5-5,True
+Study 1 (Sonnet),4,islands_2_Interactions_2_migration,islands_2_Temporal_5,False,,False,False,False,claude-sonnet-5-5,True
+Study 1 (Sonnet),5,islands_2_Interactions_2_migration,islands_2_Composition_5,False,,False,False,False,claude-sonnet-5-5,True
+Study 1 (Sonnet),6,islands_2_Composition_4_migration,islands_2_Interactions_6,False,,True,True,True,claude-sonnet-5-5,True
+Study 1 (Sonnet),7,islands_2_Interactions_4_migration,islands_2_Composition_6,True,,True,True,True,claude-sonnet-5-5,True
+Study 1 (Sonnet),8,islands_3_Composition_4_migration,islands_3_Interactions_6,False,True,False,False,False,claude-sonnet-5-5,True
+Study 1b (Opus),1,islands_1_Temporal_2_migration,islands_1_Composition_3,False,False,,,,claude-opus-5-5,True
+Study 1b (Opus),2,islands_1_Composition_2_migration,islands_1_Temporal_3,False,True,True,True,True,claude-opus-5-5,True
+Study 1b (Opus),3,islands_1_Composition_2_migration,islands_1_Interactions_4,False,True,True,True,True,claude-opus-5-5,True
+Study 1b (Opus),4,islands_1_Interactions_4_migration,islands_1_Temporal_6,False,False,,,,claude-opus-5-5,True
+Study 1b (Opus),5,islands_1_Interactions_4_migration,islands_1_Composition_6,True,True,True,True,True,claude-opus-5-5,True
+Study 1b (Opus),6,islands_2_Composition_2_migration,islands_2_Temporal_4,False,False,False,False,False,claude-opus-5-5,True
+Study 1b (Opus),7,islands_2_Composition_2_migration,islands_2_Temporal_5,False,False,False,False,False,claude-opus-5-5,True
+Study 1b (Opus),8,islands_2_Interactions_2_migration,islands_2_Temporal_3,False,True,True,True,True,claude-opus-5-5,True
+Study 1b (Opus),9,islands_2_Interactions_2_migration,islands_2_Composition_4,False,False,,,,claude-opus-5-5,True
+Study 1b (Opus),10,islands_2_Interactions_2_migration,islands_2_Composition_5,False,False,,,,claude-opus-5-5,True
+Study 1b (Opus),11,islands_3_Temporal_2_migration,islands_3_Interactions_3,True,True,,,,claude-opus-5-5,True
+Study 1b (Opus),12,islands_3_Temporal_2_migration,islands_3_Composition_6,False,True,,,,claude-opus-5-5,True
+Study 1b (Opus),13,islands_3_Interactions_2_migration,islands_3_Composition_5,False,True,,,,claude-opus-5-5,True
+Study 1b (Opus),14,islands_3_Interactions_2_migration,islands_3_Temporal_6,False,False,,,,claude-opus-5-5,True
+Study 1b (Opus),15,islands_3_Interactions_4_migration,islands_3_Temporal_5,True,True,,,,claude-opus-5-5,True
+Study 1b (Opus),16,islands_3_Interactions_4_migration,islands_3_Temporal_6,False,True,,,,claude-opus-5-5,True
+Study 1b (Opus),17,islands_3_Interactions_4_migration,islands_3_Composition_6,False,True,True,True,True,claude-opus-5-5,True

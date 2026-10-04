@@ -1,0 +1,109 @@
+condition,seed,agent,submission,valid,expression,uses_regime,active_share,mean_ic,hac_t,error,informative_share
+A_with_tercile_split,1,Temporal,1,True,"tsz(lchg(V05,6),""exp"")",False,0.68,0.07,2.06,,0.68
+A_with_tercile_split,1,Temporal,2,False,"csrank(accel(mavg(V02,3)))",False,,,,Blinded payload contains a forbidden name or identifier,
+A_with_tercile_split,1,Temporal,3,True,"persist(V02,6)",False,0.96,-0.04,-1.28,,0.96
+A_with_tercile_split,1,Temporal,4,True,"tsz(V06,60)",False,0.536,-0.04,-1.14,,0.536
+A_with_tercile_split,1,Temporal,5,True,"spread(yoy(V05),yoy(V01))",False,0.912,-0.01,-0.26,,0.912
+A_with_tercile_split,1,Temporal,6,True,"tsz(lchg(V01,3),""exp"")",False,0.704,-0.03,-1.09,,0.704
+A_with_tercile_split,1,Composition,1,True,"spread(mavg(V02,3),mavg(V03,3))",False,0.992,-0.01,-0.23,,0.992
+A_with_tercile_split,1,Composition,2,True,"ratio(mavg(V04,3),V06)",False,0.992,0.02,0.72,,0.992
+A_with_tercile_split,1,Composition,3,True,"spread(V05,V01)",False,1.0,-0.04,-1.21,,1.0
+A_with_tercile_split,1,Composition,4,True,"spread(mavg(V01,12),mavg(V05,12))",False,0.92,0.04,1.06,,0.92
+A_with_tercile_split,1,Composition,5,False,"spread(mavg(V03,6),mavg(V04,6))",False,,,,Blinded payload contains a forbidden name or identifier,
+A_with_tercile_split,1,Composition,6,True,"spread(mavg(V06,12),mavg(V03,12))",False,0.92,-0.01,-0.54,,0.92
+A_with_tercile_split,1,Interactions,1,True,"csrank(mult(yoy(V05),yoy(V01)))",False,0.912,0.01,0.24,,0.912
+A_with_tercile_split,1,Interactions,2,True,"regime(spread(V02,V03),""high"")",True,0.824,-0.04,-1.01,,0.216
+A_with_tercile_split,1,Interactions,3,True,"spread(chg(V01,6),chg(V06,6))",False,0.96,0.0,0.19,,0.96
+A_with_tercile_split,1,Interactions,4,True,"spread(tsz(V04,60),tsz(V03,60))",False,0.536,0.05,1.89,,0.536
+A_with_tercile_split,1,Interactions,5,True,"regime(spread(tsz(V04,""exp""),tsz(V03,""exp"")),""high"")",True,0.728,-0.13,-1.18,,0.12
+A_with_tercile_split,1,Interactions,6,True,"spread(mavg(V04,6),mavg(V03,6))",False,0.968,-0.0,-0.12,,0.968
+B_without_tercile_split,1,Temporal,1,True,"tsz(lag(V03,1),""exp"")",False,0.72,0.02,0.64,,0.72
+B_without_tercile_split,1,Temporal,2,True,csrank(yoy(V05)),False,0.912,-0.01,-0.24,,0.912
+B_without_tercile_split,1,Temporal,3,True,csrank(accel(V02)),False,0.96,-0.03,-1.02,,0.96
+B_without_tercile_split,1,Temporal,4,True,"tsz(V06,60)",False,0.536,-0.04,-1.14,,0.536
+B_without_tercile_split,1,Temporal,5,True,"tsz(chg(V01,3),60)",False,0.512,-0.06,-1.96,,0.512
+B_without_tercile_split,1,Temporal,6,True,"csrank(lchg(V01,6))",False,0.96,-0.02,-0.64,,0.96
+B_without_tercile_split,1,Composition,1,True,"spread(mavg(V02,3),mavg(V03,3))",False,0.992,-0.01,-0.23,,0.992
+B_without_tercile_split,1,Composition,2,True,"spread(mavg(V06,3),mavg(V04,3))",False,0.992,-0.02,-0.86,,0.992
+B_without_tercile_split,1,Composition,3,True,"spread(yoy(V05),yoy(V01))",False,0.912,-0.01,-0.26,,0.912
+B_without_tercile_split,1,Composition,4,True,"tsz(V01,""exp"")",False,0.728,-0.0,-0.12,,0.728
+B_without_tercile_split,1,Composition,5,True,"spread(chg(V02,3),chg(V03,3))",False,0.984,-0.06,-2.08,,0.984
+B_without_tercile_split,1,Composition,6,True,"spread(chg(V03,3),chg(V02,3))",False,0.984,0.06,2.08,,0.984
+B_without_tercile_split,1,Interactions,1,True,"mult(csrank(tsz(V01,60)), csrank(chg(V05,3)))",False,0.536,0.0,0.08,,0.536
+B_without_tercile_split,1,Interactions,2,True,"regime(spread(V02,V03),""high"")",True,0.824,-0.04,-1.01,,0.216
+B_without_tercile_split,1,Interactions,3,True,"mult(csrank(tsz(V04,""exp"")), csrank(chg(V06,3)))",False,0.728,-0.0,-0.11,,0.728
+B_without_tercile_split,1,Interactions,4,True,withT(csrank(accel(V05))),False,0.96,0.02,1.1,,0.96
+B_without_tercile_split,1,Interactions,5,True,"regime(chg(ratio(V05,V01),6),""low"")",True,0.576,0.07,1.55,,0.384
+B_without_tercile_split,1,Interactions,6,False,"regime(csrank(chg(ratio(V05,V01),6)),""low"")",False,,,,Unknown operation or nesting limit exceeded,
+A_with_tercile_split,2,Temporal,1,True,"tsz(mavg(V05,3),""exp"")",False,0.712,-0.0,-0.03,,0.712
+A_with_tercile_split,2,Temporal,2,True,"regime(accel(V02),""high"")",True,0.824,-0.01,-0.27,,0.216
+A_with_tercile_split,2,Temporal,3,True,"persist(V06,6)",False,0.96,-0.04,-1.65,,0.96
+A_with_tercile_split,2,Temporal,4,True,yoy(V06),False,0.912,0.01,0.45,,0.912
+A_with_tercile_split,2,Temporal,5,True,"tsz(chg(V01,3),""exp"")",False,0.704,-0.03,-1.1,,0.704
+A_with_tercile_split,2,Temporal,6,True,"spread(tsz(V03,60),tsz(V04,60))",False,0.536,-0.05,-1.89,,0.536
+A_with_tercile_split,2,Composition,1,True,"csrank(mavg(spread(V02,V03),3))",False,0.992,0.01,0.51,,0.992
+A_with_tercile_split,2,Composition,2,True,"csrank(spread(chg(V05,6),chg(V01,6)))",False,0.96,0.01,0.28,,0.96
+A_with_tercile_split,2,Composition,3,True,"csrank(spread(chg(V04,3),chg(V03,3)))",False,0.984,-0.04,-1.3,,0.984
+A_with_tercile_split,2,Composition,4,True,"csrank(tsz(ratio(V02,V06),60))",False,0.536,0.03,0.97,,0.536
+A_with_tercile_split,2,Composition,5,True,"csrank(tsz(ratio(V03,V04),60))",False,0.536,-0.04,-1.82,,0.536
+A_with_tercile_split,2,Composition,6,True,"csrank(tsz(ratio(V04,V03),""exp""))",False,0.728,0.0,0.02,,0.728
+A_with_tercile_split,2,Interactions,1,False,"mult(csrank(tsz(chg(V05,3),60)), csrank(tsz(chg(V01,3),60)))",False,,,,Unknown operation or nesting limit exceeded,
+A_with_tercile_split,2,Interactions,2,True,"mult(csrank(chg(V05,3)), csrank(chg(V01,3)))",False,0.984,-0.02,-1.05,,0.984
+A_with_tercile_split,2,Interactions,3,True,"mult(csrank(tsz(V02,60)), csrank(chg(V06,3)))",False,0.536,-0.02,-0.5,,0.536
+A_with_tercile_split,2,Interactions,4,True,"mult(csrank(yoy(V03)), csrank(yoy(V04)))",False,0.912,0.02,1.05,,0.912
+A_with_tercile_split,2,Interactions,5,True,"mult(csrank(yoy(V03)), csrank(tsz(V02,60)))",False,0.536,-0.02,-0.83,,0.536
+A_with_tercile_split,2,Interactions,6,False,"mult(csrank(mavg(V03,6)), csrank(mavg(V04,6)))",False,,,,hypothesis has 43 words; maximum is 40,
+B_without_tercile_split,2,Temporal,1,True,"tsz(chg(V05,6),""exp"")",False,0.68,0.06,1.76,,0.68
+B_without_tercile_split,2,Temporal,2,True,"spread(mavg(V02,3),mavg(V03,3))",False,0.992,-0.01,-0.23,,0.992
+B_without_tercile_split,2,Temporal,3,True,"tsz(V06,""exp"")",False,0.728,-0.02,-0.56,,0.728
+B_without_tercile_split,2,Temporal,4,True,"persist(V01,6)",False,0.96,-0.01,-0.22,,0.96
+B_without_tercile_split,2,Temporal,5,True,"mavg(yoy(V05),6)",False,0.872,0.01,0.27,,0.872
+B_without_tercile_split,2,Temporal,6,True,"tsz(lchg(V05,3),60)",False,0.512,0.02,0.43,,0.512
+B_without_tercile_split,2,Composition,1,True,"spread(mavg(V02,3),mavg(V03,3))",False,0.992,-0.01,-0.23,,0.992
+B_without_tercile_split,2,Composition,2,True,"spread(mavg(V04,3),mavg(V03,3))",False,0.992,-0.01,-0.47,,0.992
+B_without_tercile_split,2,Composition,3,True,"spread(tsz(V06,60),tsz(V02,60))",False,0.536,-0.03,-0.85,,0.536
+B_without_tercile_split,2,Composition,4,True,"spread(mavg(V05,3),mavg(V01,3))",False,0.992,-0.04,-1.06,,0.992
+B_without_tercile_split,2,Composition,5,True,"spread(yoy(V03),yoy(V02))",False,0.912,0.02,0.84,,0.912
+B_without_tercile_split,2,Composition,6,True,"spread(yoy(V02),yoy(V04))",False,0.912,-0.0,-0.18,,0.912
+B_without_tercile_split,2,Interactions,1,False,"csrank(mult(tsz(chg(V01,3),60),tsz(chg(V05,3),60)))",False,,,,Unknown operation or nesting limit exceeded,
+B_without_tercile_split,2,Interactions,2,True,"csrank(mult(tsz(V01,60),tsz(V05,60)))",False,0.536,-0.02,-0.55,,0.536
+B_without_tercile_split,2,Interactions,3,True,"csrank(mult(yoy(V03),V06))",False,0.912,0.03,1.34,,0.912
+B_without_tercile_split,2,Interactions,4,True,"csrank(mult(mavg(V03,6),V06))",False,0.968,0.01,0.36,,0.968
+B_without_tercile_split,2,Interactions,5,True,"csrank(mult(tsz(V03,60),tsz(V06,60)))",False,0.536,-0.01,-0.45,,0.536
+B_without_tercile_split,2,Interactions,6,True,"csrank(mult(yoy(V04),V06))",False,0.912,0.0,0.17,,0.912
+A_with_tercile_split,3,Temporal,1,True,"tsz(V03,""exp"")",False,0.728,-0.0,-0.1,,0.728
+A_with_tercile_split,3,Temporal,2,True,yoy(V05),False,0.912,0.03,1.28,,0.912
+A_with_tercile_split,3,Temporal,3,True,"spread(persist(V02,6),persist(V04,6))",False,0.96,-0.01,-0.53,,0.96
+A_with_tercile_split,3,Temporal,4,True,accel(V05),False,0.96,-0.03,-1.26,,0.96
+A_with_tercile_split,3,Temporal,5,True,"mavg(spread(yoy(V05),yoy(V01)),6)",False,0.872,-0.01,-0.3,,0.872
+A_with_tercile_split,3,Temporal,6,True,yoy(V06),False,0.912,0.01,0.45,,0.912
+A_with_tercile_split,3,Composition,1,False,"csrank(mavg(spread(V02,V03),3))",False,,,,Blinded payload contains a forbidden name or identifier,
+A_with_tercile_split,3,Composition,2,False,"spread(mavg(V02,3),mavg(V03,3))",False,,,,Blinded payload contains a forbidden name or identifier,
+A_with_tercile_split,3,Composition,3,True,"spread(mavg(V02,3),mavg(V03,3))",False,0.992,-0.01,-0.23,,0.992
+A_with_tercile_split,3,Composition,4,True,"spread(chg(V04,3),chg(V02,3))",False,0.984,-0.0,-0.05,,0.984
+A_with_tercile_split,3,Composition,5,True,"spread(yoy(V06),yoy(V03))",False,0.912,-0.01,-0.45,,0.912
+A_with_tercile_split,3,Composition,6,True,"spread(lchg(V05,12),lchg(V01,12))",False,0.912,0.03,1.23,,0.912
+A_with_tercile_split,3,Interactions,1,True,"mult(csrank(chg(V02,3)),csrank(V06))",False,0.984,-0.04,-1.44,,0.984
+A_with_tercile_split,3,Interactions,2,True,"mult(csrank(tsz(V01,60)),csrank(yoy(V05)))",False,0.536,0.0,0.11,,0.536
+A_with_tercile_split,3,Interactions,3,True,"mult(csrank(chg(V03,3)),csrank(chg(V04,3)))",False,0.984,0.04,1.55,,0.984
+A_with_tercile_split,3,Interactions,4,True,"mult(csrank(chg(V03,3)),csrank(yoy(V05)))",False,0.912,0.04,1.61,,0.912
+A_with_tercile_split,3,Interactions,5,True,"regime(csrank(chg(V03,3)),""high"")",True,0.824,-0.01,-0.37,,0.216
+A_with_tercile_split,3,Interactions,6,True,"mult(csrank(chg(V03,6)),csrank(chg(V04,6)))",False,0.96,0.06,1.88,,0.96
+B_without_tercile_split,3,Temporal,1,True,"tsz(V02,""exp"")",False,0.728,-0.0,-0.06,,0.728
+B_without_tercile_split,3,Temporal,2,True,"persist(V05,6)",False,0.96,-0.07,-1.82,,0.96
+B_without_tercile_split,3,Temporal,3,True,accel(V03),False,0.96,0.04,1.17,,0.96
+B_without_tercile_split,3,Temporal,4,True,"chg(V06,6)",False,0.96,-0.03,-1.2,,0.96
+B_without_tercile_split,3,Temporal,5,True,"spread(V01,V05)",False,1.0,0.04,1.21,,1.0
+B_without_tercile_split,3,Temporal,6,True,"spread(V04,V06)",False,1.0,0.04,1.93,,1.0
+B_without_tercile_split,3,Composition,1,True,"csrank(spread(mavg(V03,3),mavg(V02,3)))",False,0.992,0.01,0.27,,0.992
+B_without_tercile_split,3,Composition,2,True,"csrank(spread(mavg(V04,3),mavg(V06,3)))",False,0.992,0.05,1.84,,0.992
+B_without_tercile_split,3,Composition,3,True,"csrank(spread(tsz(V04,60),tsz(V06,60)))",False,0.536,0.06,2.17,,0.536
+B_without_tercile_split,3,Composition,4,False,"csrank(spread(tsz(mavg(V04,3),""exp""),tsz(mavg(V06,3),""exp"")))",False,,,,Unknown operation or nesting limit exceeded,
+B_without_tercile_split,3,Composition,5,True,"csrank(spread(tsz(V04,""exp""),tsz(V06,""exp"")))",False,0.728,0.01,0.45,,0.728
+B_without_tercile_split,3,Composition,6,True,"csrank(spread(mavg(V04,6),mavg(V06,6)))",False,0.944,0.05,1.95,,0.944
+B_without_tercile_split,3,Interactions,1,True,"mult(csrank(chg(V01,3)), csrank(chg(V05,3)))",False,0.984,-0.02,-1.05,,0.984
+B_without_tercile_split,3,Interactions,2,False,"regime(spread(V02,V03),""high"")",False,,,,hypothesis has 41 words; maximum is 40,
+B_without_tercile_split,3,Interactions,3,True,"spread(tsz(V06,60),tsz(V02,60))",False,0.536,-0.03,-0.85,,0.536
+B_without_tercile_split,3,Interactions,4,True,"mult(csrank(V04),csrank(chg(V06,3)))",False,0.984,-0.02,-0.67,,0.984
+B_without_tercile_split,3,Interactions,5,True,"regime(spread(chg(V05,3),V03),""high"")",True,0.824,0.03,0.54,,0.216
+B_without_tercile_split,3,Interactions,6,True,"mult(csrank(chg(V02,3)),csrank(chg(V03,3)))",False,0.984,0.01,0.63,,0.984

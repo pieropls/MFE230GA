@@ -1,0 +1,5 @@
+study,arm,calls_with_usage,tokens_total,tokens_per_call,output_tokens_per_call
+Study 1 (Sonnet),independent,54,120932.0,2239.4814814814813,183.16666666666666
+Study 1 (Sonnet),islands,54,134185.0,2484.9074074074074,192.8148148148148
+Study 1b (Opus),independent,54,180555.0,3343.6111111111113,1257.4444444444443
+Study 1b (Opus),islands,54,214003.0,3963.0185185185187,1509.3148148148148

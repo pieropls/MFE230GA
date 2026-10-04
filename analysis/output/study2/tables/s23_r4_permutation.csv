@@ -1,0 +1,5 @@
+study,metric,islands_minus_independent,largest_seed_range_within_arm,gap_within_seed_range,perm_p_two_sided,relabelings
+Study 1 (Sonnet),best_ic,-0.034221784890017926,0.0559846395818031,True,0.3,20
+Study 1 (Sonnet),mean_ic,-0.0005618626425075656,0.028033544127324752,True,1.0,20
+Study 1b (Opus),best_ic,0.07621559726837238,0.0993335754667318,True,0.1,20
+Study 1b (Opus),mean_ic,0.029918829955799493,0.04021520751956238,True,0.1,20

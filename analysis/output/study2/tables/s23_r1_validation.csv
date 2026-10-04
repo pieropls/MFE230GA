@@ -1,0 +1,4 @@
+check,value,tolerance
+raw F1-F5 rebuilt from panel_asof vs features_asof.raw_value: max abs difference,0.0,1e-09
+rows without a counterpart or with a missing-value mismatch,0.0,0.5
+"A0 from features_asof vs saved ASOF_A0_scores.csv, test window: max abs difference",4.440892098500626e-16,1e-09

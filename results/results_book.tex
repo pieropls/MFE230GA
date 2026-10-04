@@ -9,19 +9,22 @@
 \section{Verdict}
 \IfFileExists{verdict.tex}{\input{verdict}}{\emph{VERDICT.md is written at Stage 3.}}
 \section{Scoreboard}
-The A3 sealed ledger starts from an empty book in November 2014; the v2 test figures are the test slice of a continuous run that starts in May 2004 (pre-declared in v2\_spec.md section 4). IC is one-month except V2d (12-month, its holding horizon). DSR is the research-period value with 41 nominal trials for the frozen studies and the test-window value with 112 trials for v2. Labels: conf.\ = confirmatory, expl.\ = exploratory follow-up. Source: \path{results/scoreboard.csv}.
+The A3 sealed ledger starts from an empty book in November 2014; the v2 test figures are the test slice of a continuous run that starts in May 2004 (pre-declared in v2\_spec.md section 4). IC is one-month except HQ12 (12-month, its holding horizon). DSR is the research-period value with 41 nominal trials for the frozen studies and the test-window value with 112 trials for v2. Labels: conf.\ = confirmatory, expl.\ = exploratory follow-up. Source: \path{results/scoreboard.csv}.
 {\scriptsize\input{tables/scoreboard}}
 \section{Figures}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_timeline.pdf}\caption{Tightness never exceeded V/\allowbreak{}U = 1 in the research period, so the tightness moderator could not be learned there. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}data/\allowbreak{}fred (JTSJOL, UNEMPLOY).} \hfill \tagp}\end{figure}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_ic_signals.pdf}\caption{Only wage growth has an IC above 1.5 standard errors in both periods; layoffs and hours carry the opposite sign to the one A0 imposed. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study1/\allowbreak{}tables/\allowbreak{}d1\_\allowbreak{}signal\_\allowbreak{}ic.csv.} \hfill \tagp}\end{figure}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_horizon.pdf}\caption{Hires and quits turn negative at 12 months (t -2.1, -1.7): the investment/\allowbreak{}cost channel shows up slowly, not at one month. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study1/\allowbreak{}tables/\allowbreak{}d2\_\allowbreak{}horizon\_\allowbreak{}ic.csv.} \hfill \tagp}\end{figure}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_tightness.pdf}\caption{Split by whether T rose or fell over 12 months, hires and quits predict returns only while the market tightens; the split is balanced in both periods. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study1/\allowbreak{}tables/\allowbreak{}d3\_\allowbreak{}tightness\_\allowbreak{}ic.csv.} \hfill \tagp}\end{figure}
-\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_cumulative.pdf}\caption{Every preregistered strategy lost money in the test; the post-hoc wage-growth book gained until 2024 and gave much of it back. \textcolor{mute}{\footnotesize Source: sealed/\allowbreak{}initial/\allowbreak{}ASOF\_\allowbreak{}*\_\allowbreak{}ledger.csv; analysis/\allowbreak{}output/\allowbreak{}study2/\allowbreak{}tables/\allowbreak{}v2\_\allowbreak{}monthly\_\allowbreak{}net.csv.} \hfill \tagc (A0-A4) / \tagp (momentum, V2a)}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_cumulative.pdf}\caption{Every preregistered strategy lost money in the test; the post-hoc wage-growth book gained until 2024 and gave much of it back. \textcolor{mute}{\footnotesize Source: sealed/\allowbreak{}initial/\allowbreak{}ASOF\_\allowbreak{}*\_\allowbreak{}ledger.csv; analysis/\allowbreak{}output/\allowbreak{}study2/\allowbreak{}tables/\allowbreak{}v2\_\allowbreak{}monthly\_\allowbreak{}net.csv.} \hfill \tagc (A0-A4) / \tagp (momentum, W)}\end{figure}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_industry_pnl.pdf}\caption{A3 lost most in health care, construction and finance; trading costs were a secondary drag. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study1/\allowbreak{}tables/\allowbreak{}d5\_\allowbreak{}industry\_\allowbreak{}pnl.csv.} \hfill \tagp}\end{figure}
-\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_loadings.pdf}\caption{The labor books are quality/\allowbreak{}growth tilts: A3 loads on RMW and against HML; V2a loads against HML and on momentum. \textcolor{mute}{\footnotesize Source: results.json attribution; analysis/\allowbreak{}output/\allowbreak{}study2/\allowbreak{}tables/\allowbreak{}v2a\_\allowbreak{}factor\_\allowbreak{}loadings\_\allowbreak{}test.csv.} \hfill \tagc (A0, A1, A3) / \tagp (V2a)}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_loadings.pdf}\caption{The labor books are quality/\allowbreak{}growth tilts: A3 loads on RMW and against HML; W loads against HML and on momentum. \textcolor{mute}{\footnotesize Source: results.json attribution; analysis/\allowbreak{}output/\allowbreak{}study2/\allowbreak{}tables/\allowbreak{}v2a\_\allowbreak{}factor\_\allowbreak{}loadings\_\allowbreak{}test.csv.} \hfill \tagc (A0, A1, A3) / \tagp (W)}\end{figure}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_agents_scatter.pdf}\caption{Research IC of agent features barely predicts their test IC; the selected regime-gated features were active in 3 test months. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study1/\allowbreak{}tables/\allowbreak{}d7\_\allowbreak{}agent\_\allowbreak{}candidates.csv.} \hfill \tagp}\end{figure}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_agents.pdf}\caption{Two arms with equal budgets, a blinded evaluator, mechanical selection and a human-audited LLM judge. \textcolor{mute}{\footnotesize Source: frozen params.py AGENT.} \hfill \tagc}\end{figure}
-\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_v2_windows.pdf}\caption{V2d is the only variant positive in every window; V2a and V2c lost heavily in the last 18 months. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study2/\allowbreak{}tables/\allowbreak{}v2\_\allowbreak{}window\_\allowbreak{}stats.csv.} \hfill \tagp / \tagc (A3 bars)}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_s1_horizon.pdf}\caption{The A3 score has no IC at any horizon from 1 to 24 months; the HQ12 score has one from 9 months. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study1/\allowbreak{}tables/\allowbreak{}d11\_\allowbreak{}a3\_\allowbreak{}horizon\_\allowbreak{}profile.csv.} \hfill \tagp}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_s23_gross_needed.pdf}\caption{Reaching the 10\% volatility target would need a gross exposure above 2 in most test months, so the cap binds; the cap explains the volatility shortfall, not the losses. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study2/\allowbreak{}tables/\allowbreak{}s23\_\allowbreak{}r2\_\allowbreak{}distribution.csv.} \hfill \tagp}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_s23_agents_seeds.pdf}\caption{Best research IC per seed, by study and arm: the gap between arms is within the spread across seeds. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study2/\allowbreak{}tables/\allowbreak{}s23\_\allowbreak{}r4\_\allowbreak{}agents\_\allowbreak{}by\_\allowbreak{}seed.csv.} \hfill \tagp}\end{figure}
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_v2_windows.pdf}\caption{HQ12 is the only variant positive in every window; W and W+MOM lost heavily in the last 18 months. \textcolor{mute}{\footnotesize Source: analysis/\allowbreak{}output/\allowbreak{}study2/\allowbreak{}tables/\allowbreak{}v2\_\allowbreak{}window\_\allowbreak{}stats.csv.} \hfill \tagp / \tagc (A3 bars)}\end{figure}
 \clearpage\section{Statistics}
 Each table lives in \path{analysis/output/study2/tables/<name>.csv}; the LaTeX fragment in \path{report/tables/<name>.tex}.
 \subsection*{D1 single-signal rank IC \hfill \tagp}
@@ -63,16 +66,16 @@ Each table lives in \path{analysis/output/study2/tables/<name>.csv}; the LaTeX f
 \subsection*{v2 variants: Sharpe by window and test statistics \hfill \tagp}
 {\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v2_results}}\par
 \medskip
-\clearpage\section{V2d robustness battery (v3)}
+\clearpage\section{HQ12 robustness battery (v3)}
 Spec \path{analysis/specs/study2_2_hq12_robustness.md} frozen 2026-10-03T09:52:27Z, first run 09:53:32Z; every check run once; $N_{\text{trials}}$ raised to 132. Results: \path{analysis/output/study2/v3_results.md}. \hfill \tagp
 
-\emph{Reading against the pre-declared rule: fragile in one dimension (R4).} V2d lost money in the first half of the test (Sharpe $-0.21$) and made it in the second ($+0.64$); the other six conditions hold. The 12-month IC is positive in both halves.
+\emph{Reading against the pre-declared rule: fragile in one dimension (R4).} HQ12 lost money in the first half of the test (Sharpe $-0.21$) and made it in the second ($+0.64$); the other six conditions hold. The 12-month IC is positive in both halves.
 
 \subsection*{R1 Components \hfill \tagp}
 {\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r1_components}}\par\medskip
 \subsection*{R2 Horizon profile \hfill \tagp}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_horizon_profile.pdf}
-\caption{The V2d score has no one-month IC and a positive IC from 9 to 24 months, peaking at 12 (test $+0.096$, $t=2.43$). \textcolor{mute}{\footnotesize Source: analysis/output/study2/tables/v3\_r2\_horizon\_profile.csv.} \hfill \tagp}\end{figure}
+\caption{The HQ12 score has no one-month IC and a positive IC from 9 to 24 months, peaking at 12 (test $+0.096$, $t=2.43$). \textcolor{mute}{\footnotesize Source: analysis/output/study2/tables/v3\_r2\_horizon\_profile.csv.} \hfill \tagp}\end{figure}
 {\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r2_horizon_profile}}\par\medskip
 \subsection*{R3 Holding period \hfill \tagp}
 \begin{figure}[H]\centering\includegraphics[width=0.55\linewidth]{../report/figures/fig_v2d_holding.pdf}
@@ -86,11 +89,11 @@ Spec \path{analysis/specs/study2_2_hq12_robustness.md} frozen 2026-10-03T09:52:2
 {\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r6_alpha}}\par\medskip
 \subsection*{R7 Drop one industry \hfill \tagp}
 \begin{figure}[H]\centering\includegraphics[width=0.55\linewidth]{../report/figures/fig_v2d_dropone.pdf}
-\caption{No single industry carries V2d: removing any one leaves the test Sharpe between $+0.18$ and $+0.48$. \textcolor{mute}{\footnotesize Source: v3\_r7\_dropone.csv.} \hfill \tagp}\end{figure}
+\caption{No single industry carries HQ12: removing any one leaves the test Sharpe between $+0.18$ and $+0.48$. \textcolor{mute}{\footnotesize Source: v3\_r7\_dropone.csv.} \hfill \tagp}\end{figure}
 {\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r7_dropone_summary}}\par\medskip
 \subsection*{R8 Tightness moderator \hfill \tagp}
 \begin{figure}[H]\centering\includegraphics[width=\linewidth]{../report/figures/fig_v2d_tightness.pdf}
-\caption{V2d earned its return when tightness was falling or $V/U>1$; in tightening months the Sharpe was zero although the 12-month IC was highest. \textcolor{mute}{\footnotesize Source: v3\_r8\_tightness.csv.} \hfill \tagp}\end{figure}
+\caption{HQ12 earned its return when tightness was falling or $V/U>1$; in tightening months the Sharpe was zero although the 12-month IC was highest. \textcolor{mute}{\footnotesize Source: v3\_r8\_tightness.csv.} \hfill \tagp}\end{figure}
 {\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r8_tightness}}\par\medskip
 \subsection*{R9 Block-bootstrap interval \hfill \tagp}
 {\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_r9_bootstrap}}\par\medskip
@@ -103,6 +106,32 @@ Spec \path{analysis/specs/study2_2_hq12_robustness.md} frozen 2026-10-03T09:52:2
 \subsection*{Reading rule \hfill \tagp}
 {\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/v3_reading}}\par\medskip
 
+\clearpage\section{Study 1 robustness and Study 2.3}
+Study 1 rows labelled confirmatory are read from the saved results and are unchanged; everything else is post hoc (spec \path{analysis/specs/study2_3_robustness.md}, 162 looks). Sources: \path{analysis/output/study1/robustness.md} and \path{analysis/output/study2/robustness_2_3.md}.
+\subsection*{Study 1: A3 and A0 \hfill \tagc\ / \tagp}
+{\scriptsize\setlength{\tabcolsep}{3pt}\input{../report/tables/d11_study1_robustness}}\par\medskip
+{\scriptsize\setlength{\tabcolsep}{3pt}\input{../report/tables/d11_freeze_check}}\par\medskip
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/d11_a3_horizon_profile}}\par\medskip
+\subsection*{R1 As-known rerun \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_r1_variants}}\par\medskip
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_r1_hq12_battery}}\par\medskip
+\subsection*{R2 Risk overlay and R3 rank-weighted books \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_r2_risk_overlay}}\par\medskip
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_r2_distribution}}\par\medskip
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_r3_rank_weighted}}\par\medskip
+\subsection*{R4 Agents by seed, R5 tokens \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_r4_agents_by_seed}}\par\medskip
+{\scriptsize\setlength{\tabcolsep}{3pt}\resizebox{\textwidth}{!}{\input{../report/tables/s23_r4_permutation}}}\par\medskip
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_r5_tokens}}\par\medskip
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_r5_tokens_ic}}\par\medskip
+\subsection*{R6 Effective breadth, R7 capacity \hfill \tagp}
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_r6_breadth}}\par\medskip
+{\scriptsize\setlength{\tabcolsep}{3pt}\resizebox{\textwidth}{!}{\input{../report/tables/s23_r7_capacity}}}\par\medskip
+{\scriptsize\setlength{\tabcolsep}{3pt}\resizebox{\textwidth}{!}{\input{../report/tables/s23_r8_judge_summary}}}\par\medskip
+{\scriptsize\setlength{\tabcolsep}{3pt}\resizebox{\textwidth}{!}{\input{../report/tables/s23_r9_ablation_summary}}}\par\medskip
+\subsection*{Time patterns, turnover and costs \hfill \tagc\ / \tagp}
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_time_patterns}}\par\medskip
+{\footnotesize\setlength{\tabcolsep}{3pt}\input{../report/tables/s23_costs_turnover}}\par\medskip
 \clearpage\section{The agent experiment}
 \noindent{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/d10_agent_design}}\par
 \medskip
@@ -117,11 +146,11 @@ P2 & Blinded signal-search agents (two arms, 3 repetitions) & claude-sonnet-5-5 
 P3 & Migration reports and LLM judge of idea uptake & claude-sonnet-5-5 (medium); Opus study: claude-opus-5-5 (xhigh) & outputs/\allowbreak{}agents/\allowbreak{}migrations.json; judge prompt in agents.py trace\_\allowbreak{}migrations & Opus: 15/\allowbreak{}18 reports admitted and 84/\allowbreak{}88 usable labels; a human audit of 17 pairs was possible. & Sonnet: 28/\allowbreak{}36 judge outputs were not bare JSON; judge over-attributes uptake (10 yes vs human 3; all 7 disagreements judge-yes). & Judge output treated as an association, not evidence; human labels reported alongside. &  \\ \addlinespace
 P4 & Robustness red team on research tables & claude-sonnet-5-5 (medium); Opus study: claude-opus-5-5 (xhigh) & outputs/\allowbreak{}follow\_\allowbreak{}the\_\allowbreak{}workers/\allowbreak{}outputs/\allowbreak{}p4\_\allowbreak{}request.json & Ten ranked concerns; called "do not implement" from research tables before the seal opened. & Asserted uncomputed p-values and proposed unregistered thresholds; every suggestion was already covered by a registered diagnostic. & No new test adopted (all dispositions "covered by" or "not adopted"); registered diagnostics retained. &  \\ \addlinespace
 P5 & Post-mortem review of the frozen study & claude-opus-5-5 (Claude Code, 3 Oct 2026) & conversation request (Piero, 3 Oct 2026); docs/\allowbreak{}FINDINGS\_\allowbreak{}AND\_\allowbreak{}PROPOSAL.md & Found the wrong A0 signs, the dropped wage signal, the 12-month hiring sign, the 3-of-142-month agent features, the one-bin tightness split. & Guessed the engineering assistant was OpenAI Codex (unverified); used a momentum definition that included month m-1; quoted W ICs with a non-frozen start date. & Momentum redefined on m-12..m-2; W ICs recomputed with the frozen feature start; Codex guess withdrawn (to be confirmed by Alex). &  \\ \addlinespace
-P6 & This iteration: rebuild, diagnostics, frozen v2/\allowbreak{}v3 specs, forward test, report & claude-opus-5-5 (Parts 1-3); claude-fable-5-1 (overnight) & three task prompts (rebuild and diagnostics; v2/\allowbreak{}v3 freeze, forward test and report; final repository pass) and a one-page rules file, kept outside the repository & Reproduced the sealed A0 returns to 1e-16; froze specs before running; reported all variants; stopped at a failed gate instead of working around it. & The forward spec assumed August JOLTS would not be out by 29 Sep; it was released that day, so the pre-committed check stopped the run. & Amendment 001 (fixed-lag rule, V2c/\allowbreak{}V2d added, disclosed); run log guarantees v2 outputs never changed. &  \\ \addlinespace
+P6 & This iteration: rebuild, diagnostics, frozen v2/\allowbreak{}v3 specs, forward test, report & claude-opus-5-5 (Parts 1-3); claude-fable-5-1 (overnight) & three task prompts (rebuild and diagnostics; v2/\allowbreak{}v3 freeze, forward test and report; final repository pass) and a one-page rules file, kept outside the repository & Reproduced the sealed A0 returns to 1e-16; froze specs before running; reported all variants; stopped at a failed gate instead of working around it. & The forward spec assumed August JOLTS would not be out by 29 Sep; it was released that day, so the pre-committed check stopped the run. & Amendment 001 (fixed-lag rule, W+MOM/\allowbreak{}HQ12 added, disclosed); run log guarantees v2 outputs never changed. &  \\ \addlinespace
 \bottomrule\end{longtable}}
 Output files: P1: p1\_\allowbreak{}response.md, p1\_\allowbreak{}review.md; P2: candidates.csv, agents/\allowbreak{}candidate\_\allowbreak{}records.json; P3: agents/\allowbreak{}migration\_\allowbreak{}judgments.json, human\_\allowbreak{}review\_\allowbreak{}submission.md; P4: p4\_\allowbreak{}response.md, p4\_\allowbreak{}review.md; P5: docs/\allowbreak{}FINDINGS\_\allowbreak{}AND\_\allowbreak{}PROPOSAL.md, analysis/\allowbreak{}output/\allowbreak{}study1/\allowbreak{}diagnostics.md; P6: analysis/\allowbreak{}run.ipynb, analysis/\allowbreak{}output/\allowbreak{}*.md, results/\allowbreak{}, report/\allowbreak{}main.tex.
 \clearpage\section{Claims register}
-106 claims, 106 verified. Source: \texttt{results/claims.csv}.
+144 claims, 144 verified. Source: \texttt{results/claims.csv}.
 {\scriptsize\setlength{\tabcolsep}{3pt}\begin{longtable}{@{}p{1.0cm}p{1.3cm}p{8.2cm}p{3.5cm}p{0.7cm}@{}}
 \toprule ID & Label & Claim & Numbers & Ver. \\ \midrule \endhead
 C01 & CONF & The preregistered primary A3 earned a test Sharpe of -0.58 over 142 months (Nov 2014-Aug 2026). & -0.58; 142 & y \\
@@ -150,8 +179,8 @@ A07 & CONF & P1 audit: 25 numbered findings, 5 not supported by the files, 1 met
 A08 & CONF & The blinding audit of all 199 Sonnet calls passed (108 candidate calls, 18 migration calls, 1 syntax repair). & 199; 108; 18; 1; True & y \\
 A09 & CONF & Sonnet migration reports: 11 of 18 rejected, 10 of them for exceeding the 120-word cap (121 to 133 words). & 18; 11; 10 & y \\
 A10 & CONF & P4 red team: 6 of 10 concerns were covered by registered diagnostics; for the other 4 no additional test was adopted. & 6; 4 & y \\
-V13 & \tagp & On the research years alone the V2d 12-month IC is +0.047 (t 0.90) and its horizon-matched placebo p is 0.26. & 0.047; 0.9; 0.26 & y \\
-V14 & \tagp & The best post-hoc test Sharpe (V2c, +0.35) corresponds to t of about 1.2 over 142 months (Sharpe times sqrt(142/\allowbreak{}12)). & 1.2 & y \\
+V13 & \tagp & On the research years alone the HQ12 12-month IC is +0.047 (t 0.90) and its horizon-matched placebo p is 0.26. & 0.047; 0.9; 0.26 & y \\
+V14 & \tagp & The best post-hoc test Sharpe (W+MOM, +0.35) corresponds to t of about 1.2 over 142 months (Sharpe times sqrt(142/\allowbreak{}12)). & 1.2 & y \\
 F09 & \tagf & The Q4 2026 book was first built at 2026-10-03T09:17:55Z (independent evidence: commit 3e8ecd7, 09:18:29Z, holds a byte-identical book\_\allowbreak{}2026Q4.csv, SHA-256 857275...); book\_\allowbreak{}first\_\allowbreak{}build.sha256 records that first build and later notebook runs must reproduce it. & 2026-10-03T09:17:55+00:00 & y \\
 X01 & CONF & Opus follow-up: primary A4 test Sharpe +0.01, research Sharpe -0.40, placebo p 0.56, Sharpe at 25 bp -0.19. & 0.01; -0.4; 0.56; -0.19 & y \\
 X02 & CONF & Opus A4 one-month IC -0.002 (t = -0.10); alpha t 0.05; last 18 months Sharpe -1.41. & -0.002; -0.1; 0.05; -1.41 & y \\
@@ -176,25 +205,25 @@ A02 & CONF & Opus study: 106 of 108 proposals valid, 15 of 18 reports admitted, 
 A03 & CONF & All 7 human-judge disagreements were judge-yes /\allowbreak{} human-no (items 2, 3, 8, 12, 13, 16, 17). & 7; 0 & y \\
 A04 & CONF & Judge-labelled uptake of migrated ideas: 25\% of usable Sonnet labels (2 of 8), 62\% of Opus labels (52 of 84). & 0.25; 0.619 & y \\
 A05 & CONF & Best-so-far research IC, islands vs independent (mean over 3 runs): Sonnet 0.049 vs 0.083, Opus 0.136 vs 0.059; neither gap exceeds the seed-to-seed range. & 0.049; 0.083; 0.136; 0.059; False; False & y \\
-V\_\allowbreak{}V2a\_\allowbreak{}SR & \tagp & V2a net Sharpe (10 bp): research +0.09, test +0.16, full +0.15, post-2010 +0.12, last 18 months -1.71. & 0.09; 0.16; 0.15; 0.12; -1.71 & y \\
-V\_\allowbreak{}V2b\_\allowbreak{}SR & \tagp & V2b net Sharpe (10 bp): research -0.06, test -0.15, full -0.11, post-2010 -0.16, last 18 months -1.34. & -0.06; -0.15; -0.11; -0.16; -1.34 & y \\
-V\_\allowbreak{}V2c\_\allowbreak{}SR & \tagp & V2c net Sharpe (10 bp): research +0.27, test +0.35, full +0.32, post-2010 +0.24, last 18 months -0.78. & 0.27; 0.35; 0.32; 0.24; -0.78 & y \\
-V\_\allowbreak{}V2d\_\allowbreak{}SR & \tagp & V2d net Sharpe (10 bp): research +0.50, test +0.29, full +0.35, post-2010 +0.30, last 18 months +0.29. & 0.5; 0.29; 0.35; 0.3; 0.29 & y \\
-V01 & \tagp & V2a test: one-month IC +0.049 (t 2.04), alpha t 0.29, placebo p 0.02, deflated Sharpe 0.02, Sharpe at 25 bp +0.10, turnover 0.39 per month. & 0.049; 2.04; 0.29; 0.02; 0.02; 0.1; 0.39 & y \\
-V02 & \tagp & V2d test: 12-month IC +0.096 (t 2.43), one-month IC -0.020 (t -0.87), alpha t 1.37, pre-declared placebo p 0.85, deflated Sharpe 0.06, Sharpe at 25 bp +0.22. & 0.096; 2.43; -0.02; -0.87; 1.37; 0.85; 0.06; 0.22 & y \\
-V03 & \tagp & V2d full sample: alpha t 1.96, 12-month IC +0.071 (t 2.06), deflated Sharpe 0.18, pre-declared placebo p 0.86. & 1.96; 0.071; 2.06; 0.18; 0.86 & y \\
-V04 & \tagp & V2d test: net return +2.6\% a year, volatility 8.7\%, maximum drawdown -14.4\%, hit rate 55\%, turnover 0.37 per month. & 2.6; 8.7; -14.4; 55; 37 & y \\
-V05 & \tagp & V2c test: alpha t 1.36, placebo p 0.26, deflated Sharpe 0.09. & 1.36; 0.26; 0.09 & y \\
-V06 & \tagp & V2b test: one-month IC +0.042 (t 1.65) but alpha t -0.84. & 0.042; 1.65; -0.84 & y \\
+V\_\allowbreak{}W\_\allowbreak{}SR & \tagp & W net Sharpe (10 bp): research +0.09, test +0.16, full +0.15, post-2010 +0.12, last 18 months -1.71. & 0.09; 0.16; 0.15; 0.12; -1.71 & y \\
+V\_\allowbreak{}SC\_\allowbreak{}SR & \tagp & SC net Sharpe (10 bp): research -0.06, test -0.15, full -0.11, post-2010 -0.16, last 18 months -1.34. & -0.06; -0.15; -0.11; -0.16; -1.34 & y \\
+V\_\allowbreak{}W+MOM\_\allowbreak{}SR & \tagp & W+MOM net Sharpe (10 bp): research +0.27, test +0.35, full +0.32, post-2010 +0.24, last 18 months -0.78. & 0.27; 0.35; 0.32; 0.24; -0.78 & y \\
+V\_\allowbreak{}HQ12\_\allowbreak{}SR & \tagp & HQ12 net Sharpe (10 bp): research +0.50, test +0.29, full +0.35, post-2010 +0.30, last 18 months +0.29. & 0.5; 0.29; 0.35; 0.3; 0.29 & y \\
+V01 & \tagp & W test: one-month IC +0.049 (t 2.04), alpha t 0.29, placebo p 0.02, deflated Sharpe 0.02, Sharpe at 25 bp +0.10, turnover 0.39 per month. & 0.049; 2.04; 0.29; 0.02; 0.02; 0.1; 0.39 & y \\
+V02 & \tagp & HQ12 test: 12-month IC +0.096 (t 2.43), one-month IC -0.020 (t -0.87), alpha t 1.37, pre-declared placebo p 0.85, deflated Sharpe 0.06, Sharpe at 25 bp +0.22. & 0.096; 2.43; -0.02; -0.87; 1.37; 0.85; 0.06; 0.22 & y \\
+V03 & \tagp & HQ12 full sample: alpha t 1.96, 12-month IC +0.071 (t 2.06), deflated Sharpe 0.18, pre-declared placebo p 0.86. & 1.96; 0.071; 2.06; 0.18; 0.86 & y \\
+V04 & \tagp & HQ12 test: net return +2.6\% a year, volatility 8.7\%, maximum drawdown -14.4\%, hit rate 55\%, turnover 0.37 per month. & 2.6; 8.7; -14.4; 55; 37 & y \\
+V05 & \tagp & W+MOM test: alpha t 1.36, placebo p 0.26, deflated Sharpe 0.09. & 1.36; 0.26; 0.09 & y \\
+V06 & \tagp & SC test: one-month IC +0.042 (t 1.65) but alpha t -0.84. & 0.042; 1.65; -0.84 & y \\
 V07 & \tagp & No v2 variant met the pre-declared reading rule. & not distinguishable from noise after the looks already taken; not distinguishable from noise after the looks already taken; not distinguishable from noise after the looks already taken; not distinguishable from noise after the looks already taken & y \\
-V08 & \tagp & The highest deflated Sharpe among all v2 variants and windows was 0.18 (V2d, full sample). & 0.18 & y \\
-V09 & \tagp & Horizon-matched (12-month IC) placebo for V2d, added post-hoc: p 0.06 test, 0.04 full sample, 0.00 post-2010, 0.26 research. & 0.06; 0.04; 0.0; 0.26 & y \\
-V10 & \tagp & V2b signs learned on research data: + for openings, hires, quits, layoffs and wages; - for hours. & 1; 1; 1; 1; 1; -1 & y \\
-V11 & \tagp & V2a test loadings: HML -0.43 (t -4.4), momentum +0.22 (t 3.3), SMB +0.28 (t 2.3). & -0.43; -4.4; 0.22; 3.3; 0.28; 2.3 & y \\
-F01 & \tagf & V2a Q4 2026 book: long construction, durable manufacturing and information; short mining, health care and accommodation \& food. & 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 & y \\
-F02 & \tagf & V2d Q4 2026 book: long finance, real estate and accommodation \& food; short mining, durable manufacturing and retail. & 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 & y \\
-F03 & \tagf & SPY hedge per unit tranche: V2a -0.40, V2b -0.06, V2c -0.24, V2d -0.02. & -0.4; -0.06; -0.24; -0.02 & y \\
-F04 & \tagf & V2c's long durable manufacturing and short professional services both map to XLI and cancel, so its tradable book has four legs. & 0.0 & y \\
+V08 & \tagp & The highest deflated Sharpe among all v2 variants and windows was 0.18 (HQ12, full sample). & 0.18 & y \\
+V09 & \tagp & Horizon-matched (12-month IC) placebo for HQ12, added post-hoc: p 0.06 test, 0.04 full sample, 0.00 post-2010, 0.26 research. & 0.06; 0.04; 0.0; 0.26 & y \\
+V10 & \tagp & SC signs learned on research data: + for openings, hires, quits, layoffs and wages; - for hours. & 1; 1; 1; 1; 1; -1 & y \\
+V11 & \tagp & W test loadings: HML -0.43 (t -4.4), momentum +0.22 (t 3.3), SMB +0.28 (t 2.3). & -0.43; -4.4; 0.22; 3.3; 0.28; 2.3 & y \\
+F01 & \tagf & W Q4 2026 book: long construction, durable manufacturing and information; short mining, health care and accommodation \& food. & 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 & y \\
+F02 & \tagf & HQ12 Q4 2026 book: long finance, real estate and accommodation \& food; short mining, durable manufacturing and retail. & 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 & y \\
+F03 & \tagf & SPY hedge per unit tranche: W -0.40, SC -0.06, W+MOM -0.24, HQ12 -0.02. & -0.4; -0.06; -0.24; -0.02 & y \\
+F04 & \tagf & W+MOM's long durable manufacturing and short professional services both map to XLI and cancel, so its tradable book has four legs. & 0.0 & y \\
 F05 & \tagf & The forward spec was frozen at 2026-10-03T09:03:56Z and amendment 001 at 2026-10-03T09:16:11Z, before the book was built (gate3.md records the order). & True; True & y \\
 S01 & \tagp & Our rebuilt A0 signal matches the frozen fixed-lag scores with pooled correlation 0.998. & 0.998 & y \\
 S02 & \tagp & As-known (ASOF) scores pick the same top three groups as our revised-data signal in only 42\% of test months. & 42 & y \\
@@ -204,38 +233,76 @@ C20 & CONF & A3 under the four data variants: Sharpe -0.58 (as-known), -0.52 (fi
 C21 & CONF & A3 turned over 0.91 of its industry book a month in the test. & 0.91 & y \\
 C22 & CONF & The frozen power statement: 142 sealed months require roughly 0.6 annualised Sharpe for IID t of about 2. & 142 sealed months require roughly 0.6 annualized Sharpe for IID t$\approx$2; a null does not rule out a smaller effect. & y \\
 S05 & \tagp & Windows: research 125 months, test 142, full sample 268, post-2010 200, last 18 months 18. & 125; 142; 268; 200; 18 & y \\
-F06 & \tagf & V2b Q4 2026 book: long durable manufacturing, retail and transport \& utilities; short real estate, health care and accommodation \& food. & 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 & y \\
-F07 & \tagf & V2c Q4 2026 book: long construction, durable manufacturing and finance; short retail, transport \& utilities and professional services. & 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 & y \\
+F06 & \tagf & SC Q4 2026 book: long durable manufacturing, retail and transport \& utilities; short real estate, health care and accommodation \& food. & 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 & y \\
+F07 & \tagf & W+MOM Q4 2026 book: long construction, durable manufacturing and finance; short retail, transport \& utilities and professional services. & 0.3333333333333333; 0.3333333333333333; 0.3333333333333333; -0.3333333333333333; -0.3333333333333333; -0.3333333333333333 & y \\
 F08 & \tagf & Hashes: v2 spec ca658234..., forward spec 735a8ffa..., amendment 001 c76cde86..., v3 spec 312aef1d... (first 8 hex digits). & ca6582347904489b\allowbreak{}db6fac1496f895fd\allowbreak{}18c91eba47ca2bc8\allowbreak{}566e35cdf44a5832; 735a8ffa9c9c23fd\allowbreak{}710dfae778a535ca\allowbreak{}d649685aa157dcde\allowbreak{}d3ae0e9996dfb21f; c76cde86a85ff703\allowbreak{}d317cfeb15dc02a4\allowbreak{}2e342d81a299da2a\allowbreak{}ab959adeb372b12b; 312aef1dd9551aa7\allowbreak{}044d37ccf8562a8e\allowbreak{}66cddfe741e0e109\allowbreak{}7c15cff18ed8bfde & y \\
-V12 & \tagp & V2a turnover 0.39 and V2d turnover 0.37 of the industry book per month in the test; A3 0.91. & 0.39; 0.37 & y \\
+V12 & \tagp & W turnover 0.39 and HQ12 turnover 0.37 of the industry book per month in the test; A3 0.91. & 0.39; 0.37 & y \\
 X05 & \tagp & Opus study: 7 island-arm candidates passed the research filter against 4 in the Sonnet study. & 7; 4 & y \\
 R1a & \tagp & Held 12 months, hires alone earn a test Sharpe of +0.19 and quits alone +0.16; openings +0.42 and layoffs +0.16 (both with the same negative sign, for contrast). & 0.19; 0.16; 0.42; 0.16 & y \\
 R1b & \tagp & Hires alone have a test 12-month IC of +0.093 (t 2.90); quits alone +0.085 (t 1.75). & 0.093; 2.9; 0.085; 1.75 & y \\
-R2a & \tagp & Test-window IC of the V2d score by horizon: -0.020 at 1 month (t -0.87), +0.069 at 9 (t 1.98), +0.096 at 12 (t 2.43), +0.085 at 18 (t 2.00), +0.063 at 24 (t 1.86). & -0.02; -0.87; 0.069; 1.98; 0.096; 2.43; 0.085; 2.0; 0.063; 1.86 & y \\
-R2b & \tagp & The 12-month IC of the V2d score is +0.047 (t 0.90) in research and +0.071 (t 2.06) over the full sample. & 0.047; 0.9; 0.071; 2.06 & y \\
+R2a & \tagp & Test-window IC of the HQ12 score by horizon: -0.020 at 1 month (t -0.87), +0.069 at 9 (t 1.98), +0.096 at 12 (t 2.43), +0.085 at 18 (t 2.00), +0.063 at 24 (t 1.86). & -0.02; -0.87; 0.069; 1.98; 0.096; 2.43; 0.085; 2.0; 0.063; 1.86 & y \\
+R2b & \tagp & The 12-month IC of the HQ12 score is +0.047 (t 0.90) in research and +0.071 (t 2.06) over the full sample. & 0.047; 0.9; 0.071; 2.06 & y \\
 R3a & \tagp & Test Sharpe by holding period: +0.05 at 6 months, +0.14 at 9, +0.29 at 12, +0.30 at 18. & 0.05; 0.14; 0.29; 0.3 & y \\
 R3b & \tagp & Research Sharpe by holding period: +0.31 at 6 months, +0.43 at 9, +0.50 at 12, +0.58 at 18. & 0.31; 0.43; 0.5; 0.58 & y \\
-R4a & \tagp & V2d test Sharpe was -0.21 in the first half (71 months) and +0.64 in the second half. & -0.21; 71; 0.64 & y \\
-R4b & \tagp & V2d test Sharpe excluding Mar 2020-Dec 2021: +0.37; pre-2020: +0.14; 2020 onward: +0.37. Full-sample halves: +0.33 and +0.38. & 0.37; 0.14; 0.37; 0.33; 0.38 & y \\
-R4c & \tagp & The 12-month IC of V2d was positive in both test halves (+0.097 and +0.095) even though the first-half Sharpe was negative. & 0.097; 0.095 & y \\
-R5a & \tagp & V2d test Sharpe: +0.34 at 0 bp, +0.29 at 10, +0.22 at 25, +0.09 at 50 bp; break-even industry cost 68 bp (69 bp full sample). & 0.34; 0.29; 0.22; 0.09; 68; 69 & y \\
-R6a & \tagp & With 12 HAC lags, V2d alpha is +0.26\% a month in the test and +0.26\% over the full sample. & 0.26; 0.26 & y \\
-R6a2 & \tagp & The t-statistics of the V2d alpha with 12 HAC lags are 1.48 (test) and 1.92 (full sample). & 1.48; 1.92 & y \\
-R6b & \tagp & V2d loads against profitability in the test: RMW -0.36 (t -4.45) and SMB -0.17 (t -2.24); market, momentum and industry-momentum loadings are small. & -0.36; -4.45; -0.17; -2.24 & y \\
-R7a & \tagp & Dropping any one industry leaves the V2d test Sharpe between +0.18 (without health care) and +0.48 (without real estate), median +0.30. & 0.18; 0.3; 0.48; Health care; Real estate & y \\
-R8a & \tagp & V2d net Sharpe by regime at the decision (test): -0.00 when T rose over 12 months, +0.66 when it fell; +0.72 when V/\allowbreak{}U > 1, -0.14 when V/\allowbreak{}U < 1. & -0.0; 0.66; 0.72; -0.14 & y \\
-R8b & \tagp & The 12-month IC of V2d is highest when T is rising (+0.115, t 2.52) although the Sharpe in those months is zero. & 0.115; 2.52 & y \\
-R9a & \tagp & Block-bootstrap 90\% interval for the V2d Sharpe: [-0.07, +0.65] in the test (includes zero) and [+0.05, +0.64] over the full sample (excludes zero). & -0.07; 0.65; 0.05; 0.64 & y \\
-R11a & \tagp & Fundamental law, test window: A3 IC -0.021 x sqrt(156) x TC 0.80 implies IR -0.21 (realised -0.58); V2a IC +0.049 x sqrt(156) x TC 0.91 implies +0.56 (realised +0.16); V2d IC +0.096 x sqrt(13) x TC 0.48 implies +0.17, ceiling +0.35 (realised +0.29). & -0.021; 0.8; -0.21; -0.58; 0.049; 0.91; 0.56; 0.16; 0.096; 0.48; 0.17; 0.35; 0.29 & y \\
-R12 & \tagp & With N\_\allowbreak{}trials raised to 132, the V2d deflated Sharpe is 0.05 in the test and 0.16 over the full sample; the benchmark Sharpe that 132 null trials would produce is 0.76 (test) and 0.56 (full). & 0.05; 0.16; 0.76; 0.56 & y \\
-R13 & \tagp & Against the pre-declared battery rule, V2d fails only R4 (both test halves positive); R1, R2, R3, R5, R7 and R9 hold. & no; yes; yes; yes; yes; yes; yes & y \\
+R4a & \tagp & HQ12 test Sharpe was -0.21 in the first half (71 months) and +0.64 in the second half. & -0.21; 71; 0.64 & y \\
+R4b & \tagp & HQ12 test Sharpe excluding Mar 2020-Dec 2021: +0.37; pre-2020: +0.14; 2020 onward: +0.37. Full-sample halves: +0.33 and +0.38. & 0.37; 0.14; 0.37; 0.33; 0.38 & y \\
+R4c & \tagp & The 12-month IC of HQ12 was positive in both test halves (+0.097 and +0.095) even though the first-half Sharpe was negative. & 0.097; 0.095 & y \\
+R5a & \tagp & HQ12 test Sharpe: +0.34 at 0 bp, +0.29 at 10, +0.22 at 25, +0.09 at 50 bp; break-even industry cost 68 bp (69 bp full sample). & 0.34; 0.29; 0.22; 0.09; 68; 69 & y \\
+R6a & \tagp & With 12 HAC lags, HQ12 alpha is +0.26\% a month in the test and +0.26\% over the full sample. & 0.26; 0.26 & y \\
+R6a2 & \tagp & The t-statistics of the HQ12 alpha with 12 HAC lags are 1.48 (test) and 1.92 (full sample). & 1.48; 1.92 & y \\
+R6b & \tagp & HQ12 loads against profitability in the test: RMW -0.36 (t -4.45) and SMB -0.17 (t -2.24); market, momentum and industry-momentum loadings are small. & -0.36; -4.45; -0.17; -2.24 & y \\
+R7a & \tagp & Dropping any one industry leaves the HQ12 test Sharpe between +0.18 (without health care) and +0.48 (without real estate), median +0.30. & 0.18; 0.3; 0.48; Health care; Real estate & y \\
+R8a & \tagp & HQ12 net Sharpe by regime at the decision (test): -0.00 when T rose over 12 months, +0.66 when it fell; +0.72 when V/\allowbreak{}U > 1, -0.14 when V/\allowbreak{}U < 1. & -0.0; 0.66; 0.72; -0.14 & y \\
+R8b & \tagp & The 12-month IC of HQ12 is highest when T is rising (+0.115, t 2.52) although the Sharpe in those months is zero. & 0.115; 2.52 & y \\
+R9a & \tagp & Block-bootstrap 90\% interval for the HQ12 Sharpe: [-0.07, +0.65] in the test (includes zero) and [+0.05, +0.64] over the full sample (excludes zero). & -0.07; 0.65; 0.05; 0.64 & y \\
+R11a & \tagp & Fundamental law, test window: A3 IC -0.021 x sqrt(156) x TC 0.80 implies IR -0.21 (realised -0.58); W IC +0.049 x sqrt(156) x TC 0.91 implies +0.56 (realised +0.16); HQ12 IC +0.096 x sqrt(13) x TC 0.48 implies +0.17, ceiling +0.35 (realised +0.29). & -0.021; 0.8; -0.21; -0.58; 0.049; 0.91; 0.56; 0.16; 0.096; 0.48; 0.17; 0.35; 0.29 & y \\
+R12 & \tagp & With N\_\allowbreak{}trials raised to 132, the HQ12 deflated Sharpe is 0.05 in the test and 0.16 over the full sample; the benchmark Sharpe that 132 null trials would produce is 0.76 (test) and 0.56 (full). & 0.05; 0.16; 0.76; 0.56 & y \\
+R13 & \tagp & Against the pre-declared battery rule, HQ12 fails only R4 (both test halves positive); R1, R2, R3, R5, R7 and R9 hold. & no; yes; yes; yes; yes; yes; yes & y \\
 R10 & \tagp & R10 (as-known ALFRED rerun) was not run: no FRED API key. & not run: no key & y \\
+B01 & CONF & Study 1 freeze record: the SHA-256 of FREEZE.json equals the hash stored in evaluation\_\allowbreak{}started.json, and the test was opened after the freeze (0.040 s later, 2 Oct 2026, 06:00:09 UTC). & True; True; 0.040 s later & y \\
+B02 & CONF & Of the 525 files in the freeze inventory, 338 are in the repository and 337 match their frozen hash; the one that differs is the human migration review, written after the test. & 525; 338; 337; outputs/\allowbreak{}human\_\allowbreak{}migration\_\allowbreak{}review.md & y \\
+B03 & \tagp & Block-bootstrap 90\% interval for the test Sharpe (12-month blocks, 5,000 draws): A3 [-0.99, -0.16], A0 [-0.91, +0.20]. & [-0.99, -0.16]; [-0.91, +0.20] & y \\
+B04 & \tagp & The A3 score has no IC at any horizon in the test: -0.021 (t -1.08) at 1 month, -0.004 (t -0.09) at 6, -0.013 (t -0.22) at 12, -0.000 (t -0.00) at 24. & -0.021; -1.08; -0.004; -0.09; -0.013; -0.22; -0.0; -0.0 & y \\
+B05 & \tagp & A3 test Sharpe with the gross cap at 2, at 3 and with no cap: -0.58, -0.61, -0.62; realised volatility 7.8\%, 9.7\%, 10.3\%; the cap binds in 87\% and 35\% of months. & -0.58; -0.61; -0.62 & y \\
+B05b & \tagp & A3 realised volatility by cap: 7.8\% (cap 2), 9.7\% (cap 3), 10.3\% (no cap); cap binding in 87\% and 35\% of test months. & 7.8; 9.7; 10.3; 87; 35 & y \\
+B06 & \tagp & The rank-weighted A3 book earns a test Sharpe of -0.49 with a transfer coefficient of 0.83 (top 3 /\allowbreak{} bottom 3: -0.58, 0.80). & -0.49; 0.83; -0.58; 0.8 & y \\
+B07 & CONF & A0 (fixed rule) test Sharpe by data version: -0.36 as known, -0.16 first release, -0.26 revised, -0.27 fixed lag. & -0.36; -0.16; -0.26; -0.27 & y \\
+B08 & CONF & A0 by window: first test half -0.55, second half -0.20, last 18 months -1.56; factor alpha -0.25\% a month (t -0.92). & -0.55; -0.20; -1.56; -0.25\% (-0.92) & y \\
+B09 & CONF & Dropping one group at a time, A3 test Sharpe ranges from -0.70 (without wholesale) to -0.24 (without durable manufacturing). & -0.70 (Wholesale) to -0.24 (Durable mfg) & y \\
+B10 & CONF & Study 1 research-period deflated Sharpe (41 nominal trials): A3 0.003, A0 0.000. & 0.003; 0.000 & y \\
+T01 & \tagp & R1 validation: raw features rebuilt from the as-known panel equal Study 1 saved features exactly (maximum difference 0), and the as-known A0 score equals the saved one to 4e-16. & 0; 0; 0 & y \\
+T02 & \tagp & As-known test Sharpe: W +0.13, SC +0.24, W+MOM +0.46, HQ12 +0.20 (fixed lag: +0.16, -0.15, +0.35, +0.29). & 0.13; 0.24; 0.46; 0.2; 0.16; -0.15; 0.35; 0.29 & y \\
+T03 & \tagp & HQ12 as known: 12-month test IC +0.085 (t 2.26) against +0.096 (t 2.43) with fixed lags; W one-month IC +0.041 (t 1.73) against +0.049 (t 2.04). & 0.085; 2.26; 0.096; 2.43; 0.041; 1.73 & y \\
+T04 & \tagp & Share of test months in which the as-known and fixed-lag scores pick the same top three and the same bottom three groups: HQ12 39\% and 51\%, W 76\% and 70\%, W+MOM 84\% and 74\%, SC 0\% and 0\%. & 39; 51; 76; 70; 84; 74; 0; 0 & y \\
+T05 & \tagp & HQ12 as known by window: research +0.54, test +0.20, full +0.31, post-2010 +0.23, last 18 months +0.14. & 0.54; 0.2; 0.31; 0.23; 0.14 & y \\
+T06 & \tagp & HQ12 battery as known: first test half -0.23, second +0.49; break-even cost 50 bp; drop-one test Sharpe between +0.05 and +0.36; hires only +0.19, quits only +0.17; holding 9 months +0.16, 18 months +0.11. & -0.23; 0.49; 50; 0.05; 0.36; 0.19; 0.17; 0.16; 0.11 & y \\
+T07 & \tagp & HQ12 as known: bootstrap 90\% interval [-0.14, +0.57] in the test and [+0.02, +0.60] over the full sample; alpha t 0.92 (test) and 1.81 (full sample, 12 HAC lags); deflated Sharpe 0.02 at 162 looks. & -0.14; 0.57; 0.02; 0.6; 0.92; 1.81; 0.02 & y \\
+T08 & \tagp & As known, the last 18 months: W -1.31, SC +1.38, W+MOM -0.94, HQ12 +0.14; W+MOM test alpha t 1.93, the largest of the four. & -1.31; 1.38; -0.94; 0.14; 1.93 & y \\
+T09 & \tagp & SC signs re-learned on as-known research data: negative for openings, hires, layoffs and hours, positive for quits and wages (with fixed lags only hours was negative). & -1; -1; 1; -1; -1; 1 & y \\
+T10 & \tagp & Median gross exposure needed to reach 10\% ex-ante volatility in the test: 2.60 for A3 and 2.45 for HQ12 (5th to 95th percentile 1.85 to 4.19 and 1.79 to 4.24); median unit-book volatility 7.5\% and 6.4\%. & 2.6; 2.45; 1.85; 4.19; 1.79; 4.24 & y \\
+T10b & \tagp & Median ex-ante volatility of the unit book: 7.5\% (A3) and 6.4\% (HQ12). & 7.5; 6.4 & y \\
+T11 & \tagp & HQ12 test Sharpe with the cap at 2, 3 and none: +0.29, +0.24, +0.24; realised volatility 8.7\%, 10.5\%, 11.1\%; the cap binds in 83\% and 39\% of months. & 0.29; 0.24; 0.24 & y \\
+T11b & \tagp & HQ12 realised volatility by cap 8.7\%, 10.5\%, 11.1\%; cap binding 83\% and 39\% of test months. & 8.7; 10.5; 11.1; 83; 39 & y \\
+T12 & \tagp & Rank-weighted HQ12: test Sharpe +0.31, transfer coefficient 0.49, monthly turnover 0.37 (top 3 /\allowbreak{} bottom 3: +0.29, 0.48, 0.37); fundamental-law implied IR +0.17 for both. & 0.31; 0.49; 0.37; 0.29; 0.48; 0.17; 0.17 & y \\
+T13 & \tagp & Islands minus independent, best research IC per seed: -0.034 in Study 1 (largest seed range 0.056, permutation p 0.30) and +0.076 in Study 1b (seed range 0.099, p 0.10); in both the gap is within the seed range. & -0.034; 0.056; 0.3; 0.076; 0.099; 0.1; True; True & y \\
+T14 & \tagp & Share of valid independent-arm proposals with a regime gate in Study 1: 29\%, 24\% and 15\% across the three seeds. & 29; 24; 15 & y \\
+T15 & \tagp & Tokens per proposal call: 2,239 (independent) and 2,485 (islands) in Study 1; 3,344 and 3,963 in Study 1b. Spearman correlation between a proposal's output tokens and its research IC: +0.13 (Study 1), +0.41 (Study 1b). & 2239; 2485; 3344; 3963; 0.13; 0.41 & y \\
+T16 & \tagp & Participation ratio of the 13-group correlation matrix: 2.0 for excess returns, 9.1 for relative returns, 7.4 for z(W) and 10.1 for the HQ12 score. & 2.0; 9.1; 7.4; 10.1 & y \\
+T17 & \tagp & Capacity with the proxy ETFs: the binding ETF is PEJ (average daily volume $3.2 million); monthly trading reaches 1\% of it at $0.5 million of AUM for A3 and $1.2 million for HQ12, and 5\% at $2.5 and $5.9 million; SPY trades $47 billion a day. & PEJ; 3.2; 0.5; 1.2; 2.5; 5.9; 47 & y \\
+T18 & \tagp & Judge with a verbatim quote, Study 1 pairs (Sonnet): 8 of 8 answers usable (2 of 8 originally), agreement with the human 7 of 8, one false yes. & 8; 2; 7; 1 & y \\
+T19 & \tagp & Judge with a verbatim quote, Study 1b pairs (Opus): 7 of 17 answers were JSON only; accepting fenced JSON, agreement with the human is 9 of 17 (10 of 17 originally) with 8 false yes (7 originally) and no missed yes. & 7; 9; 10; 8; 7; 0 & y \\
+T20 & \tagp & Feedback ablation (independent arm, research data, 3 seeds, 54 proposals per condition): with the tightness-tercile split 4 of 48 valid proposals used a regime gate (8\%); without it 3 of 50 (6\%). & 54; 48; 4; 8; 54; 50; 3; 6 & y \\
+T21 & \tagp & The reconstructed research inputs of the ablation reproduce 94 of 98 saved Study 1 feedbacks exactly; the largest difference is 0.11. & 98; 94; 0.11 & y \\
+T22 & CONF / \tagp & Net Sharpe, full sample /\allowbreak{} post-2010 /\allowbreak{} last 18 months: A0 -0.48/\allowbreak{}-0.41/\allowbreak{}-1.56, A1 -0.52/\allowbreak{}-0.66/\allowbreak{}+0.73, A1-T -0.58/\allowbreak{}-0.73/\allowbreak{}-0.37, A3 -0.44/\allowbreak{}-0.62/\allowbreak{}+0.85, A4 -0.56/\allowbreak{}-0.74/\allowbreak{}+1.23 (Study 1); W +0.15/\allowbreak{}+0.12/\allowbreak{}-1.71, SC -0.11/\allowbreak{}-0.16/\allowbreak{}-1.34, W+MOM +0.32/\allowbreak{}+0.24/\allowbreak{}-0.78, HQ12 +0.35/\allowbreak{}+0.30/\allowbreak{}+0.29 (Study 2). & -0.48; -0.41; -1.56; -0.52; -0.66; 0.73; -0.58; -0.73; -0.37; -0.44; -0.62; 0.85; -0.56; -0.74; 1.23; 0.15; 0.12; -1.71; -0.11; -0.16; -1.34; 0.32; 0.24; -0.78; 0.35; 0.3; 0.29 & y \\
+T23 & CONF / \tagp & Annual turnover, cost drag and break-even cost in the test: A3 11.0x, 1.11\%, -32 bp; W 4.7x, 0.47\%, +46 bp; SC 8.7x, 0.88\%, -5 bp; W+MOM 5.8x, 0.59\%, +62 bp; HQ12 4.4x, 0.44\%, +68 bp. & 11.0; 1.11; -32; 4.7; 0.47; 46; 8.7; 0.88; -5; 5.8; 0.59; 62; 4.4; 0.44; 68 & y \\
+T24 & \tagp & Rank-weighted books: A3 turnover 10.3x a year, break-even -24 bp; HQ12 4.4x, +69 bp. & 10.3; -24; 4.4; 69 & y \\
+T25 & \tagp & The Study 2.3 specification was hashed (068a3e03...) at 2026-10-04T09:18:39Z, before its first output; deflated Sharpe ratios in Study 2.3 use 162 looks. & 068a3e0396332514\allowbreak{}ee3b76677f31b9c1\allowbreak{}ff6bfea7362d9e91\allowbreak{}d69ecc013e791528 & y \\
 \bottomrule\end{longtable}}
 \section{Known issues}
 \begin{itemize}
-\item \emph{V2c's ETF legs cancel.} Its long durable manufacturing and short professional services both map to XLI, so the tradable V2c book has four legs (book\_\allowbreak{}2026Q4\_\allowbreak{}etf.csv). \textcolor{mute}{Fix or disclosure: Disclose in the forward-test section; track V2c on French group returns as the primary record.}
+\item \emph{W+MOM's ETF legs cancel.} Its long durable manufacturing and short professional services both map to XLI, so the tradable W+MOM book has four legs (book\_\allowbreak{}2026Q4\_\allowbreak{}etf.csv). \textcolor{mute}{Fix or disclosure: Disclose in the forward-test section; track W+MOM on French group returns as the primary record.}
 \item \emph{Revised vs as-known data.} Every historical v2/\allowbreak{}v3 number uses revised FRED values with fixed lags (option c in data\_\allowbreak{}vintage.md). The frozen study found the same A3 IC under both rules, but as-known data picks the same top-3 groups in only 42\% of months. \textcolor{mute}{Fix or disclosure: Label every v2/\allowbreak{}v3 number "revised data"; R10 (as-known rerun) is not run without a FRED key.}
-\item \emph{Overlap in the 12-month placebo.} The horizon-matched placebo for V2d uses overlapping 12-month returns; the circular shift preserves but does not correct the overlap, so its p-values are optimistic. \textcolor{mute}{Fix or disclosure: Keep the pre-declared 1-month placebo (p = 0.85) in the reading rule; report the 12-month one as a post-hoc check only.}
+\item \emph{Overlap in the 12-month placebo.} The horizon-matched placebo for HQ12 uses overlapping 12-month returns; the circular shift preserves but does not correct the overlap, so its p-values are optimistic. \textcolor{mute}{Fix or disclosure: Keep the pre-declared 1-month placebo (p = 0.85) in the reading rule; report the 12-month one as a post-hoc check only.}
 \item \emph{Mapping dilution.} Labor data cover all establishments in an industry; returns cover listed firms. Durable manufacturing is 60\% semiconductors and nondurable manufacturing 60\% pharmaceuticals by market cap. \textcolor{mute}{Fix or disclosure: State as a limit; name NAICS-based CRSP baskets as the follow-up.}
 \item \emph{Power.} 142 test months detect an annualised Sharpe of about 0.6 at t = 2. None of the post-hoc Sharpe ratios (0.1-0.35) is distinguishable from zero after deflation. \textcolor{mute}{Fix or disclosure: Say so in the limits; the forward test is a record, not a verdict.}
 \end{itemize}

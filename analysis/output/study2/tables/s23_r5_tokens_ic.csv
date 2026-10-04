@@ -1,0 +1,3 @@
+study,n,spearman_output_tokens_vs_ic,spearman_output_tokens_vs_abs_ic
+Study 1 (Sonnet),98,0.1332914584717029,0.21472014507142995
+Study 1b (Opus),106,0.4052952357465517,0.24100574571137673

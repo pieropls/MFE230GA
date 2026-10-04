@@ -1,0 +1,7 @@
+study,judge,pairs,defined,agree,judge_yes,human_yes,false_yes,missed_yes
+Study 1 (Sonnet),original judge,8,2,1,1,1,1,0
+Study 1 (Sonnet),judge with verbatim quote,8,8,7,2,1,1,0
+Study 1 (Sonnet),"with quote, fenced JSON accepted (supplementary)",8,8,7,2,1,1,0
+Study 1b (Opus),original judge,17,17,10,10,3,7,0
+Study 1b (Opus),judge with verbatim quote,17,7,3,5,3,4,0
+Study 1b (Opus),"with quote, fenced JSON accepted (supplementary)",17,17,9,11,3,8,0

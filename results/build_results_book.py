@@ -118,8 +118,9 @@ def claim(cid, sentence, stated, locator, label, scale=1.0, decimals=None, note=
     stateds = stated if isinstance(stated, list) else [stated]
     locators = locator if isinstance(locator, list) else [locator]
     ok, found = True, []
-    for s, loc in zip(stateds, locators):
-        good, value = verify(s, loc, scale, decimals)
+    scales = scale if isinstance(scale, list) else [scale] * len(stateds)
+    for s, loc, sc in zip(stateds, locators, scales):
+        good, value = verify(s, loc, sc, decimals)
         ok &= bool(good)
         found.append(value)
     CLAIMS.append({'claim_id': cid, 'sentence': sentence, 'numbers': '; '.join(map(str, stateds)),
@@ -356,6 +357,9 @@ def register_claims():
     # v3 claims are appended by register_v3_claims() when Stage 2 outputs exist
     if (P.OUT2 / 'v3_results.md').exists():
         register_v3_claims()
+    if (P.OUT2 / 'robustness_2_3.md').exists():                      # Study 1 robustness and Study 2.3
+        namespace = {'claim': claim, 't': lambda name: rel(TAB(name)), 'rel': rel, 'P': P, 'POST': POST, 'CONF': CONF, 'FWD': FWD}
+        exec((HERE / 'study23_claims.py').read_text(), namespace)
 
 
 def register_v3_claims():
@@ -382,14 +386,15 @@ def scoreboard():
                      'placebo_p': res['placebo']['p'] if primary else float('nan'), 'dsr': rsum['strategies'][key]['deflated_sharpe']['dsr'],
                      'dsr_note': 'research DSR, 41 nominal trials', 'verdict': verdict})
 
-    names = {'A0': 'A0 fixed rule', 'A1': 'A1 ridge', 'A1-T': 'A1-T tightness', 'A3': 'A3 primary', 'A4': 'A4 islands'}
+    names = {'A0': 'A0 fixed rule', 'A1': 'A1 ridge', 'A1-T': 'A1-T ridge x tightness', 'A3': 'A3 agent features, independent (primary)', 'A4': 'A4 agent features, communicating'}
     for k, n in names.items():
-        frozen_row(n + ' (Sonnet)', k, r, rs, 'CONFIRMATORY', 'Do not implement' if k == 'A3' else 'not primary; negative', k == 'A3')
-    frozen_row('A3 (Opus follow-up)', 'A3', ro, rso, 'EXPLORATORY', 'exploratory; negative', False)
-    frozen_row('A4 primary (Opus follow-up)', 'A4', ro, rso, 'EXPLORATORY', 'exploratory; fails G2-G5', True)
+        frozen_row('Study 1: ' + n, k, r, rs, 'CONFIRMATORY', 'Do not implement' if k == 'A3' else 'not primary; negative', k == 'A3')
+    frozen_row('Study 1b: A3 agent features, independent', 'A3', ro, rso, 'EXPLORATORY', 'exploratory; negative', False)
+    frozen_row('Study 1b: A4 agent features, communicating (its primary)', 'A4', ro, rso, 'EXPLORATORY', 'exploratory; fails G2-G5', True)
     v2 = pd.read_csv(TAB('v2_window_stats')).set_index(['variant', 'window'])
     rr = pd.read_csv(TAB('v2_reading_rule')).set_index('variant')
-    desc = {'V2a': 'V2a wage growth (headline)', 'V2b': 'V2b signed composite', 'V2c': 'V2c wage + momentum', 'V2d': 'V2d -(hires+quits), 12m'}
+    desc = {'V2a': 'Study 2.1: W wage growth (declared headline)', 'V2b': 'Study 2.1: SC signed composite', 'V2c': 'Study 2.1: W+MOM wage growth + momentum',
+            'V2d': 'Study 2.1: HQ12 hires + quits reversal, 12-month hold'}
     for v in ['V2a', 'V2b', 'V2c', 'V2d']:
         te = v2.loc[(v, 'test')]
         rows.append({'strategy': desc[v], 'label': 'POST-HOC', 'research_sharpe': v2.loc[(v, 'research'), 'sharpe'], 'test_sharpe': te['sharpe'],
@@ -397,6 +402,14 @@ def scoreboard():
                      'ic': te['ic_hold'] if v == 'V2d' else te['ic'], 'ic_t': te['ic_hold_t'] if v == 'V2d' else te['ic_t'],
                      'alpha_month': te['alpha_month'], 'alpha_t': te['alpha_t'], 'placebo_p': te['placebo_p'], 'dsr': te['dsr'],
                      'dsr_note': 'test DSR, 112 trials' + ('; IC is 12-month' if v == 'V2d' else ''), 'verdict': rr.loc[v, 'reading']})
+    if TAB('s23_r1_variants').exists():                             # Study 2.3: the same four variants on as-known data
+        ak = pd.read_csv(TAB('s23_r1_variants')).set_index(['variant', 'window'])
+        for v in ['W', 'SC', 'W+MOM', 'HQ12']:
+            te = ak.loc[(v, 'test')]
+            rows.append({'strategy': f'Study 2.3: {v}, as-known data', 'label': 'POST-HOC', 'research_sharpe': ak.loc[(v, 'research'), 'sharpe_asknown'], 'test_sharpe': te['sharpe_asknown'],
+                         'full_sharpe': ak.loc[(v, 'full'), 'sharpe_asknown'], 'last18_sharpe': ak.loc[(v, 'last 18m'), 'sharpe_asknown'], 'ic': te['ic_asknown'], 'ic_t': te['ic_t_asknown'],
+                         'alpha_month': float('nan'), 'alpha_t': te['alpha_t_asknown'], 'placebo_p': float('nan'), 'dsr': te['dsr_162_asknown'],
+                         'dsr_note': 'test DSR, 162 trials' + ('; IC is 12-month' if v == 'HQ12' else ''), 'verdict': 'as-known rerun; noise after the looks taken'})
     frame = pd.DataFrame(rows)
     frame.to_csv(HERE / 'scoreboard.csv', index=False)
     return frame
@@ -416,13 +429,13 @@ def num(x, f='{:+.2f}'):
 def scoreboard_tex(frame):
     short = {'Do not implement': 'Do not implement', 'not primary; negative': 'negative, not primary', 'exploratory; negative': 'exploratory, negative',
              'exploratory; fails G2-G5': 'exploratory, fails G2--G5'}
-    lines = [r'\setlength{\tabcolsep}{3pt}\begin{tabular}{@{}p{2.9cm} l r r r r r r r r p{2.3cm}@{}}', r'\toprule',
+    lines = [r'\setlength{\tabcolsep}{3pt}\begin{tabular}{@{}p{3.6cm} l r r r r r r r r p{2.0cm}@{}}', r'\toprule',
              r'Strategy & Label & Res. & Test & Full & 18m & IC ($t$) & $\alpha$/m ($t$) & Plac. & DSR & Verdict \\', r'\midrule']
     for _, x in frame.iterrows():
         verdict = short.get(x.verdict, 'noise after the looks taken' if 'noise' in x.verdict else x.verdict)
         lines.append(' & '.join([tex_escape(x.strategy), {'CONFIRMATORY': 'conf.', 'POST-HOC': 'post-hoc'}.get(x.label, 'expl.'),
                                  num(x.research_sharpe), num(x.test_sharpe), num(x.full_sharpe), num(x.last18_sharpe),
-                                 f"{num(x.ic, '{:+.3f}')} ({num(x.ic_t)})", f"{num(100 * x.alpha_month)}\\% ({num(x.alpha_t)})",
+                                 f"{num(x.ic, '{:+.3f}')} ({num(x.ic_t)})", (f"{num(100 * x.alpha_month)}\\% ({num(x.alpha_t)})" if not pd.isna(x.alpha_month) else f"({num(x.alpha_t)})"),
                                  num(x.placebo_p, '{:.2f}'), num(x.dsr, '{:.2f}'), tex_escape(verdict)]) + r' \\')
     lines += [r'\bottomrule', r'\end{tabular}']
     (HERE / 'tables').mkdir(exist_ok=True)
@@ -440,6 +453,9 @@ FIGURES = [
     ('fig_loadings.pdf', 'CONFIRMATORY (A0, A1, A3) / POST-HOC (V2a)', 'The labor books are quality/growth tilts: A3 loads on RMW and against HML; V2a loads against HML and on momentum.', 'results.json attribution; analysis/output/study2/tables/v2a_factor_loadings_test.csv'),
     ('fig_agents_scatter.pdf', 'POST-HOC', 'Research IC of agent features barely predicts their test IC; the selected regime-gated features were active in 3 test months.', 'analysis/output/study1/tables/d7_agent_candidates.csv'),
     ('fig_agents.pdf', 'CONFIRMATORY', 'Two arms with equal budgets, a blinded evaluator, mechanical selection and a human-audited LLM judge.', 'frozen params.py AGENT'),
+    ('fig_s1_horizon.pdf', 'POST-HOC', 'The A3 score has no IC at any horizon from 1 to 24 months; the HQ12 score has one from 9 months.', 'analysis/output/study1/tables/d11_a3_horizon_profile.csv'),
+    ('fig_s23_gross_needed.pdf', 'POST-HOC', 'Reaching the 10% volatility target would need a gross exposure above 2 in most test months, so the cap binds; the cap explains the volatility shortfall, not the losses.', 'analysis/output/study2/tables/s23_r2_distribution.csv'),
+    ('fig_s23_agents_seeds.pdf', 'POST-HOC', 'Best research IC per seed, by study and arm: the gap between arms is within the spread across seeds.', 'analysis/output/study2/tables/s23_r4_agents_by_seed.csv'),
     ('fig_v2_windows.pdf', 'POST-HOC / CONFIRMATORY (A3 bars)', 'V2d is the only variant positive in every window; V2a and V2c lost heavily in the last 18 months.', 'analysis/output/study2/tables/v2_window_stats.csv'),
 ]
 
@@ -500,6 +516,11 @@ KNOWN_ISSUES = [
 ]
 
 
+def show(text):
+    """Old variant codes -> W, SC, W+MOM, HQ12 in rendered text; claim IDs (V_V2a_SR) and file names are left alone."""
+    return re.sub(r'(?<![\w])V2([abcd])', lambda m: P.DISPLAY['V2' + m.group(1)], text)
+
+
 def md_table(rows, header):
     out = ['| ' + ' | '.join(header) + ' |', '|' + '---|' * len(header)]
     out += ['| ' + ' | '.join(str(c).replace('|', '/') for c in r) + ' |' for r in rows]
@@ -511,9 +532,9 @@ def write_markdown(board, verdict_text, v3_text):
          'the claims register (`claims.csv`) is the only source the report may quote.', '']
     L += ['## 1. Verdict', '', verdict_text or '*VERDICT.md is written at Stage 3.*', '']
     L += ['## 2. Scoreboard', '', 'Source: `results/scoreboard.csv` (built from results.json, research_summary.json of both studies and analysis/output/study2/tables/v2_*.csv). '
-          'IC is one-month except V2d (12-month, its holding horizon). DSR: research-period value with 41 nominal trials for the frozen studies; test-window value with 112 trials for v2.', '']
+          'IC is one-month except HQ12 (12-month, its holding horizon). DSR: research-period value with 41 nominal trials for Studies 1 and 1b; test-window value with 112 looks for Study 2.1 and 162 for Study 2.3 (each table uses the looks taken at that point).', '']
     rows = [[x.strategy, x.label, f'{x.research_sharpe:+.2f}', f'{x.test_sharpe:+.2f}', f'{x.full_sharpe:+.2f}', f'{x.last18_sharpe:+.2f}', f'{x.ic:+.3f} ({x.ic_t:+.2f})',
-             f'{100 * x.alpha_month:+.2f}% ({x.alpha_t:+.2f})', '' if pd.isna(x.placebo_p) else f'{x.placebo_p:.2f}', f'{x.dsr:.2f}', x.verdict] for _, x in board.iterrows()]
+             (f'{100 * x.alpha_month:+.2f}% ({x.alpha_t:+.2f})' if not pd.isna(x.alpha_month) else f'({x.alpha_t:+.2f})'), '' if pd.isna(x.placebo_p) else f'{x.placebo_p:.2f}', f'{x.dsr:.2f}', x.verdict] for _, x in board.iterrows()]
     L += [md_table(rows, ['Strategy', 'Label', 'Research', 'Test', 'Full', 'Last 18m', 'IC (t)', 'alpha/m (t)', 'Placebo p', 'DSR', 'Verdict']), '']
     L += ['## 3. Figures', '']
     for f, lab, take, src in FIGURES:
@@ -522,6 +543,10 @@ def write_markdown(board, verdict_text, v3_text):
     L += [f'- `{n}`: {title} [{lab}]' for n, title, lab in TABLES]
     if v3_text:
         L += ['', v3_text]
+    for title, path in [('Study 1 robustness (A3 and A0)', P.OUT1 / 'robustness.md'), ('Study 2.3: additional robustness', P.OUT2 / 'robustness_2_3.md')]:
+        if path.exists():
+            body = path.read_text().split('\n', 1)[1]
+            L += ['', f'### {title}', '', re.sub(r'^## ', '#### ', body, flags=re.M)]
     L += ['', '## 5. The agent experiment', '', '']
     d10 = pd.read_csv(TAB('d10_agent_design'))
     L += [md_table(d10[['study', 'item', 'value', 'source']].values.tolist(), ['Study', 'Item', 'Value', 'Source']), '']
@@ -535,7 +560,7 @@ def write_markdown(board, verdict_text, v3_text):
     L += ['## 7. Claims register', '', f'`results/claims.csv`: {len(CLAIMS)} claims, {sum(c["verified"] == "y" for c in CLAIMS)} verified against their source files.', '',
           md_table([[c['claim_id'], c['label'], c['sentence'], c['numbers'], c['verified']] for c in CLAIMS], ['ID', 'Label', 'Claim', 'Numbers', 'Verified']), '']
     L += ['## 8. Known issues', '', md_table([list(k) for k in KNOWN_ISSUES], ['Issue', 'What it is', 'Fix or disclosure']), '']
-    (HERE / 'RESULTS_BOOK.md').write_text('\n'.join(L))
+    (HERE / 'RESULTS_BOOK.md').write_text(show('\n'.join(L)))
 
 
 def write_tex(board, v3_tex):
@@ -557,6 +582,19 @@ def write_tex(board, v3_tex):
         L += [f'\\subsection*{{{tex_escape(title)} \\hfill {pill(lab)}}}', f'{{\\footnotesize\\setlength{{\\tabcolsep}}{{4pt}}\\input{{../report/tables/{n}}}}}\\par', r'\medskip']
     if v3_tex:
         L += [v3_tex]
+    if (P.OUT2 / 'robustness_2_3.md').exists():
+        frag = lambda name, size='scriptsize', wide=False: (f'{{\\{size}\\setlength{{\\tabcolsep}}{{3pt}}' + ('\\resizebox{\\textwidth}{!}{' if wide else '')
+                                                           + f'\\input{{../report/tables/{name}}}' + ('}' if wide else '') + '}\\par\\medskip')
+        L += [r'\clearpage\section{Study 1 robustness and Study 2.3}',
+              'Study 1 rows labelled confirmatory are read from the saved results and are unchanged; everything else is post hoc (spec \\path{analysis/specs/study2_3_robustness.md}, 162 looks). '
+              'Sources: \\path{analysis/output/study1/robustness.md} and \\path{analysis/output/study2/robustness_2_3.md}.',
+              r'\subsection*{Study 1: A3 and A0 \hfill \tagc\ / \tagp}', frag('d11_study1_robustness'), frag('d11_freeze_check'), frag('d11_a3_horizon_profile', 'footnotesize'),
+              r'\subsection*{R1 As-known rerun \hfill \tagp}', frag('s23_r1_variants', 'footnotesize'), frag('s23_r1_hq12_battery', 'footnotesize'),
+              r'\subsection*{R2 Risk overlay and R3 rank-weighted books \hfill \tagp}', frag('s23_r2_risk_overlay', 'footnotesize'), frag('s23_r2_distribution', 'footnotesize'), frag('s23_r3_rank_weighted', 'footnotesize'),
+              r'\subsection*{R4 Agents by seed, R5 tokens \hfill \tagp}', frag('s23_r4_agents_by_seed', 'footnotesize'), frag('s23_r4_permutation', wide=True), frag('s23_r5_tokens', 'footnotesize'), frag('s23_r5_tokens_ic', 'footnotesize'),
+              r'\subsection*{R6 Effective breadth, R7 capacity \hfill \tagp}', frag('s23_r6_breadth', 'footnotesize')]
+        L += [frag(n, wide=True) for n in ['s23_r7_capacity', 's23_r8_judge_summary', 's23_r9_ablation_summary'] if (P.TEX / f'{n}.tex').exists()]
+        L += [r'\subsection*{Time patterns, turnover and costs \hfill \tagc\ / \tagp}', frag('s23_time_patterns', 'footnotesize'), frag('s23_costs_turnover', 'footnotesize')]
     L += [r'\clearpage\section{The agent experiment}', r'\noindent{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/d10_agent_design}}\par', r'\medskip',
           r'Selected features and their research$\to$test fate:\par\noindent{\footnotesize\setlength{\tabcolsep}{4pt}\input{../report/tables/d7_selected_features}}\par', r'\medskip',
           'Human vs judge (Opus): 10/17 agreement; human yes 3, judge yes 10; all 7 disagreements judge-yes/human-no. Models from the logs: Sonnet 5.5 at medium effort for the confirmatory study (' + str(CALL_COUNTS[0]) + ' logged calls), Opus 5.5 at xhigh for the follow-up (' + str(CALL_COUNTS[1]) + ' calls); claim A06.']
@@ -573,7 +611,7 @@ def write_tex(board, v3_tex):
     L += [r'\section{Known issues}', r'\begin{itemize}']
     L += [f'\\item \\emph{{{tex_escape(k[0])}.}} {tex_escape(k[1])} \\textcolor{{mute}}{{Fix or disclosure: {tex_escape(k[2])}}}' for k in KNOWN_ISSUES]
     L += [r'\end{itemize}', r'\end{document}']
-    (HERE / 'results_book.tex').write_text('\n'.join(L) + '\n')
+    (HERE / 'results_book.tex').write_text(show('\n'.join(L) + '\n'))
 
 
 def main():
