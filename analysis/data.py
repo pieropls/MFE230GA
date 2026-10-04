@@ -221,3 +221,96 @@ def backtest(scores, returns, holding=None, cost_bps=None):
     available = scores.notna().all(axis=1) & scores.std(axis=1).gt(0)
     return frozen_data.backtest(scores.where(available, 0.0), returns, holding=holding,
                                 cost_bps=cost_bps, signal_available=available)
+
+
+def backtest_variant(scores, returns, holding=None, cost_bps=None, gross_cap=None, weighting='top3'):
+    """Study 1's portfolio with two options (Study 2.3, R2 and R3): the gross cap (np.inf = none)
+    and rank-weighted tranches. Also records the ex-ante volatility of the unit book and the gross
+    exposure needed to reach the volatility target. With the defaults it reproduces `backtest`."""
+    from sklearn.covariance import LedoitWolf
+    pf = frozen()[0].PORTFOLIO
+    holding = pf['holding'] if holding is None else holding
+    cost_bps = pf['cost_bps'] if cost_bps is None else cost_bps
+    cap = pf['gross_cap'] if gross_cap is None else gross_cap
+    scores = scores.copy()
+    scores.index = pd.PeriodIndex(scores.index, freq='M')
+    available = scores.notna().all(axis=1) & scores.std(axis=1).gt(0)
+    scores = scores.where(available, 0.0)
+    groups = scores.columns
+    tranches, rows, weight_rows = [], [], []
+    pretrade = pd.Series(0., index=list(groups) + ['market'])
+    for month, score in scores.iterrows():
+        tranche = pd.Series(0., index=groups)
+        if available.loc[month] and weighting == 'top3':
+            rank = score.sort_index().sort_values(kind='stable')
+            tranche.loc[rank.index[-pf['longs']:]] = 1 / pf['longs']
+            tranche.loc[rank.index[:pf['shorts']]] = -1 / pf['shorts']
+        elif available.loc[month]:                               # rank-weighted: longs sum to +1, shorts to -1
+            demeaned = score.rank(method='average') - score.rank(method='average').mean()
+            tranche = 2 * demeaned / demeaned.abs().sum()
+        tranches.append(tranche)
+        book = sum(tranches[-holding:]) / holding
+        history = pd.period_range(month - pf['risk_window'] - 1, month - 2, freq='M')
+        historical = returns['excess'].reindex(index=history, columns=groups).join(returns['factors']['Mkt-RF']).dropna()
+        market = historical['Mkt-RF'].to_numpy()
+        betas = pd.Series({g: np.cov(historical[g], market, ddof=1)[0, 1] / np.var(market, ddof=1) for g in groups})
+        raw = np.r_[book.to_numpy(), -float(book @ betas)]
+        covariance = LedoitWolf().fit(historical.to_numpy()).covariance_
+        unit_vol = np.sqrt(max(0, float(raw @ covariance @ raw)) * 12)
+        unit_gross = np.abs(raw).sum()
+        scale_vol = pf['vol_target'] / unit_vol if unit_vol > 0 else 0.
+        scale = min(scale_vol, cap / unit_gross) if unit_vol > 0 else 0.
+        weights = pd.Series(raw * scale, index=pretrade.index)
+        factors = returns['factors'].loc[month]
+        current = returns['total'].loc[month, groups]
+        turnover = float((weights[groups] - pretrade[groups]).abs().sum())
+        hedge_turnover = abs(weights['market'] - pretrade['market'])
+        cost = turnover * cost_bps / 1e4 + hedge_turnover * pf['hedge_cost_bps'] / 1e4
+        financing = (-weights.clip(upper=0).sum() + max(0, float(weights.sum() - 1))) * pf['borrow_finance_base_bps_year'] / 1e4 / 12
+        gross = float(weights[groups] @ returns['excess'].loc[month, groups] + weights['market'] * factors['Mkt-RF'])
+        net = gross - cost - financing
+        nav = 1 + factors.RF + net
+        pretrade = weights * (1 + pd.concat([current, pd.Series({'market': factors['Mkt-RF'] + factors.RF})])) / nav
+        rows.append({'month': month, 'gross': gross, 'net': net, 'turnover': turnover, 'hedge_turnover': hedge_turnover,
+                     'total_net': net + factors.RF, 'cost': cost, 'borrow_financing': financing,
+                     'ex_ante_vol': unit_vol * scale, 'gross_leverage': weights.abs().sum(),
+                     'unit_vol': unit_vol, 'gross_needed': scale_vol * unit_gross,
+                     'cap_binds': bool(unit_vol > 0 and cap / unit_gross < scale_vol)})
+        weight_rows.append(weights.rename(month))
+    return pd.DataFrame(rows).set_index('month'), pd.DataFrame(weight_rows)
+
+
+# ---------------------------------------------------------------- as-known features (Alex's package)
+def asknown_features(package=P.PACKAGE):
+    """Raw F1..F5 and W as known at each month-end decision, rebuilt from Study 1's as-known panel
+    with Study 1's transforms (reference month = latest month with >= 11 groups observed; 3-month
+    averages; 12-month differences, log differences for hours and earnings). Long frame:
+    decision (month), group, feature, raw."""
+    panel = pd.read_parquet(package / 'studies/follow_the_workers/outputs/panel_asof.parquet',
+                            columns=['decision', 'series_id', 'observation_month', 'value'])
+    ids = {m: {g: f'JTU{v[1]}{m}' for g, v in P.GROUPS.items()} for m in P.JOLTS_MEASURES}
+    ids['H'] = {g: f'CEU{v[2]}07' for g, v in P.GROUPS.items()}
+    ids['E'] = {g: (P.CONSTRUCTION_EARNINGS if g == 2 else f'CEU{v[2]}08') for g, v in P.GROUPS.items()}
+    avg3 = lambda wide, month: wide.reindex(pd.period_range(month - 2, month, freq='M')).mean(skipna=False)
+    rows = []
+    for decision, current in panel.groupby('decision', sort=True):
+        wide = current.pivot(index='observation_month', columns='series_id', values='value')
+        wide.index = pd.PeriodIndex(wide.index, freq='M')
+        wide = wide.sort_index()
+        by = {m: wide[list(ids[m].values())].set_axis(list(ids[m]), axis=1) for m in ids}       # measure -> month x group
+        ok_j = pd.concat([by[m].notna().sum(axis=1) >= P.MIN_GROUPS for m in P.JOLTS_MEASURES], axis=1).all(axis=1)
+        ok_c = by['H'].notna().sum(axis=1) >= P.MIN_GROUPS
+        m_j = ok_j.index[ok_j].max() if ok_j.any() else None
+        m_c = ok_c.index[ok_c].max() if ok_c.any() else None
+        d = pd.Timestamp(decision).to_period('M')
+        for i, m in enumerate(P.JOLTS_MEASURES, 1):
+            value = avg3(by[m], m_j) - avg3(by[m], m_j - 12) if m_j is not None else pd.Series(np.nan, index=list(P.GROUPS))
+            rows += [(d, g, f'F{i}', value[g]) for g in P.GROUPS]
+        for name, key in [('F5', 'H'), ('W', 'E')]:
+            if m_c is None:
+                value = pd.Series(np.nan, index=list(P.GROUPS))
+            else:
+                a, b = avg3(by[key], m_c), avg3(by[key], m_c - 12)
+                value = np.log((a / b).where((a > 0) & (b > 0)))
+            rows += [(d, g, name, value[g]) for g in P.GROUPS]
+    return pd.DataFrame(rows, columns=['decision', 'group', 'feature', 'raw'])

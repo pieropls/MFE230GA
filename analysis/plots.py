@@ -430,3 +430,58 @@ def v2d_tightness(frame):
     axes[0].legend(loc='upper left', fontsize=7)
     fig.suptitle('HQ12 earned its return when tightness was falling or V/U > 1', fontweight='bold', fontsize=9.5)
     return save(fig, 'fig_v2d_tightness.pdf')
+
+
+# ---------------------------------------------------------------- Study 1 diagnostics and Study 2.3 figures
+def horizon_compare(frame, title):
+    """frame: columns book, h, ic, se (test window). One marker per book and horizon, +-2 s.e."""
+    fig, ax = plt.subplots(figsize=(P.FULL_WIDTH, 2.7))
+    books = list(dict.fromkeys(frame.book))
+    colours = {books[0]: C, **{b: PH for b in books[1:]}}
+    for k, book in enumerate(books):
+        sub = frame[frame.book == book].sort_values('h')
+        x = np.arange(len(sub)) + (k - (len(books) - 1) / 2) * 0.22
+        ax.errorbar(x, sub.ic, yerr=2 * sub.se, fmt='o' if k == 0 else 's', color=colours[book], ms=4, capsize=2, lw=1, label=book)
+    ax.axhline(0, color=P.COLORS['darkgrey'], lw=0.8)
+    ax.set_xticks(np.arange(len(sub)))
+    ax.set_xticklabels([f'{int(h)}m' for h in sub.h])
+    ax.set_xlabel('Return horizon')
+    ax.set_ylabel('Mean rank IC, test (±2 s.e.)')
+    ax.set_title(title)
+    ax.legend(loc='upper left', ncol=len(books))
+    return save(fig, 'fig_s1_horizon.pdf')
+
+
+def gross_needed(frame, title):
+    """frame: columns book, gross_needed (one row per test month). Histogram with the caps at 2 and 3."""
+    fig, ax = plt.subplots(figsize=(P.FULL_WIDTH, 2.5))
+    bins = np.linspace(0, 8, 33)
+    for book, colour in zip(dict.fromkeys(frame.book), [C, PH]):
+        ax.hist(frame.loc[frame.book == book, 'gross_needed'].clip(upper=8), bins=bins, alpha=0.6, color=colour, label=book)
+    for cap in [2, 3]:
+        ax.axvline(cap, color=P.COLORS['darkgrey'], lw=1, ls='--')
+        ax.text(cap + 0.05, ax.get_ylim()[1] * 0.92, f'cap {cap}', fontsize=7.5, color=P.COLORS['darkgrey'])
+    ax.set_xlabel('Gross exposure needed to reach 10% ex-ante volatility (values above 8 shown at 8)')
+    ax.set_ylabel('Test months')
+    ax.set_title(title)
+    ax.legend(loc='upper right')
+    return save(fig, 'fig_s23_gross_needed.pdf')
+
+
+def agents_seeds(frame, title):
+    """frame: columns study, arm, seed, best_ic. Dots = seeds, bar = arm mean."""
+    fig, ax = plt.subplots(figsize=(P.FULL_WIDTH, 2.6))
+    labels, x = [], 0
+    for study in dict.fromkeys(frame.study):
+        for arm, colour in [('independent', P.COLORS['grey']), ('islands', PH)]:
+            sub = frame[(frame.study == study) & (frame.arm == arm)]
+            ax.scatter([x] * len(sub), sub.best_ic, color=colour, s=22, zorder=3)
+            ax.hlines(sub.best_ic.mean(), x - 0.25, x + 0.25, color=colour, lw=2)
+            labels.append(f'{study}\n{arm}')
+            x += 1
+        x += 0.5
+    ax.set_xticks([0, 1, 2.5, 3.5])
+    ax.set_xticklabels(labels)
+    ax.set_ylabel('Best research IC per seed')
+    ax.set_title(title)
+    return save(fig, 'fig_s23_agents_seeds.pdf')

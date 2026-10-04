@@ -1,0 +1,23 @@
+item,A3,A0,label,source
+"Test Sharpe, data as known",-0.58,-0.36,CONFIRMATORY,results.json variants.ASOF
+"Test Sharpe, data first release",-0.52,-0.16,CONFIRMATORY,results.json variants.FIRST
+"Test Sharpe, data revised",-0.56,-0.26,CONFIRMATORY,results.json variants.REVISED
+"Test Sharpe, data fixed lag",-0.53,-0.27,CONFIRMATORY,results.json variants.FIXEDLAG
+Net return p.a.,-4.6%,-3.5%,CONFIRMATORY,results.json variants.ASOF
+"IC, one month (t)",-0.021 (-1.08),-0.020 (-0.71),CONFIRMATORY,results.json variants.ASOF.IC.1
+Factor alpha per month (t),-0.38% (-1.86),-0.25% (-0.92),CONFIRMATORY,results.json attribution
+Placebo p (circular shift),0.72,n/a (primary only),CONFIRMATORY,results.json placebo
+"Holm-adjusted p, IC and return","1.00, 1.00 (A3 vs A1)","1.00, 1.00 (A1 vs A0)",CONFIRMATORY,results.json comparisons
+"Deflated Sharpe, research (41 trials)",0.003,0.000,CONFIRMATORY,research_summary.json
+Sharpe at 0 / 10 / 25 bp,-0.45 / -0.58 / -0.79,n/a / -0.36 / n/a,CONFIRMATORY,results.json sensitivities (primary only)
+"Sharpe, first test half",-0.72,-0.55,CONFIRMATORY,results.json windows.first_half
+"Sharpe, second test half",-0.49,-0.20,CONFIRMATORY,results.json windows.second_half
+"Sharpe, excluding Mar-Dec 2020",-0.51,-0.18,CONFIRMATORY,results.json windows.ex_pandemic
+"Sharpe, last 18 months",+0.85,-1.56,CONFIRMATORY,results.json windows.last_18
+"Drop one group, Sharpe range",-0.70 (Wholesale) to -0.24 (Durable mfg),n/a (primary only),CONFIRMATORY,results.json drop_one_group
+Gates G1 timing / G2 prediction / G3 alpha / G4 robustness / G5 implementable,pass / fail / fail / fail / fail,n/a (primary only),CONFIRMATORY,results.json gate
+Verdict,Do not implement,not primary,CONFIRMATORY,results.json gate
+"Block-bootstrap 90% interval, test Sharpe","[-0.99, -0.16]","[-0.91, +0.20]",POST-HOC,"saved ledgers; 12-month blocks, 5,000 draws, seed 230"
+A3 score IC at 1 / 6 / 12 / 24 months (t),-0.021 (-1.08) / -0.004 (-0.09) / -0.013 (-0.22) / -0.000 (-0.00),n/a,POST-HOC,d11_a3_horizon_profile.csv
+A3 Sharpe with cap 2 / cap 3 / no cap,-0.58 / -0.61 / -0.62,n/a,POST-HOC,s23_r2_risk_overlay.csv
+"A3 Sharpe, rank-weighted book",-0.49,n/a,POST-HOC,s23_r3_rank_weighted.csv
